@@ -1,0 +1,17 @@
+disableKinds = ["taxonomy","taxonomyTerm"]
+languageCode = 'NO'
+title = 'Balestrand Fjord Angling'
+theme = 'boilerplate-hugo-theme'
+
+DefaultContentLanguage = "en"
+
+[imaging]
+  anchor = 'Smart'
+  hint = 'photo'
+  quality = 80
+  resampleFilter = 'MitchellNetravali'
+
+[Params]
+  ogimage = ""
+  keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'guide', 'angling']
+  email = "contact@balestrandfjordangling.com"
