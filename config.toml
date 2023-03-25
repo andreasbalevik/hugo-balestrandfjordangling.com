@@ -8,7 +8,7 @@ DefaultContentLanguage = "en"
 [imaging]
   anchor = 'Smart'
   hint = 'photo'
-  quality = 80
+  quality = 90
   resampleFilter = 'MitchellNetravali'
 
 [Params]
