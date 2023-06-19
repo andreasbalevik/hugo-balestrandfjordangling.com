@@ -1,40 +1,75 @@
 {{ define "main" }}
 
-    {{ with .Page.Params.intro_card }}
-    <div class="component">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    {{ partial "components/inline-column.html" . }}
+{{ with .Page.Params.intro_card }}
+<div class="component">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {{ partial "components/inline-column.html" . }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+<div class="component" style="
+background-image: url('https://cdn.ayroui.com/1.0/images/features/feature-08-bg.svg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div>
+                    <div>
+                        <div class="row g-3">
+                            <div class="col-lg-12 text-white mb-3">
+                                <h2>Våre kunders favoritter</h2>
+                                <p>Aktiviteter som er våre kunder velger akkurat nå</p>
+                            </div>
+                            {{ with .Page.Params.inspirations }}
+                            <div class="col-lg-4">
+                                {{ partial "components/column.html" . }}
+                            </div>
+                            <div class="col-lg-4">
+                                {{ partial "components/column.html" . }}
+                            </div>
+                            <div class="col-lg-4">
+                                {{ partial "components/column.html" . }}
+                            </div>
+                            {{ end }}
+
+                            <div class="col-lg-12 text-center mt-5">
+                                <a class="btn btn--white h3">Se alle aktiviteter <span class="bi bi-arrow-right-short"></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    {{ end }}
+</div>
 
-    <div class="component ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Finn din inspirasjon</h2>
-                </div>
+<div class="component ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Finn din inspirasjon</h2>
+            </div>
 
-                {{ with .Page.Params.inspirations }}
-                    <div class="col-lg-4">
-                        {{ partial "components/column.html" . }}
-                    </div>
-                    <div class="col-lg-4">
-                        {{ partial "components/column.html" . }}
-                    </div>
-                    <div class="col-lg-4">
-                        {{ partial "components/column.html" . }}
-                    </div>
-                {{ end }}
+            {{ with .Page.Params.inspirations }}
+            <div class="col-lg-4">
+                {{ partial "components/column.html" . }}
             </div>
-            <div class="col-lg-12 text-center mt-5">
-                <a class="btn btn-outline h3">Se alle inspirasjoner <span class="bi bi-arrow-right-short"></span></a>
+            <div class="col-lg-4">
+                {{ partial "components/column.html" . }}
             </div>
+            <div class="col-lg-4">
+                {{ partial "components/column.html" . }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="col-lg-12 text-center mt-5">
+            <a class="btn btn-outline h3">Se alle inspirasjoner <span class="bi bi-arrow-right-short"></span></a>
         </div>
     </div>
+</div>
 
 {{ end }}
