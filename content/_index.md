@@ -1,14 +1,22 @@
 ---
 title: Test
 
-intro_card:
-    title: Ekte sognefjord opplevelser
-    text: Håndplukk en av våre underholdende private naturskjønne fisketurer. Betrakt isbreer og bekkefall. Historiefortelling med Kaptein Tor. Del vår lokale livsstil, bli inspirert og besøk Sognefjorden!
-    link:
-        href: https://...
+hero_card:
+    title: QUALITY SOGNEFJORD ATTRACTION
+    text: Handpick Your Next Entertaining Private Scenic Boat Excursion in Norwegian Fjords. View Glaciers, Waterfalls & Fishing. Storytelling by Captain Tor. Local Lifestyle, get Inspired-Visit Balestrand 365!
+
     images:
-        - src: "images/img_3000.jpg"
+        - src: "images/img_3234.jpeg"
           alt: ""
+
+highlighted:
+    title: Våre utvalgte opplevelser
+    text: Aktiviteter som er populære blant våre gjester
+
+    items:
+        - "/activeties/balestrand-fjord-angling/"
+        - "/activeties/balestrand-fjord-angling/"
+        - "/activeties/balestrand-fjord-angling/"
 
 inspirations:
     title: Ekte sognefjord opplevelser

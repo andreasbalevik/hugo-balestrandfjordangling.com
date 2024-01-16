@@ -1,0 +1,32 @@
+<div class="component" style="
+background-image: url('/svg/wave-haikei.svg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+
+                <div class="row">
+                    <div class="col-12 text-white text-center text-md-start">
+                        <h2>Våre utvalgte opplevelser</h2>
+                        <p>Aktiviteter som er er populære akkurat nå</p>
+                    </div>
+
+                    {{ with .Page.Params.inspirations }}
+                        <div class="col-md-4 col-11">
+                            {{ partial "components/column.html" . }}
+                        </div>
+                        <div class="col-md-4 col-11">
+                            {{ partial "components/column.html" . }}
+                        </div>
+                        <div class="col-md-4 col-11">
+                            {{ partial "components/column.html" . }}
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center">
+                <a class="btn btn--white h3">Se alle aktiviteter <span class="bi bi-arrow-right-short"></span></a>
+            </div>
+        </div>
+    </div>
+</div>

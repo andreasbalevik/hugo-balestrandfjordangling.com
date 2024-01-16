@@ -1,0 +1,24 @@
+<a href="{{.RelPermalink}}" class="text-reset text-decoration-none">
+    <div class="flex-column hover rounded bg-white shadow">
+
+        {{ with .Params.images }}
+            {{ range first 1 . }}
+                {{ partial "images/image.html" . }}
+            {{ end }}
+        {{ end }}
+
+        <div class="p-2">
+            <h2 class="h5 text-center">{{.Params.title}}</h2>
+
+            {{ with .Params.text }}
+                <p>{{.}}</p>
+            {{ end }}
+
+            {{ with .RelPermalink }}
+                <div class="h3 text-center m-auto">
+                    <span class="icon bi bi-arrow-right-short"></span>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</a>
