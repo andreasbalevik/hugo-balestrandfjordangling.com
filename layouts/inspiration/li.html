@@ -1,0 +1,22 @@
+<a href="{{.RelPermalink}}" class="text-reset text-decoration-none">
+    <div class="flex-column hover rounded bg-white shadow">
+
+        {{ with .Params.images}}
+        {{ range first 1 .}}
+        {{ $image := resources.GetMatch .src }}
+        {{ $image_medium := $image.Fill "1313x540 q30" }}
+
+        <div class="text-center"
+            style="background-image: url('{{$image_medium.RelPermalink}}'); background-repeat: no-repeat; background-size: auto 100%; background-position: center; height: 350px;">
+            {{ end }}
+            {{ end }}
+            <div class="d-flex justify-content-center align-items-center h-100 mask p-5"
+                style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="text-white" style="max-width: 1000px;">
+                    <h1 class="mb-3">{{.Params.title}}</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</a>
