@@ -1,5 +1,5 @@
-<a href="{{.RelPermalink}}" class="text-reset text-decoration-none">
-    <div class="flex-column hover rounded bg-white shadow">
+<a href="{{.RelPermalink}}" class="text-reset text-decoration-none h-100 d-flex">
+    <div class="d-flex flex-column hover rounded bg-white shadow">
 
         {{ with .Params.images }}
             {{ range first 1 . }}
@@ -13,12 +13,12 @@
             {{ with .Params.text }}
                 <p>{{.}}</p>
             {{ end }}
-
-            {{ with .RelPermalink }}
-                <div class="h3 text-center m-auto">
-                    <span class="icon bi bi-arrow-right-short"></span>
-                </div>
-            {{ end }}
         </div>
+
+        {{ with .RelPermalink }}
+        <div class="h3 text-center mt-auto">
+            <span class="icon bi bi-arrow-right-short"></span>
+        </div>
+        {{ end }}
     </div>
 </a>

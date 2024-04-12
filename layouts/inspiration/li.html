@@ -5,15 +5,18 @@
         {{ range first 1 .}}
         {{ $image := resources.GetMatch .src }}
         {{ $image_medium := $image.Fill "1313x540 q30" }}
+        {{ $placeholder := $image.Fill "1313x540 q8" }}
 
-        <div class="text-center"
-            style="background-image: url('{{$image_medium.RelPermalink}}'); background-repeat: no-repeat; background-size: auto 100%; background-position: center; height: 350px;">
+        <div class="text-center" style="overflow: hidden; position: relative; background-image: url('data:{{ $image.MediaType }};base64,{{ $placeholder.Content | base64Encode }}'); background-repeat: no-repeat; background-size: auto 100%; background-position: center; height: 350px;">
+      
+                <img style="opacity: 1; object-fit: cover; height: 100%;" {{ with .Params.title }}alt="{{ . }}" {{ end }} loading="lazy" fetchpriority="low" src="{{$image_medium.RelPermalink}}" width="1313" height="540" style="height: 100%; width: auto; display: block; margin: 0 auto;">
+       
             {{ end }}
             {{ end }}
-            <div class="d-flex justify-content-center align-items-center h-100 mask p-5"
-                style="background-color: rgba(0, 0, 0, 0.2);">
-                <div class="text-white" style="max-width: 1000px;">
-                    <h1 class="mb-3">{{.Params.title}}</h1>
+            <div class="d-flex h-100 mask p-5"
+                style="background-color: rgba(0, 0, 0, 0.2); position: absolute; left: 0; right: 0; top:0; bottom:0;">
+                <div class="text-white m-auto" style="max-width: 1000px;">
+                    <h1 class="text-shadow">{{.Params.title}}</h1>
                 </div>
             </div>
         </div>

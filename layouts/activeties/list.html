@@ -6,20 +6,7 @@
     <div class="row py-3 g-3 py-lg-4 g-lg-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
 
         {{ $paginator := .Paginate .Pages }}
-
         {{ range $paginator.Pages }}
-            <div class="col">
-                {{ .Render "li"}}
-            </div>
-            <div class="col">
-                {{ .Render "li"}}
-            </div>
-            <div class="col">
-                {{ .Render "li"}}
-            </div>
-            <div class="col">
-                {{ .Render "li"}}
-            </div>
             <div class="col">
                 {{ .Render "li"}}
             </div>

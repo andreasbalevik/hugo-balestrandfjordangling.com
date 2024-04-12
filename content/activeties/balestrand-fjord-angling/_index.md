@@ -1,8 +1,7 @@
 ---
 title: BALESTRAND FJORD FISKE / FJORD UTFLUKT
 images: 
-  - src: "images/img_3234.jpeg"
-  - src: "images/img_3234.jpeg"
+  - src: "images/img_0620.jpeg"
 ---
 
 

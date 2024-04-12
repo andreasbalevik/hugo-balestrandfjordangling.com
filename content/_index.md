@@ -14,8 +14,8 @@ highlighted:
     text: Aktiviteter som er populære blant våre gjester
 
     items:
-        - "/activeties/balestrand-fjord-angling/"
-        - "/activeties/balestrand-fjord-angling/"
+        - "/activeties/snowshoe-hike-in-balestrand/"
+        - "/activeties/family-expedition/"
         - "/activeties/balestrand-fjord-angling/"
 
 inspirations:
