@@ -1,9 +1,7 @@
 disableKinds = ["taxonomy","taxonomyTerm"]
-languageCode = 'NO'
+languageCode = 'en'
 title = 'Balestrand Fjord Angling'
-theme = 'boilerplate-hugo-theme'
-
-DefaultContentLanguage = "en"
+theme = 'balevikit-tailwindcss-hugo-theme'
 
 [imaging]
   anchor = 'Smart'
