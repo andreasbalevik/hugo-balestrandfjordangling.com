@@ -1,5 +1,3 @@
-disableKinds = ["taxonomy","taxonomyTerm"]
-languageCode = 'en'
 title = 'Balestrand Fjord Angling'
 theme = 'balevikit-tailwindcss-hugo-theme'
 
@@ -13,3 +11,9 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   ogimage = ""
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'guide', 'angling']
   email = "contact@balestrandfjordangling.com"
+
+
+
+[taxonomies]
+  tag = 'tags'
+

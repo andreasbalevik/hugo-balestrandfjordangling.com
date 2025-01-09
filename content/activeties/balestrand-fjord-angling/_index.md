@@ -2,6 +2,8 @@
 title: BALESTRAND FJORD FISKE / FJORD UTFLUKT
 images: 
   - src: "images/img_0620.jpeg"
+tags:
+- business-and-pleasure
 ---
 
 

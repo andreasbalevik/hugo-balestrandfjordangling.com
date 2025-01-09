@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<ul class="p-5">
+{{ range .Pages }}
+    
+    <li>
+    {{.Title}}
+    </li>
+
+    <ul id="tags">
+    {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+    </ul>
+    
+
+{{ end }}
+</ul>
+
+
+
+
+
+
+{{ end }}

@@ -2,6 +2,8 @@
 title: AMAZING SNOWSHOE HIKE IN BALESTRAND OF NORWAY
 images: 
   - src: "images/DSCF0551.jpg"
+tags:
+- bike-and-hike
 ---
 
 
