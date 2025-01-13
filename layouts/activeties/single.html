@@ -6,12 +6,32 @@
         <div class="p-4 lg:p-8 h-full flex order-2 lg:order-2">
             <div class="format lg:format-lg mx-auto my-auto">
                 <h2>{{.Title}}</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi odit nemo doloremque
+
+                <div class="text-sm flex flex-wrap list-none gap-3">
+                    {{range .Params.tags}}
+                        {{ with $.Site.GetPage (printf "/tags/%s" .) }}
+
+                            <label>
+                                <a href="{{.RelPermalink}}" style="background-color: {{.Params.color}};" aria-current="page" class="px-2 rounded-lg text-white py-1 no-underline border hover:border-gray-900">
+                                    {{.Title}}
+                                </a>
+                            </label>
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi odit nemo doloremque
                     vel mollitia officia
                     laudantium? Nisi deserunt cumque, consequatur nam tenetur aperiam, ab, voluptate corrupti ex
                     porro a
                     dolorum.</p>
 
+
+                    <a href="{{.RelPermalink}}"
+                        class="mt-5 text-white bg-[#b76450] px-5 py-2.5 inline-flex items-center no-underline rounded-lg">
+                        Make a request
+                        {{ partial "arrow.html" . }}
+                    </a>
       
             </div>
         </div>
@@ -20,6 +40,11 @@
             {{ partial "components/image.html" . }}
             {{ end }}
         </div>
+    </div>
+
+    <div class="format py-8 max-w-none text-gray-600">
+        <h2>About</h2>
+        {{.Content}}
     </div>
 </div>
 

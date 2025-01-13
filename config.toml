@@ -9,7 +9,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 
 [Params]
   ogimage = ""
-  keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'guide', 'angling']
+  keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
 
 

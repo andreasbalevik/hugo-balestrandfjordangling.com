@@ -1,16 +1,78 @@
+local_backend: true
+editor:
+  preview: false
 backend:
   name: git-gateway
   branch: master
-media_folder: assets/images
+media_folder: /assets/images
+public_folder: 'images'
 collections:
   - name: 'activeties'
     label: 'Activeties'
     folder: 'content/activeties'
+    path: "{{slug}}/index"
     create: true
     slug: '{{slug}}'
-    editor:
-      preview: false
+    filter:
+          field: cms
+          value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Images'
+        name: 'images'
+        widget: 'list'
+        media_folder: /assets/images
+        public_folder: 'images'
+        fields:
+          - { label: 'Image Source', name: 'src', widget: 'image' }
+          - { label: 'Image Alt', name: 'alt', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - label: 'Categories'
+        name: 'tags'
+        widget: 'select'
+        multiple: true
+        options:
+          - { label: 'Business and Pleasure', value: 'business-and-pleasure' }
+          - { label: 'Bike and Hike', value: 'bike-and-hike' }
+          - { label: 'Family and Friends', value: 'family-and-friends' }
+        required: true
+      - label: "Keywords"
+        name: "keywords"
+        widget: "list"
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
+  
+  - name: 'pages'
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Frontpage" 
+        name: "frontpage"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - label: 'Banner Image'
+            name: 'images'
+            widget: 'list'
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image' }
+              - { label: 'Image Alt', name: 'alt', widget: 'string' }
+
+
+          - label: "Recommended"
+            name: "recommended"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - { label: 'Recommended title', name: 'title', widget: 'string' }
+              - label: "Recommended activeties"
+                name: "activeties"
+                widget: "list"
+                summary: '{{fields.title}}'
+                allow_add: true
+                max: 3
+                min: 3
+                field: {label: Activity,name: recommended_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
+
+
