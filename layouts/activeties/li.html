@@ -1,0 +1,22 @@
+
+
+        
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:border-gray-600 overflow-hidden">
+    <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
+        <div>
+        {{ range first 1 .Params.images }}
+            {{ partial "components/image.html" . }}
+        {{ end }}
+        </div>
+        <div class="p-5">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h5>
+
+
+            <ul class="text-sm grid gap-3">
+                {{ partial "tags-link-page.html" . }}
+            </ul>
+            
+        </div>
+    </a>
+</div>

@@ -1,0 +1,59 @@
+<div class="container py-8">
+
+    <div class="grid justify-items-start text-base">
+        <div class="pb-4">
+
+            <b>Filter:</b>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                class="rounded-lg px-5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">
+
+
+                {{ if eq .Title "Activeties"}}
+                None
+                {{ else }}
+                <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
+                    {{.Title}}
+                </span>
+                {{ end }}
+
+
+                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 4 4 4-4" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                    {{ with .Site.GetPage "activeties" }}
+                    <a href="{{.RelPermalink}}" aria-current="page">
+                        <li class="block px-4 py-2 hover:bg-gray-100">
+                            None
+                        </li>
+                    </a>
+                    {{ end }}
+
+
+                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                    <a href="{{ .RelPermalink }}">
+                        <li class="block px-4 py-2 hover:bg-gray-100">
+                            {{ .Title }}
+                        </li>
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ range .Pages }}
+            {{ .Render "li" }}
+        {{ end }}
+    </div>
+</div>

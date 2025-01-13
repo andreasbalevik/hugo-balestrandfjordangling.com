@@ -4,6 +4,7 @@ images:
   - src: "images/img_0620.jpeg"
 tags:
 - business-and-pleasure
+- bike-and-hike
 ---
 
 

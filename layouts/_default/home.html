@@ -1,53 +1,69 @@
 {{ define "main" }}
 
-<div class="container py-8">
-    <div class="bg-white border border-gray-200 grid grid-cols-1 lg:grid-cols-2">
-        <div class="p-8 h-full flex order-2 lg:order-1">
-            <div class="format lg:format-lg mx-auto my-auto">
-                <h2>Real, Fjord, Adventures</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi odit nemo doloremque
-                    vel mollitia officia
-                    laudantium? Nisi deserunt cumque, consequatur nam tenetur aperiam, ab, voluptate corrupti ex porro a
-                    dolorum.</p>
+<div style="background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+    <div class="container py-8">
+        <div class="bg-white grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 h-full flex order-2 lg:order-1">
+                <div class="format lg:format-lg mx-auto my-auto">
+                    <h2>Real, Fjord, Adventures</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi odit nemo doloremque
+                        vel mollitia officia
+                        laudantium? Nisi deserunt cumque, consequatur nam tenetur aperiam, ab, voluptate corrupti ex
+                        porro a
+                        dolorum.</p>
 
-                <button type="button"
-                    class="mt-5 text-white bg-[#b76450] px-5 py-2.5 me-2 mb-2 inline-flex items-center">
-                    Find your next fjordadventure
-                    {{ partial "arrow.html" . }}
-                </button>
+                    {{ with .GetPage "activeties" }}
+                    <a href="{{.RelPermalink}}"
+                        class="mt-5 text-white bg-[#b76450] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline">
+                        Find your next adventure
+                        {{ partial "arrow.html" . }}
+                    </a>
+                    {{ end }}
+                </div>
             </div>
-        </div>
-        <div class="order-1 lg:order-2">
-            {{ with .Params.banner_image }}
-                {{ partial "components/image-banner.html" . }}
-            {{ end }}
+            <div class="order-1 lg:order-2">
+                {{ with .Params.banner_image }}
+                    {{ partial "components/image-banner.html" . }}
+                {{ end }}
+            </div>
         </div>
     </div>
 </div>
+<div>
 
-<div class="bg-white">
-    <div class="container py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+    <div class="bg-white">
+        <div class="container py-12">
+            <div class="format lg:format-lg w-full mb-8 text-center mx-auto">
+                <h3>Choose Your Activity Type</h3>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
 
-            {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
-            {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-
-                {{ $color := "bg-[.Params.color]"}}
+                {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <a href={{ .RelPermalink }}>
-                <div style="background-color: {{.Params.color}};" class="border border-gray-200 text-xl text-white p-5 text-center">
+                    <div style="background-color: {{.Params.color}};"
+                        class="border border-gray-200 text-xl text-white p-5 text-center">
                         <div class="inline-flex items-center">
-                            
-                                {{.Title}}
-                            
+
+                            {{.Title}}
                             {{ partial "arrow.html" . }}
                         </div>
                     </div>
-                    </a>
-            {{end}}
-            {{end}}
-           
+                </a>
+                {{end}}
+                {{end}}
+
+            </div>
         </div>
     </div>
-</div>
 
-{{ end }}
+
+    <div class="container py-8">
+        <div class="bg-white grid grid-cols-1 lg:grid-cols-3">
+
+
+        </div>
+    </div>
+
+    {{ end }}

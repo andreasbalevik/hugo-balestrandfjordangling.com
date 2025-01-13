@@ -1,9 +1,3 @@
 {{ define "main" }}
-
-{{.Title}}
-
-{{range .Pages }}
-    {{.Title}}
-{{ end }}
-
+    {{ partial "activeties-list-terms.html" . }}
 {{ end }}
