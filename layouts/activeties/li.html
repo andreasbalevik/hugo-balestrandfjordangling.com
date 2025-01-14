@@ -8,18 +8,18 @@
         <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h5>
  
-            <ul class="text-sm flex flex-wrap gap-3 mt-4">
+            <div class="text-sm flex flex-wrap list-none gap-3">
                 {{range .Params.tags}}
                     {{ with $.Site.GetPage (printf "/tags/%s" .) }}
 
-                        <li class="me-2">
+                        
                             <span style="background-color: {{.Params.color}};" aria-current="page" class="px-2 rounded-lg text-white py-1">
                                 {{.Title}}
                             </span>
-                        </li>
+                        
                     {{ end }}
                 {{ end }}
-            </ul>
+            </div>
      
         </div>
     </a>

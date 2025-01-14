@@ -1,14 +1,27 @@
 ---
 title: BALESTRAND FJORD FISKE / FJORD UTFLUKT
-images: 
-  - src: "images/img_0620.jpeg"
-cms: true
+images:
+  - src: images/img_0620.jpeg
+    alt: fishing
+  - src: images/img_3234.jpeg
+    alt: fishing
+  - src: images/image1.jpeg
+    alt: fishing
+description: Desc
 tags:
-- business-and-pleasure
-- bike-and-hike
+  - business-and-pleasure
+  - bike-and-hike
 keywords:
-- test
-- test2
+  - test
+  - test2
+information:
+  practical:
+    - Test 123 123 123
+    - Test 321 321 321
+  included:
+    - Included 123 123
+    - Included 321 321
+cms: true
 ---
 
 

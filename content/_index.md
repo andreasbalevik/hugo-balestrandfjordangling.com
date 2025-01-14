@@ -7,14 +7,10 @@ description: Consequat velit ullamco est id commodo velit enim et. Commodo nisi
 images:
   - src: images/b67i4994.jpg
     alt: asd
-recommended_activeties:
-  - balestrand-fjord-angling/index
-  - family-expedition/index
-  - snowshoe-hike-in-balestrand/index
 recommended:
   title: Captain Tor's Recommendation
   activeties:
     - balestrand-fjord-angling/index
-    - family-expedition/index
     - snowshoe-hike-in-balestrand/index
+    - family-expedition/index
 ---

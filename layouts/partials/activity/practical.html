@@ -1,0 +1,33 @@
+<div class="format text-gray-600 grid grid-cols-1 lg:grid-cols-2">
+
+        <div>
+            <h2 class="mt-4">Practical</h2>
+
+            <ul>
+                {{range .Params.information.practical }}
+                <li>{{.}}</li>
+                {{ end }}
+
+                {{range .Site.Data.information.practical }}
+                <li>{{.}}</li>
+                {{ end }}
+
+            </ul>
+        </div>
+        
+        <div>
+            <h2 class="mt-4">Included</h2>
+            <ul>
+                {{range .Params.information.included }}
+                <li>{{.}}</li>
+                {{ end }}
+
+                {{range .Site.Data.information.included }}
+                <li>{{.}}</li>
+                {{ end }}
+            </ul>
+        </div>
+
+
+
+</div>

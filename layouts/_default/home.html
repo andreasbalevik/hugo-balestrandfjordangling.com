@@ -3,7 +3,7 @@
 <div style="background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
     <div class="container py-8">
-        <div class="bg-white grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow">
             <div class="p-8 h-full flex order-2 lg:order-1">
                 <div class="format lg:format-lg mx-auto my-auto">
                     <h2>{{.Title}}</h2>
@@ -55,13 +55,12 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
    
 <div class="container py-8">
 
-        <div class="format lg:format-lg mb-8 text-left ">
+        <div class="format lg:format-lg mb-6 text-left ">
             <h3>{{.Params.recommended.title}}</h3>
         </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {{ range .Params.recommended.activeties }}
-
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
                 {{ .Render "li" }}

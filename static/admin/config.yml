@@ -39,6 +39,23 @@ collections:
       - label: "Keywords"
         name: "keywords"
         widget: "list"
+
+      - label: "Information"
+        name: "information"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - label: "Practical"
+            name: "practical"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+          - label: "Included"
+            name: "included"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
   
@@ -74,5 +91,26 @@ collections:
                 max: 3
                 min: 3
                 field: {label: Activity,name: recommended_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
+
+
+  - name: 'global'
+    label: "Global"
+    files:
+      - file: "data/information.yml"
+        label: "Information"
+        name: "information"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - label: "Practical"
+            name: "practical"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+          - label: "Included"
+            name: "included"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
 
 
