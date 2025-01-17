@@ -2,7 +2,7 @@
 
 <div class="container py-8">
     <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow mx-auto">
-        <div class="p-8 md:p-4 lg:p-8 h-full flex order-2 lg:order-2">
+        <div class="px-4 py-8 md:p-8 h-full flex order-2 lg:order-2">
             <div class="format lg:format-lg max-w-none mx-auto my-auto">
 
                 <div class="text-sm flex flex-wrap list-none gap-3 mb-4">
@@ -55,27 +55,27 @@
                     </label>
                 </div>
 
-                <p class="text-gray-600 text-base">{{.Params.description}}</p>
-
+                {{ with .Params.description }}
+                <p class="text-gray-600 text-base">
+                    {{ . }}
+                </p>
+                {{ end }}
 
                 <a href="{{.RelPermalink}}"
                     class="text-base mt-5 text-white bg-[#b76450] px-5 py-2.5 inline-flex items-center no-underline rounded-lg">
                     Make a request
                     {{ partial "arrow.html" . }}
                 </a>
-
             </div>
         </div>
         <div class="order-1 lg:order-1">
             {{ with .Params.images }}
-            {{ partial "components/carousel-full-width" (dict "ctx" . "images" . ) }}
+                {{ partial "components/carousel-fluid" . }}
             {{ end }}
         </div>
     </div>
 
-
-    <div class="rounder-lg bg-gray-50 p-8 shadow ">
-
+    <div class="rounder-lg px-0 py-8 md:p-8 shadow bg-gray-50" >
         <div class="mx-auto max-w-4xl">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
                 data-tabs-toggle="#default-styled-tab-content"
@@ -83,8 +83,8 @@
                 data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
                 role="tablist">
                 <li class="me-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab"
-                        data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="about-styled-tab"
+                        data-tabs-target="#styled-about" type="button" role="tab" aria-controls="about"
                         aria-selected="false">
                         About
                     </button>
@@ -92,33 +92,21 @@
                 <li class="me-2" role="presentation">
                     <button
                         class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                        id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
-                        aria-controls="dashboard" aria-selected="false">Practical</button>
+                        id="practical-styled-tab" data-tabs-target="#styled-practical" type="button" role="tab"
+                        aria-controls="practical" aria-selected="false">Practical information</button>
                 </li>
-                <li class="me-2" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                        id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab"
-                        aria-controls="settings" aria-selected="false">Booking</button>
-                </li>
-            
             </ul>
         </div>
         <div id="default-styled-tab-content">
             <div class="mx-auto max-w-4xl">
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
+                <div class="hidden p-4 rounded-lg " id="styled-about" role="tabpanel"
                     aria-labelledby="profile-tab">
                     {{ partial "activity/about" . }}
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
+                <div class="hidden p-4 rounded-lg  " id="styled-practical" role="tabpanel"
                     aria-labelledby="dashboard-tab">
                     {{ partial "activity/practical" . }}
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel"
-                    aria-labelledby="settings-tab">
-                    {{ partial "activity/booking" .}}
-                </div>
-
             </div>
         </div>
 

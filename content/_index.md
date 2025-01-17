@@ -5,7 +5,7 @@ description: Consequat velit ullamco est id commodo velit enim et. Commodo nisi
   nostrud culpa incididunt. Incididunt dolor fugiat ex et sunt labore culpa
   adipisicing.
 images:
-  - src: images/b67i4994.jpg
+  - src: images/img_3234.jpeg
     alt: asd
 recommended:
   title: Captain Tor's Recommendation

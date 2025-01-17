@@ -2,7 +2,7 @@
     <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
         <div>
         {{ range first 1 .Params.images }}
-            {{ partial "components/image.html" . }}
+            {{ partial "components/thumbnail.html" . }}
         {{ end }}
         </div>
         <div class="p-5">
@@ -11,12 +11,9 @@
             <div class="text-sm flex flex-wrap list-none gap-3">
                 {{range .Params.tags}}
                     {{ with $.Site.GetPage (printf "/tags/%s" .) }}
-
-                        
                             <span style="background-color: {{.Params.color}};" aria-current="page" class="px-2 rounded-lg text-white py-1">
                                 {{.Title}}
                             </span>
-                        
                     {{ end }}
                 {{ end }}
             </div>
