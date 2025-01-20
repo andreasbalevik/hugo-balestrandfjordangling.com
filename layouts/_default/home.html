@@ -29,9 +29,13 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 
 <div class="bg-white">
     <div class="container py-12">
+
+        {{ with .Params.categories.title }}
         <div class="format lg:format-lg w-full mb-8 text-center mx-auto">
-            <h3>Choose Your Activity Type</h3>
+            <h3>{{.}}</h3>
         </div>
+        {{ end }}
+        
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
 
             {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}

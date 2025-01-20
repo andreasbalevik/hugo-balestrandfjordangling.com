@@ -13,4 +13,6 @@ recommended:
     - balestrand-fjord-angling/index
     - snowshoe-hike-in-balestrand/index
     - family-expedition/index
+categories:
+  title: Choose Your Activity Type
 ---

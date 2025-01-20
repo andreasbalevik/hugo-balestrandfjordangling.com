@@ -70,12 +70,12 @@
         </div>
         <div class="order-1 lg:order-1">
             {{ with .Params.images }}
-                {{ partial "components/carousel-fluid" . }}
+            {{ partial "components/carousel-fluid" . }}
             {{ end }}
         </div>
     </div>
 
-    <div class="rounder-lg px-0 py-8 md:p-8 shadow bg-gray-50" >
+    <div class="rounder-lg px-0 py-8 md:p-8 shadow bg-gray-50">
         <div class="mx-auto max-w-4xl">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
                 data-tabs-toggle="#default-styled-tab-content"
@@ -99,8 +99,7 @@
         </div>
         <div id="default-styled-tab-content">
             <div class="mx-auto max-w-4xl">
-                <div class="hidden p-4 rounded-lg " id="styled-about" role="tabpanel"
-                    aria-labelledby="profile-tab">
+                <div class="hidden p-4 rounded-lg " id="styled-about" role="tabpanel" aria-labelledby="profile-tab">
                     {{ partial "activity/about" . }}
                 </div>
                 <div class="hidden p-4 rounded-lg  " id="styled-practical" role="tabpanel"
@@ -112,10 +111,22 @@
 
     </div>
 
-
-
-
-
 </div>
 
+
+<div class="container pb-12 pt-6 flex justify-center">
+    {{ with .GetPage "activeties" }}
+    <a href="{{.RelPermalink}}"
+        class="text-white bg-[#7a8992] hover:shadow-lg px-5 py-2.5 me-2 inline-flex items-center no-underline rounded-lg">
+        
+        <svg class="w-3 h-3 ml-1 text-white align-middle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+        </svg>
+        
+        Back to Activities
+    </a>
+    {{ end }}
+</div>
 {{ end }}

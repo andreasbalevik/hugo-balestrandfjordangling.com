@@ -25,7 +25,7 @@ collections:
         public_folder: 'images'
         fields:
           - { label: 'Image Source', name: 'src', widget: 'image' }
-          - { label: 'Image Alt', name: 'alt', widget: 'string' }
+          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'string' }
       - label: 'Categories'
         name: 'tags'
@@ -36,9 +36,7 @@ collections:
           - { label: 'Bike and Hike', value: 'bike-and-hike' }
           - { label: 'Family and Friends', value: 'family-and-friends' }
         required: true
-      - label: "Keywords"
-        name: "keywords"
-        widget: "list"
+      - { label: "Keywords", name: "keywords", widget: "list" }
 
       - label: "Information"
         name: "information"
@@ -58,6 +56,39 @@ collections:
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
+
+
+  - name: 'inspirations'
+    label: 'Inspirations'
+    folder: 'content/inspirations'
+    path: "{{slug}}/index"
+    create: true
+    slug: '{{slug}}'
+    filter:
+          field: cms
+          value: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Images'
+        name: 'images'
+        widget: 'list'
+        media_folder: /assets/images
+        public_folder: 'images'
+        fields:
+          - { label: 'Image Source', name: 'src', widget: 'image' }
+          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Keywords", name: "keywords", widget: "list" }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: "Related activeties"
+        name: "related_activeties"
+        widget: "list"
+        summary: '{{fields.title}}'
+        allow_add: true
+        min: 1
+        max: 3
+        field: {label: Activity,name: related_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
+      - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
   
   - name: 'pages'
     label: "Pages"
@@ -74,8 +105,14 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image' }
-              - { label: 'Image Alt', name: 'alt', widget: 'string' }
-
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          
+          - label: "Categories"
+            name: "categories"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - { label: 'Categories title', name: 'title', widget: 'string' }
 
           - label: "Recommended"
             name: "recommended"
@@ -88,10 +125,23 @@ collections:
                 widget: "list"
                 summary: '{{fields.title}}'
                 allow_add: true
-                max: 3
                 min: 3
+                max: 3
                 field: {label: Activity,name: recommended_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
 
+      - file: "content/about/_index.md"
+        label: "About" 
+        name: "About"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: 'Banner Image'
+            name: 'images'
+            widget: 'list'
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image' }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'global'
     label: "Global"

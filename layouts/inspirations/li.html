@@ -1,0 +1,28 @@
+<div class=" bg-white border border-gray-200 rounded-lg shadow overflow-hidden hover:shadow-lg cursor-pointer">
+    <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
+
+
+        <div class="relative">
+
+            <!-- Background with opacity -->
+            <div class="absolute inset-0 bg-black opacity-25 z-40"></div>
+
+            <!-- Image -->
+            <div>
+                {{ range first 1 .Params.images }}
+                {{ partial "components/thumbnail.html" . }}
+                {{ end }}
+            </div>
+
+            <!-- Centered text -->
+            <div class="absolute inset-0 z-50 flex flex-col items-center justify-center text-white">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight max-w-[300px]">{{.Title}}</h5>
+
+                
+                <span class="mt-6 flex items-center justify-center border border-gray-50 rounded-lg px-4 py-1">Read more {{ partial "arrow" . }}</span>
+            </div>
+        </div>
+
+
+    </a>
+</div>
