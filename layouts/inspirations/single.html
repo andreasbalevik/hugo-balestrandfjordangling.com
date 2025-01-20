@@ -12,10 +12,7 @@
                 </div>
                 <div class="mx-auto max-w-2xl format">
                     {{.Content }}
-
-
                 </div>
-
 
                 {{ with .Params.related_activeties }}
                 <div class="pt-16 pb-8">
@@ -43,6 +40,22 @@
             </div>
         </div>
     </section>
+</div>
+
+<div class="container pb-12 pt-6 flex justify-center">
+    {{ with .GetPage "activeties" }}
+    <a href="{{.RelPermalink}}"
+        class="text-white bg-[#7a8992] hover:shadow-lg px-5 py-2.5 me-2 inline-flex items-center no-underline rounded-lg">
+
+        <svg class="w-5 h-5 mr-2 mt-1 text-white align-middle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h14M5 12l4-4m-4 4 4 4" />
+        </svg>
+
+        See all Activities
+    </a>
+    {{ end }}
 </div>
 
 

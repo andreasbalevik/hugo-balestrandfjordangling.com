@@ -1,5 +1,10 @@
 ---
 title: BALESTRAND FJORD FISKE / FJORD UTFLUKT
+description: Est labore ea sit officia ea. In non ut aliquip nulla ut do
+  incididunt sint nulla eiusmod irure nostrud. Ullamco nostrud ad Lorem proident
+  quis velit ut. Sint incididunt eu magna dolor Lorem veniam fugiat duis ullamco
+  duis pariatur. Eu laborum in sunt fugiat amet culpa ex officia sit enim dolor
+  magna velit.
 images:
   - src: images/img_0620.jpeg
     alt: fishing
@@ -7,13 +12,16 @@ images:
     alt: fishing
   - src: images/image1.jpeg
     alt: fishing
-description: Desc
 tags:
   - business-and-pleasure
   - bike-and-hike
 keywords:
   - test
   - test2
+product_info:
+  duration: 4
+  persons: "5"
+  price: 10000
 information:
   practical:
     - Test 123 123 123
