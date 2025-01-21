@@ -18,7 +18,8 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text', pattern: ['^.{0,397}$', 'Max 397 characters'] }
+      - { label: "SEO Keywords", name: "keywords", widget: "list" }
+      - { label: 'SEO Description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
       - label: 'Images'
         name: 'images'
         widget: 'list'
@@ -37,26 +38,39 @@ collections:
           - { label: 'Bike and Hike', value: 'bike-and-hike' }
           - { label: 'Family and Friends', value: 'family-and-friends' }
         required: true
-      - { label: "Keywords", name: "keywords", widget: "list" }
 
       - label: "Product info"
         name: "product_info"
         widget: "object"
         collapsed: true
         fields: 
-          - label: 'Duration'
-            name: 'duration'
-            widget: 'select'
-            multiple: false
-            options:
-              - { label: '1 hours', value: '1' }
-              - { label: '2 hours', value: '2' }
-              - { label: '3 hours', value: '3' }
-              - { label: '4 hours', value: '4' }
-              - { label: '5 hours', value: '5' }
-              - { label: '6 hours', value: '6' }
-              - { label: '7 hours', value: '7' }
-              - { label: '8 hours', value: '8' }
+          - label: "Duration"
+            name: "duration"
+            widget: 'object'
+            collapse: true
+            fields: 
+              - label: 'Hours'
+                name: 'hours'
+                widget: 'select'
+                options:
+                  - { label: '0 hours', value: 0 }
+                  - { label: '1 hour', value: 1 }
+                  - { label: '2 hours', value: 2 }
+                  - { label: '3 hours', value: 3 }
+                  - { label: '4 hours', value: 4 }
+                  - { label: '5 hours', value: 5 }
+                  - { label: '6 hours', value: 6 }
+                  - { label: '7 hours', value: 7 }
+                  - { label: '8 hours', value: 8 }
+              - label: 'Minutes'
+                name: 'minutes'
+                widget: 'select'
+                options:
+                  - { label: '0 minutes', value: 0 }
+                  - { label: '15 minutes', value: 15 }
+                  - { label: '30 minutes', value: 30 }
+                  - { label: '45 minutes', value: 45 }
+
           - label: 'Max Persons'
             name: 'persons'
             widget: 'select'
@@ -70,10 +84,21 @@ collections:
               - { label: '6', value: '6' }
               - { label: '7', value: '7' }
               - { label: '8', value: '8' }
-          - label: "Price"
-            name: "price"
-            widget: "number"
-            value_type: "int"
+          
+          - label: "Prices for Each Person"
+            name: "prices"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Person Number"
+                name: "person_number"
+                widget: "number"
+                hint: "Enter the person number (e.g., 1, 2, 3...)"
+              - label: "Price"
+                name: "price"
+                widget: "number"
+                hint: "Enter the price for this number of persons"
+
 
       - label: "Information"
         name: "information"
@@ -106,6 +131,7 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: 'Description', name: 'description', widget: 'text', pattern: ['^.{0,397}$', 'Max 397 characters'] }
       - label: 'Images'
         name: 'images'
@@ -116,7 +142,6 @@ collections:
           - { label: 'Image Source', name: 'src', widget: 'image' }
           - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
 
-      - { label: "Keywords", name: "keywords", widget: "list" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: "Related activeties"
         name: "related_activeties"
@@ -185,7 +210,7 @@ collections:
     label: "Global"
     files:
       - file: "data/information.yml"
-        label: "Information"
+        label: "Global Practical and Included"
         name: "information"
         widget: "object"
         collapsed: true
@@ -200,5 +225,15 @@ collections:
             widget: "list"
             summary: '{{fields.info}}'
             field: {label: Info,name: info,widget: string}
+
+      - file: "data/configuration.yml"
+        label: "Site Configuration"
+        name: "configuration"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - label: "Global Activity Label"
+            name: "global_activity_label"
+            widget: "string"
 
 

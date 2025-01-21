@@ -5,14 +5,13 @@ description: Consequat velit ullamco est id commodo velit enim et. Commodo nisi
   nostrud culpa incididunt. Incididunt dolor fugiat ex et sunt labore culpa
   adipisicing.
 images:
-  - src: images/img_3234.jpeg
-    alt: asd
+  - src: images/katrine-web.jpg
+categories:
+  title: Choose Your Activity Type
 recommended:
   title: Captain Tor's Recommendation
   activeties:
     - balestrand-fjord-angling/index
     - snowshoe-hike-in-balestrand/index
     - family-expedition/index
-categories:
-  title: Choose Your Activity Type
 ---

@@ -6,12 +6,12 @@
         {{ end }}
         </div>
         <div class="p-5 ">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h5>
+            <h2 class="mb-4 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h2>
  
-            <div class="text-sm flex flex-wrap list-none gap-3">
+            <div class="text-sm flex flex-wrap list-none gap-3 ">
                 {{range .Params.tags}}
                     {{ with $.Site.GetPage (printf "/tags/%s" .) }}
-                            <span style="background-color: {{.Params.color}};" aria-current="page" class="px-2 rounded-lg text-white py-1">
+                            <span style="background-color: {{.Params.color}};" aria-current="page" class="text-sm px-2 rounded-lg text-white py-1">
                                 {{.Title}}
                             </span>
                     {{ end }}

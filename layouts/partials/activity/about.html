@@ -1,4 +1,13 @@
 <div class="format text-gray-600 ">
+
 <h2 class="mt-4">About</h2>
-    {{.Content}}
+{{ with .Content }}
+
+    {{.}}
+
+    {{ else }}
+
+    <p>No information has been added about this tour yet</p>
+
+{{ end }}
 </div>
