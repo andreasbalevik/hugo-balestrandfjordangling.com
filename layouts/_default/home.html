@@ -9,10 +9,11 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
                     <h2>{{.Title}}</h2>
                     <p>{{.Params.description}}</p>
 
+                    {{ $action_button := .Params.action_button }}
                     {{ with .GetPage "activeties" }}
                     <a href="{{.RelPermalink}}"
-                        class="mt-5 text-white bg-[#b76450] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
-                        Find your next adventure
+                        class="mt-5 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
+                        {{$action_button}}
                         {{ partial "arrow.html" . }}
                     </a>
                     {{ end }}

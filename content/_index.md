@@ -1,9 +1,9 @@
 ---
 title: Real, Fjord, Adventures
-description: Consequat velit ullamco est id commodo velit enim et. Commodo nisi
-  minim deserunt dolor ullamco duis. Amet adipisicing voluptate in sit tempor
-  nostrud culpa incididunt. Incididunt dolor fugiat ex et sunt labore culpa
-  adipisicing.
+description: Welcome to Balestrand Fjord Angling, Your local fjord adventure
+  expert who also brings you to the pristine parts of the Sognefjord. You are
+  looking for quality, am I right?
+action_button: Find your next adventure
 images:
   - src: images/katrine-web.jpg
 categories:
@@ -11,7 +11,7 @@ categories:
 recommended:
   title: Captain Tor's Recommendation
   activeties:
-    - balestrand-fjord-angling/index
-    - snowshoe-hike-in-balestrand/index
-    - family-expedition/index
+    - amazing-snowshoe-hike-in-balestrand-of-norway-sognefjord/index
+    - balestrand-fjord-angling-family-expedition/index
+    - balestrand-fjord-angling-or-fjord-excursion/index
 ---

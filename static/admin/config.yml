@@ -1,4 +1,4 @@
-#local_backend: true
+local_backend: true
 editor:
   preview: false
 backend:
@@ -169,6 +169,7 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - { label: 'Description', name: 'description', widget: 'text', pattern: ['^.{0,397}$', 'Max 397 characters'] }
+          - { label: 'Action button', name: 'action_button', widget: 'string'}
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'

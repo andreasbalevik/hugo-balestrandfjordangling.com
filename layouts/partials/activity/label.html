@@ -1,3 +1,4 @@
-{{ with .Params.label }}
-<label class="absolute top-0 px-5 py-1 bg-[#A7F3D0] font-semibold z-40">{{ . }}</label>
+{{ with index .Params.product_info.prices 0 }}
+<label class="absolute top-0 left-0 px-5 py-1 text-base text-white bg-[#008000] z-40">Price from: <b>{{ .price }},- NOK</b></label>
 {{ end }}
+
