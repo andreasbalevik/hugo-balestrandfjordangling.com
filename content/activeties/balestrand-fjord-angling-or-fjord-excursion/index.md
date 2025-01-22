@@ -32,7 +32,7 @@ product_info:
 information:
   options:
     global_practical: true
-    global_included: false
+    global_included: true
   practical: []
   included:
     - "Suits and boots are available for you. If smaller children, bring your
