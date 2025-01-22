@@ -4,7 +4,7 @@ menus:
   main:
     name: About
 images:
-  - src: images/b67i4994.jpg
+  - src: images/thumbnail_img_0243.jpg
     alt: ""
 ---
 # About Balestrand Fjord Angling
