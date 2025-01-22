@@ -18,8 +18,9 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "SEO Keywords", name: "keywords", widget: "list" }
-      - { label: 'SEO Description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+      - { label: 'Label', name: 'label', widget: 'string' }
+      - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
       - label: 'Images'
         name: 'images'
         widget: 'list'
@@ -104,7 +105,13 @@ collections:
         name: "information"
         widget: "object"
         collapsed: true
-        fields: 
+        fields:
+          - label: "Options"
+            name: "options"
+            widget: "object"
+            fields:
+              - {label: Add global practical, name: global_practical, widget: boolean, default: false, required: false}
+              - {label: Add global included, name: global_included, widget: boolean, default: false, required: false}
           - label: "Practical"
             name: "practical"
             widget: "list"

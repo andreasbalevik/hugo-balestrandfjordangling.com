@@ -1,12 +1,16 @@
 <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow hover:border-gray-600 overflow-hidden h-full cursor-pointer">
     <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
-        <div>
+        <div class="relative">
         {{ range first 1 .Params.images }}
             {{ partial "components/thumbnail.html" . }}
         {{ end }}
+
+        {{ partial "activity/label" . }}
         </div>
         <div class="p-5 ">
             <h2 class="mb-4 text-2xl font-bold tracking-tight text-gray-900">{{.Title}}</h2>
+
+
  
             <div class="text-sm flex flex-wrap list-none gap-3 ">
                 {{range .Params.tags}}
