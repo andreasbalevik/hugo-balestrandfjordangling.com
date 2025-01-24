@@ -1,5 +1,6 @@
 ---
 title: AMAZING SNOWSHOE HIKE IN BALESTRAND OF NORWAY SOGNEFJORD
+lastmod: "2022-06-16T22:21:00"
 quality: CLEAN AIR
 keywords:
   - snow
@@ -31,7 +32,7 @@ information:
       from Balestrand, and you as a guest get a clear understanding of this,
       with everything you experience in the boat and the program.  Welcome to a
       real, local fjord experience!
-  Options:
+  options:
     global_practical: false
     global_included: false
 product_info:
