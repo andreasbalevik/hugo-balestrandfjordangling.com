@@ -12,8 +12,9 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
 
-
-
 [taxonomies]
   tag = 'tags'
+
+enableGitInfo = true
+
 
