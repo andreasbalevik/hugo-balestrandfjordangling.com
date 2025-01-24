@@ -30,11 +30,15 @@ information:
   options:
     global_practical: false
     global_included: false
+    global_bike_practical: true
   included:
     - Helmet og bike lock
     - 3 hours rent and price example per bike in the booking form. If you want a
       longer rental period (6 hours), we will take this when handing over the
       bikes
+  practical:
+    - "The duration of this tour is 3h . The tour only allows groups of 1-6
+      peoples "
 cms: true
 ---
 Cycling around the Esefjord to return roundabout at Dragsvik Hotell or to Lunde Park and swimming area is a nice and widely used training session in scenic surroundings with a relatively flat ascent curve.
