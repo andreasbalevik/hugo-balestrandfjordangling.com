@@ -7,7 +7,7 @@ action_button: Find your next adventure
 images:
   - src: images/katrine-web.jpg
 categories:
-  title: Choose Your Activity Type
+  title: Pick Your Tour Style
 recommended:
   title: Captain Tor's Recommendation
   activities:
