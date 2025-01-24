@@ -1,10 +1,10 @@
 ---
 title: AMAZING SNOWSHOE HIKE IN BALESTRAND OF NORWAY SOGNEFJORD
-lastmod: "2022-06-16T22:21:00"
 quality: CLEAN AIR
 keywords:
   - snow
   - snowshoes
+  - hike
 description: Experience snow-covered landscapes and stunning views of
   Sognefjord. Feel the thrill of fresh mountain air, crisp snow, and the beauty
   of nature around you.
@@ -16,6 +16,22 @@ images:
   - src: images/truge-andr-kopi.jpeg
 tags:
   - bike-and-hike
+product_info:
+  duration:
+    hours: 3
+    minutes: 0
+  persons: "4"
+  prices:
+    - person_number: 1
+      price: 2000
+    - person_number: 2
+      price: 2000
+    - person_number: 3
+      price: 3000
+    - person_number: 4
+      price: 4000
+cms: true
+lastmod: 2022-06-16T22:21:00
 information:
   included:
     - Snowshoes and poles and CaptainTor as local guide
@@ -35,21 +51,6 @@ information:
   options:
     global_practical: false
     global_included: false
-product_info:
-  duration:
-    hours: 3
-    minutes: 0
-  persons: "4"
-  prices:
-    - person_number: 1
-      price: 2000
-    - person_number: 2
-      price: 2000
-    - person_number: 3
-      price: 3000
-    - person_number: 4
-      price: 4000
-cms: true
 ---
 #### **L﻿IMITS ARE A MINDSET - T﻿HRILL YOUR SENCES** 
 
