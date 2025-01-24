@@ -77,6 +77,7 @@ collections:
               - label: 'Hours'
                 name: 'hours'
                 widget: 'select'
+                required: false
                 options:
                   - { label: '0 hours', value: 0 }
                   - { label: '1 hour', value: 1 }
@@ -89,6 +90,7 @@ collections:
                   - { label: '8 hours', value: 8 }
               - label: 'Minutes'
                 name: 'minutes'
+                required: false
                 widget: 'select'
                 options:
                   - { label: '0 minutes', value: 0 }
@@ -99,6 +101,7 @@ collections:
           - label: 'Max Persons'
             name: 'persons'
             widget: 'select'
+            required: false
             multiple: false
             options:
               - { label: '1', value: '1' }
@@ -126,7 +129,6 @@ collections:
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
-
 
   - name: 'inspirations'
     label: 'Inspirations'
@@ -156,6 +158,7 @@ collections:
         widget: "list"
         summary: '{{fields.title}}'
         allow_add: true
+        required: false
         min: 1
         max: 3
         field: {label: Activity,name: related_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["quality","title"]}
