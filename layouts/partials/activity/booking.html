@@ -121,7 +121,7 @@
                         <label class="block mb-2 text-sm font-medium text-gray-900 ">
                             Total Price
                         </label>
-                        <input type="text" id="price-visible"
+                        <input type="text" id="price-visible" name="total_price"
                             class="mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg w-full"
                             value="{{ range first 1 .Params.product_info.prices }}{{.price}}{{end}},- NOK" readonly>
                     </div>
