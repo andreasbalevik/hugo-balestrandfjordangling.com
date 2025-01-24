@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-{{ $root := .GetPage "index" }}
+
 {{ $blur_filter := images.GaussianBlur 100 }}
-{{ $image_path := index $root.Params.images 0}}
-{{ $image := resources.GetMatch $image_path.src | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
+{{ $image_path := "images/katrine-web.jpg"}}
+{{ $image := resources.GetMatch $image_path | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
 {{ $backgroundImage := $image.Resize "x600 q50" }}
 <div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
 
