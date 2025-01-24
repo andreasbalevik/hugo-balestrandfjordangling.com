@@ -64,20 +64,18 @@
 </div>
    
 {{ with .Params.recommended }}
-<div class="container py-8">
-
-        <div class="format lg:format-lg mb-6 text-left ">
+<div class="container py-8 ">
+        <div class="format lg:format-lg mb-6 text-center md:text-left ">
             <h3>{{.title}}</h3>
         </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         {{ range .activities }}
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
                 {{ .Render "li" }}
             {{end}}
         {{ end }}
-
     </div>
 </div>
 

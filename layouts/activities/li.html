@@ -12,7 +12,14 @@
         </div>
         <div class="p-5 ">
 
-            <div class="space-x-2">
+
+
+
+            <h2 class="text-2xl font-bold text-gray-900">
+                <span class="flex text-xs text-gray-600">{{.Params.quality}}</span>{{.Title}}
+            </h2>
+
+            <div class="space-x-2 text-sm py-4">
                 <label class="inline-flex items-center"> <svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 24 24">
@@ -41,12 +48,7 @@
                 </label>
             </div>
 
-
-            <h2 class="py-4 text-2xl font-bold text-gray-900">
-                <span class="flex text-xs text-gray-600">{{.Params.quality}}</span>{{.Title}}
-            </h2>
-
-            <div class="text-sm flex flex-wrap list-none gap-3 ">
+            <div class="text-sm flex flex-wrap list-none gap-3">
                 {{range .Params.tags}}
                 {{ with $.Site.GetPage (printf "/tags/%s" .) }}
                 <span style="background-color: {{.Params.color}};" aria-current="page"

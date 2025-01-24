@@ -15,6 +15,12 @@
                     {{ end }}
                 {{ end }}
 
+                {{ if eq .Params.information.options.global_bike_practical true }}
+                    {{range .Site.Data.information.bike_rental_practical}}
+                        <li>{{.}}</li>
+                    {{ end }}
+                {{ end }}
+
             </ul>
         </div>
         
