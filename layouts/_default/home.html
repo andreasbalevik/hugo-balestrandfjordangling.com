@@ -16,7 +16,7 @@
                     {{ $action_button := .Params.action_button }}
                     {{ with .GetPage "activities" }}
                     <a href="{{ .RelPermalink }}"
-                        class="text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
+                        class="mt-2 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
                         {{ $action_button }}
                         {{ partial "arrow.html" . }}
                     </a>
