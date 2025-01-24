@@ -1,14 +1,11 @@
 ---
 title: BEST NORWAY SOGNEFJORD FISHING TRIP EXPERIENCE
-images:
-  - src: images/solveig-lyr-redigert.jpg
 description: '"From the city to the fjords" - Easy, fun Authentic Scandinavia
   Sognefjord Angling Adventure Experience, in the scenic Balestrand and Fjærland
   fjord landshape - Educational and entertaining too..'
-related_activities:
-  - balestrand-fjord-angling/index
-  - family-expedition/index
-  - snowshoe-hike-in-balestrand/index
+images:
+  - src: images/solveig-lyr-redigert.jpg
+related_activities: []
 cms: true
 ---
 
