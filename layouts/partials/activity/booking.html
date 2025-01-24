@@ -41,12 +41,12 @@
                     <div class="col-span-2">
                         <label for="activity" class="block mb-2 text-sm font-medium text-gray-900">Selected
                             Activity</label>
-                        <input type="text" id="activity" name="activity" aria-label="disabled input"
+                        <input type="text" id="activity" name="activity"
                             class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
-                            value="{{.Title}}" disabled>
-                        <input type="text" id="quality" name="quality" aria-label="disabled input"
+                            value="{{.Title}}" readonly>
+                        <input type="text" id="quality" name="quality"
                             class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
-                            value="{{.Params.quality}}" disabled>
+                            value="{{.Params.quality}}" readonly>
                         {{.Title}}
 
                     </div>
@@ -121,9 +121,9 @@
                         <label class="block mb-2 text-sm font-medium text-gray-900 ">
                             Total Price
                         </label>
-                        <input type="text" name="price" id="disabled-input" aria-label="disabled input"
+                        <input type="text" id="price-visible"
                             class="mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg w-full"
-                            value="{{ range first 1 .Params.product_info.prices }}{{.price}}{{end}},- NOK" disabled>
+                            value="{{ range first 1 .Params.product_info.prices }}{{.price}}{{end}},- NOK" readonly>
                     </div>
 
                     <!-- message -->
@@ -155,9 +155,6 @@
                     </button>
                 </div>
 
-
-
-
             </form>
         </div>
     </div>
@@ -166,13 +163,13 @@
 <script defer>
     document.addEventListener("DOMContentLoaded", function () {
         const peopleSelect = document.querySelector('select[name="people"]');
-        const priceInput = document.querySelector('#disabled-input');
+        const priceVisible = document.querySelector('#price-visible');
 
         peopleSelect.addEventListener("change", function () {
             const selectedOption = peopleSelect.options[peopleSelect.selectedIndex];
             const price = selectedOption.getAttribute("data-price");
             if (price) {
-                priceInput.value = `${price},- NOK`;
+                priceVisible.value = `${price},- NOK`;
             }
         });
     });
