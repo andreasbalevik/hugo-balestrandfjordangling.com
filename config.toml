@@ -13,6 +13,7 @@ theme = 'balevikit-tailwindcss-hugo-theme'
   ogimage = ""
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
+  address = "Holmen 3, 6899 Balestrand, Norway"
 
 [taxonomies]
   tag = 'tags'

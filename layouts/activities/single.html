@@ -27,11 +27,7 @@
                     {{ .Site.Data.configuration.global_activity_label}}
                 </label><br>
 
-                <a href="{{.RelPermalink}}"
-                    class="text-base mt-5 text-white bg-[#e09a00] px-5 py-2.5 inline-flex items-center no-underline rounded-lg">
-                    Make a request
-                    {{ partial "arrow.html" . }}
-                </a>
+                {{ partial "activity/booking" . }}
             </div>
         </div>
         <div class="order-1 lg:order-1 align-center justify-center">
