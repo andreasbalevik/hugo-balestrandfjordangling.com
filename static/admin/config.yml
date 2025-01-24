@@ -41,6 +41,29 @@ collections:
           - { label: 'Family and Friends', value: 'family-and-friends' }
         required: true
 
+      - label: "Information"
+        name: "information"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Options"
+            name: "options"
+            widget: "object"
+            fields:
+              - {label: Add global practical, name: global_practical, widget: boolean, default: false, required: false}
+              - {label: "Add global practical (bike)", name: global_bike_practical, widget: boolean, default: false, required: false}
+              - {label: Add global included, name: global_included, widget: boolean, default: false, required: false}
+          - label: "Practical"
+            name: "practical"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+          - label: "Included"
+            name: "included"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+
       - label: "Product info"
         name: "product_info"
         widget: "object"
@@ -100,30 +123,6 @@ collections:
                 name: "price"
                 widget: "number"
                 hint: "Enter the price for this number of persons"
-
-
-      - label: "Information"
-        name: "information"
-        widget: "object"
-        collapsed: true
-        fields:
-          - label: "Options"
-            name: "options"
-            widget: "object"
-            fields:
-              - {label: Add global practical, name: global_practical, widget: boolean, default: false, required: false}
-              - {label: "Add global practical (bike)", name: global_bike_practical, widget: boolean, default: false, required: false}
-              - {label: Add global included, name: global_included, widget: boolean, default: false, required: false}
-          - label: "Practical"
-            name: "practical"
-            widget: "list"
-            summary: '{{fields.info}}'
-            field: {label: Info,name: info,widget: string}
-          - label: "Included"
-            name: "included"
-            widget: "list"
-            summary: '{{fields.info}}'
-            field: {label: Info,name: info,widget: string}
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
