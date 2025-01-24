@@ -112,6 +112,7 @@ collections:
             widget: "object"
             fields:
               - {label: Add global practical, name: global_practical, widget: boolean, default: false, required: false}
+              - {label: Add global bike practical, name: global_bike_practical, widget: boolean, default: false, required: false}
               - {label: Add global included, name: global_included, widget: boolean, default: false, required: false}
           - label: "Practical"
             name: "practical"
@@ -231,6 +232,11 @@ collections:
             field: {label: Info,name: info,widget: string}
           - label: "Included"
             name: "included"
+            widget: "list"
+            summary: '{{fields.info}}'
+            field: {label: Info,name: info,widget: string}
+          - label: "Bike Rental Practical"
+            name: "bike_rental_practical"
             widget: "list"
             summary: '{{fields.info}}'
             field: {label: Info,name: info,widget: string}
