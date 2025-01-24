@@ -1,3 +1,5 @@
+enableGitInfo = true
+
 title = 'Balestrand Fjord Angling'
 theme = 'balevikit-tailwindcss-hugo-theme'
 
@@ -14,7 +16,3 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 
 [taxonomies]
   tag = 'tags'
-
-enableGitInfo = true
-
-
