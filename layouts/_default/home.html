@@ -1,19 +1,23 @@
 {{ define "main" }}
 
-<div style="background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+
+{{ $blur_filter := images.GaussianBlur 100 }}
+{{ $image_path := index .Params.images 0}}
+{{ $image := resources.GetMatch $image_path.src | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
+{{ $backgroundImage := $image.Resize "x600 q50" }}
+<div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
     <div class="container py-8">
         <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow">
             <div class="p-8 h-full flex order-2 lg:order-1">
                 <div class="format lg:format-lg mx-auto my-auto">
-                    <h2>{{.Title}}</h2>
-                    <p>{{.Params.description}}</p>
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Params.description }}</p>
 
                     {{ $action_button := .Params.action_button }}
                     {{ with .GetPage "activities" }}
-                    <a href="{{.RelPermalink}}"
+                    <a href="{{ .RelPermalink }}"
                         class="mt-5 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
-                        {{$action_button}}
+                        {{ $action_button }}
                         {{ partial "arrow.html" . }}
                     </a>
                     {{ end }}
@@ -27,6 +31,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
         </div>
     </div>
 </div>
+
 
 <div class="bg-white">
     <div class="container py-12">
