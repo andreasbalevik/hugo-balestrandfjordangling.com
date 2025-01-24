@@ -1,6 +1,6 @@
 ---
 title: "BALESTRAND FJORD ANGLING & FJORD EXCURSION "
-label: PREMIUM LIFESTYLE
+quality: PREMIUM LIFESTYLE
 description: "Join Captain Tor on his legendary fjord adventures, known from the
   TV series: People of the North. This is something You deserve, it's easy -
   Just look at the picture: I'll be sitting there and soon!"

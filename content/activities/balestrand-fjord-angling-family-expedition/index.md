@@ -1,6 +1,6 @@
 ---
 title: "BALESTRAND FJORD ANGLING & FAMILY EXPEDITION "
-label: LEGACY
+quality: LEGACY
 description: Sognefjord adventure with angling+trolling+fishing nets. All put
   together for an adventurous scenic fjord trip. A sense of unity. A world-class
   educational gift. “This is easy, I know I can do this!”

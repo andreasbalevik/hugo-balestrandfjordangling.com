@@ -1,6 +1,6 @@
 ---
 title: BALESTRAND FJORD ANGLING OR FJORD EXCURSION
-label: BASIC
+quality: BASIC
 description: "Is a creative, authentic and meet a local in Balestrand. A guided
   and entertaining boat experience, a nice combination of sightseeing,
   storytelling, fjord fishing and childhood memories. "

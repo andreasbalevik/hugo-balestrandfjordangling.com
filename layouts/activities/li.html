@@ -42,7 +42,9 @@
             </div>
 
 
-            <h2 class="mb-4 text-2xl font-bold text-gray-900">{{.Title}}</h2>
+            <h2 class="py-4 text-2xl font-bold text-gray-900">
+                <span class="flex text-xs">{{.Params.quality}}</span>{{.Title}}
+            </h2>
 
             <div class="text-sm flex flex-wrap list-none gap-3 ">
                 {{range .Params.tags}}

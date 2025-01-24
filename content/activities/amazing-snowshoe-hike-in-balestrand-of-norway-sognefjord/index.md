@@ -1,6 +1,6 @@
 ---
 title: AMAZING SNOWSHOE HIKE IN BALESTRAND OF NORWAY SOGNEFJORD
-label: CLEAN AIR
+quality: CLEAN AIR
 keywords:
   - snow
   - snowshoes
