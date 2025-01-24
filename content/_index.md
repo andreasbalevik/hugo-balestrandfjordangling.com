@@ -10,7 +10,7 @@ categories:
   title: Choose Your Activity Type
 recommended:
   title: Captain Tor's Recommendation
-  activeties:
+  activities:
     - amazing-snowshoe-hike-in-balestrand-of-norway-sognefjord/index
     - balestrand-fjord-angling-family-expedition/index
     - balestrand-fjord-angling-or-fjord-excursion/index

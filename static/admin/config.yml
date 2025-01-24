@@ -1,4 +1,4 @@
-local_backend: true
+#local_backend: true
 editor:
   preview: false
 backend:
@@ -7,9 +7,9 @@ backend:
 media_folder: /assets/images
 public_folder: 'images'
 collections:
-  - name: 'activeties'
-    label: 'Activeties'
-    folder: 'content/activeties'
+  - name: 'activities'
+    label: 'Activities'
+    folder: 'content/activities'
     path: "{{slug}}/index"
     create: true
     slug: '{{slug}}'
@@ -150,14 +150,14 @@ collections:
           - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: "Related activeties"
-        name: "related_activeties"
+      - label: "Related activities"
+        name: "related_activities"
         widget: "list"
         summary: '{{fields.title}}'
         allow_add: true
         min: 1
         max: 3
-        field: {label: Activity,name: related_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
+        field: {label: Activity,name: related_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
   
   - name: 'pages'
@@ -191,14 +191,14 @@ collections:
             collapsed: true
             fields: 
               - { label: 'Recommended title', name: 'title', widget: 'string' }
-              - label: "Recommended activeties"
-                name: "activeties"
+              - label: "Recommended activities"
+                name: "activities"
                 widget: "list"
                 summary: '{{fields.title}}'
                 allow_add: true
                 min: 3
                 max: 3
-                field: {label: Activity,name: recommended_activeties,widget: relation,collection: activeties,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
+                field: {label: Activity,name: recommended_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
 
       - file: "content/about/_index.md"
         label: "About" 

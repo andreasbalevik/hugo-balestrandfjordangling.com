@@ -5,7 +5,7 @@ images:
 description: '"From the city to the fjords" - Easy, fun Authentic Scandinavia
   Sognefjord Angling Adventure Experience, in the scenic Balestrand and Fjærland
   fjord landshape - Educational and entertaining too..'
-related_activeties:
+related_activities:
   - balestrand-fjord-angling/index
   - family-expedition/index
   - snowshoe-hike-in-balestrand/index

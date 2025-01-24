@@ -18,11 +18,11 @@
 
     <div class="container pb-12 pt-6 flex-col justify-center">
 
-        {{ with .Params.related_activeties }}
+        {{ with .Params.related_activities }}
         <div class="py-8">
 
             <div class="font-semibold text-2xl mb-6 text-center w-full">
-                <h2>Related Activeties</h2>
+                <h2>Related Activities</h2>
             </div>
 
             <hr>
@@ -44,7 +44,7 @@
         {{ end }}
 
         <div class="flex justify-center mt-4">
-            {{ with .GetPage "activeties" }}
+            {{ with .GetPage "activities" }}
             <a href="{{.RelPermalink}}"
                 class="text-white bg-[#7a8992] hover:shadow-lg px-5 py-2.5 me-2 inline-flex items-center no-underline rounded-lg">
 

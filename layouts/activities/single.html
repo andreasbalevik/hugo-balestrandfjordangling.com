@@ -33,7 +33,6 @@
             </div>
         </div>
         <div class="order-1 lg:order-1 align-center justify-center">
-
             <div class="relative">
                 {{ with .Params.images }}
                 {{ partial "components/carousel-fluid" . }}
@@ -82,7 +81,7 @@
 
 
 <div class="container pb-12 pt-6 flex justify-center">
-    {{ with .GetPage "activeties" }}
+    {{ with .GetPage "activities" }}
     <a href="{{.RelPermalink}}"
         class="text-white bg-[#7a8992] hover:shadow-lg px-5 py-2.5 me-2 inline-flex items-center no-underline rounded-lg">
 

@@ -10,7 +10,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
                     <p>{{.Params.description}}</p>
 
                     {{ $action_button := .Params.action_button }}
-                    {{ with .GetPage "activeties" }}
+                    {{ with .GetPage "activities" }}
                     <a href="{{.RelPermalink}}"
                         class="mt-5 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
                         {{$action_button}}
@@ -66,7 +66,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
         </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        {{ range .activeties }}
+        {{ range .activities }}
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
                 {{ .Render "li" }}

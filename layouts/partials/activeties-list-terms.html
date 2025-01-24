@@ -8,7 +8,7 @@
                 class="rounded-lg px-5 mb-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
 
-                {{ if eq .Title "Activeties"}}
+                {{ if eq .Title "Activities"}}
                 None
                 {{ else }}
                 <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
@@ -27,7 +27,7 @@
             <!-- Dropdown menu -->
             <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                 <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
-                    {{ with .Site.GetPage "activeties" }}
+                    {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
                         <li class="block px-4 py-2 hover:bg-gray-100">
                             None
