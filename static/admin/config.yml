@@ -141,8 +141,8 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Keywords", name: "keywords", widget: "list" }
-      - { label: 'Description', name: 'description', widget: 'text', pattern: ['^.{0,397}$', 'Max 397 characters'] }
+      - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,240}$', 'Max 240 characters'] }
       - label: 'Images'
         name: 'images'
         widget: 'list'
