@@ -5,7 +5,8 @@
 {{ $image_path := index .Params.images 0}}
 {{ $image := resources.GetMatch $image_path.src | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
 {{ $backgroundImage := $image.Resize "x600 q50" }}
-<div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
+<div
+    style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
     <div class="container py-8">
         <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow">
             <div class="p-8 h-full flex order-2 lg:order-1">
@@ -25,7 +26,7 @@
             </div>
             <div class="order-1 lg:order-2 lg:p-4 lg:flex align-center">
                 {{ with index .Params.images 0 }}
-                    {{ partial "components/image-fluid" . }}
+                {{ partial "components/image-fluid" . }}
                 {{ end }}
             </div>
         </div>
@@ -43,14 +44,12 @@
         {{ end }}
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-
             {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href={{ .RelPermalink }}>
                 <div style="background-color: {{.Params.color}};"
                     class="border border-gray-200 text-xl text-white p-5 text-center">
                     <div class="inline-flex items-center">
-
                         {{.Title}}
                         {{ partial "arrow.html" . }}
                     </div>
@@ -58,25 +57,26 @@
             </a>
             {{end}}
             {{end}}
-
         </div>
+
     </div>
 </div>
-   
+
 {{ with .Params.recommended }}
 <div class="container py-8 ">
-        <div class="format lg:format-lg mb-6 text-center md:text-left ">
-            <h3>{{.title}}</h3>
-        </div>
 
+    <div class="format lg:format-lg mb-6 text-center md:text-left ">
+        <h3>{{.title}}</h3>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         {{ range .activities }}
-            {{ $page := replace . "/index" "" }}
-            {{ with $.Site.GetPage $page }}
-                {{ .Render "li" }}
-            {{end}}
+        {{ $page := replace . "/index" "" }}
+        {{ with $.Site.GetPage $page }}
+        {{ .Render "li" }}
+        {{end}}
         {{ end }}
     </div>
+
 </div>
 
 {{ end }}

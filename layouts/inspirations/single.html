@@ -28,7 +28,7 @@
         <hr>
         <br>
 
-        <div class="grid md:grid-flow-col gap-4 justify-items-center">
+        <div class="grid md:grid-flow-col md:gap-4 justify-items-center">
             {{ range . }}
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
