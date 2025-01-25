@@ -2,6 +2,7 @@ enableGitInfo = true
 
 title = 'Balestrand Fjord Angling'
 theme = 'balevikit-tailwindcss-hugo-theme'
+timeout = 90
 
 [imaging]
   anchor = 'Smart'
@@ -17,3 +18,4 @@ theme = 'balevikit-tailwindcss-hugo-theme'
 
 [taxonomies]
   tag = 'tags'
+
