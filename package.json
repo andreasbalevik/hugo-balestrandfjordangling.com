@@ -4,9 +4,7 @@
   "description": "Website using Hugo",
   "main": "index.js",
   "scripts": {
-    "install": "npm install -g postcss-cli && cd themes/balevikit-tailwindcss-hugo-theme && npm install && npm run build-tw",
-    "watch-tw": "cd themes/balevikit-tailwindcss-hugo-theme && npm run watch-tw",
-    "build-tw": "cd themes/balevikit-tailwindcss-hugo-theme && npm run build-tw"
+    "install": "cd themes/balevikit-tailwindcss-hugo-theme && npm install"
   },
   "repository": {
     "type": "git",
@@ -17,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/andreasbalevik/hugo-balestrandfjordangling.com/issues"
   },
-  "homepage": "https://github.com/andreasbalevik/hugo-balestrandfjordangling.com#readme"
+  "homepage": "https://github.com/andreasbalevik/hugo-balestrandfjordangling.com#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "github:tailwindcss/typography"
+  }
 }

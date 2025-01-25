@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-<div class="container py-8 md:max-lg:max-w-screen-sm">
-    <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow mx-auto">
+<div class="container md:max-lg:max-w-screen-sm ">
+    <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow mx-auto border-b border-gray-100 rounded-tl rounded-tr overflow-hidden">
         <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2">
-            <div class="format lg:format-lg max-w-none mx-auto my-auto">
+            <div class="prose max-w-none mx-auto my-auto">
 
                 {{ partial "activity/tags" . }}
 
-                <h1 class="text-md md:text-4xl pt-4">
+                <h1 class="pt-4">
                     <span class="flex text-base text-gray-600 mb-2">{{.Params.quality}}</span> {{.Title}}
                 </h1>
 
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="rounder-lg px-0 py-8 md:p-8 shadow bg-gray-50">
+    <div class="rounder-lg px-0 py-8 md:p-8 shadow bg-white rounded-bl rounded-br">
         <div class="mx-auto max-w-4xl">
             <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
                 data-tabs-toggle="#default-styled-tab-content"
@@ -55,7 +55,7 @@
                 </li>
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-purple-600 hover:border-gray-300 dark:hover:text-gray-300"
                         id="practical-styled-tab" data-tabs-target="#styled-practical" type="button" role="tab"
                         aria-controls="practical" aria-selected="false">Practical information</button>
                 </li>

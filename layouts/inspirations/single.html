@@ -1,26 +1,28 @@
 {{ define "main" }}
 
-<div class="bg-white pt-8">
-    
-    {{ with index .Params.images 0 }}
-    {{ partial "components/images/image-banner" . }}
-    {{ end }}
-    
-    <div class="container py-12 format">
-        <div class="mx-auto px-4 2xl:px-0">
-            <div class="mx-auto">
-                <h1 class="">{{.Title}}</h1>
-                <div class="mx-auto max-w-2xl format">
+
+
+<div class="container">
+
+    <div class="rounded overflow-hidden shadow">
+        {{ with index .Params.images 0 }}
+        {{ partial "components/images/image-banner" . }}
+        {{ end }}
+
+        <div class=" bg-white">
+            <div class="mx-auto 2xl:px-0 max-w-2xl">
+                <div class="py-12 prose ">
+                    <h1 class="">{{.Title}}</h1>
                     {{.Content }}
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
+
 {{ with .Params.related_activities }}
-<div class="container pb-8 flex-col justify-center">
+<div class="container flex-col justify-center">
     <div class="py-8">
         <div class="font-semibold text-2xl mb-6 text-center w-full">
             <h2>Related Activities</h2>

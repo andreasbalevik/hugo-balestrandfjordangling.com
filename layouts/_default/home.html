@@ -7,11 +7,11 @@
 {{ $backgroundImage := $image.Resize "x600 q50" }}
 <div
     style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
-    <div class="container py-8">
-        <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow">
+    <div class="container">
+        <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow rounded">
             <div class="p-8 h-full flex order-2 lg:order-1">
-                <div class="format lg:format-lg mx-auto my-auto">
-                    <h2>{{ .Title }}</h2>
+                <div class="prose lg:prose-xl prose-headings:mt-0 my-auto">
+                    <h2 class="mt-0">{{ .Title }}</h2>
                     <p>{{ .Params.description }}</p>
 
                     {{ $action_button := .Params.action_button }}
@@ -26,7 +26,7 @@
             </div>
             <div class="order-1 lg:order-2 lg:p-4 lg:flex align-center">
                 {{ with index .Params.images 0 }}
-                {{ partial "components/image-fluid" . }}
+                {{ partial "components/images/image-square" . }}
                 {{ end }}
             </div>
         </div>
@@ -35,11 +35,11 @@
 
 
 <div class="bg-white">
-    <div class="container py-12">
+    <div class="container">
 
         {{ with .Params.categories.title }}
-        <div class="format lg:format-lg w-full mb-8 text-center mx-auto">
-            <h3>{{.}}</h3>
+        <div class="w-full mb-8 text-center mx-auto">
+            <h3 class="text-2xl font-semibold mt-0">{{.}}</h3>
         </div>
         {{ end }}
 
@@ -48,7 +48,7 @@
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href={{ .RelPermalink }}>
                 <div style="background-color: {{.Params.color}};"
-                    class="border border-gray-200 text-xl text-white p-5 text-center">
+                    class="border border-gray-200 text-xl text-white p-5 text-center rounded">
                     <div class="inline-flex items-center">
                         {{.Title}}
                         {{ partial "arrow.html" . }}
@@ -63,10 +63,10 @@
 </div>
 
 {{ with .Params.recommended }}
-<div class="container py-8 ">
+<div class="container">
 
-    <div class="format lg:format-lg mb-6 text-center md:text-left ">
-        <h3>{{.title}}</h3>
+    <div class="mb-8 text-center md:text-left ">
+        <h3 class="text-2xl font-semibold">{{.title}}</h3>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         {{ range .activities }}

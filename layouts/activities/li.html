@@ -1,9 +1,9 @@
 <div
-    class="max-w-md bg-white border border-gray-200 rounded-lg shadow hover:border-gray-600 overflow-hidden h-full cursor-pointer">
+    class="max-w-md bg-white border border-gray-200 rounded shadow hover:border-gray-600 overflow-hidden h-full cursor-pointer">
     <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
         <div class="relative">
             {{ range first 1 .Params.images }}
-            {{ partial "components/images/image-square.html" . }}
+            {{ partial "components/thumbnail.html" . }}
             {{ end }}
 
             <div class="text-sm">

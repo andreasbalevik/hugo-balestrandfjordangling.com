@@ -1,4 +1,4 @@
-<div class="format text-gray-600">
+<div class="prose text-gray-600">
 
         <div>
             <h2 class="mt-4">Practical</h2>
@@ -7,7 +7,6 @@
                 {{range .Params.information.practical }}
                 <li>{{.}}</li>
                 {{ end }}
-
 
                 {{ if eq .Params.information.options.global_practical true}}
                     {{range .Site.Data.information.practical }}
@@ -20,7 +19,6 @@
                         <li>{{.}}</li>
                     {{ end }}
                 {{ end }}
-
             </ul>
         </div>
         
