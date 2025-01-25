@@ -10,7 +10,7 @@
         {{ end }}
 
         <div class=" bg-white">
-            <div class="mx-auto 2xl:px-0 max-w-2xl">
+            <div class="mx-auto px-4 2xl:px-0 max-w-2xl">
                 <div class="py-12 prose ">
                     <h1 class="">{{.Title}}</h1>
                     {{.Content }}
@@ -23,13 +23,12 @@
 
 {{ with .Params.related_activities }}
 <div class="container flex-col justify-center">
-    <div class="py-8">
+    <div>
         <div class="font-semibold text-2xl mb-6 text-center w-full">
             <h2>Related Activities</h2>
         </div>
-        <hr>
         <br>
-        <div class="grid md:grid-flow-col md:gap-4 justify-items-center">
+        <div class="grid md:grid-flow-col gap-4 justify-items-center">
             {{ range . }}
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
