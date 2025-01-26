@@ -3,7 +3,7 @@
     <a href="{{.RelPermalink}}" class="h-100 hover:cursor-pointer">
         <div class="relative">
             {{ range first 1 .Params.images }}
-            {{ partial "components/thumbnail.html" . }}
+            {{ partial "components/images/image-square.html" . }}
             {{ end }}
 
             <div class="text-sm">
