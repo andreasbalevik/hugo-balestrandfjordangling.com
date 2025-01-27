@@ -1,53 +1,50 @@
 {{ define "main" }}
 
-
 <div class="bg-white">
-    <div class="container">
-
-
+    <div class="max-w-[1250px] mx-auto md:px-4">
         {{ with index .Params.images 0 }}
         {{ partial "components/images/image-banner" . }}
         {{ end }}
 
+    </div>
+</div>
 
-        <div class="mx-auto px-4 2xl:px-0 max-w-2xl">
-            <div class="py-12 prose ">
-                <h1 class="">{{.Title}}</h1>
-                {{.Content }}
-            </div>
+<div class="container">
+    <div class="mx-auto max-w-2xl">
+        <div class="py-8 prose ">
+            <h1 class="">{{.Title}}</h1>
+            {{.Content }}
         </div>
-
-
     </div>
 </div>
 
 
 {{ with .Params.related_activities }}
-<div>
+
     <div class="container">
-        <div>
-            <div class="mb-8 text-center">
-                <h3 class="text-2xl font-semibold">Related Activities</h3>
-            </div>
 
-            <div class="flex flex-wrap gap-4 justify-center">
-                {{ range . }}
-                {{ $page := replace . "/index" "" }}
-                {{ with $.Site.GetPage $page }}
+        <div class="mb-8 text-center">
+            <h3 class="text-2xl font-semibold">Related Activities</h3>
+        </div>
 
-                <div class="max-w-sm">
-                    {{ .Render "li" }}
-                </div>
-                {{ end }}
-                {{ end }}
+        <div class="flex flex-wrap gap-4 justify-center">
+            {{ range . }}
+            {{ $page := replace . "/index" "" }}
+            {{ with $.Site.GetPage $page }}
+
+            <div class="max-w-sm">
+                {{ .Render "li" }}
             </div>
+            {{ end }}
+            {{ end }}
         </div>
     </div>
-</div>
+
+
 {{ else }}
-
-{{ partial "components/capt-tor-recommended" . }}
-
+<div class="bg-white">
+    {{ partial "components/capt-tor-recommended" . }}
+</div>
 {{ end }}
 
 {{ end }}
