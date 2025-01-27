@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<div class="bg-white">
+<div class="bg-[#f3f5f7]">
     <div class="max-w-[1250px] md:px-4 mx-auto">
 
         {{ range first 1 .Params.images }}
@@ -10,6 +10,8 @@
     </div>
 </div>
 
+
+<div class="bg-white">
 <div class="container">
 
     <section class="py-8">
@@ -21,13 +23,13 @@
             </div>
         </div>
     </section>
-
+</div>
 </div>
 
 {{ with .Site.GetPage "index" }}
 {{ with .Params.recommended }}
 
-<div class="bg-white">
+<div class="bg-[#f3f5f7]">
     <div class="container">
 
         <div class="mb-8 text-center md:text-left ">
