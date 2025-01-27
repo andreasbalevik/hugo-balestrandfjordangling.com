@@ -62,24 +62,7 @@
     </div>
 </div>
 
-{{ with .Params.recommended }}
-<div class="container">
-
-    <div class="mb-4 text-center md:text-left ">
-        <h3 class="text-2xl font-semibold">{{.title}}</h3>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
-        {{ range .activities }}
-        {{ $page := replace . "/index" "" }}
-        {{ with $.Site.GetPage $page }}
-        {{ .Render "li" }}
-        {{end}}
-        {{ end }}
-    </div>
-
-</div>
-{{ end }}
-
+{{ partial "components/capt-tor-recommended" . }}
 
 {{ with .Params.inspirations }}
 <div class="bg-white">
