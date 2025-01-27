@@ -170,6 +170,7 @@ collections:
       - file: "content/_index.md"
         label: "Frontpage" 
         name: "frontpage"
+        delete: false
         fields:
           - {label: Title, name: title, widget: string}
           - { label: 'Description', name: 'description', widget: 'text', pattern: ['^.{0,397}$', 'Max 397 characters'] }
@@ -207,6 +208,7 @@ collections:
       - file: "content/about/_index.md"
         label: "About" 
         name: "About"
+        delete: false
         fields:
           - {label: Title, name: title, widget: string}
           - label: 'Banner Image'
@@ -216,6 +218,14 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image' }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+      - file: "content/request_confirmation/_index.md"
+        label: "Request Confirmation" 
+        name: "Request"
+        delete: false
+        fields:
+          - { label: Title, name: title, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'global'
