@@ -53,6 +53,7 @@ collections:
               - {label: Add global practical, name: global_practical, widget: boolean, default: false, required: false}
               - {label: "Add global practical (bike)", name: global_bike_practical, widget: boolean, default: false, required: false}
               - {label: Add global included, name: global_included, widget: boolean, default: false, required: false}
+              - {label: Varde Experience Quality, name: varde_experience_quality, widget: boolean, default: false, required: false}
           - label: "Practical"
             name: "practical"
             widget: "list"

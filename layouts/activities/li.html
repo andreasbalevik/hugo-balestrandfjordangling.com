@@ -44,6 +44,13 @@
                     Max {{.}} persons
                     {{ end }}
                 </label>
+
+                <label class="inline-flex items-center">
+                    {{ with .Params.information.options.varde_experience_quality}}
+                    Varde Experience Quality
+                    {{ end }}
+                </label>
+
             </div>
 
             <div class="text-sm flex flex-wrap list-none gap-3">
@@ -56,6 +63,9 @@
                 {{ end }}
                 {{ end }}
             </div>
+
+
+
 
         </div>
     </a>

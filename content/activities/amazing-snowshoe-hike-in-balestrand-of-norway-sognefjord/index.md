@@ -51,6 +51,7 @@ information:
   options:
     global_practical: false
     global_included: false
+    varde_experience_quality: false
 ---
 #### **L﻿IMITS ARE A MINDSET - T﻿HRILL YOUR SENCES** 
 
