@@ -1,24 +1,43 @@
 {{ define "main" }}
 
-{{ $blur_filter := images.GaussianBlur 100 }}
-{{ $image_path := index .Params.images 0}}
-{{ $image := resources.GetMatch $image_path.src | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
-{{ $backgroundImage := $image.Resize "x600 q50" }}
+<div class="bg-white">
+<div class="container">
 
-    <div class="container">
-
-        {{ range first 1 .Params.images }}
-        {{ partial "components/images/image-banner" . }}
-        {{ end }}
-        <section class="py-12 bg-white">
-            <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
-                <div class="mx-auto max-w-5xl prose">
-                    <div class="mx-auto max-w-2xl">
-                        {{.Content }}
-                    </div>
+    {{ range first 1 .Params.images }}
+    {{ partial "components/images/image-banner" . }}
+    {{ end }}
+    <section class="py-12 ">
+        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+            <div class="mx-auto max-w-5xl prose">
+                <div class="mx-auto max-w-2xl">
+                    {{.Content }}
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+</div>
+</div>
+
+{{ with .Site.GetPage "index" }}
+{{ with .Params.recommended }}
+
+<div >
+    <div class="container">
+
+        <div class="mb-8 text-center md:text-left ">
+            <h3 class="text-2xl font-semibold">{{.title}}</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+            {{ range .activities }}
+            {{ $page := replace . "/index" "" }}
+            {{ with $.Site.GetPage $page }}
+            {{ .Render "li" }}
+            {{end}}
+            {{ end }}
+        </div>
     </div>
 </div>
+{{ end }}
+{{ end }}
+
 {{ end }}
