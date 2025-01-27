@@ -191,7 +191,7 @@ collections:
             fields: 
               - { label: 'Categories title', name: 'title', widget: 'string' }
 
-          - label: "Recommended"
+          - label: "Recommended activities"
             name: "recommended"
             widget: "object"
             collapsed: true
@@ -205,6 +205,22 @@ collections:
                 min: 3
                 max: 3
                 field: {label: Activity,name: recommended_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["quality","title"]}
+                
+
+          - label: "Recommended inspirations"
+            name: "inspirations"
+            widget: "object"
+            collapsed: true
+            fields: 
+              - { label: 'Inspiration title', name: 'title', widget: 'string' }
+              - label: "Recommended inspirations"
+                name: "inspirations"
+                widget: "list"
+                summary: '{{fields.title}}'
+                allow_add: true
+                min: 2
+                max: 2
+                field: {label: Inspiration,name: recommended_inspirations,widget: relation,collection: inspirations,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
 
       - file: "content/about/_index.md"
         label: "About" 
