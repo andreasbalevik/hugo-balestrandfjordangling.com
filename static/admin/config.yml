@@ -22,6 +22,14 @@ collections:
       - { label: 'Quality', name: 'quality', widget: 'string' }
       - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
       - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,240}$', 'Max 240 characters'] }
+      - label: "Aliases"
+        name: "aliases"
+        widget: "list"
+        hint: "Peke gamle aktiviteter til denne aktivitet"
+        field:
+          label: "Alias"
+          name: "alias"
+          widget: "string"
       - label: 'Images'
         name: 'images'
         widget: 'list'
@@ -144,6 +152,14 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
       - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,240}$', 'Max 240 characters'] }
+      - label: "Aliases"
+        name: "aliases"
+        widget: "list"
+        hint: "Peke gamle inspirasjon til denne inspirasjonen"
+        field:
+          label: "Alias"
+          name: "alias"
+          widget: "string"
       - label: 'Images'
         name: 'images'
         widget: 'list'
