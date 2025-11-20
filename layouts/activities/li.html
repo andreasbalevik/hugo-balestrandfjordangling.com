@@ -12,9 +12,19 @@
         </div>
         <div class="p-5 ">
             <h2 class="text-xl font-bold text-gray-900">
-                <span class="flex text-xs text-gray-600 mb-2">
-                    {{.Params.quality}}
-                </span>
+
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+                    <span class="text-xs text-gray-600">
+                        {{ .Params.quality }}
+                    </span>
+
+                    <label class="text-xs text-white sm:text-right bg-purple-600 rounded px-4 ">
+                        {{ with .Params.information.options.varde_experience_quality }}
+                            Varde Experience Quality
+                        {{ end }}
+                    </label>
+                </div>
+
                 {{.Title}}
             </h2>
 
@@ -42,12 +52,6 @@
                     </svg>
                     {{ with .Params.product_info.persons }}
                     Max {{.}} persons
-                    {{ end }}
-                </label>
-
-                <label class="inline-flex items-center">
-                    {{ with .Params.information.options.varde_experience_quality}}
-                    Varde Experience Quality
                     {{ end }}
                 </label>
 
