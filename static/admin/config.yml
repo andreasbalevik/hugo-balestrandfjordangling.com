@@ -25,7 +25,8 @@ collections:
       - label: "Aliases"
         name: "aliases"
         widget: "list"
-        hint: "Peke gamle aktiviteter til denne aktivitet"
+        required: false
+        hint: "Alternativ url for aktiviteten"
         field:
           label: "Alias"
           name: "alias"
@@ -47,7 +48,7 @@ collections:
           - { label: 'Business and Pleasure', value: 'business-and-pleasure' }
           - { label: 'Bike and Hike', value: 'bike-and-hike' }
           - { label: 'Family and Friends', value: 'family-and-friends' }
-        required: false
+        required: true
 
       - label: "Information"
         name: "information"
