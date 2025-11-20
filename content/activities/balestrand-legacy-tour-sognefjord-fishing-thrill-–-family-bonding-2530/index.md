@@ -51,8 +51,14 @@ product_info:
     minutes: 0
   persons: "7"
   prices:
-    - person_number: 5000
+    - person_number: 1
       price: 5000
+    - person_number: 2
+      price: 5000
+    - person_number: 3
+      price: 5000
+    - person_number: 4
+      price: 4998
 cms: true
 ---
 
