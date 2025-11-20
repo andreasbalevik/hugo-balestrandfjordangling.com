@@ -52,7 +52,7 @@ product_info:
   persons: "7"
   prices:
     - person_number: 5000
-      price: 4999
+      price: 5000
 cms: true
 ---
 
