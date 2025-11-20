@@ -1,5 +1,9 @@
 #
 
+## Reload changes
+
+`hugo serve --disableFastRender`
+
 ## Decap 
 
 `npx decap-server`

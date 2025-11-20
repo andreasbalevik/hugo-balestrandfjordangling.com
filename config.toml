@@ -19,3 +19,7 @@ timeout = 90
 [taxonomies]
   tag = 'tags'
 
+[build]
+  [[build.cachebusters]]
+    source = 'layouts/.*'
+    target = 'css'
