@@ -1,5 +1,5 @@
 ---
-title: "BOAT ROUTE BALESTRAND TO / FROM FJÆRLAND "
+title: BOAT ROUTE BALESTRAND TO / FROM FJÆRLAND  V2
 quality: SCENIC
 description: A Private Guided Open Taxi boat trip adventure to Fjærland Glacier
   Village in Norway Sognefjord. Time to shine. A fabulous and inspiring
