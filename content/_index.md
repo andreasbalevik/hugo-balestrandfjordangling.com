@@ -1,8 +1,8 @@
 ---
-title: Real, Fjord, Adventures
-description: Welcome to Balestrand Fjord Angling, Your local fjord adventure
-  expert who also brings you to the pristine parts of the Sognefjord. You are
-  looking for quality, am I right?
+title: Sognefjord Fishing Trips & Scenic Tours
+description: Go local with Captain Tor. Private Excursions. See Glaciers,
+  Waterfalls from boat. Real Storytelling & Authentic Norwegian Fjord
+  Experience. Book Direct.
 action_button: Find your next adventure
 images:
   - src: images/katrine-web.jpg
