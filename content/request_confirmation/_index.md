@@ -1,5 +1,5 @@
 ---
-title: Request confirmation
+title: Request Confirmation
 sitemap:
   exclude: true
 ---
