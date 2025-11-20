@@ -75,15 +75,23 @@ cms: true
 
 #### This is a rare, highly sought-after family expedition and a meaningful investment in shared moments and connection; opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!"
 
-eller
+#### eller
+
+## 
+**The Perfect Gift: Trade Screen Time for Sognefjord 'Adventure Time'**
+
+#### A unique, highly sought-after experience for kids, spouses, or friends.
+
+It is time to trade screen time for authentic **'adventure time.'** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
+
+### 
+**A Rare Expedition & A Meaningful Investment**
+
+###### This is a rare, highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited.It is always exciting to see what treasures we find in the net!
 
 
-**Introduction:**
 
-**The Perfect Gift: Trade Screen Time for Sognefjord 'Adventure Time'A unique, highly sought-after experience for kids, spouses, or friends.**It is time to trade screen time for authentic **'adventure time.'** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life. **A Rare Expedition & A Meaningful Investment**This is a rare, highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited.It is always exciting to see what treasures we find in the net!
-
-
-## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
+### **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
 
 Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you?
 
