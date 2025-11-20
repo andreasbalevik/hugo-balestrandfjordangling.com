@@ -1,5 +1,40 @@
 ---
 title: "KAYAK & Captain Tor: Finding True North Through Varde-Certified Experiences"
+keywords:
+  - Varde-Certified
+  - Authentic Travel
+  - Sustainable Tourism
+  - Ethical Travel
+  - Norway Adventure
+  - Sognefjord Experience
+  - High-Quality Travel
+  - Ecotourism
+  - Conscious Travel
+  - Meaningful Travel
+  - Quality Assurance
+  - Responsible Tourism
+  - Slow Travel
+  - Unique Experiences
+  - Cultural Heritage
+  - Vibe Check Norway
+  - Real Norway
+  - Captain Tor
+  - Fjord Adventure
+  - Digital Detox
+  - Mental Health Travel
+  - Experiential Travel
+  - Local Immersion
+  - True North
+  - Bespoke Travel
+  - Fjord Life
+  - Norwegian Quality
+  - Eco-Friendly
+  - Premium Travel
+  - Trusted Travel
+  - Mystery Guest
+  - Customer Journey
+  - Brand Integrity
+  - Varde Qualit
 description: Discover authentic, Varde-Certified Sognefjord experiences with
   Captain Tor. We offer epic quality tours and pro boat services in the heart of
   the fjord. Get the real Norwegian vibe.
