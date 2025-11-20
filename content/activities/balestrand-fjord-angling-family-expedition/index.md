@@ -80,7 +80,7 @@ cms: true
 ## 
 **The Perfect Gift: Trade Screen Time for Sognefjord 'Adventure Time'**
 
-#### A unique, highly sought-after experience for kids, spouses, or friends.
+### A unique, highly sought-after experience for kids, spouses, or friends.
 
 It is time to trade screen time for authentic **'adventure time.'** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
 
@@ -91,9 +91,9 @@ It is time to trade screen time for authentic **'adventure time.'** Join us fo
 
 
 
-### **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
+## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
 
-Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you?
+###### Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you?
 
 ### Q: **What is unique about the fishing here in the Esefjord?**
 
