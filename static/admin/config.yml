@@ -36,6 +36,7 @@ collections:
         widget: 'list'
         media_folder: /assets/images
         public_folder: 'images'
+        required: true
         fields:
           - { label: 'Image Source', name: 'src', widget: 'image' }
           - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
@@ -164,6 +165,7 @@ collections:
       - label: 'Images'
         name: 'images'
         widget: 'list'
+        required: true
         media_folder: /assets/images
         public_folder: 'images'
         fields:
@@ -196,6 +198,7 @@ collections:
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'
+            required: true
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image' }
