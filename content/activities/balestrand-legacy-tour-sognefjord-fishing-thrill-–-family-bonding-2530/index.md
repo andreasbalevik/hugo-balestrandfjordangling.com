@@ -48,6 +48,7 @@ information:
 product_info:
   duration:
     hours: 3
+    minutes: 0
   persons: "7"
   prices:
     - person_number: 5000
