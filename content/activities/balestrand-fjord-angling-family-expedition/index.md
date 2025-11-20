@@ -67,29 +67,15 @@ product_info:
       price: 7000
 cms: true
 ---
-#### introduction: 
-
-#### The perfect surprise gift for the kids, your spouse, or friends; it's time to trade screen time for authentic 'adventure time.' Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets. 
-
-#### For families, this is the simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life. 
-
-#### This is a rare, highly sought-after family expedition and a meaningful investment in shared moments and connection; opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!"
-
-#### eller
-
-## 
-**The Perfect Gift: Trade Screen Time for Sognefjord 'Adventure Time'**
+## **The Perfect Gift: Trade Screen Time for Sognefjord 'Adventure Time'**
 
 ### A unique, highly sought-after experience for kids, spouses, or friends.
 
 It is time to trade screen time for authentic **'adventure time.'** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
 
-### 
-**A Rare Expedition & A Meaningful Investment**
+### **A Rare Expedition & A Meaningful Investment**
 
 ###### This is a rare, highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited.It is always exciting to see what treasures we find in the net!
-
-
 
 ## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
 
