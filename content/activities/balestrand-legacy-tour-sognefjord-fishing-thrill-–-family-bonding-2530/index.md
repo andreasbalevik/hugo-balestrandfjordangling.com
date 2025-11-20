@@ -1,6 +1,6 @@
 ---
 title: "Balestrand Legacy Tour: Sognefjord Fishing Thrill – Family Bonding"
-quality: TEST LEGACY
+quality: TEST
 keywords:
   - Family Adventure Norway
   - Sognefjord Fishing Trip
@@ -41,9 +41,9 @@ tags:
   - family-and-friends
 information:
   options:
-    global_practical: false
+    global_practical: true
     global_bike_practical: false
-    global_included: false
+    global_included: true
     varde_experience_quality: false
 cms: true
 ---
