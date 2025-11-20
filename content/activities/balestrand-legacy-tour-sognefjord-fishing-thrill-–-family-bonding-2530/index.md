@@ -45,6 +45,13 @@ information:
     global_bike_practical: false
     global_included: true
     varde_experience_quality: false
+product_info:
+  duration:
+    hours: 3
+  persons: "7"
+  prices:
+    - person_number: 5000
+      price: 4999
 cms: true
 ---
 
