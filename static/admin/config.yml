@@ -86,7 +86,7 @@ collections:
               - label: 'Hours'
                 name: 'hours'
                 widget: 'select'
-                required: false
+                required: true
                 options:
                   - { label: '0 hours', value: 0 }
                   - { label: '1 hour', value: 1 }
@@ -110,7 +110,7 @@ collections:
           - label: 'Max Persons'
             name: 'persons'
             widget: 'select'
-            required: false
+            required: true
             multiple: false
             options:
               - { label: '1', value: '1' }
@@ -125,7 +125,7 @@ collections:
           - label: "Prices for Each Person"
             name: "prices"
             widget: "list"
-            required: false
+            required: true
             fields:
               - label: "Person Number"
                 name: "person_number"
