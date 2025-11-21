@@ -9,7 +9,7 @@
                 type="button">
 
                 {{ if eq .Title "Activities"}}
-                None
+                <span class="px-2 rounded-lg text-white bg-cyan-600">All activities</span>
                 {{ else }}
                 <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
                     {{.Title}}
@@ -30,7 +30,7 @@
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
                         <li class="block px-4 py-2 hover:bg-gray-100">
-                            None
+                            All activities
                         </li>
                     </a>
                     {{ end }}
