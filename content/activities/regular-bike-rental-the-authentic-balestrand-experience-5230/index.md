@@ -56,8 +56,9 @@ keywords:
   - Unique Selling Points Cycling
   - Fjord History Cycling
   - Norwegian Heritage Cycling.
-description: "NOTE: ONLY Drop-In rental is possible in the periode May -
-  September at (09:00)10:00-15:00."
+description: Rent a bike in Balestrand! Authentic Sognefjord cycling on sporty
+  GT bikes. Explore Esefjorden, the 3-fjord ride, or Vik Stave Church. Drop-in
+  rental.
 images:
   - src: images/img_20220325_104727_1.jpg
 tags:
