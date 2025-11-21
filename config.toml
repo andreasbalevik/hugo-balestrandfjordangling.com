@@ -15,7 +15,7 @@ timeout = 90
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
   address = "Holmen 3, 6899 Balestrand, Norway"
-  contrast = 8
+  contrast = 5
 
 [taxonomies]
   tag = 'tags'
