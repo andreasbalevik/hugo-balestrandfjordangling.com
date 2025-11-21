@@ -61,9 +61,12 @@ Fun Fjord Angling in beautiful, legendary #Esefjorden
 
 "When I was a little boy, my mother used to send me out on the fjord to catch the fish called: Sand Whiting. They are fun to fish, bite easily on the hook and taste good for lunch. Some call them 'Fjord Chickens'- Isn't that cool?"
 
-#### VIDEO: EXPERIENCE THE UNEXPECTED - HALIBUT CATCH
+### Q: Is there any video inspiration for this tour?
 
-Watch our family fishing trip **[VIDEO HERE](https://www.instagram.com/p/C7HG6bDN3a9/)**
+Perfect for anyone looking for travel inspiration in Sognefjord:
+“We Went Fishing in Norway’s Longest Fjord – WOW!” (Episode 1) 
+
+Watch our family fishing trip [VIDEO HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 
 *This is a family expedition where you can experience the unexpected!*
 
@@ -85,7 +88,7 @@ A: Yes, it's a perfect solution for a girl's/boy's trip! Combine a [\#Raudmelen
 
 Share our website and tell your friends about this opportunity in Balestrand of Norway.
 
-#### **OPTION 2: SCENIC FJORD EXCURSION: CLEAN AIR & ESCAPE**
+## OPTION 2: SCENIC FJORD EXCURSION: CLEAN AIR & ESCAPE
 
 Scenic Fjord excursion to small homestead farms in the beautiful #Fjærlandsfjorden
 
