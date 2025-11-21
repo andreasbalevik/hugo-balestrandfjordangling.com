@@ -5,7 +5,7 @@ description: Go local with Captain Tor. Private Excursions. See Glaciers,
   Experience. Book Direct.
 action_button: Find your next adventure
 images:
-  - src: images/katrine-web.jpg
+  - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
 categories:
   title: Pick Your Tour Style
 recommended:
