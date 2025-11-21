@@ -94,7 +94,7 @@ information:
     global_practical: false
     global_bike_practical: false
     global_included: false
-    varde_experience_quality: false
+    varde_experience_quality: true
 product_info:
   duration:
     hours: 5
