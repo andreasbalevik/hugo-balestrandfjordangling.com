@@ -103,7 +103,7 @@ product_info:
       price: 12500
 cms: true
 ---
-### Introduction: A Sporty Tour & Personal Recharging
+## Introduction: A Sporty Tour & Personal Recharging
 
 ### Q: Who is this premium escape designed for?
 
@@ -119,11 +119,9 @@ A: It’s an authentic immersion in local culture and a chance for holistic well
 
 ## Balestrand Discovery: Culture, Nature & History
 
-### 
-Curated Experiences & Iconic Architecture
+> ### Curated Experiences & Iconic Architecture
 
-### 
-Q: What sights will we explore on this guided electric bike tour?
+### Q: What sights will we explore on this guided electric bike tour?
 
 A: We explore Balestrand’s hidden gems, looking at the authentic red dragon villas—a true architectural statement. We make a dedicated stop at the iconic St. Olaf’s Church, offering a moment of tranquility and historical reflection. Along the way, Captain Tor shares local sagas, ensuring stylish photo opportunities and a fun cycling journey through time and culture.
 
@@ -133,8 +131,7 @@ A: We take the old scenic road around the picturesque Esefjord, visiting the bea
 
 The World’s Longest Meeting Place
 
-### 
-Q: Why is this more than just a bike ride?
+### Q: Why is this more than just a bike ride?
 
 A: It’s the storytelling and the time spent with Tor—a true local expert—that makes this an authentic travel experience. Tor grew up here; he knows the best routes and hidden paths. It’s a chance to connect on a personal level in the heart of the Sognefjord.
 
@@ -142,9 +139,9 @@ A: It’s the storytelling and the time spent with Tor—a true local expert—t
 
 A: Not at all. We use high-quality e-bikes (electric assistive), meaning “he bikes, she bikes, everybody e-bikes!” It’s a delightful way to shake off the stress of urban life and experience daily rhythms in a quiet fjord village. It’s about feeling the pulse of the Sognefjord right now.
 
-## Holistic Wellness: Movement & Individuality 
+## Holistic Wellness: Movement & Individuality
 
-### Pedal Muscles & A Mindful Lifestyle
+> ### Pedal Muscles & A Mindful Lifestyle
 
 ### Q: How does this tour contribute to my wellness or “5D” experience?
 
