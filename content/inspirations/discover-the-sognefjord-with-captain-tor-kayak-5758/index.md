@@ -1,5 +1,26 @@
 ---
 title: Discover the Sognefjord with Captain Tor & KAYAK
+keywords:
+  - plan my norway vacation
+  - how to plan a trip to norway
+  - norway holiday planning
+  - things to do in balestrand
+  - activities in balestrand
+  - sognefjord activities
+  - sognefjord family experiences
+  - norwegian fjord experience planning
+  - help planning norway trip
+  - ethical travel norway
+  - sustainable tourism norway
+  - authentic norway experiences
+  - local guide norway vacation
+  - customise norway trip
+  - norway travel tips
+  - visit balestrand
+  - explore sognefjord
+  - family friendly norway activities
+  - best family vacation norway fjords
+  - captain tor norway
 description: We are proud to be featured on KAYAK's Balestrand Travel Guide.
 images:
   - src: images/dette-er-den-ekte-varen.-ingen-filter-trengs.-fjordviking.jpg
