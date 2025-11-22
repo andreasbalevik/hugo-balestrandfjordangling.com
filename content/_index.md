@@ -6,6 +6,8 @@ description: Go local with Captain Tor. Private Excursions. See Glaciers,
 action_button: Find your next adventure
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+    alt: Finding the way back to who I am - I hear the echoes within my heart,My
+      soul is glowing, I am stil glowing
 categories:
   title: Pick Your Tour Style
 recommended:
