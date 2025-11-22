@@ -1,13 +1,16 @@
 ---
-title: PRESS, MEDIA & WORKSHOPS - HERE YOU FIND US!
-description: Unique boat with a powerful signature. We attract progressive,
-  quality seeking guests from all over the world - Just go for it!
+title: "In the Media: Awards, Press Mentions, and Global Recognition"
+description: See why global media, Rick Steve’s Europe and People of the North
+  feature Captain Tor. Discover award-winning Sognefjord experiences.
 images:
   - src: images/img_20210619_180418_8.jpg
 cms: true
 ---
-Captain Tor and the boat are always there where innovation happens. Together we have created gold from grey stone and ruins over the years. Click and explore more:
+## From Grey Stone to Gold: Our Innovative Collaborations
 
+Captain Tor and our unique vessel are always at the forefront of innovation. Over the years, we’ve transformed ideas into award-winning experiences. 
+
+We attract progressive, quality-seeking guests from all over the world. Ready to see the results? Explore our media mentions, awards, and recognition below!
 
 **\*﻿ VARDE EXPERIENCE QUALITY;** - Balestrand Fjord Angling, You get an experience in Norgestoppen [Link Here](https://www.vardekvalitet.no/)
 
