@@ -12,7 +12,7 @@ related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
 cms: true
 ---
-KAYAK helps travelers navigate the vast sea of travel options to find unique, high-quality experiences like ours. Their innovative approach helps link authentic local guides with explorers seeking meaningful adventures.
+[KAYAK](https://www.kayak.co.uk/Balestrand.41106.guide) helps travelers navigate the vast sea of travel options to find unique, high-quality experiences like ours. Their innovative approach helps link authentic local guides with explorers seeking meaningful adventures.
 
 ## **Q&A: Plan Your Balestrand Adventure**
 
