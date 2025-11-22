@@ -26,7 +26,7 @@ description: "As seen on TV: Captain Tor & 'People of the North' Episode 6.
   Discover the raw, authentic Sognefjord experience that global viewers are
   talking about"
 images:
-  - src: images/img_3137.jpg
+  - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
 cms: true
 ---
 ## **People of the North" Season 2: Your Unfiltered Fjord Experience**
