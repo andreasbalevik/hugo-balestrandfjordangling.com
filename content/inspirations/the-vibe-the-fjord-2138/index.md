@@ -1,5 +1,36 @@
 ---
 title: The Vibe & The Fjord
+keywords:
+  - scandinavian reset
+  - fjord frequency
+  - main character moment
+  - norway adventure no cap
+  - viking core travel
+  - low key mestring norway
+  - major flex travel
+  - norway deep dive
+  - authentic adventure norway
+  - sognefjord fishing thrill
+  - sustainable travel norway
+  - ethical travel norway
+  - conscious travel norway
+  - genuine connection travel
+  - unfiltered norway experience
+  - raw norway adventure
+  - ultimate analog guide
+  - emotional experiences norway
+  - transformational travel norway
+  - meaningful travel investment
+  - norway off beaten path
+  - balestrand legacy tour
+  - sognefjord fishing
+  - norway digital detox
+  - eco conscious travel norway
+  - norway travel vibes
+  - sognefjord aesthetic
+  - the real deal norway
+  - go viking norway
+  - norway immersive experience
 description: "Title: Trade Your Feed For The Fjord: The Ultimate Scandinavian
   Reset (Ages 26-31) Subtitle: Stop scrolling, start living. This is your moment
   to find your fjord frequency. No cap."
