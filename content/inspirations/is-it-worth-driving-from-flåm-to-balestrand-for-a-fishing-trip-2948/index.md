@@ -1,7 +1,8 @@
 ---
-title: Is It Worth Driving From Flåm to Balestrand For A Fishing Trip?
-description: Yes, it's worth the trip! Don't settle for ordinary. Discover
-  authentic, off-the-beaten-path Sognefjord experiences with Captain Tor.
+title: Is It Worth Driving From Flåm to Balestrand For A Fishing Trip? Yes!
+  (Authentic)
+description: "\"Beyond the postcard. Explore the Sognefjord's hidden gems with
+  Captain Tor.\""
 images:
   - src: images/img_0593.jpeg
 cms: true
