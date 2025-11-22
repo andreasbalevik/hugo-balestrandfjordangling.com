@@ -52,6 +52,7 @@ description: Helseutfordringer? Vi hjelper damer å snu motgang til en personlig
   ressurs gjennom veiledning og samtaler. Ta tak i livet ditt i dag."
 images:
   - src: images/img_20181117_131939_7_2-–-kopi.jpg
+  - src: images/img_20190517_155611_5.jpg
 tags:
   - business-and-pleasure
 information:
