@@ -24,8 +24,7 @@ By express ferry (Norled): This is the easiest. The boat runs Bergen -> Balestra
 
 ### Q: What does an ideal day plan look like if I come from Flåm?
 
-###### 
-Morning: Early departure from Flåm.
+###### Morning: Early departure from Flåm.
 Late Morning: Arrival Balestrand.
 Lunch: Enjoy lunch at the \[Historic Kviknes Hotel](LINK TIL KVIKNES HOTEL).
 Afternoon: 12:00 PM (or 3:00 PM): Departure for \[fishing trip with Captain Tor](LINK TIL BOOKINGSIDE FOR FISKETUR).
