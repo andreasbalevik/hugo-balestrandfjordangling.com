@@ -24,7 +24,6 @@ By car: It's about a 2-hour drive. Ferry times must be added (Hella-Dragsvik). T
 By express ferry (Norled): This is the easiest. The boat runs Bergen -> Balestrand -> Flåm. Guests can arrive in Balestrand at 11:50 AM, have lunch, fish at 3:00 PM, and return to Flåm the next day.
 
 ### Q: What does an ideal day plan look like if I come from Flåm?
-
 ###### Morning: Early departure from Flåm.
 Late Morning: Arrival Balestrand.
 Lunch: Enjoy lunch at the \[Historic Kviknes Hotel](LINK TIL KVIKNES HOTEL).
