@@ -57,6 +57,9 @@ description: I live in Norway, in the never–summer land of Balestrand in the
   cities and tourist resorts of Europe..
 images:
   - src: images/kaptain-tor-and-miss-fjords-on-mission-among-high-mountains-in-sognefjord.jpg
+related_activities:
+  - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
+  - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
 cms: true
 ---
 ### *In my fjords, when spring finally comes to save me from a perpetual winter,*
@@ -69,7 +72,7 @@ cms: true
 
 ### *I believe there is a force in the Sognefjord,*
 
-*that lives beneath the surface. Something primitive and wild that awakens when you need an extra push just to survive. Like the oyster-catcher who whistles spring back on the shore and the pollack willingly bites the hook.*
+*that lives beneath the surface. Something primitive and wild that awakens when you need an extra push just to survive. Like the oyster-catcher who whistles spring back on the shore and the pollack willingly bites the hook; The joy of Spring-fullness rushes through the blood and shouts with pure joy and life!*
 
 ### *Most people are afraid of this natural force,*
 
