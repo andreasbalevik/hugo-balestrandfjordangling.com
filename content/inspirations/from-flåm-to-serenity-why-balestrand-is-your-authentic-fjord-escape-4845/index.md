@@ -34,11 +34,10 @@ But if you are seeking peace, stillness, and a deeper connection to the Sognefjo
 
 ### What Separates Balestrand From Flåm?
 
-Feature	Flåm (Tourism Hub)	Balestrand (Authentic Fjord Life)
-Vibe	Busy, commercial, fast-paced	Calm, historic, relaxed
-Crowds	Large cruise & tourist volumes	Fewer crowds, more intimate
-Focus	Major attractions (Flåm Railway)	Local culture, nature, serenity
-Experience	Quick, organized, "sightseeing"	Deep, meaningful, "slow travel"
+**Vibe:** Flåm is busy, commercial, and fast-paced **vs** Balestrand is calm, historic, and relaxed.
+**Crowds:** Flåm has large cruise & tourist volumes **vs** Balestrand has fewer crowds, a more intimate experience.
+**Focus:** Flåm focuses on major attractions like the Flåm Railway **vs** Balestrand focuses on local culture, nature, and serenity.
+**Experience:** Flåm offers quick, organized "sightseeing" tours **vs** Balestrand offers deep, meaningful "slow travel" experiences.
 
 ### Your Analog Experience in a Digital World
 
@@ -54,7 +53,6 @@ Find peace in the green Fjærlandsfjord.
 A: Flåm is a stop on the journey; Balestrand is where time stops.
 To truly experience the serenity and local culture, we strongly recommend a minimum stay of two nights. Don't just pass through! When planning your itinerary, please ask your travel planner, tour operator (TO), or agent to schedule extra time here.
 
-
-There are so many authentic activities waiting for you: [\[Link to Balestrand Adventure, things to do]](https://www.balestrandadventure.no/)
+There are so many authentic activities waiting for you: \[[Link to Balestrand Adventure, things to do]](https://www.balestrandadventure.no/)
 
 > #### Ready for the real deal? Your authentic adventure awaits.
