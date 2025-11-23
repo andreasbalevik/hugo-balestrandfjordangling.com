@@ -1,6 +1,6 @@
 ---
 title: "Spicy Curry E-Bike Rental: Explore the Fjord & Balestrand"
-quality: BIKERENTAL
+quality: BIKE RENTAL
 keywords:
   - Family bike rental Norway
   - Sognefjord with kids
@@ -63,6 +63,8 @@ images:
     alt: BIKE RENTAL
   - src: images/family-e-bikie-spicy-cury.jpg
     alt: sykle rundt med barn i Balestrand
+  - src: images/jostein-og-anniken-spicy-curry-i-balestrand.jpg
+    alt: ""
 tags:
   - bike-and-hike
 information:
