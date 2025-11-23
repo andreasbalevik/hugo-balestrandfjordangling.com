@@ -53,6 +53,8 @@ description: Helseutfordringer? Vi hjelper damer å snu motgang til en personlig
 images:
   - src: images/img_20181117_131939_7_2-–-kopi.jpg
   - src: images/img_20190517_155611_5.jpg
+  - src: images/img_20181023_185653_301.jpg
+    alt: frihet i norsk natur og gleden av hjertet som banker ny energi
 tags:
   - business-and-pleasure
 information:
