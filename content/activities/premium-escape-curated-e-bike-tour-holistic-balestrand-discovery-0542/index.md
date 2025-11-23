@@ -1,6 +1,6 @@
 ---
 title: "PREMIUM ESCAPE: Curated E-Bike Tour & Holistic Balestrand Discovery"
-quality: PREMIUM ESCAPE
+quality: CLASSIC
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord E-Bike
