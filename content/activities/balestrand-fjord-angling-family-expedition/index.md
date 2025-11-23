@@ -73,7 +73,7 @@ description: Reward yourself with an exclusive adventure. A unique "slow travel"
   sustainable luxury you truly deserve.
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
-  - src: images/kvinne-i-rød-jakke-ser-speilblank-fjord-i-fjærlandsfjorden-magisk.jpg
+  - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
 tags:
   - business-and-pleasure
 information:
