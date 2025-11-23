@@ -56,6 +56,6 @@ Find peace in the green Fjærlandsfjord.
 A: Flåm is a stop on the journey; Balestrand is where time stops.
 To truly experience the serenity and local culture, we strongly recommend a minimum stay of two nights. Don't just pass through! When planning your itinerary, please ask your travel planner, tour operator (TO), or agent to schedule extra time here.
 
-There are so many authentic activities waiting for you: \[[Link to Balestrand Adventure, things to do]](https://www.balestrandadventure.no/)
+There are so many authentic activities waiting for you: [Link to Balestrand Adventure, things to do HERE](https://www.balestrandadventure.no/)
 
 > #### Ready for the real deal? Your authentic adventure awaits.
