@@ -1,6 +1,6 @@
 ---
 title: "Premium Escape: Limited Mountain Valley Hiking With Captain Tor"
-quality: PREMIUM ESCAPE
+quality: ESCAPE
 keywords:
   - Premium Hiking Norway
   - Luxury Hiking Sognefjord
@@ -98,6 +98,9 @@ product_info:
       price: 4000
     - person_number: 4
       price: 4000
+  duration:
+    hours: 3
+    minutes: 15
 cms: true
 ---
 ## Introduction: A Sporty Stroll & Authentic Connection
