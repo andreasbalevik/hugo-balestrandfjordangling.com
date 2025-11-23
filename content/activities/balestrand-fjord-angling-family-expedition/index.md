@@ -1,7 +1,7 @@
 ---
 title: "Premium Balestrand Lifestyle Tour: Angling & Fjord Magic – A Shared
   Experience"
-quality: PREMIUM ESCAPE
+quality: PREMIUM CLASSIC
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord
@@ -73,6 +73,7 @@ description: Reward yourself with an exclusive adventure. A unique "slow travel"
   sustainable luxury you truly deserve.
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+  - src: images/kvinne-i-rød-jakke-ser-speilblank-fjord-i-fjærlandsfjorden-magisk.jpg
 tags:
   - business-and-pleasure
 information:
