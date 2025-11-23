@@ -1,6 +1,6 @@
 ---
 title: "Unique Fjærland: Guided Boat & E-Bike Glacier Adventure "
-quality: ESCAPE
+quality: CLASSIC
 keywords:
   - Fjærland Glacier Adventure
   - Supphelledalen Glacier Hike
