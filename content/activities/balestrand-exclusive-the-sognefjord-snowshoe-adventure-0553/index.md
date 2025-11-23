@@ -1,6 +1,6 @@
 ---
 title: "BALESTRAND EXCLUSIVE: The Sognefjord Snowshoe Adventure"
-quality: PREMIUM ESCAPE
+quality: ESCAPE
 keywords:
   - Private Snowshoe Tour Norway
   - Winter Adventure Sognefjord
