@@ -56,7 +56,7 @@ description: Discover the real Sognefjord with local guides! We'll show you
   fishing spots. Experience genuine Norwegian hospitality. Book your adventure
   today!
 images:
-  - src: images/web-kvinne-i-rød-jakke-ser-speilblank-fjord-i-fjærlandsfjorden-magisk.jpg
+  - src: images/kvinne-i-rød-jakke-ser-speilblank-fjord-i-fjærlandsfjorden-magisk.jpg
 tags:
   - family-and-friends
 information:
