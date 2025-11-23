@@ -41,7 +41,7 @@ cms: true
 
 **A:** We recommend exploring the many possibilities available. For a broader overview of what the region has to offer, you can check out this helpful resource:
 
-Discover more things to do in Balestrand [(LINK TIL KAYAK HERE)](https://www.kayak.co.uk/Balestrand.41106.guide)
+Discover more things to do in Balestrand ([LINK TIL KAYAK HERE)](https://www.kayak.co.uk/Balestrand.41106.guide)
 
 > ### **I AM the fjord, *I AM Captain Tor!***
 
@@ -59,7 +59,7 @@ They specialize in authentic, sustainable travel and connect you with local expe
 
 **A:** Ah, you ask a deep question. It is a matter of 3D (digital data) versus 5D (human intuition).
 
-KAYAK is a powerful tool, a digital navigation system for the modern world. It is excellent for finding the right coordinates.
+[KAYAK ](https://www.kayak.co.uk/Balestrand.41106.guide)is a powerful tool, a digital navigation system for the modern world. It is excellent for finding the right coordinates.
 
 My **[Varde certification](https://balestrandfjordangling.com/en/varde-experience-quality-a-companion-in-norwegian-travel-life)**—an old, local standard for quality and safety—is my **analog compass**. It is built on 35 years of experience, intuition, and the feel of the Sognefjord.
 
