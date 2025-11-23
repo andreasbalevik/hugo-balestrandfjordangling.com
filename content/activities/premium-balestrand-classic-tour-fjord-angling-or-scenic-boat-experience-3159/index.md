@@ -1,6 +1,6 @@
 ---
 title: "Premium Balestrand Classic Tour: Fjord Angling or Scenic Boat Experience"
-quality: PREMIUM ESCAPE
+quality: ESCAPE
 keywords:
   - Sustainable Tourism
   - Ecotourism Norway
