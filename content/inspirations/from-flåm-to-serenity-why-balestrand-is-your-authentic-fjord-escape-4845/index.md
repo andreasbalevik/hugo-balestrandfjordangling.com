@@ -34,13 +34,13 @@ But if you are seeking peace, stillness, and a deeper connection to the Sognefjo
 
 ### What Separates Balestrand From Flåm?
 
-**Vibe:** Flåm is busy, commercial, and fast-paced **vs** Balestrand is calm, historic, and relaxed.
+##### **Vibe:**  Flåm is busy, commercial, and fast-paced **vs** Balestrand is calm, historic, and relaxed.
 
-**Crowds:** Flåm has large cruise & tourist volumes **vs** Balestrand has fewer crowds, a more intimate experience.
+##### **Crowds:**  Flåm has large cruise & tourist volumes **vs** Balestrand has fewer crowds, a more intimate experience.
 
-**Focus:** Flåm focuses on major attractions like the Flåm Railway **vs** Balestrand focuses on local culture, nature, and serenity.
+##### **Focus:**  Flåm focuses on major attractions like the Flåm Railway **vs** Balestrand focuses on local culture, nature, and serenity.
 
-**Experience:** Flåm offers quick, organized "sightseeing" tours **vs** Balestrand offers deep, meaningful "slow travel" experiences.
+##### **Experience:**  Flåm offers quick, organized "sightseeing" tours **vs** Balestrand offers deep, meaningful "slow travel" experiences.
 
 ### Your Analog Experience in a Digital World
 
