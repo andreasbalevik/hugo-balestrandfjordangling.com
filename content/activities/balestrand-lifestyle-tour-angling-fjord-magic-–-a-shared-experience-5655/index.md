@@ -56,7 +56,7 @@ description: Discover the real Sognefjord with local guides! We'll show you
   fishing spots. Experience genuine Norwegian hospitality. Book your adventure
   today!
 images:
-  - src: images/img_20200827_135331_2.jpg
+  - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
 tags:
   - family-and-friends
 information:
