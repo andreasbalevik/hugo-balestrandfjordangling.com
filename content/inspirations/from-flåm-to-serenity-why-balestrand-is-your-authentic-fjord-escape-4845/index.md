@@ -24,6 +24,10 @@ images:
   - src: images/balestrand-stedet-for-inspirasjon.jpg
     alt: Hva med å bytte ut rullingen på Instagram med en ekte, rolig rulling langs
       fjorden?
+related_activities:
+  - authentic-fjord-transfer-balestrand-flåm-gudvangen-nærøyfjord-5514/index
+  - spicy-curry-e-bike-rental-explore-the-fjord-balestrand-0248/index
+  - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
 cms: true
 ---
 ### Q: Should I choose Flåm or Balestrand for my Norway vacation?
