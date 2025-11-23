@@ -1,6 +1,6 @@
 ---
 title: "Authentic Fjord Transfer: Balestrand <-> Flåm / Gudvangen (Nærøyfjord)"
-quality: PREMIUM ESCAPE
+quality: ESCAPE
 keywords:
   - Båttransport Flåm Balestrand
   - Privat båt Flåm Gudvangen
