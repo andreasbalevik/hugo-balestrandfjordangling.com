@@ -1,39 +1,48 @@
 <div class="prose lg:prose-lg text-gray-600">
 
     <div>
-        <h2 class="mt-4">Practical</h2>
-
+        <h2>Included</h2>
         <ul>
-            {{range .Params.information.practical }}
-            <li>{{.}}</li>
+            {{range .Params.information.included }}
+                <li>{{.}}</li>
+            {{ else }}
+                {{ if eq .Params.information.options.global_included false }}
+                    <li>No information available.</li>
+                {{ end}}
             {{ end }}
 
-            {{ if eq .Params.information.options.global_practical true}}
-            {{range .Site.Data.information.practical }}
-            <li>{{.}}</li>
-            {{ end }}
-            {{ end }}
-
-            {{ if eq .Params.information.options.global_bike_practical true }}
-            {{range .Site.Data.information.bike_rental_practical}}
-            <li>{{.}}</li>
+            {{ if eq .Params.information.options.global_included true }}
+            {{range .Site.Data.information.included }}
+                <li>{{.}}</li>
             {{ end }}
             {{ end }}
         </ul>
     </div>
 
     <div>
-        <h2>Included</h2>
+        <h2 class="mt-4">Practical</h2>
+
         <ul>
-            {{range .Params.information.included }}
-            <li>{{.}}</li>
+            {{range .Params.information.practical }}
+                <li>{{.}}</li>
+            {{ else }}
+                {{ if eq .Params.information.options.global_practical false}}
+                    <li>No information available.</li>
+                {{ end }}
             {{ end }}
 
-            {{ if eq .Params.information.options.global_included true }}
-            {{range .Site.Data.information.included }}
-            <li>{{.}}</li>
+            {{ if eq .Params.information.options.global_practical true}}
+            {{range .Site.Data.information.practical }}
+                <li>{{.}}</li>
+            {{ end }}
+            {{ end }}
+
+            {{ if eq .Params.information.options.global_bike_practical true }}
+            {{range .Site.Data.information.bike_rental_practical}}
+                <li>{{.}}</li>
             {{ end }}
             {{ end }}
         </ul>
     </div>
+
 </div>
