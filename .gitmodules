@@ -1,0 +1,9 @@
+[submodule "themes/--force"]
+	path = themes/--force
+	url = git@github.com:andreasbalevik/balevikit-tailwindcss-hugo-theme.git
+[submodule "themes/themes/balevikit-tailwindcss-hugo-theme"]
+	path = themes/themes/balevikit-tailwindcss-hugo-theme
+	url = git@github.com:andreasbalevik/balevikit-tailwindcss-hugo-theme.git
+[submodule "themes/balevikit-tailwindcss-hugo-theme"]
+	path = themes/balevikit-tailwindcss-hugo-theme
+	url = git@github.com:andreasbalevik/balevikit-tailwindcss-hugo-theme.git
