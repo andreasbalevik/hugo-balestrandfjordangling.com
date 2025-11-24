@@ -123,13 +123,13 @@ Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https
 
 Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with outer part of the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
 
-If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back, this is also possible for an additional NOK 5,000. This is a truly unique experience - Close to the fjord and nature!
+**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back, this is also possible for an additional NOK 5,000. This is a truly unique experience - Close to the fjord and nature!
 
 ### Q: How does this transfer promote wellness and presence?
 
 **A: Let Go - Breathe - Time for Wonder - A Beautiful Life**
 
-This is your ultimate **\#wellnessescape**. You are free from all thoughts and worries, living purely in the moment as we drive the boat. It doesn't matter if it rains or shines; the point is simply to exist! Experience pure happiness, presence, and a mindful escape. This constant attraction of being on the road to something new and unknown, mixed with a familiar nostalgia, is profoundly restorative.
+This is your ultimate **\#wellnessescape**. You are free from all thoughts and worries, living purely in the moment as we drive the boat. It doesn't matter if it rains or shines; the point is simply to exist! Experience pure happiness, presence, and a mindful escape. This constant attraction of being on the road to something new and unknown, mixed with a familiar nostalgia, is profoundly restorative. Watch weather forecast [here](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-123944/Norge/Vestland/Aurland/Aurlandsfjorden)
 
 ### Q: Do you have any video inspiration from the tour?
 
