@@ -75,7 +75,7 @@ keywords:
   - Fjord Culture Fjærland
   - Local Food Experience Fjærland.
 description: "Sognefjord's hidden gem: The ultimate heritage tour. Authentic
-  angling, net fishing & history with Captain Tor. A premium, bucket-list
+  angling, net fishing & history with Captain Tor. A premium bucket-list
   experience for your family"
 images:
   - src: images/img_2977.jpeg
@@ -143,7 +143,7 @@ A: From the boat you will witness unique homesteads such as Lidal and Teigen. T
 
 A: A fishing trip in the beautiful, legendary Esefjord is surrounded by high, picturesque mountains. This specific fjord arm is known for easy and fun fishing, perfect for all skill levels. As Captain Tor says:
 
-> “When I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting*** (Sandflyndre). They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
+> “When I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting*** (Fjord chicken). They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
 
 #### The "*Fjord Chicken"* Challenge: Easy & Fun Fjord Fishing in Esefjord
 
@@ -208,11 +208,11 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 ### Q: Why is the fjord experience so special and historically relevant?
 
-A: The fjords were the "highways" of the past. The word "fjord" originates from an Old Norse term meaning "to travel," and Vikings set out by boat from Balestrand in search of adventure and new discoveries. Our tours channel this spirit of exploration and mastery.
+A: The fjords were the ***"highways"*** of the past. The word ***"fjord"*** originates from an Old Norse term meaning "to travel," and Vikings set out by boat from Balestrand in search of adventure and new discoveries. Our tours channel this spirit of exploration and mastery.
 
 ### Q: What is the local historical context of the areas around the Fjærlandsfjord?
 
-A: *"Gardingane"* is a local name for the people who lived on the rugged farms along the 26-kilometer-long Fjærlandsfjord. Since the 19th century, the area has attracted discerning travelers. This is where the glacier arms reached furthest down to the fjord—a truly unique heritage from when the village was called "Fjordland" in Norse times.
+A: ***"Gardingane"*** is a local name for the people who lived on the rugged farms along the 26-kilometer-long Fjærlandsfjord. Since the 19th century, the area has attracted discerning travelers. This is where the glacier arms reached furthest down to the fjord—a truly unique heritage from when the village was called "Fjordland" in Norse times.
 
 ### Q: How do we experience this heritage today?
 
@@ -224,7 +224,7 @@ A: Our boat, "Miss Fjords," is the Sognefjord’s contemporary answer to both t
 
 ## **ENHANCE YOUR STAY: Discover More in Fjærland**
 
-### Q: Where can we have a lunch in Fjærland? 
+### Q: Where can we have a lunch in Fjærland?
 
 A: At **[The Norwegian Glacier Museum](https://en.bremuseum.no/om-oss)** is an interactive museum for the whole family or [Brevasshytta ](https://fjaerlandhotel.com/brevasshytta)The restaurant under the Bøyabreen Glacier
 
@@ -241,4 +241,3 @@ A: Absolutely. If you are staying in Fjærland and desire variety with a day tr
 ### Q: Is there any video inspiration available for these tours?
 
 A: Yes, you can see Captain Tor and the fjord experience in the [TV series "People of the North". Watch the teaser video here.](https://www.youtube.com/watch?v=pjoMLKwGsEg)
-
