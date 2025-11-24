@@ -1,5 +1,44 @@
 ---
 title: "The Lighthouse and the Algorithm: Finding Soul in the Sognefjord"
+keywords:
+  - Digital Detox Norway
+  - Silent Fjord experience
+  - Premium mindfulness retreat Norway
+  - Sognefjord nature tour
+  - Escape digital noise Norway
+  - Authentic nature experience Sognefjord
+  - Private silent tour Norway
+  - Wellness travel Norway fjord
+  - Raw nature experience
+  - Find peace in Norwegian nature
+  - 5D experience Sognefjord
+  - Authentic travel Norway
+  - Transformative travel experiences
+  - Bespoke Norway tours
+  - Sustainable tourism Norway fjord
+  - Luxury travel Norway private
+  - Mindful travel Sognefjord
+  - Soulful recharge vacation Norway
+  - Heritage travel Norway
+  - Authentic Sognefjord culture tour
+  - Varde certified guide fishing trip
+  - Meaningful adventure Norway
+  - Connect with Norwegian heritage
+  - Storytelling fishing expedition Sognefjord
+  - Ethical travel experience Norway
+  - Local roots exploration Norway
+  - Authentic human connection travel
+  - Link with legacy Sognefjord
+  - Personal transformation travel
+  - Exclusive Norway fishing experience
+  - Mentorship experience Captain Tor
+  - Deep meaning journey Norway
+  - Profound transformation travel Sognefjord
+  - Leadership retreat Norway fjord
+  - Authentic personal growth experience
+  - Process life's big questions travel
+  - Full day private fishing charter Norway
+  - Turning longing into drive workshop
 description: "The Meaning of Travel: What Are You Truly Seeking? Subtitle: In a
   world of digital noise and AI optimization. Our story of bridging 3D data and
   5D authenticity."
