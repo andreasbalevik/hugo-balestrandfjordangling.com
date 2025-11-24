@@ -1,11 +1,12 @@
 {{ define "main" }}
 
 <div class="bg-[#f3f5f7]">
-    <div class="container md:max-lg:max-w-screen-sm ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto overflow-hidden">
+    <div class="container  lg:max-xl:max-w-screen-lg">
+        <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden">
+            
+        
             <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
                 <div class="prose max-w-none mx-auto my-auto">
-                    
                     <div class="flex items-center justify-between font-bold not-prose">
                         <span class="text-xs text-gray-600">
                             {{ .Params.quality }}
@@ -15,15 +16,11 @@
                             <img class="max-h-[30px]" alt="varde experience quality" src="/images/varde-experience-quality.png" />
                         {{ end }}
                     </div>
-
                     <h1 class="pt-4">
                         {{.Title}}
                     </h1>
-
                     {{ partial "activity/product_info" . }}
-
                     <div class="flex not-prose">
-
                         {{ with .Site.Data.configuration.global_activity_label}}
                         <label class="inline-flex items-center text-gray-800 text-xs antialiased rounded-lg mb-4">
                             <svg class="w-6 h-6 text-inherit mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -41,17 +38,16 @@
                         {{ end }}
 
                     </div>
-
                     {{ partial "activity/booking" . }}
                 </div>
             </div>
             <div class="order-1 lg:order-1 align-center justify-center">
-                <div class="relative">
-                    {{ with .Params.images }}
-                    {{ partial "components/images/carousel-square" . }}
-                    {{ end }}
-                </div>
+                {{ with .Params.images }}
+                    {{ partial "components/images/carousel-banner" . }}
+                {{ end }}
             </div>
+
+
         </div>
     </div>
 </div>
