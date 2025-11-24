@@ -5,20 +5,24 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto overflow-hidden">
             <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
                 <div class="prose max-w-none mx-auto my-auto">
+                    
+                    <div class="flex items-center justify-between font-bold not-prose">
+                        <span class="text-xs text-gray-600">
+                            {{ .Params.quality }}
+                        </span>
 
-                    {{ partial "activity/tags" . }}
+                        {{ with .Params.information.options.varde_experience_quality }}
+                            <img class="max-h-[30px]" alt="varde experience quality" src="/images/varde-experience-quality.png" />
+                        {{ end }}
+                    </div>
 
                     <h1 class="pt-4">
-                        <span class="flex text-base text-gray-600 mb-2">{{.Params.quality}}</span> {{.Title}}
+                        {{.Title}}
                     </h1>
 
                     {{ partial "activity/product_info" . }}
 
-                    <div class="flex not-prose gap-4">
-
-                        {{ with .Params.information.options.varde_experience_quality}}
-                        <img style="height: 35px;" alt="varde experience quality" src="/images/varde-experience-quality.png" />
-                        {{ end }}
+                    <div class="flex not-prose">
 
                         {{ with .Site.Data.configuration.global_activity_label}}
                         <label class="inline-flex items-center text-gray-800 text-xs antialiased rounded-lg mb-4">
