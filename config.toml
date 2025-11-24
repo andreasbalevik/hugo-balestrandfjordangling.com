@@ -24,3 +24,10 @@ timeout = 90
   [[build.cachebusters]]
     source = 'layouts/.*'
     target = 'css'
+
+[outputFormats.TXT]
+  mediaType = "text/plain"
+  isPlainText = true
+
+[outputs]
+  home = ["HTML", "JSON", "TXT"]

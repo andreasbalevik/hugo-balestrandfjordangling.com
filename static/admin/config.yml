@@ -21,7 +21,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Quality', name: 'quality', widget: 'string' }
       - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,240}$', 'Max 240 characters'] }
+      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
       - label: "Aliases"
         name: "aliases"
         widget: "list"
@@ -155,7 +155,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,240}$', 'Max 240 characters'] }
+      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
       - label: "Aliases"
         name: "aliases"
         widget: "list"
@@ -263,7 +263,7 @@ collections:
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
-      - file: "static/LLMs.md"
+      - file: "content/LLMs.md"
         label: "LLMs" 
         name: "LLMs"
         delete: false
