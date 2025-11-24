@@ -1,6 +1,6 @@
 ---
-title: "DEMO: Grünersgate – Et Sted Å Komme Hjem Til: Sjelesorg og
-  Tverrkulturell Diakoni"
+title: 'DEMO: Grünersgate 2 – Et Sted Å Komme Hjem Til: Sjelesorg og
+  Tverrkulturell Diakoni"'
 quality: TEST
 keywords:
   - "Q&A: Tverrkulturell Diakoni og Veiledning Q: Hva er Grünersgate og hvem er
@@ -73,13 +73,13 @@ product_info:
       price: 3000
 cms: true
 ---
-Introduksjon: Velkommen til Grünersgate, et sted designet for mer enn bare bolig – det er et sted for **tverrkulturell tilhørighet** og **sjelesorg**. Dette produktet er forankret i dyp faglig ekspertise, ledet av diakon og sykepleier Solveig Yri, som har viet sin masteroppgave til hvordan **globale nomader** kan være en ressurs i det norske samfunnet. Oppdag et unikt møtested for veiledning, refleksjon og en dypere følelse av "hjemme".
+**Introduksjon:** Velkommen til Grünersgate, et sted designet for mer enn bare bolig – det er et sted for **tverrkulturell tilhørighet** og **sjelesorg**. Dette produktet er forankret i dyp faglig ekspertise, ledet av diakon og sykepleier Solveig Yri, som har viet sin masteroppgave til hvordan **globale nomader** kan være en ressurs i det norske samfunnet. Oppdag et unikt møtested for veiledning, refleksjon og en dypere følelse av "hjemme".
 
 ## Q&A: Tverrkulturell Diakoni og Veiledning
 
 ### Q: Hva er Grünersgate og hvem er dette tilbudet for?
 
-A: Grünersgate er et konsept og et fysisk sted for sjelesorg og veiledning. Tilbudet er primært rettet mot globale nomader – mennesker som har bodd i utlandet, misjonærer, diplomater, bistandsarbeidere, og andre som søker tilbake til Norge, men sliter med å finne seg til rette i et tverrkulturelt miljø. Det er et sted å finne tilhørighet etter mange år borte.
+A: Grünersgate 2 er et konsept og et fysisk sted for sjelesorg og veiledning. Tilbudet er primært rettet mot globale nomader – mennesker som har bodd i utlandet, misjonærer, diplomater, bistandsarbeidere, og andre som søker tilbake til Norge, men sliter med å finne seg til rette i et tverrkulturelt miljø. Det er et sted å finne tilhørighet etter mange år borte.
 
 ### Q: Hva er den faglige bakgrunnen for dette tilbudet?
 
@@ -95,4 +95,4 @@ A: Solveig Yri er utdannet diakon, så tilbudet springer ut av en kristen/kirkel
 
 ### Q: Hvordan kan jeg få kontakt eller bestille en veiledningstime?
 
-A: For å avtale en samtale eller lære mer om tilbudet i Grünersgate, vennligst \[kontakt NNdirekte her](LINK TIL KONTAKTSIDE ELLER E-POST).
+A: For å avtale en samtale eller lære mer om tilbudet i Grünersgate, vennligst \[kontakt NN direkte her](LINK TIL KONTAKTSIDE ELLER E-POST).
