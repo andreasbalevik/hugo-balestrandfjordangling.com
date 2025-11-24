@@ -6,7 +6,8 @@ description: "Book a 5-star Sognefjord tour in Balestrand! Authentic adventure
 aliases: []
 images:
   - src: images/vakre-kvinner-i-sognefjorden-fiskestang-flotte-fjell-og-rød-jakke.jpeg
-    alt: Fisking i Esefjorden, vakre fjell og kvinner med fiskestang og Sognefjorden
+    alt: Two smiling women in life vests are fishing from a boat on a sunny day in a
+      Norwegian fjord with steep green mountains in the background.
 tags:
   - family-and-friends
 information:
