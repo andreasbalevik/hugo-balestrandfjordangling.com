@@ -70,7 +70,7 @@ product_info:
   persons: "1"
   prices:
     - person_number: 1
-      price: 3000
+      price: 2400
 cms: true
 ---
 **Introduksjon:** Velkommen til Grünersgate, et sted designet for mer enn bare bolig – det er et sted for **tverrkulturell tilhørighet** og **sjelesorg**. Dette produktet er forankret i dyp faglig ekspertise, ledet av diakon og sykepleier Solveig Yri, som har viet sin masteroppgave til hvordan **globale nomader** kan være en ressurs i det norske samfunnet. Oppdag et unikt møtested for veiledning, refleksjon og en dypere følelse av "hjemme".
