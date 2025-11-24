@@ -11,7 +11,10 @@ cms: true
 ---
 ## Introduction: 
 
+Superyacht 'Bravo Eugenia' next to a small boat in the Sognefjord, illustrating 3D luxury versus 5D authentic experience.
+
 These days, with so much talk about AI efficiency and rapid changes in the travel industry, it's easy to feel stressed and experience FOMO. I've been there. I've seen the fear in people's eyes at national gatherings.
+
 But what if true value isn't found in speed, but in depth? What if what we're truly missing is ourselves?
 This is my story of finding balance, using technology as a tool (3D), and delivering authentic experiences that transform (5D).
 
