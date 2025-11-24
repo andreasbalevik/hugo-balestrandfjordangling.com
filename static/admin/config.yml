@@ -263,6 +263,13 @@ collections:
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
+      - file: "static/LLMs.md"
+        label: "LLMs" 
+        name: "LLMs"
+        delete: false
+        fields:
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
       - file: "content/request_confirmation/_index.md"
         label: "Request Confirmation" 
         name: "Request"
