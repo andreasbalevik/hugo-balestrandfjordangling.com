@@ -1,9 +1,8 @@
 ---
 title: "Balestrand Classic Tour: Fjord Angling or Scenic Boat Experience"
 quality: CLASSIC
-description: Experience Balestrand's iconic fjord tour! A 5-star trip combining
-  sightseeing, fishing, & local stories with Captain Tor. The perfect authentic
-  Norwegian adventure awaits! Private, year-round tours available. Book today.
+description: "Book a 5-star Sognefjord tour in Balestrand! Authentic adventure
+  with Captain Tor: fishing, sightseeing, & stories. Private year-round tours."
 aliases: []
 images:
   - src: images/vakre-kvinner-i-sognefjorden-fiskestang-flotte-fjell-og-rød-jakke.jpeg
@@ -82,7 +81,7 @@ A: Easily buy ingredients in the grocery store next to the Balestrand Adventure 
 
 #### TRENDY & FUN LIFESTYLE
 
-### Q**:** Is this tour a good solution for groups or a "Kick Off"?
+### Q: Is this tour a good solution for groups or a "Kick Off"?
 
 A: Yes, it's a perfect solution for a girl's/boy's trip! Combine a [\#Raudmelen mountain](https://www.instagram.com/explore/locations/312018818/raudmelen/)  mountain hiking trip in the morning with a relaxing, soft educational Fishing trip in the afternoon. It's a concrete mission to solve—time to gather the gang and order today!
 
