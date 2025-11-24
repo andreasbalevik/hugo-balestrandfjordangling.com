@@ -59,7 +59,7 @@ keywords:
   - Unique travel experience Flåm.
 description: "Experience a private Sognefjord adventure: Balestrand to Flåm
   transfer. Get close to nature on a local, inspiring, world-class fjord travel
-  experience. Authentic immersion for you."
+  experience. "
 images:
   - src: images/img_4365.jpeg
     alt: "båt transport fra flåm, gudvangen til balestrand "
@@ -109,7 +109,7 @@ A: It’s both! This is a world-class fjord experience or a unique #authentictra
 
 ### Q: What about departures from Flåm or Gudvangen?
 
-**A: Seamless Connections: Flåm & Gudvangen Departures**
+**A: Seamless Connections: Flåm or Gudvangen Departures**
 
 **FLÅM DEPARTURE:**\
 Ideal for those arriving by train to Flåm at 18:10, but too late for the standard Norled fast ferry. If you are determined to reach inspiring Balestrand (or Fjærland) the same evening, this **private transfer** is your perfect solution—"This is so me!"
@@ -121,7 +121,9 @@ Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https
 
 **A: Exploring the Iconic Aurlandsfjord & Nærøyfjord**
 
-Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
+Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with outer part of the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
+
+If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back, this is also possible for an additional NOK 5,000. This is a truly unique experience - Close to the fjord and nature!
 
 ### Q: How does this transfer promote wellness and presence?
 
