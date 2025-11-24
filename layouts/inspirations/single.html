@@ -1,53 +1,56 @@
 {{ define "main" }}
 
-<div class="bg-[##f3f7f6]">
-    <div class="max-w-[1250px] mx-auto md:px-4">
-        {{ with index .Params.images 0 }}
-        {{ partial "components/images/image-banner" . }}
-        {{ end }}
+<article>
+    <div class="bg-[##f3f7f6]">
+        <div class="max-w-[1250px] mx-auto md:px-4">
+            {{ with index .Params.images 0 }}
+            {{ partial "components/images/image-banner" . }}
+            {{ end }}
 
+        </div>
     </div>
-</div>
 
-<div class="bg-white">
-    <div class="container">
-        <div class="mx-auto max-w-2xl">
-            <div class="py-8 prose "> 
-                <h1>{{.Title}}</h1>
-                <div class="bg-[#05694c] p-1 rounded-4xl"></div>
-                {{.Content }}
+    <div class="bg-white">
+        <div class="container">
+            <div class="mx-auto max-w-2xl">
+                <div class="py-8 prose "> 
+                    <h1>{{.Title}}</h1>
+                    <div class="bg-[#05694c] p-1 rounded-4xl"></div>
+                    {{.Content }}
+                </div>
             </div>
         </div>
     </div>
-</div>
+</article>
 
 {{ with .Params.related_activities }}
-<div class="bg-[#f3f7f6]">
-    <div class="container">
+    <section>
+        <div class="bg-[#f3f7f6]">
+            <div class="container">
+                <div class="mb-8 text-center">
+                    <h3 class="text-2xl font-semibold">
+                        Related Activities
+                    </h3>
+                </div>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    {{ range . }}
+                    {{ $page := replace . "/index" "" }}
+                    {{ with $.Site.GetPage $page }}
 
-        <div class="mb-8 text-center">
-            <h3 class="text-2xl font-semibold">Related Activities</h3>
-        </div>
-
-        <div class="flex flex-wrap gap-4 justify-center">
-            {{ range . }}
-            {{ $page := replace . "/index" "" }}
-            {{ with $.Site.GetPage $page }}
-
-            <div class="max-w-sm">
-                {{ .Render "li" }}
+                    <div class="max-w-sm">
+                        {{ .Render "li" }}
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
             </div>
-            {{ end }}
-            {{ end }}
         </div>
-
-        
-    </div>
-</div>
-
+    </section>
 {{ else }}
 <div class="bg-[#f3f7f6]">
-    {{ partial "components/capt-tor-recommended" . }}
+    <section>
+        {{ partial "components/capt-tor-recommended" . }}
+    </section>
 </div>
 {{ end }}
 
