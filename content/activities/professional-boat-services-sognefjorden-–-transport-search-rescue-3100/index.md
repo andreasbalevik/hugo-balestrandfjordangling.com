@@ -69,7 +69,7 @@ cms: true
 
 Do you require professional boat services in the Sognefjord? We offer tailored solutions for transport, standby assignments, film and photo assistance, search operations, towing, and rescue by boat. Our expertise ensures efficient and reliable assistance when you need it most.
 
-# **Pricing and Vessel Information**
+## **Pricing and Vessel Information**
 
 ### **Q: How are mission costs calculated?**
 
