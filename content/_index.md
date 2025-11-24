@@ -7,7 +7,7 @@ action_button: Find your next adventure
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
 categories:
-  title: Pick Your Tour Style
+  title: Pick Your Style
 recommended:
   title: Captain Tor's Recommendation
   activities:
