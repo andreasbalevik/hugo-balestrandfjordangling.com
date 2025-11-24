@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="bg-[#f3f5f7]">
-    <div class="container  lg:max-xl:max-w-screen-lg">
+    <div class="container md:max-xl:max-w-screen-md">
         <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden">
             
         
@@ -43,7 +43,7 @@
             </div>
             <div class="order-1 lg:order-1 align-center justify-center">
                 {{ with .Params.images }}
-                    {{ partial "components/images/carousel-banner" . }}
+                    {{ partial "components/images/carousel-square" . }}
                 {{ end }}
             </div>
 

@@ -4,7 +4,7 @@
   <a href="{{ .RelPermalink }}" class="flex flex-col h-full hover:cursor-pointer">
     <div class="relative">
       {{ range first 1 .Params.images }}
-        {{ partial "components/images/thumbnail.html" . }}
+        {{ partial "components/images/image-square.html" . }}
       {{ end }}
 
       <div class="text-sm">
