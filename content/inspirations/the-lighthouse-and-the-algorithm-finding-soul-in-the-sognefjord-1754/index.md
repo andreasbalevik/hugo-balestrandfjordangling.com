@@ -11,6 +11,14 @@ keywords:
   - Wellness travel Norway fjord
   - Raw nature experience
   - Find peace in Norwegian nature
+  - 5D experience Sognefjord
+  - Authentic travel Norway
+  - Transformative travel experiences
+  - Bespoke Norway tours
+  - Sustainable tourism Norway fjord
+  - Luxury travel Norway private
+  - Mindful travel Sognefjord
+  - Soulful recharge vacation Norway
   - Heritage travel Norway
   - Authentic Sognefjord culture tour
   - Varde certified guide fishing trip
