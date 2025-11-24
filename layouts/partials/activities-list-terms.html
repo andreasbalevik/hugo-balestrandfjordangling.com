@@ -16,7 +16,6 @@
                 </span>
                 {{ end }}
 
-
                 <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -50,6 +49,28 @@
             
         </div>
     </div>
+
+    {{ if eq .Section "activities" }}
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-10">
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+        <a href={{ .RelPermalink }}>
+            <div style="background-color: {{.Params.color}};"
+                class="border border-gray-200 text-xl text-white p-5 text-center rounded">
+                <div class="inline-flex items-center">
+                    {{.Title}}
+                    {{ partial "arrow.html" . }}
+                </div>
+            </div>
+        </a>
+        {{end}}
+        {{end}}
+    </div>
+
+
+    {{ end }}
+
+    <hr class="mb-10 mt-3 text-gray-300">
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         {{ range sort .Pages.ByLastmod }}
