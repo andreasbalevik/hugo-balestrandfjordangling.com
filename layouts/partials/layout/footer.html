@@ -1,36 +1,36 @@
 <footer class="bg-gray-950 text-white py-10">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4" >
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
       <!-- Company Information -->
       <div>
-        <h3 class="text-xl font-semibold">{{ .Site.Title }}</h3>
+        <h3 class="text-2xl font-semibold">{{ .Site.Title }}</h3>
 
         {{ with .Site.Params.email}}
-        <a href="mailto:{{.}}" class="block mt-3 text-sm opacity-80 hover:opacity-100">
+        <a href="mailto:{{.}}" class="block mt-3 opacity-80 hover:opacity-100">
           {{ i18n "email"}}: {{.}}
         </a>
         {{ end }}
 
         {{ with .Site.Params.phone}}
-        <a href="tel:{{.}}" class="block mt-3 text-sm opacity-80 hover:opacity-100">
+        <a href="tel:{{.}}" class="block mt-3 opacity-80 hover:opacity-100">
           {{ i18n "phone" }}: {{.}}
         </a>
         {{ end }}
 
         {{ with .Site.Params.orgnr}}
-        <span class="block mt-3 text-sm opacity-80">Orgnr: {{.}}</span>
+        <span class="block mt-3 opacity-80">Orgnr: {{.}}</span>
         {{ end }}
 
         {{ with .Site.Params.address}}
-        <span class="block mt-3 text-sm opacity-80">Address: {{.}}</span>
+        <span class="block mt-3 opacity-80">Address: {{.}}</span>
         {{ end }}
       </div>
 
 
       <!-- Social Icons -->
-      <div class="flex items-start justify-start md:justify-center gap-6">
+      <div class="flex items-start justify-start md:justify-center gap-6 mt-1">
         <div class="flex gap-10">
 
           <a class="mt-[-4px]"  href="https://www.youtube.com/@balestrandfjordangling"><svg style="width: 25px; height:25px" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="red" d="M14.712 4.633a1.754 1.754 0 00-1.234-1.234C12.382 3.11 8 3.11 8 3.11s-4.382 0-5.478.289c-.6.161-1.072.634-1.234 1.234C1 5.728 1 8 1 8s0 2.283.288 3.367c.162.6.635 1.073 1.234 1.234C3.618 12.89 8 12.89 8 12.89s4.382 0 5.478-.289a1.754 1.754 0 001.234-1.234C15 10.272 15 8 15 8s0-2.272-.288-3.367z"/><path fill="#ffffff" d="M6.593 10.11l3.644-2.098-3.644-2.11v4.208z"/></svg></a>
@@ -53,7 +53,7 @@
           </svg>
           </a>
 
-          <a class="hover:underline text-sm" 
+          <a class="hover:underline text-sm mt-[-3px]" 
              href="https://no.tripadvisor.com/Attraction_Review-g616211-d12520219-Reviews-Balestrand_Fjord_Angling-Balestrand_Sogn_og_Fjordane_Western_Norway.html">
             TripAdvisor
           </a>
@@ -64,7 +64,7 @@
 
       <!-- Credits -->
       <div class="flex md:justify-end items-start">
-        <a href="https://balevikit.no" class="text-sm opacity-80 hover:underline">
+        <a href="https://balevikit.no" class="opacity-80 hover:underline">
           Webdesign: Balevik IT
         </a>
       </div>
