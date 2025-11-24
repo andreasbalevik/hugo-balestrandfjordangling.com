@@ -18,5 +18,5 @@ inspirations:
   title: Find Inspiration
   inspirations:
     - fjærland-fjord-unique-and-powerful-5749/index
-    - in-search-of-the-unpredictable-0418/index
+    - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
 ---
