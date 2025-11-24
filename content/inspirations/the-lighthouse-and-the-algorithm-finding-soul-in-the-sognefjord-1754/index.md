@@ -7,7 +7,7 @@ images:
   - src: images/img_20181228_110041_2_2.jpg
 cms: true
 ---
-## Introduction:
+## Introduction: 
 
 These days, with so much talk about AI efficiency and rapid changes in the travel industry, it's easy to feel stressed and experience FOMO. I've been there. I've seen the fear in people's eyes at national gatherings.
 But what if true value isn't found in speed, but in depth? What if what we're truly missing is ourselves?
@@ -17,7 +17,7 @@ This is my story of finding balance, using technology as a tool (3D), and delive
 
 ### Q: I feel drained by the digital world. What's the real difference between digital booking and your personal service?
 
-A: KAYAK is a powerful tool—a digital navigation system for the modern world. It excels at finding the right coordinates (3D data). But my Varde certification and 35 years of experience are my analog compass. It’s built on intuition and the feel of the fjord (5D). AI helps us find each other in the digital noise, but only the human connection ensures the true quality and deep transformation you seek.
+A: [KAYAK ](https://www.kayak.co.uk/Balestrand.41106.guide)is a powerful tool—a digital navigation system for the modern world. It excels at finding the right coordinates (3D data). But my Varde certification and 35 years of experience are my analog compass. It’s built on intuition and the feel of the fjord (5D). AI helps us find each other in the digital noise, but only the human connection ensures the true quality and deep transformation you seek.
 
 ### Q: What are travelers really seeking in a transformative experience?
 
