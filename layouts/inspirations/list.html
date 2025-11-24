@@ -3,9 +3,11 @@
 
 <div class="container">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {{ range .Pages.ByLastmod }}
-            {{ .Render "li" }}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {{ range $index, $page := .Pages.ByLastmod }}
+            <div class="{{ if eq $index 0 }}lg:col-span-2{{ end }}">
+                {{ .Render "li" }}
+            </div>
         {{ end }}
     </div>
 

@@ -3,11 +3,11 @@
 
         <div class="relative">
 
-            <div class="absolute inset-0 bg-black opacity-40 z-30"></div>
+            <div class="absolute inset-0 bg-black opacity-40 z-30 "></div>
 
             <div>
                 {{ range first 1 .Params.images }}
-                {{ partial "components/images/thumbnail.html" . }}
+                    {{ partial "components/images/image-fluid.html" . }}
                 {{ end }}
             </div>
 
