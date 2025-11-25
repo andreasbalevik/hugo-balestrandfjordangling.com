@@ -8,9 +8,9 @@
     {{ $backgroundImage := $image.Resize "x600 q50" }}
     <div
         style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow rounded">
-                <div class="p-8 h-full flex order-2 lg:order-1">
+        <div class="container md:max-xl:max-w-screen-lg">
+            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow rounded">
+                <div class="p-8 h-full flex order-2 xl:order-1">
                     <div class="prose lg:prose-xl prose-headings:mt-0 my-auto">
                         <h2 class="mt-0">{{ .Title }}</h2>
                         <p>{{ .Params.description }}</p>
@@ -25,7 +25,7 @@
                         {{ end }}
                     </div>
                 </div>
-                <div class="order-1 lg:order-2 lg:p-4 align-center">
+                <div class="order-1 xl:order-2 lg:p-4 align-center">
                     {{ with index .Params.images 0 }}
                     {{ partial "components/images/image-square" . }}
                     {{ end }}
