@@ -1,6 +1,6 @@
 ---
 title: "Unique Fjærland: Guided Boat & E-Bike Glacier Adventure "
-quality: CLASSIC
+quality: BOAT & EBIKE ESCAPE
 keywords:
   - Fjærland Glacier Adventure
   - Supphelledalen Glacier Hike
@@ -74,8 +74,7 @@ keywords:
   - Fly & Drive Norway Fjærland
   - Private Excursion Fjærland.
 description: "Escape to Fjærland, Sognefjord: A premium e-bike & boat glacier
-  adventure. Explore Supphelledalen's pristine nature. Exclusive, guided,
-  authentic—your ultimate Norwegian bucket-list experience."
+  adventure. Explore Supphelledalen's pristine nature. "
 images:
   - src: images/img_20220814_172455_6.jpg
     alt: Gravemaskin i fjærland, supphelledalen og isbre ,sykkeltur
@@ -140,8 +139,8 @@ A: This is an exclusive, guided, authentic—your ultimate Norwegian bucket-list
 
 * **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Cvc4xR6KHwB/) 
 * **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
-
-#### **WHEN THE JOURNEY IS THE DESTINATION**
+* **Teaser YoyTube video 3:** Watch the video [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+* * **WHEN THE JOURNEY IS THE DESTINATION**
 
 ### **Q: What is the experience like on the boat and the atmosphere we can expect?**
 
