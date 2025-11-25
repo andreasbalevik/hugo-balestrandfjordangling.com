@@ -1,0 +1,32 @@
+# Allow major search engines and AI crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Extended  # Google AI training / Gemini
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Bingbot-Discovery  # Bing AI indexing
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended   # Apple Intelligence / AI training
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Disallow bad bots or unknown scrapers (optional)
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+# Sitemap for better SEO + AI context
+Sitemap: https://balestrandfjordangling.com/sitemap.xml

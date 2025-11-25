@@ -4,6 +4,8 @@ layout: llms
 type: page
 outputs:
   - TXT
+sitemap:
+  disabled: true
 ---
 
 # LLMs
