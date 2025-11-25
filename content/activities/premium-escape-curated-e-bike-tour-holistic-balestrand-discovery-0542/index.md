@@ -71,6 +71,7 @@ description: Perfect for you who are looking for unique travel experiences in
   twist and personal charging with captain Tor.
 images:
   - src: images/img_20201007_122350_5.jpg
+    alt: E-bike tour in Balestrand with scenic mountain and fjord landscapes
 tags:
   - business-and-pleasure
 information:

@@ -6,6 +6,7 @@ description: Go local with Captain Tor. Private Excursions. See Glaciers,
 action_button: Find your next adventure
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+    alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the Norwegian fjords
 categories:
   title: Pick Your Style
 recommended:

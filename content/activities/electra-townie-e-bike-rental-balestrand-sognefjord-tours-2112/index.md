@@ -61,6 +61,7 @@ description: Explore Balestrand on a stylish blue e-bike! Self-guided tours
   today!
 images:
   - src: images/img_20200919_145303_9.jpg
+    alt: Electra Townie e-bike ready for rental in Balestrand with fjord and mountain views
   - src: images/img_20201007_122350_5.jpg
     alt: funny bike photos in Balestrand nature aand high mountains and farmhouses
 tags:

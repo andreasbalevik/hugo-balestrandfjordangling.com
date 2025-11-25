@@ -62,6 +62,7 @@ description: Reward yourself with an exclusive adventure. A unique "slow travel"
   sustainable luxury you truly deserve.
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+    alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the Norwegian fjords
 tags:
   - business-and-pleasure
 information:

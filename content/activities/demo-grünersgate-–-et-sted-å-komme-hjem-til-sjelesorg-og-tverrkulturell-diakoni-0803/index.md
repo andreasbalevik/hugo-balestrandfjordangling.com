@@ -52,7 +52,9 @@ description: Helseutfordringer? Vi hjelper damer å snu motgang til en personlig
   ressurs gjennom veiledning og samtaler. Ta tak i livet ditt i dag."
 images:
   - src: images/img_20181117_131939_7_2-–-kopi.jpg
+    alt: Peaceful gathering space at Grünersgate with warm welcoming atmosphere
   - src: images/img_20190517_155611_5.jpg
+    alt: Community meeting room at Grünersgate for cross-cultural care and guidance
   - src: images/img_20181023_185653_301.jpg
     alt: frihet i norsk natur og gleden av hjertet som banker ny energi
 tags:

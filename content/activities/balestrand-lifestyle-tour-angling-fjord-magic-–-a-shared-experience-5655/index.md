@@ -57,6 +57,7 @@ description: Discover the real Sognefjord with local guides! We'll show you
   today!
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+    alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the Norwegian fjords
 tags:
   - family-and-friends
 information:
