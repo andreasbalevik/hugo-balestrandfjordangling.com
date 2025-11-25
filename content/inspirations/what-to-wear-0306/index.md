@@ -1,10 +1,13 @@
 ---
-title: "WHAT TO WEAR "
+title: "What To Wear "
 description: "In Norway, we live by the saying: “There is no such thing as bad
-  weather, only bad clothes”. Check out our list of essentials to bring along
-  for an even better experience up here in the North!"
+  weather, only bad clothes” "
 images:
   - src: images/b67i4478.jpg
+related_activities:
+  - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
+  - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
+  - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
 cms: true
 ---
 GO BY THE 3-LAYERS RULE: with an outer, water resistant shell jacket (and pants), an inner fleece jacket and a woolen base layer all seasons. It is always colder at sea than on land, even though it is the height of summer it feels cool.
