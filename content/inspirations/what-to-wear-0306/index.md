@@ -1,7 +1,7 @@
 ---
 title: "What To Wear "
 description: "In Norway, we live by the saying: “There is no such thing as bad
-  weather, only bad clothes” "
+  weather, only bad clothes” - Here is a check list of essentials: "
 images:
   - src: images/b67i4478.jpg
 related_activities:
