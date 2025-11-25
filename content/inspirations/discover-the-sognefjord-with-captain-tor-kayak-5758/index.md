@@ -41,7 +41,7 @@ cms: true
 
 **A:** We recommend exploring the many possibilities available. For a broader overview of what the region has to offer, you can check out this helpful resource:
 
-Discover more things to do in Balestrand ([LINK TIL KAYAK HERE)](https://www.kayak.co.uk/Balestrand.41106.guide)
+Discover more things to do in Balestrand:  [Link to KAYAK here](https://www.kayak.co.uk/Balestrand.41106.guide)
 
 > ### **I AM the fjord, *I AM Captain Tor!***
 
