@@ -1,11 +1,13 @@
 {{ define "main" }}
 
+{{ $image_path := index .Params.images 0}}
+{{ $image := resources.GetMatch $image_path.src }}
+{{ $blur_filter := images.GaussianBlur 50 }}
+{{ $backgroundImage := $image.Resize "x600 q10 webp" | images.Filter $blur_filter | images.Filter (images.Contrast 50) }}
+
+<link rel="preload" as="image" href="{{ $backgroundImage.Permalink }}" fetchpriority="high">
 
 <section>
-    {{ $blur_filter := images.GaussianBlur 100 }}
-    {{ $image_path := index .Params.images 0}}
-    {{ $image := resources.GetMatch $image_path.src | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
-    {{ $backgroundImage := $image.Resize "x600 q50" }}
     <div
         style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
         <div class="container md:max-xl:max-w-screen-lg">
