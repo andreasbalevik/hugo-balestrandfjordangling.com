@@ -3,6 +3,7 @@ enableGitInfo = true
 title = 'Balestrand Fjord Angling'
 theme = 'balevikit-tailwindcss-hugo-theme'
 timeout = 90
+baseURL = 'https://balestrandfjordangling.com'
 
 [imaging]
   anchor = 'Smart'
