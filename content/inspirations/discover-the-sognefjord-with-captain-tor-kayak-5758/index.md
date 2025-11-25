@@ -61,6 +61,6 @@ They specialize in authentic, sustainable travel and connect you with local expe
 
 [KAYAK ](https://www.kayak.co.uk/Balestrand.41106.guide)is a powerful tool, a digital navigation system for the modern world. It is excellent for finding the right coordinates.
 
-My **[Varde certification](https://balestrandfjordangling.com/en/varde-experience-quality-a-companion-in-norwegian-travel-life)**—an old, local standard for quality and safety—is my **analog compass**. It is built on 35 years of experience, intuition, and the feel of the Sognefjord.
+My **[Varde certification](https://balestrandfjordangling.com/inspirations/varde-experience-quality-a-companion-in-norwegian-travel-life-0124/)**—an old, local standard for quality and safety—is my **analog compass**. It is built on 35 years of experience, intuition, and the feel of the Sognefjord.
 
 **AI helps us find each other in the digital noise,** but only the human connection ensures the quality and the feeling you get when you drink water straight from the waterfall.
