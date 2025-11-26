@@ -136,7 +136,7 @@ A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put togethe
 
 > Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://balestrandfjordangling.com/activities/balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-5655/)
+> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
 > [](HERE)Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
