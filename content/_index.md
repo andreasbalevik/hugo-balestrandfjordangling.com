@@ -20,4 +20,7 @@ inspirations:
   inspirations:
     - discover-the-sognefjord-with-captain-tor-kayak-5758/index
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
+
+aliases:
+  - /en
 ---

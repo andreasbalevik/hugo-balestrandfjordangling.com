@@ -6,6 +6,9 @@ menus:
 images:
   - src: images/thumbnail_img_0243.jpg
     alt: Captain Tor and Miss Fjords boat in Balestrand harbor
+aliases:
+  - /en/about
+  - /om-oss
 ---
 # About Balestrand Fjord Angling
 
