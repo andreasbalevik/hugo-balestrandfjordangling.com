@@ -146,11 +146,11 @@ A: Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://hugo-balestra
 
 A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-Teaser Instagram Reel 1: Watch the video   [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
-
-Teaser Instagram Reel 2: Watch the video   [HERE](<>)
-
-Teaser YouTube Episode : Watch Episode    [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser Instagram Reel 1: Watch the video   [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+>
+> Teaser Instagram Reel 2: Watch the video   [HERE](<>)
+>
+> Teaser YouTube Episode : Watch Episode    [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### **PRISTINE FJORDS: LOST IN THE MOMENT**
 
