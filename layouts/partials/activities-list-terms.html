@@ -51,23 +51,21 @@
     </div>
 
     {{ if eq .Section "activities" }}
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-10">
-        {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
-        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-        <a href={{ .RelPermalink }}>
-            <div style="background-color: {{.Params.color}};"
-                class="border border-gray-200 text-xl text-white p-5 text-center rounded">
-                <div class="inline-flex items-center">
-                    {{.Title}}
-                    {{ partial "arrow.html" . }}
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-10">
+            {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+            {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <a href={{ .RelPermalink }}>
+                <div style="background-color: {{.Params.color}};"
+                    class="border border-gray-200 text-xl text-white p-5 text-center rounded">
+                    <div class="inline-flex items-center">
+                        {{.Title}}
+                        {{ partial "arrow.html" . }}
+                    </div>
                 </div>
-            </div>
-        </a>
-        {{end}}
-        {{end}}
-    </div>
-
-
+            </a>
+            {{end}}
+            {{end}}
+        </div>
     {{ end }}
 
     <hr class="mb-10 mt-3 text-gray-300">

@@ -71,9 +71,10 @@
     {{ partial "components/capt-tor-recommended" . }}
 </section>
 
+
 <section>
     {{ with .Params.inspirations }}
-    <div class="bg-white">
+        <div class="bg-white">
         <div class="container">
 
             <div class="mb-8 text-center">
@@ -88,8 +89,54 @@
                 {{ end }}
             </div>
         </div>
-    </div>
+        </div>
+
     {{ end }}
+</section>
+
+<section>
+    <div class="py-12">
+        <div class="container">
+            <div class="prose-base max-w-none">
+            {{ with .Site.GetPage "about" }}
+                {{ .Summary | }}
+
+                <a href="{{ .RelPermalink }}"
+                    class="mt-2 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
+                    Read more
+                    {{ partial "arrow.html" . }}
+                </a>
+
+            {{ end }}
+            </div> 
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="bg-white">
+        <div class="container">
+
+        {{ with .Site.GetPage "index" }}
+                {{ with .Params.recommended }}
+                    
+                        {{ range first 1 .activities }}
+                        {{ $page := replace . "/index" "" }}
+                        {{ with $.Site.GetPage $page }}
+                        
+                        {{ .Render "highlight" }}
+                        
+                        {{end}}
+                        {{ end }}
+            
+                {{ end }}
+        {{ end }}
+        </div>
+    
+    </div>
+
 </section>
 
 

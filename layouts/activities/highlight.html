@@ -1,0 +1,36 @@
+<div class="bg-[#f3f5f7] shadow">
+    <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden">
+        <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
+            <div class="prose max-w-none mx-auto my-auto">
+                <div class="flex items-center justify-between font-bold not-prose">
+                    <span class="text-xs text-gray-600">
+                        {{ .Params.quality }}
+                    </span>
+
+                    {{ with .Params.information.options.varde_experience_quality }}
+                        <img class="max-h-[30px]" alt="varde experience quality" src="/images/varde-experience-quality.png" />
+                    {{ end }}
+                </div>
+                <h1 class="pt-4">
+                    {{.Title}}
+                </h1>
+                
+                <p>{{.Params.description}}</p>
+
+                <a href="{{ .RelPermalink }}"
+                    class="mt-2 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
+                    Read more
+                    {{ partial "arrow.html" . }}
+                </a>
+
+
+            </div>
+        </div>
+        <div class="order-1 lg:order-1 align-center justify-center">
+            {{ with .Params.images }}
+                {{ partial "components/images/carousel-square" . }}
+            {{ end }}
+        </div>
+
+    </div>
+</div>
