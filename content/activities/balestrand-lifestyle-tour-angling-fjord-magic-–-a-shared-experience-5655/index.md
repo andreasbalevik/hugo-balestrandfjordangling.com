@@ -65,6 +65,7 @@ images:
   - src: images/img_20210810_130702_3.jpg
     alt: Cheerful prank in Fjærlandsfjord lady sitting on the bow and happy on a
       fishing trip and high mountains with clear water
+  - src: images/image1.jpeg
 tags:
   - family-and-friends
 information:
@@ -148,7 +149,7 @@ A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put togethe
 
 > Teaser Instagram Reel 1: Watch the video   [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video   [HERE](<>)
+> Teaser Instagram Reel 2: Watch the video   [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
 > Teaser YouTube Episode : Watch Episode    [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
