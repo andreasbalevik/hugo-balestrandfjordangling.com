@@ -32,11 +32,14 @@ keywords:
   - Exclusive Norway Experience
 description: "Sognefjord fishing adventure: learn angling, trolling, and
   netting. A scenic trip for family bonding. Experience Viking pride and the
-  thrill of the fjords. Your moment to embrace the challenge."
+  thrill of the fjords."
 images:
   - src: images/mother-and-daughter-and-funny-fish-on-viking-fishing-adventure-in-sognefjord-with-captain-tor.jpeg
     alt: Mother and daughter and funny fish, on viking fishing adventure in
       sognefjord with captain Tor
+  - src: images/esxae4wi.jpeg
+  - src: images/ref1q_h0.jpeg
+  - src: images/solveig-lyr-redigert.jpg
 tags:
   - family-and-friends
 information:
@@ -61,7 +64,6 @@ product_info:
       price: 4998
 cms: true
 ---
-
 ## **The Perfect Gift: Trade Screen Time for Sognefjord ‘Adventure Time’**
 
 ### A unique, highly sought-after experience for kids, spouses, or friends.
@@ -128,11 +130,15 @@ Feel free to share this unique opportunity here in Balestrand with friends, and 
 
 **Don’t miss out! Secure your spot on this year’s most memorable family adventure today.**
 
-### Q: Is there any video inspiration for this tour?
+### Q: Do you have any video inspiration from the tour?
 
-> ###### Perfect for anyone looking for travel inspiration in Sognefjord:
+A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
+
+> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> ###### “We Went Fishing in Norway’s Longest Fjord – WOW!” [(Episode 1)](https://www.youtube.com/watch?v=AgKuXXlxM4o) ﻿( Episode 2, coming :)
+> Teaser Instagram Reel 2: Watch the video [HERE](https://balestrandfjordangling.com/activities/balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-5655/)
+>
+> [](HERE)Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ## ***A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR***
 
