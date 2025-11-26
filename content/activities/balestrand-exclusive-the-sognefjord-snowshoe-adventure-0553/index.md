@@ -99,6 +99,9 @@ product_info:
     minutes: 15
     hours: 3
 cms: true
+aliases:
+  - /aktiviteter/clean-air-amazing-snowshoe-hike-in-balestrand-of-norway-sognefjord
+  - /en/activeties/amazing-snowshoe-hike-in-balestrand
 ---
 ## **Introduction: Exclusive Snowshoe Hikes in Balestrand**
 
