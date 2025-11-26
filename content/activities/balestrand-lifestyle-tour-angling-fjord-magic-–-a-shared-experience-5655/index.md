@@ -51,13 +51,20 @@ keywords:
     icon)
   - Award Winning Norway
   - Top Rated Activity Norway.
-description: Discover the real Sognefjord with local guides! We'll show you
-  authentic homesteads, stunning mountains, hidden waterfalls, and the best
-  fishing spots. Experience genuine Norwegian hospitality. Book your adventure
-  today!
+description: "We'll show you authentic homesteads, stunning mountains, hidden
+  waterfalls, and the best fishing spots. Experience genuine Norwegian
+  hospitality. "
+aliases: []
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
-    alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the Norwegian fjords
+    alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
+      Norwegian fjords
+  - src: images/img_0593.jpeg
+    alt: smiling woman with fishing rod and red jacket fishing in Esefjorden Norway
+      with captain Tor among high mountains in Sognefjorden
+  - src: images/img_20210810_130702_3.jpg
+    alt: Cheerful prank in Fjærlandsfjord lady sitting on the bow and happy on a
+      fishing trip and high mountains with clear water
 tags:
   - family-and-friends
 information:
@@ -90,11 +97,11 @@ cms: true
 
 ### **Q: What makes this tour different from typical tourist activities?**
 
-**A:** This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape.
+A: This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape.
 
 ### **Q: Who is this excursion perfect for?**
 
-**A:** Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours.
+A: Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours.
 
 ## **AUTHENTIC SOGNEFJORD LIFESTYLE: RAIN OR SHINE**
 
@@ -133,13 +140,15 @@ A: Raw materials can be purchased easily at the grocery store next to the Balest
 
 ### Q: **What if I’m not able to cook myself?**
 
-A: Try the tasty Sognefjord Seafood Sandwich at Kviknes Hotell after the trip, paired with something good to drink.
+A: Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://hugo-balestrandfjordangling.netlify.app/admin/#/collections/activities/entries/balestrand-fjord-angling-family-expedition/index)Hotell after the trip, paired with something good to drink.
 
-#### **VIDEO: EXPERIENCE THE UNEXPECTED - HALIBUT CATCH**
+### Q: Do you have any video inspiration from the tour?
 
-Watch our family fishing trip [VIDEO HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-*This is a family expedition where you can experience the unexpected!*
+Teaser Instagram Reel 1: Watch the video   [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+Teaser Instagram Reel 2: Watch the video   [HERE](<>)
+Teaser YouTube Episode : Watch Episode    [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### **PRISTINE FJORDS: LOST IN THE MOMENT**
 
@@ -153,7 +162,7 @@ A: In bright season, the Fjærlandsfjord has a green color from the melt-water o
 
 Consider taking a trip with us and sharing your experience with friends. Reservations can be made directly or through your tour operator.
 
-#### **SIMPLICITY CREATES EMOTIONS - *ESCAPE***
+> #### **SIMPLICITY CREATES EMOTIONS - *ESCAPE***
 
 ## **4) Scenic Boat Route in Fjærlandsfjorden**
 
@@ -169,4 +178,4 @@ It’s also noted that the experience is nice and tidy.
 
 ### **On the Go? Fly & Drive Sognefjord Logistics**
 
-Many of our guests arrive in the Sognefjord driving their own car, rental car, or motorhome/campervan after flying into Oslo (OSL), Bergen (BGO), or Ålesund (AES) airports. A stop in Balestrand for an authentic fjord experience with Captain Tor is a highlight of their itinerary. Our tours are flexible; simply park your vehicle (**Veganeset Camping, praised in The Guardian, is nearby**), jump aboard for your private excursion, and continue your journey the same day. Balestrand is centrally located between key ferry points (Dragsvik, Hella, Vangsnes), making it easy to integrate into your logistics. [Find the ferry timetable on the link HERE.](https://www.norled.no/wp-content/uploads/2024/11/fc6193ba-0fca-4561-b498-2e6f9898a40a.pdf)
+Many of our guests arrive in the Sognefjord driving their own car, rental car, or motorhome/campervan after flying into Oslo (OSL), Bergen (BGO), or Ålesund (AES) airports. A stop in Balestrand for an authentic fjord experience with Captain Tor is a highlight of their itinerary. Our tours are flexible; simply park your vehicle (**Veganeset Camping, [praised in The Guardian,](https://www.theguardian.com/travel/2025/apr/04/readers-best-campsites-camping-trips-in-europe) is nearby**), jump aboard for your private excursion, and continue your journey the same day. Balestrand is centrally located between key ferry points (Dragsvik, Hella, Vangsnes), making it easy to integrate into your logistics. [Find the ferry timetable on the link HERE.](https://www.norled.no/wp-content/uploads/2024/11/fc6193ba-0fca-4561-b498-2e6f9898a40a.pdf)
