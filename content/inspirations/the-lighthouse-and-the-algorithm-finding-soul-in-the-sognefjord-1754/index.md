@@ -48,7 +48,7 @@ images:
     src: images/my-bravo-augenia-in-sognefjord-small-motor-boat-dark-blue-mountains-misty-sky-and-a-pine-tree.jpg
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
-  - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
+  - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
   - scenic-boat-route-balestrand-fjærland-4239/index
 cms: true
 ---
@@ -84,9 +84,9 @@ We offer three unique programs that go deeper than just tourism. They are design
 
 **Short Text:** Escape the digital noise with a premium, silent fjord experience. Find peace in Norway's authentic nature.
 
-Description: A premium 4-hour private tour dedicated to silence, reflection, and raw nature experience. More than just fishing, this is a "digital detox" where we focus on presence and the deep calm of the Sognefjord. Rediscover the joy of simply being, far from algorithmic stress.
+Description: A premium 3,5-hour private tour dedicated to silence, reflection, and raw nature experience. More than just fishing, this is a "digital detox" where we focus on presence and the deep calm of the Sognefjord. Rediscover the joy of simply being, far from algorithmic stress.
 
-#### Hyperlink Text: [Explore The Silent Fjord Escape](https://hugo-balestrandfjordangling.netlify.app/activities/scenic-boat-route-balestrand-fj%C3%A6rland-4239/)
+#### Hyperlink Text: [Explore The Silent Fjord Escape](https://balestrandfjordangling.com/activities/premium-balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-3328/)
 
 **Keywords:** Fjord Escape, Digital Detox Norway, Silent Travel, 5D Experience, Premium Mindfulness Retreat, Authentic Nature Tour.
 
