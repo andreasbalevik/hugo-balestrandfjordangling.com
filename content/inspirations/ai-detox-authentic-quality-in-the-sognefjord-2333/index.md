@@ -37,7 +37,7 @@ images:
       sits at the bow of the boat, arms open wide to the mountain peaks and the
       open water.
 related_activities:
-  - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
+  - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
 cms: true
