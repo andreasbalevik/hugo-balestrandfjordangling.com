@@ -21,14 +21,9 @@ cms: true
 ---
 **Introduction:** We position our experiences in Balestrand as a necessary, modern journey – **a blend of historic "Grand Tour," spiritual "walkabout," "pilgrimage," and rejuvenating "springfulness.** 
 
-Based on searches of digital trends and information about St. Olav’s Church in Balestrand, we have a powerful foundation for an inspiration page that appeals to the deeper, holistic motives of our international guests (especially those from the USA, Canada, Australia who are seeking roots and who hope to find enduring values in the Sognefjord experience.
+> "Drawing from digital trends and the legacy of St. Olav’s Church, this page appeals to the holistic motives of international guests. We target travelers from the USA, Canada, and Australia seeking roots and enduring values within the Sognefjord experience."
 
-
-
-## 
-**Quick Insights: Our Core Values Q&A**
-
-
+## **Quick Insights: Our Core Values Q&A**
 
 #### – Buzzwords: Sustainability, Ethics, Mental Wellness:
 
@@ -44,13 +39,9 @@ Based on searches of digital trends and information about St. Olav’s Church in
 
 A: We are committed to sustainability and ethics. We use AI behind the scenes for operational efficiency, so we can maximize the authentic customer experience. For those seeking mental wellness and a break from screens, our tours offer a necessary digital detox and springfulness – a renewal of body and soul. We are transparent; we have nothing to hide.
 
-
 > **"We know that our guests read in different ways. Below you will find our values presented as quick questions/answers, followed by a more comprehensive background for those who wish to delve deeper into our philosophy."**
 
-
-## 
 **Deep Dive: Our Philosophy & The Grand Tour Legacy**
-
 
 #### – Buzzwords: Integrity, Varde-Quality, Mastery:
 
