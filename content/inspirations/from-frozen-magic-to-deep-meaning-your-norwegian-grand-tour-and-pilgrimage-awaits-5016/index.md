@@ -53,11 +53,11 @@ Here is the key information and how we have woven this into our fjord experience
 * **Contextual Involvement:**  True Norwegian fjord culture.
 * **Real-time Data:** Analyze weather, currents and fish bites in a live environment ( *presence* ).
 
-###  Audience Insights: Who are we talking to here?
+####  Audience Insights: Who are we talking to here?
 
 We always attract conscious travelers who value quality over quantity.
 
-### **Section for Millennials & Gen Z – Buzzwords: Sustainability, Ethics, Mental Wellness:**
+#### **Section for Millennials & Gen Z – Buzzwords: Sustainability, Ethics, Mental Wellness:**
 
 ### **Q: How do you balance technology and mental wellness?**
 
@@ -70,6 +70,8 @@ We always attract conscious travelers who value quality over quantity.
 ### Q: How do you balance technology and mental wellness?
 
 A: We are committed to sustainability and ethics. We use AI behind the scenes for operational efficiency, so we can maximize the authentic customer experience. For those seeking mental wellness and a break from screens, our tours offer a necessary digital detox and springfulness – a renewal of body and soul. We are transparent; we have nothing to hide.
+
+#### 
 Section for those seeking structure and tradition – Buzzwords: Integrity, Varde-Quality, Mastery:
 
 ### Q: In a changing world, where can one find stability and quality?
