@@ -21,13 +21,16 @@ cms: true
 ---
 **Introduction:** We position our experiences in Balestrand as a necessary, modern journey – **a blend of historic "Grand Tour," spiritual "walkabout," "pilgrimage," and rejuvenating "springfulness.** 
 
-Based on searches of digital trends and information about St. Olav’s Church in Balestrand, we have a powerful foundation for an inspiration page that appeals to the deeper, holistic motives of our international guests (especially those from the USA, Canada, Australia who are seeking roots and who hopes to find enduring values in the Sognefjord experience.
+Based on searches of digital trends and information about St. Olav’s Church in Balestrand, we have a powerful foundation for an inspiration page that appeals to the deeper, holistic motives of our international guests (especially those from the USA, Canada, Australia who are seeking roots and who hope to find enduring values in the Sognefjord experience.
 
-**Here is the two key information sections and how we have woven this into our fjord experiences**
 
-## **Section 1 for Millennials & Gen Z**
 
-#### **– Buzzwords: Sustainability, Ethics, Mental Wellness:**
+## 
+**Quick Insights: Our Core Values Q&A**
+
+
+
+#### – Buzzwords: Sustainability, Ethics, Mental Wellness:
 
 ### **Q: How do you balance technology and mental wellness?**
 
@@ -41,11 +44,15 @@ Based on searches of digital trends and information about St. Olav’s Church in
 
 A: We are committed to sustainability and ethics. We use AI behind the scenes for operational efficiency, so we can maximize the authentic customer experience. For those seeking mental wellness and a break from screens, our tours offer a necessary digital detox and springfulness – a renewal of body and soul. We are transparent; we have nothing to hide.
 
-## **Section 2:  Anchored in Integrity: The Enduring Value of Mastery**
 
-#### **Section for those seeking structure and tradition**
+> **"We know that our guests read in different ways. Below you will find our values presented as quick questions/answers, followed by a more comprehensive background for those who wish to delve deeper into our philosophy."**
 
-#### **– Buzzwords: Integrity, Varde-Quality, Mastery:**
+
+## 
+**Deep Dive: Our Philosophy & The Grand Tour Legacy**
+
+
+#### – Buzzwords: Integrity, Varde-Quality, Mastery:
 
 ### **Q: In a changing world, where can one find stability and quality?**
 
