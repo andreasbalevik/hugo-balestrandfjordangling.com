@@ -57,7 +57,7 @@ A: Our philosophy is anchored in integrity and Varde-quality. We offer a chance 
 
    ***Integration:*** Our tours are not just fishing trips; they are a ***walkabout*** in the Sognefjord’s rich cultural landscape. We offer a chance to disconnect from the data stream and connect with nature, and find the inner stillness and meaning they seek.
 
-   ***Integration:***  The spring season is perfect for this market (Australians often travel in their autumn/our spring). We sell ***"***springfulness" – an opportunity to recharge your batteries, experience the light and spring in Norway, and find peace through presence in the moment.
+   ***Integration:***  The spring season is perfect for this market (Australians often travel in their autumn/our spring). We sell "springfulness" – an opportunity to recharge your batteries, experience the light and spring in Norway, and find peace through presence in the moment.
 2. **"Walkabout" – Finding Meaning in Movement.**  The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
 3. **"Springfulness" – The Renewal of Spring and Presence.** *"Springfulness"* (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
 4. **"The Pilgrimage" The Modern (Holistic Approach)** Research on pilgrimages shows that religious motives are less dominant today. People seek instead:Contemplation, stillness, and health.Nature, history, and culture.A desire for a more present, simple, and slow life (slow travel).
