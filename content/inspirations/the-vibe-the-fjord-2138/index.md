@@ -32,10 +32,14 @@ keywords:
   - go viking norway
   - norway immersive experience
 description: "Title: Trade Your Feed For The Fjord: The Ultimate Scandinavian
-  Reset (Ages 26-31) Subtitle: Stop scrolling, start living. This is your moment
-  to find your fjord frequency. No cap."
+  Reset (Ages 26-31) Subtitle: Stop scrolling, start living. Find your fjord
+  frequency. "
 images:
   - src: images/mestringsvibber-💯-fra-fjord-til-fat.-authenticadventure.jpg
+related_activities:
+  - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
+  - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
+  - unique-fjærland-guided-boat-e-bike-glacier-adventure-escape-to-fjærland-sognefjord-a-premium-e-bike-boat-glacier-adventure-explore-supphelledalens-pristine-nature-exclusive-guided-authentic—your-ultimate-norwegian-bucket-list-experience-b-1243/index
 cms: true
 ---
 ## Forget the basic B&B and the overpriced avocado toast.
