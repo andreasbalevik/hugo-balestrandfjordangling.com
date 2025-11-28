@@ -1,7 +1,7 @@
 ---
-title: 'DEMO: Grünersgate 2 – Et Sted Å Komme Hjem Til: Sjelesorg og
+title: 'DEMO: Grünersgate 2, Oslo – Et Sted Å Komme Hjem Til: Sjelesorg og
   Tverrkulturell Diakoni"'
-quality: TEST
+quality: future collaboration
 keywords:
   - "Q&A: Tverrkulturell Diakoni og Veiledning Q: Hva er Grünersgate og hvem er
     dette tilbudet for? A: Grünersgate er et konsept og et fysisk sted for
