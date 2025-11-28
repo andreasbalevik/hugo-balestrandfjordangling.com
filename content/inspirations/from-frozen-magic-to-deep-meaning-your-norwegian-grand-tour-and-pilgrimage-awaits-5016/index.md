@@ -33,15 +33,30 @@ Here is the key information and how we have woven this into our fjord experience
    *walkabout* in the Sognefjord’s rich cultural landscape. We offer a chance to disconnect from the data stream and connect with nature, and find the inner stillness and meaning they seek.
 
    *Integration:*  The spring season is perfect for this market (Australians often travel in their autumn/our spring). We sell "springfulness" – an opportunity to recharge your batteries, experience the light and spring in Norway, and find peace through presence in the moment.
-2. **"Walkabout" – Finding Meaning in Movement.**
-    The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
-3. **"Springfulness" – The Renewal of Spring and Presence.**  "Springfulness" (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
-4. **"The Pilgrimage" The Modern (Holistic Approach)**  Research on pilgrimages shows that religious motives are less dominant today. People seek instead:Contemplation, stillness, and health.Nature, history, and culture.A desire for a more present, simple, and slow life (slow travel).
-5. **The Real Love Story (Human Essence)**   The church was built by Knut Kvikne in memory of his English wife, Margaret Green Kvikne, who died young of tuberculosis. She wanted an English church in Balestrand. This is an incredibly moving and authentic story.
-6. **"Frozen" Connection (Disney Magic & Global Appeal)** St. Olav's Church is widely known as the inspiration for the chapel where Elsa is crowned in the Disney film 
 
-   *Frozen*. With Captain Tor, these themes are brought to life in an authentic way that can awaken emotions, clarity, and wholeness in your search for "Your True SELF". Travel is about discovering new sides of oneself in meeting others (The travel trend picture). The journey becomes the destination!
-7. **Faith, Hope, and Love** Absolutely. Faith, Hope, and Love are the three central virtues in Christian ethics, often called the theological virtues. They have deep roots in the Bible, especially in Paul’s First Letter to the Corinthians (1 Cor 13:13). Here is a brief summary of these Christian values:
+2. **"Walkabout" – Finding Meaning in Movement.**
+
+    The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
+
+3. **"Springfulness" 
+
+– The Renewal of Spring and Presence.**  "Springfulness" (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
+
+4. **"The Pilgrimage" The Modern (Holistic Approach)** 
+
+ Research on pilgrimages shows that religious motives are less dominant today. People seek instead:Contemplation, stillness, and health.Nature, history, and culture.A desire for a more present, simple, and slow life (slow travel).
+
+5. **The Real Love Story (Human Essence)** 
+
+ The church was built by Knut Kvikne in memory of his English wife, Margaret Green Kvikne, who died young of tuberculosis. She wanted an English church in Balestrand. This is an incredibly moving and authentic story.
+
+6. **"Frozen" Connection (Disney Magic & Global Appeal)** 
+
+St. Olav's Church is widely known as the inspiration for the chapel where Elsa is crowned in the Disney film  *Frozen*. With Captain Tor, these themes are brought to life in an authentic way that can awaken emotions, clarity, and wholeness in your search for "Your True SELF". Travel is about discovering new sides of oneself in meeting others (The travel trend picture). The journey becomes the destination!
+
+7. **Faith, Hope, and Love**
+
+Absolutely. Faith, Hope, and Love are the three central virtues in Christian ethics, often called the theological virtues. They have deep roots in the Bible, especially in Paul’s First Letter to the Corinthians (1 Cor 13:13). Here is a brief summary of these Christian values:
 
    **Faith (Pistis):** Faith is not just intellectual acceptance of doctrines, but a deep, trusting relationship with God. It is the basis for the Christian life – a conviction of things unseen, and a certainty in what is hoped for. In your context, it can be about faith in the power of nature and God's creation.
 
@@ -50,24 +65,26 @@ Here is the key information and how we have woven this into our fjord experience
    **Love (Agape):** This is considered the foremost and most important of the virtues. 
 
    *Agape*is selfless, sacrificial, and unconditional love – the highest form of love, which God shows humanity. Paul says that without love, the other virtues are worthless. It is love that binds everything together and gives value to actions.
+
    These three values are fundamental to a meaningful life and align closely with your own philosophy of quality, authenticity, and "lifting together".
 
 * **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots."
+
 * **Contextual Involvement:** Authentic Norwegian fjord culture.
-* **Real-time Data:**
 
-   Analyze weather, currents, and fish bites in a live environment (*presence*).
-* **Solitude and Personal Achievement:**
+* **Real-time Data:** Analyze weather, currents, and fish bites in a live environment (*presence*).
 
-   Opplev noe utenfor kontoret og "No Chat-bots". **Contextual Involvement:**
+* **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots". 
 
-   Ekte norsk fjordkultur. **Real-time Data:** Analyser vær, strøm og fiskebitt i et live miljø ( *tilstedeværelse* ).
+**Contextual Involvement:**  True Norwegian fjord culture.
+
+ **Real-time Data:** Analyser vær, strøm og fiskebitt i et live miljø ( *tilstedeværelse* ).
 
 > *"Never doubt that a small group of thoughtful, committed citizens can change the world - Indeed, it's the only thing that ever has."*
 >
 > \- Margaret Mead.
->
->
+
+
 
 Audience Insights: Who are we talking to here?We always attract conscious travelers who value quality over quantity.**Section for Millennials & Gen Z – Buzzwords: Sustainability, Ethics, Mental Wellness:**
 
@@ -118,11 +135,6 @@ Hope (Elpis): Hope is an optimistic expectation and trust in God's promises and 
 Love (Agape): This is considered the foremost and most important of the virtues. Agape is selfless, sacrificial, and unconditional love – the highest form of love, which God shows humanity. Paul says that without love, the other virtues are worthless. It is love that binds everything together and gives value to actions.
 
 These three values are fundamental to a meaningful life and align closely with your own philosophy of quality, authenticity, and "lifting together".
-
-
-
-
-
 
 Audience Insights: Who are we talking to here?
 
