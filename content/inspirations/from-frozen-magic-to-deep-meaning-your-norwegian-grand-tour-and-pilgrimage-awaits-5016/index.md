@@ -50,14 +50,14 @@ Here is the key information and how we have woven this into our fjord experience
 * **Contextual Involvement:** Authentic Norwegian fjord culture.
 * **Real-time Data:** Analyze weather, currents, and fish bites in a live environment (*presence*).
 * **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots". 
+* **Contextual Involvement:**  True Norwegian fjord culture.
+* **Real-time Data:** Analyze weather, currents and fish bites in a live environment ( *presence* ).
 
-**Contextual Involvement:**  True Norwegian fjord culture.
+###  Audience Insights: Who are we talking to here?
 
- **Real-time Data:** Analyze weather, currents and fish bites in a live environment ( *presence* ).
+We always attract conscious travelers who value quality over quantity.
 
->
-
-Audience Insights: Who are we talking to here?We always attract conscious travelers who value quality over quantity.**Section for Millennials & Gen Z – Buzzwords: Sustainability, Ethics, Mental Wellness:**
+### **Section for Millennials & Gen Z – Buzzwords: Sustainability, Ethics, Mental Wellness:**
 
 ### **Q: How do you balance technology and mental wellness?**
 
