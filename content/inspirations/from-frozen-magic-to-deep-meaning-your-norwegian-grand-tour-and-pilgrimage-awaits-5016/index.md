@@ -28,31 +28,15 @@ Here is the key information and how we have woven this into our fjord experience
 
    ***Integration:*** Our tours are not just fishing trips; they are a ***walkabout*** in the Sognefjord’s rich cultural landscape. We offer a chance to disconnect from the data stream and connect with nature, and find the inner stillness and meaning they seek.
 
-   ***Integration:***  The spring season is perfect for this market (Australians often travel in their autumn/our spring). We sell ***"springfulness"*** – an opportunity to recharge your batteries, experience the light and spring in Norway, and find peace through presence in the moment.
+   ***Integration:***  The spring season is perfect for this market (Australians often travel in their autumn/our spring). We sell ***"***springfulness" – an opportunity to recharge your batteries, experience the light and spring in Norway, and find peace through presence in the moment.
+2. **"Walkabout" – Finding Meaning in Movement.**  The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
+3. **\*\*"Springfulness" – The Renewal of Spring and Presence.**  \*\*  *"Springfulness"* (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
+4. **"The Pilgrimage" The Modern (Holistic Approach)** Research on pilgrimages shows that religious motives are less dominant today. People seek instead:Contemplation, stillness, and health.Nature, history, and culture.A desire for a more present, simple, and slow life (slow travel).
+5. **The Real Love Story (Human Essence)**  The St. Olaf church was built by Knut Kvikne in memory of his English wife, Margaret Green Kvikne, who died young of tuberculosis. She wanted an English church in Balestrand. This is an incredibly moving and authentic story.
 
-2. **"Walkabout" – Finding Meaning in Movement.**
+6. **"Frozen" Connection (Disney Magic & Global Appeal)** St. Olav's Church is widely known as the inspiration for the chapel where Elsa is crowned in the Disney film  *Frozen*. With Captain Tor, these themes are brought to life in an authentic way that can awaken emotions, clarity, and wholeness in your search for "Your True SELF". Travel is about discovering new sides of oneself in meeting others (The travel trend picture). The journey becomes the destination!
 
-    The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
-
-3. **\*\*"Springfulness" – The Renewal of Spring and Presence.**
-
-   \*\*  ***"Springfulness"*** (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
-
-4. **"The Pilgrimage" The Modern (Holistic Approach)** 
-
- Research on pilgrimages shows that religious motives are less dominant today. People seek instead:Contemplation, stillness, and health.Nature, history, and culture.A desire for a more present, simple, and slow life (slow travel).
-
-5. **The Real Love Story (Human Essence)** 
-
- The church was built by Knut Kvikne in memory of his English wife, Margaret Green Kvikne, who died young of tuberculosis. She wanted an English church in Balestrand. This is an incredibly moving and authentic story.
-
-6. **"Frozen" Connection (Disney Magic & Global Appeal)** 
-
-St. Olav's Church is widely known as the inspiration for the chapel where Elsa is crowned in the Disney film  *Frozen*. With Captain Tor, these themes are brought to life in an authentic way that can awaken emotions, clarity, and wholeness in your search for "Your True SELF". Travel is about discovering new sides of oneself in meeting others (The travel trend picture). The journey becomes the destination!
-
-7. **Faith, Hope, and Love**
-
-Absolutely. Faith, Hope, and Love are the three central virtues in Christian ethics, often called the theological virtues. They have deep roots in the Bible, especially in Paul’s First Letter to the Corinthians (1 Cor 13:13). Here is a brief summary of these Christian values:
+7. **Faith, Hope, and Love** Absolutely. Faith, Hope, and Love are the three central virtues in Christian ethics, often called the theological virtues. They have deep roots in the Bible, especially in Paul’s First Letter to the Corinthians (1 Cor 13:13). Here is a brief summary of these Christian values:
 
    **Faith (Pistis):** Faith is not just intellectual acceptance of doctrines, but a deep, trusting relationship with God. It is the basis for the Christian life – a conviction of things unseen, and a certainty in what is hoped for. In your context, it can be about faith in the power of nature and God's creation.
 
@@ -71,7 +55,7 @@ Absolutely. Faith, Hope, and Love are the three central virtues in Christian eth
 
 **Contextual Involvement:**  True Norwegian fjord culture.
 
- **Real-time Data:** Analyser vær, strøm og fiskebitt i et live miljø ( *tilstedeværelse* ).
+ **Real-time Data:** Analyze weather, currents and fish bites in a live environment ( *presence* ).
 
 > *"Never doubt that a small group of thoughtful, committed citizens can change the world - Indeed, it's the only thing that ever has."*
 >
