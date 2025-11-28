@@ -34,9 +34,9 @@ Here is the key information and how we have woven this into our fjord experience
 
     The Australian Aboriginal concept "walkabout" describes a spiritual journey where one goes into nature to renew the connection to the land and oneself. This resonates strongly with guests from Australia and other places.
 
-3. \*\*"Springfulness" – The Renewal of Spring and Presence.
+3. **\*\*"Springfulness" – The Renewal of Spring and Presence.**
 
-\*\*  ***"Springfulness"*** (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
+   \*\*  ***"Springfulness"*** (a play on mindfulness and spring) focuses on renewal, energy, and being fully present in the awakening of spring.
 
 4. **"The Pilgrimage" The Modern (Holistic Approach)** 
 
