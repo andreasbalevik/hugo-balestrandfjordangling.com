@@ -60,6 +60,18 @@ Welcome to the core of our season extension. Our unique "Springfulness" philosop
 
 A: "Springfulness" is that unique Nordic spring feeling — a blend of mindfulness and nature's awakening. Scientifically, the sight of the epic fruit blossom and powerful waterfalls in the Sognefjord triggers happy hormones like serotonin and dopamine. It’s the ultimate digital detox and a total recharge for your mental wellness.
 
+### Your Visual Guide: Master the Ultimate Balestrand Escape
+
+### Q: What will I learn from watching this film?
+
+A: This film is a quick dive into the why behind our trips. You'll see what a meaningful travel experience looks like in real life. It’s all about the balance of sustainability, mental wellness, and local immersion—the core of our philosophy.
+
+> **We Went Fishing in Norway’s Longest Fjord – WOW! [(Episode 1)](https://www.youtube.com/watch?v=AgKuXXlxM4o)**
+
+### Q: Is this authentic, or just a curated tourist video?
+
+A: This is 100% authentic Norwegian experience. We pride ourselves on integrity and transparency. The video showcases real guests, the true local culture, and the kind of slow travel experience you can expect with zero hidden filters.
+
 ### Q: Why the hype about March–June?
 
 A: We're aligned with the national push for sustainable travel, offering the most dynamic nature experience in Balestrand. Spring is all about that unique contrast: lush, green fjord sides meet snowy peaks. Fewer tourists mean major chill vibes and genuine authenticity. It's a whole vibe.
