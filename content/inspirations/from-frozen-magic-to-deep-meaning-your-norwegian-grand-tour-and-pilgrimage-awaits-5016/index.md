@@ -11,8 +11,6 @@ keywords:
 description: 'Explore your Norwegian roots on a modern "Grand Tour" or
   "walkabout." Connect with nature and find meaning in the Sognefjord. '
 images:
-  - src: images/img_20181023_185653_301.jpg
-  - src: images/img_20210810_130702_3.jpg
   - src: images/img_20181117_131939_7_2.jpg
 cms: true
 ---
