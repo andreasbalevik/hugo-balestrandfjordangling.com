@@ -52,7 +52,7 @@ cms: true
 ---
 ## Intro: Unlock the Power of Spring
 
-Welcome to the core of our season extension. Our unique "Springfulness" philosophy is rooted in both science and nature's cycle, offering a deeply rejuvenating escape from the daily grind. Find out why March through June is the ultimate time for your Balestrand getaway.
+Welcome to the core of our season extension. Our unique **"Springfulness"** philosophy is rooted in both science and nature's cycle, offering a deeply rejuvenating escape from the daily grind. Find out why March through June is the ultimate time for your Balestrand getaway.
 
 ### Q&A: Your Guide to Springfulness in the Sognefjord
 
