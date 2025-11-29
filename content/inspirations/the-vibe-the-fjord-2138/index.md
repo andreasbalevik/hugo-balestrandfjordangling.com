@@ -39,7 +39,6 @@ images:
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
-  - unique-fjærland-guided-boat-e-bike-glacier-adventure-escape-to-fjærland-sognefjord-a-premium-e-bike-boat-glacier-adventure-explore-supphelledalens-pristine-nature-exclusive-guided-authentic—your-ultimate-norwegian-bucket-list-experience-b-1243/index
 cms: true
 ---
 ## Forget the basic B&B and the overpriced avocado toast.
