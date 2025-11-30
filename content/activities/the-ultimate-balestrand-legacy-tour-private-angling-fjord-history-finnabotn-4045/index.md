@@ -43,7 +43,9 @@ description: Experience the Sognefjord at its most authentic. Private "Legacy
   Tour" offers exclusive fishing, Kvamsøy Church exploration & digital detox in
   Finnabotn.
 images:
-  - src: images/fra-sognefjorden-med-kjærlighet.-🌊-som-denne-massive-klippen-står-vi-støtt-selv-når-utfordringene-eller-ai-virker-overveldende.-det-flytende-rene-vannet-symboli.jpg
+  - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
+    alt: Woman enjoying a private boat tour on the Sognefjord, surrounded by steep
+      mountains and flying a small Norwegian flag.
 tags:
   - business-and-pleasure
 information:
@@ -91,7 +93,9 @@ A: This is your chance for a complete digital detox and a deep dive into the hea
    We board our sturdy vessel, "Miss Fjords," and set a course for the idyllic island of Kvamsøy.
 * **Evening:**
 
-   We return across the fjord, arriving back in Balestrand around 6:00 PM.
+   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge) gourmet buffe' at the historic Kviknes Hotel, read the [menu here](https://en.kviknes.no/food-philosophy)
+
+
 
 ### Q: Which unique spots will we explore?
 
