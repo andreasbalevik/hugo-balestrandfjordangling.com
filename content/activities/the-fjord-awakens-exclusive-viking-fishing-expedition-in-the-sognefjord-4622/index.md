@@ -1,6 +1,36 @@
 ---
 title: " The Fjord Awakens: Exclusive Viking Fishing Expedition in the Sognefjord"
 quality: LEGACY
+keywords:
+  - authentic norway
+  - bespoke adventure
+  - mindful travel
+  - digital detox
+  - rewilding experience
+  - norwegian heritage tour
+  - exclusive fjord fishing
+  - private charter norway
+  - sognefjord expedition
+  - fjord awakening
+  - sustainable tourism
+  - low-impact travel
+  - hyper-nature norway
+  - bucket list norway
+  - scandinavia exclusive travel
+  - luxury adventure travel
+  - fjærland activities
+  - balestrand fishing
+  - people of the north
+  - hands-on experience
+  - multi-generational travel
+  - unique norway experiences
+  - responsible tourism
+  - norway eco-travel
+  - authentic local experience
+  - captain tor fishing
+  - fjord lifestyle
+  - hidden gems norway
+  - wilderness immersion.
 description: "Go Viking with Captain Tor in April/May! Experience authentic net
   fishing, local culture, and a digital detox in the pristine Fjærlandsfjord. "
 images:
