@@ -37,13 +37,13 @@ product_info:
       price: 16000
 cms: true
 ---
-## Simplicity is the New Luxury. Rewild Your Spirit.
+### Simplicity is the New Luxury. Rewild Your Spirit.
 
 Escape the crowds and immerse yourself in raw, authentic Norwegian nature. In April and May, the inner Fjærlandsfjord awakens from winter hibernation. Join legendary Captain Tor for an exclusive, hands-on experience where you become the local fisherman for a day. This bespoke adventure is designed to reconnect you with nature—and each other.
 
-WATCH THE DEMO VIDEO HERE
+### 🎬 Watch the "People of the North" Fishing Adventure Now
 
-### The Experience (Optimized Q&A Section)
+#### The Experience (Optimized Q&A Section)
 
 ### Q: When can I book this unique expedition?
 
@@ -53,18 +53,19 @@ A: This tour operates in April and May, just as the fjord awakens to life after 
 
 A: This program is designed to build anticipation and genuine excitement! It’s a truly immersive experience:
 
-Evening Before (6:00 PM): We start the night before the main tour by heading out onto the fjord to set the deep-water nets, lines, and crab traps.
-Expedition Day (9:00 AM): The next morning, we meet again to haul in the gear. The feeling of expectation and excitement is a core part of this program. What will we find in the nets?
+**Evening Before (6:00 PM):** We start the night before the main tour by heading out onto the fjord to set the deep-water nets, lines, and crab traps.
+
+**Expedition Day (9:00 AM):** The next morning, we meet again to haul in the gear. The feeling of expectation and excitement is a core part of this program. What will we find in the nets?
 
 ### Q: What can we expect to catch in the nets and traps?
 
 A: This is the thrilling moment of discovery! We can catch a wide variety of marine life. Perhaps a large cod, a ray, a harmless dogfish shark, or even a ghost shark (Havmus) with its green eyes and venomous spines?
 
-With over 25 years of experience guiding 30,000 students in the Sognefjord, Captain Tor guarantees an educational experience for the whole family. We commonly find cod, various white fish, and crabs. It’s always exciting to see what treasures we find!
+With over 25 years of experience guiding 30,000 students in the Sognefjord, Balestrand area - Captain Tor guarantees an educational experience for the whole family. We commonly find cod, various white fish, and crabs. It’s always exciting to see what treasures we find!
 
-### Q: Is this program famous from TV?
+### Q: Is this experience famous from a TV series?
 
-A: Yes, absolutely! This authentic experience with Captain Tor was featured on the popular documentary series People of the North. You can join the expedition and follow in the footsteps of the show’s crew.
+A: Yes, absolutely! This authentic adventure with Captain Tor was featured on the popular documentary TV series People of the North. You can join the exact expedition and follow in the footsteps of the show’s crew, experiencing the raw nature firsthand.
 
 ### Q: Why is this experience historically relevant?
 
@@ -73,10 +74,10 @@ A: The fjord was the "road" for Vikings who set out from Balestrand in search of
 ### Q: How does the pickup/start location work?
 
 A: We offer flexible start locations for your convenience. Captain Tor lives in Balestrand and navigates the fjord daily.
+
 If you are staying at the Fjærland Fjordstove Hotel, we can pick you up directly at Fjærland Marina.
 
-If you are staying in Balestrand, your tour starts right from the main harbor there.
-The journey from Balestrand into the Fjærlandsfjord provides a unique, scenic mini-cruise as part of the total experience!
+If you are staying in Balestrand, your tour starts right from the main harbor there at the Balestrand Adventure House. The journey from Balestrand into the Fjærlandsfjord provides a unique, scenic mini-cruise as part of the total experience!
 
 ### Q: What makes this a “world-class” adventure?
 
