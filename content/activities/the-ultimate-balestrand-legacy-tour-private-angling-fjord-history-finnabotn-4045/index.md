@@ -43,8 +43,7 @@ description: Experience the Sognefjord at its most authentic. Private "Legacy
   Tour" offers exclusive fishing, Kvamsøy Church exploration & digital detox in
   Finnabotn.
 images:
-  - src: images/img_20210619_180418_8.jpg
-    alt: Miss Fjords" navigating the Sognefjord towards the historic Kvamsøy church
+  - src: images/fra-sognefjorden-med-kjærlighet.-🌊-som-denne-massive-klippen-står-vi-støtt-selv-når-utfordringene-eller-ai-virker-overveldende.-det-flytende-rene-vannet-symboli.jpg
 tags:
   - business-and-pleasure
 information:
