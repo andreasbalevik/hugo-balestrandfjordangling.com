@@ -4,11 +4,10 @@ quality: LEGACY
 description: "Go Viking with Captain Tor in April/May! Experience authentic net
   fishing, local culture, and a digital detox in the pristine Fjærlandsfjord. "
 images:
-  - src: images/b67i4835.jpg
+  - src: images/kopi-352992ad-0ab6-468d-8eb6-72b527b0514c_1_201_a.jpg
   - src: images/b67i5419.jpg
-  - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
+  - src: images/301942850_822012238800516_4847735421244601584_n.jpg
   - src: images/b67i4478.jpg
-  - src: images/b67i4578.jpg
 tags:
   - business-and-pleasure
 information:
