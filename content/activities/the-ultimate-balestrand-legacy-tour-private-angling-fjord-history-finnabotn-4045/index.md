@@ -83,10 +83,10 @@ A: This is your chance for a complete digital detox and a deep dive into the hea
 
 * **Morning (09:00 AM):**
 
-   We begin with our renowned "Sognefjord Fishing Thrill – Family Bonding" program, respecting the fjord and learning local angling methods.
+   We begin with our renowned ["Sognefjord Fishing Thrill – Family Bonding"](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/) program, respecting the fjord and learning local angling methods.
 * **Lunch:**
 
-   Enjoy an optional (extra charge) gourmet lunch at the historic Kviknes Hotel, or we can arrange a private onboard picnic.
+   Enjoy an optional (extra charge) gourmet lunch at the historic Kviknes Hotel, read the [menu here](https://static1.squarespace.com/static/5e318d0df4dd4a4b1ed3872c/t/683599a6f2787234590d1164/1748343206384/MENY+2025+A+LA+CARTE.pdf)
 * **Afternoon (2:00 PM):**
 
    We board our sturdy vessel, "Miss Fjords," and set a course for the idyllic island of Kvamsøy.
