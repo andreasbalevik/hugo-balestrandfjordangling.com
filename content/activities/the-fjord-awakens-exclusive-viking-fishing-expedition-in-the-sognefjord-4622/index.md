@@ -40,7 +40,7 @@ cms: true
 
 Escape the crowds and immerse yourself in raw, authentic Norwegian nature. In April and May, the inner Fjærlandsfjord awakens from winter hibernation. Join legendary Captain Tor for an exclusive, hands-on experience where you become the local fisherman for a day. This bespoke adventure is designed to reconnect you with nature—and each other.
 
-### 🎬 Watch the "People of the North" Fishing Adventure Now
+### 🎬 Watch the[ "People of the North"](https://www.youtube.com/watch?v=pjoMLKwGsEg) Fishing Adventure Now
 
 #### The Experience (Optimized Q&A Section)
 
@@ -90,10 +90,18 @@ A: We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time 
 
 A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
 
-> Teaser Instagram Reel 1: Watch the video HERE
-> Teaser Instagram Reel 2: Watch the video HERE
-> YouTube Episode: Watch Episode HERE
+> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CyT_RntKYNr/)
+> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CbJ89SCFPbq/)
+> Teaser Instagram Reel 3: Watch the video[ HERE](https://www.instagram.com/p/C1cKiAtqQ16/)
 
-Booking & Contact:
-Don’t miss out! Secure your spot on this year’s most memorable adventure today.
-BOOK YOUR AUTHENTIC FISHING TRIP NOW
+### ENHANCE YOUR STAY: Discover More in Fjærland
+
+### Q: Where can we have a lunch in Fjærland?
+
+A: At The Norwegian Glacier Museum is an interactive museum for the whole family or Brevasshytta The restaurant under the Bøyabreen Glacier
+
+### Q: Are there other activities available in Fjærland?
+
+A: Yes, immerse yourself in nature further. For paddling, sauna, and guided activities, please visit the Fjærland Guiding website.
+
+#### *Go Viking: Book Your Fjord Hunt Now!*
