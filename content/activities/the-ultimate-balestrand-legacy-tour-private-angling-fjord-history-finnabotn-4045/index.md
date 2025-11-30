@@ -72,8 +72,6 @@ product_info:
   persons: "5"
 cms: true
 ---
-### About the Tour
-
 ### Q: What is "The Ultimate Balestrand Legacy Tour"?
 
 A: This is your chance for a complete digital detox and a deep dive into the heart of the Sognefjord. It’s an 8-hour private charter that blends the thrill of authentic angling with a journey through Norwegian heritage and dramatic fjord geology. We take you off the beaten path to Norway's most spectacular, silent "hyper-nature."
