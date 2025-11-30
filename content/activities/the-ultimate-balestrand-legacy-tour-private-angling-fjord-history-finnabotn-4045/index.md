@@ -93,9 +93,7 @@ A: This is your chance for a complete digital detox and a deep dive into the hea
    We board our sturdy vessel, "Miss Fjords," and set a course for the idyllic island of Kvamsøy.
 * **Evening:**
 
-   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge) gourmet buffe' at the historic Kviknes Hotel, read the [menu here](https://en.kviknes.no/food-philosophy)
-
-
+   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge) gourmet buffe' at the historic Kviknes Hotel, explore the [Culinary food and wine experiences](https://en.kviknes.no/food-philosophy) here
 
 ### Q: Which unique spots will we explore?
 
