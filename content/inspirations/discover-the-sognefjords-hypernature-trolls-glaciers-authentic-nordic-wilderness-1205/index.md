@@ -55,6 +55,8 @@ description: The real Sognefjord. Explore Fjærland’s mythical landscapes wher
   awaits. .
 images:
   - src: images/b67i5491.jpg
+    alt: Lokal guide peker mot Naoberadn fjellside, sted for gammelt sagn, omgitt av
+      snøflak etter et ras i hypernatur fjord
 related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
