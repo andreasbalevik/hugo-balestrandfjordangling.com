@@ -54,7 +54,7 @@ description: The real Sognefjord. Explore Fjærland’s mythical landscapes wher
   ancient glaciers meet silent fjords. Your ultimate "Hypernature" escape
   awaits. .
 images:
-  - src: images/web-troll-hunters-in-blue-suits-in-fjaerlands-fjord.jpg
+  - src: images/b67i5491.jpg
 related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
