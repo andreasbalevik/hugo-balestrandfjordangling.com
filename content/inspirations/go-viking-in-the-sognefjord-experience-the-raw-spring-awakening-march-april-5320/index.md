@@ -30,6 +30,10 @@ description: Go Viking in the Sognefjord! Experience the raw spring awakening in
 images:
   - src: images/b67i5237.jpg
   - src: images/b67i5419.jpg
+related_activities:
+  - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
+  - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
+  - premium-skill-master-the-long-line-–-authentic-fjord-fishing-immersion-0003/index
 cms: true
 ---
 # Trade Winter for the Fjord's Wild Heart
