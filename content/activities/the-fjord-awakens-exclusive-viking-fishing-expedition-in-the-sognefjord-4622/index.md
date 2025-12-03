@@ -1,6 +1,6 @@
 ---
 title: " The Fjord Awakens: Exclusive Viking Fishing Expedition in the Sognefjord"
-quality: LEGACY
+quality: GO VIKING & SPRINGFULLNESS
 keywords:
   - authentic norway
   - bespoke adventure
@@ -116,12 +116,16 @@ A: You deserve the best. Captain Tor is a certified maritime STCW instructor wit
 
 A: We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of year as the fjord awakens. Pack good wool underwear, a hat, and quality mittens. The water is usually calm. When the sun hits, the atmosphere is incredible! Remember sunglasses :)
 
+> #### Learn more about [what to wear on my Fjord Fishing Adventures here](https://balestrandfjordangling.com/inspirations/what-to-wear-0306/)
+
 ### Q: Do you have any video inspiration from the tour?
 
 A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
 
 > Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CyT_RntKYNr/)
+>
 > Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CbJ89SCFPbq/)
+>
 > Teaser Instagram Reel 3: Watch the video[ HERE](https://www.instagram.com/p/C1cKiAtqQ16/)
 
 ### ENHANCE YOUR STAY: Discover More in Fjærland
