@@ -41,9 +41,8 @@ keywords:
   - Lokal Ekspertise Båt Sognefjord
   - Fjord Maintenance Services
   - Varde Certified Professional Boat Services.
-description: Sognefjorden Boat Assistance for Professionals. Transport,
-  Film/Photo, EHF Invoice. Reliable Services in Balestrand, Fjærland, Flåm.
-  Contact Captain Tor Now.
+description: "Båtassistanse i Sognefjorden (Proff). Transport, Film/Foto, EHF.
+  Tjenester: Balestrand, Fjærland, Flåm. Kontakt Kaptein Tor."
 images:
   - src: images/b67i5480.jpg
     alt: Kaptein Tor og Miss fjords med gjester og foto oppdrag i Fjærlandsfjorden,
