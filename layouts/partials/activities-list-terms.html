@@ -3,12 +3,13 @@
     <div class="grid justify-items-start text-base">
         <div class="pb-3">
 
+            {{ if not (eq .Section "tags") }}
             <b>Filter:</b>
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="rounded-lg px-5 mb-4 text-center inline-flex items-center"
                 type="button">
 
-                {{ if eq .Title "Activities"}}
+                {{ if or (eq .Title "Activities") }}
                 <span class="px-2 rounded-lg text-white bg-cyan-700">All activities</span>
                 {{ else }}
                 <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
@@ -22,6 +23,7 @@
                         d="m1 1 4 4 4-4" />
                 </svg>
             </button>
+            {{ end }}
 
             <!-- Dropdown menu -->
             <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
@@ -50,7 +52,7 @@
         </div>
     </div>
 
-    {{ if eq .Section "activities" }}
+    {{ if or (eq .Section "activities") (eq .Section "tags") }}
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-10">
             {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}

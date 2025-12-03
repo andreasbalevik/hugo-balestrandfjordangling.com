@@ -1,6 +1,7 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /request_confirmation/
+Disallow: /admin
+Disallow: /request_confirmation
+Disallow: /tags
 Allow: /
 
 # Sitemap
