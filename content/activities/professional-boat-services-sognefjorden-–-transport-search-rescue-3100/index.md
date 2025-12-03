@@ -65,7 +65,38 @@ product_info:
       price: 2500
 cms: true
 ---
-## **Introduction:**
+## Profesjonelle Båttjenester i Sognefjorden
+
+**Introduksjon:**
+Trenger du profesjonelle båttjenester i Sognefjorden? Vi tilbyr skreddersydde løsninger for transport, beredskapsoppdrag (standby), film- og fotoassistanse, søkeoperasjoner, sleping og redning med båt. Vår ekspertise sikrer effektiv og pålitelig assistanse når du trenger det mest.
+
+### Priser og Fartøy informasjon?
+
+### Spørsmål: Hvordan beregnes kostnadene for oppdrag?
+
+**Svar:** Prisstruktur og fakturering
+
+Prisen er per time, NOK 1250 eks. mva. Denne prisen gjelder fra avgang Balestrand Marina, inkluderer selve oppdraget med eventuelt hentested i Sognefjorden der du skal plukkes opp, eventuell ventetid (standby), til vi er tilbake i Balestrand Marina etter fullført oppdrag.
+
+Et typisk oppdrag koster fra ca. NOK 2500 til NOK 25 000 eks. mva. (minimum 2 timer).
+
+Avhengig av oppdragets art, kan konsultasjon, ekspertise og spesifikke verktøy (tau, anker osv.) komme med en ekstra kostnad på forespørsel, typisk assistanse med vannledninger osv.
+
+### Spørsmål: Hvilke betalingsmetoder godtas?
+
+**Svar:** Enkel og digital betaling
+
+Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bærbare terminal, og du mottar en elektronisk kvittering direkte til e-posten din (som du enkelt kan viderefakturere til din klient). EHF-faktura er tilgjengelig etter avtale for bedriftskunder.
+
+### Spørsmål: Hvilket fartøy brukes og hvor opererer dere?
+
+**Svar**: Vårt fartøy og operasjonsområde i Sognefjorden
+
+Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten har en pålitelig Honda BF 100 hk motor og er godkjent for 8 passasjerer (pax) pluss 900 kg last.
+
+Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord Arnafjord, Kvamsøy, samt Flåm, Nærøyfjord, Lærdal og andre steder innover Sogefjorden.
+
+## **Introduction (English):**
 
 Do you require professional boat services in the Sognefjord? We offer tailored solutions for transport, standby assignments, film and photo assistance, search operations, towing, and rescue by boat. Our expertise ensures efficient and reliable assistance when you need it most.
 
