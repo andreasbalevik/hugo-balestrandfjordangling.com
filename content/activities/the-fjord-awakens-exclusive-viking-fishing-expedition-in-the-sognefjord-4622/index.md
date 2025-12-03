@@ -130,12 +130,16 @@ A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put togethe
 
 ### ENHANCE YOUR STAY: Discover More in Fjærland
 
+### Q: Where can i stay overnight in Fjærland?
+
+A: [Fjærland Fjordstove Hotel & Restaurant](<Fjærland Fjordstove Hotel & Restaurant is a quaint and friendly place>) is a quaint and friendly place
+
 ### Q: Where can we have a lunch in Fjærland?
 
-A: At The Norwegian Glacier Museum is an interactive museum for the whole family or Brevasshytta The restaurant under the Bøyabreen Glacier
+A: At [The Norwegian Glacier Museum](https://www.bremuseum.no/) is an interactive museum for the whole family or [Brevasshytta The restaurant](https://fjaerlandhotel.com/brevasshytta) under the Bøyabreen Glacier
 
 ### Q: Are there other activities available in Fjærland?
 
-A: Yes, immerse yourself in nature further. For paddling, sauna, and guided activities, please visit the Fjærland Guiding website.
+A: Yes, immerse yourself in nature further. For paddling, sauna, and guided activities, please visit the [Fjærland Guiding website here](https://fjaerlandguiding.com/)
 
-#### *Go Viking: Book Your Fjord Hunt Now!*
+#### *[Go Viking:](https://balestrandfjordangling.com/inspirations/go-viking-in-the-sognefjord-experience-the-raw-spring-awakening-march-april-5320/) Book Your Fjord Hunt Now!*
