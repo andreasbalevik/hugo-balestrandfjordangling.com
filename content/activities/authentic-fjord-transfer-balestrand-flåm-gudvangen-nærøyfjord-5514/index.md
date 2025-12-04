@@ -59,7 +59,7 @@ keywords:
   - Unique travel experience Flåm.
 description: "Experience a private Sognefjord adventure: Balestrand to Flåm
   transfer. Get close to nature on a local, inspiring, world-class fjord travel
-  experience. "
+  experience.  "
 images:
   - src: images/img_4365.jpeg
     alt: "båt transport fra flåm, gudvangen til balestrand "
