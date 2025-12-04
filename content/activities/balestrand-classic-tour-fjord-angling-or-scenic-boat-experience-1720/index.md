@@ -33,7 +33,7 @@ product_info:
       price: 3500
     - person_number: 5
       price: 4000
-    - person_number: 4
+    - person_number: 6
       price: 4500
     - person_number: 7
       price: 5000
