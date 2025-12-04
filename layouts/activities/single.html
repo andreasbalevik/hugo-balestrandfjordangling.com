@@ -16,10 +16,11 @@
                             <img class="max-h-[30px]" alt="varde experience quality" src="/images/varde-experience-quality.png" />
                         {{ end }}
                     </div>
-                    <h1 class="pt-4">
+                     <h1 class="pt-4">
                         {{.Title}}
                     </h1>
                     {{ partial "activity/product_info" . }}
+                    {{ partial "seo/json-ld/_faq" . }}
                     <div class="flex not-prose">
                         {{ with .Site.Data.configuration.global_activity_label}}
                         <label class="inline-flex items-center text-gray-800 text-xs antialiased rounded-lg mb-4">

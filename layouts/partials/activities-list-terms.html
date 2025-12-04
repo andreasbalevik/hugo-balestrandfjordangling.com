@@ -73,7 +73,7 @@
     <hr class="mb-10 mt-3 text-gray-300">
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
-        {{ range sort .Pages.ByLastmod }}
+        {{ range sort .Pages }}
             {{ .Render "li" }}
         {{ end }}
     </div>
