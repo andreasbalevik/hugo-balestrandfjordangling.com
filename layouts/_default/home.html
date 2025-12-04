@@ -94,29 +94,9 @@
     {{ end }}
 </section>
 
-<section>
-    <div class="py-12">
-        <div class="container">
-            <div class="prose-base max-w-none">
-            {{ with .Site.GetPage "about" }}
-                {{ .Summary | }}
-
-                <a href="{{ .RelPermalink }}"
-                    class="mt-2 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
-                    Read more
-                    {{ partial "arrow.html" . }}
-                </a>
-
-            {{ end }}
-            </div> 
-        </div>
-    </div>
-</section>
-
-
 
 <section>
-    <div class="bg-white">
+    <div >
         <div class="container">
 
         {{ with .Site.GetPage "index" }}
