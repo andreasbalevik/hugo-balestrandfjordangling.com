@@ -1,8 +1,14 @@
 User-agent: *
 Disallow: /admin
 Disallow: /request_confirmation
-Disallow: /tags
+
 Allow: /
+
+Allow: /tags/business-and-pleasure
+Allow: /tags/bike-and-hike
+Allow: /tags/family-and-friends
+
+Disallow: /tags
 
 # Sitemap
 Sitemap: https://balestrandfjordangling.com/sitemap.xml

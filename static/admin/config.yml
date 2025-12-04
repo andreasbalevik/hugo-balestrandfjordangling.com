@@ -263,6 +263,94 @@ collections:
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
+      - file: "content/tags/bike-and-hike/_index.md"
+        label: "Bike and hike" 
+        name: "bike-and-hike"
+        delete: false
+        fields:
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - label: 'SEO (image)'
+            name: 'images'
+            widget: 'list'
+            min: 1
+            max: 1
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image', required: true }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+
+
+      - file: "content/tags/business-and-pleasure/_index.md"
+        label: "Business and pleasure" 
+        name: "business-and-pleasure"
+        delete: false
+        fields:
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - label: 'SEO (image)'
+            name: 'images'
+            widget: 'list'
+            min: 1
+            max: 1
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image', required: true }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+
+
+      - file: "content/tags/family-and-friends/_index.md"
+        label: "Family and friends" 
+        name: "family-and-friends"
+        delete: false
+        fields:
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - label: 'SEO (image)'
+            name: 'images'
+            widget: 'list'
+            min: 1
+            max: 1
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image', required: true }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+
+
+      - file: "content/activities/_index.md"
+        label: "Activities" 
+        name: "activities"
+        delete: false
+        fields:
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - label: 'SEO (image)'
+            name: 'images'
+            widget: 'list'
+            min: 1
+            max: 1
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image', required: true }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+
+      - file: "content/inspirations/_index.md"
+        label: "Inspirations" 
+        name: "inspirations"
+        delete: false
+        fields:
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - label: 'SEO (image)'
+            name: 'images'
+            widget: 'list'
+            min: 1
+            max: 1
+            allow_multiple: false
+            fields:
+              - { label: 'Image Source', name: 'src', widget: 'image', required: true }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          
       - file: "content/LLMs.md"
         label: "LLMs" 
         name: "LLMs"
