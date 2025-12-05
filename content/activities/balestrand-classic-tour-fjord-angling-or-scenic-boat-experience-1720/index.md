@@ -1,6 +1,88 @@
 ---
 title: "Balestrand Classic Tour: Fjord Angling or Scenic Boat Experience"
 quality: CLASSIC
+keywords:
+  - Authentic Balestrand experience
+  - Sognefjord private tour
+  - discover Norway nature
+  - Autentisk Balestrand opplevelse
+  - Sognefjorden privat tur
+  - oppdag norsk natur
+  - Varde kvalitet pris
+  - 5-stjerners attraksjon
+  - privat turer året rundt
+  - par ferie Norge
+  - familie reise Sognefjord
+  - vennetur Norge
+  - Balestrand kultur sightseeing
+  - røde dragevillaer Balestrand
+  - Kaptein Tor historiefortelling
+  - sportsfiske Esefjorden
+  - pittoreske fjell Norge
+  - fang egen mat Norge
+  - Fjord Chickens fiske
+  - Sand Whiting Sognefjord
+  - kok egen fangst Balestrand
+  - Balholm eplejuice
+  - gruppeløsning Sognefjord
+  - kick off tur Norge
+  - Raudmelen fjelltur
+  - avslappende fisketur
+  - naturskjønn fjordtur
+  - ren luft escape
+  - Fjærlandsfjorden grønt vann
+  - brebygd Fjærland
+  - digital detox Sognefjord
+  - lad sjelen Norge
+  - Fjord Velvære Sognefjord
+  - forbedre reisen din
+  - fly og kjør Norge logistikk
+  - transport Balestrand Flåm
+  - bærekraftig turisme Norge
+  - bevisst reisende
+  - rewild din ånd
+  - hypernature
+  - slow travel
+  - skjult perle
+  - unik opplevelse
+  - skreddersydd tur. Varde quality award
+  - 5-star attraction
+  - year-round private trips
+  - couples getaway Norway
+  - family travel Sognefjord
+  - friends trip Norway
+  - Balestrand culture sightseeing
+  - red dragon villas Balestrand
+  - Captain Tor storytelling
+  - Fjord Angling Esefjorden
+  - picturesque mountains Norway
+  - catch your own food Norway
+  - Fjord Chickens fishing
+  - Sand Whiting Sognefjord
+  - cook your own catch Balestrand
+  - Balholm apple juice
+  - group solution Sognefjord
+  - kick off trip Norway
+  - Raudmelen mountain hiking
+  - relaxing fishing trip
+  - scenic fjord excursion
+  - clean air escape
+  - Fjærlandsfjorden green water
+  - glacier village Fjærland
+  - digital detox Sognefjord
+  - recharge your soul Norway
+  - Fjord Wellness Sognefjord
+  - elevate your journey
+  - fly and drive Norway logistics
+  - transport Balestrand Flåm
+  - sustainable tourism Norway
+  - conscious traveler
+  - rewild your spirit
+  - hypernature
+  - slow travel
+  - hidden gem
+  - unique experience
+  - bespoke adventure.
 description: "Book a 5-star Sognefjord tour in Balestrand! Authentic adventure
   with Captain Tor: fishing, sightseeing, & stories. Private year-round tours."
 aliases: []
@@ -8,6 +90,10 @@ images:
   - src: images/vakre-kvinner-i-sognefjorden-fiskestang-flotte-fjell-og-rød-jakke.jpeg
     alt: Two smiling women in life vests are fishing from a boat on a sunny day in a
       Norwegian fjord with steep green mountains in the background.
+  - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
+  - src: images/image1.jpeg
+  - src: images/udzjhox4-1-.jpeg
+  - src: images/catch.jpg
 tags:
   - family-and-friends
 information:
@@ -33,7 +119,7 @@ product_info:
       price: 3500
     - person_number: 5
       price: 4000
-    - person_number: 4
+    - person_number: 6
       price: 4500
     - person_number: 7
       price: 5000
@@ -43,11 +129,11 @@ cms: true
 
 ### Q: Can I explore authentic, untouched nature in Balestrand?
 
-A: Of course you can! Balestrand is close to the fjord and untouched nature. This popular, must-do, 5-star all-in-one attraction has received the prestigious Varde experience quality award, making it the perfect authentic Norwegian experience.
+**A:** Of course you can! Balestrand is close to the fjord and untouched nature. This popular, must-do, 5-star all-in-one attraction has received the prestigious Varde experience quality award, making it the perfect authentic Norwegian experience.
 
 ### Q: Who is this tour suitable for and when does it operate?
 
-A: We operate private trips all year round with a start price that includes 3 people. It is suitable for couples, families with children, and friends traveling together. Is this an exciting opportunity for you?
+**A:** We operate private trips all year round with a start price that includes 3 people. It is suitable for couples, families with children, and friends traveling together. Is this an exciting opportunity for you?
 
 ## IT'S EASY, YOU CAN DO IT: BALESTRAND CULTURE
 
@@ -61,30 +147,33 @@ Fun Fjord Angling in beautiful, legendary #Esefjorden
 
 "When I was a little boy, my mother used to send me out on the fjord to catch the fish called: Sand Whiting. They are fun to fish, bite easily on the hook and taste good for lunch. Some call them 'Fjord Chickens'- Isn't that cool?"
 
-### Q: Is there any video inspiration for this tour?
+### Q: Do you have any video inspiration from the tour?
 
-Perfect for anyone looking for travel inspiration in Sognefjord:
-“We Went Fishing in Norway’s Longest Fjord – WOW!” (Episode 1) 
+A: Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-Watch our family fishing trip [VIDEO HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 1: Watch the video HERE
+>
+> Teaser Instagram Reel 2: Watch the video HERE
+>
+> Teaser YouTube Episode : Watch Episode HERE
 
-*This is a family expedition where you can experience the unexpected!*
+**This is a family expedition where you can experience the unexpected!**
 
 ### Q: Can I cook my own catch?
 
-A: Yes! Imagine catching your own fish and making your own dinner at ***home.*** Butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: *"Sprudlande Margaret"* from Balholm (Our local apple juice factory in Balestrand)
+**A:** Yes! Imagine catching your own fish and making your own dinner at ***home.*** Butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: *"Sprudlande Margaret"* from Balholm (Our local apple juice factory in Balestrand)
 
  It tastes rhubarb and evokes nostalgic summer memories.
 
 ### Q: Where can I buy ingredients?
 
-A: Easily buy ingredients in the grocery store next to the Balestrand Adventure house. If you light some candles and put on some bossa nova music in the background, you have a real dining experience you do together. How about a bag of fish soup, and add pieces of your fish?
+**A:** Easily buy ingredients in the grocery store next to the Balestrand Adventure house. If you light some candles and put on some bossa nova music in the background, you have a real dining experience you do together. How about a bag of fish soup, and add pieces of your fish?
 
 #### TRENDY & FUN LIFESTYLE
 
 ### Q: Is this tour a good solution for groups or a "Kick Off"?
 
-A: Yes, it's a perfect solution for a girl's/boy's trip! Combine a [\#Raudmelen mountain](https://www.instagram.com/explore/locations/312018818/raudmelen/)  mountain hiking trip in the morning with a relaxing, soft educational Fishing trip in the afternoon. It's a concrete mission to solve—time to gather the gang and order today!
+**A:** Yes, it's a perfect solution for a girl's/boy's trip! Combine a [\#Raudmelen mountain](https://www.instagram.com/explore/locations/312018818/raudmelen/)  mountain hiking trip in the morning with a relaxing, soft educational Fishing trip in the afternoon. It's a concrete mission to solve—time to gather the gang and order today!
 
 Share our website and tell your friends about this opportunity in Balestrand of Norway.
 
@@ -98,7 +187,7 @@ We speed up our boat and drive inwards towards the outer part of Fjærlandsfjord
 
 ### Q: What is special about the energy in Fjærlandsfjorden?
 
-A: The energy in #Fjærlandsfjorden is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as *"Fjordland"*.
+**A:** The energy in #Fjærlandsfjorden is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as *"Fjordland"*.
 
 By the way: It's nice and tidy too..
 
