@@ -9,7 +9,7 @@
                 class="rounded-lg px-5 mb-4 text-center inline-flex items-center"
                 type="button">
 
-                {{ if or (eq .Title "Activities") }}
+                {{ if or (eq .Section "activities") }}
                 <span class="px-2 rounded-lg text-white bg-cyan-700">All activities</span>
                 {{ else }}
                 <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">

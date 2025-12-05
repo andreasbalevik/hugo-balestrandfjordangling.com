@@ -9,8 +9,13 @@ aliases:
   - /en/bike-and-hike.html
   - /bike-and-hike.html
 keywords:
-  - Busines
-description: Business and pleasure
+  - Bike rental
+  - E-bike tours
+  - Cycling
+  - Hiking
+  - Active vacation
+  - Outdoor activities
+description: Explore Balestrand and the Sognefjord region by bike or on foot. Discover scenic cycling routes, e-bike rentals, mountain biking trails, and guided hiking adventures through pristine Norwegian nature.
 images:
   - src: images/b67i5237.jpg
 ---

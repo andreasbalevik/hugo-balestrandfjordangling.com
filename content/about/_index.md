@@ -1,5 +1,16 @@
 ---
-title: About Balestrand Fjord Angling
+title: About Captain Tor & Balestrand Fjord Angling
+description: Meet Captain Tor and Miss Fjords boat - internationally recognized for authentic fjord fishing experiences in Balestrand, Sognefjord, Norway. 4th generation local guide offering transformative nature adventures.
+keywords:
+  - Captain Tor Balestrand
+  - Balestrand fishing guide
+  - authentic Norwegian fjord fishing
+  - Sognefjord fishing tours
+  - Miss Fjords boat
+  - local fishing guide Norway
+  - Balestrand fjord angling
+  - 4th generation fisherman
+  - authentic Norway experience
 menus:
   main:
     name: About

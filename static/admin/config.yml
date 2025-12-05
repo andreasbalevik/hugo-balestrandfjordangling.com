@@ -252,6 +252,8 @@ collections:
         delete: false
         fields:
           - {label: Title, name: title, widget: string}
+          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
+          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'
@@ -322,6 +324,7 @@ collections:
         name: "activities"
         delete: false
         fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
           - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
           - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
           - label: 'SEO (image)'
@@ -339,6 +342,7 @@ collections:
         name: "inspirations"
         delete: false
         fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
           - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
           - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
           - label: 'SEO (image)'
