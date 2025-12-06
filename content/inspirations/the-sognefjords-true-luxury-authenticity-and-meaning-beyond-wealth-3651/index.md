@@ -36,7 +36,7 @@ Wealthy people, who have everything material they need in the 3D world, face a c
 
 ### Q: 3. Lack of Real Challenges and Excitement:
 
-When everything is easily accessible, the excitement disappears. They need a "thrill" and a challenge. "Family Finnafjord Safari" and "learning new skills" (like fishing with nets) provide a much-needed sense of mastery and excitement that cannot be bought with a credit card.
+When everything is easily accessible, the excitement disappears. They need a "thrill" and a challenge. "Our Legacy and Livestyle programs " and "learning new skills" (like fishing with nets) provide a much-needed sense of mastery and excitement that cannot be bought with a credit card.
 
 ### Q: 4. The Need for Calibration and Reset:
 
@@ -50,4 +50,4 @@ Ultimately, they wonder: "What is the point of all this?" They want to give thei
 
 You have everything they are looking for. Your "The Sognefjord's True Luxury: Authenticity and Meaning Beyond Wealth" or "The Esefjord: Playful Aristocrats & Imperial History" text is perfect because it acknowledges their status, but invites them to something deeper and more meaningful.
 
-Your offer the deep, authentic experience they are willing to pay dearly for, precisely because it is invaluable.
+Captain Tor offer the deep, authentic experience they are willing to pay dearly for, precisely because it is invaluable.
