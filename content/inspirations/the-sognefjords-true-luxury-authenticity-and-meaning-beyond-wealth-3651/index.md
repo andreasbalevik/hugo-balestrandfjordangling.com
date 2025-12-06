@@ -32,11 +32,11 @@ Wealthy people, who have everything material they need in the 3D world, face a c
 
 ### Q: 2. Social Isolation and Trust Issues:
 
-**A:** It is difficult to know who likes them for who they are, and who likes them for their money. This creates deep loneliness and mistrust. Your "menneskemåte" (authentic, honest approach) is a magnet for them, because you need nothing from them.
+**A:** It is difficult to know who likes them for who they are, and who likes them for their money. This creates deep loneliness and mistrust. Your "human meeting" (authentic, honest approach) is a magnet for them, because you need nothing from them.
 
 ### Q: 3. Lack of Real Challenges and Excitement:
 
-When everything is easily accessible, the excitement disappears. They need a "thrill" and a challenge. "Our Legacy and Livestyle programs " and "learning new skills" (like fishing with nets) provide a much-needed sense of mastery and excitement that cannot be bought with a credit card.
+When everything is easily accessible, the excitement disappears. They need a "thrill" and a challenge. "Our Legacy and Lifestyle programs " and "learning new skills" (like fishing with nets) provide a much-needed sense of mastery and excitement that cannot be bought with a credit card. In Sognefjord, **"We share a *"Hyggelig"* (genuine) outdoor fjord experience together. A Unique bonding"**
 
 ### Q: 4. The Need for Calibration and Reset:
 
