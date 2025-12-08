@@ -73,7 +73,7 @@ In Fjærland, the mighty glacier arms Bøyabreen and Supphellebreen reach close 
 
 Survival in the fjord historically depended on reading nature’s subtle signs. The local community had an intuitive understanding of the weather, the fish migration patterns, and the safe paths. This was their original "Hypernature" dataset.
 
-**Fishing Facts & Lore:** "The Gardingane knew that when the fog settles over the fjord like this, it's the Lyre (Pollack) that bite, not the salmon. We leverage this ancient wisdom (and powerful searchlights!) to ensure the ultimate fishing experience, even after dusk falls."
+**Fishing Facts & Lore:** "The Gardingane knew that when the fog settles over the fjord like this, it's the Lyre (Pollack) that bite, not the salmon. We leverage this ancient wisdom (and powerful searchlights, *in case trolls show up! ;)*  to ensure the ultimate fishing experience, even after dusk falls *("is safe for trolls").*
 
 **The Legend of "Naoberadn":** "This profound connection to the landscape permeates everything we do. Look up at the mountainside called 'Naoberadn' (literally 'Now it's heading downwards with me'). History tells of an outlaw, chased by the local Gardingane, who lost his footing here. His final cry lives on in the mountain's name. This is the kind of #AuthenticAdventure you won't find in a guidebook."
 
