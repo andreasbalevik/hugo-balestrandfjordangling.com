@@ -2,15 +2,6 @@
     <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden">
         <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
             <div class="prose max-w-none mx-auto my-auto">
-                <div class="flex items-center justify-between font-bold not-prose">
-                    <span class="text-xs text-gray-600">
-                        {{ .Params.quality }}
-                    </span>
-
-                    {{ with .Params.information.options.varde_experience_quality }}
-                        <img class="max-h-[30px]" alt="varde experience quality" src="/images/varde-experience-quality.png" />
-                    {{ end }}
-                </div>
                 <h2 class="text-3xl md:text-4xl">
                     {{.Title}}
                 </h2>
