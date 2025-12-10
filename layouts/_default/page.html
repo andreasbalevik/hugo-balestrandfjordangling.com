@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+
+{{ $blur_filter := images.GaussianBlur 100 }}
+{{ $image_path := "images/katrine-web.jpg"}}
+{{ $image := resources.GetMatch $image_path | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
+{{ $backgroundImage := $image.Resize "x600 q50" }}
+<div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
+
+    <div class="py-0 md:py-32 flex items-center justify-center ">
+        <div class="bg-white md:rounded-lg p-8 shadow-lg max-w-4xl w-full mx-auto">
+            <div class="prose prose-md mx-auto">
+                {{.Content}}
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+{{ end }}

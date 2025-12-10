@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /admin
 Disallow: /request_confirmation
+Disallow: /privacy/
 
 Allow: /
 
