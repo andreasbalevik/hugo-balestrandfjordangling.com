@@ -64,10 +64,10 @@ product_info:
       price: 2500
 cms: true
 ---
-## Profesjonelle Båttjenester i Sognefjorden
+## Profesjonelle Båt tjenester i Sognefjorden
 
 **Introduksjon:**
-Trenger du profesjonelle båttjenester i Sognefjorden? Vi tilbyr skreddersydde løsninger for transport, beredskapsoppdrag (standby), film- og fotoassistanse, søkeoperasjoner, sleping og redning med båt. Vår ekspertise sikrer effektiv og pålitelig assistanse når du trenger det mest.
+Trenger du profesjonelle båt tjenester i Sognefjorden? Vi tilbyr skreddersydde løsninger for transport, beredskaps oppdrag (standby), film- og foto assistanse, søkeoperasjoner, sleping og redning med båt. Vår ekspertise sikrer effektiv og pålitelig assistanse når du trenger det mest.
 
 ### Priser og Fartøy informasjon?
 
