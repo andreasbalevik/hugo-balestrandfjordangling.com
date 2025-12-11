@@ -190,21 +190,23 @@ Imagine if we got a shark in the net, what would you do then? Dog Fish (a local,
 
 > #### “MY HANDS ARE STILLED BY THE FJORD’S BREATH, BUT MY HEART BEATS WITH NORSE PRIDE. I AM SOGNEFJORD.”
 
-### What should we wear for the trip and how about the weather:
-
-You choose the season and type of weather yourself. We have fishing suits for you and yours, which keep you warm and safe from rain and cold. If you have smaller children, I recommend bringing their own park suits and clothes that they are familiar with for maximum comfort.
-
 Picture yourself on a trip with us. This is more than just an excursion; it’s a chance to **disconnect from screens and connect with nature**—and each other.
 
 Feel free to share this unique opportunity Fjærland with friends, and be the first in your circle to experience the authentic fjord lifestyle.
 
 **Don’t miss out! Secure your spot on this year’s most memorable family adventure today.**
 
-### Is there any video inspiration for this tour:
+### Any video inspiration from the tour?
 
-> **YOUTUBE: ANNIKEN & JOSTEIN EXPLORING THE FJORDS WITH CAPTAIN TOR!**
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
+
+> Teaser Instagram Reel 1: Watch the video HERE
 >
-> Perfect for anyone looking for travel inspiration in Sognefjord => **[YouTube link here](https://www.youtube.com/watch?v=AgKuXXlxM4o)**
+> Teaser Instagram Reel 2: Watch the video HERE
+>
+> Teaser YouTube Episode : Watch Episode HERE
+
+**This is a family expedition where you can experience the unexpected!**
 
 ### **THE VIKING SPIRIT: Mastering the Fjord**
 
