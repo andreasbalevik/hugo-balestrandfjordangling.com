@@ -136,7 +136,7 @@ Feel free to share this unique opportunity here in Balestrand with friends, and 
 
 **Don’t miss out! Secure your spot on this year’s most memorable family adventure today.**
 
-### Q: Do you have any video inspiration from the tour?
+### I am Exited! Do you have any video inspiration from the tour?
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
