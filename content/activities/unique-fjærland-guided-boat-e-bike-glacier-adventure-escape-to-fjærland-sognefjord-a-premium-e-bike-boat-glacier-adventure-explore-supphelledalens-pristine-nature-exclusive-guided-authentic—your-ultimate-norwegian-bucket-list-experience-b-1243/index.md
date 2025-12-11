@@ -129,7 +129,7 @@ Yes, absolutely! To really get a feel for the atmosphere, we've put together som
 >
 > **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
 >
-> **Teaser YoyTube video 3:** Watch the video [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> **Teaser YouTube video 3:** Watch the video [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### **What is the experience like on the boat and the atmosphere we can expect:**
 
