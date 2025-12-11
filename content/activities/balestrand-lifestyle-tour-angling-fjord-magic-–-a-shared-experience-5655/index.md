@@ -59,7 +59,7 @@ images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
     alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
       Norwegian fjords
-  - src: images/img_1153.jpeg
+  - src: images/solveig-lyr-redigert.jpg
     alt: smiling woman with fishing rod and red jacket fishing in Esefjorden Norway
       with captain Tor among high mountains in Sognefjorden
   - src: images/img_20210810_130702_3.jpg
