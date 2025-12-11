@@ -119,51 +119,53 @@ cms: true
 ---
 ## Introduction: The Exclusive Fjærland & Balestrand Journey
 
-## Q: Where does the "Fjærland Legacy Tour" begin?
+Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family
 
-A: Captain Tor greets guests personally at Fjærland Marina for an exclusive journey to Balestrand and back.
+## Where does the "Fjærland Legacy Tour" begin?
 
-### Q: Who is this unique experience designed for?
+Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back.
 
-A: This is an experience designed for those who value unique, authentic travel experiences and desire a little something extra. Families, fiends travel together, couples  or a romantic surprise into the unknown
+### A unique experience design
 
-### Q: What makes this more than a standard excursion?
+This is an experience designed for those who value unique, authentic travel experiences and desire a little something extra. Families, fiends travel together, couples  or a romantic surprise into the unknown
 
-A: The tour elevates a standard excursion into a hands-on adventure. In addition to traditional angling and trolling, the experience focuses on learning new, authentic skills and the historical context of fjord culture along the pristine Fjærlandsfjord. This is an experience that can build lasting memories.
+### This more than a standard excursion
 
-## **THE ART OF AUTHENTIC FJORD EXPLORATION**
+The tour elevates a standard excursion into a hands-on adventure. In addition to traditional angling and trolling, the experience focuses on learning new, authentic skills and the historical context of fjord culture along the pristine Fjærlandsfjord. This is an experience that can build lasting memories.
+
+> #### THE ART OF AUTHENTIC FJORD EXPLORATION
 
 Captain Tor provides a seamless fjord adventure solution. You are likely seeking a reliable activity—a curated experience that guarantees quality. Am I right?
 
-### Q: What unique historical sites will we see on the tour?
+### We will see unique historical sites on the tour
 
-A: From the boat you will witness unique homesteads such as Lidal and Teigen. Time for wonder and reflection as we travel beyond the Fjærlandsfjorden. Captain Tor tells the stories and local sagas of these isolated farms while you participate in the authentic tradition of checking fishing nets near Balestrand.
+From the boat you will witness unique homesteads such as Lidal and Teigen. Time for wonder and reflection as we travel beyond the Fjærlandsfjorden. Captain Tor tells the stories and local sagas of these isolated farms while you participate in the authentic tradition of checking fishing nets near Balestrand.
 
-### Q: What is unique about the fishing here in the Esefjord?
+### The unique about the fishing in the Esefjord:
 
-A: A fishing trip in the beautiful, legendary Esefjord is surrounded by high, picturesque mountains. This specific fjord arm is known for easy and fun fishing, perfect for all skill levels. As Captain Tor says:
+A fishing trip in the beautiful, legendary Esefjord is surrounded by high, picturesque mountains. This specific fjord arm is known for easy and fun fishing, perfect for all skill levels. As Captain Tor says:
 
 > “When I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting*** (Fjord chicken). They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
 
 #### The "*Fjord Chicken"* Challenge: Easy & Fun Fjord Fishing in Esefjord
 
-### Q: How can I cook my catch and what ingredients do I need?
+### Can I cook my catch and what ingredients do I need:
 
-A: Imagine this happened to you: Catch some fish with Captain Tor and make your own dinner when you get home. We suggest butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: “Sprudllande Margaret” from Balholm.
+Imagine this happened to you: Catch some fish with Captain Tor and make your own dinner when you get home. We suggest butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: “Sprudlande Margaret” from Balholm.
 
 * It tastes rhubarb and evokes nostalgic summer memories.
 * If you light some candles and put on some bossa nova music in the background, you have a real dining experience you do together.
 * Easily buy all necessary ingredients (seed loaf, salad, local drinks) in the grocery store next to the Balestrand Adventure house.
 
-### Q: Any easy cooking ideas for a quick meal?
+### \- Any easy cooking ideas for a quick meal?
 
-A: How about a bag of fish soup, and add pieces of your fresh fish? It doesn’t get easier than that!
+How about a bag of fish soup, and add pieces of your fresh fish? It doesn’t get easier than that!
 
-#### CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY
+> CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY
 
-### Q: What can we catch with the fishing net?
+### Possible catch with the fishing net:
 
-A: Pulling up the fishing nets, which are set out by us the night before, stimulates practical skills and is always an exciting moment! We can catch a wide variety of marine life.
+Pulling up the fishing nets, which are set out by us the night before, stimulates practical skills and is always an exciting moment! We can catch a wide variety of marine life.
 
 **With over 25 years of experience at the local nature school, where I’ve guided 30,000 students in exploring the Sognefjord, I guarantee an educational and exciting experience for the whole family.** It is incredible how rich the life in the fjord is - we even found up to 50 different species in just one week! Join us and discover your own treasures. Here are some of the most common finds in the net:
 
@@ -182,15 +184,15 @@ A: Pulling up the fishing nets, which are set out by us the night before, stimul
 
 > It is ALWAYS exciting to see what treasures we find in the net. But an empty net is not a failure; it is a lesson in patience and endurance. **A Viking’s spirit is forged not in comfort, but in the face of the elements.**
 
-### Q: What about sharks? Will we see a shark?
+### What about sharks? Will we see a shark?
 
-A: Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
+Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
 
-> #### ***“MY HANDS ARE STILLED BY THE FJORD’S BREATH, BUT MY HEART BEATS WITH NORSE PRIDE. I AM SOGNEFJORD.”***
+> #### “MY HANDS ARE STILLED BY THE FJORD’S BREATH, BUT MY HEART BEATS WITH NORSE PRIDE. I AM SOGNEFJORD.”
 
-### Q: What should we wear for the trip and how about the weather?
+### What should we wear for the trip and how about the weather:
 
-A: You choose the season and type of weather yourself. We have fishing suits for you and yours, which keep you warm and safe from rain and cold. If you have smaller children, I recommend bringing their own park suits and clothes that they are familiar with for maximum comfort.
+You choose the season and type of weather yourself. We have fishing suits for you and yours, which keep you warm and safe from rain and cold. If you have smaller children, I recommend bringing their own park suits and clothes that they are familiar with for maximum comfort.
 
 Picture yourself on a trip with us. This is more than just an excursion; it’s a chance to **disconnect from screens and connect with nature**—and each other.
 
@@ -198,7 +200,7 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 **Don’t miss out! Secure your spot on this year’s most memorable family adventure today.**
 
-### Q: Is there any video inspiration for this tour?
+### Is there any video inspiration for this tour:
 
 > **YOUTUBE: ANNIKEN & JOSTEIN EXPLORING THE FJORDS WITH CAPTAIN TOR!**
 >
@@ -206,38 +208,36 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 ### **THE VIKING SPIRIT: Mastering the Fjord**
 
-### Q: Why is the fjord experience so special and historically relevant?
+### This fjord experience is also special and historically relevant, why:
 
-A: The fjords were the ***"highways"*** of the past. The word ***"fjord"*** originates from an Old Norse term meaning "to travel," and Vikings set out by boat from Balestrand in search of adventure and new discoveries. Our tours channel this spirit of exploration and mastery.
+The fjords were the ***"highways"*** of the past. The word ***"fjord"*** originates from an Old Norse term meaning "to travel," and Vikings set out by boat from Balestrand in search of adventure and new discoveries. Our tours channel this spirit of exploration and mastery.
 
-### Q: What is the local historical context of the areas around the Fjærlandsfjord?
+### Fun fact: The local historical context of the areas around the Fjærlandsfjord:
 
-A: ***"Gardingane"*** is a local name for the people who lived on the rugged farms along the 26-kilometer-long Fjærlandsfjord. Since the 19th century, the area has attracted discerning travelers. This is where the glacier arms reached furthest down to the fjord—a truly unique heritage from when the village was called "Fjordland" in Norse times.
+"Gardingane"\*\** is a local name for the people who lived on the rugged farms along the 26-kilometer-long Fjærlandsfjord. Since the 19th century, the area has attracted discerning travelers. This is where the glacier arms reached furthest down to the fjord—a truly unique heritage from when the village was called "Fjordland" in Norse times.
 
-### Q: How do we experience this heritage today?
+### How do we experience this heritage today:
 
-A: Our boat, "Miss Fjords," is the Sognefjord’s contemporary answer to both the resilient Fjord horse and the agile Viking ship. It is built for stability, safety, and an almost silent passage through these iconic waters, channeling that ancient spirit of exploration. The adventure never fades.
+Our boat, "Miss Fjords," is the Sognefjord’s contemporary answer to both the resilient Fjord horse and the agile Viking ship. It is built for stability, safety, and an almost silent passage through these iconic waters, channeling that ancient spirit of exploration. The adventure never fades.
 
 > *“To me, this sense of adventure never fades. After decades of guiding these waters, I find it just as fun and exciting every time.”*
 
-#### **“Ready to ‘Go Viking’? *Join us!”***
-
 ## **ENHANCE YOUR STAY: Discover More in Fjærland**
 
-### Q: Where can we have a lunch in Fjærland?
+### Where can we have a lunch in Fjærland?
 
-A: At **[The Norwegian Glacier Museum](https://en.bremuseum.no/om-oss)** is an interactive museum for the whole family or [Brevasshytta ](https://fjaerlandhotel.com/brevasshytta)The restaurant under the Bøyabreen Glacier
+At **[The Norwegian Glacier Museum](https://en.bremuseum.no/om-oss)** is an interactive museum for the whole family or [Brevasshytta ](https://fjaerlandhotel.com/brevasshytta)The restaurant under the Bøyabreen Glacier
 
-### Q: Are there other activities available in Fjærland?
+### Are there other activities available in Fjærland?
 
-A: Yes, immerse yourself in nature further. For paddling, sauna, and guided activities, please visit the[ Fjærland Guiding website.](https://fjaerlandguiding.com/)
+Yes, immerse yourself in nature further. For paddling, sauna, and guided activities, please visit the[ Fjærland Guiding website.](https://fjaerlandguiding.com/)
 
-### Q: Can we book a day trip to Balestrand if we stay in Fjærland?
+### Can we book a day trip to Balestrand if we stay in Fjærland?
 
-A: Absolutely. If you are staying in Fjærland and desire variety with a day trip to inspiring Balestrand, you can drive there and send a booking request for our programs starting at 12:00 or 15:00. [View the travel route on Google Maps here.](https://www.google.com/maps/dir/Gnr+152+Bnr+7,+6848+Fj%C3%A6rland/BALESTRAND+FJORD+ANGLING,+Holmen,+Balestrand/@61.2909141,6.4624105,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x46160ed2a0426a75:0xae93e9487bff93ea!2m2!1d6.7411524!2d61.4051948!1m5!1m1!1s0x46161d8978a99ffd:0x9bb793496a667fbf!2m2!1d6.5359413!2d61.210069!3e0?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D)
+Absolutely. If you are staying in Fjærland and desire variety with a day trip to inspiring Balestrand, you can drive there and send a booking request for our programs starting at 12:00 or 15:00. [View the travel route on Google Maps here.](https://www.google.com/maps/dir/Gnr+152+Bnr+7,+6848+Fj%C3%A6rland/BALESTRAND+FJORD+ANGLING,+Holmen,+Balestrand/@61.2909141,6.4624105,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x46160ed2a0426a75:0xae93e9487bff93ea!2m2!1d6.7411524!2d61.4051948!1m5!1m1!1s0x46161d8978a99ffd:0x9bb793496a667fbf!2m2!1d6.5359413!2d61.210069!3e0?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D)
 
-### **BALESTRAND FJORD ANGLING: Featured in "People of the North"**
+### BALESTRAND FJORD ANGLING: Featured in "People of the North"
 
-### Q: Is there any video inspiration available for these tours?
+### Is there any video inspiration available for these tours?
 
-A: Yes, you can see Captain Tor and the fjord experience in the [TV series "People of the North". Watch the teaser video here.](https://www.youtube.com/watch?v=pjoMLKwGsEg)
+Yes, you can see Captain Tor and the fjord experience in the [TV series "People of the North". Watch the teaser video here.](https://www.youtube.com/watch?v=pjoMLKwGsEg)
