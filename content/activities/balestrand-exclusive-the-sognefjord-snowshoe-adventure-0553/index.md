@@ -119,7 +119,7 @@ This is a private, sporty nature experience for fit, active travellers (1-4 peop
 
  Expect an energetic workout in steep, untouched terrain—a truly unique immersion where other people are rarely encountered. Get ready for a genuine, sporty winter adventure in the Sognefjord region.
 
-> #### LIMITS ARE A MINDSET: Thrill Your Senses
+> #### LIMITS ARE A MINDSET: Thrill Your Senses 
 
 ### What unique benefits will I get from this snowshoe *expedition*?
 
