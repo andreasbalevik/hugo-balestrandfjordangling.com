@@ -1,6 +1,6 @@
 ---
 title: "Fjærland Legacy Tour: Exclusive Scenic Boat & Fishing Expedition"
-quality: ESCAPE
+quality: LEGACY
 keywords:
   - Fjærland Legacy Tour
   - Fjærland Fjord Expedition
