@@ -76,11 +76,11 @@ cms: true
 
 It is time to trade screen time for authentic **‘adventure time.’** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
 
-### **Your Rare Expedition & A Meaningful Investment**
+### **Your Rare Expedition Possibility & A Meaningful Investment**
 
-A highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited.It is always exciting to see what treasures we find in the net!
+This is the highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!
 
-## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY**
+## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY!**
 
 Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you?
 
@@ -108,7 +108,7 @@ Treat yourself to a lunch menu at the Historic Kviknes Hotel - the Sognefjord sa
 
 ## **CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY**
 
-### We include different fishing methods in this tour
+### We include three different fishing methods in this tour
 
 Balestrand fjord angling & family expedition has the same basic program as our popular LIFESTYLE program. This “LEGACY TOUR” program has more focus on activity, and we have added a fishing net to the experience.
 
@@ -122,7 +122,7 @@ Pulling up the fishing nets, which are set out by us the night before, stimulate
 
 ### What about sharks? Will we see a shark?
 
-Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
+Possible. Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
 
 > #### The Fjord Awakens The Norse Soul: A Moment Of Quiet Pride
 
@@ -146,7 +146,7 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 >
 > [](HERE)Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
-## ***A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR***
+## **A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR**
 
 ### This is the true fjord experience, a special and historically relevant journey
 
