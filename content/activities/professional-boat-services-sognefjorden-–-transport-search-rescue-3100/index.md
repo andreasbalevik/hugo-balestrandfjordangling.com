@@ -95,7 +95,7 @@ Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten ha
 
 Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord Arnafjord, Kvamsøy, samt Flåm, Nærøyfjord, Lærdal og andre steder innover Sognefjorden.
 
-### Spørsmål: Har dere demo video med fartøyet i arbeid? 
+### Spørsmål: Har dere demo video med fartøyet i arbeid?
 
 **Svar:** ja se gjerne vår Instagram video fra [Balholm Sjøvarme anlegg her](https://www.instagram.com/stories/highlights/18054053840383503/)
 
@@ -105,9 +105,9 @@ Do you require professional boat services in the Sognefjord? We offer tailored s
 
 ## **Pricing and Vessel Information**
 
-### **Q: How are mission costs calculated?**
+### **How are mission costs calculated?**
 
-**A: Price Structure and Invoicing**
+**\- Price Structure and Invoicing**
 
 The price is **per hour**, NOK 1250 ex. VAT. This price runs from departure Balestrand Marina, includes the assignment itself with any pick-up point in the Sognefjord where you need to be collected, any standby time, until we have returned to Balestrand Marina after the completed assignment.
 
@@ -115,15 +115,15 @@ A typical assignment costs from approx. NOK 2500 to NOK 25 000 ex. VAT (minimum 
 
 Depending on the nature of the assignment, consultation, expertise, and specific tools (ropes, anchors, etc.) may come at an additional cost upon request, typically assistance with water pipelines, etc.
 
-### **Q: Which payment methods are accepted?**
+### **Which payment methods are accepted?**
 
-**A: Simple and Digital Payment**
+**\- Simple and Digital Payment**
 
 We offer flexible payment solutions. You pay easily by card on our portable terminal, and you receive an electronic receipt directly to your email (which you can easily re-invoice to your client). EHF invoice is available by agreement for corporate clients.
 
-### **Q: Which vessel is used and where do you operate?**
+### **Which vessel is used and where do you operate?**
 
-**A: Our Vessel and Operational Area in the Sognefjord**
+**\- Our Vessel and Operational Area in the Sognefjord**
 
 We use the vessel "*Miss Fjords*", a specially built Øien 710 F. The boat has a reliable Honda BF 100 hp engine and is approved for 8 passengers (pax) plus 900 kg of cargo.
 
