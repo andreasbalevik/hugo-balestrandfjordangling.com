@@ -125,7 +125,7 @@ product_info:
       price: 5000
 cms: true
 ---
-## Discover the Authentic Esefjord Experience 
+## Discover the Authentic Esefjord Experience
 
 Of course you can! Balestrand is close to the fjord and untouched nature. This popular, must-do, 5-star all-in-one attraction has received the prestigious Varde experience quality award, making it the perfect authentic Norwegian experience.
 
@@ -149,13 +149,13 @@ Fun Fjord Angling in beautiful, legendary #Esefjorden
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video HERE
+> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/DRudnZaCLVF/)
 >
-> Teaser Instagram Reel 2: Watch the video HERE
+> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode HERE
+> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
-**This is a family expedition where you can experience the unexpected!**
+**This is a family trip where you also can experience the unexpected!**
 
 ### Can I cook my own catch?
 
