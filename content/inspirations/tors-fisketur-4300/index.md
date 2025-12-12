@@ -1,5 +1,12 @@
 ---
 title: Tors Fisketur
+keywords:
+  - Authentic Norway experiences
+  - Sognefjord cultural tour
+  - digital detox travel
+  - find your roots Norway
+  - sustainable tourism Sognefjord
+  - '"Frozen" inspiration Balestrand.'
 description: Sognefjorden er hjemmet til det mytiske sjøuhyret Kraken, spesielt
   i forbindelse med den kommende norske monsterfilmen «Kraken»
 images:
