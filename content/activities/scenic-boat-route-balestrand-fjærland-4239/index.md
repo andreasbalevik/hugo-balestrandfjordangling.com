@@ -158,6 +158,16 @@ We stop regularly, and Captain Tor shares local stories and history. You can dri
 
 Watch the trees bloom in May and June. From June to August, the fjord is colored green by glacial melting water and plankton, adding a stunning visual element to your journey.
 
+### Do you have any video inspiration from the tour?
+
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
+
+> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CTAFlSnKh7W/)
+>
+> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CXE7r1sFLIJ/)
+>
+> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+
 ### The Fjærland fjord in winter:
 
 In winter, the fjord is deserted with avalanches and abandoned without humans and life. Only deer and eagles trying to survive the winter fjord landscape. This is the ultimate **'slow travel'** experience—a true return to real roots! Time stands still here. Reflections as we travel by the boat. The fjord light makes your toes freeze, giving you a real Viking feeling and a longing for a warm campfire at the hotel.
