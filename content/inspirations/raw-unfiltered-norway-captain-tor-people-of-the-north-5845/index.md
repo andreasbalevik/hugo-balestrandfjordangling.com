@@ -27,6 +27,10 @@ description: "As seen on TV: Captain Tor & 'People of the North' Episode 6.
   talking about"
 images:
   - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
+related_activities:
+  - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
+  - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
+  - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
 ---
 ## **People of the North" Season 2: Your Unfiltered Fjord Experience**
@@ -37,22 +41,22 @@ Get ready for a **deep dive** into Sogn's wild west. Captain Tor and his uniqu
 
 ## Q&A: Experience the Episode Yourself
 
-### **Q: What is the "People of the North" episode about?**
+### **What is the "People of the North" episode about?**
 
-A: Episode 6, "Noble Adventures," focuses on the best experiences in Balestrand, known for its nature, local food, and historic charm. Viewers get an exclusive look into fjord and mountain adventures—from fishing with Tor to local culture. It’s an authentic portrait of life in Sogn.
+\- Episode 6, "Noble Adventures," focuses on the best experiences in Balestrand, known for its nature, local food, and historic charm. Viewers get an exclusive look into fjord and mountain adventures—from fishing with Tor to local culture. It’s an authentic portrait of life in Sogn.
 
-### **Q: Which Captain Tor products or tours are featured in the episode?**
+### **Which Captain Tor products or tours are featured in the episode?**
 
-A: The episode showcases the **raw** and **genuine** fishing experience in the Sognefjord. The focus is on the **personal connection** to the fjord and the local community, which is the core of our \[Captain Tor Fishing Trips](**LINK TO YOUR FISHING TRIP BOOKING PAGE**). You'll see how Arne, Sigrid, and Stig experience the **unfiltered** nature and local life.
+The episode showcases the **raw** and **genuine** fishing experience in the Sognefjord. The focus is on the **personal connection** to the fjord and the local community, which is the core of our \[Captain Tor Fishing Trips](**LINK TO YOUR FISHING TRIP BOOKING PAGE**). You'll see how Arne, Sigrid, and Stig experience the **unfiltered** nature and local life.
 
-### **Q: How can I experience the same things featured in the TV series?**
+### **How can I experience the same things featured in the TV series?**
 
-A: It's simple! We offer the exact same **immersive** experiences. Our \[Guided Tours in Balestrand](**LINK TO YOUR GUIDED TOURS PAGE**) allow you to **dive deep** into local culture and nature, just like in the series. \[Contact us](**LINK TO YOUR CONTACT PAGE**) for a **customized** experience—this is your chance to become one of the "People of the North" yourself.
+It's simple! We offer the exact same **immersive** experiences. Our \[Guided Tours in Balestrand](**LINK TO YOUR GUIDED TOURS PAGE**) allow you to **dive deep** into local culture and nature, just like in the series. \[Contact us](**LINK TO YOUR CONTACT PAGE**) for a **customized** experience—this is your chance to become one of the "People of the North" yourself.
 
-### **Q: Where can I watch "People of the North" Season 2, Episode 6?**
+### **Where can I watch "People of the North" Season 2, Episode 6?**
 
-A: The episode has been sold internationally to 16 countries. You can find viewing information and stream (**LINK TO WHERE TO WATCH THE EPISODE**) via Peopleofthenorth.net or the international TV channels broadcasting the series.
+The episode has been sold internationally to 16 countries. You can find viewing information and stream (**LINK TO WHERE TO WATCH THE EPISODE**) via Peopleofthenorth.net or the international TV channels broadcasting the series.
 
-### **Q: What makes Balestrand special as a "People of the North" destination?**
+### **What makes Balestrand special as a "People of the North" destination?**
 
-A: Balestrand is a **historic** and **vibrant** place that offers a different, more **authentic** experience than the most crowded tourist spots. It's about feeling the raw power of nature and finding tranquility—a **game-changer** for those seeking more than a standard vacation.
+Balestrand is a **historic** and **vibrant** place that offers a different, more **authentic** experience than the most crowded tourist spots. It's about feeling the raw power of nature and finding tranquility—a **game-changer** for those seeking more than a standard vacation.
