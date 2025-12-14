@@ -30,9 +30,9 @@ related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
 cms: true
 ---
-### Q: Should I choose Flåm or Balestrand for my Norway vacation?
+### Should I choose Flåm or Balestrand for my Norway vacation?
 
-A: It depends on what you are seeking. Flåm is world-famous for its spectacular railway and is a busy tourism hub. There is a lot of energy there, perfect if you want to experience the big attractions quickly.
+\- It depends on what you are seeking. Flåm is world-famous for its spectacular railway and is a busy tourism hub. There is a lot of energy there, perfect if you want to experience the big attractions quickly.
 
 But if you are seeking peace, stillness, and a deeper connection to the Sognefjord nature – a game-changer for those who want more than a standard holiday – then Balestrand is the sustainable destination for you.
 
@@ -55,9 +55,9 @@ Find peace in the green Fjærlandsfjord.
 
 ## This is the real deal, not just an Instagram-moment.
 
-### Q: How long should I stay in Balestrand?
+### How long should I stay in Balestrand?
 
-A: Flåm is a stop on the journey; Balestrand is where time stops.
+Flåm is a stop on the journey; Balestrand is where time stops.
 To truly experience the serenity and local culture, we strongly recommend a minimum stay of two nights. Don't just pass through! When planning your itinerary, please ask your travel planner, tour operator (TO), or agent to schedule extra time here.
 
 There are so many authentic activities waiting for you: [Link to Balestrand Adventure, things to do HERE](https://www.balestrandadventure.no/)
