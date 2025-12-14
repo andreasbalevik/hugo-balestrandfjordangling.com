@@ -24,7 +24,9 @@ By car: It's about a 2-hour drive. Ferry times must be added (Hella-Dragsvik). T
 By express ferry (Norled): This is the easiest. The boat runs Bergen -> Balestrand -> Flåm. Guests can arrive in Balestrand at 11:50 AM, have lunch, fish at 3:00 PM, and return to Flåm the next day.
 
 ### Q: What does an ideal day plan look like if I come from Flåm?
+
 ###### Morning: Early departure from Flåm.
+
 Late Morning: Arrival Balestrand.
 Lunch: Enjoy lunch at the \[Historic Kviknes Hotel](LINK TIL KVIKNES HOTEL).
 Afternoon: 12:00 PM (or 3:00 PM): Departure for \[fishing trip with Captain Tor](LINK TIL BOOKINGSIDE FOR FISKETUR).
@@ -48,7 +50,7 @@ Philosophy: Life is a journey, and the road is the destination.
 Authenticity: "You can go viking in the fjords with Captain Tor" – this is authentic cultural heritage.
 \[Explore more than just Flåm – discover the whole Sognefjord region!](LINK TIL VISIT SOGNEFJORD ELLER REGIONAL SIDE)
 
-### old version: 
+### Old version:
 
 Guest question: Hello! We are staying 2 nights in Flam. We really want to fish in the fjords while we are there and I came across your page. I know you are located about 2 hours away. Wondering if you think it would be worth us spending our free day traveling to you and fishing? It looks like an experience of a lifetime :)
 
