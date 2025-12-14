@@ -35,26 +35,32 @@ keywords:
   - Customer Journey
   - Brand Integrity
   - Varde Qualit
-description: Discover authentic, Varde-Certified Sognefjord experiences with
+description: "Discover authentic, Varde-Certified Sognefjord experiences with
   Captain Tor. We offer epic quality tours and pro boat services in the heart of
-  the fjord. Get the real Norwegian vibe.
+  the fjord. "
 images:
   - src: images/b67i4835.jpg
+related_activities:
+  - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
+  - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
+  - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
 cms: true
 ---
 **Introduction:** Varde is a national brand and a quality assurance tool to develop and ensure that you get a high-quality travel experience. Balestrand Fjord Angling have such quality. Real experiences are created from within. This is something everyone knows!
+
+Discover authentic, Varde-Certified Sognefjord experiences with Captain Tor. We offer epic quality tours and pro boat services in the heart of the fjord. Get the real Norwegian vibe.
 
 ### **The Varde Experience: Why Quality is Standard with Captain Tor**
 
 Introduction: There is nothing special about producing quality. That is simply what Captain Tor does. The original fjord experience with the boat “Miss Fjords” offers a fine balance of fishing instincts, childhood memories, storytelling, and authentic adventure. That is precisely what we deliver. This is exactly what our guests are looking for. This is exactly what our guests want!
 
-### Q: How Varde Experience Quality Works – From Test to Effect
+### How Varde Experience Quality Works – From Test to Effect
 
-**A:** The Varde brand features a stronger experience dimension than similar European quality systems. Although elements such as service and communication are assessed, it is the overall *experience* that is most heavily emphasized during evaluation.
+The Varde brand features a stronger experience dimension than similar European quality systems. Although elements such as service and communication are assessed, it is the overall *experience* that is most heavily emphasized during evaluation.
 
-### Q: The Varde “Mystery Guest” Process
+### The Varde “Mystery Guest” Process
 
-**A:** A consultant in Varde Experience Quality acts as a “Mystery guest” who goes through the entire customer journey for the specific product the company defines. The consultant visits the company anonymously and assesses the following 11 criteria:
+A consultant in Varde Experience Quality acts as a “Mystery guest” who goes through the entire customer journey for the specific product the company defines. The consultant visits the company anonymously and assesses the following 11 criteria:
 
 * **Inquiry and booking:**
 
