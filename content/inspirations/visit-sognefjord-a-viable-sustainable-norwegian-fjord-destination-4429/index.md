@@ -88,18 +88,18 @@ We believe in the power of collaboration. All companies that are active members 
 
 Here are answers to common questions about our sustainable initiatives:
 
-### Q: What makes Sognefjord a "Sustainable Travel Destination"?
+### What makes Sognefjord a "Sustainable Travel Destination"?
 
-A: We have been officially labeled by Innovation Norway through a rigorous national scheme. This means we work strategically to reduce emissions, protect natural diversity, and support local culture and communities. It's a game-changer for responsible tourism in the Nordics.
+We have been officially labeled by Innovation Norway through a rigorous national scheme. This means we work strategically to reduce emissions, protect natural diversity, and support local culture and communities. It's a game-changer for responsible tourism in the Nordics.
 
-### Q: How does this focus on sustainability benefit my trip?
+### How does this focus on sustainability benefit my trip?
 
-A: You can enjoy an authentic, immersive experience knowing your visit supports ethical and environmentally friendly practices. You are choosing a destination that values its natural beauty and local heritage, ensuring a meaningful adventure.
+You can enjoy an authentic, immersive experience knowing your visit supports ethical and environmentally friendly practices. You are choosing a destination that values its natural beauty and local heritage, ensuring a meaningful adventure.
 
-### Q: Can I find specific eco-friendly activities easily?
+### Can I find specific eco-friendly activities easily?
 
-A: Yes! Look for businesses that display the sustainable destinations logo on their websites. These are certified partners of Visit Sognefjord who are committed to environmentally conscious operations, making it easy to book a truly green experience.
+ Yes! Look for businesses that display the sustainable destinations logo on their websites. These are certified partners of Visit Sognefjord who are committed to environmentally conscious operations, making it easy to book a truly green experience.
 
-### Q: Why are "green experiences" in such high demand by tourists?
+### Why are "green experiences" in such high demand by tourists?
 
-A: Travelers today are more aware of their environmental impact. They want to ensure their holidays are enriching without causing harm. Sognefjord offers curated options that align with these values, providing peace of mind and unique, responsible travel opportunities.
+Travelers today are more aware of their environmental impact. They want to ensure their holidays are enriching without causing harm. Sognefjord offers curated options that align with these values, providing peace of mind and unique, responsible travel opportunities.
