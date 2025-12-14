@@ -63,17 +63,17 @@ This is my story of finding balance, using technology as a tool (3D), and delive
 
 ## Q&A: Dialogue from the Deep (Inspired by Our Conversation)
 
-### Q: I feel drained by the digital world. What's the real difference between digital booking and your personal service?
+### I feel drained by the digital world. What's the real difference between digital booking and your personal service?
 
-A: [KAYAK ](https://www.kayak.co.uk/Balestrand.41106.guide)is a powerful tool—a digital navigation system for the modern world. It excels at finding the right coordinates (3D data). But my Varde certification and 35 years of experience are my analog compass. It’s built on intuition and the feel of the fjord (5D). AI helps us find each other in the digital noise, but only the human connection ensures the true quality and deep transformation you seek.
+ [KAYAK ](https://www.kayak.co.uk/Balestrand.41106.guide)is a powerful tool—a digital navigation system for the modern world. It excels at finding the right coordinates (3D data). But my Varde certification and 35 years of experience are my analog compass. It’s built on intuition and the feel of the fjord (5D). AI helps us find each other in the digital noise, but only the human connection ensures the true quality and deep transformation you seek.
 
-### Q: What are travelers really seeking in a transformative experience?
+### What are travelers really seeking in a transformative experience?
 
-A: They are looking to fill a void. A longing for silence, for authenticity, for meaning. They want to escape the fear of missing out and connect with what truly matters. They don't just want a "fishing trip"; they want a soulful recharge, a chance to drink water straight from the waterfall and feel truly alive.
+They are looking to fill a void. A longing for silence, for authenticity, for meaning. They want to escape the fear of missing out and connect with what truly matters. They don't just want a "fishing trip"; they want a soulful recharge, a chance to drink water straight from the waterfall and feel truly alive.
 
-### Q: You talk about 5D and longing as energy. How do you deliver that?
+### You talk about 5D and longing as energy. How do you deliver that?
 
-A: We deliver it through presence. It’s when the longing for nature and silence meets the physical action in the boat. It's a hybrid understanding. We use AI to reach you, but the experience in the boat is human, deep, and transformative. It’s in the stillness of the fjord that you find your true north.
+We deliver it through presence. It’s when the longing for nature and silence meets the physical action in the boat. It's a hybrid understanding. We use AI to reach you, but the experience in the boat is human, deep, and transformative. It’s in the stillness of the fjord that you find your true north.
 
 Ready for Your Journey? Discover Our Premium Transformation Products
 We offer three unique programs that go deeper than just tourism. They are designed to fill the void and offer the authenticity you seek.
