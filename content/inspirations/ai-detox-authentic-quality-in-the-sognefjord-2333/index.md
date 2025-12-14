@@ -48,24 +48,24 @@ cms: true
 
 You’re used to analyzing data, optimizing workflows, and navigating digital noise. You see patterns, understand algorithms, and know when something is generic "AI spam." You know most things online are optimized for clicks, not intrinsic value.
 
-#### You are looking for something genuine. 
+#### You are looking for something genuine.
 
 An experience that offers stillness, mastery, and a break from the screen. Something that requires presence in 3D, not just 5D vision.
 Welcome to Balestrand Fjord Angling, where we leverage AI smartly to focus on what truly matters: Authentic, high-value experiences on the fjord.
 
-### Q&A: From Bytes to Bites
+### Q&A: From Bytes to Bites:
 
 We have nothing to hide. In fact, we use AI to be more authentic. Here’s our methodology:
 
-### Q: Why discuss AI on a fishing tour website?
+### Why discuss AI on a fishing tour website?
 
 We use AI for operational efficiency behind the scenes (like drafting email templates and filtering sales noise), so Kaptein Tor can focus on the analog: being on the fjord. We optimize our bandwidth so we can maximize the core, high-touch customer experience.
 
-### Q: Is the tour "AI-optimized" or just "hype"?
+### Is the tour "AI-optimized" or just "hype"?
 
 The tour is 100% analog. The boat is real, the fjord is real, the fish are real. Our digital footprint is AI-optimized to ensure we reach high-intent customers like you who seek quality, without wasting your time (or ours) with generic content marketing. We optimize for user value, not just generic SEO checkboxes.
 
-### Q: What is the actual value proposition for me, an analyst?
+### What is the actual value proposition for me, an analyst?
 
 The value is a rare opportunity for a digital detox and personal mastery. It is a chance to disconnect from the data stream and connect with nature. You gain:
 
