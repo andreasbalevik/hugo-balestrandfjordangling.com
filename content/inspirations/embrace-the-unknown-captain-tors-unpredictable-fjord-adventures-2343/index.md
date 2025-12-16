@@ -25,9 +25,8 @@ keywords:
   - norway travel tips
   - norway authentic travel
   - sustainable travel norway
-description: "\"My fishing trips are unpredictable\" That's right, folks. The
-  quality that our guests find irresistible about my fishing trips, is our
-  inspiring unpredictability."
+description: The quality that our guests find irresistible about my fishing
+  trips, is our inspiring unpredictability.
 images:
   - src: images/solveig-lyr-redigert.jpg
     alt: fiske tur i sognefjorden, gøy på landet stor Lyr og dorging, vakker fjord
@@ -61,6 +60,4 @@ It’s grounded in Tor’s deep sense of self, he’s inner compass, he’s uniq
 
 The unpredictability adds a dash of spontaneity, a sprinkle of adventure, a hint of mystery to every interaction. It keeps the Ladies on their toes, keeps the gentlemen proud, and the kids engaged, keeps you coming back hungry for more.. 
 
-> #### “The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! My boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!”
-
-and that, my dear reader, is the magic, the mystery, the quality, the allure of *“Captain Tor’s fishing trips”*
+“The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! My boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!” - and that, my dear reader, is the magic, the mystery, the quality, the allure of *“Captain Tor’s fishing trips”*
