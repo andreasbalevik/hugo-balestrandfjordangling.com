@@ -45,15 +45,15 @@ Get ready for a **deep dive** into Sogn's wild west. Captain Tor and his uniqu
 
 ### **Which Captain Tor products or tours are featured in the episode?**
 
-The episode showcases the **raw** and **genuine** fishing experience in the Sognefjord. The focus is on the **personal connection** to the fjord and the local community, which is the core of our \[Captain Tor Fishing Trips](**LINK TO YOUR FISHING TRIP BOOKING PAGE**). You'll see how Arne, Sigrid, and Stig experience the **unfiltered** nature and local life.
+The episode showcases the **raw** and **genuine** fishing experience in the Sognefjord. The focus is on the **personal connection** to the fjord and the local community, which is the core of our Captain Tor Fishing Trips. You'll see how Arne, Sigrid, and Stig experience the **unfiltered** nature and local life.
 
 ### **How can I experience the same things featured in the TV series?**
 
-It's simple! We offer the exact same **immersive** experiences. Our \[Guided Tours in Balestrand](**LINK TO YOUR GUIDED TOURS PAGE**) allow you to **dive deep** into local culture and nature, just like in the series. \[Contact us](**LINK TO YOUR CONTACT PAGE**) for a **customized** experience—this is your chance to become one of the "People of the North" yourself.
+It's simple! We offer the exact same **immersive** experiences. Our Guided Tours in Balestrand allow you to **dive deep** into local culture and nature, just like in the series. [Contact us for a **customized** experience—this is your chance to become one of the "People of the North" yourself.
 
 ### **Where can I watch "People of the North" Season 2, Episode 6?**
 
-The episode has been sold internationally to 16 countries. You can find viewing information and stream (**LINK TO WHERE TO WATCH THE EPISODE**) via Peopleofthenorth.net or the international TV channels broadcasting the series.
+The episode has been sold internationally to more than 16 countries. You can find viewing information and stream [(**LINK TO WHERE TO WATCH THE EPISODE**](https://www.peopleofthenorth.net/season-two/s2e6-noble-adventures)) via Peopleofthenorth.net or the international TV channels broadcasting the series.
 
 ### **What makes Balestrand special as a "People of the North" destination?**
 
