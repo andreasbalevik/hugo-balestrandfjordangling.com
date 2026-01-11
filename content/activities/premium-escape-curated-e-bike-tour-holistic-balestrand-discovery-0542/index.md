@@ -1,6 +1,6 @@
 ---
 title: "PREMIUM ESCAPE: Curated E-Bike Tour & Holistic Balestrand Discovery"
-quality: CLASSIC
+quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord E-Bike
@@ -66,9 +66,9 @@ keywords:
   - Varde Quality Experience E-Bike
   - Holistic Wellness Travel Norway
   - Mindful Movement Experience.
-description: Perfect for you who are looking for unique travel experiences in
-  inspiring Balestrand. A sporty and entertaining bike tour with a historical
-  twist and personal charging with captain Tor.
+description: A unique travel experiences in inspiring Balestrand. A sporty and
+  entertaining bike tour with a historical twist and personal charging with
+  captain Tor.
 images:
   - src: images/img_20201007_122350_5.jpg
     alt: E-bike tour in Balestrand with scenic mountain and fjord landscapes
