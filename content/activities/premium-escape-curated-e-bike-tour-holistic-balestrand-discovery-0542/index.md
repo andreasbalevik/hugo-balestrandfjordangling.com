@@ -1,5 +1,5 @@
 ---
-title: "PREMIUM ESCAPE: Curated E-Bike Tour & Holistic Balestrand Discovery"
+title: Curated E-Bike Tour & Holistic Balestrand Discovery
 quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
