@@ -1,7 +1,7 @@
 ---
 title: " The Ultimate Balestrand Legacy Tour: Private Angling, Fjord History &
   Finnabotn"
-quality: LEGACY
+quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord
