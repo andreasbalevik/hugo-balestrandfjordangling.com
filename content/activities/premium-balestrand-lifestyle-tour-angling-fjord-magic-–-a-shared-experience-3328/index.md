@@ -1,7 +1,7 @@
 ---
 title: "Premium Balestrand Lifestyle Tour: Angling & Fjord Magic – A Shared
   Experience"
-quality: LIFESTYLE PREMIUM
+quality: The Human Edge
 keywords:
   - premium balestrand tour
   - luxury sognefjord experience
