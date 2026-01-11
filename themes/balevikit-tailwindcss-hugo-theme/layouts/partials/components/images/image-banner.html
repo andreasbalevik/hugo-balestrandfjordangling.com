@@ -1,0 +1,30 @@
+{{/*
+    Usage: 
+    {{ partial "components/images/image-banner.html" . }}
+
+    Data:
+      image_1: 
+        src: "images/sample-4.jpg"
+        alt: "Description of the image"
+*/}}
+
+{{ $contrast := site.Params.contrast | default 5 }}
+{{ $filter := images.Contrast $contrast }}
+{{ $image := resources.GetMatch .src | images.Filter $filter }}
+{{ $image_large := $image.Fill "1200x600 q60 webp" }} <!-- For large screens up to 1216px -->
+{{ $image_medium := $image.Fill "741x487 q60 webp" }} <!-- For screens up to 1050px -->
+{{ $image_small := $image.Fill "625x387 q60 webp" }}  <!-- For tablets -->
+
+<picture>
+    <!-- Define image sizes for different screen widths -->
+    <source media="(min-width: 1050px)" srcset="{{ $image_large.RelPermalink }}" width="{{ $image_large.Width }}" height="{{ $image_large.Height }}">
+    <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}" width="{{ $image_medium.Width }}" height="{{ $image_medium.Height }}">
+    <source srcset="{{ $image_small.RelPermalink }}" width="{{ $image_small.Width }}" height="{{ $image_small.Height }}">
+
+    <!-- Fallback for very small screens or browsers that don't support <picture> -->
+    <img class="w-full h-full min-h-[450px] object-cover" 
+        {{ with .alt }}alt="{{ . }}"{{ end }} 
+        src="{{ $image_small.RelPermalink }}" 
+        width="{{ $image_small.Width }}" 
+        height="{{ $image_small.Height }}">
+</picture>

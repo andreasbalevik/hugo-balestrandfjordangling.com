@@ -1,0 +1,26 @@
+{{/*
+Usage:
+
+{{ with .Params.images }}
+    {{ partial "components/images/carousel-banner" . }}
+{{ end }}
+
+Object:
+images:
+- src: image.jpg
+- src: image.jpg
+*/}}
+
+<div id="default-carousel" class="relative w-full" data-carousel="static">
+    
+    <!-- Images -->
+    <div class="relative h-[370px] sm:h-[480px] lg:h-[500px] overflow-hidden">
+        {{ range . }}
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                {{ partial "components/images/image-banner" . }}
+            </div>
+        {{ end }}
+    </div>
+
+    {{ partial "components/images/utils/carousel-controls" . }}
+</div>

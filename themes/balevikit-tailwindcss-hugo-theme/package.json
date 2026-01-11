@@ -1,0 +1,14 @@
+{
+  "name": "balevikit-tailwindcss-hugo-theme",
+  "version": "1.0.0",
+  "description": "## Features",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/typography": "github:tailwindcss/typography",
+    "tailwindcss": "^4.0.0"
+  }
+}

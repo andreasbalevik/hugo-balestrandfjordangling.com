@@ -1,0 +1,50 @@
+<header class="mb-[56px] bg-white text-black">
+    <nav class="z-40 bg-inherit fixed w-full top-0 start-0 border-b border-gray-200">
+        <div class="h-[56px] container flex flex-wrap items-center justify-between mx-auto py-3 bg-inherit">
+
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="text-inherit self-center text-xl tracking-wide whitespace-nowrap">
+                    {{.Site.Title}}
+                </span>
+            </a>
+
+            {{ $currentPage := . }}
+            {{ $section := .Site.GetPage $currentPage.Section }}
+
+            {{ if .Site.Menus.main }}
+
+            {{ partial "layout/mobile-menu-button.html" . }}
+            <div class="hidden w-full lg:flex lg:w-auto md:order-1" id="navbar-sticky">
+                <div
+                    class="top-[50px] fixed inset-0 flex flex-col p-4 bg-white z-50 lg:relative lg:flex-row lg:p-0 lg:bg-inherit lg:z-auto lg:inset-auto lg:h-auto lg:w-auto lg:space-x-8 rtl:space-x-reverse">
+                    <ul class="lg:flex gap-8 md:justify-end text-xl lg:text-base">
+                    
+                        {{ range .Site.Menus.main.Sort }}
+                        <li>
+                            <a href="{{.URL}}"
+                                class="{{if eq $section.RelPermalink .URL }}text-blue-700{{else}}text-inherit{{end}} block tracking-wide py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-600 lg:p-0"
+                                aria-current="page">
+                                {{ .Name }}
+                            </a>
+                        </li>
+                        {{ end }}
+
+                        {{ with .Translations }}
+                            <li class="ml-0 mt-6 lg:ml-6 lg:mt-0">{{ partial "layout/language.html" . }}</li>
+                        {{ end }}
+
+
+                    </ul>
+                </div>
+
+            {{ else }}
+                {{ with .Translations }}
+                    <div class="inline-flex">
+                        {{ partial "layout/language.html" . }}
+                    </div>
+                {{ end }}    
+            {{ end }}
+
+        </div>
+    </nav>
+</header>

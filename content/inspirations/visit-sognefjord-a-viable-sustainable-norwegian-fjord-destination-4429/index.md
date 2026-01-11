@@ -63,7 +63,7 @@ keywords:
 description: This is a quality stamp that shows that we, as a destination, the
   municipalities work strategically to be a better destination.
 images:
-  - src: images/bærekraftig-reisemål_engelsk_m-undertekst_negativ.jpg
+  - src: images/bærekraftig-reisemål_engelsk_m-undertekst_negativ.jpg
 cms: true
 ---
 ## Innovating Sustainable Travel in Sognefjord
