@@ -1,5 +1,26 @@
 ---
 title: What is Ecotourism ?
+keywords:
+  - Transformative travel Norway
+  - Regenerative tourism Sognefjord
+  - Authentic fjord experience
+  - Mindful travel Norway
+  - Off-the-beaten-path Norway
+  - Private guided fjord tour Balestrand
+  - Exclusive angling experience Sognefjord
+  - Sustainable luxury travel Norway
+  - Local storytelling fjord cruise
+  - Deep fjord fishing Norway
+  - Eco-friendly boating Norway
+  - Low-impact tourism Sognefjord
+  - Conservation-led travel Norway
+  - Wilderness immersion Norway
+  - Boutique fjord excursions
+  - Slow travel Sognefjord
+  - Personalized Norwegian heritage tour
+  - High-touch travel experiences
+  - The Sognefjord Paradox
+  - Captain Tor Balestrand
 description: Ecotourism provides an alternative to mass tourism by creating
   economic value from intact nature, which motivates conservation
 images:
