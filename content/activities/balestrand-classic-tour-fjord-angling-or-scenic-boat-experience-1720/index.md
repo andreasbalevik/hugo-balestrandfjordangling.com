@@ -1,6 +1,6 @@
 ---
 title: "Balestrand Classic Tour: Fjord Angling or Scenic Boat Experience"
-quality: CLASSIC
+quality: BASIC
 keywords:
   - Authentic Balestrand experience
   - Sognefjord private tour
