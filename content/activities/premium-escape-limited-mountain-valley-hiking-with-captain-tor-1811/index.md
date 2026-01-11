@@ -1,6 +1,6 @@
 ---
 title: "Premium Escape: Limited Mountain Valley Hiking With Captain Tor"
-quality: ESCAPE
+quality: The Human Edge
 keywords:
   - Premium Hiking Norway
   - Luxury Hiking Sognefjord
