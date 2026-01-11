@@ -1,6 +1,6 @@
 ---
 title: "Premium skill: Master the Long Line – Authentic Fjord Fishing Immersion"
-quality: PREMIUM ESCAPE
+quality: The Human Edge
 keywords:
   - Long line fishing Sognefjord
   - Deep sea fishing Norway
