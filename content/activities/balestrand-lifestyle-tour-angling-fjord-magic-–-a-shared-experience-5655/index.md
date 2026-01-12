@@ -84,7 +84,7 @@ product_info:
       price: 4000
     - person_number: 2
       price: 4000
-    - person_number: 2
+    - person_number: 3
       price: 4000
     - person_number: 4
       price: 5000
