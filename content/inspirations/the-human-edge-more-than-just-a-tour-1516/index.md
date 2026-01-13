@@ -24,7 +24,7 @@ keywords:
 description: Discover the genuine Sognefjord experience. Book direct with the
   captain for authenticity, sustainability & "The Human Edge" philosophy.
 images:
-  - src: images/kaptein-tor-viser-vei.jpg
+  - src: images/7npj0q7c.jpeg
     alt: "Captain Tor walking on the water in Sognefjord, blue sky and white clouds
       and pointing to the new direction: The Human Edge."
 related_activities:
