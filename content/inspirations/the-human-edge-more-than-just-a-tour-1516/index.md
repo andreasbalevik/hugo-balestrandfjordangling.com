@@ -24,8 +24,9 @@ keywords:
 description: Discover the genuine Sognefjord experience. Book direct with the
   captain for authenticity, sustainability & "The Human Edge" philosophy.
 images:
-  - src: images/logo-bfa.jpg
-    alt: tro håp og kjørlighet
+  - src: images/kaptein-tor-viser-vei.jpg
+    alt: "Captain Tor walking on the water in Sognefjord, blue sky and white clouds
+      and pointing to the new direction: The Human Edge."
 related_activities:
   - premium-balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-3159/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
