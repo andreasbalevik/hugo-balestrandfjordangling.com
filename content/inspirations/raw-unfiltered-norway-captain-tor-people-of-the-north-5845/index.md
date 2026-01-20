@@ -41,7 +41,7 @@ Get ready for a **deep dive** into Sogn's wild west. Captain Tor and his uniqu
 
 ### **What is the "People of the North" episode about?**
 
-\- Episode 6, "Noble Adventures," focuses on the best experiences in Balestrand, known for its nature, local food, and historic charm. Viewers get an exclusive look into fjord and mountain adventures—from fishing with Tor to local culture. It’s an authentic portrait of life in Sogn.
+[\- Episode 6, "Noble Adventures,"](https://www.peopleofthenorth.net/season-two/s2e6-noble-adventures) focuses on the best experiences in Balestrand, known for its nature, local food, and historic charm. Viewers get an exclusive look into fjord and mountain adventures—from fishing with Tor to local culture. It’s an authentic portrait of life in Sogn.
 
 ### **Which Captain Tor products or tours are featured in the episode?**
 
