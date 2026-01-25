@@ -1,7 +1,17 @@
 ---
 title: "Skillcation in the Sognefjord: Master the Art of the Fjord"
 keywords:
-  - Multigenerational family adventure
+  - Skillcation Noorwegen
+  - actieve gezinsvakantie
+  - authentiek vissen Sognefjord
+  - vissen met kapitein Tor
+  - leer vissen in Noorwegen
+  - duurzaam toerisme
+  - Sognefjord met kinderen
+  - diepzeevissen Noorwegen
+  - fjord-to-table ervaring
+  - actieve natuurvakantie
+  - Balestrand excursies. family adventure
   - Skip-gen travel
   - Norway bucket list 2026
   - Best of Sognefjord
@@ -37,7 +47,17 @@ keywords:
   - Private boat tours Balestrand
   - Guided fishing trips Norway
   - Learn to fish in the fjords
-  - Eco-friendly fishing tours.
+  - Eco-friendly fishing tours.Skillcation Norvège
+  - vacances apprenantes
+  - pêche authentique dans les fjords
+  - apprendre à pêcher en Norvège
+  - gastronomie des fjords
+  - expérience fjord-to-table
+  - tourisme régénératif
+  - aventure en famille Norvège
+  - voyage sur mesure Sognefjord
+  - Captain Tor Balestrand
+  - patrimoine maritime norvégien.
 description: Master the Sognefjord! Join a 2026 "Skillcation" with Captain Tor.
   Learn authentic long line fishing and deep-water tactics in Norway. Book your
   adventure!
