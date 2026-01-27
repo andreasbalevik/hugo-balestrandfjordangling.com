@@ -78,15 +78,8 @@ description: "Sognefjord's hidden gem: The ultimate heritage tour. Authentic
   angling, net fishing & history with Captain Tor. A premium bucket-list
   experience for your family"
 images:
-  - src: images/img_2977.jpeg
+  - src: images/embracing-pure-joy-and-digital-detox-in-the-majestic-sognefjord-a-guest-sits-at-the-bow-of-the-boat-arms-open-wide-to-the-mountain-peaks-and-the-open-water.jpg
     alt: Fantastiske Fjærlandsfjord og fisketur med tenåringer og morsom fisk på tur
-  - src: images/img_20210619_181217_1.jpg
-    alt: damer i blå flytedresser holder en sporty stil og oppdagelse i sognefjorden
-  - src: images/img_20210619_180418_8.jpg
-    alt: damer on-the-go Instagram fantastiske Fjærland. Sporty fisketur opplevelse
-      blant høye fjell i Sognefjorden
-  - src: images/b67i4994.jpg
-    alt: frihet og glede i Fjærland, vinter drakt og vår i båt
 tags:
   - family-and-friends
 information:
