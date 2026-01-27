@@ -41,6 +41,6 @@ In a world full of digital filters and mass-produced experiences, we have chosen
 
 **Integrity and Authenticity:** Our tours are based on deep core values: Faith, Hope, and Love (as symbolized in our logo). We say no to commercial projects that conflict with these values, ensuring every experience is 100% authentic.
 
-**Quality over Quantity & Local Environmental Stewardship:** We prioritize depth over volume. This also means a strong focus on preserving the landscape quality and minimizing pollution in our beautiful fjord. You experience nature on its terms, and we contribute to local value creation and the conservation of biodiversity. We are proud to exclusively partner with one operator, Ethical Travel Portal, who shares and promotes our core values.
+**Quality over Quantity & Local Environmental Stewardship:** We prioritize depth over volume. This also means a strong focus on preserving the landscape quality and minimizing pollution in our beautiful fjord. You experience nature on its terms, and we contribute to local value creation and the conservation of biodiversity. We are proud to exclusively partner with one operator, **[Ethical Travel Portal](https://ethicaltravelportal.com/),** who shares and promotes our core values.
 
 **"Simplicity Creates Emotions"** – Our philosophy is simple. True magic occurs in the direct, human connection, not in a complicated booking process.
