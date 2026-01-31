@@ -60,4 +60,4 @@ It’s grounded in Tor’s deep sense of self, he’s inner compass, he’s uniq
 
 The unpredictability adds a dash of spontaneity, a sprinkle of adventure, a hint of mystery to every interaction. It keeps the Ladies on their toes, keeps the gentlemen proud, and the kids engaged, keeps you coming back hungry for more - and that, my dear reader, is the magic, the mystery, the quality, the allure of *“Captain Tor’s fishing trips”*
 
-> “The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! The boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!” - said by an Australian
+> *“The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! The boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!”* - said by an Australian
