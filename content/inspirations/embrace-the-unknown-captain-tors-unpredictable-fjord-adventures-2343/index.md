@@ -44,7 +44,7 @@ Well, not necessarily. When we say the fjords are unpredictable, we don’t mean
 
 You have a map, and set a route, and a clear destination. But wouldn’t it be more exiting if you took a detour, explored a scenic route, or stumbled upon a hidden gem? That’s what it’s like to be around our boat. This is the detour, the scenic route and the hidden gem. 
 
-### My boat takes you to paths of the Sognefjord less traveled, *pristine parts*
+### *Miss Fjords* takes you to paths of the Sognefjord less traveled, *pristine parts*
 
 and Tor invites you to come along for the ride. Together we are not afraid to take risks, step out of the comfort sone, go out of the beaten path, to embrace the unknown. We keep you guessing, keep you on the toes, keep you wondering, keep you intrigued. 
 
@@ -54,10 +54,10 @@ what’s behind the next corner, what we’ll do next, where we’ll go next. An
 
 ### But remember, this unpredictability isn’t arbitrary or whimsical.
 
-It’s grounded in Tor’s deep sense of self, he’s inner compass, he’s unique perspective on life. He’s not unpredictable for the sake of being unpredictable. Tor’s fjord experiences is unpredictable because he’s being true to himself. He’s marching to the beat of he’s of his own drum, dancing to the rhythm of his own song and driving the boat to where the next secret gem might be.
+It’s grounded in Tor’s deep sense of self, he’s inner compass, he’s unique perspective on life. He’s not unpredictable for the sake of being unpredictable. Tor’s fjord experiences is unpredictable because he’s being true to himself. He’s marching to the beat of he’s of his own drum, dancing to the rhythm of his own song and driving the boat *"Miss Fjords"* to where the next secret gem might be.
 
 ### And that is what makes our trips so captivating, so intriguing, so irresistible.
 
-The unpredictability adds a dash of spontaneity, a sprinkle of adventure, a hint of mystery to every interaction. It keeps the Ladies on their toes, keeps the gentlemen proud, and the kids engaged, keeps you coming back hungry for more.. 
+The unpredictability adds a dash of spontaneity, a sprinkle of adventure, a hint of mystery to every interaction. It keeps the Ladies on their toes, keeps the gentlemen proud, and the kids engaged, keeps you coming back hungry for more - and that, my dear reader, is the magic, the mystery, the quality, the allure of *“Captain Tor’s fishing trips”*
 
-“The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! My boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!” - and that, my dear reader, is the magic, the mystery, the quality, the allure of *“Captain Tor’s fishing trips”*
+> “The Sognefjord’s a bit of a wildcard, mate. That’s my secret sauce! The boat’s not just a ride; it’s an absolute game-changer for a top-shelf experience. Fair dinkum, it’s ace!” - said by an Australian
