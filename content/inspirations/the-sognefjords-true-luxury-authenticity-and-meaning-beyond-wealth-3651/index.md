@@ -18,7 +18,7 @@ related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
 cms: true
 ---
-## My Exclusive authentic Sognefjord experience beyond luxury
+## Why my Exclusive authentic Sognefjord experience is beyond luxury?
 
 That is a very sharp question, Captain Tor. It is the core of the 5D perspective we have spoken about, and the key to understanding this specific customer group.
 
