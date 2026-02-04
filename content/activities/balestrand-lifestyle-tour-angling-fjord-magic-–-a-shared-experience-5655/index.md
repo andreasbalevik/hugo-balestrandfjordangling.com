@@ -88,19 +88,21 @@ product_info:
       price: 4000
     - person_number: 4
       price: 5000
-    - person_number: 6
+    - person_number: 5
       price: 6000
-    - person_number: 7
+    - person_number: 6
       price: 7000
+    - person_number: 7
+      price: 8000
 cms: true
 ---
 ## **Introduction: Discover the Authentic Balestrand Experience**
 
 ### This tour different from typical tourist activities
 
-This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape.
+This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape. Fishing, storytelling, culture and a scenic trip all in one package. Our custom made boat: "Miss Fjords" takes you away into the hidden gems of the fjord that transforms your mindsett.
 
-Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours. **Ready for a little escapade?**
+Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours. **Get ready for a little escapade?**
 
 ### AUTHENTIC SOGNEFJORD LIFESTYLE: RAIN OR SHINE
 
@@ -138,8 +140,6 @@ Raw materials can be purchased easily at the grocery store next to the Balestran
 ### A balcony lunch at Kvikne's never fails!
 
  Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://hugo-balestrandfjordangling.netlify.app/admin/#/collections/activities/entries/balestrand-fjord-angling-family-expedition/index)Hotell after the trip, paired with something good to drink. 
-
->
 
 ### Do you have any video inspiration from the tour?
 
