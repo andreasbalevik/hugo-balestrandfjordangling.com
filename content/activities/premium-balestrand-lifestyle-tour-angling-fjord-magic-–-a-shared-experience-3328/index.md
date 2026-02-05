@@ -73,8 +73,8 @@ information:
     varde_experience_quality: true
 product_info:
   duration:
-    hours: 3
-    minutes: 30
+    hours: 4
+    minutes: 0
   persons: "7"
   prices:
     - person_number: 1
