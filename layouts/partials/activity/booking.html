@@ -37,7 +37,7 @@
                     <!-- tour name -->
                     <div class="col-span-2">
                         <label for="activity" class="block mb-2 text-sm font-medium text-gray-900">Selected
-                            Activity</label>
+                            Activity:</label>
                         <input type="text" id="activity" name="activity"
                             class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
                             value="{{.Title}}" readonly>
@@ -45,8 +45,13 @@
                             class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
                             value="{{.Params.quality}}" readonly>
                         {{.Title}}
-
                     </div>
+                    <div class="col-span-2 mb-4">
+                                            <label for="activity" class="block mb-2 text-sm font-medium text-gray-900">Duration:</label>
+                   {{.Params.product_info.duration.hours}}h {{with .Params.product_info.duration.minutes}}{{.}}m{{end}}
+                    </div>
+                    
+
 
                     <!-- name -->
                     <div class="col-span-2 sm:col-span-1">
