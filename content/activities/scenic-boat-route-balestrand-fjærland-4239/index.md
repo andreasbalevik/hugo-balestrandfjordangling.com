@@ -122,7 +122,7 @@ cms: true
 ---
 ## **Introduction: The Ultimate Sognefjord Private Boat Experience**
 
-**Sognefjord private boat trip to Fjærland. See glaciers, mountains & stunning nature up close. A rare, rustic adventure far from crowds. Explore Norway's heart.** This tour is for discerning travelers who collect unique experiences. It's a world-class, pristine fjord journey for those who are on the go and value authenticity over comfort.
+**Sognefjord private boat trip to Fjærland. See glaciers, mountains & stunning nature up close. A rare, rustic adventure far from crowds. Explore Norway's heart.** This tour is for discerning travelers who collect unique experiences. It's a world-class, pristine fjord journey for those who are on the go and value authenticity over comfort. Note: No fishing on this trip, only sightseeing. If you want both, check out this [unique premium combination here ;)](https://balestrandfjordangling.com/activities/premium-balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-3328/)
 
 ### **What is the boat experience like?**
 
@@ -165,6 +165,8 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 > Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CTAFlSnKh7W/)
 >
 > Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CXE7r1sFLIJ/)
+>
+> Teaser TV-Episode S2E6: Watch the Video [HERE](https://www.youtube.com/watch?v=pjoMLKwGsEg)
 >
 > Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
