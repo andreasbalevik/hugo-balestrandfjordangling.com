@@ -1,7 +1,7 @@
 ---
 title: " The Fjord Awakens: Exclusive Viking Fishing Expedition in the
   Fjaerlandsfjord"
-quality: GO VIKING & SPRINGFULLNESS
+quality: Go Viking & Spring-fullness
 keywords:
   - authentic norway
   - bespoke adventure
