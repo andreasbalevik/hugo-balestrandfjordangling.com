@@ -29,7 +29,6 @@ images:
       Norwegian flag on a boat in the Sognefjord."
 related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
-  - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - scenic-boat-route-balestrand-fjærland-4239/index
 cms: true
 ---
