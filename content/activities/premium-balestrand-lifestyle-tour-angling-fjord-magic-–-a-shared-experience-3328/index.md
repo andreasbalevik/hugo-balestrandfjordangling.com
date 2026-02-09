@@ -131,11 +131,11 @@ The fishing trip to the smallholdings in the beautiful **\#fjærlandsfjorden**�
 
 The **\#fjærlandsfjord**, often green colored by glacial meltwater, is a pristine wilderness. It boasts diverse animal and bird life, including eagles, porpoises, and occasionally even killer whales looking for seals. This feeling of solitude and exclusivity is a core part of our **eco-tourism** promise.
 
-### **Why is this experience so restorative?**
+### **Why is this experience so restorative? -** 
 
 **Simplicity Creates Emotions: *"This is so nice.."***
 
-The energy in the **\#fjærlandsfjorden** is special—more original, more powerful. There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder. It’s a guaranteed **wellness escape**. We explore Lidal, Romøyri and Teigen from boat.
+The energy in the **\#fjærlandsfjorden** is special—more original, more powerful. There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder. It’s a guaranteed **wellness escape**. We explore Lidal, Romøyri and Teigen from boat. **Miss Fjords has moments and twists for everyone on board, curious about more?**
 
 > #### *"I feel I have gotten to know the Sognefjord myself..."*
 
