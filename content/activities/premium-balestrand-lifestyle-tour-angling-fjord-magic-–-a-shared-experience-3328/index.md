@@ -123,6 +123,8 @@ Enjoy easy and fun **\#fjordfishing** in the beautiful, legendary **\#esefjor
 
 **When Skies Clear: *"Hope shines through"***
 
+We are close to the fjord, nature and in an open boat and in a sheltered part of the Sognefjord. This is a trip for you who collect unique travel experiences. With our blue jump-in-suits and boots you stay warm and dry. Warm hearts and cold fingers are with us the sign of authenticity and local lifestyle you seek.
+
 The fishing trip to the smallholdings in the beautiful **\#fjærlandsfjorden** is excellent for traditional **trolling** along the cliffs for Pollock, mackerel, salmon, or trout. This is authentic local fishing culture and the perfect way to relax within the stunning fjord landscape. We facilitate your comfort regardless of the elements.
 
 ### **What makes the natural scenery in the fjords so special?**
@@ -131,7 +133,7 @@ The fishing trip to the smallholdings in the beautiful **\#fjærlandsfjorden**�
 
 The **\#fjærlandsfjord**, often green colored by glacial meltwater, is a pristine wilderness. It boasts diverse animal and bird life, including eagles, porpoises, and occasionally even killer whales looking for seals. This feeling of solitude and exclusivity is a core part of our **eco-tourism** promise.
 
-### **Why is this experience so restorative? -** 
+### **Why is this experience so restorative? -**
 
 **Simplicity Creates Emotions: *"This is so nice.."***
 
