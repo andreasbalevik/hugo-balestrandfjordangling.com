@@ -67,10 +67,26 @@
     </div>
 </section>
 
+{{ if .Params.featured.enabled }}
+<section>
+  <div class="bg-[#769ba4]">
+    <div class="container">
+      {{ with .Params.featured }}
+        {{ range first 1 .featured }}
+        {{ $page := replace . "/index" "" }}
+        {{ with $.Site.GetPage $page }}
+          {{.Render "highlight" }}
+        {{end}}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <section>
     {{ partial "components/capt-tor-recommended" . }}
 </section>
-
 
 <section>
     {{ with .Params.inspirations }}
