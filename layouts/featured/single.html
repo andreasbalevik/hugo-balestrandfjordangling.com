@@ -2,13 +2,13 @@
 
 <article>
     <!-- Hero Section -->
-    <div class="relative">
-        <!-- Hero Image with Enhanced Gradient -->
-        <div class="relative overflow-hidden">
-            <div class="relative aspect-[21/9] md:aspect-[21/7]">
+    <div class="relative max-w-screen-2xl mx-auto">
+        <!-- Hero Image with Enhanced Gradient --> 
+        <div class="relative overflow-hidden max-h-[600px] md:max-h-[700px] lg:max-h-[800px]">
+            <div class="relative">
                 {{ with .Params.images }}
                     {{ with index . 0 }}
-                        {{ partial "components/images/image-banner" . }}
+                        {{ partial "featured/hero-image.html" . }}
                     {{ end }}
                 {{ end }}
                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent"></div>
