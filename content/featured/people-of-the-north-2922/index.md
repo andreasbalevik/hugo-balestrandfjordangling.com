@@ -10,6 +10,8 @@ images:
     alt: People of the north
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
+  - scenic-boat-route-balestrand-fjærland-4239/index
+  - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
 ---
 **I am incredibly proud to have represented the Sognefjord in this global showcase.** But the pride doesn’t lie in the TV screen itself – it lies in every single guest who leaves the pier with a new light in their eyes.
