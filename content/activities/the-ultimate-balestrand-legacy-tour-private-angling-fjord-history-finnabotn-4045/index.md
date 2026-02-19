@@ -1,6 +1,6 @@
 ---
-title: " A rare opportunity: The travel dream, a whole day in the most
-  attractive fjord arms of the Sognefjord."
+title: "Beyond the Horizon: A Private Masterclass in Fjord Life and Analog
+  Experiences"
 quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
