@@ -14,7 +14,7 @@ related_activities:
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
 ---
-> *"I am incredibly proud to have represented the Sognefjord in this global showcase. But that pride **doesn't live** in the TV screen itself – **it beats** in every single guest who leaves the pier with a new light in their eyes."*
+> *"I am incredibly honored to have represented the Sognefjord in this global showcase. But that feeling isn't found on the TV screen – it's born within every single guest who leaves the pier with a new light in their eyes."*
 >
 > *\- Captain Tor*
 
