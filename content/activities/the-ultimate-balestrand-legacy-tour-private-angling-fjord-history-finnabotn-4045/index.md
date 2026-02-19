@@ -43,9 +43,18 @@ description: Experience the Sognefjord at its most authentic. Private "Legacy
   Tour" offers exclusive fishing, Kvamsøy Church exploration & digital detox in
   Finnabotn.
 images:
-  - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
-    alt: Woman enjoying a private boat tour on the Sognefjord, surrounded by steep
-      mountains and flying a small Norwegian flag.
+  - src: images/img_3227.jpeg
+    alt: «Gjester som opplever ekte glede og 'The Human Edge' om bord på Miss Fjords
+      i Balestrand. Bakgrunnen viser det spektakulære fjordlandskapet i
+      Sognefjorden med fjell og isbreer.»
+  - src: images/img_3240.jpeg
+    alt: «To smilende og livskraftige kvinner i turklær står tett sammen og ler om
+      bord på en båt i Sognefjorden. Bak dem rager grønne fjellsider med
+      snødekte topper og fosser under en blå himmel med hvite skyer.»
+  - src: images/fra-sognefjorden-med-kjærlighet.-🌊-som-denne-massive-klippen-står-vi-støtt-selv-når-utfordringene-eller-ai-virker-overveldende.-det-flytende-rene-vannet-symboli.jpg
+    alt: Fra Sognefjorden, med kjærlighet. 🌊 Som denne massive klippen står vi
+      støtt, selv når utfordringene (eller AI) virker overveldende. Det
+      flytende, rene vannet symbolik
 tags:
   - business-and-pleasure
 information:
@@ -76,10 +85,6 @@ cms: true
 
 > \-There is no complication that needs to happen; It just needs to be taken as simple as it is given.
 
-### The Ultimate Balestrand Cultural Legacy Tour
-
-This is your chance for a complete digital detox and a deep dive into the heart of the Sognefjord. It’s an 8-hour private charter that blends the thrill of authentic angling with a journey through Norwegian heritage and dramatic fjord geology. We take you off the beaten path to Norway's most spectacular, silent *"hyper-nature".*
-
 ### What’s the day's itinerary?
 
 The adventure starts at 09:00 AM from Balestrand harbor.
@@ -109,6 +114,8 @@ Time Travel to Kvamsøy Church: Explore the charming medieval stone church from 
 ### Who is this unique experience designed for?
 
 This is for those used to traveling and curating unique travel experiences. It’s a truly handpicked journey for the discerning traveler seeking exclusivity and authenticity over mass tourism.
+
+> I deserve this. An investment and reward for a life lived. I Am the fjord!
 
 ### What makes this a “world-class” adventure?
 
