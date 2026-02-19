@@ -44,17 +44,20 @@ description: Experience the Sognefjord at its most authentic. Private "Legacy
   Finnabotn.
 images:
   - src: images/img_3227.jpeg
-    alt: «Gjester som opplever ekte glede og 'The Human Edge' om bord på Miss Fjords
-      i Balestrand. Bakgrunnen viser det spektakulære fjordlandskapet i
-      Sognefjorden med fjell og isbreer.»
+    alt: "\"CEO of Visit Sognefjord, Heidi Hauge, experiencing the 'Human Edge' and
+      the serene 'Hyper-nature' of Finnabotn with Balestrand Fjord Angling. A
+      high-end, sustainable fjord tour in the Sognefjord, showcasing authentic
+      Norwegian travel and the emotional power of the pristine landscape.\""
   - src: images/img_3240.jpeg
-    alt: «To smilende og livskraftige kvinner i turklær står tett sammen og ler om
-      bord på en båt i Sognefjorden. Bak dem rager grønne fjellsider med
-      snødekte topper og fosser under en blå himmel med hvite skyer.»
+    alt: '"Two smiling and energetic women in hiking clothes stand close together
+      and laugh on board a boat in the Sognefjord. Behind them rise green
+      mountain slopes with snow-capped peaks and waterfalls under a blue sky
+      with white clouds."'
   - src: images/gi6a3671.jpg
-    alt: Fra Sognefjorden, med kjærlighet. 🌊 Som denne massive klippen står vi
-      støtt, selv når utfordringene (eller AI) virker overveldende. Det
-      flytende, rene vannet symbolik
+    alt: "\"From the Sognefjord, with love. 🌊 Like this massive rock, we stand
+      firm, even when the challenges (or AI) seem overwhelming. The flowing,
+      pure water symbolism and hypernature in the boat Miss Fjords and Captain
+      Thor's adventure in the Fjærlandsfjord in the Norwegian Sognefjord\""
 tags:
   - business-and-pleasure
 information:
