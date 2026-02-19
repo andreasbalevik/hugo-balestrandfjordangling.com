@@ -3,22 +3,22 @@
     <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-xl rounded-lg overflow-hidden border-4 border-white relative">
         
         <div class="p-4 md:p-8 h-full flex order-2 xl:order-1">
-            <div class="prose lg:prose-lg prose-headings:mt-0 my-auto max-w-none">
+            <div class="prose lg:prose-xl prose-headings:mt-0 my-auto max-w-none">
                 <div class="flex items-center gap-3 mb-4 not-prose">
                     <div class="h-1 w-12 bg-[#e09a00] rounded-full"></div>
-                    <span class="text-[#e09a00] text-xs font-bold uppercase tracking-wider">Featured</span>
+                    <span class="text-[#e09a00] text-sm font-bold uppercase tracking-wider">Featured</span>
                 </div>
                 
-                <h2 class="text-3xl md:text-4xl lg:text-5xl mt-0 mb-4 font-bold">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl mt-0 mb-4 font-bold leading-tight">
                     {{ .Title }}
                 </h2>
                 
-                <p class="text-base md:text-lg leading-relaxed">
+                <p class="text-lg md:text-xl leading-relaxed text-gray-700">
                     {{ .Params.description }}
                 </p>
 
                 <a href="{{ .RelPermalink }}"
-                    class="mt-4 text-white bg-gradient-to-r from-[#e09a00] to-[#f5b13d] hover:from-[#d08900] hover:to-[#e09a00] px-6 py-3 inline-flex items-center no-underline rounded-lg shadow-lg font-semibold transition-all duration-300"
+                    class="mt-4 text-white bg-gradient-to-r from-[#e09a00] to-[#f5b13d] hover:from-[#d08900] hover:to-[#e09a00] px-6 py-3 inline-flex items-center no-underline rounded-lg shadow-lg font-semibold transition-all duration-300 text-lg"
                     aria-label="Discover more about {{ .Title }}">
                     Discover More
                     {{ partial "arrow.html" . }}

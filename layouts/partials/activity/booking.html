@@ -1,6 +1,6 @@
 <!-- Booking Button -->
 <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
-    class="text-base mt-5 text-white bg-[#e09a00] hover:bg-[#d08900] px-5 py-2.5 inline-flex items-center no-underline rounded-lg cursor-pointer transition-colors duration-300"
+    class="text-lg mt-6 text-white bg-[#e09a00] hover:bg-[#d08900] px-6 py-3 inline-flex items-center no-underline rounded-lg cursor-pointer transition-colors duration-300 font-semibold"
     type="button"
     aria-label="Open booking request form">
     Make a request
@@ -15,7 +15,7 @@
         <article class="relative bg-white rounded-lg shadow-lg border border-gray-200">
             <!-- Modal Header -->
             <header class="flex items-center justify-between p-4 md:p-5 border-b border-gray-200">
-                <h3 id="modal-title" class="text-lg font-semibold text-gray-900">
+                <h3 id="modal-title" class="text-xl md:text-2xl font-bold text-gray-900">
                     Make a request
                 </h3>
                 <button type="button"
@@ -59,7 +59,7 @@
                     <div class="col-span-2 p-4 bg-blue-50 rounded-lg border border-gray-200">
                         <p class="text-md font-medium text-gray-900 mb-2">{{ .Title }}</p>
                         {{ with .Params.product_info.duration }}
-                        <p class="text-sm text-gray-600">
+                        <p class="text-base text-gray-700">
                             Duration: {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}
                         </p>
                         {{ end }}
@@ -67,23 +67,23 @@
 
                     <!-- Full Name -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Full Name *</label>
+                        <label for="name" class="block mb-2 text-base font-semibold text-gray-900">Full Name *</label>
                         <input type="text" name="name" id="name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
                             placeholder="Enter full name" required>
                     </div>
 
                     <!-- Email -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email *</label>
+                        <label for="email" class="block mb-2 text-base font-semibold text-gray-900">Your email *</label>
                         <input type="email" id="email" name="email" 
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
                             placeholder="name@example.com" required>
                     </div>
 
                     <!-- Date -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900">Date *</label>
+                        <label for="date" class="block mb-2 text-base font-semibold text-gray-900">Date *</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
@@ -93,16 +93,16 @@
                                 </svg>
                             </div>
                             <input id="date" name="date" type="date"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full ps-10 p-3 transition-colors duration-300"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full ps-10 p-3 transition-colors duration-300"
                                 required>
                         </div>
                     </div>
 
                     <!-- Time -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="time" class="block mb-2 text-sm font-medium text-gray-900">Time *</label>
+                        <label for="time" class="block mb-2 text-base font-semibold text-gray-900">Time *</label>
                         <select id="time" name="time"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
                             <option value="09:00">09:00</option>
                             <option value="12:00">12:00</option>
                             <option value="15:00">15:00</option>
@@ -112,15 +112,15 @@
 
                     <!-- Total Guests -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="people" class="block mb-2 text-sm font-medium text-gray-900">Total Guests *</label>
+                        <label for="people" class="block mb-2 text-base font-semibold text-gray-900">Total Guests *</label>
                         <select id="people" name="people"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
                             {{ range .Params.product_info.prices }}
                             <option value="{{ .person_number }}" data-price="{{ .price }}">{{ .person_number }}</option>
                             {{ end }}
                         </select>
                         {{ with .Params.product_info.prices }}
-                        <p class="mt-1 text-xs text-gray-500">
+                        <p class="mt-1 text-sm text-gray-600">
                             Maximum capacity: {{ range last 1 . }}{{ .person_number }}{{ end }} people
                         </p>
                         {{ end }}
@@ -128,17 +128,17 @@
 
                     <!-- Total Price -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="price-visible" class="block mb-2 text-sm font-medium text-gray-900">Total Price</label>
+                        <label for="price-visible" class="block mb-2 text-base font-semibold text-gray-900">Total Price</label>
                         <input type="text" id="price-visible" name="total_price"
-                            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-3"
+                            class="bg-gray-100 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-3"
                             value="{{ range first 1 .Params.product_info.prices }}{{ .price }}{{ end }},- NOK" readonly>
                     </div>
 
                     <!-- Message -->
                     <div class="col-span-2">
-                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message *</label>
+                        <label for="message" class="block mb-2 text-base font-semibold text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
+                            class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
                             placeholder="Tell us about your expectations..." required></textarea>
                     </div>
 
@@ -146,7 +146,7 @@
 
                 <!-- Important Notice -->
                 <div class="p-4 mb-6 bg-blue-50 border border-blue-200 rounded-lg">
-                    <p class="text-xs text-gray-700 leading-relaxed">
+                    <p class="text-sm text-gray-700 leading-relaxed">
                         <strong>Important:</strong> Your request is confirmed only after you receive a confirmation
                         email from us. Payment is due on the day of the tour upon attendance. Cancellations can be made
                         by email up to 2 working days before the tour date.
@@ -156,7 +156,7 @@
                 <!-- Submit Button -->
                 <div class="flex justify-center">
                     <button type="submit"
-                        class="text-white inline-flex items-center bg-[#e09a00] hover:bg-[#d08900] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-medium rounded-lg text-base px-6 py-3 text-center transition-colors duration-300">
+                        class="text-white inline-flex items-center bg-[#e09a00] hover:bg-[#d08900] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-semibold rounded-lg text-lg px-6 py-3 text-center transition-colors duration-300">
                         <svg class="me-1 -ms-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"

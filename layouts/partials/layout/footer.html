@@ -5,26 +5,26 @@
 
       <!-- Company Information -->
       <div>
-        <h3 class="text-2xl font-semibold">{{ .Site.Title }}</h3>
+        <h3 class="text-xl md:text-2xl font-bold">{{ .Site.Title }}</h3>
 
         {{ with .Site.Params.email}}
-        <a href="mailto:{{.}}" class="block mt-3 opacity-80 hover:opacity-100">
+        <a href="mailto:{{.}}" class="block mt-3 opacity-80 hover:opacity-100 text-base">
           {{ i18n "email"}}: {{.}}
         </a>
         {{ end }}
 
         {{ with .Site.Params.phone}}
-        <a href="tel:{{.}}" class="block mt-3 opacity-80 hover:opacity-100">
+        <a href="tel:{{.}}" class="block mt-3 opacity-80 hover:opacity-100 text-base">
           {{ i18n "phone" }}: {{.}}
         </a>
         {{ end }}
 
         {{ with .Site.Params.orgnr}}
-        <span class="block mt-3 opacity-80">Orgnr: {{.}}</span>
+        <span class="block mt-3 opacity-80 text-base">Orgnr: {{.}}</span>
         {{ end }}
 
         {{ with .Site.Params.address}}
-        <span class="block mt-3 opacity-80">Address: {{.}}</span>
+        <span class="block mt-3 opacity-80 text-base">Address: {{.}}</span>
         {{ end }}
       </div>
 
