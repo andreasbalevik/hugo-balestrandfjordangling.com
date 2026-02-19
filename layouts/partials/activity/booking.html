@@ -1,178 +1,190 @@
-<!-- Modal toggle -->
+<!-- Booking Button -->
 <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
-    class="text-base mt-5 text-white bg-[#e09a00] px-5 py-2.5 inline-flex items-center no-underline rounded-lg cursor-pointer"
-    type="button">
+    class="text-base mt-5 text-white bg-[#e09a00] hover:bg-[#d08900] px-5 py-2.5 inline-flex items-center no-underline rounded-lg cursor-pointer transition-colors duration-300"
+    type="button"
+    aria-label="Open booking request form">
     Make a request
     {{ partial "arrow.html" . }}
 </button>
 
-<!-- Main modal -->
-<div id="crud-modal" tabindex="-1" aria-hidden="true"
+<!-- Booking Modal -->
+<div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-xl max-h-full ">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow-sm  border border-gray-200">
-            <!-- Modal header -->
-            <div
-                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t  border-gray-200">
-                <h3 class="text-lg font-semibold text-gray-900">
+    <div class="relative p-4 w-full max-w-3xl max-h-full">
+        <!-- Modal Content -->
+        <article class="relative bg-white rounded-lg shadow-lg border border-gray-200">
+            <!-- Modal Header -->
+            <header class="flex items-center justify-between p-4 md:p-5 border-b border-gray-200">
+                <h3 id="modal-title" class="text-lg font-semibold text-gray-900">
                     Make a request
                 </h3>
                 <button type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
-                    data-modal-toggle="crud-modal">
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center transition-colors duration-300"
+                    data-modal-toggle="crud-modal"
+                    aria-label="Close modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 14 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                     </svg>
-                    <span class="sr-only">Close modal</span>
                 </button>
+            </header>
+            {{ with index .Params.images 0 }}
+            {{ $image := resources.GetMatch .src }}
+            {{ if $image }}
+            <!-- Activity Banner Image -->
+            <div class="w-full overflow-hidden">
+                {{ $contrast := site.Params.contrast | default 5 }}
+                {{ $filter := images.Contrast $contrast }}
+                {{ $imageFiltered := $image | images.Filter $filter }}
+                {{ $imageBanner := $imageFiltered.Fill "734x230 q75 webp" }}
+                <img src="{{ $imageBanner.RelPermalink }}" 
+                     alt="{{ .alt }}" 
+                     class="w-full h-full object-cover mt-0 mb-0"
+                     loading="lazy">
             </div>
 
-            <!-- Modal body -->
-            <form class="p-4 md:p-5" name="booking" method="POST" data-netlify="true" action="/request_confirmation">
-                <div class="grid gap-4 mb-4 grid-cols-2">
+            {{ end }}
+            {{ end }}
 
-                    <!-- tour name -->
-                    <div class="col-span-2">
-                        <label for="activity" class="block mb-2 text-sm font-medium text-gray-900">Selected
-                            Activity:</label>
-                        <input type="text" id="activity" name="activity"
-                            class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
-                            value="{{.Title}}" readonly>
-                        <input type="text" id="quality" name="quality"
-                            class="hidden mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg"
-                            value="{{.Params.quality}}" readonly>
-                        {{.Title}}
+            <!-- Booking Form -->
+            <form class="p-6 md:p-8" name="booking" method="POST" data-netlify="true" action="/request_confirmation">
+                <div class="grid gap-6 mb-6 grid-cols-2">
+
+                    <!-- Hidden fields for activity data -->
+                    <input type="hidden" name="activity" value="{{ .Title }}">
+                    <input type="hidden" name="quality" value="{{ .Params.quality }}">
+
+                    <!-- Activity Summary -->
+                    <div class="col-span-2 p-4 bg-blue-50 rounded-lg border border-gray-200">
+                        <p class="text-md font-medium text-gray-900 mb-2">{{ .Title }}</p>
+                        {{ with .Params.product_info.duration }}
+                        <p class="text-sm text-gray-600">
+                            Duration: {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}
+                        </p>
+                        {{ end }}
                     </div>
-                    <div class="col-span-2 mb-4">
-                                            <label for="activity" class="block mb-2 text-sm font-medium text-gray-900">Duration:</label>
-                   {{.Params.product_info.duration.hours}}h {{with .Params.product_info.duration.minutes}}{{.}}m{{end}}
-                    </div>
-                    
 
-
-                    <!-- name -->
+                    <!-- Full Name -->
                     <div class="col-span-2 sm:col-span-1">
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Full Name *</label>
                         <input type="text" name="name" id="name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                            placeholder="Enter full name" required="">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            placeholder="Enter full name" required>
                     </div>
 
-                    <!-- email -->
+                    <!-- Email -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your
-                            email *</label>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email *</label>
                         <input type="email" id="email" name="email" 
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-                            placeholder="test@domain.com" required="">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            placeholder="name@example.com" required>
                     </div>
 
-                    <!-- date -->
+                    <!-- Date -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900 ">
-                            Date *</label>
-                        <div class="relative max-w-sm">
+                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900">Date *</label>
+                        <div class="relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true"
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                                 </svg>
                             </div>
-                            <input id="date" name="date" type="date" onchange="calculate()"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full ps-10 p-2.5"
-                                required="">
+                            <input id="date" name="date" type="date"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full ps-10 p-3 transition-colors duration-300"
+                                required>
                         </div>
                     </div>
 
                     <!-- Time -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="time" class="block mb-2 text-sm font-medium text-gray-900 ">
-                            Time *
-                        </label>
-                        <select name="time"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full">
+                        <label for="time" class="block mb-2 text-sm font-medium text-gray-900">Time *</label>
+                        <select id="time" name="time"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
                             <option value="09:00">09:00</option>
-                            <option value="09:00">12:00</option>
-                            <option value="09:00">15:00</option>
-                            <option value="09:00">18:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="18:00">18:00</option>
                         </select>
                     </div>
 
-                    <!-- persons -->
+                    <!-- Total Guests -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="people" class="block mb-2 text-sm font-medium text-gray-900 ">
-                            Total Guests *
-                        </label>
-                        <select name="people"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full">
-
+                        <label for="people" class="block mb-2 text-sm font-medium text-gray-900">Total Guests *</label>
+                        <select id="people" name="people"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
                             {{ range .Params.product_info.prices }}
-                            <option value="{{.person_number}}" data-price="{{.price}}">{{.person_number}}</option>
+                            <option value="{{ .person_number }}" data-price="{{ .price }}">{{ .person_number }}</option>
                             {{ end }}
                         </select>
-                        <div class="mt-1 text-xs text-gray-500 " id="user_avatar_help">The maximum capacity for this
-                            tour is {{range last 1 .Params.product_info.prices}}{{.person_number}}{{end}} peoples</div>
+                        {{ with .Params.product_info.prices }}
+                        <p class="mt-1 text-xs text-gray-500">
+                            Maximum capacity: {{ range last 1 . }}{{ .person_number }}{{ end }} people
+                        </p>
+                        {{ end }}
                     </div>
 
-                    <!-- price -->
+                    <!-- Total Price -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 ">
-                            Total Price
-                        </label>
+                        <label for="price-visible" class="block mb-2 text-sm font-medium text-gray-900">Total Price</label>
                         <input type="text" id="price-visible" name="total_price"
-                            class="mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg w-full"
-                            value="{{ range first 1 .Params.product_info.prices }}{{.price}}{{end}},- NOK" readonly>
+                            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-3"
+                            value="{{ range first 1 .Params.product_info.prices }}{{ .price }}{{ end }},- NOK" readonly>
                     </div>
 
-                    <!-- message -->
+                    <!-- Message -->
                     <div class="col-span-2">
-                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Message *</label>
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
-                            placeholder="Write about yourself..." required=""></textarea>
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
+                            placeholder="Tell us about your expectations..." required></textarea>
                     </div>
 
                 </div>
 
-                <div class="col-span-2">
-                    <p class="text-xs"><b>Important!</b> Your request is confirmed only after you receive a confirmation
+                <!-- Important Notice -->
+                <div class="p-4 mb-6 bg-blue-50 border border-blue-200 rounded-lg">
+                    <p class="text-xs text-gray-700 leading-relaxed">
+                        <strong>Important:</strong> Your request is confirmed only after you receive a confirmation
                         email from us. Payment is due on the day of the tour upon attendance. Cancellations can be made
-                        by email up to 2 working days before the tour date.</p>
+                        by email up to 2 working days before the tour date.
+                    </p>
                 </div>
 
-                <div class="col-span-2 justify-center w-full flex mt-8">
+                <!-- Submit Button -->
+                <div class="flex justify-center">
                     <button type="submit"
-                        class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
-                        <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        class="text-white inline-flex items-center bg-[#e09a00] hover:bg-[#d08900] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-medium rounded-lg text-base px-6 py-3 text-center transition-colors duration-300">
+                        <svg class="me-1 -ms-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        Submit
+                        Submit Request
                     </button>
                 </div>
 
             </form>
-        </div>
+        </article>
     </div>
 </div>
 
-<script defer>
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const peopleSelect = document.querySelector('select[name="people"]');
         const priceVisible = document.querySelector('#price-visible');
 
-        peopleSelect.addEventListener("change", function () {
-            const selectedOption = peopleSelect.options[peopleSelect.selectedIndex];
-            const price = selectedOption.getAttribute("data-price");
-            if (price) {
-                priceVisible.value = `${price},- NOK`;
-            }
-        });
+        if (peopleSelect && priceVisible) {
+            peopleSelect.addEventListener("change", function () {
+                const selectedOption = peopleSelect.options[peopleSelect.selectedIndex];
+                const price = selectedOption.getAttribute("data-price");
+                if (price) {
+                    priceVisible.value = `${price},- NOK`;
+                }
+            });
+        }
     });
 </script>
