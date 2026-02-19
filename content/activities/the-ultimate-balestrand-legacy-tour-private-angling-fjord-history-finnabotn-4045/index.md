@@ -1,6 +1,6 @@
 ---
-title: " The Ultimate Balestrand Legacy Tour: Private Angling, Fjord History &
-  Finnabotn"
+title: " A rare opportunity: Experience the travel dream for a whole day in the
+  most attractive fjord arms of the Sognefjord."
 quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
@@ -72,9 +72,13 @@ product_info:
   persons: "5"
 cms: true
 ---
-### The Ultimate Balestrand Legacy Tour
+\- An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind. When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord "speak", focus on the contrasts. Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. Nature works. Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, creates something far greater than itself. And the feeling of having achieved this, by just letting go, the years together has changed me too.
 
-This is your chance for a complete digital detox and a deep dive into the heart of the Sognefjord. It’s an 8-hour private charter that blends the thrill of authentic angling with a journey through Norwegian heritage and dramatic fjord geology. We take you off the beaten path to Norway's most spectacular, silent "hyper-nature."
+> \-There is no complication that needs to happen; It just needs to be taken as simple as it is given.
+
+### The Ultimate Balestrand Cultural Legacy Tour
+
+This is your chance for a complete digital detox and a deep dive into the heart of the Sognefjord. It’s an 8-hour private charter that blends the thrill of authentic angling with a journey through Norwegian heritage and dramatic fjord geology. We take you off the beaten path to Norway's most spectacular, silent *"hyper-nature".*
 
 ### What’s the day's itinerary?
 
