@@ -81,7 +81,7 @@ product_info:
   persons: "5"
 cms: true
 ---
-**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord** through your own mind. When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord "speak", focus on the contrasts. Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. Nature works. **Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, creates something far greater than itself.** And the feeling of having achieved this, by just letting go and the years together has changed me too.
+**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord** through your own mind. When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord "speak", focus on the contrasts. Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. The smell of hypernature, the weight of a fish and real human conversation. Life force. Nature works! **Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, creates something far greater than itself.** And the feeling of having achieved this, by just letting go and the years together has changed me too..
 
 > There is no complication that needs to happen; It just needs to be taken as simple as it is given..
 
