@@ -1,10 +1,13 @@
 {{ define "main" }}
-    {{ partial "activities-list-terms.html" . }}
 
-    <div class=" bg-white">
-    <div class="py-12">
-    {{ partial "activity/see-all-activities" . }}
+<!-- Tag Activities List -->
+{{ partial "activities-list-terms.html" . }}
+
+<!-- See All Activities CTA -->
+<section class="bg-white">
+    <div class="container py-12">
+        {{ partial "activity/see-all-activities" . }}
     </div>
-    </div>
+</section>
 
 {{ end }}

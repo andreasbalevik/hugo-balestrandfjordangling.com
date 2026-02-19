@@ -7,11 +7,11 @@
 
 <link rel="preload" as="image" href="{{ $backgroundImage.Permalink }}" fetchpriority="high">
 
+<!-- Hero Section -->
 <section>
-    <div
-        style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
+    <div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;" class="py-8 md:py-12">
         <div class="container md:max-xl:max-w-screen-lg">
-            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow rounded">
+            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-xl rounded overflow-hidden">
                 <div class="p-8 h-full flex order-2 xl:order-1">
                     <div class="prose lg:prose-lg prose-headings:mt-0 my-auto">
                         <h1 class="mt-0">{{ .Title }}</h1>
@@ -20,7 +20,8 @@
                         {{ $action_button := .Params.action_button }}
                         {{ with .GetPage "activities" }}
                         <a href="{{ .RelPermalink }}"
-                            class="mt-2 text-white bg-[#e09a00] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg">
+                            class="mt-2 text-white bg-[#e09a00] hover:bg-[#d08900] px-5 py-2.5 me-2 mb-2 inline-flex items-center no-underline rounded-lg transition-colors duration-300"
+                            aria-label="{{ $action_button }}">
                             {{ $action_button }}
                             {{ partial "arrow.html" . }}
                         </a>
@@ -37,87 +38,99 @@
     </div>
 </section>
 
+<!-- Categories Section -->
 <section>
     <div class="bg-white">
         <div class="container">
 
             {{ with .Params.categories.title }}
             <div class="w-full mb-8 text-center mx-auto">
-                <h2 class="text-2xl font-semibold mt-0">{{.}}</h2>
+                <h2 class="text-2xl font-semibold mt-0">{{ . }}</h2>
             </div>
             {{ end }}
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-                {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                <a href="{{ .RelPermalink }}">
-                    <div style="background-color: {{.Params.color}};"
-                        class="border border-gray-200 text-xl text-white p-5 text-center rounded">
+                <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
+                    <div style="background-color: {{ .Params.color }};"
+                        class="border border-gray-200 text-xl text-white p-5 text-center rounded transition-all duration-300 group-hover:shadow-lg">
                         <div class="inline-flex items-center">
-                            {{.Title}}
+                            {{ .Title }}
                             {{ partial "arrow.html" . }}
                         </div>
                     </div>
                 </a>
-                {{end}}
-                {{end}}
+                {{ end }}
+                {{ end }}
             </div>
 
         </div>
     </div>
 </section>
 
+<!-- Featured Section -->
+{{ if .Params.featured.enabled }}
+<section>
+    <div class="bg-[#769ba4]">
+        <div class="container">
+            {{ with .Params.featured }}
+                {{ range first 1 .featured }}
+                    {{ $page := replace . "/index" "" }}
+                    {{ with $.Site.GetPage $page }}
+                        {{ .Render "highlight" }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Captain Tor Recommended -->
 <section>
     {{ partial "components/capt-tor-recommended" . }}
 </section>
 
-
+<!-- Inspirations Section -->
 <section>
     {{ with .Params.inspirations }}
-        <div class="bg-white">
+    <div class="bg-white">
         <div class="container">
 
             <div class="mb-8 text-center">
-                <h2 class="text-2xl font-semibold">{{.title}}</h2>
+                <h2 class="text-2xl font-semibold">{{ .title }}</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
                 {{ range .inspirations }}
-                {{ $page := replace . "/index" "" }}
-                {{ with $.Site.GetPage $page }}
-                {{ .Render "li" }}
-                {{end}}
+                    {{ $page := replace . "/index" "" }}
+                    {{ with $.Site.GetPage $page }}
+                        {{ .Render "li" }}
+                    {{ end }}
                 {{ end }}
             </div>
         </div>
-        </div>
-
+    </div>
     {{ end }}
 </section>
-
-
+<!-- Recommended Activities Section -->
 <section>
-    <div >
-        <div class="container">
+    <div class="container">
 
-        {{ with .Site.GetPage "index" }}
-                {{ with .Params.recommended }}
-                    
-                        {{ range first 1 .activities }}
-                        {{ $page := replace . "/index" "" }}
-                        {{ with $.Site.GetPage $page }}
-                        
-                        {{ .Render "highlight" }}
-                        
-                        {{end}}
-                        {{ end }}
-            
-                {{ end }}
-        {{ end }}
+        <div class="mb-8 text-left">
+            <h2 class="text-2xl font-semibold">Recommended</h2>
         </div>
-    
+        {{ with .Site.GetPage "index" }}
+            {{ with .Params.recommended }}
+                {{ range first 1 .activities }}
+                    {{ $page := replace . "/index" "" }}
+                    {{ with $.Site.GetPage $page }}
+                        {{ .Render "highlight" }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
     </div>
-
 </section>
-
 
 {{ end }}

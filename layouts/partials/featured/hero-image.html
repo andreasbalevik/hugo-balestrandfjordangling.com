@@ -1,0 +1,31 @@
+{{/*
+    Custom Hero Image for Featured Pages
+    Usage: {{ partial "featured/hero-image.html" . }}
+    
+    Optimized for max-height constraint with proper aspect ratio
+*/}}
+
+{{ $contrast := site.Params.contrast | default 5 }}
+{{ $filter := images.Contrast $contrast }}
+{{ $image := resources.GetMatch .src | images.Filter $filter }}
+
+<!-- Responsive images optimized for hero with max-height -->
+{{ $image_xlarge := $image.Fill "1920x800 q80 webp" }}  <!-- Ultra-wide screens -->
+{{ $image_large := $image.Fill "1400x700 q75 webp" }}   <!-- Desktop -->
+{{ $image_medium := $image.Fill "1024x600 q70 webp" }}  <!-- Tablet landscape -->
+{{ $image_small := $image.Fill "768x600 q65 webp" }}    <!-- Tablet portrait/Mobile -->
+
+<picture>
+    <source media="(min-width: 1280px)" srcset="{{ $image_xlarge.RelPermalink }}" width="{{ $image_xlarge.Width }}" height="{{ $image_xlarge.Height }}">
+    <source media="(min-width: 1024px)" srcset="{{ $image_large.RelPermalink }}" width="{{ $image_large.Width }}" height="{{ $image_large.Height }}">
+    <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}" width="{{ $image_medium.Width }}" height="{{ $image_medium.Height }}">
+    <source srcset="{{ $image_small.RelPermalink }}" width="{{ $image_small.Width }}" height="{{ $image_small.Height }}">
+    
+    <img class="w-full h-full object-cover object-center" 
+        {{ with .alt }}alt="{{ . }}"{{ end }} 
+        src="{{ $image_large.RelPermalink }}" 
+        width="{{ $image_large.Width }}" 
+        height="{{ $image_large.Height }}"
+        loading="eager"
+        fetchpriority="high">
+</picture>

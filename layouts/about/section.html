@@ -1,49 +1,56 @@
 {{ define "main" }}
 
-<div class="bg-[#f3f5f7]">
-    <div class="max-w-[1250px] md:px-4 mx-auto">
-
-        {{ range first 1 .Params.images }}
-        {{ partial "components/images/image-dynamic" . }}
-        {{ end }}
-
-    </div>
-</div>
-
-<div class="bg-white">
 <div class="container">
-    <section class="py-8">
-        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
-            <div class="mx-auto max-w-5xl">
-                <div class="mx-auto max-w-2xl">
-                    {{ partial "components/prose-content.html" .}}
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-</div>
-
-{{ with .Site.GetPage "index" }}
-{{ with .Params.recommended }}
-
-<div class="bg-[#f3f5f7]">
-    <div class="container">
-
-        <div class="mb-8 text-center md:text-left ">
-            <h3 class="text-2xl font-semibold">{{.title}}</h3>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
-            {{ range .activities }}
-            {{ $page := replace . "/index" "" }}
-            {{ with $.Site.GetPage $page }}
-            {{ .Render "li" }}
-            {{end}}
+<!-- Hero Image Section -->
+<section class="bg-stone-50">
+    <div class="max-w-[1250px] mx-auto md:px-4">
+        <div class="relative overflow-hidden rounded-none md:rounded-lg">
+            {{ range first 1 .Params.images }}
+                {{ partial "components/images/image-dynamic" . }}
             {{ end }}
         </div>
     </div>
+</section>
+
+<!-- Content Section -->
+<article class="bg-white">
+    <div class="container py-12 md:py-16 lg:py-20">
+        <div class="mx-auto max-w-4xl">
+            <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
+                {{ partial "components/prose-content.html" .}}
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Recommended Activities Section -->
+{{ with .Site.GetPage "index" }}
+    {{ with .Params.recommended }}
+    <section class="bg-[#f3f7f6] py-12 md:py-16">
+        <div class="container">
+            <div class="mb-8 md:mb-12 text-center">
+                <div class="inline-flex items-center gap-3 mb-4">
+                    <div class="h-1 w-12 bg-[#e09a00] rounded-full"></div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 m-0">{{ .title }}</h2>
+                    <div class="h-1 w-12 bg-[#e09a00] rounded-full"></div>
+                </div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Explore our curated selection of authentic fjord experiences</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+                {{ range .activities }}
+                    {{ $page := replace . "/index" "" }}
+                    {{ with $.Site.GetPage $page }}
+                        <div class="flex justify-center">
+                            {{ .Render "li" }}
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
 </div>
-{{ end }}
-{{ end }}
 
 {{ end }}
