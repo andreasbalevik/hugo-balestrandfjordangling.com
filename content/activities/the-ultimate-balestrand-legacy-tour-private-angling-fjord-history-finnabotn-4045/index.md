@@ -59,6 +59,10 @@ images:
       pure water symbolism and hypernature in the boat Miss Fjords and Captain
       Thor's adventure in the Fjærlandsfjord in the Norwegian Sognefjord\""
   - src: images/kaptain-tor-and-miss-fjords-on-mission-among-high-mountains-in-sognefjord.jpg
+    alt: Captain Tor at the helm of his boat in the Sognefjord Professional
+      authentic fishing trip with focus on local expertise and sustainable
+      travel
+  - src: images/captain-tor-of-balestrand-fjord-angling-showcasing-a-fresh-brown-crab-embodying-the-human-edge-and-hyper-nature-in-the-sognefjord.-this-image-represents-a-private-masterc.jpeg
     alt: Captain Tor of Balestrand Fjord Angling showcasing a fresh brown crab,
       embodying 'The Human Edge' and 'Hyper-nature' in the Sognefjord. This
       image represents a private masterclass in authentic Norwegian fjord life,
