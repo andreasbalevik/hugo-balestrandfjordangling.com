@@ -10,7 +10,7 @@ images:
     alt: People of the north
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
-  - scenic-boat-route-balestrand-fjærland-4239/index
+  - the-ultimate-balestrand-legacy-tour-private-angling-fjord-history-finnabotn-4045/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
 ---
