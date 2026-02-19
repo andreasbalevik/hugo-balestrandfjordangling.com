@@ -1,5 +1,5 @@
 ---
-title: People of the north
+title: People of The North
 keywords:
   - peopleofthenorth
   - balestrand
