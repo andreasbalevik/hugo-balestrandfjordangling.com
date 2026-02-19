@@ -2,7 +2,7 @@
 <div class="text-base md:text-lg flex flex-wrap gap-4 mb-6 text-gray-700">
 
     {{ with index .prices 0 }}
-    <label class="inline-flex items-center"><svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true"
+    <span class="inline-flex items-center"><svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M7 6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2v-4a3 3 0 0 0-3-3H7V6Z"
                 clip-rule="evenodd" />
@@ -12,11 +12,11 @@
             <path d="M10.5 14.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
         </svg>
         From {{.price}},- NOK
-    </label>
+    </span>
     {{ end }}
 
     {{ with .duration }}
-    <label class="inline-flex items-center"><svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true"
+    <span class="inline-flex items-center"><svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd"
                 d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z"
@@ -28,11 +28,11 @@
             {{ with .minutes }}
               {{ . }}m
             {{ end }}
-    </label>
+    </span>
     {{ end }}
 
     {{ with .persons }}
-    <label class="inline-flex items-center">
+    <span class="inline-flex items-center">
         <svg class="w-6 h-6 text-gray-800 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd"
@@ -40,7 +40,7 @@
                 clip-rule="evenodd" />
         </svg>
         Max {{.}} persons
-    </label>
+    </span>
     {{ end }}
 </div>
 {{ end }}

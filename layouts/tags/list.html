@@ -1,7 +1,68 @@
 {{ define "main" }}
 
-<!-- Tag Activities List -->
-{{ partial "activities-list-terms.html" . }}
+<!-- Tag Landing Page Hero -->
+{{ if .Content }}
+<section class="bg-gradient-to-b from-gray-50 to-white">
+    <div class="container py-12 md:py-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-8" style="color: {{ .Params.color }};">{{ .Title }}</h1>
+        <div class="text-lg md:text-xl leading-relaxed text-gray-800 max-w-none">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Activities List (with filter above) -->
+<div class="container">
+    <!-- Filter Dropdown -->
+    <div class="flex items-center gap-2 pt-8 pb-3">
+        <b>Filter:</b>
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="rounded-lg px-5 py-2 text-center inline-flex items-center"
+            type="button">
+            <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
+                {{.Title}}
+            </span>
+            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+            </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                {{ with .Site.GetPage "activities" }}
+                <a href="{{.RelPermalink}}" aria-current="page">
+                    <li class="block px-4 py-2 hover:bg-gray-100">
+                        All activities
+                    </li>
+                </a>
+                {{ end }}
+
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                <a href="{{ .RelPermalink }}">
+                    <li class="block px-4 py-2 hover:bg-gray-100">
+                        {{ .Title }}
+                    </li>
+                </a>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+
+    <hr class="mb-10 text-gray-300">
+
+    <!-- Activities Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+        {{ range sort .Pages }}
+            {{ .Render "li" }}
+        {{ end }}
+    </div>
+</div>
 
 <!-- See All Activities CTA -->
 <section class="bg-white">

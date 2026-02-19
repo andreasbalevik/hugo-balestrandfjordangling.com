@@ -20,3 +20,4 @@ aliases:
     - /inspirasjoner
     - /en/inspirations
 ---
+Discover stories from the Sognefjord, fishing tales, travel inspiration, and authentic Norwegian experiences. Get inspired for your next fjord adventure with Captain Tor.

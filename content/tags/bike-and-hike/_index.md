@@ -15,7 +15,9 @@ keywords:
   - Hiking
   - Active vacation
   - Outdoor activities
-description: Explore Balestrand and the Sognefjord region by bike or on foot. Discover scenic cycling routes, e-bike rentals, mountain biking trails, and guided hiking adventures through pristine Norwegian nature.
+description: "Explore Balestrand and the Sognefjord region by bike or on foot. "
 images:
   - src: images/b67i5237.jpg
 ---
+
+Explore Balestrand on two wheels or two feet. Rent an e-bike for self-guided adventures through villages and along the fjord, or join guided hikes to mountain valleys with spectacular views. From family-friendly cargo bikes to snowshoe adventures, discover the Sognefjord at your own pace.

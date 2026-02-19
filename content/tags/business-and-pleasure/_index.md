@@ -7,5 +7,12 @@ keywords:
   - Curated tours
   - Boat transfers
   - Guided adventures
-description: Premium fjord experiences combining professional service with authentic Norwegian adventures. Includes guided fishing expeditions, curated e-bike tours, boat transfers, and bespoke travel experiences in the Sognefjord.
+  - Executive travel
+  - Corporate experiences
+description: "Premium fjord experiences combining professional service with
+  authentic Norwegian adventures. "
+images:
+  - src: images/7npj0q7c.jpeg
 ---
+
+Premium experiences with professional service. From exclusive guided fishing expeditions and curated e-bike tours to fjord transfers and private boat charters, perfect for executive travel, corporate retreats, or special occasions.

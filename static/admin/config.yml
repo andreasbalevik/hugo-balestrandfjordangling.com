@@ -1,4 +1,4 @@
-#local_backend: true
+local_backend: true
 editor:
   preview: false
 backend:
@@ -332,6 +332,7 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
       - file: "content/tags/business-and-pleasure/_index.md"
@@ -350,6 +351,7 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
       - file: "content/tags/family-and-friends/_index.md"
@@ -368,6 +370,7 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
       - file: "content/activities/_index.md"
@@ -387,6 +390,7 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - file: "content/inspirations/_index.md"
         label: "Inspirations" 
@@ -405,6 +409,7 @@ collections:
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Short description text that appears above the inspirations grid' }
           
       - file: "content/LLMs.md"
         label: "LLMs" 

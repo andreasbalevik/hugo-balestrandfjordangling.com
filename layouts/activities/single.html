@@ -1,26 +1,30 @@
 {{ define "main" }}
 
 <!-- Activity Hero Section -->
-<section class="bg-[#f3f5f7]">
-    <div class="container md:max-xl:max-w-screen-md">
-        <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden rounded-lg shadow-xl">
+<section class="bg-stone-50">
+    <div class="py-12 md:py-16">
+        <div class="container md:max-xl:max-w-screen-lg">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-8 mx-auto overflow-hidden rounded-lg shadow-lg bg-white">
             
             <!-- Activity Details -->
-            <article class="px-4 py-6 md:p-10 flex order-2 xl:order-1 bg-white">
-                <div class="prose lg:prose-lg max-w-none mx-auto my-auto w-full">
-                    <!-- Quality Badge -->
-                    <div class="flex items-center justify-between font-bold not-prose mb-4">
-                        <span class="text-sm text-gray-600">
-                            {{ .Params.quality }}
+            <article class="p-8 md:p-12 flex order-2 xl:order-1">
+                <div class="prose md:prose-lg lg:prose-xl max-w-none my-auto w-full">
+                    
+                    {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
+                    <div class="flex items-center justify-between mb-6 not-prose">
+                        {{ with .Params.quality }}
+                        <span class="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                            {{ . }}
                         </span>
-
+                        {{ end }}
                         {{ with .Params.information.options.varde_experience_quality }}
-                            <img class="max-h-[30px]" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
+                        <img class="w-24 h-auto" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
                         {{ end }}
                     </div>
+                    {{ end }}
                     
                     <!-- Activity Title -->
-                    <h1 class="mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 class="mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
                         {{ .Title }}
                     </h1>
                     
@@ -29,9 +33,9 @@
                     
                     <!-- Global Activity Label -->
                     {{ with .Site.Data.configuration.global_activity_label }}
-                    <div class="flex not-prose">
-                        <span class="inline-flex items-center text-gray-800 text-sm antialiased rounded-lg mb-4">
-                            <svg class="w-6 h-6 text-inherit mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <div class="flex not-prose mb-6">
+                        <span class="inline-flex items-center text-gray-700 text-sm antialiased">
+                            <svg class="w-5 h-5 text-inherit mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" />
                                 <path fill-rule="evenodd"
@@ -49,11 +53,12 @@
                     {{ partial "activity/booking" . }}
                 </div>
             </article>
+            
             <!-- Activity Images -->
-            <aside class="order-1 xl:order-2 relative md:p-10 bg-white flex items-center">
+            <aside class="order-1 xl:order-2 flex items-center justify-center lg:p-4">
                 <div class="w-full">
                     {{ with index .Params.images 0 }}
-                        <div class="rounded-md overflow-hidden">
+                        <div class="rounded-lg overflow-hidden">
                             {{ partial "components/images/image-square" . }}
                         </div>
                     {{ end }}
@@ -66,33 +71,35 @@
 
 <!-- Activity Content Tabs -->
 <section class="bg-white">
-    <div class="px-0 py-8 md:p-8">
+    <div class="py-12 md:py-16">
         <!-- Tab Navigation -->
-        <nav class="mx-auto max-w-4xl px-4">
-            <ul class="flex flex-wrap -mb-px text-base font-semibold text-center" id="default-styled-tab"
+        <nav class="mx-auto max-w-4xl px-4 mb-8">
+            <ul class="flex flex-wrap border-b border-gray-200 text-base font-semibold text-center" id="default-styled-tab"
                 data-tabs-toggle="#default-styled-tab-content"
-                data-tabs-active-classes="text-[#e09a00] hover:text-[#e09a00] border-[#e09a00]"
-                data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 text-black"
+                data-tabs-active-classes="text-[#e09a00] border-[#e09a00]"
+                data-tabs-inactive-classes="text-gray-600 hover:text-gray-900 border-transparent hover:border-gray-300"
                 role="tablist">
                 <li class="me-2" role="presentation">
-                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="about-styled-tab"
+                    <button class="inline-block px-4 py-3 border-b-2 transition-colors duration-300" id="about-styled-tab"
                         data-tabs-target="#styled-about" type="button" role="tab" aria-controls="styled-about"
                         aria-selected="false">
                         About
                     </button>
                 </li>
                 <li class="me-2" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-[#e09a00] hover:border-gray-300"
+                    <button class="inline-block px-4 py-3 border-b-2 transition-colors duration-300"
                         id="practical-styled-tab" data-tabs-target="#styled-practical" type="button" role="tab"
-                        aria-controls="styled-practical" aria-selected="false">Practical information</button>
+                        aria-controls="styled-practical" aria-selected="false">
+                        Practical Information
+                    </button>
                 </li>
                 {{ if gt (len .Params.images) 1 }}
                 <li class="me-2" role="presentation">
-                    <button
-                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-[#e09a00] hover:border-gray-300"
+                    <button class="inline-block px-4 py-3 border-b-2 transition-colors duration-300"
                         id="images-styled-tab" data-tabs-target="#styled-images" type="button" role="tab"
-                        aria-controls="styled-images" aria-selected="false">Images</button>
+                        aria-controls="styled-images" aria-selected="false">
+                        Images
+                    </button>
                 </li>
                 {{ end }}
             </ul>
@@ -100,18 +107,18 @@
         
         <!-- Tab Content -->
         <div id="default-styled-tab-content">
-            <div class="mx-auto max-w-4xl">
-                <article class="hidden p-4 rounded-lg" id="styled-about" role="tabpanel" aria-labelledby="about-styled-tab">
+            <div class="mx-auto max-w-4xl px-4">
+                <article class="hidden" id="styled-about" role="tabpanel" aria-labelledby="about-styled-tab">
                     {{ partial "activity/about" . }}
                 </article>
-                <article class="hidden p-4 rounded-lg" id="styled-practical" role="tabpanel" aria-labelledby="practical-styled-tab">
+                <article class="hidden" id="styled-practical" role="tabpanel" aria-labelledby="practical-styled-tab">
                     {{ partial "activity/practical" . }}
                 </article>
             </div>
 
             <!-- Images Tab - Full Width (only if more than 1 image) -->
             {{ if gt (len .Params.images) 1 }}
-            <div class="hidden pt-8" id="styled-images" role="tabpanel" aria-labelledby="images-styled-tab">
+            <div class="hidden" id="styled-images" role="tabpanel" aria-labelledby="images-styled-tab">
                 <div class="w-full max-w-6xl mx-auto px-4">
                     {{ with .Params.images }}
                         {{ partial "components/images/carousel-full" . }}
