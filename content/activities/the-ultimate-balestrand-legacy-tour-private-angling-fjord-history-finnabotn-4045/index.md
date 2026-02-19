@@ -1,6 +1,6 @@
 ---
-title: " A rare opportunity: Experience the travel dream for a whole day in the
-  most attractive fjord arms of the Sognefjord."
+title: " A rare opportunity: The travel dream for a whole day in the most
+  attractive fjord arms of the Sognefjord."
 quality: The Human Edge
 keywords:
   - Sustainable Tourism Norway
@@ -51,7 +51,7 @@ images:
     alt: «To smilende og livskraftige kvinner i turklær står tett sammen og ler om
       bord på en båt i Sognefjorden. Bak dem rager grønne fjellsider med
       snødekte topper og fosser under en blå himmel med hvite skyer.»
-  - src: images/fra-sognefjorden-med-kjærlighet.-🌊-som-denne-massive-klippen-står-vi-støtt-selv-når-utfordringene-eller-ai-virker-overveldende.-det-flytende-rene-vannet-symboli.jpg
+  - src: images/gi6a3671.jpg
     alt: Fra Sognefjorden, med kjærlighet. 🌊 Som denne massive klippen står vi
       støtt, selv når utfordringene (eller AI) virker overveldende. Det
       flytende, rene vannet symbolik
@@ -81,9 +81,9 @@ product_info:
   persons: "5"
 cms: true
 ---
-\- An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind. When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord "speak", focus on the contrasts. Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. Nature works. Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, creates something far greater than itself. And the feeling of having achieved this, by just letting go, the years together has changed me too.
+**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord** through your own mind. When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord "speak", focus on the contrasts. Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. Nature works. **Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, creates something far greater than itself.** And the feeling of having achieved this, by just letting go and the years together has changed me too.
 
-> \-There is no complication that needs to happen; It just needs to be taken as simple as it is given.
+> There is no complication that needs to happen; It just needs to be taken as simple as it is given..
 
 ### What’s the day's itinerary?
 
