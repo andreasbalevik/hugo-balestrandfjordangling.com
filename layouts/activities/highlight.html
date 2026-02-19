@@ -1,9 +1,9 @@
 <!-- Activity Highlight Card -->
 <article class="bg-[#f3f5f7] shadow-lg rounded-lg overflow-hidden">
-    <div class="grid grid-cols-1 xl:grid-cols-2">
+    <div class="grid grid-cols-1 xl:grid-cols-2 bg-white">
         <div class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
             <div class="prose lg:prose-xl max-w-none mx-auto my-auto">
-                <h2 class="text-3xl md:text-4xl font-bold leading-tight text-gray-900">
+                <h2 class="mt-0! text-3xl md:text-4xl font-bold leading-tight text-gray-900">
                     {{ .Title }}
                 </h2>
                 
@@ -17,9 +17,11 @@
                 </a>
             </div>
         </div>
-        <div class="order-1 lg:order-1 align-center justify-center">
+        <div class="order-1 lg:order-1 align-center justify-center p-5 my-auto">
             {{ with .Params.images }}
+                <div class="rounded-md overflow-hidden">
                 {{ partial "components/images/carousel-square" . }}
+                </div>
             {{ end }}
         </div>
     </div>

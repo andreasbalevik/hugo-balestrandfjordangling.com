@@ -3,13 +3,13 @@
 <!-- Activity Hero Section -->
 <section class="bg-[#f3f5f7]">
     <div class="container md:max-xl:max-w-screen-md">
-        <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 xl:grid-cols-2 mx-auto overflow-hidden rounded-lg shadow-xl">
             
             <!-- Activity Details -->
-            <article class="px-4 py-4 md:p-8 h-full flex order-2 lg:order-2 bg-white">
-                <div class="prose lg:prose-lg max-w-none mx-auto my-auto">
+            <article class="px-4 py-6 md:p-10 flex order-2 xl:order-1 bg-white">
+                <div class="prose lg:prose-lg max-w-none mx-auto my-auto w-full">
                     <!-- Quality Badge -->
-                    <div class="flex items-center justify-between font-bold not-prose">
+                    <div class="flex items-center justify-between font-bold not-prose mb-4">
                         <span class="text-sm text-gray-600">
                             {{ .Params.quality }}
                         </span>
@@ -20,7 +20,7 @@
                     </div>
                     
                     <!-- Activity Title -->
-                    <h1 class="pt-4 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 class="mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                         {{ .Title }}
                     </h1>
                     
@@ -49,12 +49,15 @@
                     {{ partial "activity/booking" . }}
                 </div>
             </article>
-            
             <!-- Activity Images -->
-            <aside class="order-1 lg:order-1 align-center justify-center">
-                {{ with .Params.images }}
-                    {{ partial "components/images/carousel-square" . }}
-                {{ end }}
+            <aside class="order-1 xl:order-2 relative md:p-10 bg-white flex items-center">
+                <div class="w-full">
+                    {{ with index .Params.images 0 }}
+                        <div class="rounded-md overflow-hidden">
+                            {{ partial "components/images/image-square" . }}
+                        </div>
+                    {{ end }}
+                </div>
             </aside>
 
         </div>
@@ -68,7 +71,7 @@
         <nav class="mx-auto max-w-4xl px-4">
             <ul class="flex flex-wrap -mb-px text-base font-semibold text-center" id="default-styled-tab"
                 data-tabs-toggle="#default-styled-tab-content"
-                data-tabs-active-classes="text-purple-600 hover:text-purple-600 border-purple-600 dark:border-purple-500"
+                data-tabs-active-classes="text-[#e09a00] hover:text-[#e09a00] border-[#e09a00]"
                 data-tabs-inactive-classes="text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 text-black"
                 role="tablist">
                 <li class="me-2" role="presentation">
@@ -80,10 +83,18 @@
                 </li>
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-purple-600 hover:border-gray-300"
+                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-[#e09a00] hover:border-gray-300"
                         id="practical-styled-tab" data-tabs-target="#styled-practical" type="button" role="tab"
                         aria-controls="styled-practical" aria-selected="false">Practical information</button>
                 </li>
+                {{ if gt (len .Params.images) 1 }}
+                <li class="me-2" role="presentation">
+                    <button
+                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-[#e09a00] hover:border-gray-300"
+                        id="images-styled-tab" data-tabs-target="#styled-images" type="button" role="tab"
+                        aria-controls="styled-images" aria-selected="false">Images</button>
+                </li>
+                {{ end }}
             </ul>
         </nav>
         
@@ -97,6 +108,18 @@
                     {{ partial "activity/practical" . }}
                 </article>
             </div>
+
+            <!-- Images Tab - Full Width (only if more than 1 image) -->
+            {{ if gt (len .Params.images) 1 }}
+            <div class="hidden pt-8" id="styled-images" role="tabpanel" aria-labelledby="images-styled-tab">
+                <div class="w-full max-w-6xl mx-auto px-4">
+                    {{ with .Params.images }}
+                        {{ partial "components/images/carousel-full" . }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
         </div>
     </div>
 </section>

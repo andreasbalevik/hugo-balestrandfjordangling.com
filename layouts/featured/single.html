@@ -81,7 +81,7 @@
                     <div class="h-1 w-12 bg-[#e09a00] rounded-full"></div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 gap-8 mx-auto">
                 {{ range . }}
                 {{ $page := replace . "/index" "" }}
                 {{ with $.Site.GetPage $page }}

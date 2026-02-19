@@ -72,7 +72,7 @@
 <!-- Featured Section -->
 {{ if .Params.featured.enabled }}
 <section>
-    <div class="bg-[#769ba4]">
+    <div class="bg-[#769ba4] py-8 md:py-12">
         <div class="container">
             {{ with .Params.featured }}
                 {{ range first 1 .featured }}
@@ -89,13 +89,15 @@
 
 <!-- Captain Tor Recommended -->
 <section>
-    {{ partial "components/capt-tor-recommended" . }}
+    <div class="bg-white">
+        {{ partial "components/capt-tor-recommended" . }}
+    </div>
 </section>
 
 <!-- Inspirations Section -->
 <section>
     {{ with .Params.inspirations }}
-    <div class="bg-white">
+    <div>
         <div class="container">
 
             <div class="mb-10 text-center">
@@ -115,6 +117,9 @@
 </section>
 <!-- Recommended Activities Section -->
 <section>
+<div class="bg-white">
+
+
     <div class="container">
 
         <div class="mb-10 text-left">
@@ -130,6 +135,7 @@
                 {{ end }}
             {{ end }}
         {{ end }}
+    </div>
     </div>
 </section>
 
