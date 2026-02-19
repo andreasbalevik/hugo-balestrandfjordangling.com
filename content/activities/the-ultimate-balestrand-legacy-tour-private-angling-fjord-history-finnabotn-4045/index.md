@@ -1,5 +1,5 @@
 ---
-title: " A rare opportunity: The travel dream for a whole day in the most
+title: " A rare opportunity: The travel dream, a whole day in the most
   attractive fjord arms of the Sognefjord."
 quality: The Human Edge
 keywords:
