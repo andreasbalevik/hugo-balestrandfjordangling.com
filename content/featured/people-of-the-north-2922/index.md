@@ -14,7 +14,9 @@ related_activities:
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
 ---
-**I am incredibly proud to have represented the Sognefjord in this global showcase.** But the pride doesn’t lie in the TV screen itself – it lies in every single guest who leaves the pier with a new light in their eyes.
+> ***"I am incredibly proud to have represented the Sognefjord in this global showcase.** But the pride doesn’t lie in the TV screen itself – it lies in every single guest who leaves the pier with a new light in their eyes."* 
+>
+> *\- Captain Tor*
 
 ## *People of the North — A Journey Through Nordic Culture*
 
