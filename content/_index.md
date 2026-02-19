@@ -3,7 +3,7 @@ description: Go local with Captain Tor. Private Excursions. See Glaciers,
   Waterfalls from boat. Real Storytelling & Authentic Norwegian Fjord
   Experience. Book Direct.
 featured:
-  enabled: true
+  enabled: false
   title: Featured
   featured:
     - people-of-the-north-2922/index
@@ -12,11 +12,6 @@ inspirations:
   inspirations:
     - discover-the-sognefjord-with-captain-tor-kayak-5758/index
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
-campaign:
-  title: Featured
-  enable_campaign: true
-  campaign:
-    - people-of-the-north-2922/index
 title: Sognefjord Fishing Trips & Scenic Tours
 action_button: Find your next adventure
 images:
