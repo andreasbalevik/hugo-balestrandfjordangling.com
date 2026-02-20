@@ -32,6 +32,10 @@ Hosted by Norwegian TV personality **Arne Hjeltnes**, alongside chef **Frida Ron
 
 In today’s episode, Arne, Sigrid, and Stig journey to the spectacular county of Sogn in Western Norway. It's a true fjord and mountain adventure, highlighting the best experiences one can have on a trip to the historic village of Balestrand, renowned for its natural beauty, local produce and historic charm in the middle of the spectacular Sognefjord, and off course: **[The Fabulous Captain Tor, a true legend here](https://www.youtube.com/watch?v=pjoMLKwGsEg)**
 
+> *"Watch the full 23-minute episode and step into the story at: [Noble Adventures](https://vimeo.com/956373167/c90e86fe90?share=copy&fl=sv&fe=ci)*
+>
+>
+
 **Now in its third season, *People of the North* continues to air on networks like PBS** in the United States and is available on various international platforms. The series has reached millions of viewers globally and has received recognition for its role in promoting Norwegian culture and travel.  
 
 Whether you’re curious about Nordic cuisine, fascinated by remote communities, or simply want to enjoy stunning scenery from home, ***People of the North* offers an inspiring mix of travel storytelling and cultural insight**.
