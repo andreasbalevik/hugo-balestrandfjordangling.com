@@ -32,7 +32,7 @@ Hosted by Norwegian TV personality **Arne Hjeltnes**, alongside chef **Frida Ron
 
 In today’s episode, Arne, Sigrid, and Stig journey to the spectacular county of Sogn in Western Norway. It's a true fjord and mountain adventure, highlighting the best experiences one can have on a trip to the historic village of Balestrand, renowned for its natural beauty, local produce and historic charm in the middle of the spectacular Sognefjord, and off course: **[The Fabulous Captain Tor, a true legend here](https://www.youtube.com/watch?v=pjoMLKwGsEg)**
 
-> *"Watch the full 23-minute episode and step into the story at: [Noble Adventures](https://vimeo.com/956373167/c90e86fe90?share=copy&fl=sv&fe=ci)*
+> *"Watch the full 24-minute episode and step into the story at: [Noble Adventures](https://vimeo.com/956373167/c90e86fe90?share=copy&fl=sv&fe=ci)*
 >
 >
 
