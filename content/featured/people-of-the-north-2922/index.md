@@ -1,11 +1,11 @@
 ---
-title: 'Step into the TV- Story: Experience Sognefjord with Captain Tor from
-  "People of the North" '
+title: '"People of the North" TV- Serie & Captain Tor '
 keywords:
   - peopleofthenorth
   - balestrand
-description: Join the all-new series and embark on a breathtaking journey
-  through Northern Scandinavia's most stunning destinations.
+description: "Step into the Story: Experience Sognefjord with Captain Tor and
+  embark on a breathtaking journey through Northern Scandinavia's most stunning
+  destinations"
 images:
   - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
     alt: People of the north
