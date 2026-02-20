@@ -1,6 +1,6 @@
 ---
-title: 'Step into the Story: Experience Sognefjord with Captain Tor from "People
-  of the North" TV-series'
+title: 'Step into the TV- Story: Experience Sognefjord with Captain Tor from
+  "People of the North" '
 keywords:
   - peopleofthenorth
   - balestrand
