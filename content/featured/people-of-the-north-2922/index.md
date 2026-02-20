@@ -28,9 +28,9 @@ Hosted by Norwegian TV personality **Arne Hjeltnes**, alongside chef **Frida Ron
 
 **Each episode focuses on a different location** — from the Arctic coast and remote fishing hamlets to islands and fjords — introducing viewers to distinctive traditions, sustainable ways of living, and local heroes whose lives are deeply tied to the land and sea.  
 
-### **Noble Adventures - Where you meet Captain Tor**
+### Season 2, episode 6 - *Noble Adventures -* Is where you meet Captain Tor
 
-In today’s episode, Arne, Sigrid, and Stig journey to the spectacular county of Sogn in Western Norway. It's a true fjord and mountain adventure, highlighting the best experiences one can have on a trip to the historic village of Balestrand, renowned for its natural beauty, local produce and historic charm in the middle of the spectacular Sognefjord, and off course: **The Fabulous Captain Tor, a true legend** 
+In today’s episode, Arne, Sigrid, and Stig journey to the spectacular county of Sogn in Western Norway. It's a true fjord and mountain adventure, highlighting the best experiences one can have on a trip to the historic village of Balestrand, renowned for its natural beauty, local produce and historic charm in the middle of the spectacular Sognefjord, and off course: **[The Fabulous Captain Tor, a true legend here](https://www.youtube.com/watch?v=pjoMLKwGsEg)**
 
 **Now in its third season, *People of the North* continues to air on networks like PBS** in the United States and is available on various international platforms. The series has reached millions of viewers globally and has received recognition for its role in promoting Norwegian culture and travel.  
 
