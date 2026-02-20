@@ -16,9 +16,9 @@ related_activities:
 cms: true
 ---
 > *I am incredibly honored to have represented the Sognefjord in this global showcase. But that feeling isn't found on the TV screen – it's born within every single guest who leaves the pier with a new light in their eyes.*
-> *\- Captain Tor*
 >
-> *"Ready to see the light in your own eyes? [Book your 'People of the North' inspired journey here"](https://balestrandfjordangling.com/tags/business-and-pleasure/)*
+>
+> ***\- Captain Tor:** "Ready to see the light in your own eyes? [Book your 'People of the North' inspired journey here"](https://balestrandfjordangling.com/tags/business-and-pleasure/)*
 
 ## *People of the North — A Journey Through Nordic Culture*
 
