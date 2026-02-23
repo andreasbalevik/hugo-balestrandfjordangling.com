@@ -122,7 +122,7 @@ Time Travel to Kvamsøy Church: Explore the charming medieval stone church from 
 
 **Deep Water & Local Lore:** We cross an area that plunges 4,000 feet (1,200 meters) straight down. Captain Tor shares tales of Synnøve Finden (Norway's original cheese entrepreneur!) and the powerful geological forces that once created mountains higher than the Himalayas.
 
-**Magical Finnabotn:** We glide through the exciting tidal current into the stunning Finnabotn. This is silence and "hyper-nature" at its most intense, perfect for mindful trolling for trout, mackerel, and pollock.
+**Magical Finnabotn:** We glide through the exciting tidal current into the stunning Finnabotn. This is silence and ***"hyper-nature"*** at its most intense, perfect for mindful trolling for trout, mackerel, and pollock.
 
 ### Who is this unique experience designed for?
 
