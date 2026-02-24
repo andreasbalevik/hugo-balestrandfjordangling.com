@@ -67,7 +67,7 @@ cms: true
 ## Profesjonelle Båt tjenester i Sognefjorden
 
 **Introduksjon:**
-Trenger du profesjonelle båt tjenester i Sognefjorden? Vi tilbyr skreddersydde løsninger for transport, beredskaps oppdrag (standby), film- og foto assistanse, søkeoperasjoner, sleping og redning med båt. Vår ekspertise sikrer effektiv og pålitelig assistanse når du trenger det mest.
+Trenger du profesjonelle båt tjenester i Sognefjorden? Vi tilbyr skreddersydde løsninger for transport, beredskaps oppdrag (standby Vak Tjeneste), film- og foto assistanse, søkeoperasjoner (typisk Røde-Kors), sleping og redning med båt. Vår ekspertise sikrer effektiv og pålitelig assistanse når du trenger det mest.
 
 ### Priser og Fartøy informasjon?
 
@@ -89,15 +89,15 @@ Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bæ
 
 ### Spørsmål: Hvilket fartøy brukes og hvor opererer dere?
 
-**Svar**: Vårt fartøy og operasjonsområde i Sognefjorden
+**Svar**: Vårt fartøy og operasjonsområde i Midtre Sognefjorden. 
 
-Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten har en pålitelig Honda BF 100 hk motor og er godkjent for 8 passasjerer (pax) pluss 900 kg last.
+Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten har en pålitelig Honda BF 100 hk motor og er godkjent for 8 passasjerer (pax) pluss 900 kg last. Utrustet m AIS, VHF, Flomlys etc.
 
-Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord Arnafjord, Kvamsøy, samt Flåm, Nærøyfjord, Lærdal og andre steder innover Sognefjorden.
+Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord, Arnafjord, Kvamsøy, samt Flåm, Nærøyfjord, Lærdal og andre steder innover Sognefjorden.
 
 ### Spørsmål: Har dere demo video med fartøyet i arbeid?
 
-**Svar:** ja se gjerne vår Instagram video fra [Balholm Sjøvarme anlegg her](https://www.instagram.com/stories/highlights/18054053840383503/)
+**Svar:** Ja se gjerne vår Instagram video fra [Balholm Sjøvarme anlegg her](https://www.instagram.com/stories/highlights/18054053840383503/)
 
 ## **Introduction (English):**
 
