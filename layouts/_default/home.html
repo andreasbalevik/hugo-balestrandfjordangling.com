@@ -30,7 +30,9 @@
                 </div>
                 <div class="order-1 xl:order-2 lg:p-4 align-center">
                     {{ with index .Params.images 0 }}
+                                 <div class="w-full rounded-lg overflow-hidden">
                     {{ partial "components/images/image-square" . }}
+                    </div>
                     {{ end }}
                 </div>
             </div>

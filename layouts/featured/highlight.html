@@ -31,11 +31,16 @@
         </div>
         
         <div class="order-1 xl:order-2 relative">
-            <div class="absolute inset-0 bg-gradient-to-br from-[#e09a00]/8 via-[#f5b13d]/12 to-[#e09a00]/15 xl:bg-gradient-to-l xl:from-[#e09a00]/5 xl:via-[#f5b13d]/10 xl:to-[#e09a00]/15 pointer-events-none"></div>
+            <div class="bg-amber-100">
             <div class="p-4 xl:p-6">
-                {{ with .Params.images }}
-                    {{ partial "components/images/carousel-square" . }}
-                {{ end }}
+
+                        {{ range first 1 .Params.images }}
+               <div class="w-full rounded-lg overflow-hidden">
+                    {{ partial "components/images/image-square.html" . }}
+                    </div>
+        
+            {{ end }}
+            </div>
             </div>
         </div>
     </div>

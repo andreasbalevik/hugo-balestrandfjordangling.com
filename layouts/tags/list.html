@@ -3,7 +3,7 @@
 <!-- Tag Landing Page Hero -->
 {{ if .Content }}
 <section class="bg-gradient-to-b from-gray-50 to-white">
-    <div class="container py-12 md:py-16">
+    <div class="container">
         <h1 class="text-4xl md:text-5xl font-bold mb-8" style="color: {{ .Params.color }};">{{ .Title }}</h1>
         <div class="text-lg md:text-xl leading-relaxed text-gray-800 max-w-none">
             {{ .Content }}
@@ -15,7 +15,7 @@
 <!-- Activities List (with filter above) -->
 <div class="container">
     <!-- Filter Dropdown -->
-    <div class="flex items-center gap-2 pt-8 pb-3">
+    <div class="flex items-center gap-2 pb-3">
         <b>Filter:</b>
         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
             class="rounded-lg px-5 py-2 text-center inline-flex items-center"

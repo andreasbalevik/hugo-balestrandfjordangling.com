@@ -21,12 +21,13 @@
         </div>
 
         <div class="order-1 xl:order-1 flex items-center justify-center p-4 lg:p-6">
-            {{ with .Params.images }}
-                <div class="w-full rounded-lg overflow-hidden">
-                    {{ partial "components/images/carousel-square" . }}
-                </div>
-            {{ end }}
-        </div>
 
+              {{ range first 1 .Params.images }}
+<div class="w-full rounded-lg overflow-hidden">
+        {{ partial "components/images/image-square.html" . }}
+        </div>
+      {{ end }}
+       
+</div>
     </div>
 </article>
