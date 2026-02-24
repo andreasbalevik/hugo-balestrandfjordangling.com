@@ -15,6 +15,7 @@ baseURL = 'https://balestrandfjordangling.com'
   ogimage = ""
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
+  phone = "+47 900 81 939"
   address = "Holmen 3, 6899 Balestrand, Norway"
   contrast = 2
 
