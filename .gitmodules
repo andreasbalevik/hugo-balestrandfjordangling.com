@@ -1,3 +1,6 @@
 [submodule "balevikit-tailwindcss-hugo-theme"]
 	path = themes/balevikit-tailwindcss-hugo-theme
 	url = git@github.com:andreasbalevik/balevikit-tailwindcss-hugo-theme.git
+[submodule "themes/balevikit-tailwindcss-hugo-theme"]
+	path = themes/balevikit-tailwindcss-hugo-theme
+	url = git@github.com:andreasbalevik/balevikit-tailwindcss-hugo-theme.git
