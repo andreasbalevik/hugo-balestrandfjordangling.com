@@ -22,9 +22,7 @@
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {{ range $index, $page := .Pages.ByLastmod }}
-                    <div class="{{ if eq $index 0 }}lg:col-span-2{{ end }}">
-                        {{ .Render "li" }}
-                    </div>
+                    {{ .Render "li" }}
                 {{ end }}
             </div>
         </div>
