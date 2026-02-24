@@ -9,7 +9,7 @@
 
 <!-- Hero Section -->
 <section>
-    <div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;" class="py-12 md:py-16">
+    <div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
         <div class="container md:max-xl:max-w-screen-lg">
             <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
                 <div class="p-8 h-full flex order-2 xl:order-1">
@@ -40,31 +40,28 @@
 
 <!-- Categories Section -->
 <section class="bg-white">
-    <div class="py-12 md:py-16">
-        <div class="container">
+    <div class="container">
 
-            {{ with .Params.categories.title }}
-            <div class="w-full mb-12 text-center mx-auto">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-0 text-gray-900">{{ . }}</h2>
-            </div>
-            {{ end }}
+        {{ with .Params.categories.title }}
+        <div class="w-full mb-12 text-center mx-auto">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-0 text-gray-900">{{ . }}</h2>
+        </div>
+        {{ end }}
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
-                    <div style="background-color: {{ .Params.color }};"
-                        class="text-lg md:text-xl font-semibold text-white p-8 text-center rounded-lg transition-all duration-300 group-hover:shadow-lg">
-                        <div class="inline-flex items-center">
-                            {{ .Title }}
-                            {{ partial "arrow.html" . }}
-                        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
+                <div style="background-color: {{ .Params.color }};"
+                    class="text-lg md:text-xl font-semibold text-white p-8 text-center rounded-lg transition-all duration-300 group-hover:shadow-lg">
+                    <div class="inline-flex items-center">
+                        {{ .Title }}
+                        {{ partial "arrow.html" . }}
                     </div>
-                </a>
-                {{ end }}
-                {{ end }}
-            </div>
-
+                </div>
+            </a>
+            {{ end }}
+            {{ end }}
         </div>
     </div>
 </section>
@@ -72,8 +69,7 @@
 <!-- Featured Section -->
 {{ if .Params.featured.enabled }}
 <section class="bg-[#769ba4]">
-    <div class="py-12 md:py-16">
-        <div class="container">
+    <div class="container">
             {{ with .Params.featured }}
                 {{ range first 1 .featured }}
                     {{ $page := replace . "/index" "" }}
@@ -82,23 +78,19 @@
                     {{ end }}
                 {{ end }}
             {{ end }}
-        </div>
     </div>
 </section>
 {{ end }}
 
 <!-- Captain Tor Recommended -->
 <section >
-    <div class="py-12 md:py-16">
-        {{ partial "components/capt-tor-recommended" . }}
-    </div>
+    {{ partial "components/capt-tor-recommended" . }}
 </section>
 
 <!-- Inspirations Section -->
 <section class="bg-white">
     {{ with .Params.inspirations }}
-    <div class="py-12 md:py-16">
-        <div class="container">
+    <div class="container">
 
             <div class="mb-12 text-center">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">{{ .title }}</h2>
@@ -110,7 +102,6 @@
                         {{ .Render "li" }}
                     {{ end }}
                 {{ end }}
-            </div>
         </div>
     </div>
     {{ end }}
@@ -118,8 +109,7 @@
 
 <!-- Recommended Activities Section -->
 <section >
-    <div class="py-12 md:py-16">
-        <div class="container">
+    <div class="container">
 
             <div class="mb-12 text-left">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Recommended</h2>
@@ -133,15 +123,13 @@
                         {{ end }}
                     {{ end }}
                 {{ end }}
-            {{ end }}
-        </div>
+        {{ end }}
     </div>
 </section>
 
 <!-- CTA Boost Section -->
 <section class="bg-[#769ba4]">
-    <div class="py-12 md:py-16">
-        <div class="container max-w-4xl">
+    <div class="container max-w-4xl">
             <div class="text-center text-white">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
                     Ready for Your Fjord Adventure?
@@ -157,7 +145,6 @@
                     </a>
                     {{ end }}
                 </div>
-            </div>
         </div>
     </div>
 </section>

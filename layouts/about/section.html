@@ -14,7 +14,7 @@
 
 <!-- Content Section -->
 <article class="bg-white">
-    <div class="container py-12 md:py-16">
+    <div class="container">
         <div class="mx-auto max-w-4xl">
             <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:lg:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
                 {{ partial "components/prose-content.html" .}}
@@ -26,7 +26,7 @@
 <!-- Recommended Activities Section -->
 {{ with .Site.GetPage "index" }}
     {{ with .Params.recommended }}
-    <section class="bg-[#f3f7f6] py-12 md:py-16">
+    <section class="bg-[#f3f7f6]">
         <div class="container">
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
