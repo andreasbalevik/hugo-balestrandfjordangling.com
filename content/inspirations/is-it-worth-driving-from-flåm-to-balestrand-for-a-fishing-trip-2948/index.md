@@ -1,6 +1,6 @@
 ---
-title: Is It Worth Driving From Flåm to Balestrand For A Fishing Trip? Yes!
-  (Authentic)
+title: Is It Worth Driving From Flåm or Aurland to Balestrand For A Fishing
+  Trip? Yes! (Authentic)
 description: "\"Beyond the postcard. Explore the Sognefjord's hidden gems with
   Captain Tor.\""
 images:
@@ -11,11 +11,23 @@ cms: true
 
 Hello! We are staying 2 nights in Flam. We really want to fish in the fjords while we are there and I came across your page. I know you are located about 2 hours away. Wondering if you think it would be worth us spending our free day traveling to you and fishing? It looks like an experience of a lifetime :)
 
-### **Answer:** 
+### **Answer:**
 
 I assume that you have your own rental car. But the time for the car ferry comes in addition.  (The car ferry is an experience in itself) Be aware that roadworks may occur. Book a rental car now in good time. If you travel early from Flåm, and arrive in Balestrand a little before departure, you can walk around Balestrand, visit Kviknes Hotell and St Olav's Church. Everything is within a 5 minute walk from my meeting point. Book the 12:00 departure
 
-#### **NORLED FAST FERRY FROM BERGEN -> BALESTRAND -> FLÅM**
+#### **NOTE: Vinter time 1 nov- 30 mars, plan like this:** 
+
+**R[ental car in Flam vs Aurland on link here](https://explore-flam.com/)**
+
+[Plan Your trip from Flam/Aurland on the google map link here (vintertime: drive to Lærdal, Kaupanger, hella Balestrand) traveltime 3 hours one way, cause 2 carferrys :)](https://www.google.com/maps/dir/Fl%C3%A5m,+5743/BALESTRAND+FJORD+ANGLING,+Holmen+3,+6899+Balestrand/@60.9764191,6.0991024,8.67z/data=!4m14!4m13!1m5!1m1!1s0x463e13cfcfc357c3:0x33286ff6aad510c5!2m2!1d7.1117849!2d60.8607716!1m5!1m1!1s0x46161d8978a99ffd:0x9bb793496a667fbf!2m2!1d6.5359413!2d61.210069!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D)
+
+[Book a Balestrand fjord angling trip departure 12:00 on link here](https://balestrandfjordangling.com/)
+
+Return to Flam/aurland
+
+
+
+#### **NORLED FAST FERRY FROM BERGEN -> BALESTRAND -> FLÅM (1 april-30 Sept)**
 
 \-Then you arrive in Balestrand with the  [fast ferry Norled at 11:50](https://www.norled.no/en/fjordcruise/sognefjord-bergen-flam/) and book a departure with me at 15:00. Have lunch at Kviknes Hotell and we will be back for dinner which starts at 19:00. The next day you take the fast ferry departing at 11:50 from Balestrand to Flåm.
 
@@ -48,6 +60,10 @@ It's an exciting thought for those of you who have Norwegian roots and seek to e
 ## Plan Your Fjord Experience: Flåm to Balestrand with Captain Tor
 
 Get answers on whether the unique fishing trip in Balestrand is worth the journey from Flåm. Yes, it is! We see the Sognefjord as a round trip where the journey is part of the experience.
+
+
+
+
 
 ## Here is a guide and Q&A to plan your itinerary. Q&A: Your Detailed Travel Itinerary
 
