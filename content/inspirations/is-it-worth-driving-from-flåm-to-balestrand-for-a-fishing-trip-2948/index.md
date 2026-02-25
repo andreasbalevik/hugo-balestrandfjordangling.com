@@ -25,7 +25,7 @@ Book a Balestrand fjord angling trip departure 12:00
 ### Q: What is the easiest way to travel between Flåm/Aurland and Balestrand?
 
 **A: You have two main options:**
-**By car:** It's about a 3-hour drive one way. Ferry times must be added (Hella-Dragsvik). Thecar ferry is an experience in itself. ([Link to ferry time tabell). ](https://www.skyss.no/globalassets/reise/rutetabellar/bat-og-ferje/b%C3%A5t-og-ferje/1046.pdf) Be aware of roadworks and [[book a rental car now in good time](https://explore-flam.com/)] from Flam or Aurland.
+**By car:** It's about a 3-hour drive one way. Ferry times must be added (Hella-Dragsvik). The car ferry is an experience in itself. ([Link to ferry time tabell). ](https://www.skyss.no/globalassets/reise/rutetabellar/bat-og-ferje/b%C3%A5t-og-ferje/1046.pdf) Be aware of roadworks and [[book a rental car now in good time](https://explore-flam.com/)] from Flam or Aurland.
 
 **By express ferry (Norled):** This is the easiest. The boat runs Bergen -> Balestrand -> Flåm. Guests can arrive in Balestrand at 11:50 AM, have lunch, fish at 3:00 PM, and return to Flåm the next day.
 
