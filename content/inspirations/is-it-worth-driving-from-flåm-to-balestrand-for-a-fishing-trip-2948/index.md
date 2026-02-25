@@ -5,6 +5,7 @@ description: "\"Beyond the postcard. Explore the Sognefjord's hidden gems with
   Captain Tor.\""
 images:
   - src: images/img_0593.jpeg
+related_activities: []
 cms: true
 ---
 ## Here is a guide and Q&A to plan your itinerary. Q&A: Your Detailed Travel Itinerary
@@ -18,6 +19,8 @@ A: Absolutely! You have traveled all the way to Norway for an authentic fjord ex
 [Book Rental car in Flam vs Aurland on link here](https://explore-flam.com/)
 
 [Plan Your trip from Flam/Aurland on the google map link here ](https://www.google.com/maps/dir/Fl%C3%A5m,+5743/BALESTRAND+FJORD+ANGLING,+Holmen+3,+6899+Balestrand/@60.9764191,6.0991024,8.67z/data=!4m14!4m13!1m5!1m1!1s0x463e13cfcfc357c3:0x33286ff6aad510c5!2m2!1d7.1117849!2d60.8607716!1m5!1m1!1s0x46161d8978a99ffd:0x9bb793496a667fbf!2m2!1d6.5359413!2d61.210069!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D) (Through Lærdal, if snow safest) Estamated travel time 3 hours one way, included 2 car ferries  :)
+
+[Book overnatting hos Balestrand Fjord Apartments i leilighet 4 eller 8 pax på linken her](https://www.fjordapartments.no/en/)
 
 Book a Balestrand fjord angling trip departure 12:00 on link [here](https://balestrandfjordangling.com/)
 
