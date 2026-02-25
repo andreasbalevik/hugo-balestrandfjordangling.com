@@ -12,7 +12,7 @@ cms: true
 
 A: Absolutely! You have traveled all the way to Norway for an authentic fjord experience. Balestrand offers a historical, vibrant, and relaxed atmosphere that complements the more commercial Flåm. The difference in village character is part of the charm the Sognefjord offers. The trip is an experience of a lifetime.
 
-### Q: How to plan in Wintertime from 1Nov - 30 Mars. Norled fast Ferry not Running.
+### Q: How to plan in Wintertime from 1Nov - 30 Mars, when Norled fast Ferry not running - Book Rental Car
 
 [Book Rental car in Flam vs Aurland on link here ](https://explore-flam.com/)
 
