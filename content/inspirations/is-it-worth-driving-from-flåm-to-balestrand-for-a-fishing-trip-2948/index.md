@@ -18,9 +18,9 @@ A: Absolutely! You have traveled all the way to Norway for an authentic fjord ex
 
 [Plan Your trip from Flam/Aurland on the google map link here ](https://www.google.com/maps/dir/Fl%C3%A5m,+5743/BALESTRAND+FJORD+ANGLING,+Holmen+3,+6899+Balestrand/@60.9764191,6.0991024,8.67z/data=!4m14!4m13!1m5!1m1!1s0x463e13cfcfc357c3:0x33286ff6aad510c5!2m2!1d7.1117849!2d60.8607716!1m5!1m1!1s0x46161d8978a99ffd:0x9bb793496a667fbf!2m2!1d6.5359413!2d61.210069!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D) (Through Lærdal, if snow safest) Estimated travel time 3 hours one way, included 2 car ferries  :)
 
-[Book accommodation at Balestrand Fjord Apartments in an apartment for 4 or 8 people at the link here](https://www.fjordapartments.no/en/)
+Book accommodation at [Balestrand Fjord Apartments in an apartments](https://www.fjordapartments.no/en/) for 4 or 8 people at the link here
 
-Book a Balestrand fjord angling trip departure 12:00 on link [here](https://balestrandfjordangling.com/)
+Book a Balestrand fjord angling trip departure 12:00
 
 ### Q: What is the easiest way to travel between Flåm/Aurland and Balestrand?
 
