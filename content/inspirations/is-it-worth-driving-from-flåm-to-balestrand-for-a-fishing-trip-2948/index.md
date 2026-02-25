@@ -50,7 +50,7 @@ Alternative route: Consider the route via Borgund Stave Church in Lærdal or Urn
 
 ### Q: Why is an overnight stay recommended?
 
-**A: Flåm is great, but Balestrand is historical and relaxed.** An overnight stay allows you to experience both places as "pearls on a string" and gives you the peace to enjoy both\[ [breakfast at Kviknes Hotel]](https://www.kviknes.no/restaurant-kviknes) and an evening stroll.
+**A: Flåm is great, but Balestrand is historical and relaxed.** An overnight stay allows you to experience both places as "pearls on a string" and gives you the peace to enjoy both [breakfast at Kviknes Hotel ](https://www.kviknes.no/restaurant-kviknes)and an evening stroll.
 
 ### Captain Tor Summarized:
 
