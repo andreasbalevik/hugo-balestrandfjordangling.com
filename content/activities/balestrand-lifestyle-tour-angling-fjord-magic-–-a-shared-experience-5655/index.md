@@ -157,17 +157,15 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 
 This area is excellent for traditional trolling along the cliffs for Pollock, mackerel, salmon, or trout. This represents the local fishing and relaxation culture in the fjord landscape.
 
-### What kind of nature and wildlife will we see in the Fjærland fjorden?
+### What kind of nature and wildlife will we see in the Fjærland fjord?
 
-In bright season, the **Fjærland fjord** has a green color from the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore.
-
-Consider taking a trip with us and sharing your experience with friends. Reservations can be made directly or through your tour operator.
+In bright season, the **Fjærland fjord** has a green color *from* the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore. Consider taking a trip with us and sharing your experience with friends. 
 
 > #### SIMPLICITY CREATES EMOTIONS - *ESCAPE*
 
 ## 4) Scenic Boat Route in the Fjærland fjord
 
-The energy in #Fjærlandsfjorden is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
+The energy in Fjærlandfjord is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
 
 #### *AND THE BONUS?*
 
