@@ -1,0 +1,23 @@
+{{/* 
+  Booking Modal Button - Opens booking modal with arrow animation
+  Usage: {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
+*/}}
+<button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+    class="text-lg font-semibold text-white bg-gradient-to-br rounded-lg from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] px-6 py-3 inline-flex items-center gap-2 cursor-pointer transition-all duration-300 group"
+    type="button"
+    aria-label="Open booking request form">
+    <span>{{ .text | default "Make a request" }}</span>
+    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
+         aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg" 
+         width="24" 
+         height="24" 
+         fill="none" 
+         viewBox="0 0 24 24">
+      <path stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M19 12H5m14 0-4 4m4-4-4-4"/>
+    </svg>
+</button>
