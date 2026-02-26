@@ -1,19 +1,16 @@
 {{ define "main" }}
 
 <article class="container">
-    <!-- Hero Image Section -->
-    <section class="bg-stone-50">
-        <div class="max-w-[1250px] mx-auto md:px-4">
-            <div class="relative overflow-hidden rounded-none md:rounded-lg">
-                {{ with index .Params.images 0 }}
-                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
-                {{ end }}
-            </div>
-        </div>
-    </section>
+    <!-- Hero Card (Image + Content) -->
+    <div class="bg-white rounded-none md:rounded-lg overflow-hidden shadow-lg border border-gray-300">
+        <!-- Hero Image Section -->
+        <section class="bg-stone-50 w-full">
+            {{ with index .Params.images 0 }}
+                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
+            {{ end }}
+        </section>
 
-    <!-- Content Section -->
-    <div class="bg-white">
+        <!-- Content Section -->
         <div class="container">
             <div class="mx-auto max-w-4xl">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 mb-8">

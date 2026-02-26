@@ -3,7 +3,7 @@
   Usage: {{ partial "components/buttons/primary" (dict "href" "/path" "text" "Button Text" "ariaLabel" "Descriptive label") }}
 */}}
 <a href="{{ .href }}"
-   class="text-lg font-semibold bg-gradient-to-br rounded-lg from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] text-white px-6 py-3 md:px-8 md:py-4 inline-flex items-center gap-2 transition-all duration-300 no-underline group"
+   class="text-lg font-semibold bg-[#e09a00] hover:bg-[#d08900] text-white px-6 py-3 md:px-8 md:py-4 inline-flex items-center gap-2 transition-all duration-300 no-underline group shadow-lg hover:shadow-xl rounded-xl"
    aria-label="{{ .ariaLabel | default .text }}">
   <span>{{ .text }}</span>
   <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 

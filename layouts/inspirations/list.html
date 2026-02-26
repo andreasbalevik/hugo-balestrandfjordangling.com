@@ -2,7 +2,7 @@
 
 <!-- Inspirations Landing Page Hero -->
 {{ if .Content }}
-<section class="bg-gradient-to-b from-[#769ba4] to-[#5a7d85]">
+<section class="bg-[#769ba4] overflow-hidden">
     <div class="container">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-6 max-w-3xl">
             {{ .Title }}
@@ -15,7 +15,7 @@
 {{ end }}
 
 <!-- Inspirations Grid -->
-<section class="bg-white">
+<section class="bg-white overflow-hidden">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {{ range $index, $page := .Pages.ByLastmod }}

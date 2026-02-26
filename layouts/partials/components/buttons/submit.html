@@ -3,7 +3,7 @@
   Usage: {{ partial "components/buttons/submit" (dict "text" "Submit Request") }}
 */}}
 <button type="submit"
-    class="text-white inline-flex rounded-lg items-center bg-gradient-to-br from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-semibold text-lg px-6 py-3 text-center transition-all duration-300 gap-2 group">
+    class="text-white inline-flex rounded-xl items-center bg-gradient-to-br from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-semibold text-lg px-6 py-3 text-center transition-all duration-300 gap-2 group">
     <span>{{ .text | default "Submit" }}</span>
     <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
          aria-hidden="true"

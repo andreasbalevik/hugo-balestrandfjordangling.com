@@ -3,7 +3,7 @@
     <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-2xl rounded-xl overflow-hidden border-2 border-[#e09a00]/20 relative hover:shadow-3xl transition-shadow duration-300">
         
         <!-- Featured Badge - Top Right Corner -->
-        <div class="absolute top-4 right-4 z-50 bg-gradient-to-r from-[#e09a00] to-[#f5b13d] text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+        <div class="absolute top-4 right-4 z-50 bg-[#e09a00] text-white px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
             </svg>
@@ -13,7 +13,7 @@
         <div class="p-4 md:p-8 h-full flex order-2 xl:order-1">
             <div class="prose lg:prose-xl prose-headings:mt-0 my-auto max-w-none">
                 
-                <h2 class="text-3xl md:text-4xl lg:text-5xl mt-0 mb-4 font-bold leading-tight">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl mt-0 mb-6 font-bold leading-tight">
                     {{ .Title }}
                 </h2>
                 
@@ -27,7 +27,7 @@
         
         <div class="order-1 xl:order-2 relative">
             <div class="bg-amber-100">
-            <div class="p-4 xl:p-6">
+            <div class="p-4 xl:p-8">
 
                         {{ range first 1 .Params.images }}
                <div class="w-full rounded-lg overflow-hidden">

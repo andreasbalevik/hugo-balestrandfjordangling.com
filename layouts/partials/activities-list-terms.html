@@ -6,13 +6,13 @@
             
             <b>Filter:</b>
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="rounded-lg px-5 mb-4 text-center inline-flex items-center"
+                class="rounded-xl px-5 mb-4 text-center inline-flex items-center"
                 type="button">
 
                 {{ if or (eq .Section "activities") }}
-                <span class="px-2 rounded-lg text-white bg-gradient-to-br from-[#05694c] to-[#045c42]">All activities</span>
+                <span class="px-2 rounded-xl text-white bg-gradient-to-br from-[#05694c] to-[#045c42]">All activities</span>
                 {{ else }}
-                <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
+                <span style="background-color: {{.Params.color}};" class="px-2 rounded-xl text-white">
                     {{.Title}}
                 </span>
                 {{ end }}
@@ -26,7 +26,7 @@
        
 
             <!-- Dropdown menu -->
-            <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow w-44 ">
                 <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
@@ -58,7 +58,7 @@
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}">
                 <div style="background-color: {{.Params.color}};"
-                    class="border border-gray-200 text-xl text-white p-5 text-center rounded group">
+                    class="border border-gray-300 text-xl text-white p-5 text-center rounded group">
                     <div class="inline-flex items-center gap-2">
                         <span>{{.Title}}</span>
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 

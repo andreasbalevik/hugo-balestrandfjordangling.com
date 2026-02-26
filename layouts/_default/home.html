@@ -7,12 +7,12 @@
 
 <link rel="preload" as="image" href="{{ $backgroundImage.Permalink }}" fetchpriority="high">
 
-<!-- Hero Section -->
-<section>
+<!-- SECTION: hero-banner -->
+<section data-section="hero-banner">
     <div style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
         <div class="container md:max-xl:max-w-screen-lg">
-            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
-                <div class="p-8 h-full flex order-2 xl:order-1">
+            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-lg rounded-xl overflow-hidden border border-gray-300">
+                <div class="p-8 md:p-12 lg:p-16 h-full flex order-2 xl:order-1">
                     <div class="prose lg:prose-xl prose-headings:mt-0 my-auto">
                         <h1 class="mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">{{ .Title }}</h1>
                         <p class="text-lg md:text-xl leading-relaxed text-gray-700">{{ .Params.description }}</p>
@@ -23,7 +23,7 @@
                         {{ end }}
                     </div>
                 </div>
-                <div class="order-1 xl:order-2 lg:p-4 align-center">
+                <div class="order-1 xl:order-2 lg:p-4 align-center h-full flex items-center">
                     {{ with index .Params.images 0 }}
                         <div class="w-full rounded-lg overflow-hidden">
                             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
@@ -35,8 +35,8 @@
     </div>
 </section>
 
-<!-- Categories Section -->
-<section class="bg-white">
+<!-- SECTION: categories -->
+<section class="bg-white overflow-hidden" data-section="categories">
     <div class="container">
 
         {{ with .Params.categories.title }}
@@ -45,12 +45,12 @@
         </div>
         {{ end }}
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
                 <div style="background-color: {{ .Params.color }};"
-                    class="text-lg md:text-xl font-semibold text-white p-8 text-center rounded-lg transition-all duration-300 group-hover:shadow-lg group">
+                    class="text-lg md:text-xl font-semibold text-white p-8 text-center rounded-xl transition-all duration-300 group-hover:shadow-lg group shadow-md border border-black/5">
                     <div class="inline-flex items-center gap-2">
                         <span>{{ .Title }}</span>
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
@@ -75,9 +75,9 @@
     </div>
 </section>
 
-<!-- Featured Section -->
+<!-- SECTION: featured -->
 {{ if .Params.featured.enabled }}
-<section class="bg-gradient-to-br from-[#769ba4] to-[#678890]">
+<section class="bg-[#769ba4] overflow-hidden" data-section="featured">
     <div class="container">
             {{ with .Params.featured }}
                 {{ range first 1 .featured }}
@@ -91,13 +91,15 @@
 </section>
 {{ end }}
 
-<!-- Captain Tor Recommended -->
-<section >
+<!-- SECTION: captain-tor-recommended -->
+<section data-section="captain-tor-recommended">
+  <div class="container">
     {{ partial "components/capt-tor-recommended" . }}
+  </div>
 </section>
 
-<!-- Inspirations Section -->
-<section class="bg-white">
+<!-- SECTION: inspirations -->
+<section class="bg-white overflow-hidden" data-section="inspirations">
     {{ with .Params.inspirations }}
     <div class="container">
 
@@ -116,8 +118,8 @@
     {{ end }}
 </section>
 
-<!-- Recommended Activities Section -->
-<section >
+<!-- SECTION: recommended -->
+<section data-section="recommended">
     <div class="container">
 
             <div class="mb-12 text-left">
@@ -136,11 +138,11 @@
     </div>
 </section>
 
-<!-- CTA Boost Section -->
-<section class="bg-gradient-to-br from-[#769ba4] to-[#678890]">
+<!-- SECTION: cta-boost -->
+<section class="bg-[#769ba4] overflow-hidden" data-section="cta-boost">
     <div class="container max-w-4xl">
             <div class="text-center text-white">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                     Ready for Your Fjord Adventure?
                 </h2>
                 <p class="text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto opacity-95">

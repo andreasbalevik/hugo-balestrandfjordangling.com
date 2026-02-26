@@ -1,4 +1,4 @@
-<article class="max-w-md h-full bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl overflow-hidden transition-all duration-300 group">
+<article class="max-w-md h-full bg-white border border-gray-300 rounded-xl shadow-lg hover:shadow-xl overflow-hidden transition-all duration-300 group">
   <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus:outline-none focus:ring-4 focus:ring-[#e09a00]/30" aria-label="View {{ .Title }}">
     
     <div class="relative">
@@ -59,7 +59,7 @@
         {{ range . }}
           {{ with $.Site.GetPage (printf "/tags/%s" .) }}
             <span style="background-color: {{ .Params.color }};"
-                  class="text-sm px-3 py-1.5 rounded-lg text-white font-medium">
+                  class="text-sm px-3 py-1.5 rounded-xl text-white font-medium">
               {{ .Title }}
             </span>
           {{ end }}
