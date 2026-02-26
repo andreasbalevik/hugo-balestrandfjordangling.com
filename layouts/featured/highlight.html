@@ -21,12 +21,7 @@
                     {{ .Params.description }}
                 </p>
 
-                <a href="{{ .RelPermalink }}"
-                    class="mt-4 text-white bg-gradient-to-r from-[#e09a00] to-[#f5b13d] hover:from-[#d08900] hover:to-[#e09a00] px-6 py-3 inline-flex items-center no-underline rounded-lg shadow-lg font-semibold transition-all duration-300 text-lg hover:scale-105"
-                    aria-label="Discover more about {{ .Title }}">
-                    Discover More
-                    {{ partial "arrow.html" . }}
-                </a>
+                {{ partial "components/buttons/primary" (dict "href" .RelPermalink "text" "Discover More" "ariaLabel" (printf "Discover more about %s" .Title)) }}
             </div>
         </div>
         

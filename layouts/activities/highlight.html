@@ -11,12 +11,7 @@
                     {{ .Params.description }}
                 </p>
 
-                <a href="{{ .RelPermalink }}"
-                    class="text-lg font-semibold bg-[#e09a00] hover:bg-[#d08900] text-white px-6 py-3 md:px-8 md:py-4 inline-flex items-center gap-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-                    aria-label="Explore {{ .Title }}">
-                    Explore Activity
-                    {{ partial "arrow.html" . }}
-                </a>
+                {{ partial "components/buttons/secondary" (dict "href" .RelPermalink "text" "Explore all activities" "ariaLabel" "View all fishing activities in Balestrand") }}
             </div>
         </div>
 

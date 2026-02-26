@@ -10,7 +10,7 @@
                 type="button">
 
                 {{ if or (eq .Section "activities") }}
-                <span class="px-2 rounded-lg text-white bg-[#05694c]">All activities</span>
+                <span class="px-2 rounded-lg text-white bg-gradient-to-br from-[#05694c] to-[#045c42]">All activities</span>
                 {{ else }}
                 <span style="background-color: {{.Params.color}};" class="px-2 rounded-lg text-white">
                     {{.Title}}
@@ -58,10 +58,22 @@
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}">
                 <div style="background-color: {{.Params.color}};"
-                    class="border border-gray-200 text-xl text-white p-5 text-center rounded">
-                    <div class="inline-flex items-center">
-                        {{.Title}}
-                        {{ partial "arrow.html" . }}
+                    class="border border-gray-200 text-xl text-white p-5 text-center rounded group">
+                    <div class="inline-flex items-center gap-2">
+                        <span>{{.Title}}</span>
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
+                             aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" 
+                             width="24" 
+                             height="24" 
+                             fill="none" 
+                             viewBox="0 0 24 24">
+                          <path stroke="currentColor" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                stroke-width="2" 
+                                d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                        </svg>
                     </div>
                 </div>
             </a>

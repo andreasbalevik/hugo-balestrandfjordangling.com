@@ -1,11 +1,5 @@
 <!-- Booking Button -->
-<button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
-    class="text-lg mt-6 text-white bg-[#e09a00] hover:bg-[#d08900] px-6 py-3 inline-flex items-center no-underline rounded-lg cursor-pointer transition-colors duration-300 font-semibold"
-    type="button"
-    aria-label="Open booking request form">
-    Make a request
-    {{ partial "arrow.html" . }}
-</button>
+{{ partial "components/buttons/primary" (dict "text" "Make a request") }}
 
 <!-- Booking Modal -->
 <div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
@@ -39,7 +33,7 @@
                     <input type="hidden" name="quality" value="{{ .Params.quality }}">
 
                     <!-- Activity Summary with Image -->
-                    <div class="col-span-2 p-4 md:p-4 bg-[#f3f7f6] rounded-lg border border-gray-200">
+                    <div class="col-span-2 p-4 md:p-4 bg-gradient-to-br from-[#f3f7f6] to-[#d5d9d8] rounded-lg border border-gray-200">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {{ with index .Params.images 0 }}
                             <div class="md:col-span-1">
@@ -145,7 +139,7 @@
                 </div>
 
                 <!-- Important Notice -->
-                <div class="p-4 mb-6 bg-[#f3f7f6] border border-gray-300 rounded-lg">
+                <div class="p-4 mb-6 bg-gradient-to-br from-[#f3f7f6] to-[#d5d9d8] border border-gray-300 rounded-lg">
                     <p class="text-sm text-gray-700 leading-relaxed">
                         <strong>Important:</strong> Your request is confirmed only after you receive a confirmation
                         email from us. Payment is due on the day of the tour upon attendance. Cancellations can be made
@@ -155,16 +149,7 @@
 
                 <!-- Submit Button -->
                 <div class="flex justify-center">
-                    <button type="submit"
-                        class="text-white inline-flex items-center bg-[#e09a00] hover:bg-[#d08900] focus:ring-4 focus:outline-none focus:ring-[#e09a00]/30 font-semibold rounded-lg text-lg px-6 py-3 text-center transition-colors duration-300">
-                        <svg class="me-1 -ms-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        Submit Request
-                    </button>
+                    {{ partial "components/buttons/submit" (dict "text" "Submit Request") }}
                 </div>
 
             </form>
