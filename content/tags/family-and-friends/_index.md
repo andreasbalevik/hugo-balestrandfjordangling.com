@@ -1,6 +1,6 @@
 ---
 title: Family and friends
-color: "#4a6a88"
+color: "#3a6a9a"
 keywords:
   - Family activities
   - Group experiences
