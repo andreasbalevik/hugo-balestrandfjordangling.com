@@ -100,7 +100,7 @@ cms: true
 
 ### This tour different from typical tourist activities
 
-This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape. Fishing, storytelling, culture and a scenic trip all in one package. Our custom made boat: "Miss Fjords" takes you away into the hidden gems of the fjord that transforms your mindsett.
+This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape. Fishing, storytelling, culture and a scenic trip all in one package. Our custom made boat: **"Miss Fjords" takes you away into the hidden gems of the fjord that might transforms your mindsett.**
 
 Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours. **Get ready for a little escapade?**
 
@@ -137,7 +137,7 @@ Butte-fried fish served on a piece of seed loaf and with homemade salad and a bo
 
 Raw materials can be purchased easily at the grocery store next to the Balestrand Adventure house. How about a bag of fish soup, and add pieces of your fish, isn’t this easy?
 
-### A balcony lunch at Kvikne's never fails!
+> ### A balcony lunch at Kvikne's never fails!
 
  Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://hugo-balestrandfjordangling.netlify.app/admin/#/collections/activities/entries/balestrand-fjord-angling-family-expedition/index)Hotell after the trip, paired with something good to drink. 
 
@@ -157,15 +157,15 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 
 This area is excellent for traditional trolling along the cliffs for Pollock, mackerel, salmon, or trout. This represents the local fishing and relaxation culture in the fjord landscape.
 
-### What kind of nature and wildlife will we see in the Fjærlandsfjorden?
+### What kind of nature and wildlife will we see in the Fjærland fjorden?
 
-In bright season, the Fjærlandsfjord has a green color from the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore.
+In bright season, the **Fjærland fjord** has a green color from the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore.
 
 Consider taking a trip with us and sharing your experience with friends. Reservations can be made directly or through your tour operator.
 
 > #### SIMPLICITY CREATES EMOTIONS - *ESCAPE*
 
-## 4) Scenic Boat Route in Fjærlandsfjorden
+## 4) Scenic Boat Route in the Fjærland fjord
 
 The energy in #Fjærlandsfjorden is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
 
