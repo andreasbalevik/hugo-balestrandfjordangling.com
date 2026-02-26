@@ -29,23 +29,6 @@
                     </svg>
                 </button>
             </header>
-            {{ with index .Params.images 0 }}
-            {{ $image := resources.GetMatch .src }}
-            {{ if $image }}
-            <!-- Activity Banner Image -->
-            <div class="w-full overflow-hidden">
-                {{ $contrast := site.Params.contrast | default 5 }}
-                {{ $filter := images.Contrast $contrast }}
-                {{ $imageFiltered := $image | images.Filter $filter }}
-                {{ $imageBanner := $imageFiltered.Fill "734x230 q75 webp" }}
-                <img src="{{ $imageBanner.RelPermalink }}" 
-                     alt="{{ .alt }}" 
-                     class="w-full h-full object-cover mt-0 mb-0"
-                     loading="lazy">
-            </div>
-
-            {{ end }}
-            {{ end }}
 
             <!-- Booking Form -->
             <form class="p-6 md:p-8" name="booking" method="POST" data-netlify="true" action="/request_confirmation">
@@ -55,14 +38,31 @@
                     <input type="hidden" name="activity" value="{{ .Title }}">
                     <input type="hidden" name="quality" value="{{ .Params.quality }}">
 
-                    <!-- Activity Summary -->
-                    <div class="col-span-2 p-4 bg-[#f3f7f6] rounded-lg border border-gray-200">
-                        <p class="text-md font-medium text-gray-900 mb-2">{{ .Title }}</p>
-                        {{ with .Params.product_info.duration }}
-                        <p class="text-base text-gray-700">
-                            Duration: {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}
-                        </p>
-                        {{ end }}
+                    <!-- Activity Summary with Image -->
+                    <div class="col-span-2 p-4 md:p-4 bg-[#f3f7f6] rounded-lg border border-gray-200">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            {{ with index .Params.images 0 }}
+                            <div class="md:col-span-1">
+                                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "thumbnail") }}
+                            </div>
+                            {{ end }}
+                            <div class="md:col-span-2 flex flex-col justify-center">
+                                <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 mt-0!">{{ .Title }}</h4>
+                                <div class="space-y-2">
+                                    {{ with .Params.product_info.duration }}
+                                    <div class="flex items-center text-base text-gray-700">
+                                        <svg class="w-5 h-5 mr-2 text-[#e09a00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span><strong>Duration:</strong> {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}</span>
+                                    </div>
+                                    {{ end }}
+                                    {{ with .Params.summary }}
+                                    <p class="text-base text-gray-700 leading-relaxed mt-3">{{ . }}</p>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Full Name -->
