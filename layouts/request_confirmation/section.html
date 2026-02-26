@@ -1,29 +1,97 @@
 {{ define "main" }}
 
 {{ $blur_filter := images.GaussianBlur 100 }}
-{{ $image_path := "images/katrine-web.jpg"}}
-{{ $image := resources.GetMatch $image_path | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
-{{ $backgroundImage := $image.Resize "x600 q50" }}
+{{ $bg_path := "images/katrine-web.jpg"}}
+{{ $bg_image := resources.GetMatch $bg_path | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
+{{ $backgroundImage := $bg_image.Resize "x600 q50" }}
 
 <!-- Request Confirmation Page -->
-<section style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
-    <div class="py-12 md:py-16 flex items-center justify-center">
-        <article class="bg-white rounded-xl p-8 shadow-xl max-w-4xl w-full mx-4 border border-gray-300">
-            <div class="prose mx-auto">
-                {{ .Content }}
+<section class="relative py-12 md:py-16" style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+    
+    <div class="relative z-10 flex items-center justify-center px-4">
+        <div class="max-w-5xl w-full">
+            <!-- Success Card -->
+            <article class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                <!-- Header with accent -->
+                <div class="bg-[#05694c] px-8 py-12 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="rounded-full bg-white/20 p-3">
+                            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">{{ i18n "takk" | default "Thank You!" }}</h1>
+                    <p class="text-white/90 text-lg">Your request has been received</p>
+                </div>
 
-                <a href="{{ .Site.Home.Permalink }}"
-                    class="pt-6 inline-flex items-center text-[#e09a00] hover:text-[#d08900] font-medium transition-colors duration-300"
-                    aria-label="Return to homepage">
-                    <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                    </svg>
-                    {{ i18n "tilbake" }}
-                </a>
-            </div>
-        </article>
+                <!-- Main Content -->
+                <div class="grid md:grid-cols-3 gap-8 p-8 md:p-12">
+                    <!-- Content Section -->
+                    <div class="md:col-span-2">
+                        <div class="prose prose-lg max-w-none">
+                            {{ .Content }}
+                        </div>
+
+                        <!-- Info Box -->
+                        <div class="mt-8 p-6 bg-gradient-to-br from-[#e3f2fd] to-[#bbdefb] border-l-4 border-[#1976d2] rounded-lg">
+                            <div class="flex gap-3">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 text-[#1565c0] mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-sm font-semibold text-[#1565c0] mb-2">Next Steps</h3>
+                                    <p class="text-sm text-[#0d47a1] leading-relaxed">
+                                        We'll send you a confirmation email within 24 hours. Please check your email for further details and payment information. Contact us if you havent heard from us within that time frame.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Captain Tor Image Section -->
+                    <div class="md:col-span-1 flex flex-col">
+                        <div class="rounded-xl overflow-hidden shadow-lg h-full">
+                            {{ $captain_image := resources.GetMatch "images/captain-tor-of-balestrand-fjord-angling-showcasing-a-fresh-brown-crab-embodying-the-human-edge-and-hyper-nature-in-the-sognefjord.-this-image-represents-a-private-masterc.jpeg" }}
+                            {{ if $captain_image }}
+                                {{ $processed := $captain_image.Resize "400x600 q85" }}
+                                <img src="{{ $processed.Permalink }}" alt="Captain Tor" class="w-full h-full object-cover" style="transform: scaleX(-1);">
+                            {{ else }}
+                                <div class="w-full h-64 bg-gradient-to-br from-[#2d6a4f]/20 to-[#1b4332]/20 flex items-center justify-center">
+                                    <p class="text-gray-500">Captain Tor</p>
+                                </div>
+                            {{ end }}
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="text-sm font-semibold text-gray-900">Captain Tor</p>
+                            <p class="text-xs text-gray-600">Your Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer CTA -->
+                <div class="bg-gray-50 px-8 md:px-12 py-8 border-t border-gray-200">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <p class="text-gray-700 font-medium">Ready to explore more adventures?</p>
+                            <p class="text-sm text-gray-600">Browse our other exciting experiences</p>
+                        </div>
+                        <a href="{{ .Site.Home.Permalink }}"
+                            class="inline-flex items-center px-6 py-3 rounded-xl bg-[#e09a00] hover:bg-[#d08900] text-white font-semibold transition-all duration-300 whitespace-nowrap gap-2 shadow-lg hover:shadow-xl"
+                            aria-label="Return to homepage">
+                            {{ i18n "tilbake" }}
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
 

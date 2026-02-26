@@ -13,6 +13,7 @@ keywords:
   - Sognefjord inspiration
 weight: 2
 layout: "list"
+color: "#5a7a8a"
 menus:
   main:
     name: Inspirations
