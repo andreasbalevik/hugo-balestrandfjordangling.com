@@ -58,7 +58,7 @@
                 <div class="w-full">
                     {{ with index .Params.images 0 }}
                         <div class="rounded-lg overflow-hidden">
-                            {{ partial "components/images/image-square" . }}
+                            {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
                         </div>
                     {{ end }}
                 </div>

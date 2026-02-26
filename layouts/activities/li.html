@@ -3,7 +3,7 @@
     
     <div class="relative">
       {{ range first 1 .Params.images }}
-        {{ partial "components/images/thumbnail.html" . }}
+        {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "thumbnail") }}
       {{ end }}
       {{ partial "activity/label" . }}
     </div>

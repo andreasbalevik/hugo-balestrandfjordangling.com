@@ -24,7 +24,7 @@
 
               {{ range first 1 .Params.images }}
 <div class="w-full rounded-lg overflow-hidden">
-        {{ partial "components/images/image-square.html" . }}
+        {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
         </div>
       {{ end }}
        

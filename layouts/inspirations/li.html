@@ -7,7 +7,7 @@
 
             <div>
                 {{ range first 1 .Params.images }}
-                    {{ partial "components/images/image-square.html" . }}
+                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
                 {{ end }}
             </div>
 
