@@ -3,8 +3,8 @@
 
 <!-- Booking Modal -->
 <div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-3xl max-h-full mt-[60px] md:mt-[30px]">
+    class="hidden fixed inset-0 z-50 bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
+    <div class="relative p-4 w-full max-w-3xl mt-4 mb-8">
         <!-- Modal Content -->
         <article class="relative bg-white rounded-xl shadow-lg border border-gray-300">
             <!-- Modal Header -->
@@ -33,7 +33,7 @@
                     <input type="hidden" name="quality" value="{{ .Params.quality }}">
 
                     <!-- Activity Summary with Image -->
-                    <div class="col-span-2 p-4 md:p-4 bg-gradient-to-br from-[#f3f7f6] to-[#d5d9d8] rounded-xl border border-gray-300">
+                    <div class="col-span-2 p-4 md:p-4 bg-gradient-to-br from-[#f5f5f5] to-[#f5f5f5] rounded-xl border border-gray-300">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {{ with index .Params.images 0 }}
                             <div class="md:col-span-1">
@@ -133,18 +133,25 @@
                         <label for="message" class="block mb-2 text-base font-semibold text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
                             class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
-                            placeholder="Tell us about your expectations..." required></textarea>
+                            placeholder="Tell us about yourself..." required></textarea>
                     </div>
 
                 </div>
 
                 <!-- Important Notice -->
-                <div class="p-4 mb-6 bg-gradient-to-br from-[#f3f7f6] to-[#d5d9d8] border border-gray-300 rounded-xl">
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        <strong>Important:</strong> Your request is confirmed only after you receive a confirmation
-                        email from us. Payment is due on the day of the tour upon attendance. Cancellations can be made
-                        by email up to 2 working days before the tour date.
-                    </p>
+                <div class="p-4 mb-6 bg-gradient-to-br from-[#e3f2fd] to-[#bbdefb] border-l-4 border-[#1976d2] rounded-lg">
+                    <div class="flex gap-2">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-[#1565c0]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-xs text-[#0d47a1] leading-snug">
+                                <strong>Important:</strong> Your request is confirmed only after you receive a confirmation email. Payment is due on the day of the tour. Cancellations by email up to 2 working days before.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Submit Button -->
