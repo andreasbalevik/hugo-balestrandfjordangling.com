@@ -103,6 +103,16 @@ cms: true
 
 Master authentic long line fishing with a premium, hands-on skill immersion & unique fishing adventure. Book your memorable escape today!
 
+### Who is this Hands-On Deep Water Fishing Program for?
+
+> For parents who want to introduce their children from 12 years old to real fishing culture and teamwork in The Norwegian Sognefjord. *Grow up - This is life!*
+>
+> Friends who are traveling together and want a Kick-Off on the:  *Live-the-life-list*
+>
+> For those who want to challenge themselves and find their identity and are ready for a new step forward!
+>
+> Especially interested in local fishing culture and food gathering
+
 ### **What is included in the price, and when is the tour available:**
 
 The price includes 2 persons in a private boat, and the tour is available year-round. Note: This highly sought-after premium skill immersion requires booking three days in advance to ensure authenticity.
@@ -133,10 +143,13 @@ Exchange the city's pace for the Sognefjord's calm and power! Ready for an adven
 
 ### **Do you have any video inspiration from the tour?**
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærlandsfjord:
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-* **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)[](https://www.instagram.com/p/Cvc4xR6KHwB/)
-* **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)[](https://www.instagram.com/p/Csfwf8yq5cI/)
+> **Watch YouTube Episode 2: [The Long line Fishing part ](https://www.youtube.com/watch?v=FydHB0yOMnE&t=175s)**
+>
+> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
+>
+> **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
 
 ### **What is the process and the feeling of the catch?**
 
@@ -158,7 +171,7 @@ The fish are usually big in these deep fjords. The long line makes them float up
 
 You pick up the marker buoy with a grabber. The Øien 710F boat handles the situation—steady. Challenges are just a possibility for growth. Every day is just a new beginning. One step forward is one step closer. "If it is to be, it’s up to me."
 
-###  **What if we don't catch anything:**
+### **What if we don't catch anything:**
 
 **Limits Are a Mindset: Resilience & Growth**
 
@@ -190,4 +203,4 @@ Our boat, **“Miss Fjords,” is Sognefjord’s contemporary answer to both th
 
 > *“To me, this sense of adventure never fades. After decades of guiding these waters, I find it just as fun and exciting every time.”*
 
-#### ’Go Viking’ -> Book this Norseman trip today!
+#### [’Go Viking’ ](https://balestrandfjordangling.com/inspirations/go-viking-in-the-sognefjord-experience-the-raw-spring-awakening-march-april-5320/)-> Book this Norseman trip today!
