@@ -133,13 +133,13 @@ Exchange the city's pace for the Sognefjord's calm and power! Ready for an adven
 
 ### **Do you have any video inspiration from the tour?**
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærlandsfjord:
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-**Watch YouTube Episode 2: [The Long line Fishing part ](https://www.youtube.com/watch?v=FydHB0yOMnE&t=175s)**
-
-**Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
-
-**Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
+> **Watch YouTube Episode 2: [The Long line Fishing part ](https://www.youtube.com/watch?v=FydHB0yOMnE&t=175s)**
+>
+> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
+>
+> **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
 
 ### **What is the process and the feeling of the catch?**
 
