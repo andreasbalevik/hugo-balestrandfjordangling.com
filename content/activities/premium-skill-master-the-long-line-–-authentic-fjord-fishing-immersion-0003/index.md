@@ -103,6 +103,16 @@ cms: true
 
 Master authentic long line fishing with a premium, hands-on skill immersion & unique fishing adventure. Book your memorable escape today!
 
+### Who is this Hands-On Deep Water Fishing Program for?
+
+> For parents who want to introduce their children from 12 years old to real fishing culture and teamwork in The Norwegian Sognefjord. *Grow up - This is life!*
+>
+> Friends who are traveling together and want a Kick-Off on the:  *Live-the-life-list*
+>
+> For those who want to challenge themselves and find their identity and are ready for a new step forward!
+>
+> Especially interested in local fishing culture and food gathering
+
 ### **What is included in the price, and when is the tour available:**
 
 The price includes 2 persons in a private boat, and the tour is available year-round. Note: This highly sought-after premium skill immersion requires booking three days in advance to ensure authenticity.
