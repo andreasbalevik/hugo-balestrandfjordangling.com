@@ -1,130 +1,172 @@
 {{ define "main" }}
 
-<!-- Activity Hero Section -->
-<section>
-        <div class="container md:max-xl:max-w-screen-lg">
-            <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-lg rounded-xl overflow-hidden border border-gray-300">
-            
-                <!-- Activity Details -->
-                <article class="p-8 md:p-12 lg:p-16 h-full flex order-2 xl:order-1">
-                    <div class="prose md:prose-lg lg:prose-xl max-w-none my-auto w-full">
-                        
-                        {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
-                        <div class="flex items-center justify-between mb-8 not-prose">
-                            {{ with .Params.quality }}
-                            <span class="inline-block bg-[#f3f7f6] px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 uppercase tracking-wide">
-                                {{ . }}
-                            </span>
-                            {{ end }}
-                            {{ with .Params.information.options.varde_experience_quality }}
-                            <img class="w-24 h-auto" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        
-                        <!-- Activity Title -->
-                        <h1 class="mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                            {{ .Title }}
-                        </h1>
-                        
-                        <!-- Product Information -->
-                        {{ partial "activity/product_info" . }}
-                        
-                        <!-- Global Activity Label -->
-                        {{ with .Site.Data.configuration.global_activity_label }}
-                        <div class="flex not-prose mb-8">
-                            <span class="inline-flex items-center text-gray-700 text-base antialiased">
-                                <svg class="w-5 h-5 text-inherit mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" />
-                                    <path fill-rule="evenodd"
-                                        d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                                        clip-rule="evenodd" />
-                                    <path
-                                        d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z" />
-                                </svg>
-                                {{ . }}
-                            </span>
-                        </div>
-                        {{ end }}
-                        
-                        <!-- Booking Component -->
-                        {{ partial "activity/booking" . }}
-                    </div>
-                </article>
-                
-                <!-- Activity Images -->
-                <aside class="order-1 xl:order-2 h-full flex items-center justify-center lg:p-4">
-                    {{ with index .Params.images 0 }}
-                        <div class="rounded-lg overflow-hidden w-full">
-                            {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
-                        </div>
+<!-- Activity Hero Section with Full-Width Image -->
+<section class="relative overflow-hidden bg-gray-900 mt-[56px]">
+    {{ with index .Params.images 0 }}
+    <div class="absolute inset-0 w-full h-full">
+        {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
+    </div>
+    {{ end }}
+    
+    <!-- Subtle Overlay - just slight darkening at bottom for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
+    
+    <!-- Hero Content - Heights match image crop aspect ratios -->
+    <div class="relative h-[512px] md:h-[683px] lg:h-[720px] flex items-end">
+        <div class="container w-full pb-8 md:pb-12">
+            <div class="max-w-2xl bg-black/20 backdrop-blur-sm rounded-xl p-6 md:p-8 lg:p-10">
+                {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
+                <div class="flex items-center gap-3 mb-6 flex-wrap">
+                    {{ with .Params.quality }}
+                    <span class="inline-block bg-[#e09a00] text-white px-4 py-2 rounded-lg text-sm font-semibold uppercase tracking-wide shadow-lg">
+                        {{ . }}
+                    </span>
                     {{ end }}
-                </aside>
-
+                    {{ with .Params.information.options.varde_experience_quality }}
+                    <img class="w-20 h-auto drop-shadow-lg" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
+                    {{ end }}
+                </div>
+                {{ end }}
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+                    {{ .Title }}
+                </h1>
+                
+                {{ with .Params.summary }}
+                <p class="text-lg md:text-xl text-white/95 leading-relaxed max-w-xl">
+                    {{ . }}
+                </p>
+                {{ end }}
             </div>
         </div>
+    </div>
+
+    <style>
+        section picture img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </section>
 
-<!-- Activity Content Tabs -->
-<section class="bg-white overflow-hidden">
-        <!-- Tab Navigation -->
-        <div class="container">
-        <nav class="mx-auto max-w-4xl px-4 mb-8">
-            <ul class="flex flex-col sm:flex-row border-b border-gray-300 text-base font-semibold" id="default-styled-tab"
-                data-tabs-toggle="#default-styled-tab-content"
-                data-tabs-active-classes="text-[#e09a00] border-[#e09a00]"
-                data-tabs-inactive-classes="text-gray-600 hover:text-gray-900 border-transparent hover:border-gray-300"
-                role="tablist">
-                <li class="sm:me-2" role="presentation">
-                    <button class="block w-full sm:inline-block px-4 py-3 border-b-2 sm:border-b-2 transition-colors duration-300" id="about-styled-tab"
-                        data-tabs-target="#styled-about" type="button" role="tab" aria-controls="styled-about"
-                        aria-selected="false">
-                        About
-                    </button>
-                </li>
-                <li class="sm:me-2" role="presentation">
-                    <button class="block w-full sm:inline-block px-4 py-3 border-b-2 sm:border-b-2 transition-colors duration-300"
-                        id="practical-styled-tab" data-tabs-target="#styled-practical" type="button" role="tab"
-                        aria-controls="styled-practical" aria-selected="false">
-                        Practical Info
-                    </button>
-                </li>
-                {{ if gt (len .Params.images) 1 }}
-                <li class="sm:me-2" role="presentation">
-                    <button class="block w-full sm:inline-block px-4 py-3 border-b-2 sm:border-b-2 transition-colors duration-300"
-                        id="images-styled-tab" data-tabs-target="#styled-images" type="button" role="tab"
-                        aria-controls="styled-images" aria-selected="false">
-                        Images
-                    </button>
-                </li>
-                {{ end }}
-            </ul>
-        </nav>
-        
-        <!-- Tab Content -->
-        <div id="default-styled-tab-content">
-            <div class="mx-auto max-w-4xl px-4">
-                <article class="hidden" id="styled-about" role="tabpanel" aria-labelledby="about-styled-tab">
-                    {{ partial "activity/about" . }}
-                </article>
-                <article class="hidden" id="styled-practical" role="tabpanel" aria-labelledby="practical-styled-tab">
-                    {{ partial "activity/practical" . }}
-                </article>
-            </div>
-
-            <!-- Images Tab - Full Width (only if more than 1 image) -->
-            {{ if gt (len .Params.images) 1 }}
-            <div class="hidden" id="styled-images" role="tabpanel" aria-labelledby="images-styled-tab">
-                <div class="w-full max-w-6xl mx-auto px-4">
-                    {{ with .Params.images }}
-                        {{ partial "components/images/carousel-full" . }}
+<!-- Quick Info & Booking Section - Nordic Minimalism -->
+<section class="bg-white border-b border-gray-200">
+    <div class="container">
+        <!-- Minimalist Info & Booking Layout - Always Inline -->
+        <div class="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 items-start sm:items-center justify-between">
+            <!-- Info Section - Inline Row -->
+            <div class="w-full sm:flex-1">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-12 items-start sm:items-center">
+                    <!-- Duration -->
+                    {{ with .Params.product_info.duration }}
+                    <div class="pb-4 sm:pb-0 border-b sm:border-b-0 sm:border-r border-gray-200 sm:pr-6 lg:pr-12">
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1 sm:mb-2">Duration</p>
+                        <p class="text-lg sm:text-xl lg:text-2xl lg:text-3xl font-bold text-gray-900">{{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}</p>
+                    </div>
+                    {{ end }}
+                    
+                    <!-- Private Party Size -->
+                    {{ with .Params.product_info.prices }}
+                    <div class="pb-4 sm:pb-0 border-b sm:border-b-0 sm:border-r border-gray-200 sm:pr-6 lg:pr-12">
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1 sm:mb-2">Private Party</p>
+                        <p class="text-lg sm:text-xl lg:text-2xl lg:text-3xl font-bold text-gray-900">Up to {{ range last 1 . }}{{ .person_number }}{{ end }}</p>
+                    </div>
+                    {{ end }}
+                    
+                    <!-- Price -->
+                    {{ with .Params.product_info.prices }}
+                    <div>
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1 sm:mb-2">Price per person</p>
+                        {{ range first 1 . }}
+                        <p class="text-lg sm:text-xl lg:text-2xl lg:text-3xl font-bold text-gray-900">{{ .price }} NOK</p>
+                        {{ end }}
+                    </div>
                     {{ end }}
                 </div>
             </div>
-            {{ end }}
+            
+            <!-- Booking Button (right) -->
+            <div class="w-full sm:w-auto sm:flex-shrink-0">
+                                
+                <!-- Booking Modal - Include the full booking partial with modal -->
+                {{ partial "activity/booking" . }}
 
-    </div>
+            </div>
+        </div>
     </div>
 </section>
+
+
+<!-- Content Navigation & Sections -->
+<section class="bg-white">
+    <div class="container">
+        <!-- Inline TOC Navigation (only if more than just About) -->
+        {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
+        <nav class="mb-12 flex flex-wrap gap-4 md:gap-6 border-b border-gray-200 pb-6">
+            <a href="#about" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300">About</a>
+            {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
+            <a href="#practical" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300">Practical Info</a>
+            {{ end }}
+            {{ if gt (len .Params.images) 1 }}
+            <a href="#gallery" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300">Gallery</a>
+            {{ end }}
+        </nav>
+        {{ end }}
+        
+        <!-- About Section -->
+        <div class="mb-16 -mt-[56px] pt-[56px]" id="about">
+            <article class="max-w-none text-gray-700 leading-relaxed">
+                {{ partial "activity/about" . }}
+            </article>
+        </div>
+    </div>
+</section>
+
+{{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
+<section>
+<div class="container">
+        <!-- Practical Info Section (only if content exists) -->
+        <div id="practical">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-gray-900">Practical Information</h2>
+            <article class="max-w-none text-gray-700">
+                {{ partial "activity/practical" . }}
+            </article>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Photo Gallery Section (if more than 1 image) -->
+{{ if gt (len .Params.images) 1 }}
+<section class="" id="gallery">
+    <div class="container">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-12 text-gray-900">Gallery</h2>
+        {{ with .Params.images }}
+            {{ partial "components/images/carousel-full" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scroll-timeline: view();
+    }
+    
+    @supports (animation-timeline: view()) {
+        html {
+            animation-duration: 2s;
+            animation-timeline: view();
+        }
+    }
+    
+    * {
+        scroll-margin-top: 80px;
+    }
+</style>
+
 {{ end }}

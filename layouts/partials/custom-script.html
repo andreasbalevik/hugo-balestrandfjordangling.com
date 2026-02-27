@@ -18,3 +18,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {{ if .IsHome }}
     <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {{ end }}
+
+<!-- Modal Toggle Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all modal toggle buttons
+  const modalToggleButtons = document.querySelectorAll('[data-modal-toggle]');
+  
+  modalToggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const modalId = this.getAttribute('data-modal-toggle');
+      const modal = document.getElementById(modalId);
+      
+      if (modal) {
+        const isHidden = modal.classList.contains('hidden');
+        if (isHidden) {
+          modal.classList.remove('hidden');
+          modal.setAttribute('aria-hidden', 'false');
+        } else {
+          modal.classList.add('hidden');
+          modal.setAttribute('aria-hidden', 'true');
+        }
+      }
+    });
+  });
+});
+</script>
+
