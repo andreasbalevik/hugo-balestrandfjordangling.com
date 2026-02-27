@@ -135,8 +135,11 @@ Exchange the city's pace for the Sognefjord's calm and power! Ready for an adven
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærlandsfjord:
 
-* **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)[](https://www.instagram.com/p/Cvc4xR6KHwB/)
-* **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)[](https://www.instagram.com/p/Csfwf8yq5cI/)
+**Watch YouTube Episode 2: [The Long line Fishing part ](https://www.youtube.com/watch?v=FydHB0yOMnE&t=175s)**
+
+**Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
+
+**Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
 
 ### **What is the process and the feeling of the catch?**
 
@@ -158,7 +161,7 @@ The fish are usually big in these deep fjords. The long line makes them float up
 
 You pick up the marker buoy with a grabber. The Øien 710F boat handles the situation—steady. Challenges are just a possibility for growth. Every day is just a new beginning. One step forward is one step closer. "If it is to be, it’s up to me."
 
-###  **What if we don't catch anything:**
+### **What if we don't catch anything:**
 
 **Limits Are a Mindset: Resilience & Growth**
 
