@@ -193,4 +193,4 @@ Our boat, **“Miss Fjords,” is Sognefjord’s contemporary answer to both th
 
 > *“To me, this sense of adventure never fades. After decades of guiding these waters, I find it just as fun and exciting every time.”*
 
-#### ’Go Viking’ -> Book this Norseman trip today!
+#### [’Go Viking’ ](https://balestrandfjordangling.com/inspirations/go-viking-in-the-sognefjord-experience-the-raw-spring-awakening-march-april-5320/)-> Book this Norseman trip today!
