@@ -54,7 +54,7 @@
 
 <!-- Quick Info & Booking Section - Nordic Minimalism -->
 <section class="bg-white border-b border-gray-200">
-    <div class="container">
+    <div class="container pb-8">
         <!-- Minimalist Info & Booking Layout - Always Inline -->
         <div class="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 items-start sm:items-center justify-between">
             <!-- Info Section - Inline Row -->
@@ -96,16 +96,15 @@
 
             </div>
         </div>
+        
+
     </div>
-</section>
 
-
-<!-- Content Navigation & Sections -->
-<section class="bg-white">
-    <div class="container">
-        <!-- Inline TOC Navigation (only if more than just About) -->
+    <div class="container py-4!">
+    
+            <!-- Inline TOC Navigation (only if more than just About) -->
         {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
-        <nav class="mb-12 flex flex-wrap gap-4 md:gap-6 border-b border-gray-200 pb-6">
+        <nav class="pt-8 md:pt-12 flex flex-wrap gap-4 md:gap-6">
             <a href="#about" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300">About</a>
             {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
             <a href="#practical" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300">Practical Info</a>
@@ -115,7 +114,13 @@
             {{ end }}
         </nav>
         {{ end }}
-        
+    </div>
+</section>
+
+
+<!-- Content Navigation & Sections -->
+<section class="bg-white border-t border-gray-200">
+    <div class="container">
         <!-- About Section -->
         <div class="mb-16 -mt-[56px] pt-[56px]" id="about">
             <article class="max-w-none text-gray-700 leading-relaxed">
