@@ -139,7 +139,7 @@ Raw materials can be purchased easily at the grocery store next to the Balestran
 
 > ### A balcony lunch at Kvikne's never fails!
 
- Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://hugo-balestrandfjordangling.netlify.app/admin/#/collections/activities/entries/balestrand-fjord-angling-family-expedition/index)Hotell after the trip, paired with something good to drink. 
+ Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://en.kviknes.no/restaurants)Hotell after the trip, paired with something good to drink. 
 
 ### Do you have any video inspiration from the tour?
 
