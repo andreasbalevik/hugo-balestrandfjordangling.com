@@ -115,7 +115,7 @@ Here you get a 5-star attraction and this fjord experience is among Norway’s b
 * Friends traveling together
 * *Business travelers FIT & Corporate events*
 
-Don’t worry, be happy in our blue Jump-in-suits and Boots in case of a cold morning or rain. Stay warm and comfortable as we explore the Sognefjord in a local and authentic way. That’s why you’re here, right?
+**Don’t worry, be happy in our blue Jump-in-suits and Boots in case of a cold morning or rain**. Stay warm and comfortable as we explore the Sognefjord in a local and authentic way. That’s why you’re here, right?
 
 ### CLEAN AIR - GOOD VIBES: EXPLORE THE SOGNEFJORD
 
@@ -165,11 +165,11 @@ In bright season, the **Fjærland fjord** has a green color *from* the melt-wate
 
 ## 4) Scenic Boat Route in the Fjærland fjord
 
-The energy in Fjærlandfjord is described as special, original, and powerful. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
+**The energy in Fjærlandfjord is described as special, original, and powerful**. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
 
 #### *AND THE BONUS?*
 
-It adds a new dimension and a colorful twist to your life. You are likely someone who enjoys laughter, good times, is generous, and adventurous.
+**It adds a new dimension and a colorful twist to your life.** You are likely someone who enjoys laughter, good times, is generous, and adventurous.
 
 It’s also noted that the experience is nice and tidy.
 
