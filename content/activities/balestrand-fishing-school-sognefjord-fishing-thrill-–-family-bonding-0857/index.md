@@ -80,11 +80,11 @@ cms: true
 
 ### A unique, highly sought-after experience for kids, spouses, or friends.
 
-It is time to trade screen time for authentic **‘adventure time.’** Join us for a hands-on experience where we combine traditional rod fishing and trolling with the exciting, unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
+It is time to trade screen time for *authentic **‘adventure time.’*** Join us for a hands-on experience where we combine traditional rod fishing and the unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
 
 ### **Your Rare Expedition Possibility & A Meaningful Investment**
 
-This is the highly sought-after family expedition and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!
+**This is the highly sought-after family expedition around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!
 
 ## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY!**
 
@@ -94,7 +94,7 @@ Captain Tor’s fjord solutions work time and time again. You are looking for an
 
 This fishing trip in the beautiful, legendary Esefjord is surrounded by high, picturesque mountains. This specific fjord arm is known for easy and fun fishing, perfect for all skill levels. As Captain Tor says:
 
-> Memories about fishing: “I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting***. They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
+> **Memories about fishing:** “I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting***. They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
 
 ### **The *‘Fjord Chicken’* Challenge: Easy & Fun Fjord Fishing in Esefjord**
 
@@ -134,7 +134,7 @@ Possible. Imagine if we got a shark in the net, what would you do then? Dog Fish
 
 ### What should we wear for the trip and how about the weather?
 
-\- You choose the season and type of weather yourself. We have fishing suits for you and yours, which keep you warm and safe from rain and cold. If you have smaller children, I recommend bringing their own park suits and clothes that they are familiar with for maximum comfort.
+\- You choose the season and type of weather yourself. We have fishing suits for you and yours, which keep you warm and safe from rain and cold. **If you have smaller children, I recommend bringing their own park suits and clothes that they are familiar with for maximum comfort.**
 
 > #### Picture yourself on a trip with us. This is more than just an excursion; it’s a chance to disconnect from screens and connect with nature—and each other.
 
