@@ -31,6 +31,13 @@ description: Experience Sognefjord’s legacy. Join Captain Tor, a lifelong
   your story
 images:
   - src: images/kaptein-tor-som-7-åring-i-balaviki-alt-her-tar-han-besøkende-venner-med-på-fisketur-opplevelse.jpg
+  - src: images/kaptein-tor-på-brygga-med-45-kg-breiflabb-og-de-2-barna-hans.-stolt-familie-arv.jpg
+    alt: "\"A historic photo from the 1990s of Captain Tor Balevik as a young
+      outdoor educator (Leirskole-instruktør) on a wooden pier in Balestrand. He
+      is showing two young children a massive Anglerfish (Monkfish) caught in
+      the Sognefjord. This image documents his 25-year legacy as a mentor and
+      cultural carrier, highlighting the authentic 'Human Edge' and maritime
+      heritage behind Balestrand Fjord Angling, Norway.\""
 related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
