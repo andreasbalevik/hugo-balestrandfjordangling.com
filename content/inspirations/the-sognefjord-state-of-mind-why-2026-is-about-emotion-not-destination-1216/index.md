@@ -51,6 +51,11 @@ description: '"Experience Sognefjord: Simplicity creates emotions. Join Captain
   now." '
 images:
   - src: images/image-2272474099921609.jfif
+    alt: "\"A happy female guest smiling on a guided boat trip with Balestrand Fjord
+      Angling in the Sognefjord, Norway. She is holding a Norwegian flag,
+      wearing professional flotation gear and boots, with a powerful waterfall
+      in the background. The scene showcases the pure joy of 'Simplicity Creates
+      Emotions' and authentic 'Human Edge' experiences in Balestrand, Norway.\""
 related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - the-ultimate-balestrand-legacy-tour-private-angling-fjord-history-finnabotn-4045/index
