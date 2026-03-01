@@ -46,7 +46,7 @@ cms: true
 ---
 ## “I am the son of pioneers who found their livelihood in the depths of the legendary Sognefjord.” — Captain Tor
 
-**In Balestrand, legacy isn't something we study;** it’s something we carry in our hands and hear in the wind. At Balestrand Fjord Angling, our "Human Edge" is forged through generations of resilience, song, and a deep, rhythmic connection to the water.
+**In Balestrand, legacy isn't something we study;** it’s something we carry in our hands and hear in the wind. At Balestrand Fjord Angling, our ***"Human Edge"*** is forged through generations of resilience, song, and a deep, rhythmic connection to the water.
 
 ### The Captain’s Roots: From Balaviki to the Deep
 
@@ -59,10 +59,10 @@ cms: true
 **We are more than guides;** we are stewards. Following in the footsteps of those who came before us, we practice the same Analog Craft that has sustained Balestrand for centuries.
 The Unbroken Line: Our Varde-certified approach ensures that the knowledge of the currents, the seasons, and the sea is passed on with integrity.
 
-**Authentic Immersion:** When you join us on a "Legacy Tour," you aren't just a tourist. You are a guest in a story that spans over a hundred years of maritime pioneering.
+**Authentic Immersion:** When you join us on a **"Legacy Tour,"** you aren't just a tourist. You are a guest in a story that spans over a hundred years of maritime pioneering.
 Building a Future Legacy: The Torchbearer
 
-Legacy is a bridge, and I have spent my life building it. For 25 years as a specialized outdoor Camp School educator (Leirskole-instruktør), I have mentored 30 000 thousands in the art of fjord fishing lifestyle. Today, this lifelong dedication to the fjord continues through my Legacy Tours and the Balestrand Fishing School.
+**Legacy is a bridge, and I have spent my life building it.** For 25 years as a specialized outdoor Camp School educator, I have mentored thousands in the art of fjord fishing lifestyle. Today, this lifelong dedication to the fjord continues through my Legacy Tours and the Balestrand Fishing School.
 
 **A Recognized Cultural Carrier:** Captain Tor is now widely acknowledged as a legendary figure in the region—a recognized Cultural Carrier and a certified STCW & NCE Fjord Guide. This isn't just about fishing; it’s about passing on the "song of the fjord" with the same passion my great-grandfather had.
 
@@ -70,6 +70,6 @@ Legacy is a bridge, and I have spent my life building it. For 25 years as a spec
 
 ### Building a Future Legacy: The Torchbearer
 
-Through the Balestrand Fishing School, we ensure that the song of the fjord continues. By teaching the next generation to respect the **"Hyper-nature"** of the Sognefjord, we are building a future legacy that honors our ancestors while protecting our children’s inheritance.
+**Through the Balestrand Fishing School**, we ensure that the song of the fjord continues. By teaching the next generation to respect the **"Hyper-nature"** of the Sognefjord, we are building a future legacy that honors our ancestors while protecting our children’s inheritance.
 
 > Step into the story. Experience the Sognefjord through the eyes of a pioneer
