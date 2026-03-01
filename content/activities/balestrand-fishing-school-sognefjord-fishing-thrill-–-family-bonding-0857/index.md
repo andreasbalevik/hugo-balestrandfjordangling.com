@@ -163,6 +163,10 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 >
 > Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
+## Looking for a place to stay in Balestrand?
+
+[Balestrand Fjord Apartments: ](https://www.fjordapartments.no/en/) New, high standard apartments in the hearth of Balestrand. Balconies with an amazing fjord view. Fully furnished, well equipped kitchen and bathroom. Perfect for a small family or if you are looking for a flexible stay. Next door to Captain Tor's Adventure House and 2 Min walk from the [Norled Fast Ferry ](https://www.norled.no/en/fjordcruise/sognefjord-bergen-flam/)
+
 ## **A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR**
 
 ### This is the true fjord experience, a special and historically relevant journey
