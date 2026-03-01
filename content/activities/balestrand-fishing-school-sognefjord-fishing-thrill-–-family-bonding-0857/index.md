@@ -97,11 +97,13 @@ It is time to trade screen time for *authentic **‘adventure time.’*** Join
 
 ### **Your Rare Expedition Possibility & A Meaningful Investment**
 
-**This is the highly sought-after family expedition around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!
+**This is the highly sought-after Fishing Culture Adventure Trip around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net! 
 
 ## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY!**
 
-Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you?
+Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you? This is also the trip we offer in the cold Winter season.
+
+> ***Chilled by the fjord, warmed by the soul. A Sognefjord signature.***
 
 ### **The unique about the fishing here in the Esefjord**
 
