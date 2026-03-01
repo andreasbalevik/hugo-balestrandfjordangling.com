@@ -63,7 +63,7 @@ cms: true
 ---
 ## "People don't take trips, trips take people." – In Balestrand, we take this literally.
 
-According to recent global trends highlighted by [Forbes,](https://www.forbes.com/sites/alexledsom/2026/01/29/travel-trends-in-2026-are-about-emotion-not-destination/) the ultimate travel currency in 2026 is no longer where you go, but how you feel when you are there. We have moved beyond the **"bucket list"** of sights to a **"soul list"** of experiences.
+**According to recent global trends highlighted by [Forbes,](https://www.forbes.com/sites/alexledsom/2026/01/29/travel-trends-in-2026-are-about-emotion-not-destination/)** the ultimate travel currency in 2026 is no longer where you go, but how you feel when you are there. We have moved beyond the **"bucket list"** of sights to a ***"soul list"*** of experiences.
 
 **Beyond the Map:** The Search for a Vibe
 Research shows that 25% of travelers now begin their journey by searching for a vibe or a feeling rather than a geographical location. They are looking for:
