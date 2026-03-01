@@ -1,9 +1,10 @@
 ---
-title: "Balestrand Fishing School: Sognefjord Fishing Thrill – Family Bonding"
+title: "Balestrand Fishing School: Sognefjord Fishing Thrill – Family Bonding &
+  Lokal Culture"
 quality: BASIC
 keywords:
   - Family Adventure Fun Fishing School Norway
-  - Sognefjord Fishing Trip
+  - Sognefjord Fishing Culture Trip
   - Family Bonding Experience
   - Disconnect to Reconnect
   - Authentic Travel Norway
