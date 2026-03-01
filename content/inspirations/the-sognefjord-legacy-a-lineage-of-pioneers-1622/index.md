@@ -26,7 +26,9 @@ keywords:
   - Balestrand Fjord Angling history
   - True North ancestry
   - Relational legacy.
-description: hhhh
+description: Experience Sognefjord’s legacy. Join Captain Tor, a lifelong
+  pioneer & cultural carrier in Balestrand. Authentic maritime heritage. Book
+  your story
 images:
   - src: images/kaptein-tor-som-7-åring-i-balaviki-alt-her-tar-han-besøkende-venner-med-på-fisketur-opplevelse.jpg
 related_activities:
