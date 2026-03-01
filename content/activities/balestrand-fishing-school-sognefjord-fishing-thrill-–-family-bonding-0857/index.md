@@ -39,6 +39,14 @@ images:
     alt: '"Children learning traditional gillnet fishing in Balestrand, Norway, with
       Captain Tor. Kids discovering a fresh catch in the net on a boat in the
       Sognefjord." '
+  - src: images/image-1146240273825409.jfif
+    alt: "\"Two Italian women from New York City experiencing the raw beauty of a
+      rainy day on the Sognefjord with Balestrand Fjord Angling. One woman is
+      laughing with pure joy while reeling in a fresh catch (whiting) on a
+      fishing rod. Authentic Norwegian nature experience with misty mountains
+      and rain, showcasing that 'Simplicity Creates Emotions' regardless of the
+      weather. Highlighting adventure travel, female empowerment in the
+      outdoors, and the 'Human Edge' in Balestrand, Norway.\""
   - src: images/esxae4wi.jpeg
     alt: "\"Captain Tor of Balestrand Fjord Angling teaching children traditional
       gillnet fishing on the Sognefjord. A young boy proudly holds a fresh
@@ -46,6 +54,11 @@ images:
       Kviknes Hotel and majestic mountains of Balestrand, Norway, provide a
       stunning backdrop. Highlighting the 'Fiskeskole' educational experience
       and authentic family fjord adventures.\""
+  - alt: "\"Cold hands, warm hearts: A group of friends from New York City holding
+      colorful starfish during a boat trip with Balestrand Fjord Angling.
+      Close-up of hands and starfish in the Sognefjord, Norway, showcasing
+      authentic nature experiences and the spirit of 'The Human Edge'.\""
+    src: images/image-2710149555991743.jfif
 tags:
   - family-and-friends
 information:
