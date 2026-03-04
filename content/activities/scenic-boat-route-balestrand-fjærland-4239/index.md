@@ -120,11 +120,11 @@ product_info:
       price: 9000
 cms: true
 ---
-## **Introduction: The Ultimate Sognefjord Private Boat Experience**
+## Introduction: The Ultimate Sognefjord Private Boat Experience
 
 **Sognefjord private boat trip to Fjærland. See glaciers, mountains & stunning nature up close. A rare, rustic adventure far from crowds. Explore Norway's heart.** This tour is for discerning travelers who collect unique experiences. It's a world-class, pristine fjord journey for those who are on the go and value authenticity over comfort. Note: No fishing on this trip, only sightseeing. If you want both, check out this [unique premium combination here ;)](https://balestrandfjordangling.com/activities/premium-balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-3328/)
 
-### **What is the boat experience like?**
+### What is the boat experience like?
 
 This is a private, open boat adventure route (boots and suits provided), meaning you are directly exposed to the elements for a truly authentic feel! You will experience stunning, small places along the Sognefjord with the legendary Captain Tor.
 
@@ -138,7 +138,7 @@ Yes, absolutely! It is a convenient and unique transfer trip for guests arriving
 
 Imagine tranquil waters, stunning waterfalls, glaciers, and historic homesteads with no road access. Find peace and value as we cruise along the entire fjord. A misty morning or a little rain only adds to the magic—you'll glow like a real Viking!
 
-It's a chance to decompress. Sit on the boat’s bow and dangle your legs over the side, feeling the fresh air in your hair or the rain kissing your cheek. Add a Norwegian flag, and you are officially on a fjord expedition! This is a perfect way to get close to the fjord, yourself, and nature. Some guests describe this trip as a "Fjord gallop"—wanna try?
+**It's a chance to decompress.** Sit on the boat’s bow and dangle your legs over the side, feeling the fresh air in your hair or the rain kissing your cheek. Add a Norwegian flag, and you are officially on a fjord expedition! This is a perfect way to get close to the fjord, yourself, and nature. Some guests describe this trip as a "Fjord gallop"—wanna try?
 
 > #### The Simple & Authentic is the new luxury
 
@@ -150,7 +150,7 @@ I will pick you up at the Fjærland Fjordstove Hotel in the morning if you are g
 
 > THE STORYTELLING TOPS THIS UNIQUE FJORD JOURNEY
 
-### **Discover & Learn about the area during the trip:**
+### Discover & Learn about the area during the trip:
 
 We stop regularly, and Captain Tor shares local stories and history. You can drink water right from the source, feeling fresh water on your face and the pure smell of nature.
 
