@@ -111,23 +111,9 @@ product_info:
       price: 14000
 cms: true
 ---
-## **Introduction: Sognefjord Phenomenon & Authentic Immersion**
-
-**Reward yourself with an exclusive adventure. A unique "slow travel" escape into authentic nature, designed for soul wellness & presence. A simple, sustainable luxury you truly deserve.**
-
-### **This a "bucket-list" experience**
-
-Captain Tor grants you exclusive access to a completely unique fjord context—a bucket-list phenomenon that discerning travelers seeking authentic adventure and wellness escapes must experience. 
-
-### **You can truly immerse myself in the Sognefjord's nature**
-
-\- Yes, the tour allows you to get emotional and fully immerse in the Sognefjord's ever-changing mood, exploring diverse fjord energies among towering mountains, glaciers, and pristine waterfalls. 
-
-> **Simply put: If you haven't had, you haven't truly lived.**
-
 ## **Explore the Sognefjord: A Premium Guide**
 
-**A Sognefjord Phenomenon That Makes an Impression:** Ladies and gentlemen: The best way to inspire is with your own story. This is an **immersive cultural journey**. We explore four distinct, living parts of the **\#Sognefjord.**
+**A Sognefjord Phenomenon That Makes an Impression:** The best way to inspire is with your own story. This is an **immersive cultural journey**. We explore four distinct, living parts of the **\#Sognefjord.**
 
 ### Learn about local culture and history:
 
@@ -139,11 +125,15 @@ Captain Tor grants you exclusive access to a completely unique fjord context—a
 
 ### **What we expect from the fjord fishing experience:**
 
-**Fun Fjord Angling: *“Hey I’ve got a fish!”:***  Enjoy easy and fun **\#fjordfishing** in the beautiful, legendary **\#esefjord**, surrounded by high, picturesque mountains. Captain Tor shares childhood stories of catching “Sand Whiting”—fun to fish, easy to hook, and great for lunch. They call them “Fjord Chicken”—what a cool name! This is a genuine, hands-on **angling adventure**.
+> Fun Fjord Angling for everyone -  *“Hey I’ve got a fish!”* 
+
+Enjoy easy and fun **\#fjordfishing** in the beautiful, legendary **\#esefjord**, surrounded by high, picturesque mountains. Captain Tor shares childhood stories of catching “Sand Whiting”—fun to fish, easy to hook, and great for lunch. They call them “Fjord Chicken”—what a cool name! This is a genuine, hands-on **angling adventure**.
 
 ### **Why is this experience so restorative?**
 
-**Cause Simplicity Creates Emotions: *“This is so nice..”.*** There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder. 
+> Cause Simplicity Creates Emotions: *“This is so nice”.* 
+
+There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder. 
 
 ### I am Exited! Do you have any video inspiration from the tour?
 
@@ -155,7 +145,7 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 
 ## **Plan a day in Balestrand: The Fjord & Mountain Challenge**
 
-**The trip for active travelers: The Trendy & Fun Lifestyle – The Energy Booster**
+> The trip for active travelers: The Trendy & Fun Lifestyle – The Energy Booster
 
 This is also the perfect solution for a sporty girls’/boys’ trip—an ideal **\#adventuretourism** package. Here is a concrete "Work-out holiday" suggestion: a challenging `#Raudmelen` mountain hiking trip in the morning, followed by a relaxing and educational fishing trip in the fjord in the afternoon. It’s a concrete mission to solve, and finally something that makes sense! Share our website and tell your friends about this unique opportunity in Balestrand, Norway.
 
