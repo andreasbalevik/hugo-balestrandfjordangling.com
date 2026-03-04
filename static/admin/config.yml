@@ -280,7 +280,52 @@ collections:
                 min: 0
                 max: 1
                 field: {label: Featured,name: featured,widget: relation,collection: featured,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
-                
+
+          - label: "Why Choose Us (USP)"
+            name: "usp"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', default: 'Why Explore with Captain Tor?' }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                min: 3
+                max: 3
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Description', name: 'description', widget: 'text' }
+                  - { label: 'Icon (SVG path d)', name: 'icon', widget: 'hidden', hint: 'Paste the SVG path d attribute here' }
+
+          - label: "Reviews"
+            name: "reviews"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', default: 'What our guests say' }
+              - { label: 'Review Text', name: 'quote', widget: 'text' }
+              - { label: 'Author', name: 'author', widget: 'string' }
+              - label: 'Guest Image'
+                name: 'image'
+                widget: 'image'
+                required: false
+
+          - label: "Visual Gallery"
+            name: "gallery"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', default: 'Moments from the Fjord' }
+              - { label: 'Instagram URL', name: 'instagram_url', widget: 'hidden', default: 'https://www.instagram.com/balestrandfjordangling/' }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                min: 3
+                max: 10
+                fields:
+                  - { label: 'Image', name: 'src', widget: 'image' }
+                  - { label: 'Alt Text', name: 'alt', widget: 'string' }
+
 
           - label: "Recommended inspirations"
             name: "inspirations"
