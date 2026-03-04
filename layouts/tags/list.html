@@ -4,7 +4,7 @@
 {{ if .Content }}
 <section style="background-color: {{ .Params.color }};">
     <div class="container">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">{{ .Title }}</h1>
+        <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-bold text-white">{{ .Title }}</h1>
         <div class="text-lg md:text-xl leading-relaxed text-white max-w-none">
             {{ .Content }}
         </div>
@@ -15,13 +15,13 @@
 <!-- Activities List (with filter above) -->
 <div class="container">
     <!-- Filter Dropdown -->
-    <div class="flex items-center gap-2 pb-3">
-        <b>Filter:</b>
+    <div class="flex items-center gap-3 pb-3">
+        <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="rounded-xl px-5 py-2 text-center inline-flex items-center"
+                class="rounded-xl px-6 py-4 text-center inline-flex items-center"
                 type="button">
-                <span style="background-color: {{.Params.color}};" class="px-2 rounded-xl text-white">
+                <span style="background-color: {{.Params.color}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
                     {{.Title}}
                 </span>
                 <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -36,7 +36,7 @@
                 <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
-                        <li class="block px-4 py-2 hover:bg-gray-100">
+                        <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
                             All activities
                         </li>
                     </a>
@@ -45,7 +45,7 @@
                     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                     {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                     <a href="{{ .RelPermalink }}">
-                        <li class="block px-4 py-2 hover:bg-gray-100">
+                        <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
                             {{ .Title }}
                         </li>
                     </a>
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <hr class="mb-10 text-gray-300">
+    <hr class="mb-12 text-gray-300">
 
     <!-- Activities Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">

@@ -2,18 +2,18 @@
 
 <div class="container">
 <!-- Hero Card (Image + Content) -->
-<article class="bg-white overflow-hidden shadow-lg border border-gray-300 rounded-lg">
+<article class="bg-white overflow-hidden shadow-lg border border-gray-300 rounded-xl">
     <!-- Hero Image Section -->
-    <section class="bg-stone-50 w-full rounded-t-lg overflow-hidden">
+    <section class="bg-stone-50 w-full overflow-hidden">
         {{ range first 1 .Params.images }}
             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
         {{ end }}
     </section>
 
     <!-- Content Section -->
-    <div class="container rounded-b-lg">
+    <div class="container">
         <div class="mx-auto max-w-4xl">
-            <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:lg:text-5xl prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
+            <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h1:mt-0 prose-h1:mb-6 prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:lg:text-5xl prose-h2:mt-0 prose-h2:mb-6 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
                 {{ partial "components/prose-content.html" .}}
             </div>
         </div>

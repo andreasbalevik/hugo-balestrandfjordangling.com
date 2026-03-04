@@ -2,7 +2,7 @@
 
 <article class="container">
     <!-- Hero Card (Image + Content) -->
-    <div class="bg-white rounded-none md:rounded-lg overflow-hidden shadow-lg border border-gray-300">
+    <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300">
         <!-- Hero Image Section -->
         <section class="bg-stone-50 w-full">
             {{ with index .Params.images 0 }}
@@ -13,7 +13,7 @@
         <!-- Content Section -->
         <div class="container">
             <div class="mx-auto max-w-4xl">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 mb-8">
+                <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
                     {{ .Title }}
                 </h1>
                 
@@ -32,15 +32,15 @@
     <section class="bg-[#f3f7f6]">
         <div class="container pt-0">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                <h2 class="mt-0 mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                     Related Activities
                 </h2>
-                <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                <p class="mb-6 text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
                     Experience these curated adventures inspired by this story
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 gap-8 mx-auto">
+            <div class="grid grid-cols-1 gap-6 md:gap-8 mx-auto">
                 {{ range . }}
                     {{ $page := replace . "/index" "" }}
                     {{ with $.Site.GetPage $page }}

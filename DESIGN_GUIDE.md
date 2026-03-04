@@ -75,66 +75,104 @@ Border Subtle:                     #f3f7f6  - Stone color (minimal dividers)
 H1 (Page/Hero Titles):    text-3xl md:text-4xl lg:text-5xl font-bold
 H2 (Section Titles):      text-2xl md:text-3xl lg:text-4xl font-bold
 H3 (Subsections):         text-xl md:text-2xl font-bold
+H4 (Card/Subsection):     text-lg md:text-xl font-bold
 ```
 
-### Body Text
+### Body Text & Labels
 ```
 Large Body:               text-lg md:text-xl leading-relaxed
 Regular Body:             text-base leading-relaxed
 Small Text:               text-sm
 Button Text:              text-lg font-semibold
+Labels & Captions:        text-sm font-semibold text-gray-500
+```
+
+### Font Size Scale (Responsive)
+```
+text-xs:   0.75rem (12px)
+text-sm:   0.875rem (14px)  → Use for labels, small text, UI elements
+text-base: 1rem (16px)      → Default body text
+text-lg:   1.125rem (18px)  → Large body, button text
+text-xl:   1.25rem (20px)   → Sub-headings, highlights
+text-2xl:  1.5rem (24px)    → Secondary headings (H3)
+text-3xl:  1.875rem (30px)  → Page titles (H1 mobile)
+text-4xl:  2.25rem (36px)   → Page titles (H1 tablet)
+text-5xl:  3rem (48px)      → Page titles (H1 desktop)
 ```
 
 ### Rules
-- Use `font-bold` for ALL headings
+- Use `font-bold` for ALL headings (H1-H4)
 - Use `leading-relaxed` (1.625) for body text
 - All H1s are the same size across the entire site
 - No custom font sizes outside this system
+- Use `text-sm font-semibold` for labels and captions with `text-gray-500` for color
+- Labels should be visually distinct but not overwhelming
 
 ---
 
 ## 📏 Spacing & Layout
 
-### Section Padding (Standard rhythm)
+### Vertical Spacing (Margins) - Consistent & Predictable
 ```
-Large Sections:   py-12 md:py-16          (48px → 64px)
-Standard:         py-8 md:py-12           (32px → 48px)
-Compact:          py-6 md:py-8            (24px → 32px)
-```
-
-### Content Spacing
-```
-Between Sections:   mb-12                 (48px)
-Between Elements:   mb-6 to mb-8          (24px → 32px)
-Between Items:      mb-4                  (16px)
+Between major sections:   mb-12 (48px)  - Breathing room between sections
+Between elements:         mb-6  (24px)  - Standard gap between content
+Between small items:      mb-4  (16px)  - Compact spacing
+Between text elements:    mb-3  (12px)  - Minimal spacing
 ```
 
-### Card/Component Padding
+### Typography Spacing Pattern (Critical for hierarchy)
 ```
-Large Cards:        p-8 md:p-12 lg:p-16   (Generous padding)
-Standard Cards:     p-6 md:p-8            (32px → 24px)
-Form Inputs:        p-3                   (12px)
-```
-
-### Container & Grid
-```
-Container:          .container class      (includes py-12 md:py-16)
-Grid Gaps:          gap-6 md:gap-8        (24px → 32px)
-Max Width:          max-w-4xl             (896px for content)
+H1/H2/H3 to following element:  mb-6 (24px) - CONSISTENT
+H3 to description:               mb-4 (16px) - Tighter
+Description to button:           inherit     - No added margin
 ```
 
-### Rules
+### Horizontal/Card Padding (Ensures consistent borders)
+```
+Large cards:        p-8 md:p-12 lg:p-16      (32px → 48px → 64px)
+Standard cards:     p-6 md:p-8               (24px → 32px)
+Compact:            p-4 md:p-6               (16px → 24px)
+Buttons/inputs:     px-6 py-3                (24px horizontal, 12px vertical)
+```
+
+### Grid Spacing - Always Consistent
+```
+All grids:          gap-6 md:gap-8           (24px → 32px) - NO VARIATION
+Grid to next:       mb-12                    (After grid)
+```
+
+### Section Padding
+```
+Main sections:      py-12 md:py-16           (Container has padding)
+Compact sections:   py-8 md:py-12
+Card sections:      p-8 md:p-12 lg:p-16      (Inside cards)
+```
+
+### Container Usage
+```
+<section>                          (No padding - section control)
+  <div class="container">          (Includes padding: py-12 md:py-16)
+    <!-- Content -->
+  </div>
+</section>
+```
+
+### Rules - CRITICAL for consistency
 ✅ **DO:**
 - Use `.container` for all main content sections (includes padding)
-- Never add `py-12` to a section that wraps `.container`
-- Use `gap-6 md:gap-8` for all grids
-- Use `mb-12` between major content blocks
-- Create visual breathing room with generous spacing
+- Heading: `mt-0 mb-6` (always)
+- Text after heading: `mb-6` or `mb-4` (same spacing down)
+- Between sections: `mb-12` (consistent breathing room)
+- Grids: `gap-6 md:gap-8` (NEVER vary this)
+- Card padding: `p-8 md:p-12 lg:p-16` or `p-6 md:p-8` (no custom values)
 
 ❌ **DON'T:**
-- Add padding around `.container` (redundant)
-- Mix different gap sizes in grids
-- Use inconsistent spacing rhythms
+- Mix margin sizes randomly (mb-3, mb-8, mb-10 in same area)
+- Add `py-` padding to sections that already use `.container`
+- Use inconsistent gap sizes in grids
+- Have different spacing between similar elements
+- Create ad-hoc padding values (e.g., `p-10`, `p-7`)
+- Leave headings with `mt-` (use `mt-0` always)
 
 ---
 
@@ -249,18 +287,26 @@ rounded-none md:rounded-lg                 - Rounded only on desktop
 - [ ] Only orange (#e09a00) for CTAs
 
 ### Spacing & Layout
-- [ ] All grids use `gap-6 md:gap-8`
-- [ ] No padding added around `.container` sections
-- [ ] Between content blocks: `mb-12`
-- [ ] Card padding follows system: `p-6 md:p-8` or `p-8 md:p-12 lg:p-16`
-- [ ] Responsive classes follow pattern: `property-mobile md:property-tablet lg:property-desktop`
+- [ ] All headings: `mt-0` (no top margin)
+- [ ] H1 to text: `mb-6` (consistent)
+- [ ] H2 to text: `mb-6` (consistent)
+- [ ] H3 to text: `mb-4` (consistent)
+- [ ] Between major sections: `mb-12` (breathing room)
+- [ ] Card padding: `p-8 md:p-12 lg:p-16` or `p-6 md:p-8` (no custom values)
+- [ ] All grids: `gap-6 md:gap-8` (no variation)
+- [ ] Container used for all main sections (includes padding)
+- [ ] No random spacing values (mb-3, mb-5, mb-7, mb-10, etc.)
+- [ ] Visual consistency: spacing looks smooth and intentional
 
 ### Typography
 - [ ] H1 is text-3xl md:text-4xl lg:text-5xl (consistent)
 - [ ] H2 is text-2xl md:text-3xl lg:text-4xl
+- [ ] H3 is text-xl md:text-2xl
 - [ ] Body text has `leading-relaxed`
 - [ ] All headings are `font-bold`
 - [ ] Text color is either `text-gray-900` (headings) or `text-gray-700` (body)
+- [ ] Labels use `text-sm font-semibold text-gray-500`
+- [ ] Clear visual hierarchy through consistent font sizing
 
 ### Components
 - [ ] Cards have white background + gray border + shadow

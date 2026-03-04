@@ -8,8 +8,8 @@
         <!-- Modal Content -->
         <article class="relative bg-white rounded-xl shadow-lg border border-gray-300">
             <!-- Modal Header -->
-            <header class="flex items-center justify-between p-4 md:p-5 border-b border-gray-300">
-                <h3 id="modal-title" class="text-xl md:text-2xl font-bold text-gray-900">
+            <header class="flex items-center justify-between p-4 md:p-6 border-b border-gray-300">
+                <h3 id="modal-title" class="mt-0 text-xl md:text-2xl font-bold text-gray-900">
                     Make a request
                 </h3>
                 <button type="button"
@@ -41,7 +41,7 @@
                             </div>
                             {{ end }}
                             <div class="md:col-span-2 flex flex-col justify-center">
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 mt-0!">{{ .Title }}</h4>
+                                <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 mt-0">{{ .Title }}</h4>
                                 <div class="space-y-2">
                                     {{ with .Params.product_info.duration }}
                                     <div class="flex items-center text-base text-gray-700">
@@ -52,7 +52,7 @@
                                     </div>
                                     {{ end }}
                                     {{ with .Params.summary }}
-                                    <p class="text-base text-gray-700 leading-relaxed mt-3">{{ . }}</p>
+                                    <p class="text-base text-gray-700 leading-relaxed mt-4">{{ . }}</p>
                                     {{ end }}
                                 </div>
                             </div>
@@ -61,23 +61,23 @@
 
                     <!-- Full Name -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="name" class="block mb-2 text-base font-semibold text-gray-900">Full Name *</label>
+                        <label for="name" class="block mb-4 text-base font-semibold text-gray-900">Full Name *</label>
                         <input type="text" name="name" id="name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-4 transition-colors duration-300"
                             placeholder="Enter full name" required>
                     </div>
 
                     <!-- Email -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="email" class="block mb-2 text-base font-semibold text-gray-900">Your email *</label>
+                        <label for="email" class="block mb-4 text-base font-semibold text-gray-900">Your email *</label>
                         <input type="email" id="email" name="email" 
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-4 transition-colors duration-300"
                             placeholder="name@example.com" required>
                     </div>
 
                     <!-- Date -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="date" class="block mb-2 text-base font-semibold text-gray-900">Date *</label>
+                        <label for="date" class="block mb-4 text-base font-semibold text-gray-900">Date *</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
@@ -87,16 +87,16 @@
                                 </svg>
                             </div>
                             <input id="date" name="date" type="date"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full ps-10 p-3 transition-colors duration-300"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full ps-10 p-4 transition-colors duration-300"
                                 required>
                         </div>
                     </div>
 
                     <!-- Time -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="time" class="block mb-2 text-base font-semibold text-gray-900">Time *</label>
+                        <label for="time" class="block mb-4 text-base font-semibold text-gray-900">Time *</label>
                         <select id="time" name="time"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-4 transition-colors duration-300">
                             <option value="09:00">09:00</option>
                             <option value="12:00">12:00</option>
                             <option value="15:00">15:00</option>
@@ -106,9 +106,9 @@
 
                     <!-- Total Guests -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="people" class="block mb-2 text-base font-semibold text-gray-900">Total Guests *</label>
+                        <label for="people" class="block mb-4 text-base font-semibold text-gray-900">Total Guests *</label>
                         <select id="people" name="people"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-3 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-xl focus:ring-[#e09a00] focus:border-[#e09a00] block w-full p-4 transition-colors duration-300">
                             {{ range .Params.product_info.prices }}
                             <option value="{{ .person_number }}" data-price="{{ .price }}">{{ .person_number }}</option>
                             {{ end }}
@@ -122,17 +122,17 @@
 
                     <!-- Total Price -->
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="price-visible" class="block mb-2 text-base font-semibold text-gray-900">Total Price</label>
+                        <label for="price-visible" class="block mb-4 text-base font-semibold text-gray-900">Total Price</label>
                         <input type="text" id="price-visible" name="total_price"
-                            class="bg-gray-100 border border-gray-300 text-gray-900 text-base rounded-xl block w-full p-3"
+                            class="bg-gray-100 border border-gray-300 text-gray-900 text-base rounded-xl block w-full p-4"
                             value="{{ range first 1 .Params.product_info.prices }}{{ .price }}{{ end }},- NOK" readonly>
                     </div>
 
                     <!-- Message -->
                     <div class="col-span-2">
-                        <label for="message" class="block mb-2 text-base font-semibold text-gray-900">Message *</label>
+                        <label for="message" class="block mb-4 text-base font-semibold text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
-                            class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
+                            class="block p-4 w-full text-base text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-[#e09a00] focus:border-[#e09a00] transition-colors duration-300"
                             placeholder="Tell us about yourself..." required></textarea>
                     </div>
 
