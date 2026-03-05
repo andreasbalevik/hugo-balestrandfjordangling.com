@@ -3,11 +3,11 @@
   Usage: {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
 */}}
 <button data-modal-target="crud-modal"
-    class="text-lg font-semibold text-white bg-gradient-to-br rounded-xl from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] px-6 py-4 inline-flex items-center gap-2 cursor-pointer transition-all duration-300 group"
+    class="w-full md:w-auto text-sm md:text-base font-semibold text-white bg-gradient-to-br rounded-lg from-[#e09a00] to-[#c58700] hover:from-[#d08900] hover:to-[#b07700] px-4 md:px-6 py-2 inline-flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 group"
     type="button"
     aria-label="Open booking request form">
     <span>{{ .text | default "Make a request" }}</span>
-    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
+    <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
          aria-hidden="true"
          xmlns="http://www.w3.org/2000/svg" 
          width="24" 
