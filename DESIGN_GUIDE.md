@@ -157,9 +157,52 @@ Card sections:      p-8 md:p-12 lg:p-16      (Inside cards)
 </section>
 ```
 
+### Section Background Pattern - Alternating Colors
+**CRITICAL:** Sections should alternate background colors for visual rhythm and separation:
+
+```html
+<!-- Pattern 1: White → Stone → White → Stone -->
+<section class="bg-white">
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+
+<section class="bg-stone-50">
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+```
+
+**Rules:**
+- ✅ Always alternate: `bg-white` → `bg-stone-50` → `bg-white`
+- ✅ Start with `bg-white` for first content section after hero
+- ✅ Never have two consecutive sections with same background
+- ✅ Use only `bg-white` and `bg-stone-50` for alternation
+- ✅ Featured sections can break pattern with `bg-[#769ba4]` or `bg-[#05694c]`
+
+**Example Page Structure:**
+```html
+<section class="bg-white">          <!-- Hero/Intro -->
+<section class="bg-stone-50">       <!-- Info cards -->
+<section class="bg-white">          <!-- Content -->
+<section class="bg-stone-50">       <!-- Additional content -->
+<section class="bg-[#769ba4]">      <!-- Featured section (breaks pattern) -->
+<section class="bg-white">          <!-- Resume alternation -->
+```
+
 ### Rules - CRITICAL for consistency
 ✅ **DO:**
 - Use `.container` for all main content sections (includes padding)
+- Always use `<section><div class="container">` structure
+- Alternate section backgrounds: `bg-white` → `bg-stone-50` → `bg-white`
 - Heading: `mt-0 mb-6` (always)
 - Text after heading: `mb-6` or `mb-4` (same spacing down)
 - Between sections: `mb-12` (consistent breathing room)
@@ -173,6 +216,8 @@ Card sections:      p-8 md:p-12 lg:p-16      (Inside cards)
 - Have different spacing between similar elements
 - Create ad-hoc padding values (e.g., `p-10`, `p-7`)
 - Leave headings with `mt-` (use `mt-0` always)
+- Have two consecutive sections with same background color
+- Put content directly in `<section>` without `.container`
 
 ---
 
@@ -261,7 +306,14 @@ rounded-none md:rounded-lg                 - Rounded only on desktop
 ### Featured Sections (Full Width)
 - **Ocean Blue Section:** `bg-[#769ba4] text-white`
 - **Forest Green Section:** `bg-[#05694c] text-white`
-- **Stone Background:** `bg-[#f3f7f6]`
+- **Stone Background:** `bg-stone-50` (alternating with white)
+- **White Background:** `bg-white` (alternating with stone)
+
+### Section Structure Rules
+- **Always use:** `<section><div class="container">` pattern
+- **Background alternation:** `bg-white` → `bg-stone-50` → `bg-white` → `bg-stone-50`
+- **Featured sections can break pattern** with accent colors (`bg-[#769ba4]`, `bg-[#05694c]`)
+- **After featured section:** Resume alternation with opposite of previous normal section
 
 ### Cards and Content
 - **All cards:** `border border-gray-300 bg-white`
@@ -279,7 +331,8 @@ rounded-none md:rounded-lg                 - Rounded only on desktop
 
 ### Visual Design
 - [ ] All cards have `border border-gray-300` for defined edges
-- [ ] Sections without cards have NO background color or border
+- [ ] Section backgrounds alternate: `bg-white` → `bg-stone-50` → `bg-white`
+- [ ] All sections use `<section><div class="container">` structure
 - [ ] Generous whitespace (mb-12 between sections, p-8+ in cards)
 - [ ] Large, bold headings (H1: text-3xl+, H2: text-2xl+)
 - [ ] All shadows are `shadow-lg`, not `shadow-xl`
@@ -297,6 +350,7 @@ rounded-none md:rounded-lg                 - Rounded only on desktop
 - [ ] Container used for all main sections (includes padding)
 - [ ] No random spacing values (mb-3, mb-5, mb-7, mb-10, etc.)
 - [ ] Visual consistency: spacing looks smooth and intentional
+- [ ] No two consecutive sections with same background color
 
 ### Typography
 - [ ] H1 is text-3xl md:text-4xl lg:text-5xl (consistent)
@@ -345,14 +399,36 @@ rounded-none md:rounded-lg                 - Rounded only on desktop
 
 When creating or updating any page/component:
 
-1. **For content sections:** Use `.container` wrapper (padding included), NO background color, NO border
-2. **For cards/highlighted content:** Use `border border-gray-300 bg-white rounded-lg shadow-lg p-8 md:p-12`
-3. **For featured sections:** Use solid background color (`bg-[#769ba4]`, `bg-[#05694c]`, or `bg-[#f3f7f6]`), NO borders
-4. **For typography:** Use consistent heading sizes across all pages
-5. **For spacing:** Use `gap-6 md:gap-8` for grids, `mb-12` between sections, `p-8 md:p-12 lg:p-16` for cards
-6. **For images:** Apply rounded corners to card wrapper with `overflow-hidden`, not to image element
-7. **For borders:** Use `border-gray-300` ONLY on cards; never on sections
-8. **For hover states:** Always include `transition-all duration-300`
+1. **For section structure:** ALWAYS use `<section><div class="container">` pattern
+2. **For section backgrounds:** Alternate `bg-white` and `bg-stone-50` for visual rhythm
+3. **For cards/highlighted content:** Use `border border-gray-300 bg-white rounded-lg shadow-lg p-8 md:p-12`
+4. **For featured sections:** Use solid background color (`bg-[#769ba4]`, `bg-[#05694c]`), NO borders
+5. **For typography:** Use consistent heading sizes across all pages
+6. **For spacing:** Use `gap-6 md:gap-8` for grids, `mb-12` between sections, `p-8 md:p-12 lg:p-16` for cards
+7. **For images:** Apply rounded corners to card wrapper with `overflow-hidden`, not to image element
+8. **For borders:** Use `border-gray-300` ONLY on cards; never on sections
+9. **For hover states:** Always include `transition-all duration-300`
+
+**Section Pattern Example:**
+```html
+<section class="bg-white">           <!-- First section -->
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+
+<section class="bg-stone-50">        <!-- Second section (alternates) -->
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+
+<section class="bg-white">           <!-- Third section (alternates back) -->
+  <div class="container">
+    <!-- Content -->
+  </div>
+</section>
+```
 
 ---
 
@@ -361,7 +437,9 @@ When creating or updating any page/component:
 Your design is about **clarity through subtlety**:
 - Content is clearly **defined** by subtle borders, not by flashy colors or heavy shadows
 - The interface **breathes** through generous whitespace and consistent spacing
+- **Visual rhythm** through alternating section backgrounds (`bg-white` ↔ `bg-stone-50`)
 - **Hierarchy** comes from typography scale and strategic use of the orange accent
+- **Structure** follows strict `<section><div class="container">` pattern for consistency
 - The design is **Scandinavian** — clean, efficient, professional, and refined
 
 Every component should feel like a **distinct, well-crafted element** without being loud or ornamental.

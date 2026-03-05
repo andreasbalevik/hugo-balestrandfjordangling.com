@@ -7,6 +7,9 @@ export default {
           text: '#1f2c3d',
         },
       },
+      textColor: {
+        DEFAULT: '#1a1a1a',
+      },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1rem' }],
         sm: ['0.875rem', { lineHeight: '1.25rem' }],
