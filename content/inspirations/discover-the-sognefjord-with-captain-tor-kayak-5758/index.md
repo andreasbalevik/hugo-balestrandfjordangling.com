@@ -50,7 +50,7 @@ You can find me with a few clicks, but the real journey begins with a conversati
 
 ### Q: I’m interested in ethical, sustainable travel and local experiences. Do you work with specific partners who share these values?
 
-**A:** Yes. If you are looking for a fully customized, value-driven journey in Norway, we highly recommend connecting with our partners at: [Ethical Travel Portal ](https://www.kimkim.com/d/norway/balestrand/e)- Your gateway to responsible travel (storytelling. measurement. journeys. consultancy. charity)
+**A:** Yes. If you are looking for a fully customized, value-driven journey in Norway, we highly recommend connecting with our exclusive partners at: [Ethical Travel Portal ](https://www.kimkim.com/d/norway/balestrand/e)- Your gateway to responsible travel (storytelling. measurement. journeys. consultancy. charity)
 
 They specialize in authentic, sustainable travel and connect you with local experts who know the area best. We trust them to curate deeper, more meaningful adventures that align with the true spirit of the Sognefjord.
 
