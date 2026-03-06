@@ -12,6 +12,8 @@ baseURL = 'https://balestrandfjordangling.com'
   resampleFilter = 'MitchellNetravali'
 
 [Params]
+  logo = "/favicon/android-chrome-512x512.png"
+  brand_image = "/favicon/android-chrome-512x512.png"
   ogimage = ""
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
