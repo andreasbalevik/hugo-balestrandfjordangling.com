@@ -184,8 +184,17 @@
         scroll-behavior: smooth;
     }
     
-    * {
-        scroll-margin-top: 100px;
+    /* Account for fixed header (56px) + sticky tabs height */
+    /* Mobile: Header (56px) + Tabs (approx 140px due to flex-col) = ~200px */
+    #about, #practical, #gallery {
+        scroll-margin-top: 210px;
+    }
+    
+    /* Desktop: Header (56px) + Tabs (approx 80px) = ~140px */
+    @media (min-width: 768px) {
+        #about, #practical, #gallery {
+            scroll-margin-top: 150px;
+        }
     }
     
     /* Active navigation link indicator */
@@ -216,7 +225,10 @@
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 150)) {
+                // Adjust offset based on screen size (matching CSS scroll-margin-top)
+                const offset = window.innerWidth >= 768 ? 160 : 220;
+                
+                if (pageYOffset >= (sectionTop - offset)) {
                     current = section.getAttribute('id');
                 }
             });
