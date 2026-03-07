@@ -1,6 +1,6 @@
 ---
 title: Curated E-Bike Tour & Holistic Balestrand Discovery
-quality: The Human Edge
+quality: GUIDED BIKE TOUR
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord E-Bike
