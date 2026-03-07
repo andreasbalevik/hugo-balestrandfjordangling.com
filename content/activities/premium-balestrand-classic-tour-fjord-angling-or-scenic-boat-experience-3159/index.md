@@ -1,6 +1,6 @@
 ---
-title: "Premium Balestrand Classic Tour: Fjord Angling & Scenic Boat Experience"
-quality: The Human Edge
+title: "Balestrand Classic Tour: Fjord Angling & Scenic Boat Experience"
+quality: PREMIUM
 keywords:
   - Sustainable Tourism
   - Ecotourism Norway

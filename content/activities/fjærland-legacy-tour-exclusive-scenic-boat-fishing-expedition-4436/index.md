@@ -1,6 +1,6 @@
 ---
 title: "Fjærland Legacy Tour: Exclusive Scenic Boat & Fishing Expedition"
-quality: The Human Edge
+quality: Go Viking & Springfulness
 keywords:
   - Fjærland Legacy Tour
   - Fjærland Fjord Expedition

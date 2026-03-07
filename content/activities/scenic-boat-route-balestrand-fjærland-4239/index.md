@@ -1,6 +1,6 @@
 ---
 title: "SCENIC BOAT ROUTE: BALESTRAND <-> FJÆRLAND"
-quality: The Human Edge
+quality: Go Viking & Springfulness
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord

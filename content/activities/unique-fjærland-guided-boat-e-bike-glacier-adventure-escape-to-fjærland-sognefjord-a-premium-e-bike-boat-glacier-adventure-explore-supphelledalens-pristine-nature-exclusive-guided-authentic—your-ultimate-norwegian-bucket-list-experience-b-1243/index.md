@@ -1,6 +1,6 @@
 ---
 title: "Unique Fjærland: Guided Boat & E-Bike Glacier Adventure "
-quality: The Human Edge
+quality: Go Viking & Springfulness
 keywords:
   - Fjærland Glacier Adventure
   - Supphelledalen Glacier Hike

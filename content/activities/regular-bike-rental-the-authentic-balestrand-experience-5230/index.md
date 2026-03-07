@@ -1,6 +1,6 @@
 ---
 title: "REGULAR BIKE RENTAL: The Authentic Balestrand Experience"
-quality: BIKERENTAL
+quality: BIKE RENTAL
 keywords:
   - Bike Rental Norway
   - Sognefjord Cycling
