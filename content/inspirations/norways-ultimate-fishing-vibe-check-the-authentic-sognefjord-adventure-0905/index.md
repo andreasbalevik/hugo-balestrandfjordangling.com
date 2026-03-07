@@ -53,8 +53,8 @@ keywords:
   - soul searching norway
   - mindful travel norway
 description: I live in Norway, in the never–summer land of Balestrand in the
-  middle of the Sognefjord. It's 4275 feet deep and far away from the crowded
-  cities and tourist resorts of Europe..
+  middle of the Sognefjord. It's far away from the crowded cities and tourist
+  resorts of Europe..
 images:
   - src: images/kaptain-tor-and-miss-fjords-on-mission-among-high-mountains-in-sognefjord.jpg
 related_activities:
@@ -72,7 +72,7 @@ cms: true
 
 ### *I believe there is a force in the Sognefjord,*
 
-*that lives beneath the surface. Something primitive and wild that awakens when you need an extra push just to survive. Like the oyster-catcher who whistles spring back on the shore and the pollack willingly bites the hook; The joy of Spring-fullness rushes through the blood and shouts with pure joy and life!*
+*that lives beneath the surface. Something primitive and wild that awakens when you need an extra push just to survive. Like the oyster-catcher who whistles spring back on the shore and the pollack willingly bites the hook; The joy of Springfulness rushes through the blood and shouts with pure joy and life!*
 
 ### *Most people are afraid of this natural force,*
 
