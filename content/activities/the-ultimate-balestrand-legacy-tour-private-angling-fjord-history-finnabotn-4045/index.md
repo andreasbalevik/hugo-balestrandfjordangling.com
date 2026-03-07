@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Horizon: A Private Masterclass in Fjord Life and Analog
   Experiences"
-quality: The Human Edge
+quality: Go Viking & Springfulness
 keywords:
   - Sustainable Tourism Norway
   - Ecotourism Sognefjord
