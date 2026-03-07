@@ -1,30 +1,98 @@
 {{ define "main" }}
 
-<div class="container">
-<!-- Hero Card (Image + Content) -->
-<article class="bg-white overflow-hidden shadow-lg border border-gray-300 rounded-xl">
-    <!-- Hero Image Section -->
-    <section class="bg-stone-50 w-full overflow-hidden">
-        {{ range first 1 .Params.images }}
+<!-- Cinematic hero — Captain Tor is not a product, he's a person -->
+<section class="relative mt-[56px] overflow-hidden">
+    {{ with index .Params.images 0 }}
+    <div class="relative">
+        <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
-        {{ end }}
-    </section>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/85 via-[#1d3640]/25 to-transparent"></div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0">
+        <div class="container py-10 md:py-14">
+            <div class="max-w-2xl">
+                <p class="text-sm font-semibold text-white/70 uppercase tracking-widest mb-4">4th generation · Balevik bay</p>
+                <h1 class="mt-0 mb-0 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+                    {{ $.Title }}
+                </h1>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
 
-    <!-- Content Section -->
+<!-- Prose — uncontained, bare white, just reading -->
+<section class="bg-white">
     <div class="container">
-        <div class="mx-auto max-w-4xl">
-            <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h1:mt-0 prose-h1:mb-6 prose-h1:text-3xl prose-h1:md:text-4xl prose-h1:lg:text-5xl prose-h2:mt-0 prose-h2:mb-6 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
+        <div class="max-w-3xl mx-auto py-14 md:py-20">
+            <div class="w-12 h-1 bg-[#e09a00] rounded-full mb-8"></div>
+
+            <!-- Byline -->
+            <div class="flex items-center gap-3 pb-8 border-b border-gray-100 mb-10">
+                <div class="w-9 h-9 rounded-full bg-[#1d3640] ring-2 ring-[#769ba4]/40 flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 text-[#769ba4]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <span class="text-sm font-semibold text-gray-800">Captain Tor</span>
+                    <div class="flex items-center gap-2 text-xs text-gray-400">
+                        <span>Balestrand, Sognefjord</span>
+                        {{ if and .Lastmod (not .Lastmod.IsZero) }}
+                        <span aria-hidden="true">·</span>
+                        <span>Last updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
+                        {{ else if .GitInfo }}
+                        <span aria-hidden="true">·</span>
+                        <span>Last updated <time datetime="{{ .GitInfo.AuthorDate.Format "2006-01-02" }}">{{ .GitInfo.AuthorDate.Format "Jan 2, 2006" }}</time></span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="prose md:prose-lg lg:prose-xl max-w-none
+                prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24
+                prose-h1:hidden
+                prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-2xl prose-h2:md:text-3xl
+                prose-h3:text-xl prose-h3:md:text-2xl
+                prose-p:text-gray-700 prose-p:leading-relaxed
+                prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
+                prose-img:rounded-lg prose-img:shadow-lg
+                prose-strong:text-gray-900 prose-strong:font-semibold
+                prose-blockquote:border-l-[#769ba4] prose-blockquote:text-gray-600 prose-blockquote:italic">
                 {{ partial "components/prose-content.html" .}}
             </div>
         </div>
     </div>
-</article>
+</section>
 
-<!-- Recommended Activities Section -->
-<div class="pt-12 md:pt-16 lg:pt-24">
-    {{ partial "components/capt-tor-recommended" . }}
-</div>
+<!-- Testimonial — the moment a real voice stops the reader -->
+{{ with .Params.testimonial }}
+<section class="bg-[#1d3640]">
+    <div class="container py-16 md:py-20">
+        <div class="max-w-3xl mx-auto relative">
+            <!-- Oversized ambient quote mark -->
+            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl font-serif text-[#e09a00]/20 leading-none select-none" aria-hidden="true">"</div>
+            <blockquote class="relative">
+                <p class="text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light italic">
+                    {{ .quote }}
+                </p>
+                <footer class="mt-8">
+                    <cite class="not-italic text-sm font-semibold text-[#e09a00] uppercase tracking-widest">
+                        — {{ .author }}
+                    </cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+{{ end }}
 
-</div>
+<!-- Recommended activities -->
+<section class="bg-stone-50">
+    <div class="container">
+        {{ partial "components/capt-tor-recommended" . }}
+    </div>
+</section>
 
 {{ end }}

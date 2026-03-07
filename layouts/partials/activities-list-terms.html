@@ -6,13 +6,13 @@
             
             <b>Filter:</b>
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="rounded-xl px-6 mb-4 text-center inline-flex items-center"
+                class="rounded-lg px-6 mb-4 text-center inline-flex items-center"
                 type="button">
 
                 {{ if or (eq .Section "activities") }}
-                <span class="px-4 rounded-xl text-white bg-gradient-to-br from-[#05694c] to-[#045c42]">All activities</span>
+                <span class="px-4 rounded-lg text-white bg-gradient-to-br from-[#05694c] to-[#045c42]">All activities</span>
                 {{ else }}
-                <span style="background-color: {{.Params.color}};" class="px-4 rounded-xl text-white">
+                <span style="background-color: {{.Params.color}};" class="px-4 rounded-lg text-white">
                     {{.Title}}
                 </span>
                 {{ end }}
@@ -26,7 +26,7 @@
        
 
             <!-- Dropdown menu -->
-            <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow w-44 ">
+            <div id="dropdown" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                 <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
@@ -53,7 +53,7 @@
     </div>
 
     {{ if or (eq .Section "activities") (eq .Section "tags") }}
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
             {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}">
@@ -84,7 +84,7 @@
 
     <hr class="mb-12 mt-6 text-gray-300">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
         {{ range sort .Pages }}
             {{ .Render "li" }}
         {{ end }}

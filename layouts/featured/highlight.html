@@ -1,42 +1,66 @@
-<!-- Featured Highlight Card -->
 <article class="relative md:my-8">
-    <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-2xl rounded-xl overflow-hidden border border-gray-300 relative hover:shadow-2xl transition-shadow duration-300">
-        
-        <!-- Featured Badge - Top Right Corner -->
-        <div class="absolute top-4 right-4 z-50 bg-[#e09a00] text-white px-4 py-4 rounded-xl shadow-lg flex items-center gap-2">
+    <div class="bg-white grid grid-cols-1 xl:grid-cols-2 shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+
+        <!-- Featured badge -->
+        <div class="absolute top-4 right-4 z-50 inline-flex items-center gap-2 bg-[#e09a00] text-white px-4 py-2 rounded-lg shadow-lg">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
             </svg>
-            <span class="text-xs font-bold uppercase tracking-wider z-0">Featured</span>
+            <span class="text-xs font-bold uppercase tracking-widest">Featured</span>
         </div>
-        
+
+        <!-- Content -->
         <div class="p-8 md:p-12 h-full flex order-2 xl:order-1">
-            <div class="my-auto max-w-none">
-                
-                <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
+            <div class="my-auto max-w-none w-full">
+                <h2 class="mt-0 mb-4 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
                     {{ .Title }}
                 </h2>
-                
-                <p class="mb-6 text-lg md:text-xl leading-relaxed text-gray-700">
+                <p class="mb-8 text-lg leading-relaxed text-gray-600">
                     {{ .Params.description }}
                 </p>
-
+                <!-- Metadata -->
+                <div class="flex items-center gap-5 text-sm mb-8 pb-6 border-b border-gray-100">
+                    {{ if or .Params.product_info.duration.hours .Params.product_info.duration.minutes }}
+                    <span class="inline-flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-[#e09a00]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-medium text-gray-700">{{ with .Params.product_info.duration.hours }}{{ . }}h{{ end }}{{ with .Params.product_info.duration.minutes }} {{ . }}m{{ end }}</span>
+                    </span>
+                    {{ end }}
+                    {{ with .Params.product_info.persons }}
+                    <span class="inline-flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-[#e09a00]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-medium text-gray-700">Your group · up to {{ . }}</span>
+                    </span>
+                    {{ end }}
+                </div>
                 {{ partial "components/buttons/primary" (dict "href" .RelPermalink "text" "Discover More" "ariaLabel" (printf "Discover more about %s" .Title)) }}
             </div>
         </div>
-        
-        <div class="order-1 xl:order-2 relative">
-            <div class="bg-[#bbccd4]">
-            <div class="p-4 xl:p-8">
 
-                        {{ range first 1 .Params.images }}
-               <div class="w-full rounded-lg overflow-hidden">
-                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
-                    </div>
-        
+        <!-- Image — flush, no padding box -->
+        <div class="order-1 xl:order-2 relative overflow-hidden">
+            {{ range first 1 .Params.images }}
+            <div class="h-full min-h-[260px]">
+                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
+            </div>
             {{ end }}
+            <!-- Tags overlaid -->
+            {{ with .Params.tags }}
+            <div class="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-10 bg-gradient-to-t from-black/60 to-transparent flex flex-wrap gap-2">
+                {{ range . }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" .) }}
+                        <span style="background-color: {{ .Params.color }};" class="text-xs font-semibold px-3 py-1.5 rounded-md text-white">
+                            {{ .Title }}
+                        </span>
+                    {{ end }}
+                {{ end }}
             </div>
-            </div>
+            {{ end }}
         </div>
+
     </div>
 </article>

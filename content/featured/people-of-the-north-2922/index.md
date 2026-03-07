@@ -14,6 +14,9 @@ related_activities:
   - the-ultimate-balestrand-legacy-tour-private-angling-fjord-history-finnabotn-4045/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
 cms: true
+opening_quote:
+  quote: "I am incredibly honored to have represented the Sognefjord in this global showcase. But that feeling isn't found on the TV screen — it's born within every single guest who leaves the pier with a new light in their eyes."
+  author: "Captain Tor"
 ---
 > **Captain Tor:** *I am incredibly honored to have represented the Sognefjord in this global showcase. But that feeling isn't found on the TV screen – it's born within every single guest who leaves the pier with a new light in their eyes.*
 >

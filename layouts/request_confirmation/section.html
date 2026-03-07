@@ -13,7 +13,7 @@
     <div class="relative z-10 flex items-center justify-center px-4">
         <div class="max-w-5xl w-full">
             <!-- Success Card -->
-            <article class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
                 <!-- Header with accent -->
                 <div class="bg-[#05694c] px-8 py-12 text-center">
                     <div class="flex justify-center mb-4">
@@ -36,16 +36,16 @@
                         </div>
 
                         <!-- Info Box -->
-                        <div class="mt-8 p-6 bg-gradient-to-br from-[#e3f2fd] to-[#bbdefb] border-l-4 border-[#1976d2] rounded-lg">
+                        <div class="mt-8 p-6 bg-[#1d3640]/5 border-l-4 border-[#769ba4] rounded-lg">
                             <div class="flex gap-3">
                                 <div class="flex-shrink-0">
-                                    <svg class="h-6 w-6 text-[#1565c0] mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg class="h-6 w-6 text-[#769ba4] mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="mt-0 mb-4 text-sm font-semibold text-[#1565c0]">Next Steps</h3>
-                                    <p class="text-sm text-[#0d47a1] leading-relaxed">
+                                    <h3 class="mt-0 mb-4 text-sm font-semibold text-[#1d3640]">Next Steps</h3>
+                                    <p class="text-sm text-[#1d3640]/80 leading-relaxed">
                                         We'll send you a confirmation email within 24 hours. Please check your email for further details and payment information. Contact us if you havent heard from us within that time frame.
                                     </p>
                                 </div>
@@ -55,7 +55,7 @@
 
                     <!-- Captain Tor Image Section -->
                     <div class="md:col-span-1 flex flex-col">
-                        <div class="rounded-xl overflow-hidden shadow-lg h-full">
+                        <div class="rounded-lg overflow-hidden shadow-lg h-full">
                             {{ $captain_image := resources.GetMatch "images/captain-tor-of-balestrand-fjord-angling-showcasing-a-fresh-brown-crab-embodying-the-human-edge-and-hyper-nature-in-the-sognefjord.-this-image-represents-a-private-masterc.jpeg" }}
                             {{ if $captain_image }}
                                 {{ $processed := $captain_image.Resize "400x600 q85" }}

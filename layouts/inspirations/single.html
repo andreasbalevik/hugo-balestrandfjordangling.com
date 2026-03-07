@@ -1,62 +1,93 @@
 {{ define "main" }}
 
-<article class="container">
-    <!-- Hero Card (Image + Content) -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300">
-        <!-- Hero Image Section -->
-        <section class="bg-stone-50 w-full">
-            {{ with index .Params.images 0 }}
-                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
-            {{ end }}
-        </section>
-
-        <!-- Content Section -->
-        <div class="container">
-            <div class="mx-auto max-w-4xl">
-                <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-                    {{ .Title }}
-                </h1>
-                
-                <div style="width: 100%; max-width: 200px; height: 8px; background-color: #5a7a8a; margin-bottom: 2rem;"></div>
-                
-                <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold">
-                    {{ partial "components/prose-content.html" .}}
-                </div>
-            </div>
+<!-- Cinematic Hero — image IS the opening, title lives inside it -->
+<section class="relative mt-[56px] overflow-hidden">
+    {{ with index .Params.images 0 }}
+    <div class="relative">
+        <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
+            {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
         </div>
+        <!-- Gradient: dark at bottom for legibility, light fade at top -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/90 via-[#1d3640]/30 to-transparent"></div>
     </div>
-</article>
 
-<!-- Related Activities Section -->
-{{ with .Params.related_activities }}
-    <section class="bg-[#f3f7f6]">
-        <div class="container pt-0">
-            <div class="text-center mb-12">
-                <h2 class="mt-0 mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
-                    Related Activities
-                </h2>
-                <p class="mb-6 text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                    Experience these curated adventures inspired by this story
+    <!-- Title + description overlaid at image bottom -->
+    <div class="absolute bottom-0 left-0 right-0">
+        <div class="container py-10 md:py-14">
+            <div class="max-w-3xl">
+                <p class="text-sm font-semibold text-white/70 uppercase tracking-widest mb-4">Inspiration</p>
+                <h1 class="mt-0 mb-0 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+                    {{ $.Title }}
+                </h1>
+                {{ with $.Params.description }}
+                <p class="mt-4 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl drop-shadow">
+                    {{ . }}
                 </p>
-            </div>
-            
-            <div class="grid grid-cols-1 gap-6 md:gap-8 mx-auto">
-                {{ range . }}
-                    {{ $page := replace . "/index" "" }}
-                    {{ with $.Site.GetPage $page }}
-                        {{ .Render "highlight" }}
-                    {{ end }}
                 {{ end }}
             </div>
         </div>
-    </section>
-{{ else }}
-    <!-- Default Call to Action -->
-    <section class="bg-[#f3f7f6]">
-        <div class="container pt-0">
-        {{ partial "activity/see-all-activities.html" . }}
+    </div>
+    {{ end }}
+</section>
+
+<!-- Prose Content -->
+<section class="bg-[#f0f7fb]">
+    <div class="container">
+        <div class="max-w-3xl mx-auto px-0 py-12 md:py-16">
+            <div class="w-12 h-1 bg-[#e09a00] rounded-full mb-8"></div>
+
+            <!-- Byline -->
+            <div class="flex items-center gap-3 pb-8 border-b border-[#769ba4]/20 mb-10">
+                <div class="w-9 h-9 rounded-full bg-[#1d3640] ring-2 ring-[#769ba4]/40 flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 text-[#769ba4]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <span class="text-sm font-semibold text-gray-800">{{ with .Params.author }}{{ . }}{{ else }}Captain Tor{{ end }}</span>
+                    <div class="flex items-center gap-2 text-xs text-gray-500">
+                        {{ if not .Lastmod.IsZero }}
+                        <span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
+                        {{ else if .GitInfo }}
+                        <span>Updated <time datetime="{{ .GitInfo.AuthorDate.Format "2006-01-02" }}">{{ .GitInfo.AuthorDate.Format "Jan 2, 2006" }}</time></span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="prose md:prose-lg lg:prose-xl max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:lg:text-4xl prose-h3:text-xl prose-h3:md:text-2xl prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors prose-img:rounded-lg prose-img:shadow-lg prose-strong:text-gray-900 prose-strong:font-semibold prose-blockquote:border-l-[#769ba4] prose-blockquote:text-gray-600 prose-blockquote:bg-[#e4f0f7] prose-blockquote:rounded-r-lg prose-blockquote:py-1">">
+                {{ partial "components/prose-content.html" .}}
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Related Activities -->
+{{ with .Params.related_activities }}
+<section class="bg-[#deeef7]">
+    <div class="container">
+        <div class="text-center mb-12">
+            <p class="text-sm font-semibold text-[#769ba4] uppercase tracking-widest mb-3">Continue exploring</p>
+            <h2 class="mt-0 mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-[#1d3640]">
+                Related Activities
+            </h2>
+            <div class="w-12 h-1 bg-[#e09a00] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 mx-auto">
+            {{ range . }}
+                {{ $page := replace . "/index" "" }}
+                {{ with $.Site.GetPage $page }}
+                    {{ .Render "highlight" }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ else }}
+<section class="bg-[#deeef7]">
+    {{ partial "activity/see-all-activities.html" . }}
+</section>
 {{ end }}
 
 {{ end }}

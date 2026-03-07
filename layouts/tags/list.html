@@ -19,7 +19,7 @@
         <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="rounded-xl px-4 py-2 text-center inline-flex items-center"
+                class="rounded-lg px-4 py-2 text-center inline-flex items-center"
                 type="button">
                 <span style="background-color: {{.Params.color}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
                     {{.Title}}
@@ -32,7 +32,7 @@
             </button>
 
             <!-- Dropdown menu -->
-            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-xl shadow w-44 ">
+            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                 <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
@@ -68,7 +68,7 @@
 
 <!-- See All Activities CTA -->
 <section class="bg-white">
-    <div class="container py-12">
+    <div class="container">
         {{ partial "activity/see-all-activities" . }}
     </div>
 </section>

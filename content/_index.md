@@ -9,7 +9,7 @@ images:
     alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
       Norwegian fjords
 categories:
-  title: Pick Your Style
+  title: Choose Your Experience
 recommended:
   title: Captain Tor's Recommendation
   activities:

@@ -6,7 +6,7 @@
     class="hidden fixed inset-0 z-50 bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
     <div class="relative p-4 w-full max-w-3xl mt-4 mb-8">
         <!-- Modal Content -->
-        <article class="relative bg-white rounded-xl shadow-lg border border-gray-300">
+        <article class="relative bg-white rounded-lg shadow-lg border border-gray-300">
             <!-- Modal Header -->
             <header class="flex items-center justify-between p-4 md:p-6 border-b border-gray-300">
                 <h3 id="modal-title" class="mt-0 text-xl md:text-2xl font-bold text-gray-900">
@@ -28,7 +28,7 @@
                     <input type="hidden" name="quality" value="{{ .Params.quality }}">
 
                     <!-- Activity Summary with Image -->
-                    <div class="col-span-2 p-4 md:p-4 bg-gradient-to-br from-[#f5f5f5] to-[#f5f5f5] rounded-xl border border-gray-300">
+                    <div class="col-span-2 p-4 md:p-4 bg-gradient-to-br from-[#f5f5f5] to-[#f5f5f5] rounded-lg border border-gray-300">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {{ with index .Params.images 0 }}
                             <div class="md:col-span-1">

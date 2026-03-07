@@ -1,56 +1,46 @@
 {{ define "main" }}
 
-<!-- Hero Section with Image & Overlay -->
-<section class="md:relative mt-[56px] overflow-hidden">
+<!-- Cinematic Hero — image IS the opening, title lives inside it -->
+<section class="relative mt-[56px] overflow-hidden">
     {{ range first 1 .Params.images }}
-    <div class="md:relative min-md:h-[400px] min-md:md:h-[500px] min-md:lg:h-[600px]">
-        <div class="md:absolute inset-0">
+    <div class="relative">
+        <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
             {{ partial "components/images/image.html" (dict 
                 "src" .src 
                 "alt" .alt 
                 "preset" "hero"
             ) }}
         </div>
-        <!-- Gradient overlay for text readability -->
-        <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
-        
-        <!-- Hero Content -->
-        <div class="container md:relative h-full flex items-end pb-12 md:pb-16">
-            <div class="max-w-4xl flex flex-col">
-                <!-- Quality Badges & Tags -->
-                <div class="flex items-center gap-4 mb-6 flex-wrap order-2 md:order-1">
-                    {{ with $.Params.quality }}
-                    <span class="inline-block bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-semibold uppercase tracking-wide text-gray-900 shadow-lg">
-                        {{ . }}
-                    </span>
-                    {{ end }}
+        <!-- Gradient: fjord deep at bottom for legibility, fades to transparent at top -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/90 via-[#1d3640]/30 to-transparent"></div>
+    </div>
+
+    <!-- Title + badges overlaid at image bottom -->
+    <div class="absolute bottom-0 left-0 right-0">
+        <div class="container py-10 md:py-14">
+            <div class="max-w-3xl">
+                <!-- Tags -->
+                <div class="flex items-center gap-3 flex-wrap mb-4">
                     {{ with $.Params.information.options.varde_experience_quality }}
-                    <span class="inline-block bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg">
-                        <img class="w-16 h-auto" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
+                    <span class="inline-block bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 shadow">
+                        <img class="w-14 h-auto" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
                     </span>
                     {{ end }}
-                    <span class="inline-flex items-center gap-2 bg-[#769ba4] text-white px-4 py-2 rounded-lg shadow-lg">
-                        <i data-lucide="users" class="w-4 h-4 text-inherit"></i>
-                        <span class="text-sm font-semibold">Private Tour</span>
-                    </span>
                     {{ range $.Params.tags }}
                     {{ with $.Site.GetPage (printf "/tags/%s" .) }}
                     <a href="{{ .RelPermalink }}" style="background-color: {{ .Params.color }};" 
-                       class="inline-block px-4 py-2 rounded-lg text-white text-sm font-semibold shadow-lg hover:opacity-90 transition-opacity duration-300">
+                       class="inline-block px-3 py-1.5 rounded-md text-white text-xs font-semibold tracking-wide hover:opacity-90 transition-opacity duration-300">
                         {{ .Title }}
                     </a>
                     {{ end }}
                     {{ end }}
                 </div>
-                
-                <!-- Title -->
-                <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-bold md:text-white md:drop-shadow-lg order-1 md:order-2">
+
+                <h1 class="mt-0 mb-0 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
                     {{ $.Title }}
                 </h1>
-                
-                <!-- Summary -->
                 {{ with $.Params.summary }}
-                <p class="text-lg md:text-xl text-white/95 leading-relaxed drop-shadow order-3">
+                <p class="mt-4 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl drop-shadow">
                     {{ . }}
                 </p>
                 {{ end }}
@@ -61,14 +51,14 @@
 </section>
 
 <!-- Activity Details - Info Cards -->
-<section class="bg-white border-b border-gray-200">
+<section class="bg-white">
     <div class="container py-6 md:py-12">
-        <div class="flex flex-row md:grid md:grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto items-center justify-between">
+        <div class="flex flex-row md:grid md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto items-center justify-between">
             
             <!-- Duration -->
             {{ with .Params.product_info.duration }}
             <div class="text-center md:py-4">
-                <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 md:mb-2">Duration</p>
+                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">Duration</p>
                 <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{ .hours }}</p>
                 <p class="text-xs md:text-sm text-gray-600">hours{{ with .minutes }} {{ . }}min{{ end }}</p>
             </div>
@@ -77,16 +67,16 @@
             <!-- Group Size -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4 md:border-l md:border-r border-gray-200">
-                <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 md:mb-2">Group Size</p>
+                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">Group Size</p>
                 <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{range first 1 .}}{{.person_number}}{{end}}-{{ range last 1 . }}{{ .person_number }}{{ end }}</p>
-                <p class="text-xs md:text-sm text-gray-600">guests max</p>
+                <p class="text-xs md:text-sm text-gray-600">your group only</p>
             </div>
             {{ end }}
             
             <!-- Price -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4">
-                <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 md:mb-2">From</p>
+                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">From</p>
                 {{ range first 1 . }}
                 <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{ .price }}</p>
                 {{ end }}
@@ -95,6 +85,13 @@
             {{ end }}
             
         </div>
+        <!-- Private charter trust signal -->
+        <p class="flex items-center justify-center gap-2 text-sm text-gray-500 mt-6 max-w-3xl mx-auto">
+            <svg class="w-4 h-4 text-[#769ba4] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Every experience is your group only — no shared boats, no strangers
+        </p>
     </div>
 </section>
 
@@ -123,7 +120,7 @@
     </nav>
     {{ end }}
     
-    <section class="bg-gray-50">
+    <section class="bg-stone-50">
         <div class="container">
             
             <!-- About Section -->
@@ -136,30 +133,26 @@
     </section>
 
     <section class="bg-stone-50">
-        <div class="container">
-            
-            <!-- Practical Information -->
             {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
             <div id="practical">
+                <div class="container">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="mt-0 mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center">
                         Practical Information
                     </h2>
-                    <div class="bg-white rounded-2xl border border-gray-300 shadow-lg p-8 md:p-12 lg:p-16">
+                    <div class="bg-white rounded-lg border border-gray-300 shadow-lg p-8 md:p-12 lg:p-16">
                         <article class="prose prose-lg text-gray-700 prose-headings:text-gray-900 prose-headings:font-bold prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
                             {{ partial "activity/practical" . }}
                         </article>
                     </div>
                 </div>
+                </div>
             </div>
             {{ end }}
             
-            
-            
-        </div>
-    </section>
+        </section>
 
-    <section>
+    <section class="bg-stone-50">
     <div class="container">
     <!-- Photo Gallery -->
             {{ if gt (len .Params.images) 1 }}
