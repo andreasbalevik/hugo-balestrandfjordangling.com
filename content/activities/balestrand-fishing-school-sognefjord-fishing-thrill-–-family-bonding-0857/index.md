@@ -1,7 +1,7 @@
 ---
 title: "Balestrand Fishing School: Sognefjord Fishing Thrill – Family Bonding &
   Lokal Culture"
-quality: BASIC
+quality: Go Viking & Springfulness
 keywords:
   - Family Adventure Fun Fishing School Norway
   - Sognefjord Fishing Culture Trip
