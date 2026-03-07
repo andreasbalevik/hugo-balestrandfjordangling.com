@@ -1,32 +1,48 @@
 {{ define "main" }}
 
-<!-- Cinematic Hero — image IS the opening, title lives inside it -->
-<section class="relative mt-[56px] overflow-hidden">
+<!-- Hero — stacked on mobile, cinematic overlay on desktop -->
+<section class="mt-[56px]">
     {{ with index .Params.images 0 }}
-    <div class="relative">
-        <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
+
+    <!-- Image -->
+    <div class="relative overflow-hidden">
+        <div class="max-h-[240px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
         </div>
-        <!-- Gradient: dark at bottom for legibility, light fade at top -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/90 via-[#1d3640]/30 to-transparent"></div>
-    </div>
+        <!-- Gradient — desktop only -->
+        <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-[#1d3640]/90 via-[#1d3640]/30 to-transparent"></div>
 
-    <!-- Title + description overlaid at image bottom -->
-    <div class="absolute bottom-0 left-0 right-0">
-        <div class="container py-10 md:py-14">
-            <div class="max-w-3xl">
-                <p class="text-sm font-semibold text-white/70 uppercase tracking-widest mb-4">Inspiration</p>
-                <h1 class="mt-0 mb-0 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
-                    {{ $.Title }}
-                </h1>
-                {{ with $.Params.description }}
-                <p class="mt-4 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl drop-shadow">
-                    {{ . }}
-                </p>
-                {{ end }}
+        <!-- Desktop: title overlaid at bottom -->
+        <div class="hidden md:block absolute bottom-0 left-0 right-0">
+            <div class="container py-14">
+                <div class="max-w-3xl">
+                    <p class="text-sm font-semibold text-white/70 uppercase tracking-widest mb-4">Inspiration</p>
+                    <h1 class="mt-0 mb-0 text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
+                        {{ $.Title }}
+                    </h1>
+                    {{ with $.Params.description }}
+                    <p class="mt-4 text-xl text-white/85 leading-relaxed max-w-2xl drop-shadow">
+                        {{ . }}
+                    </p>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Mobile: title below the image -->
+    <div class="md:hidden bg-[#1d3640] px-5 py-8">
+        <p class="text-xs font-semibold text-white/60 uppercase tracking-widest mb-3">Inspiration</p>
+        <h1 class="mt-0 mb-0 text-2xl font-bold text-white leading-tight">
+            {{ $.Title }}
+        </h1>
+        {{ with $.Params.description }}
+        <p class="mt-3 text-base text-white/80 leading-relaxed">
+            {{ . }}
+        </p>
+        {{ end }}
+    </div>
+
     {{ end }}
 </section>
 
