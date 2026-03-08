@@ -12,7 +12,7 @@
             {{ range .activities }}
             {{ $page := replace . "/index" "" }}
             {{ with $.Site.GetPage $page }}
-            {{ .Render "li-recommended" }}
+            {{ .Render "li" }}
             {{end}}
             {{ end }}
 
