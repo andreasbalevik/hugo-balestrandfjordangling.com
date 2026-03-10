@@ -94,7 +94,7 @@ cms: true
 
 ### A unique, highly sought-after experience for kids, spouses, or friends.
 
-It is time to trade screen time for *authentic **‘adventure time.’*** Join us for a hands-on experience where we combine traditional rod fishing and the unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
+It is time to trade screen time for *authentic **‘adventure time.’*** Join us for a hands-on experience where we combine traditional rod fishing and the **unique challenge of checking our pre-set fishing nets**.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—**a chance to truly breathe and disconnect from daily life.**
 
 ### Your Rare Expedition Possibility & A Meaningful Investment
 
