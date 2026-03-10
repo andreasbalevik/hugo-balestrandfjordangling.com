@@ -126,7 +126,7 @@ Imagine this happened to you: Catch some fish with Captain Tor and make your ow
 
 How about a bag of fish soup, and add pieces of your fresh fish? It doesn’t get easier than that!
 
-Treat yourself to a lunch menu at the Historic Kviknes Hotel - the Sognefjord sandwich, the taste of the Sognefjord!
+Treat yourself to a lunch menu at the Historic Kviknes Hotel -[ the Sognefjord Seafood sandwich](https://en.kviknes.no/restaurants), the taste of the Sognefjord!
 
 ## **CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY**
 
