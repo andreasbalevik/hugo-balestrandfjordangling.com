@@ -71,7 +71,7 @@ information:
 product_info:
   duration:
     hours: 2
-    minutes: 15
+    minutes: 0
   persons: "7"
   prices:
     - person_number: 1
@@ -90,33 +90,33 @@ product_info:
       price: 8000
 cms: true
 ---
-## **This is the Perfect Gift: Trade Screen Time for Sognefjord ‘Adventure Time’**
+## This is the Perfect Gift: Trade Screen Time for Sognefjord ‘Adventure Time’
 
 ### A unique, highly sought-after experience for kids, spouses, or friends.
 
-It is time to trade screen time for *authentic **‘adventure time.’*** Join us for a hands-on experience where we combine traditional rod fishing and the unique challenge of checking our pre-set fishing nets.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—a chance to truly breathe and disconnect from daily life.
+It is time to trade screen time for *authentic **‘adventure time.’*** Join us for a hands-on experience where we combine traditional rod fishing and the **unique challenge of checking our pre-set fishing nets**.This is the perfect surprise gift that offers simple, high-quality immersion in nature you crave—**a chance to truly breathe and disconnect from daily life.**
 
-### **Your Rare Expedition Possibility & A Meaningful Investment**
+### Your Rare Expedition Possibility & A Meaningful Investment
 
 **This is the highly sought-after Fishing Culture Adventure Trip around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net! 
 
-## **THE ART OF MAKING SOMETHING: FJORD ACTIVITY!**
+## THE ART OF MAKING SOMETHING: FJORD ACTIVITY!
 
-Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you? This is also the trip we offer in the cold Winter season.
+Captain Tor’s fjord solutions work time and time again. You are looking for an activity that’s a safe bet and guarantees a good time – aren’t you? **This is also the trip we offer in the cold Winter season.**
 
 > ***Chilled by the fjord, warmed by the soul. A Sognefjord signature.***
 
-### **The unique about the fishing here in the Esefjord**
+### The unique about the fishing here in the Esefjord
 
 This fishing trip in the beautiful, legendary Esefjord is surrounded by high, picturesque mountains. This specific fjord arm is known for easy and fun fishing, perfect for all skill levels. As Captain Tor says:
 
 > **Memories about fishing:** “I was a little boy, my mother used to send me out on the fjord to catch the fish called: ***Sand Whiting***. They are fun to fish, bite easily on the hook, and taste great for lunch. Some call them **‘Fjord Chickens’** – that’s a brilliant name!”
 
-### **The *‘Fjord Chicken’* Challenge: Easy & Fun Fjord Fishing in Esefjord**
+### The *‘Fjord Chicken’* Challenge: Easy & Fun Fjord Fishing in Esefjord
 
 ### How can I cook my catch and what ingredients do I need?
 
-Imagine this happened to you: Catch some fish with Captain Tor and make your own dinner when you get home. We suggest butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: “Sprudlande Margaret” from Balholm.
+Imagine this happened to you: Catch some fish with Captain Tor and make your own dinner when you get home. We suggest butter-fried Sand Whiting served on a piece of seed-loaf with a homemade salad and a bottle of local made fruit drink: *“Sprudlande Margaret*” from Balholm.
 
 * It tastes rhubarb and evokes nostalgic summer memories.
 * If you light some candles and put on some bossa nova music in the background, you have a real dining experience you do together.
@@ -126,9 +126,9 @@ Imagine this happened to you: Catch some fish with Captain Tor and make your ow
 
 How about a bag of fish soup, and add pieces of your fresh fish? It doesn’t get easier than that!
 
-Treat yourself to a lunch menu at the Historic Kviknes Hotel - the Sognefjord sandwich, the taste of the Sognefjord!
+Treat yourself to a lunch menu at the Historic Kviknes Hotel -[ the Sognefjord Seafood sandwich](https://en.kviknes.no/restaurants), the taste of the Sognefjord!
 
-## **CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY**
+## CURIOSITY & WONDER: A VIKING EXPEDITION OF DISCOVERY
 
 ### We include two different fishing methods in this tour
 
