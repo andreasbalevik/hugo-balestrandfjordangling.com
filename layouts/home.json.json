@@ -1,0 +1,9 @@
+{{- $data := dict
+  "title" site.Title
+  "baseURL" site.BaseURL
+  "languageCode" site.Language.LanguageCode
+  "home" site.Home.RelPermalink
+  "sectionCount" (len site.Sections)
+  "pageCount" (len site.RegularPages)
+-}}
+{{- $data | jsonify (dict "indent" "  ") -}}

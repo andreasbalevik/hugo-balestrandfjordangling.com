@@ -1,0 +1,7 @@
+{{- $lines := slice
+  site.Title
+  (printf "Base URL: %s" site.BaseURL)
+  (printf "Home: %s" site.Home.RelPermalink)
+  (printf "Pages: %d" (len site.RegularPages))
+-}}
+{{- delimit $lines "\n" -}}

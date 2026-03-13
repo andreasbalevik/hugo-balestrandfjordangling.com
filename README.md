@@ -1,11 +1,21 @@
-#
+# Balestrand Fjord Angling
 
-## Reload changes
+## Install dependencies
+
+`npm install`
+
+## Local development
 
 `hugo serve --disableFastRender`
 
-## Decap 
+## Preview drafts
+
+`hugo serve -D -p 1313`
+
+## Build
+
+`hugo build --gc --minify`
+
+## Decap
 
 `npx decap-server`
-
-`hugo server -D -p 1313`
