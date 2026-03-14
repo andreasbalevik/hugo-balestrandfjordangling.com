@@ -206,7 +206,7 @@
             </a>
         </div>
         {{ with .images }}
-            {{ partial "components/images/carousel-full.html" . }}
+            {{ partial "components/images/carousel.html" (dict "images" .) }}
         {{ end }}
     </div>
 </section>

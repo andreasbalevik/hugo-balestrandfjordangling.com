@@ -162,7 +162,7 @@
                     <p class="text-gray-600 text-lg">See more photos from this adventure</p>
                 </div>
                 {{ with .Params.images }}
-                    {{ partial "components/images/carousel-full" . }}
+                    {{ partial "components/images/carousel" (dict "images" .) }}
                 {{ end }}
             </div>
             {{ end }}
