@@ -116,7 +116,7 @@ It’s both! This is a world-class fjord experience or a unique #authentictransf
 Ideal for those arriving by train to Flåm at 18:10, but too late for the standard Norled fast ferry. If you are determined to reach inspiring Balestrand (or Fjærland) the same evening, this **private transfer** is your perfect solution—"This is so me!"
 
 **GUDVANGEN (UNESCO NÆRØYFJORD) DEPARTURE:**\
-Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https://www.norwaysbest.com/en/flam/things-to-do/shuttle-bus-flam-gudvangen) and Captain Tor will pick you up. Experience the dramatic **UNESCO Nærøyfjord** in the evening light. Balestrand - NÆRØYFJORD - Balestrand is also possible!
+Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https://www.norwaysbest.com/en/flam/things-to-do/shuttle-bus-flam-gudvangen) and Captain Tor will pick you up. Experience the dramatic **UNESCO Nærøyfjord** in the evening light. Balestrand - NÆRØYFJORD - Balestrand is also possible! Same starting price and explore this fjord one way.
 
 ### Which fjords do we explore during the transfer?
 
@@ -124,7 +124,7 @@ Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https
 
 Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with outer part of the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
 
-**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back to Balestrand this is also possible for an additional NOK 7,000. This is a truly unique experience - Close to the fjord and nature!
+**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærøyfjorden to Gudvangen and back to Balestrand this is also **possible for an additional NOK 7,000**. This is a truly unique experience - Close to the fjord and nature! Explore this fjord both ways.
 
 ### How does this transfer promote wellness and presence?
 
@@ -134,7 +134,7 @@ This is your ultimate **\#wellnessescape**. You are free from all thoughts and 
 
 ### Do you have any video inspiration from the tour?
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærlandsfjord:
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
 * **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
 * **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/CfAChQVFKj9/)
