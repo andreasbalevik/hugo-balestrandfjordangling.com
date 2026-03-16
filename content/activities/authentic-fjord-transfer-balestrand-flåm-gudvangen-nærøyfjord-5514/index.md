@@ -1,6 +1,6 @@
 ---
 title: "Authentic Fjord Transfer: Balestrand <-> Flåm / Gudvangen (Nærøyfjord)"
-quality: ESCAPE
+quality: Go Viking & Springfulness
 keywords:
   - Båttransport Flåm Balestrand
   - Privat båt Flåm Gudvangen
@@ -124,7 +124,7 @@ Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https
 
 Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with outer part of the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
 
-**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back, this is also possible for an additional NOK 5,000. This is a truly unique experience - Close to the fjord and nature!
+**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærefjorden to Gudvangen and back to Balestrand this is also possible for an additional NOK 7,000. This is a truly unique experience - Close to the fjord and nature!
 
 ### How does this transfer promote wellness and presence?
 
