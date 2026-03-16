@@ -116,7 +116,7 @@ It’s both! This is a world-class fjord experience or a unique #authentictransf
 Ideal for those arriving by train to Flåm at 18:10, but too late for the standard Norled fast ferry. If you are determined to reach inspiring Balestrand (or Fjærland) the same evening, this **private transfer** is your perfect solution—"This is so me!"
 
 **GUDVANGEN (UNESCO NÆRØYFJORD) DEPARTURE:**\
-Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https://www.norwaysbest.com/en/flam/things-to-do/shuttle-bus-flam-gudvangen) and Captain Tor will pick you up. Experience the dramatic **UNESCO Nærøyfjord** in the evening light. Balestrand - NÆRØYFJORD - Balestrand is also possible! Same starting price and explore this fjord one way.
+Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https://www.norwaysbest.com/en/flam/things-to-do/shuttle-bus-flam-gudvangen) and Captain Tor will pick you up. [Experience Viking Valley](https://en.vikingvalley.no/) first and Go Viking with Captain Tor afterwards. Experience the dramatic **UNESCO Nærøyfjord** in the evening light. Balestrand - NÆRØYFJORD - Balestrand is also possible! (Same starting price, explore the Nærøyfjord one way) 
 
 ### Which fjords do we explore during the transfer?
 
