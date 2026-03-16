@@ -70,9 +70,9 @@ tags:
   - business-and-pleasure
 information:
   options:
-    global_practical: false
+    global_practical: true
     global_bike_practical: false
-    global_included: false
+    global_included: true
     varde_experience_quality: false
 product_info:
   duration:
@@ -124,7 +124,7 @@ Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https
 
 Our route is a **world-class journey** through Norway's most iconic waterways. We connect the **Aurlandsfjord** (home of Flåm) with outer part of the spectacular **\#Nærøyfjord**, before cruising the main Sognefjord channel to Balestrand. This **scenic boat route** is an unparalleled way to experience the transition from narrow, dramatic fjords to the wide, majestic Sognefjord.
 
-**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærøyfjorden to Gudvangen and back to Balestrand this is also **possible for an additional NOK 7,000**. This is a truly unique experience - Close to the fjord and nature! Explore this fjord both ways.
+**Do both:** If you want to be picked up from Flåm by boat, explore the entire UNESCO Nærøyfjorden to Gudvangen and back to Balestrand this is also **possible for an additional NOK 7,000**. This is a truly unique experience - Close to the fjord and nature! Explore this fjord both ways. Add 2 hours extra time.
 
 ### How does this transfer promote wellness and presence?
 
