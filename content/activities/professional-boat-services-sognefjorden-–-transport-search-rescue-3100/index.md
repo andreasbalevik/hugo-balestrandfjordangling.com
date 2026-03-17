@@ -79,13 +79,13 @@ Prisen er per time, NOK 1250 eks. mva. Denne prisen gjelder fra avgang Balestran
 
 Et typisk oppdrag koster fra ca. NOK 2500 til NOK 25 000 eks. mva. (minimum 2 timer).
 
-Avhengig av oppdragets art, kan konsultasjon, ekspertise og spesifikke verktøy (tau, anker osv.) komme med en ekstra kostnad på forespørsel, typisk assistanse med vannledninger osv.
+Avhengig av oppdragets art, kan konsultasjon, utarbeiding av vakt instrukser, ekspertise og spesifikke verktøy (tau, anker osv.) komme med en ekstra kostnad på forespørsel, typisk assistanse med vannledninger, vaktbåt oppdrag osv.
 
 ### Spørsmål: Hvilke betalingsmetoder godtas?
 
 **Svar:** Enkel og digital betaling
 
-Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bærbare terminal, og du mottar en elektronisk kvittering direkte til e-posten din (som du enkelt kan viderefakturere til din klient). EHF-faktura er tilgjengelig etter avtale for bedriftskunder.
+Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bærbare terminal, og du mottar en elektronisk kvittering direkte til e-posten din (som du enkelt kan viderefakturere til din klient). **EHF-faktura er tilgjengelig etter avtale for bedriftskunder.**
 
 ### Spørsmål: Hvilket fartøy brukes og hvor opererer dere?
 
