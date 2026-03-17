@@ -79,7 +79,7 @@ Prisen er per time, NOK 1250 eks. mva. Denne prisen gjelder fra avgang Balestran
 
 Et typisk oppdrag koster fra ca. NOK 2500 til NOK 25 000 eks. mva. (minimum 2 timer).
 
-Avhengig av oppdragets art, kan konsultasjon, utarbeiding av vakt instrukser, ekspertise og spesifikke verktøy (tau, anker osv.) komme med en ekstra kostnad på forespørsel, typisk assistanse med vannledninger, vaktbåt oppdrag osv.
+Avhengig av oppdragets art, kan konsultasjon (nok 1500 p/t + mva), utarbeiding av vakt instrukser, ekspertise og spesifikke verktøy (tau, anker osv.) komme med en ekstra kostnad på forespørsel, typisk assistanse med vannledninger, vaktbåt oppdrag osv.
 
 ### Spørsmål: Hvilke betalingsmetoder godtas?
 
