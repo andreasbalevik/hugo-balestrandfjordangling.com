@@ -3,7 +3,7 @@
     {{ with $.Site.GetPage (printf "/tags/%s" .) }}
 
     <label>
-        <a href="{{.RelPermalink}}" style="background-color: {{.Params.color}};" aria-current="page"
+        <a href="{{.RelPermalink}}" style="background-color: {{.Params.color | default "#1d3640"}};" aria-current="page"
             class="px-4 rounded-lg text-white py-4 no-underline border cursor-pointer">
             {{.Title}}
         </a>

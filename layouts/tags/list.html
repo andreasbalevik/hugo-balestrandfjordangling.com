@@ -2,7 +2,7 @@
 
 <!-- Tag Landing Page Hero -->
 {{ if .Content }}
-<section style="background-color: {{ .Params.color }};">
+<section style="background-color: {{ .Params.color | default "#1d3640" }};">
     <div class="container">
         <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white">{{ .Title }}</h1>
         <div class="text-lg md:text-xl leading-relaxed text-white max-w-none">
@@ -21,7 +21,7 @@
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="rounded-lg px-4 py-2 text-center inline-flex items-center"
                 type="button">
-                <span style="background-color: {{.Params.color}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
+                <span style="background-color: {{.Params.color | default "#1d3640"}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
                     {{.Title}}
                 </span>
                 <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

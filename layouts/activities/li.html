@@ -11,7 +11,7 @@
       <div class="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-10 bg-gradient-to-t from-black/60 to-transparent flex flex-wrap gap-2">
         {{ range . }}
           {{ with $.Site.GetPage (printf "/tags/%s" .) }}
-            <span style="background-color: {{ .Params.color }};" class="text-xs font-semibold px-3 py-1.5 rounded-md text-white">
+            <span style="background-color: {{ .Params.color | default "#1d3640"}};" class="text-xs font-semibold px-3 py-1.5 rounded-md text-white">
               {{ .Title }}
             </span>
           {{ end }}
@@ -34,7 +34,7 @@
       </div>
       {{ end }}
 
-      <h2 class="mt-0 mb-4 text-lg md:text-xl lg:text-2xl font-medium text-balance text-gray-900 flex-1">
+      <h2 class="mt-0 mb-4 text-lg md:text-xl font-medium text-balance text-gray-900 flex-1">
         {{ .Title }}
       </h2>
 
