@@ -5,12 +5,12 @@
     {{ with index .prices 0 }}
     <div class="flex items-baseline gap-2 text-gray-900">
         <span class="text-base text-gray-600">From</span>
-        <span class="text-2xl md:text-3xl font-bold">NOK {{ .price }}</span>
+        <span class="text-2xl md:text-3xl font-semibold">NOK {{ .price }}</span>
     </div>
     {{ end }}
 
     <!-- Duration & Persons Info -->
-    <div class="flex flex-wrap gap-4 text-base text-gray-700">
+    <div class="flex flex-wrap gap-4 text-base">
         {{ with .duration }}
         <span class="inline-flex items-center">
             <svg class="w-5 h-5 text-gray-500 mr-2" aria-hidden="true"

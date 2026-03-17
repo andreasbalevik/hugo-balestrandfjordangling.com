@@ -12,7 +12,7 @@
             ) }}
         </div>
         <!-- Gradient: fjord deep at bottom for legibility, fades to transparent at top -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/90 via-[#1d3640]/30 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-fjord/90 via-fjord/30 to-transparent"></div>
     </div>
 
     <!-- Title + badges overlaid at image bottom -->
@@ -52,14 +52,14 @@
 
 <!-- Activity Details - Info Cards -->
 <section class="bg-white">
-    <div class="container py-6 md:py-12">
+    <div class="container">
         <div class="flex flex-row md:grid md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto items-center justify-between">
             
             <!-- Duration -->
             {{ with .Params.product_info.duration }}
             <div class="text-center md:py-4">
-                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">Duration</p>
-                <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{ .hours }}</p>
+                <p class="text-xs font-semibold text-mist uppercase tracking-wide mb-1 md:mb-2">Duration</p>
+                <p class="text-2xl md:text-4xl font-semibold text-gray-900 mb-0 md:mb-1">{{ .hours }}</p>
                 <p class="text-xs md:text-sm text-gray-600">hours{{ with .minutes }} {{ . }}min{{ end }}</p>
             </div>
             {{ end }}
@@ -67,8 +67,8 @@
             <!-- Group Size -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4 md:border-l md:border-r border-gray-200">
-                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">Group Size</p>
-                <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{range first 1 .}}{{.person_number}}{{end}}-{{ range last 1 . }}{{ .person_number }}{{ end }}</p>
+                <p class="text-xs font-semibold text-mist uppercase tracking-wide mb-1 md:mb-2">Group Size</p>
+                <p class="text-2xl md:text-4xl font-semibold text-gray-900 mb-0 md:mb-1">{{range first 1 .}}{{.person_number}}{{end}}-{{ range last 1 . }}{{ .person_number }}{{ end }}</p>
                 <p class="text-xs md:text-sm text-gray-600">your group only</p>
             </div>
             {{ end }}
@@ -76,9 +76,9 @@
             <!-- Price -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4">
-                <p class="text-xs font-semibold text-[#769ba4] uppercase tracking-wide mb-1 md:mb-2">From</p>
+                <p class="text-xs font-semibold text-mist uppercase tracking-wide mb-1 md:mb-2">From</p>
                 {{ range first 1 . }}
-                <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-0 md:mb-1">{{ .price }}</p>
+                <p class="text-2xl md:text-4xl font-semibold text-gray-900 mb-0 md:mb-1">{{ .price }}</p>
                 {{ end }}
                 <p class="text-xs md:text-sm text-gray-600">NOK per group</p>
             </div>
@@ -87,7 +87,7 @@
         </div>
         <!-- Private charter trust signal -->
         <p class="flex items-center justify-center gap-2 text-sm text-gray-500 mt-6 max-w-3xl mx-auto">
-            <svg class="w-4 h-4 text-[#769ba4] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <svg class="w-4 h-4 text-mist shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
             Every experience is your group only — no shared boats, no strangers
@@ -104,12 +104,12 @@
         <div class="container max-w-4xl py-0">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-4 py-3 md:py-4">
                 <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
-                    <a href="#about" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300 nav-link whitespace-nowrap">About</a>
+                    <a href="#about" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">About</a>
                     {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-                    <a href="#practical" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300 nav-link whitespace-nowrap">Practical Info</a>
+                    <a href="#practical" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">Practical Info</a>
                     {{ end }}
                     {{ if gt (len .Params.images) 1 }}
-                    <a href="#gallery" class="text-sm md:text-base font-semibold text-gray-700 hover:text-[#e09a00] transition-colors duration-300 nav-link whitespace-nowrap">Gallery</a>
+                    <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">Gallery</a>
                     {{ end }}
                 </div>
                 <div class="w-full md:w-auto">
@@ -124,7 +124,7 @@
         <div class="container">
             
             <!-- About Section -->
-            <div id="about">
+            <div id="about" class="scroll-mt-[210px] md:scroll-mt-[150px]">
                 <div class="mx-auto">
                     {{ partial "activity/about" . }}
                 </div>
@@ -134,14 +134,14 @@
 
     <section class="bg-stone-50">
             {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-            <div id="practical">
+            <div id="practical" class="scroll-mt-[210px] md:scroll-mt-[150px]">
                 <div class="container">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900 text-center">
                         Practical Information
                     </h2>
-                    <div class="bg-white rounded-lg border border-gray-300 shadow-lg p-8 md:p-12 lg:p-16">
-                        <article class="prose prose-lg text-gray-700 prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
+                    <div class="bg-white rounded-lg border border-gray-300 shadow p-8 md:p-12 lg:p-16">
+                        <article class="prose prose-lg prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
                             {{ partial "activity/practical" . }}
                         </article>
                     </div>
@@ -156,10 +156,10 @@
     <div class="container">
     <!-- Photo Gallery -->
             {{ if gt (len .Params.images) 1 }}
-            <div id="gallery">
+            <div id="gallery" class="scroll-mt-[210px] md:scroll-mt-[150px]">
                 <div class="text-center mb-8">
                     <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900">Photo Gallery</h2>
-                    <p class="text-gray-700 text-lg text-pretty">See more photos from this adventure</p>
+                    <p class="text-lg text-pretty">See more photos from this adventure</p>
                 </div>
                 {{ with .Params.images }}
                     {{ partial "components/images/carousel" (dict "images" .) }}
@@ -170,39 +170,6 @@
     </section>
 </section>
 
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    /* Account for fixed header (56px) + sticky tabs height */
-    /* Mobile: Header (56px) + Tabs (approx 140px due to flex-col) = ~200px */
-    #about, #practical, #gallery {
-        scroll-margin-top: 210px;
-    }
-    
-    /* Desktop: Header (56px) + Tabs (approx 80px) = ~140px */
-    @media (min-width: 768px) {
-        #about, #practical, #gallery {
-            scroll-margin-top: 150px;
-        }
-    }
-    
-    /* Active navigation link indicator */
-    .nav-link.active {
-        color: #e09a00;
-    }
-    
-    /* Hide scrollbar for mobile navigation */
-    .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-    
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-</style>
 
 <script>
     // Smooth scroll and active nav link tracking
@@ -210,30 +177,26 @@
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('[id]');
         
-        // Update active link on scroll
         function updateActiveLink() {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                // Adjust offset based on screen size (matching CSS scroll-margin-top)
                 const offset = window.innerWidth >= 768 ? 160 : 220;
-                
                 if (pageYOffset >= (sectionTop - offset)) {
                     current = section.getAttribute('id');
                 }
             });
             
             navLinks.forEach(link => {
-                link.classList.remove('active');
+                link.classList.remove('text-primary');
                 if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
+                    link.classList.add('text-primary');
                 }
             });
         }
         
         window.addEventListener('scroll', updateActiveLink);
-        updateActiveLink(); // Initial call
+        updateActiveLink();
     });
 </script>
 

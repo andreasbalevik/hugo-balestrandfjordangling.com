@@ -5,7 +5,7 @@
 <section class="bg-white">
     <div class="container">
         <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-gray-900">{{ .Title }}</h1>
-        <div class="text-lg md:text-xl leading-relaxed text-gray-800 mb-12 max-w-none">
+        <div class="text-lg md:text-xl leading-relaxed mb-12 max-w-none">
             {{ .Content }}
         </div>
         
@@ -15,7 +15,7 @@
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
                 <div style="background-color: {{.Params.color}};"
-                    class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02] shadow-lg border border-black/5">
+                    class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.02] shadow border border-black/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/15 to-transparent pointer-events-none" aria-hidden="true"></div>
                     <div class="inline-flex items-center gap-2 relative">
                         <span>{{.Title}}</span>
@@ -39,7 +39,7 @@
         <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-300"
+                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold hover:bg-gray-50 transition-colors duration-300"
                 type="button">
                 <span>All activities</span>
                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -49,7 +49,7 @@
 
             <!-- Dropdown menu -->
             <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-                <ul class="text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                <ul class="" aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                 <a href="{{.RelPermalink}}" aria-current="page">
                     <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
@@ -76,7 +76,7 @@
 
     <!-- Private charter trust signal -->
     <p class="flex items-center gap-2 text-sm text-gray-500 mb-8">
-      <svg class="w-4 h-4 text-[#769ba4] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+      <svg class="w-4 h-4 text-mist shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
         <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
       </svg>
       Every charter is your group only — no shared boats, no strangers

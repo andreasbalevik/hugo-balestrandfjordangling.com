@@ -22,7 +22,7 @@
                         {{ range .Site.Menus.main.Sort }}
                         <li>
                             <a href="{{.URL}}"
-                                class="{{if eq $section.RelPermalink .URL }}text-[#e09a00]{{else}}text-inherit{{end}} block tracking-wide py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-[#e09a00] lg:p-0 transition-colors duration-300"
+                                class="{{if eq $section.RelPermalink .URL }}text-primary{{else}}text-inherit{{end}} block tracking-wide py-2 px-3 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary lg:p-0 transition-colors duration-300"
                                 aria-current="page">
                                 {{ .Name }}
                             </a>

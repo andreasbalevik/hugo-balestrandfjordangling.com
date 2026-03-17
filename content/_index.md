@@ -48,11 +48,11 @@ gallery:
   instagram_url: https://www.instagram.com/balestrandfjordangling/
   images:
     - src: images/7npj0q7c.jpeg
-      alt: Fishing
+      alt: Fishing in the Sognefjord with Captain Tor - spectacular Norwegian fjord scenery
     - src: images/b67i4835.jpg
-      alt: Fishing
+      alt: Scenic boat tour on the Sognefjord near Balestrand, Western Norway
     - src: images/ref1q_h0.jpg
-      alt: Fishing
+      alt: Guests enjoying an authentic fjord fishing experience with Balestrand Fjord Angling
 inspirations:
   title: Find Inspiration
   inspirations:

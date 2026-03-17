@@ -7,7 +7,7 @@
         <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
         </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#1d3640]/85 via-[#1d3640]/25 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-fjord/85 via-fjord/25 to-transparent"></div>
     </div>
     <div class="absolute bottom-0 left-0 right-0">
         <div class="container py-10 md:py-14">
@@ -26,17 +26,17 @@
 <section class="bg-white">
     <div class="container">
         <div class="max-w-3xl mx-auto py-14 md:py-20">
-            <div class="w-12 h-1 bg-[#e09a00] rounded-full mb-8"></div>
+            <div class="w-12 h-1 bg-primary rounded-full mb-8"></div>
 
             <!-- Byline -->
             <div class="flex items-center gap-3 pb-8 border-b border-gray-100 mb-10">
-                <div class="w-9 h-9 rounded-full bg-[#1d3640] ring-2 ring-[#769ba4]/40 flex items-center justify-center shrink-0">
-                    <svg class="w-4 h-4 text-[#769ba4]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <div class="w-9 h-9 rounded-full bg-fjord ring-2 ring-mist/40 flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 text-mist" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
                     </svg>
                 </div>
                 <div class="flex flex-col gap-0.5">
-                    <span class="text-sm font-semibold text-gray-800">Captain Tor</span>
+                    <span class="text-sm font-semibold">Captain Tor</span>
                     <div class="flex items-center gap-2 text-xs text-gray-400">
                         <span>Balestrand, Sognefjord</span>
                         {{ if and .Lastmod (not .Lastmod.IsZero) }}
@@ -53,13 +53,13 @@
             <div class="prose md:prose-lg lg:prose-xl max-w-none
                 prose-headings:font-medium prose-headings:text-gray-900 prose-headings:scroll-mt-24
                 prose-h1:hidden
-                prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-2xl prose-h2:md:text-3xl
+                prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-2xl prose-h2:md:text-3xl
                 prose-h3:text-xl prose-h3:md:text-2xl
-                prose-p:text-gray-700 prose-p:leading-relaxed
-                prose-a:text-[#e09a00] prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
-                prose-img:rounded-lg prose-img:shadow-lg
+                prose-p:leading-relaxed
+                prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
+                prose-img:rounded-lg prose-img:shadow
                 prose-strong:text-gray-900 prose-strong:font-semibold
-                prose-blockquote:border-l-[#769ba4] prose-blockquote:text-gray-600 prose-blockquote:italic">
+                prose-blockquote:border-l-mist prose-blockquote:text-gray-600 prose-blockquote:italic">
                 {{ partial "components/prose-content.html" .}}
             </div>
         </div>
@@ -68,17 +68,17 @@
 
 <!-- Testimonial — the moment a real voice stops the reader -->
 {{ with .Params.testimonial }}
-<section class="bg-[#1d3640]">
+<section class="bg-fjord">
     <div class="container py-16 md:py-20">
         <div class="max-w-3xl mx-auto relative">
             <!-- Oversized ambient quote mark -->
-            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl font-serif text-[#e09a00]/20 leading-none select-none" aria-hidden="true">"</div>
+            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl font-serif text-primary/20 leading-none select-none" aria-hidden="true">"</div>
             <blockquote class="relative">
                 <p class="text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light italic">
                     {{ .quote }}
                 </p>
                 <footer class="mt-8">
-                    <cite class="not-italic text-sm font-semibold text-[#e09a00] uppercase tracking-widest">
+                    <cite class="not-italic text-sm font-semibold text-primary uppercase tracking-widest">
                         — {{ .author }}
                     </cite>
                 </footer>
