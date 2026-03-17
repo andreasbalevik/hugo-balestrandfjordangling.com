@@ -93,7 +93,7 @@ Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bæ
 
 Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten har en pålitelig Honda BF 100 hk motor og er godkjent for 8 passasjerer (pax) pluss 900 kg last. Utrustet m AIS, VHF, Flomlys etc.
 
-Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord, Arnafjord, Kvamsøy, samt Flåm, Nærøyfjord, Lærdal og andre steder innover Sognefjorden.
+Vi opererer hovedsakelig i den midtre delen av Sognefjorden, inkludert områdene: Fjærlandsfjorden, Finnafjorden, Sylvarnes, Lidal, Ortnevik, Måren, Ortnevik, Lånefjord, Arnafjord, Kvamsøy, samt Flåm, Nærøyfjorden, Lærdalsfjorden og andre steder innover Sognefjorden etter avtale.
 
 ### Spørsmål: Har dere demo video med fartøyet i arbeid?
 
