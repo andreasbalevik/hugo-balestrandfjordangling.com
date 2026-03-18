@@ -94,7 +94,7 @@ product_info:
   persons: "5"
 cms: true
 ---
-**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind.** When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord whispers*:* *"Focus on the contrasts".* 
+**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind.** When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord whispers *"Focus on the contrasts".* 
 
 Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. The smell of hypernature, the weight of a fish and real human conversation. Life force. It is pure power, when the Sognefjord winks and gives you sea spray in the sunset breeze. 
 
