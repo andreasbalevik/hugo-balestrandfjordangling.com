@@ -96,7 +96,7 @@ product_info:
     - person_number: 4
       price: 14000
     - person_number: 5
-      price: 17000
+      price: 16000
 cms: true
 ---
 ## **Introduction: Master the Long Line – Your Authentic Fjord Challenge**
