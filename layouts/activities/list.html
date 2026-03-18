@@ -33,13 +33,14 @@
 </section>
 {{ end }}
 
+<section class="bg-stone-50">
 <div class="container">
     <!-- Filter Dropdown -->
         <div class="flex items-center gap-3 pb-3">
         <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold hover:bg-gray-50 transition-colors duration-300"
+                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold hover:bg-gray-50 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 type="button">
                 <span>All activities</span>
                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -89,5 +90,6 @@
         {{ end }}
     </div>
 </div>
+</section>
 
 {{ end }}

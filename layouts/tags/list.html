@@ -13,13 +13,14 @@
 {{ end }}
 
 <!-- Activities List (with filter above) -->
+<section class="bg-stone-50">
 <div class="container">
     <!-- Filter Dropdown -->
     <div class="flex items-center gap-3 pb-3">
         <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="rounded-lg px-4 py-2 text-center inline-flex items-center"
+                class="rounded-lg px-4 py-2 text-center inline-flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 type="button">
                 <span style="background-color: {{.Params.color | default "#1d3640"}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
                     {{.Title}}
@@ -56,7 +57,7 @@
         </div>
     </div>
 
-    <hr class="mb-12 text-gray-300">
+    <hr class="mb-12 border-gray-300">
 
     <!-- Activities Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
@@ -65,6 +66,7 @@
         {{ end }}
     </div>
 </div>
+</section>
 
 <!-- See All Activities CTA -->
 <section class="bg-white">
