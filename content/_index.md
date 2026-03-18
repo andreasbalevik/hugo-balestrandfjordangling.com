@@ -3,7 +3,7 @@ title: Sognefjord Fishing Trips & Scenic Tours
 description: Go local with Captain Tor. Private Excursions. See Glaciers,
   Waterfalls from boat. Real Storytelling & Authentic Norwegian Fjord
   Experience. Book Direct.
-action_button: Find your next adventure
+action_button: Start your adventure
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
     alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
@@ -29,8 +29,8 @@ usp:
         stories of my heritage.
       icon: M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z
     - title: The Human Edge
-      description: No middlemen, no scripts. A genuine, unfiltered connection with
-        your captains established fjord programs. Strictly B2C.
+      description: No middlemen, no scripts. A genuine connection with your
+        captain's established fjord programs.
       icon: M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z
     - title: Simplicity Creates Emotions
       description: We focus on the raw luxury of nature. Exploring, storytelling,
