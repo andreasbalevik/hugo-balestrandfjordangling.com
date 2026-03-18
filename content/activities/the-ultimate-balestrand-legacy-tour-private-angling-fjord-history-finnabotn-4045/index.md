@@ -111,13 +111,13 @@ The adventure starts at 09:00 AM from Balestrand harbor.
    We begin with our renowned ["Sognefjord Fishing Thrill – Family Bonding"](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/) program, respecting the fjord and learning local angling methods.
 * **Lunch:**
 
-   Enjoy an optional (extra charge) gourmet lunch at the historic Kviknes Hotel, read the [menu here](https://static1.squarespace.com/static/5e318d0df4dd4a4b1ed3872c/t/683599a6f2787234590d1164/1748343206384/MENY+2025+A+LA+CARTE.pdf)
+   Enjoy an optional (extra charge, not included in my program) gourmet lunch at the historic Kviknes Hotel, read the [menu here](https://static1.squarespace.com/static/5e318d0df4dd4a4b1ed3872c/t/683599a6f2787234590d1164/1748343206384/MENY+2025+A+LA+CARTE.pdf)
 * **Afternoon (2:00 PM):**
 
    We board our sturdy vessel, "Miss Fjords," and set a course for the idyllic island of Kvamsøy.
 * **Evening:**
 
-   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge) gourmet buffe' at the historic Kviknes Hotel, explore the [Culinary food and wine experiences](https://en.kviknes.no/food-philosophy) here
+   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge, not included in my program) gourmet buffe' at the historic Kviknes Hotel, explore the [Culinary food and wine experiences](https://en.kviknes.no/food-philosophy) here
 
 ### Which unique spots will we explore?
 
