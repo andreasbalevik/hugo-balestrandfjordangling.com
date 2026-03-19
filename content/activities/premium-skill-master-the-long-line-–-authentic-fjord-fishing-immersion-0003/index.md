@@ -88,15 +88,15 @@ product_info:
   persons: "5"
   prices:
     - person_number: 1
-      price: 10000
-    - person_number: 2
-      price: 10000
-    - person_number: 3
       price: 12000
-    - person_number: 4
+    - person_number: 2
+      price: 12000
+    - person_number: 3
       price: 14000
+    - person_number: 4
+      price: 16000
     - person_number: 5
-      price: 17000
+      price: 18000
 cms: true
 ---
 ## **Introduction: Master the Long Line – Your Authentic Fjord Challenge**

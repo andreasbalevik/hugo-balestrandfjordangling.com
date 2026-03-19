@@ -94,7 +94,7 @@ product_info:
   persons: "5"
 cms: true
 ---
-**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind.** When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord whispers*:* *"Focus on the contrasts".* 
+**An opportunity to process, experience the simplicity and complexity of the pristine Sognefjord through your own mind.** When you do this, you come out with all the emotions, wishes and desires attached to it. You travel back in time, to places that feel completely different. As you hear the Sognefjord whispers *"Focus on the contrasts".* 
 
 Times have changed. Feelings flow, and life emerges. Resulting in a lush and complex experience that rocket fuels the emotions and feelings in the heart. The smell of hypernature, the weight of a fish and real human conversation. Life force. It is pure power, when the Sognefjord winks and gives you sea spray in the sunset breeze. 
 
@@ -111,13 +111,13 @@ The adventure starts at 09:00 AM from Balestrand harbor.
    We begin with our renowned ["Sognefjord Fishing Thrill – Family Bonding"](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/) program, respecting the fjord and learning local angling methods.
 * **Lunch:**
 
-   Enjoy an optional (extra charge) gourmet lunch at the historic Kviknes Hotel, read the [menu here](https://static1.squarespace.com/static/5e318d0df4dd4a4b1ed3872c/t/683599a6f2787234590d1164/1748343206384/MENY+2025+A+LA+CARTE.pdf)
+   Enjoy an optional (extra charge, not included in my program) gourmet lunch at the historic Kviknes Hotel, read the [menu here](https://static1.squarespace.com/static/5e318d0df4dd4a4b1ed3872c/t/683599a6f2787234590d1164/1748343206384/MENY+2025+A+LA+CARTE.pdf)
 * **Afternoon (2:00 PM):**
 
    We board our sturdy vessel, "Miss Fjords," and set a course for the idyllic island of Kvamsøy.
 * **Evening:**
 
-   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge) gourmet buffe' at the historic Kviknes Hotel, explore the [Culinary food and wine experiences](https://en.kviknes.no/food-philosophy) here
+   We return across the fjord, arriving back in Balestrand around 6:00 PM. Enjoy an optional (extra charge, not included in my program) gourmet buffe' at the historic Kviknes Hotel, explore the [Culinary food and wine experiences](https://en.kviknes.no/food-philosophy) here
 
 ### Which unique spots will we explore?
 
