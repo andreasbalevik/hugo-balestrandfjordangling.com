@@ -21,6 +21,33 @@ baseURL = 'https://balestrandfjordangling.com'
   address = "Holmen 3, 6899 Balestrand, Norway"
   contrast = 2
 
+  # Address details (used by json-ld schemas)
+  addressLocality = "Balestrand"
+  addressRegion = "Vestland"
+  postalCode = "6899"
+  addressCountry = "NO"
+
+  # Geo coordinates (used by json-ld schemas)
+  latitude = "61.2069"
+  longitude = "6.5278"
+  areaServedRadius = "50000"
+
+  # Business details
+  priceRange = "NOK 3000-10000"
+  hasMap = "https://www.google.com/maps/place/Holmen+3,+6899+Balestrand,+Norway"
+  founder = "Captain Tor Balevik"
+  author = "Captain Tor"
+  author_url = "https://balestrandfjordangling.com/about/"
+  currency = "NOK"
+  social = [
+    "https://www.instagram.com/balestrandfjordangling/",
+    "https://www.facebook.com/balestrandfjordangling/"
+  ]
+
+  # Content sections (used by json-ld schemas)
+  blog_section = "inspirations"
+  product_section = "activities"
+
 [taxonomies]
   tag = 'tags'
 
