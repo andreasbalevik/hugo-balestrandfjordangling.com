@@ -135,12 +135,12 @@
         <div class="container max-w-4xl py-0">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-4 py-3 md:py-4">
                 <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
-                    <a href="#about" class="text-sm md:text-base font-semibold hover:text-fjord transition-colors duration-300 nav-link whitespace-nowrap">About</a>
+                    <a href="#about" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">About</a>
                     {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-                    <a href="#practical" class="text-sm md:text-base font-semibold hover:text-fjord transition-colors duration-300 nav-link whitespace-nowrap">Practical Info</a>
+                    <a href="#practical" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">Practical Info</a>
                     {{ end }}
                     {{ if gt (len .Params.images) 1 }}
-                    <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-fjord transition-colors duration-300 nav-link whitespace-nowrap">Gallery</a>
+                    <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap">Gallery</a>
                     {{ end }}
                 </div>
                 <div class="w-full md:w-auto">
@@ -219,9 +219,9 @@
             });
             
             navLinks.forEach(link => {
-                link.classList.remove('text-fjord');
+                link.classList.remove('text-primary');
                 if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('text-fjord');
+                    link.classList.add('text-primary');
                 }
             });
         }
