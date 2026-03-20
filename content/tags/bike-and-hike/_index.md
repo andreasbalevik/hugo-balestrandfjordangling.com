@@ -1,6 +1,6 @@
 ---
 title: Bike and hike
-color: "#5a8a6a"
+color: "#456b50"
 aliases:
   - /en/activeties/ebike-rental-in-balestrand
   - /en/activeties/ebike-rental-children-try-yuba-spicy-curry-1.html
