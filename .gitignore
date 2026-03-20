@@ -2,3 +2,4 @@ resources/
 package-lock.json
 public/
 node_modules/
+hugo_stats.json
