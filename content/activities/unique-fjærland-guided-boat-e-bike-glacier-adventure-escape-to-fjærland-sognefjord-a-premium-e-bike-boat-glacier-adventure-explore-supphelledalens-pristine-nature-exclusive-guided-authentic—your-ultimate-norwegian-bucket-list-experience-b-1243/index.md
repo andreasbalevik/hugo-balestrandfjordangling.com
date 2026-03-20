@@ -83,9 +83,9 @@ tags:
   - business-and-pleasure
 information:
   options:
-    global_practical: false
+    global_practical: true
     global_bike_practical: false
-    global_included: false
+    global_included: true
     varde_experience_quality: false
 product_info:
   duration:
