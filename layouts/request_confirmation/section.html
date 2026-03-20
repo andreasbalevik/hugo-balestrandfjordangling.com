@@ -62,13 +62,13 @@
                                 <img src="{{ $processed.Permalink }}" alt="Captain Tor" class="w-full h-full object-cover" style="transform: scaleX(-1);">
                             {{ else }}
                                 <div class="w-full h-64 bg-gradient-to-br from-[#2d6a4f]/20 to-[#1b4332]/20 flex items-center justify-center">
-                                    <p class="text-gray-500">Captain Tor</p>
+                                    <p class="text-gray-700">Captain Tor</p>
                                 </div>
                             {{ end }}
                         </div>
                         <div class="mt-4 text-center">
                             <p class="text-sm font-semibold text-gray-900">Captain Tor</p>
-                            <p class="text-xs text-gray-600">Your Guide</p>
+                            <p class="text-xs text-gray-700">Your Guide</p>
                         </div>
                     </div>
                 </div>
@@ -78,10 +78,10 @@
                     <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                         <div>
                             <p class="font-medium">Ready to explore more adventures?</p>
-                            <p class="text-sm text-gray-600">Browse our other exciting experiences</p>
+                            <p class="text-sm text-gray-700">Browse our other exciting experiences</p>
                         </div>
                         <a href="{{ .Site.Home.Permalink }}"
-                            class="inline-flex items-center px-6 py-4 rounded-lg bg-primary hover:bg-primary-dark text-white font-semibold transition-all duration-300 whitespace-nowrap gap-2 shadow hover:shadow-md"
+                            class="inline-flex items-center px-6 py-4 rounded-lg bg-fjord hover:bg-fjord/85 text-white font-semibold transition-all duration-300 whitespace-nowrap gap-2 shadow hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fjord"
                             aria-label="Return to homepage">
                             {{ i18n "tilbake" }}
                             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

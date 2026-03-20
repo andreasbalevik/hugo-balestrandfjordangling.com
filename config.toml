@@ -13,6 +13,7 @@ baseURL = 'https://balestrandfjordangling.com'
 
 [Params]
   logo = "/favicon/android-chrome-512x512.png"
+  logo_title = "Balestrand Fjord Angling" 
   brand_image = "/favicon/android-chrome-512x512.png"
   ogimage = ""
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
@@ -39,14 +40,22 @@ baseURL = 'https://balestrandfjordangling.com'
   author = "Captain Tor"
   author_url = "https://balestrandfjordangling.com/about/"
   currency = "NOK"
-  social = [
-    "https://www.instagram.com/balestrandfjordangling/",
-    "https://www.facebook.com/balestrandfjordangling/"
-  ]
+  privacyUrl = "/privacy"
+
+[Params.social]
+  youtube     = "https://www.youtube.com/@balestrandfjordangling"
+  instagram   = "https://www.instagram.com/balestrandfjordangling/"
+  facebook    = "https://www.facebook.com/Balestrand-Fjord-Angling-112650423742403"
+  tripadvisor = "https://no.tripadvisor.com/Attraction_Review-g616211-d12520219-Reviews-Balestrand_Fjord_Angling-Balestrand_Sogn_og_Fjordane_Western_Norway.html"
 
   # Content sections (used by json-ld schemas)
   blog_section = "inspirations"
   product_section = "activities"
+
+[[menus.footer]]
+  name   = "Home"
+  url    = "/"
+  weight = 10
 
 [taxonomies]
   tag = 'tags'
