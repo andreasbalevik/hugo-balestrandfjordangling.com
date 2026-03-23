@@ -193,7 +193,7 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of year as the fjord awakens. Pack good wool underwear, a hat, and quality mittens. The water is usually calm. When the sun hits, the atmosphere is incredible! Remember sunglasses :)
 
-> Learn more about [what to wear on my Fjord Fishing Adventures her](<>)
+> Learn more about [what to wear on my Fjord Fishing Adventures her](https://balestrandfjordangling.com/inspirations/what-to-wear-0306/)
 
 ### Do you have any video inspiration from the tour?
 
