@@ -6,7 +6,7 @@
 
     <!-- Image -->
     <div class="relative overflow-hidden">
-        <div class="max-h-[400px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
+        <div class="aspect-square md:aspect-auto md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
             {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
         </div>
         <!-- Gradient — desktop only -->
