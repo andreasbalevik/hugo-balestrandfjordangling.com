@@ -96,7 +96,7 @@ cms: true
 ---
 ## Introduction: The Ultimate Authentic Fjord Transfer & Experience
 
-This unique experience designed forthose used to traveling and collecting unique travel experiences. It's a truly handpicked journey for the discerning traveler on the go.
+This unique experience designed forthose used to traveling and collecting unique travel experiences. It's a truly handpicked journey for the discerning traveler on the go. 
 
 ### It's a "world-class" adventure:
 
@@ -105,6 +105,8 @@ This unique experience designed forthose used to traveling and collecting unique
 ### Is this a regular tour or a transfer service?
 
 It’s both! This is a world-class fjord experience or a unique #authentictransfer trip, exploring stunning small places along the Sognefjord.
+
+**(NOTE:** I can also take you from Flåm to the final stop: **[Sogndal Marina](https://en.sognefjord.no/fjord-villages/sogndal/), [Walaker Hotel](https://www.walaker.com/) or to [Fjærland Fjordstove Hotel.](https://fjaerlandhotel.com/)** Separate prices for this, please state on the destination message form when you contact me)
 
 ## **Choose a Private Fjord Tour: Exclusivity & Adventure**
 

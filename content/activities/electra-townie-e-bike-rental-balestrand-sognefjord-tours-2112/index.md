@@ -61,7 +61,8 @@ description: Explore Balestrand on a stylish blue e-bike! Self-guided tours
   today!
 images:
   - src: images/img_20200919_145303_9.jpg
-    alt: Electra Townie e-bike ready for rental in Balestrand with fjord and mountain views
+    alt: Electra Townie e-bike ready for rental in Balestrand with fjord and
+      mountain views
   - src: images/img_20201007_122350_5.jpg
     alt: funny bike photos in Balestrand nature aand high mountains and farmhouses
 tags:
@@ -135,6 +136,15 @@ Experiencing Balestrand gives you a sense of freedom and inspiration. Real joy w
 #### Flexibility for All:
 
 If one person wants a light workout to Dragsvik, for example, you can rent 2 bicycles: 1 regular and 1 electric bicycle. This way it will be an enjoyable experience for both.
+
+Do We have any video inspiration from the tour?
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
+
+Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/stories/highlights/18501455134029845/)
+
+Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/stories/highlights/17894838143609321/)
+
+Teaser YouTube Episode 2: Watch the video [HERE](https://www.youtube.com/watch?v=FydHB0yOMnE&t=25s)
 
 ### GO FARTHER. GO FASTER. GO SLOW. REASONS TO GO?
 
