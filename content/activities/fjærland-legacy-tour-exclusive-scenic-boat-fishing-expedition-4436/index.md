@@ -193,17 +193,19 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of year as the fjord awakens. Pack good wool underwear, a hat, and quality mittens. The water is usually calm. When the sun hits, the atmosphere is incredible! Remember sunglasses :)
 
-> #### Learn more about [what to wear on my Fjord Fishing Adventures here](<>)
+> Learn more about [what to wear on my Fjord Fishing Adventures her](<>)
 
-### I am Exited! Do you have any video inspiration from the tour?
+### Do you have any video inspiration from the tour?
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
+**Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
 > Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
 >
 > Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
 > Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+>
+> Teaser YouTube TV-Episode 6: People of The North [HERE](https://www.youtube.com/watch?v=pjoMLKwGsEg)
 
 **This is a family expedition where you can experience the unexpected!**
 
