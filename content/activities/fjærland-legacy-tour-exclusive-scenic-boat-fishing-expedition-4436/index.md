@@ -205,7 +205,7 @@ We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of 
 >
 > Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 >
-> Teaser YouTube TV-Episode 6: People of The North [HERE](https://www.youtube.com/watch?v=pjoMLKwGsEg)
+> Teaser YouTube TV-Episode 6: People of The North [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 **This is a family expedition where you can experience the unexpected!**
 
@@ -243,4 +243,4 @@ Absolutely. If you are staying in Fjærland and desire variety with a day trip t
 
 ### Is there any video inspiration available for these tours?
 
-Yes, you can see Captain Tor and the fjord experience in the [TV series "People of the North". Watch the teaser video here.](https://www.youtube.com/watch?v=pjoMLKwGsEg)
+Yes, you can see Captain Tor and the fjord experience in the [TV series "People of the North". Watch the teaser video here.](https://www.youtube.com/watch?v=6tarTVGdFTY)
