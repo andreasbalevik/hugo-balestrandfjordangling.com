@@ -22,7 +22,8 @@
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="rounded-lg px-4 py-2 text-center inline-flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 type="button">
-                <span style="background-color: {{.Params.color | default "#1d3640"}};" class="px-4 py-4 rounded-lg text-white text-sm font-semibold">
+                <span class="px-4 py-4 rounded-lg text-white text-sm font-semibold"
+                    style="background-color: {{.Params.color | default "#1d3640"}};">
                     {{.Title}}
                 </span>
                 <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

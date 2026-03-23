@@ -14,8 +14,8 @@
             {{range $name, $taxonomy := .Site.Taxonomies.tags}}
             {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
-                <div style="background-color: {{.Params.color | default "#1d3640"}};"
-                    class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.02] shadow border border-black/5">
+                <div class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.02] shadow border border-black/5"
+                    style="background-color: {{.Params.color | default "#1d3640"}};">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/15 to-transparent pointer-events-none" aria-hidden="true"></div>
                     <div class="inline-flex items-center gap-2 relative">
                         <span>{{.Title}}</span>
