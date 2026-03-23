@@ -195,15 +195,15 @@ We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of 
 
 > #### Learn more about [what to wear on my Fjord Fishing Adventures here](<>)
 
-### We have video inspiration from the tour:
+### I am Exited! Do you have any video inspiration from the tour?
 
-To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](<>)
+> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](<>)
+> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser Instagram Reel 3: Watch the video[ HERE](<>)
+> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 **This is a family expedition where you can experience the unexpected!**
 
