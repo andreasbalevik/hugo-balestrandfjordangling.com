@@ -3,7 +3,7 @@
   command = "git config core.quotepath false && git config core.precomposeunicode true && hugo build --gc --minify --baseURL \"${URL}\""
 
 [build.environment]
-  HUGO_VERSION = "0.150.0"
+  HUGO_VERSION = "0.158.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 

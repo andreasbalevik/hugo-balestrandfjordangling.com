@@ -51,7 +51,7 @@ gallery:
       alt: Fishing in the Sognefjord with Captain Tor - spectacular Norwegian fjord scenery
     - src: images/b67i4835.jpg
       alt: Scenic boat tour on the Sognefjord near Balestrand, Western Norway
-    - src: images/ref1q_h0.jpg
+    - src: images/ref1q_h0.webp
       alt: Guests enjoying an authentic fjord fishing experience with Balestrand Fjord Angling
 inspirations:
   title: Find Inspiration
