@@ -112,7 +112,7 @@ cms: true
 ---
 ## Introduction: The Exclusive Fjærland & Balestrand Journey
 
-Made for those who stay overnight or want to start from the legendary glacier village of Fjærland. This Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family!
+This trip start from the legendary glacier village of Fjærland. This is a Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family!
 
 ### Where does the "Fjærland Legacy Tour" begin?
 
