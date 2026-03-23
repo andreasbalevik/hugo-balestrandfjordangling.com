@@ -189,15 +189,21 @@ Feel free to share this unique opportunity Fjærland with friends, and be the fi
 
 **Don’t miss out! Secure your spot on this year’s most memorable family adventure today.**
 
-### Any video inspiration from the tour?
+### Be prepared for the weather:
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
+We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of year as the fjord awakens. Pack good wool underwear, a hat, and quality mittens. The water is usually calm. When the sun hits, the atmosphere is incredible! Remember sunglasses :)
 
-> Teaser Instagram Reel 1: Watch the video HERE
+> #### Learn more about [what to wear on my Fjord Fishing Adventures here](<>)
+
+### We have video inspiration from the tour:
+
+To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
+
+> Teaser Instagram Reel 1: Watch the video [HERE](<>)
 >
-> Teaser Instagram Reel 2: Watch the video HERE
+> Teaser Instagram Reel 2: Watch the video [HERE](<>)
 >
-> Teaser YouTube Episode: Watch Episode 1 HERE
+> Teaser Instagram Reel 3: Watch the video[ HERE](<>)
 
 **This is a family expedition where you can experience the unexpected!**
 
