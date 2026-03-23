@@ -112,11 +112,11 @@ cms: true
 ---
 ## Introduction: The Exclusive Fjærland & Balestrand Journey
 
-Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family
+Made for those who stay overnight or want to start from the legendary glacier village of Fjærland. This Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family!
 
 ### Where does the "Fjærland Legacy Tour" begin?
 
-Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back.
+Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back. Perfect for those staying at Fjærland Hotell
 
 ### A unique experience design
 
@@ -207,7 +207,7 @@ To really get a feel for the atmosphere, we’ve put together some short inspira
 
 **This is a family expedition where you can experience the unexpected!**
 
-### **THE VIKING SPIRIT: Mastering the Fjord**
+## **THE VIKING SPIRIT: Mastering the Fjord**
 
 ### This fjord experience is also special and historically relevant, why:
 
