@@ -67,7 +67,7 @@ product_info:
       price: 16000
 cms: true
 ---
-### Simplicity is the New Luxury. Rewild Your Spirit.
+## Simplicity is the New Luxury. Rewild Your Spirit.
 
 Escape the crowds and immerse yourself in raw, authentic Norwegian nature. In April and May, the inner Fjærlandsfjord awakens from winter hibernation. Join legendary Captain Tor for an exclusive, hands-on experience where you become the local fisherman for a day. This bespoke adventure is designed to reconnect you with nature—and each other.
 
