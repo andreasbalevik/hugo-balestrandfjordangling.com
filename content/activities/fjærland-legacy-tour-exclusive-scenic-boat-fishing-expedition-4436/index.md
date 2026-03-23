@@ -84,9 +84,9 @@ tags:
   - family-and-friends
 information:
   options:
-    global_practical: false
+    global_practical: true
     global_bike_practical: false
-    global_included: false
+    global_included: true
     varde_experience_quality: true
 product_info:
   duration:
@@ -99,22 +99,22 @@ product_info:
     - person_number: 2
       price: 8000
     - person_number: 3
-      price: 8000
-    - person_number: 4
-      price: 8000
-    - person_number: 5
       price: 9000
-    - person_number: 6
+    - person_number: 4
       price: 10000
-    - person_number: 7
+    - person_number: 5
       price: 11000
+    - person_number: 6
+      price: 12000
+    - person_number: 7
+      price: 13000
 cms: true
 ---
 ## Introduction: The Exclusive Fjærland & Balestrand Journey
 
 Sognefjord's hidden gem-The ultimate heritage tour. Authentic angling, net fishing & history with Captain Tor from Balestrand. A premium bucket-list experience for your family
 
-## Where does the "Fjærland Legacy Tour" begin?
+### Where does the "Fjærland Legacy Tour" begin?
 
 Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back.
 
@@ -197,7 +197,7 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 >
 > Teaser Instagram Reel 2: Watch the video HERE
 >
-> Teaser YouTube Episode : Watch Episode HERE
+> Teaser YouTube Episode: Watch Episode 1 HERE
 
 **This is a family expedition where you can experience the unexpected!**
 
