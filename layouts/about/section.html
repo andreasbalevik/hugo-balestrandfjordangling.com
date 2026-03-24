@@ -1,24 +1,16 @@
 {{ define "main" }}
 
 <!-- Cinematic hero — Captain Tor is not a product, he's a person -->
-<section class="relative mt-[56px] overflow-hidden">
+<section class="mt-[56px]">
     {{ with index .Params.images 0 }}
-    <div class="relative">
-        <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px] overflow-hidden">
-            {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "hero") }}
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-fjord/85 via-fjord/25 to-transparent"></div>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0">
-        <div class="container py-10 md:py-14">
-            <div class="max-w-2xl">
-                <p class="text-sm font-semibold text-white/70 uppercase tracking-widest mb-4">4th generation · Balevik bay</p>
-                <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white drop-shadow-lg">
-                    {{ $.Title }}
-                </h1>
-            </div>
-        </div>
-    </div>
+    {{ partial "components/hero/image.html" (dict
+        "page"          $
+        "src"           .src
+        "alt"           .alt
+        "label"         "4th generation · Balevik bay"
+        "alwaysOverlay" true
+        "gradient"      "from-fjord/85 via-fjord/25 to-transparent"
+    ) }}
     {{ end }}
 </section>
 
