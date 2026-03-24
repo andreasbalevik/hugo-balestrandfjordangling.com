@@ -90,7 +90,7 @@
             <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 gap-8 mx-auto">
+        <div class="grid grid-cols-1 gap-8 mx-auto lg:max-w-2xl xl:max-w-full">
             {{ range . }}
                 {{ $page := replace . "/index" "" }}
                 {{ with $.Site.GetPage $page }}
@@ -101,7 +101,7 @@
     </div>
 </section>
 {{ else }}
-<section class="bg-fjord-pale">
+<section class="bg-fjord-pale py-10 md:py-16">
     {{ partial "activity/see-all-activities.html" . }}
 </section>
 {{ end }}
