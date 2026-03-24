@@ -37,11 +37,13 @@
 <div class="container">
     <!-- Filter Dropdown -->
         <div class="flex items-center gap-3 pb-3">
-        <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold hover:bg-gray-50 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                type="button">
+                type="button"
+                aria-label="Filter activities by category"
+                aria-haspopup="listbox"
+                aria-expanded="false">
                 <span>All activities</span>
                 <svg class="w-4 h-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -50,22 +52,22 @@
 
             <!-- Dropdown menu -->
             <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-                <ul class="" aria-labelledby="dropdownDefaultButton">
+                <ul role="listbox" aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
-                <a href="{{.RelPermalink}}" aria-current="page">
-                    <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                <li>
+                    <a href="{{.RelPermalink}}" aria-current="page" class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
                         All activities
-                    </li>
-                </a>
+                    </a>
+                </li>
                 {{ end }}
 
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                <a href="{{ .RelPermalink }}">
-                    <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                <li>
+                    <a href="{{ .RelPermalink }}" class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
                         {{ .Title }}
-                    </li>
-                </a>
+                    </a>
+                </li>
                 {{ end }}
                 {{ end }}
             </ul>

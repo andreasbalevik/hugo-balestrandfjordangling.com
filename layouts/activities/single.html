@@ -61,8 +61,7 @@
 </section>
 
 <!-- Content Sections with Integrated Navigation -->
-<section class="bg-white">
-    
+
     <!-- Sticky Navigation Tabs -->
     {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
     <nav class="sticky top-[71px] z-50 bg-white border-b border-gray-200">
@@ -133,7 +132,6 @@
             {{ end }}
     </div>
     </section>
-</section>
 
 
 <script>
