@@ -16,10 +16,10 @@
 {{ $image_small := $image.Fill "768x600 q65 webp" }}    <!-- Tablet portrait/Mobile -->
 
 <picture class="block w-full h-full">
-    <source media="(min-width: 1280px)" srcset="{{ $image_xlarge.RelPermalink }}" width="{{ $image_xlarge.Width }}" height="{{ $image_xlarge.Height }}">
-    <source media="(min-width: 1024px)" srcset="{{ $image_large.RelPermalink }}" width="{{ $image_large.Width }}" height="{{ $image_large.Height }}">
-    <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}" width="{{ $image_medium.Width }}" height="{{ $image_medium.Height }}">
-    <source srcset="{{ $image_small.RelPermalink }}" width="{{ $image_small.Width }}" height="{{ $image_small.Height }}">
+    <source media="(min-width: 1280px)" srcset="{{ $image_xlarge.RelPermalink }}">
+    <source media="(min-width: 1024px)" srcset="{{ $image_large.RelPermalink }}">
+    <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}">
+    <source srcset="{{ $image_small.RelPermalink }}">
     
     <img class="w-full h-full object-cover object-center" 
         {{ with .alt }}alt="{{ . }}"{{ end }} 
