@@ -15,7 +15,7 @@
 {{ $image_medium := $image.Fill "1024x600 q70 webp" }}  <!-- Tablet landscape -->
 {{ $image_small := $image.Fill "768x600 q65 webp" }}    <!-- Tablet portrait/Mobile -->
 
-<picture>
+<picture class="block w-full h-full">
     <source media="(min-width: 1280px)" srcset="{{ $image_xlarge.RelPermalink }}" width="{{ $image_xlarge.Width }}" height="{{ $image_xlarge.Height }}">
     <source media="(min-width: 1024px)" srcset="{{ $image_large.RelPermalink }}" width="{{ $image_large.Width }}" height="{{ $image_large.Height }}">
     <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}" width="{{ $image_medium.Width }}" height="{{ $image_medium.Height }}">

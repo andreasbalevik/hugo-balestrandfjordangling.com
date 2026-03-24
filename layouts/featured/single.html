@@ -1,110 +1,122 @@
 {{ define "main" }}
 
-{{/* ─── FEATURED: dark cinematic experience throughout ─── */}}
-<div class="bg-fjord">
+{{/* ─── FEATURED: dark cinematic hero, fjord-light prose ─── */}}
 
-    <!-- Hero — full bleed, tall, the fjord fills the screen -->
-    <section class="relative mt-[56px] overflow-hidden">
-        {{ with .Params.images }}
-        {{ with index . 0 }}
-        <div class="relative">
-            <div class="aspect-[5/4] md:aspect-auto md:max-h-[660px] lg:max-h-[740px] overflow-hidden">
-                {{ partial "featured/hero-image.html" . }}
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-fjord via-fjord/40 to-transparent"></div>
+<!-- Hero — stacked on mobile, cinematic overlay on desktop -->
+<section class="mt-[56px]">
+    {{ with .Params.images }}
+    {{ with index . 0 }}
+
+    <!-- Image + desktop gradient overlay -->
+    <div class="relative overflow-hidden">
+        <div class="aspect-auto md:max-h-[660px] lg:max-h-[740px] overflow-hidden">
+            {{ partial "featured/hero-image.html" . }}
         </div>
-        {{ end }}
-        {{ end }}
+        <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-fjord via-fjord/40 to-transparent"></div>
 
-        <!-- "As seen on" badge + title overlaid -->
-        <div class="absolute bottom-0 left-0 right-0">
-            <div class="container py-10 md:py-14">
+        <!-- Desktop: title overlaid at bottom -->
+        <div class="hidden md:block absolute bottom-0 left-0 right-0">
+            <div class="container py-14">
                 <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 mb-5 px-4 py-2 bg-primary rounded-lg">
-                        <svg class="w-4 h-4 bg-primary text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"/>
-                        </svg>
-                        <span class="text-xs font-semibold bg-primary text-white uppercase tracking-widest">As featured on TV</span>
-                    </div>
-                    <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white drop-shadow">
-                        {{ .Title }}
+                    {{ partial "featured/tv-badge.html" . }}
+                    <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white drop-shadow-lg">
+                        {{ $.Title }}
                     </h1>
-                    {{ with .Params.description }}
-                    <p class="mt-4 text-xl text-white/80 leading-relaxed max-w-2xl text-pretty">
+                    {{ with $.Params.description }}
+                    <p class="mt-4 text-xl text-white/80 leading-relaxed max-w-2xl text-pretty drop-shadow">
                         {{ . }}
                     </p>
                     {{ end }}
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Opening quote — Captain Tor's voice before a word of prose -->
-    {{ with .Params.opening_quote }}
-    <section class="py-16 md:py-20">
-        <div class="container">
-            <div class="max-w-3xl mx-auto relative">
-                <div class="absolute -top-4 -left-2 md:-left-6 text-8xl md:text-9xl font-serif text-primary/15 leading-none select-none" aria-hidden="true">"</div>
-                <blockquote class="relative">
-                    <p class="text-xl md:text-2xl text-white/85 leading-relaxed font-light italic">
-                        {{ .quote }}
-                    </p>
-                    {{ with .author }}
-                    <footer class="mt-6">
-                        <cite class="not-italic text-xs font-semibold text-white uppercase tracking-widest">— {{ . }}</cite>
-                    </footer>
-                    {{ end }}
-                </blockquote>
-            </div>
-        </div>
-    </section>
+    <!-- Mobile: title below image on fjord background -->
+    <div class="md:hidden bg-fjord px-5 py-8">
+        {{ partial "featured/tv-badge.html" . }}
+        <h1 class="mt-0 mb-4 text-2xl font-medium text-balance text-white">
+            {{ $.Title }}
+        </h1>
+        {{ with $.Params.description }}
+        <p class="mt-3 text-base text-white/80 leading-relaxed">
+            {{ . }}
+        </p>
+        {{ end }}
+    </div>
+
     {{ end }}
+    {{ end }}
+</section>
 
-    <!-- Prose — white card floating in the dark -->
-    <section class="pb-0 pt-0">
-        <div class="container">
-            <div class="max-w-3xl mx-auto bg-white rounded-t-2xl px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-14 md:pb-20">
-                <div class="w-12 h-1 bg-primary rounded-full mb-10"></div>
-                <div class="prose md:prose-lg lg:prose-xl max-w-none
-                    prose-headings:font-medium prose-headings:text-gray-900
-                    prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-10 prose-h2:mb-6
-                    prose-h3:text-xl prose-h3:md:text-2xl
-                    prose-p:leading-relaxed
-                    prose-a:text-primary prose-a:underline hover:prose-a:no-underline prose-a:transition-colors
-                    prose-img:rounded-lg prose-img:shadow
-                    prose-strong:text-gray-900 prose-strong:font-semibold
-                    prose-blockquote:border-l-mist prose-blockquote:text-fjord prose-blockquote:font-medium prose-blockquote:italic">
-                    {{ partial "components/prose-content.html" .}}
+<!-- Prose content -->
+<section class="bg-fjord-light">
+    <div class="container">
+        <div class="max-w-3xl mx-auto">
+            <div class="w-12 h-1 bg-primary rounded-full mb-10"></div>
+
+            <!-- Byline -->
+            <div class="flex items-center gap-3 pb-8 border-b border-mist/20 mb-10">
+                <div class="w-9 h-9 rounded-full bg-fjord ring-2 ring-mist/40 flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 text-mist" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                    <span class="text-sm font-semibold">{{ with .Params.author }}{{ . }}{{ else }}Captain Tor{{ end }}</span>
+                    <div class="flex items-center gap-2 text-xs text-gray-700">
+                        {{ if not .Lastmod.IsZero }}
+                        <span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
+                        {{ else if .GitInfo }}
+                        <span>Updated <time datetime="{{ .GitInfo.AuthorDate.Format "2006-01-02" }}">{{ .GitInfo.AuthorDate.Format "Jan 2, 2006" }}</time></span>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Gallery — dark, cinematic, no header needed -->
-    {{ if gt (len .Params.images) 1 }}
-    <section class="bg-fjord py-12 md:py-16">
-        <div class="container">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                {{ range after 1 .Params.images }}
-                <div class="group relative overflow-hidden rounded-lg aspect-[4/3]">
-                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300 pointer-events-none"></div>
-                </div>
-                {{ end }}
+            <div class="prose md:prose-lg lg:prose-xl max-w-none
+                prose-headings:font-medium prose-headings:text-gray-900
+                prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-10 prose-h2:mb-6
+                prose-h3:text-xl prose-h3:md:text-2xl
+                prose-p:leading-relaxed
+                prose-a:text-primary prose-a:underline hover:prose-a:no-underline prose-a:transition-colors
+                prose-img:rounded-lg prose-img:shadow
+                prose-strong:text-gray-900 prose-strong:font-semibold
+                prose-blockquote:border-l-mist prose-blockquote:text-fjord prose-blockquote:font-medium prose-blockquote:italic">
+                {{ partial "components/prose-content.html" .}}
             </div>
         </div>
-    </section>
-    {{ end }}
+    </div>
+</section>
 
-</div>
+<!-- Gallery -->
+{{ if gt (len .Params.images) 1 }}
+<section class="bg-fjord-pale">
+    <div class="container">
+        <div class="text-center mb-10">
+            <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-3">More photos</p>
+            <h2 class="mt-0 mb-6 text-2xl md:text-3xl font-medium tracking-tight text-balance text-fjord">Photo Gallery</h2>
+            <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {{ range after 1 .Params.images }}
+            <div class="group relative overflow-hidden rounded-lg aspect-[4/3]">
+                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
+                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300 pointer-events-none"></div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
 
-<!-- Related Activities — transition from dark to light -->
+<!-- Related Activities -->
 {{ with .Params.related_activities }}
 <section class="bg-stone-50">
     <div class="container">
         <div class="text-center mb-12">
             <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-3">Continue exploring</p>
-            <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900">Related Activities</h2>
+            <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-fjord">Related Activities</h2>
             <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
         <div class="grid grid-cols-1 gap-8 mx-auto">
@@ -118,7 +130,7 @@
     </div>
 </section>
 {{ else }}
-<section class="bg-stone-50">
+<section class="bg-stone-50 py-10 md:py-16">
     {{ partial "activity/see-all-activities.html" . }}
 </section>
 {{ end }}
