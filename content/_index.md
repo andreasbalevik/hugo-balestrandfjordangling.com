@@ -55,6 +55,8 @@ gallery:
       alt: Guests enjoying an authentic fjord fishing experience with Balestrand Fjord Angling
 inspirations:
   title: Find Inspiration
+  description: Discover stories, experiences, and ideas that will fuel your next
+    adventure in the Sognefjord.
   inspirations:
     - discover-the-sognefjord-with-captain-tor-kayak-5758/index
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
