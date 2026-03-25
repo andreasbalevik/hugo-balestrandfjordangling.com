@@ -1,8 +1,17 @@
 {{/*
-    Custom Hero Image for Featured Pages
-    Usage: {{ partial "featured/hero-image.html" . }}
+    Featured Hero Image — responsive hero with smart crop for mobile
     
-    Optimized for max-height constraint with proper aspect ratio
+    Hensikt:
+      Renders a featured image with responsive sizing and smart crop for different breakpoints.
+      Uses responsive fill sizes and webp format with fallback for browser compatibility.
+    
+    Usage: {{ partial "featured/hero-image" . }}
+    
+    Parameters:
+      .src: Image path from resources
+    
+    Output:
+      Responsive picture element with srcset for optimal delivery across devices
 */}}
 
 {{ $contrast := site.Params.contrast | default 5 }}

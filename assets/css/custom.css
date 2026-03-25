@@ -1,0 +1,41 @@
+/* ─── Brand tokens ────────────────────────────────────────────────────────── */
+/* Only place utility styles (text-align, display, etc.) in Tailwind classes, */
+/* never in custom.css. Use custom.css only for brand tokens, complex styles,  */
+/* or utilities that Tailwind doesn't provide.                                 */
+@theme {
+  --color-primary:      #A56500;
+  --color-primary-dark: #7A4500;
+  --color-fjord:        #1d3640;
+  --color-mist:         #769ba4;
+  --color-fjord-light:  #f0f7fb;
+  --color-fjord-pale:   #deeef7;
+}
+
+/* ─── Background image utilities ──────────────────────────────────────────── */
+/* Used for hero sections and page backgrounds with blurred background images */
+@layer utilities {
+  .bg-hero {
+    @apply bg-cover bg-center;
+  }
+
+  .bg-overlay-section {
+    @apply relative py-12 md:py-16 bg-cover bg-center;
+  }
+
+  .bg-overlay-section::before {
+    content: '';
+    @apply absolute inset-0 bg-black/40;
+  }
+
+  .flip-horizontal {
+    transform: scaleX(-1);
+  }
+}
+
+/* ─── Dynamic color backgrounds ───────────────────────────────────────────── */
+/* Applied inline with background-color for category-specific colors from content params */
+.bg-category {
+  background-size: auto;
+  background-position: center;
+}
+

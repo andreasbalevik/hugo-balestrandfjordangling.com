@@ -1,0 +1,94 @@
+{{/* 
+  Generic Button Component — handles primary, secondary, and submit variants
+  
+  Hensikt:
+    Konsoliderer tre tidligere separate button-partials (primary, secondary, submit)
+    inn i én komponent som håndterer alle CTA-varianter med konsistent stil og oppførsel.
+  
+  Varianter:
+    - primary: Orange background with arrow, primary CTA (renders <a> element)
+    - secondary: White background with gray border, alternative CTA (renders <a> element)
+    - submit: Orange button for form submissions (renders <button type="submit">)
+  
+  Valgregel — når velge hvilken variant:
+    - Hvis knappen leder til en side: bruk primary eller secondary
+    - Hvis knappen submitler et skjema: bruk submit
+    - Hvis knappen åpner en modal: bruk booking.html istedenfor (egen partial med data-modal-target)
+  
+  Usage:
+    Primary (link): {{ partial "components/buttons/button" (dict "href" "/path" "text" "Button Text" "variant" "primary" "ariaLabel" "...") }}
+    Secondary (link): {{ partial "components/buttons/button" (dict "href" "/path" "text" "Button Text" "variant" "secondary" "ariaLabel" "...") }}
+    Submit (form): {{ partial "components/buttons/button" (dict "text" "Submit" "variant" "submit") }}
+  
+  Alle varianter:
+    - Har pil-ikon med hover-animasjon
+    - Følger WCAG 2.1 AAA fokus-tilstander
+    - Responsive tekst- og padding-størrelse
+    - Shadows og hover-effekter for interaktivitetshint
+*/}}
+
+{{ $variant := .variant | default "primary" }}
+{{ $ariaLabel := .ariaLabel | default .text }}
+
+{{ if eq $variant "submit" }}
+  {{/* Submit button for forms */}}
+  <button type="submit"
+      class="text-white inline-flex rounded-lg items-center bg-primary hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary font-semibold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 text-center transition-all duration-300 gap-2 group">
+      <span>{{ .text | default "Submit" }}</span>
+      <svg class="w-4 md:w-5 lg:w-5 h-4 md:h-5 lg:h-5 transition-transform duration-300 group-hover:translate-x-1" 
+           aria-hidden="true"
+           xmlns="http://www.w3.org/2000/svg" 
+           width="24" 
+           height="24" 
+           fill="none" 
+           viewBox="0 0 24 24">
+        <path stroke="currentColor" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M19 12H5m14 0-4 4m4-4-4-4"/>
+      </svg>
+  </button>
+
+{{ else if eq $variant "secondary" }}
+  {{/* Secondary CTA — link with white background */}}
+  <a href="{{ .href }}"
+     class="text-base md:text-lg font-semibold bg-white border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-900 px-6 md:px-8 py-3 md:py-4 flex md:inline-flex items-center justify-center gap-2 no-underline transition-all duration-300 group shadow hover:shadow-md w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+     aria-label="{{ $ariaLabel }}">
+    <span>{{ .text }}</span>
+    <svg class="w-4 md:w-5 lg:w-5 h-4 md:h-5 lg:h-5 transition-transform duration-300 group-hover:translate-x-1" 
+         aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg" 
+         width="24" 
+         height="24" 
+         fill="none" 
+         viewBox="0 0 24 24">
+      <path stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M19 12H5m14 0-4 4m4-4-4-4"/>
+    </svg>
+  </a>
+
+{{ else }}
+  {{/* Primary CTA — default to primary variant */}}
+  <a href="{{ .href }}"
+     class="text-base md:text-lg font-semibold bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-3 md:py-4 flex md:inline-flex items-center justify-center gap-2 transition-all duration-300 no-underline group shadow hover:shadow-md rounded-lg w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+     aria-label="{{ $ariaLabel }}">
+    <span>{{ .text }}</span>
+    <svg class="w-4 md:w-5 lg:w-5 h-4 md:h-5 lg:h-5 transition-transform duration-300 group-hover:translate-x-1" 
+         aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg" 
+         width="24" 
+         height="24" 
+         fill="none" 
+         viewBox="0 0 24 24">
+      <path stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M19 12H5m14 0-4 4m4-4-4-4"/>
+    </svg>
+  </a>
+{{ end }}

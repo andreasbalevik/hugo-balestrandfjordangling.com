@@ -1,3 +1,18 @@
+{{/* 
+  Activity Booking Modal Form — renders a modal dialog for making booking requests
+  
+  Hensikt: 
+    Handles customer booking inquiries for activities. Opens a modal with form fields for
+    date, participant count, and special requests. Integrates with Decap CMS for form submission.
+  
+  Usage: 
+    Include in activity single pages or overview sections
+    {{ partial "activity/booking" . }}
+  
+  Dependencies:
+    - Modal framework (data-modal-target attribute triggers modal with ID "crud-modal")
+    - Form submission handler in custom-script.html
+*/}}
 <!-- Booking Button -->
 {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
 
@@ -45,7 +60,7 @@
                                     </div>
                                     {{ end }}
                                     {{ with .Params.summary }}
-                                    <p class="text-base md:text-lg lg:text-lg leading-relaxed mt-4">{{ . }}</p>
+                                    <p class="text-base md:text-lg leading-relaxed mt-4">{{ . }}</p>
                                     {{ end }}
                                 </div>
                             </div>
@@ -136,7 +151,7 @@
 
                 <!-- Submit Button -->
                 <div class="flex justify-center">
-                    {{ partial "components/buttons/submit" (dict "text" "Submit Request") }}
+                    {{ partial "components/buttons/button" (dict "text" "Submit Request" "variant" "submit") }}
                 </div>
 
             </form>

@@ -1,8 +1,16 @@
 ---
-title: Request Confirmation
+title: Booking Confirmation
 sitemap:
   exclude: true
 ---
-# Thank you!
+Check your email within 24 hours — I'll send you all the details and payment information.
 
-Your request is confirmed only after you receive a confirmation email from us. I check my email daily. **Please check your spam filter.** Payment is due on the day of the tour upon attendance. Cancellations can be made by email up to 2 working days before the tour date.
+**Lost the email? Check your spam folder.**
+
+## The Essentials
+
+- **Email confirmation** arrives within 24 hours
+- **Payment** is due when you arrive (cash or Vipps)
+- **Cancellations** by email up to 2 working days before
+
+Questions? Reach out at [contact@balestrandfjordangling.com](mailto:contact@balestrandfjordangling.com) or +47 900 81 939.

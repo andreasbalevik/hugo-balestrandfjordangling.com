@@ -6,7 +6,7 @@
 {{ $backgroundImage := $image.Resize "x600 q50" }}
 
 <!-- Default Page Layout -->
-<section style="background-image: url('{{ $backgroundImage.Permalink }}'); background-size: cover; background-position: center;">
+<section class="bg-hero" style="background-image: url('{{ $backgroundImage.Permalink }}');">
     <div class="py-12 md:py-16 flex items-center justify-center">
         <article class="bg-white md:rounded-lg p-8 shadow max-w-4xl w-full mx-auto border border-gray-300">
             <div class="mx-auto prose-md">

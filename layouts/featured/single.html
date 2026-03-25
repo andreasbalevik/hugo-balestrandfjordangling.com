@@ -45,7 +45,7 @@
 
             <div class="prose md:prose-lg lg:prose-xl max-w-none
                 prose-headings:font-medium prose-headings:text-gray-900
-                prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-10 prose-h2:mb-6
+                prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-xl prose-h3:md:text-2xl
                 prose-p:leading-relaxed
                 prose-a:text-primary prose-a:underline hover:prose-a:no-underline prose-a:transition-colors
@@ -81,7 +81,7 @@
 
 <!-- Related Activities -->
 {{ with .Params.related_activities }}
-<section class="bg-stone-50">
+<section class="bg-gray-50">
     <div class="container">
         <div class="text-center mb-12">
             <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-3">Continue exploring</p>
@@ -99,7 +99,7 @@
     </div>
 </section>
 {{ else }}
-<section class="bg-stone-50 py-10 md:py-16">
+<section class="bg-gray-50 py-10 md:py-16">
     {{ partial "activity/see-all-activities.html" . }}
 </section>
 {{ end }}

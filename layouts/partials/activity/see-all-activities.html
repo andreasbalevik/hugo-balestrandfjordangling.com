@@ -1,5 +1,5 @@
 {{ with .Site.GetPage "activities" }}
 <div class="flex justify-center">
-    {{ partial "components/buttons/secondary" (dict "href" .RelPermalink "text" "Explore all activities" "ariaLabel" "View all fishing activities in Balestrand") }}
+    {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" "Explore all activities" "variant" "secondary" "ariaLabel" "View all fishing activities in Balestrand") }}
 </div>
 {{ end }}
