@@ -1,6 +1,6 @@
 ---
 title: "Premium skill: Master the Long Line – Authentic Fjord Fishing Immersion"
-quality: The Human Edge
+quality: Local Fisherman
 keywords:
   - Long line fishing Sognefjord
   - Deep sea fishing Norway
@@ -88,15 +88,15 @@ product_info:
   persons: "5"
   prices:
     - person_number: 1
-      price: 12000
+      price: 10000
     - person_number: 2
-      price: 12000
+      price: 10000
     - person_number: 3
-      price: 14000
+      price: 12000
     - person_number: 4
-      price: 16000
+      price: 14000
     - person_number: 5
-      price: 18000
+      price: 16000
 cms: true
 ---
 ## **Introduction: Master the Long Line – Your Authentic Fjord Challenge**
