@@ -100,7 +100,7 @@ cms: true
 
 ### This tour different from typical tourist activities
 
-This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape. Fishing, storytelling, culture and a scenic trip all in one package. Our custom made boat: **"Miss Fjords" takes you away into the hidden gems of the fjord that might transforms your mindsett.**
+This is a truly authentic scenic fishing experience designed to offer unique and memorable fjord moments that set it apart from mass tourism. It’s perfect for those who want more than just a regular vacation; it combines the activity of angling with the pure ambiance of the Sognefjord, designed to offer a refreshing escape. Fishing, storytelling, culture and a scenic trip all in one package. Our custom made boat: **"Miss Fjords" takes you away into the hidden gems of the fjord that might transform your mindsett.**
 
 Whether you're seeking inspiration, a team-building trip with friends, or simply looking for your next adventure—this is an opportunity to embrace. Step into the fjord and create a moment that's genuinely yours. **Get ready for a little escapade?**
 
