@@ -120,7 +120,7 @@ Pulling up the fishing nets, which are set out by us the night before, stimulate
 
 > It is ALWAYS exciting to see what treasures we find in the net. But an empty net is not a failure; it is a lesson in patience and endurance. **A Viking’s spirit is forged not in comfort, but in the face of the elements.**
 
-### What about sharks? Will we see a shark?
+### What about sharks? [Will we see a shark?](https://www.facebook.com/reel/855871150392851)
 
 Possible. Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
 
