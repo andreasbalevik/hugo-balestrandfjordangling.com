@@ -126,7 +126,7 @@ This is an experience designed for those who value unique, authentic travel expe
 
 The tour elevates a standard excursion into a hands-on adventure. In addition to traditional angling and trolling, the experience focuses on learning new, authentic skills and the historical context of fjord culture along the pristine Fjærlandsfjord. This is an experience that can build lasting memories.
 
-> #### THE ART OF AUTHENTIC FJORD EXPLORATION
+> #### The Art of Authentic Fjord Exploration; [People of The North Episode Here](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 Captain Tor provides a seamless fjord adventure solution. You are likely seeking a reliable activity—a curated experience that guarantees quality. Am I right?
 
