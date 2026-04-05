@@ -71,7 +71,7 @@ cms: true
 
 Escape the crowds and immerse yourself in raw, authentic Norwegian nature. In April and May, the inner Fjærlandsfjord awakens from winter hibernation. Join legendary Captain Tor for an exclusive, hands-on experience where you become the local fisherman for a day. This bespoke adventure is designed to reconnect you with nature—and each other.
 
-### 🎬 Watch the[ "People of the North"](https://www.youtube.com/watch?v=pjoMLKwGsEg) Fishing Adventure Now
+### 🎬 Watch the[ "People of the North"](https://www.youtube.com/watch?v=6tarTVGdFTY) Fishing Adventure Now
 
 #### The Experience (Optimized Q&A Section)
 
@@ -128,6 +128,8 @@ To really get a feel for the atmosphere, we’ve put together some short inspira
 > Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CbJ89SCFPbq/)
 >
 > Teaser Instagram Reel 3: Watch the video[ HERE](https://www.instagram.com/p/C1cKiAtqQ16/)
+>
+> People of The North Episode Captain Tor [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 ### ENHANCE YOUR STAY: Discover More in Fjærland
 
