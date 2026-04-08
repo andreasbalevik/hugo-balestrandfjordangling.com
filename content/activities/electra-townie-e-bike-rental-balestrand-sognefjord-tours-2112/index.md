@@ -137,8 +137,9 @@ Experiencing Balestrand gives you a sense of freedom and inspiration. Real joy w
 
 If one person wants a light workout to Dragsvik, for example, you can rent 2 bicycles: 1 regular and 1 electric bicycle. This way it will be an enjoyable experience for both.
 
-Do We have any video inspiration from the tour?
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
+### Do We have any video inspiration from the tour?
+
+**Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
 
 Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/stories/highlights/18501455134029845/)
 
