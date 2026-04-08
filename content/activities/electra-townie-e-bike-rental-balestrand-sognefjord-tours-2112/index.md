@@ -139,11 +139,11 @@ If one person wants a light workout to Dragsvik, for example, you can rent 2 bic
 
 ### Do We have any video inspiration from the tour?
 
-**Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
+**Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of Balestrand!
 
 Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/stories/highlights/18501455134029845/)
 
-Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/stories/highlights/17894838143609321/)
+Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CfkDKe1lUdp/)
 
 Teaser YouTube Episode 2: Watch the video [HERE](https://www.youtube.com/watch?v=FydHB0yOMnE&t=25s)
 
