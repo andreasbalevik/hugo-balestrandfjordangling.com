@@ -168,7 +168,7 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 >
 > Teaser TV-Episode S2E6: Watch the Video [HERE](https://www.youtube.com/watch?v=pjoMLKwGsEg)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 ### The Fjærland fjord in winter:
 
