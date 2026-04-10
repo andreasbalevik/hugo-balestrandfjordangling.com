@@ -1,5 +1,6 @@
 ---
-title: Discover the Sognefjord with Captain Tor, KAYAK & Ethical Travel Portal
+title: Discover the Sognefjord with Captain Tor – as featured on the KAYAK
+  Travel Guide & Ethical Travel Portal
 keywords:
   - plan my norway vacation
   - how to plan a trip to norway
