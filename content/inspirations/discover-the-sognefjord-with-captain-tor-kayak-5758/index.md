@@ -32,7 +32,7 @@ related_activities:
   - scenic-boat-route-balestrand-fjærland-4239/index
 cms: true
 ---
-[KAYAK](https://www.kayak.co.uk/Balestrand.41106.guide) helps travelers navigate the vast sea of travel options to find unique, high-quality experiences like ours. At Ethical Travel Portal, our values are the touchstone in everything we do. Their innovative approach helps link authentic local guides with explorers seeking meaningful adventures. 
+[KAYAK](https://www.kayak.co.uk/Balestrand.41106.guide) (a search engine) helps travelers navigate the vast sea of travel options to find unique, high-quality experiences like ours. At Ethical Travel Portal, our values are the touchstone in everything we do. Their innovative approach helps link authentic local guides with explorers seeking meaningful adventures. 
 
 ## **Plan Your Balestrand Adventure**
 
