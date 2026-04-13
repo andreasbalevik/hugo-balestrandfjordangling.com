@@ -52,7 +52,7 @@ product_info:
   duration:
     hours: 3
     minutes: 0
-  persons: "7"
+  persons: "8"
   prices:
     - person_number: 1
       price: 5000
@@ -68,6 +68,8 @@ product_info:
       price: 7000
     - person_number: 7
       price: 8000
+    - person_number: 8
+      price: 9000
 cms: true
 ---
 ## **This is the Perfect Gift: Trade Screen Time for Sognefjord ‘Adventure Time’**
