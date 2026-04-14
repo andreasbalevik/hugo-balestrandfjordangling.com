@@ -13,7 +13,7 @@
 {{ end }}
 
 <!-- Activities List (with filter above) -->
-<section class="bg-gray-50">
+<section class="bg-fjord-light">
 <div class="container">
     <!-- Filter Dropdown -->
     <div class="flex items-center gap-3 pb-3">
@@ -34,11 +34,11 @@
             </button>
 
             <!-- Dropdown menu -->
-            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44 ">
                 <ul class="" aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
-                        <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                        <li class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                             All activities
                         </li>
                     </a>
@@ -47,7 +47,7 @@
                     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                     {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                     <a href="{{ .RelPermalink }}">
-                        <li class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                        <li class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                             {{ .Title }}
                         </li>
                     </a>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <hr class="mb-12 border-gray-300">
+    <hr class="mb-12 border-fjord-pale">
 
     <!-- Activities Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">

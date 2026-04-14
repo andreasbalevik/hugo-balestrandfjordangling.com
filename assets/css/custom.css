@@ -3,8 +3,8 @@
 /* never in custom.css. Use custom.css only for brand tokens, complex styles,  */
 /* or utilities that Tailwind doesn't provide.                                 */
 @theme {
-  --color-primary:      #1a4a56;
-  --color-primary-dark: #0f3d4d;
+  --color-primary:      #1e6b80;
+  --color-primary-dark: #175a6c;
   --color-success:      #0f7f20;
   --text-warning:       #e8b43a;
   --color-fjord:        #1d3640;

@@ -1,4 +1,4 @@
-<article class="bg-white shadow hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 border border-gray-200 group">
+<article class="bg-white shadow hover:shadow-md rounded-lg overflow-hidden transition-all duration-300 border border-fjord-pale group">
     <div class="grid grid-cols-1 xl:grid-cols-2">
 
         <!-- Image — flush to card edge -->
@@ -30,7 +30,7 @@
             {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
             <div class="flex items-center justify-between mb-3">
                 {{ with .Params.quality }}
-                <span class="text-sm font-semibold text-gray-700 uppercase tracking-widest">{{ . }}</span>
+                <span class="text-sm font-semibold text-primary uppercase tracking-widest">{{ . }}</span>
                 {{ end }}
                 {{ with .Params.information.options.varde_experience_quality }}
                 <img class="w-20 h-auto" alt="Varde Experience Quality" src="/images/varde-experience-quality.png" />
@@ -47,7 +47,7 @@
             </p>
 
             <!-- Metadata -->
-            <div class="flex items-center gap-5 text-sm mb-8 pb-6 border-b border-gray-100">
+            <div class="flex items-center gap-5 text-sm mb-8 pb-6 border-b border-fjord-pale">
                 {{ if or .Params.product_info.duration.hours .Params.product_info.duration.minutes }}
                 <span class="inline-flex items-center gap-1.5">
                     <svg class="w-4 h-4 text-primary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">

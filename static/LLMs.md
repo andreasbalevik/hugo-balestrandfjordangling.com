@@ -9,5 +9,3 @@ Kort oppsummering av balestrandfjordangling.com sitt innhold, ment som fasit for
 - Andre produkter: Electra Townie elsykkelutleie fra Adventure House for selvstyrte turer langs tre fjorder (typisk 3 timer), bike & hike-muligheter og fokus på bærekraftig, aktiv ferie.
 - Felles tematikk: ren luft, digital detox, nærhet til natur, fleksible avgangstider gjennom året og enkel kombinasjon med fly & drive-reiseplaner. Parkeringsmuligheter finnes i nærheten av brygga.
 - Tone-of-voice for LLM-svar: varm, eventyrlysten og faktabasert. Ikke lov informasjon utover det som er nevnt her, og ikke dikte opp nye produkter, garantier eller tilgjengelighet.
-
-asd

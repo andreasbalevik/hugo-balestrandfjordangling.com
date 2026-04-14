@@ -51,9 +51,10 @@
   </button>
 
 {{ else if eq $variant "secondary" }}
-  {{/* Secondary CTA — link with white background */}}
+  {{/* Secondary CTA — link with white background.
+       ⚠️  Kun på fargede/mørke bakgrunner. Hvit knapp på hvit seksjon = usynlig. */}}
   <a href="{{ .href }}"
-     class="text-base md:text-lg font-semibold bg-white border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-900 px-6 md:px-8 py-3 md:py-4 flex md:inline-flex items-center justify-center gap-2 no-underline transition-all duration-300 group shadow hover:shadow-md w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+     class="text-base md:text-lg font-semibold bg-white border border-fjord-pale rounded-lg hover:bg-fjord-light text-gray-900 px-6 md:px-8 py-3 md:py-4 flex md:inline-flex items-center justify-center gap-2 no-underline transition-all duration-300 group shadow hover:shadow-md w-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
      aria-label="{{ $ariaLabel }}">
     <span>{{ .text }}</span>
     <svg class="w-4 md:w-5 lg:w-5 h-4 md:h-5 lg:h-5 transition-transform duration-300 group-hover:translate-x-1" 

@@ -23,7 +23,7 @@
             <!-- Duration -->
             {{ with .Params.product_info.duration }}
             <div class="text-center md:py-4">
-                <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-1 md:mb-2">Duration</p>
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">Duration</p>
                 <p class="text-xl md:text-2xl font-semibold text-gray-900">{{ .hours }}</p>
                 <p class="text-xs md:text-sm text-gray-700">hours{{ with .minutes }} {{ . }}min{{ end }}</p>
             </div>
@@ -31,8 +31,8 @@
             
             <!-- Group Size -->
             {{ with .Params.product_info.prices }}
-            <div class="text-center md:py-4 md:border-l md:border-r border-gray-200">
-                <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-1 md:mb-2">Group Size</p>
+            <div class="text-center md:py-4 md:border-l md:border-r border-fjord-pale">
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">Group Size</p>
                 <p class="text-xl md:text-2xl font-semibold text-gray-900">{{range first 1 .}}{{.person_number}}{{end}}-{{ range last 1 . }}{{ .person_number }}{{ end }}</p>
                 <p class="text-xs md:text-sm text-gray-700">your group only</p>
             </div>
@@ -41,7 +41,7 @@
             <!-- Price -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4">
-                <p class="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-1 md:mb-2">From</p>
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">From</p>
                 {{ range first 1 . }}
                 <p class="text-xl md:text-2xl font-semibold text-gray-900">{{ .price }}</p>
                 {{ end }}
@@ -84,7 +84,7 @@
     </nav>
     {{ end }}
     
-    <section class="bg-gray-50">
+    <section class="bg-fjord-light">
         <div class="container">
             
             <!-- About Section -->
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="bg-gray-50">
+    <section class="bg-fjord-light">
             {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
             <div id="practical" class="scroll-mt-[210px] md:scroll-mt-[150px]">
                 <div class="container">
@@ -116,7 +116,7 @@
             
         </section>
 
-    <section class="bg-gray-50">
+    <section class="bg-fjord-light">
     <div class="container">
     <!-- Photo Gallery -->
             {{ if gt (len .Params.images) 1 }}

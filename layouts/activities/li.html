@@ -1,4 +1,4 @@
-<article class="max-w-md h-full bg-white border border-gray-200 rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group">
+<article class="max-w-md h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group">
   <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-label="View {{ .Title }}">
 
     <!-- Image with tags overlaid — no price label in recommended context -->
@@ -39,7 +39,7 @@
       {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
       <div class="flex items-center justify-between mb-3">
         {{ with .Params.quality }}
-        <span class="text-sm font-semibold text-gray-700 uppercase tracking-widest">{{ . }}</span>
+        <span class="text-sm font-semibold text-primary uppercase tracking-widest">{{ . }}</span>
         {{ end }}
         {{ with .Params.information.options.varde_experience_quality }}
         <img class="w-20 h-auto" alt="Varde Experience Quality" src="/images/varde-experience-quality.png" />
@@ -52,7 +52,7 @@
       </h3>
 
       <!-- Metadata row + CTA -->
-      <div class="flex flex-col gap-4 text-sm text-gray-700 mt-auto pt-4 border-t border-gray-100">
+      <div class="flex flex-col gap-4 text-sm text-gray-700 mt-auto pt-4 border-t border-fjord-pale">
 
         <div class="flex items-center justify-center gap-6">
           {{ if or .Params.product_info.duration.hours .Params.product_info.duration.minutes }}

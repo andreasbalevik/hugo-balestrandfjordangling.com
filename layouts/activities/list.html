@@ -15,13 +15,13 @@
 </section>
 {{ end }}
 
-<section class="bg-gray-50">
+<section class="bg-fjord-light">
 <div class="container">
     <!-- Filter Dropdown -->
         <div class="flex items-center gap-3 pb-3">
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-200 bg-white text-sm font-semibold hover:bg-gray-50 transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-fjord-pale bg-white text-sm font-semibold hover:bg-fjord-light transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 type="button"
                 aria-label="Filter activities by category"
                 aria-haspopup="listbox"
@@ -33,11 +33,11 @@
             </button>
 
             <!-- Dropdown menu -->
-            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44 ">
                 <ul role="listbox" aria-labelledby="dropdownDefaultButton">
                     {{ with .Site.GetPage "activities" }}
                 <li>
-                    <a href="{{.RelPermalink}}" aria-current="page" class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                    <a href="{{.RelPermalink}}" aria-current="page" class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                         All activities
                     </a>
                 </li>
@@ -46,7 +46,7 @@
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <li>
-                    <a href="{{ .RelPermalink }}" class="block px-4 py-4 hover:bg-gray-50 text-sm font-medium">
+                    <a href="{{ .RelPermalink }}" class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                         {{ .Title }}
                     </a>
                 </li>
@@ -57,7 +57,7 @@
     </div>
 </div>
 
-    <div class="border-t border-gray-100 mb-10"></div>
+    <div class="border-t border-fjord-pale mb-10"></div>
 
     <!-- Private charter trust signal -->
     <p class="flex items-center gap-2 text-sm text-gray-700 mb-8">
