@@ -116,7 +116,7 @@ This trip start from the legendary glacier village of Fjærland. This is a Sogne
 
 ### Where does the "Fjærland Legacy Tour" begin?
 
-Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back. Perfect for those staying at Fjærland Hotell
+Captain Tor greets guests personally at Fjærland Marina [(nearby the Joker Store)](https://www.google.com/maps/place/Mundal+%26+Vangsnes+Landhandel+Barbara+Vangsnes/@61.4051601,6.7411146,17z/data=!4m6!3m5!1s0x46160ed2a0426a75:0xae93e9487bff93ea!8m2!3d61.4051858!4d6.7411897!16s%2Fg%2F1hc3wbrys?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D) for an exclusive journey to Balestrand and back. Perfect for those staying at Fjærland Hotell (But can also begin from Balestrand, let me know when booking)
 
 ### A unique experience design
 
