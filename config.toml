@@ -14,9 +14,10 @@ baseURL = 'https://balestrandfjordangling.com'
 [Params]
   logo = "favicon/android-chrome-512x512.png"
   logo_title = true
+  ogimage = "images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg"
   brand_image = "/favicon/android-chrome-512x512.png"
   theme_color = "#1a4a56"
-  ogimage = ""
+
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
   phone = "+47 900 81 939"

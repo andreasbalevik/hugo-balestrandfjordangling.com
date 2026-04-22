@@ -193,7 +193,7 @@ By the way: It's nice and tidy too..
 
 > #### FJORD WELLNESS: ELEVATE YOUR JOURNEY
 
-**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **\[Popular 3-Hour Lifestyle Program](LINK TO YOUR PRODUCT PAGE HERE)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
+**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **[Popular 3-Hour Lifestyle Program](/activities/balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
 
 ### On the Go? Fly & Drive Sognefjord Logistics
 
