@@ -29,8 +29,8 @@ usp:
         stories of my heritage.
       icon: M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z
     - title: The Human Edge
-      description: "No middlemen, no scripts. A genuine connection with your captain's
-        established fjord programs. "
+      description: No middlemen, no scripts. A genuine connection with your captain's
+        established fjord programs. B2C & Card payment only.
       icon: M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z
     - title: Simplicity Creates Emotions
       description: We focus on the raw luxury of nature. Exploring, storytelling,
