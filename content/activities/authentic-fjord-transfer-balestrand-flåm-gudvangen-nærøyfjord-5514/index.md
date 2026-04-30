@@ -1,5 +1,6 @@
 ---
-title: "Authentic Fjord Transfer: Balestrand <-> Flåm / Gudvangen (Nærøyfjord)"
+title: "Authentic Fjord Transfer: Balestrand/ Fjærland <-> Flåm / Gudvangen /
+  Aurland (Nærøyfjord)"
 quality: Go Viking & Springfulness
 keywords:
   - Båttransport Flåm Balestrand
@@ -106,7 +107,7 @@ This unique experience designed forthose used to traveling and collecting unique
 
 It’s both! This is a world-class fjord experience or a unique #authentictransfer trip, exploring stunning small places along the Sognefjord.
 
-**(NOTE:** I can also take you from Flåm to the final stop: **[Sogndal Marina](https://en.sognefjord.no/fjord-villages/sogndal/), [Walaker Hotel](https://www.walaker.com/) or to [Fjærland Fjordstove Hotel.](https://fjaerlandhotel.com/)** Separate prices for this, please state on the destination message form when you contact me)
+**(NOTE:** I can also take you from Flåm to the final stop: **[Sogndal Marina](https://en.sognefjord.no/fjord-villages/sogndal/), [Walaker Hotel](https://www.walaker.com/) or to [Fjærland Fjordstove Hotel.](https://fjaerlandhotel.com/)** Separate prices for this, please state on the destination message form when you contact me: Fjærland nok 3000 ekstra, Walaker nok 5000 extra)
 
 ## **Choose a Private Fjord Tour: Exclusivity & Adventure**
 
@@ -115,7 +116,7 @@ It’s both! This is a world-class fjord experience or a unique #authentictransf
 **Seamless Connections: Flåm or Gudvangen Departures**
 
 **FLÅM DEPARTURE:**\
-Ideal for those arriving by train to Flåm at 18:10, but too late for the standard Norled fast ferry. If you are determined to reach inspiring Balestrand (or Fjærland) the same evening, this **private transfer** is your perfect solution—"This is so me!"
+Ideal for those arriving by train to Flåm at 18:10, but too late for the standard Norled fast ferry. If you are determined to reach inspiring Balestrand (or Fjærland) the same evening, this **private transfer** is your perfect solution - *"This is so me!"*
 
 **GUDVANGEN (UNESCO NÆRØYFJORD) DEPARTURE:**\
 Take a taxi or bus to Gudvangen (you arrange transit via [(BUS LINK HERE)](https://www.norwaysbest.com/en/flam/things-to-do/shuttle-bus-flam-gudvangen) and Captain Tor will pick you up. [Experience Viking Valley](https://en.vikingvalley.no/) first and Go Viking with Captain Tor afterwards. Experience the dramatic **UNESCO Nærøyfjord in the evening light.** Balestrand - NÆRØYFJORD - Balestrand is also possible! (Same starting price, explore the Nærøyfjord one way) 
