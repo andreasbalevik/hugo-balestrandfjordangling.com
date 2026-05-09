@@ -85,12 +85,12 @@ cms: true
 
 #### Recommended Tours & Distances (Incl. Return)- There's a lot of beautiful nature, but a busy road. Go to pictures to see route on map.
 
-| To Dragsvik (18 km)             | ~2 hours | 450 NOK        | 10:00-15:00* |
-| ------------------------------- | -------- | -------------- | ------------ |
-| Bike & Hike (Esefjorden)        | ~3 hours | From 450,- NOK | N/A          |
-|                                 |          |                |              |
-| To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK        | N/A          |
-| Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK        | N/A          |
+| To Dragsvik (18 km)             | ~2 hours | 450 NOK      | 10:00-15:00* |
+| ------------------------------- | -------- | ------------ | ------------ |
+| Bike & Hike (Esefjorden)        | ~3 hours | From 450 NOK | N/A          |
+|                                 |          |              |              |
+| To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK      | N/A          |
+| Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK      | N/A          |
 
 *\*NOTE: ONLY Drop-In rental is possible in the period June - September from 10:00-15:00.*
 
