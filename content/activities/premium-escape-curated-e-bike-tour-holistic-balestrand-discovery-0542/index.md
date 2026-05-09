@@ -74,6 +74,7 @@ images:
     alt: E-bike tour in Balestrand with scenic mountain and fjord landscapes
 tags:
   - business-and-pleasure
+  - bike-and-hike
 information:
   options:
     global_practical: false
