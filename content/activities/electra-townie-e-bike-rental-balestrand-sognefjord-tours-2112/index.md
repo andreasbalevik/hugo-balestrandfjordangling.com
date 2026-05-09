@@ -102,7 +102,7 @@ cms: true
 
 ### Q: When is drop-in e-bike rental available?
 
-A: Note: Only Drop-In rental is possible in the period June - September at (09:00)10:00 AM - 3:00 PM. 
+A: Note: Only Drop-In rental is possible in the period May - September at (09:00)10:00 AM - 3:00 PM. 
 
 ### Q: What kind of experience can I expect in Balestrand?
 
@@ -116,14 +116,14 @@ A: Yes! If one person wants a light workout to Dragsvik, for example, you can re
 
 #### Recommended Tours & Distances (Incl. Return)- There’s a lot of beautiful nature, but a busy road. Go to pictures to see route on map.
 
-| To Dragsvik (18 km)             | ~2 hours | 450 NOK        | 10:00-15:00* |
-| ------------------------------- | -------- | -------------- | ------------ |
-| Bike & Hike (Esefjorden)        | ~3 hours | From 450,- NOK | N/A          |
-|                                 |          |                |              |
-| To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK        | N/A          |
-| Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK        | N/A          |
+| To Dragsvik (18 km)             | ~2 hours | 450 NOK     | 09:00-15:00* |
+| ------------------------------- | -------- | ----------- | ------------ |
+| Bike & Hike (Esefjorden)        | ~3 hours | From 500NOK | N/A          |
+|                                 |          |             |              |
+| To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK     | N/A          |
+| Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK     | N/A          |
 
-*\*NOTE: ONLY Drop-In rental is possible in the period June - September from 10:00-15:00.*
+*\*NOTE: ONLY Drop-In rental is possible in the period May - September from 10:00-15:00.*
 
 \*\*Distance To Dragsvik - Ferry (free) to Vangsnes (Big Viking Statue) - Vik stave church - Arnafjord 100 km 8h price nok 950 -[ **The Viking Fjord Ride**](https://no.wikipedia.org/wiki/Sagaen_om_Fridtjov_den_fr%C3%B8kne)
 
