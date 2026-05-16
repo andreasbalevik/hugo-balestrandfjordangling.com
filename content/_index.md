@@ -26,7 +26,7 @@ usp:
   items:
     - title: 4th Generation Local
       description: Born and bred by the Sognefjord. I share the secrets, history, and
-        stories of my heritage.
+        stories of my heritage. It's a love letter to the Fjords
       icon: M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z
     - title: The Human Edge
       description: No middlemen, no scripts. A genuine connection with your Captain's
