@@ -59,7 +59,7 @@ Here is your stress-free guide on how to pull off the perfect day trip from Vik 
 
 ### ⏱️ The No-Stress Transit: How to Get Here and Back
 
-The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled. The 
+The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled. 
 
 ### To make your planning completely bulletproof, you can check live timetables and secure your seats here:
 
@@ -69,7 +69,7 @@ Book your outbound ticket on the Norled Booking Page **from Vik kai to Balestran
 
 ### ↩️ Returning to Vik:
 
- Book your afternoon return ticket via the same Norled Booking Page, at the same  **from Balestrand kai to Vik kai.**
+ Book your afternoon return ticket via the same Norled Booking Page **from Balestrand kai to Vik kai.**
 
 **Tip: Always buy your tickets in advance online, and make sure your return boat arrives back in Vik at least one hour before your cruise ship's "all aboard" time.**
 
