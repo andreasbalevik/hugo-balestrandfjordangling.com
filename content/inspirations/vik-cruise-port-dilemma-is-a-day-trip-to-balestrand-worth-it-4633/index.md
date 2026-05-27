@@ -59,7 +59,7 @@ The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling direc
 
 ### 🚢 Departing Vik:
 
-Book your outbound ticket on the **Norled Booking Page from Vik kai to Balestrand kai. [Go to the boking on the link here ](https://booking.norled.no/)**
+Book your outbound ticket on the **Norled Booking Page from Vik kai to Balestrand kai. [Go to the booking on the link here ](https://norled.no)**
 
 ### ↩️ Returning to Vik:
 
@@ -73,7 +73,7 @@ Everything in Balestrand is incredibly compact. The moment you step off the Norl
 
 ### 🎣 The Highlight:
 
-Get on the Fjord with Balestrand Fjord Angling (you are here)
+Get on the Fjord with Balestrand Fjord Angling
 Instead of just looking at the fjord from land, step aboard with Captain Tor. Our shared or private tours (ranging from 1.5 to 3 hours) are specifically tailored to fit between the express boat arrivals.
 
 ### Authentic Angling & Stories:
@@ -85,17 +85,17 @@ Check out our available trips and book your slot on our Activities Page.
 
 ### 🚲 Explore on Two Wheels: Bike Rental
 
-Want to see the famous dragon-style villa architecture along the fjord? Rent a bicycle right near the quay. Balestrand is flat, traffic-light, and perfect for cycling. A quick 15-minute bike ride takes you down the scenic hotel promenade and past historic burial mounds.
+**Want to see the famous dragon-style villa architecture along the fjord?** Rent a bicycle right near the quay. Balestrand is flat, traffic-light, and perfect for cycling. A quick 15-minute bike ride takes you down the scenic hotel promenade and past historic burial mounds.
 
 ### 🍏 A Taste of the Fjord: Cider Tasting at Ciderhuset
 
-Walk or bike up the hill to Ciderhuset (The Cider House). Located inside a lush organic orchard, they produce award-winning ciders made from local Sognefjord apples. You can book a cider tasting, enjoy a delicious lunch made with local ingredients, or browse their farm shop. [Go to boking link here](https://www.ciderhuset.no/)
+Walk or bike up the hill to Ciderhuset (The Cider House). Located inside a lush organic orchard, they produce award-winning ciders made from local Sognefjord apples. You can book a cider tasting, enjoy a delicious lunch made with local ingredients, or browse their farm shop. [Go to booking link here](https://www.ciderhuset.no/)
 
 ### 🏛️ Culture & History: Kviknes Hotel & Norsk Reiselivsmuseum
 
 **Kviknes Hotel:** This monumental, Swiss-style wooden hotel dates back to 1913. Pop in for a coffee, stroll through their historic lounges filled with artwork, or enjoy a Sognefjord seafood sandwich on their grand fjord-view terrace. Perfect for a historical lunch with a sognefjord view on the balcony. [Link to menu here](https://en.kviknes.no/restaurant)
 
-**Norsk Reiselivsmuseum (Norwegian Travel Museum):** Built directly into the bedrock near the harbor, this modern, interactive museum tells the fascinating story of how the wild Norwegian fjords became a global tourist destination. [Link to the museum here](https://misf.no/en/travel-tourism-museum)
+**Norsk Reiselivsmuseum (Norwegian Travel Museum):** Built directly into the bedrock near the harbor, this modern, interactive museum tells the fascinating story of how the wild Norwegian fjords became a global tourist destination. [Link to the museum here](https://norskreiselivsmuseum.no)
 
 ## 💬 Frequently Asked Questions for Cruise Guests
 
