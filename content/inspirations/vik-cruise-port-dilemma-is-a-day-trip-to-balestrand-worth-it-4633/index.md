@@ -4,6 +4,9 @@ keywords:
   - Vik Norway cruise port excursions
   - Best shore excursions from Vik port
   - Day trip Vik to Balestrand ferry
+  - St Olafs Church Balestrand
+  - Frozen inspiration church Norway
+  - Disney Frozen chapel Balestrand
   - Family friendly tours Sognefjord
   - Balestrand fjord angling Captain Tor
   - Sognefjord express boat schedule
@@ -28,6 +31,9 @@ keywords:
   - Vik port to Balestrand day trip
   - Fjord angling for beginners
   - Local captain boat tour Balestrand
+  - St Olafs Church Balestrand
+  - Frozen inspiration church Norway
+  - Disney Frozen chapel Balestrand
 description: Arriving at Vik cruise port? Take the 20-min express boat to
   Balestrand. Enjoy cider tasting, bike rentals & fjord fishing with Captain
   Tor!
@@ -53,17 +59,17 @@ Here is your stress-free guide on how to pull off the perfect day trip from Vik 
 
 ### ⏱️ The No-Stress Transit: How to Get Here and Back
 
-The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled.
+The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled. The 
 
 ### To make your planning completely bulletproof, you can check live timetables and secure your seats here:
 
 ### 🚢 Departing Vik:
 
-Book your outbound ticket on the **Norled Booking Page from Vik kai to Balestrand kai. [Go to the booking on the link here ](https://norled.no)**
+Book your outbound ticket on the Norled Booking Page **from Vik kai to Balestrand kai. [Go directly to the booking on the link here ](https://booking.norled.no/)**
 
 ### ↩️ Returning to Vik:
 
- Book your afternoon return ticket via the same **Norled Booking Page from Balestrand kai to Vik kai.**
+ Book your afternoon return ticket via the same Norled Booking Page, at the same  **from Balestrand kai to Vik kai.**
 
 **Tip: Always buy your tickets in advance online, and make sure your return boat arrives back in Vik at least one hour before your cruise ship's "all aboard" time.**
 
@@ -86,6 +92,12 @@ Check out our available trips and book your slot on our Activities Page.
 ### 🚲 Explore on Two Wheels: Bike Rental
 
 **Want to see the famous dragon-style villa architecture along the fjord?** Rent a bicycle right near the quay. Balestrand is flat, traffic-light, and perfect for cycling. A quick 15-minute bike ride takes you down the scenic hotel promenade and past historic burial mounds.
+
+### 🏰 The Disney Connection: St. Olaf’s Church (The "Frozen" Inspiration)
+
+Just a short, easy stroll from the harbor lies St. Olaf’s Church (The English Church), a historic wooden chapel built in 1897 in the style of a traditional Norwegian stave church. This architectural gem is a true bucket-list item, especially for families and Disney fans. It served as the direct visual inspiration for the chapel where Elsa is crowned Queen in the movie Frozen 1! 
+
+Even the beloved character Olaf the Snowman took his name from this very church. Walking up to this fairy-tale building feels like stepping straight into the kingdom of Arendelle. You pass this church on your way to the Cider House!
 
 ### 🍏 A Taste of the Fjord: Cider Tasting at Ciderhuset
 
