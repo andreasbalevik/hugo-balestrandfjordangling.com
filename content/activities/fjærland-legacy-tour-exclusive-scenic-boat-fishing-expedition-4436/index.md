@@ -82,6 +82,7 @@ images:
     alt: Fantastiske Fjærlandsfjord og fisketur med tenåringer og morsom fisk på tur
 tags:
   - family-and-friends
+  - business-and-pleasure
 information:
   options:
     global_practical: true
