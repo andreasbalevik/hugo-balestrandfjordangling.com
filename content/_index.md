@@ -17,7 +17,7 @@ recommended:
     - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
     - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
 featured:
-  enabled: true
+  enabled: false
   title: Featured
   featured:
     - people-of-the-north-2922/index
