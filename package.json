@@ -4,7 +4,11 @@
   "description": "Website using Hugo",
   "main": "index.js",
   "scripts": {
-    "install": "cd themes/balevikit-tailwindcss-hugo-theme && npm install"
+    "install": "cd themes/balevikit-tailwindcss-hugo-theme && npm install",
+    "backstop:reference": "backstop reference --configPath=backstop.json",
+    "backstop:test": "backstop test --configPath=backstop.json",
+    "backstop:approve": "backstop approve --configPath=backstop.json",
+    "backstop:open": "backstop openReport --configPath=backstop.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,7 @@
   "homepage": "https://github.com/andreasbalevik/hugo-balestrandfjordangling.com#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
+    "backstopjs": "^6.3.25",
     "tailwindcss": "^4.2.2"
   },
   "dependencies": {

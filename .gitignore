@@ -8,6 +8,11 @@ hugo_stats.json
 node_modules/
 package-lock.json
 
+# Backstop output
+backstop_data/bitmaps_test/
+backstop_data/html_report/
+backstop_data/ci_report/
+
 # OS files
 .DS_Store
 .localized

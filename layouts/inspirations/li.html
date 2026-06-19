@@ -1,33 +1,32 @@
-<!-- Inspiration Card -->
-<article class="border border-fjord-pale rounded-lg shadow hover:shadow-md transition-all duration-300 overflow-hidden group cursor-pointer">
-    <a href="{{ .RelPermalink }}" class="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-label="Read {{ .Title }}">
-
-        <div class="relative">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group">
+    <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-label="Read {{ .Title }}">
+        <div>
             {{ range first 1 .Params.images }}
-                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
+                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "thumbnail") }}
+            {{ end }}
+        </div>
+
+        <div class="flex flex-col flex-1 p-5 md:p-6">
+            <h2 class="mt-0 mb-4 text-xl md:text-2xl font-medium text-balance text-gray-900 flex-1">
+                {{ .Title }}
+            </h2>
+
+            {{ with .Params.description }}
+            <p class="mt-0 mb-4 text-base text-gray-700 text-pretty leading-relaxed">
+                {{ . }}
+            </p>
             {{ end }}
 
-            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10 group-hover:from-black/65 transition-all duration-300"></div>
-
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
-                <h2 class="mt-0 mb-6 text-white text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance max-w-[500px] text-center">{{ .Title }}</h2>
-                <span class="inline-flex items-center gap-2 border border-white/80 px-6 py-3 font-semibold text-base group-hover:bg-white/15 transition-all rounded-lg duration-300">
-                    <span>Read more</span>
-                    <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
-                         aria-hidden="true"
-                         xmlns="http://www.w3.org/2000/svg" 
-                         width="24" 
-                         height="24" 
-                         fill="none" 
-                         viewBox="0 0 24 24">
-                      <path stroke="currentColor" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            stroke-width="2" 
-                            d="M19 12H5m14 0-4 4m4-4-4-4"/>
-                    </svg>
-                </span>
-            </div>
+            <span class="inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
+                Read story
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                </svg>
+            </span>
         </div>
     </a>
 </article>

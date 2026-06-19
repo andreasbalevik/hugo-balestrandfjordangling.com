@@ -11,6 +11,10 @@
 {{ $titleClass := .titleClass | default "text-gray-900" }}
 {{ $descriptionClass := .descriptionClass | default "text-lg md:text-xl leading-relaxed text-pretty text-gray-900/80" }}
 {{ $dividerClass := .dividerClass | default (cond $isCentered "mx-auto" "") }}
+{{ $showDivider := true }}
+{{ if isset . "showDivider" }}
+  {{ $showDivider = .showDivider }}
+{{ end }}
 
 <header class="{{ $headerAlignmentClass }} {{ $headerClass }}">
   {{ with .eyebrow }}
@@ -21,7 +25,9 @@
     <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance {{ $titleClass }}">{{ . }}</h2>
   {{ end }}
 
-  <div class="w-12 h-1 bg-primary rounded-full {{ $dividerClass }}"></div>
+  {{ if $showDivider }}
+    <div class="w-12 h-1 bg-primary rounded-full {{ $dividerClass }}"></div>
+  {{ end }}
 
   {{ with .description }}
     <p class="mt-6 {{ if $isCentered }}max-w-2xl mx-auto{{ else }}max-w-2xl{{ end }} {{ $descriptionClass }}">{{ . }}</p>

@@ -1,15 +1,15 @@
 {{/*
     Featured Hero Image — responsive hero with smart crop for mobile
-    
+
     Hensikt:
       Renders a featured image with responsive sizing and smart crop for different breakpoints.
       Uses responsive fill sizes and webp format with fallback for browser compatibility.
-    
+
     Usage: {{ partial "featured/hero-image" . }}
-    
+
     Parameters:
       .src: Image path from resources
-    
+
     Output:
       Responsive picture element with srcset for optimal delivery across devices
 */}}
@@ -29,11 +29,11 @@
     <source media="(min-width: 1024px)" srcset="{{ $image_large.RelPermalink }}">
     <source media="(min-width: 768px)" srcset="{{ $image_medium.RelPermalink }}">
     <source srcset="{{ $image_small.RelPermalink }}">
-    
-    <img class="w-full h-full object-cover object-center" 
-        {{ with .alt }}alt="{{ . }}"{{ end }} 
-        src="{{ $image_large.RelPermalink }}" 
-        width="{{ $image_large.Width }}" 
+
+    <img class="w-full h-full object-cover object-center"
+        {{ with .alt }}alt="{{ . }}"{{ end }}
+        src="{{ $image_large.RelPermalink }}"
+        width="{{ $image_large.Width }}"
         height="{{ $image_large.Height }}"
         loading="eager"
         fetchpriority="high">

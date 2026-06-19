@@ -19,7 +19,7 @@
 <section class="bg-white">
     <div class="container">
         <div class="flex flex-row md:grid md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto items-center justify-between">
-            
+
             <!-- Duration -->
             {{ with .Params.product_info.duration }}
             <div class="text-center md:py-4">
@@ -28,7 +28,7 @@
                 <p class="text-xs md:text-sm text-gray-700">hours{{ with .minutes }} {{ . }}min{{ end }}</p>
             </div>
             {{ end }}
-            
+
             <!-- Group Size -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4 md:border-l md:border-r border-fjord-pale">
@@ -37,7 +37,7 @@
                 <p class="text-xs md:text-sm text-gray-700">your group only</p>
             </div>
             {{ end }}
-            
+
             <!-- Price -->
             {{ with .Params.product_info.prices }}
             <div class="text-center md:py-4">
@@ -48,7 +48,7 @@
                 <p class="text-xs md:text-sm text-gray-700">NOK per group</p>
             </div>
             {{ end }}
-            
+
         </div>
         <!-- Private charter trust signal -->
         <p class="flex items-center justify-center gap-2 text-sm text-gray-700 mt-6 max-w-3xl mx-auto">
@@ -83,10 +83,10 @@
         </div>
     </nav>
     {{ end }}
-    
+
     <section class="bg-fjord-light">
         <div class="container">
-            
+
             <!-- About Section -->
             <div id="about" class="scroll-mt-[210px] md:scroll-mt-[150px]">
                 <div class="mx-auto">
@@ -99,9 +99,7 @@
         <div id="practical" class="scroll-mt-[210px] md:scroll-mt-[150px]">
             <div class="container">
             <div class="max-w-4xl mx-auto">
-                <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900 text-center">
-                    Practical Information
-                </h2>
+                {{ partial "components/section-heading" (dict "title" "Practical Information" "class" "mb-6" "showDivider" false) }}
                 <div class="bg-white rounded-lg border border-gray-300 shadow p-8 md:p-12 lg:p-16">
                     <article class="prose prose-lg prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
                         {{ partial "activity/practical" . }}
@@ -116,10 +114,7 @@
         {{ if gt (len .Params.images) 1 }}
         <div id="gallery" class="scroll-mt-[210px] md:scroll-mt-[150px]">
             <div class="container">
-                <div class="text-center mb-8">
-                    <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900">Photo Gallery</h2>
-                    <p class="text-lg md:text-xl text-pretty">See more photos from this adventure</p>
-                </div>
+                {{ partial "components/section-heading" (dict "title" "Photo Gallery" "description" "See more photos from this adventure" "class" "mb-8" "showDivider" false) }}
                 {{ with .Params.images }}
                     {{ partial "components/images/carousel" (dict "images" .) }}
                 {{ end }}
@@ -135,7 +130,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('[id]');
-        
+
         function updateActiveLink() {
             let current = '';
             sections.forEach(section => {
@@ -145,7 +140,7 @@
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('text-primary');
                 if (link.getAttribute('href') === '#' + current) {
@@ -153,7 +148,7 @@
                 }
             });
         }
-        
+
         window.addEventListener('scroll', updateActiveLink);
         updateActiveLink();
     });

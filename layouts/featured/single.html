@@ -62,11 +62,7 @@
 {{ if gt (len .Params.images) 1 }}
 <section class="bg-fjord-pale">
     <div class="container">
-        <div class="text-center mb-10">
-            <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-3">More photos</p>
-            <h2 class="mt-0 mb-6 text-2xl md:text-3xl font-medium tracking-tight text-balance text-fjord">Photo Gallery</h2>
-            <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
-        </div>
+        {{ partial "components/section-heading" (dict "eyebrow" "More photos" "title" "Photo Gallery" "titleClass" "text-fjord" "class" "mb-10" "showDivider" false) }}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {{ range after 1 .Params.images }}
             <div class="group relative overflow-hidden rounded-lg aspect-[4/3]">
@@ -83,11 +79,7 @@
 {{ with .Params.related_activities }}
 <section class="bg-fjord-light">
     <div class="container">
-        <div class="text-center mb-12">
-            <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-3">Continue exploring</p>
-            <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-fjord">Related Activities</h2>
-            <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
-        </div>
+        {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-12" "showDivider" false) }}
         <div class="grid grid-cols-1 gap-8 mx-auto">
             {{ range . }}
             {{ $page := replace . "/index" "" }}

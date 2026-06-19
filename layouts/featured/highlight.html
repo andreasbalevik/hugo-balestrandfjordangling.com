@@ -18,7 +18,7 @@
                 <p class="mb-12 text-base md:text-lg text-pretty">
                     {{ .Params.description }}
                 </p>
-                
+
                 {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" "Discover More" "variant" "primary" "ariaLabel" (printf "Discover more about %s" .Title)) }}
             </div>
         </div>

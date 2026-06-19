@@ -1,0 +1,148 @@
+{
+  "id": "balestrandfjordangling_visual_regression",
+  "viewports": [
+    {
+      "label": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Home",
+      "url": "http://127.0.0.1:1313/",
+      "referenceUrl": "https://balestrandfjordangling.com/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Activities listing",
+      "url": "http://127.0.0.1:1313/activities/",
+      "referenceUrl": "https://balestrandfjordangling.com/activities/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Inspirations listing",
+      "url": "http://127.0.0.1:1313/inspirations/",
+      "referenceUrl": "https://balestrandfjordangling.com/inspirations/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "About page",
+      "url": "http://127.0.0.1:1313/about/",
+      "referenceUrl": "https://balestrandfjordangling.com/about/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Activity single",
+      "url": "http://127.0.0.1:1313/activities/balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/",
+      "referenceUrl": "https://balestrandfjordangling.com/activities/balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Inspiration single",
+      "url": "http://127.0.0.1:1313/inspirations/discover-the-sognefjord-with-captain-tor-kayak-5758/",
+      "referenceUrl": "https://balestrandfjordangling.com/inspirations/discover-the-sognefjord-with-captain-tor-kayak-5758/",
+      "readyEvent": "",
+      "readySelector": "body",
+      "delay": 400,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": ["document"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold": 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

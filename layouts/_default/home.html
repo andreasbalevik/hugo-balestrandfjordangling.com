@@ -62,7 +62,7 @@
 <section class="bg-fjord-light">
     <div class="container">
         {{ partial "components/section-heading" (dict "eyebrow" "Why choose us" "title" .title "class" "mb-12") }}
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {{ range .items }}
             <div class="flex flex-col items-center text-center p-6 md:p-8 bg-white border border-fjord-pale rounded-lg shadow-sm">
@@ -84,7 +84,7 @@
 {{ if .Params.featured.enabled }}
 <section class="bg-fjord overflow-hidden">
     <div class="container">
-        
+
             {{ with .Params.featured }}
                 {{ range first 1 .featured }}
                     {{ $page := replace . "/index" "" }}
