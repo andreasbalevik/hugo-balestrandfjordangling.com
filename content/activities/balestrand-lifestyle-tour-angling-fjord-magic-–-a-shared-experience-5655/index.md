@@ -139,7 +139,7 @@ Raw materials can be purchased easily at the grocery store next to the Balestran
 
 > ### A balcony lunch at Kvikne's never fails!
 
- Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://en.kviknes.no/restaurants)Hotell after the trip, paired with something good to drink. 
+ Yes! Try the tasty [Sognefjord Seafood Sandwich at Kviknes ](https://en.kviknes.no/restaurants)Hotell after the trip, paired with something good to drink.
 
 ### Do you have any video inspiration from the tour?
 
@@ -159,7 +159,7 @@ This area is excellent for traditional trolling along the cliffs for Pollock, ma
 
 ### What kind of nature and wildlife will we see in the Fjærland fjord?
 
-In bright season, the **Fjærland fjord** has a green color *from* the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore. Consider taking a trip with us and sharing your experience with friends. 
+In bright season, the **Fjærland fjord** has a green color *from* the melt-water of the glacier village #Fjærland. Diverse animal and bird life, including eagles, can be found here. Occasionally, killer whales are seen looking for seals and porpoises. In late winter, deer stay down on the shore. Consider taking a trip with us and sharing your experience with friends.
 
 > #### SIMPLICITY CREATES EMOTIONS - *ESCAPE*
 

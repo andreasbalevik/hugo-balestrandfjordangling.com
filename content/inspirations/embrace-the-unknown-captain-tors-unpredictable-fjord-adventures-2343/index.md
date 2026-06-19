@@ -42,11 +42,11 @@ Well, not necessarily. When we say the fjords are unpredictable, we don’t mean
 
 ### Imagine you are going on a road trip.
 
-You have a map, and set a route, and a clear destination. But wouldn’t it be more exiting if you took a detour, explored a scenic route, or stumbled upon a hidden gem? That’s what it’s like to be around our boat. This is the detour, the scenic route and the hidden gem. 
+You have a map, and set a route, and a clear destination. But wouldn’t it be more exiting if you took a detour, explored a scenic route, or stumbled upon a hidden gem? That’s what it’s like to be around our boat. This is the detour, the scenic route and the hidden gem.
 
 ### *Miss Fjords* takes you to paths of the Sognefjord less traveled, *pristine parts*
 
-and Tor invites you to come along for the ride. Together we are not afraid to take risks, step out of the comfort sone, go out of the beaten path, to embrace the unknown. We keep you guessing, keep you on the toes, keep you wondering, keep you intrigued. 
+and Tor invites you to come along for the ride. Together we are not afraid to take risks, step out of the comfort sone, go out of the beaten path, to embrace the unknown. We keep you guessing, keep you on the toes, keep you wondering, keep you intrigued.
 
 ### You never know what’s next to explore,
 

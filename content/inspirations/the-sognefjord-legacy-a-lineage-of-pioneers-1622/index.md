@@ -50,7 +50,7 @@ cms: true
 
 ### The Captain’s Roots: From Balaviki to the Deep
 
-**My story begins in Balaviki, right next to the historic St. Olaf’s Church.** This "English Church," built in 1894, has been the backdrop of my life since I took my first steps. 
+**My story begins in Balaviki, right next to the historic St. Olaf’s Church.** This "English Church," built in 1894, has been the backdrop of my life since I took my first steps.
 
 **The Song of the Seithe:** I grew up listening to storries my great-grandfather fish for giant Seithe in the deep currents. He didn't just fish; he sang to the fjord, a melody of respect that I still feel when I drop the line today.
 

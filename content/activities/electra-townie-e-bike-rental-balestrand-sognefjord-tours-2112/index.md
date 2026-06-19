@@ -102,7 +102,7 @@ cms: true
 
 ### Q: When is drop-in e-bike rental available?
 
-A: Note: Only Drop-In rental is possible in the period May - September at (09:00)10:00 AM - 3:00 PM. 
+A: Note: Only Drop-In rental is possible in the period May - September at (09:00)10:00 AM - 3:00 PM.
 
 ### Q: What kind of experience can I expect in Balestrand?
 

@@ -125,7 +125,7 @@ Make a reservation directly. If the weather is favourable, **this trip is good t
 
 Yes, absolutely! To really get a feel for the atmosphere, we've put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
 
-> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Cvc4xR6KHwB/) 
+> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Cvc4xR6KHwB/)
 >
 > **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
 >

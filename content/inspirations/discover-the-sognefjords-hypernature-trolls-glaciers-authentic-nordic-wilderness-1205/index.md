@@ -89,7 +89,7 @@ Here, we blend ancient myths with real-world science, emphasizing the sheer, unt
 
 **The Jotun Theory:** "Have you seen the vast stretches of forest laid flat along the fjord? Science attributes this to slides and wind. But in our 'Hypernature' context, we have a different theory: A Jotun (a mountain giant who dislikes water) might have stomped along the shoreline, flattening the trees in its wake."
 
-**Section 3:** "The Last Wilderness" 
+**Section 3:** "The Last Wilderness"
 
 ## From Hella to Fjærland: Norway's Unregulated Frontier
 

@@ -72,7 +72,7 @@ cms: true
 
 The Sognefjord region is dedicated to safeguarding natural diversity, local cultural heritage, and our living rural communities. We achieve this by strategically focusing on reducing greenhouse gas emissions linked to tourism.
 
-This commitment is recognized by the "Sustainable Travel Destinations" 
+This commitment is recognized by the "Sustainable Travel Destinations"
 
 label—a prestigious national scheme backed by Innovation Norway, and the only one of its kind in the Nordics. This certification isn't just a badge; it's a testament to our ongoing work to be a better destination.
 

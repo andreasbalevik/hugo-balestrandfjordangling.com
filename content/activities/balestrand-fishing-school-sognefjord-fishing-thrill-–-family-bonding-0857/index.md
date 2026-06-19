@@ -98,7 +98,7 @@ It is time to trade screen time for *authentic **‘adventure time.’*** Join
 
 ### Your Rare Expedition Possibility & A Meaningful Investment
 
-**This is the highly sought-after Fishing Culture Adventure Trip around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net! 
+**This is the highly sought-after Fishing Culture Adventure Trip around Balestrand Village** and a meaningful investment in shared moments and connection. Opportunities to make memories like this are limited. It is always exciting to see what treasures we find in the net!
 
 ## THE ART OF MAKING SOMETHING: FJORD ACTIVITY!
 

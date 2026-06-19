@@ -89,7 +89,7 @@ Vi tilbyr fleksible betalingsløsninger. Du betaler enkelt med kort på vår bæ
 
 ### Spørsmål: Hvilket fartøy brukes og hvor opererer dere?
 
-**Svar**: Vårt fartøy og operasjonsområde i Midtre Sognefjorden. 
+**Svar**: Vårt fartøy og operasjonsområde i Midtre Sognefjorden.
 
 Vi bruker fartøyet «Miss Fjords», en åpen spesialbygd Øien 710 F. Båten har en pålitelig Honda BF 100 hk motor og er godkjent for 8 passasjerer (pax) pluss 900 kg last. Utrustet m AIS, VHF, Flomlys etc.
 

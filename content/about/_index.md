@@ -30,7 +30,7 @@ The fabulous boat "Miss Fjords" and the mysterious captain Tor live in Balestran
 
 ## My Perspectives
 
-Awareness about fjord fishing and what this entails, has been my passion for all these years. At home in Balevik bay, it was called; *a fishing trip* - plain and simple. It was because we went fishing on a trip. The trip is the key word here, and what you experience! Homemade fish is always good. Simplicity creates emotions. Our tours simply make you more complete - It's a love letter to the fjords. 
+Awareness about fjord fishing and what this entails, has been my passion for all these years. At home in Balevik bay, it was called; *a fishing trip* - plain and simple. It was because we went fishing on a trip. The trip is the key word here, and what you experience! Homemade fish is always good. Simplicity creates emotions. Our tours simply make you more complete - It's a love letter to the fjords.
 
 ## What we make our guests experience
 

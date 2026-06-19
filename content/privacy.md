@@ -59,7 +59,7 @@ You have the right to:
 
 If you have any questions about this privacy statement, please contact us at:
 
-**Email:** {{< param email >}}  
+**Email:** {{< param email >}}
 **Address:** {{< param address >}}
 
 ## Changes to This Privacy Statement
@@ -67,5 +67,5 @@ If you have any questions about this privacy statement, please contact us at:
 We may update this privacy statement from time to time. Any changes will be posted on this page with an updated revision date.
 
 
-**Best regards**   
+**Best regards**
 **Cap. Tor**

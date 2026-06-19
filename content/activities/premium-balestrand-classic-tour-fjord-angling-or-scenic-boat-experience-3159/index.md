@@ -121,19 +121,19 @@ cms: true
 
 ### **The engagement level like on this tour:**
 
-**Get Access to Authentic Inspiration and Presence:** Captain Tor, a Balestrand native, ensures an educational, pleasant, and **proactive boating experience**. We explore four distinct, living parts of the **\#Sognefjord.** discovering new things at every turn. Expect authentic, real storytelling that truly uplifts the spirit. This is **experiential travel** at its best. 
+**Get Access to Authentic Inspiration and Presence:** Captain Tor, a Balestrand native, ensures an educational, pleasant, and **proactive boating experience**. We explore four distinct, living parts of the **\#Sognefjord.** discovering new things at every turn. Expect authentic, real storytelling that truly uplifts the spirit. This is **experiential travel** at its best.
 
 ### **What we expect from the fjord fishing experience:**
 
-> Fun Fjord Angling for everyone -  *“Hey I’ve got a fish!”* 
+> Fun Fjord Angling for everyone -  *“Hey I’ve got a fish!”*
 
 Enjoy easy and fun **\#fjordfishing** in the beautiful, legendary **\#esefjord**, surrounded by high, picturesque mountains. Captain Tor shares childhood stories of catching “Sand Whiting”—fun to fish, easy to hook, and great for lunch. They call them “Fjord Chicken”—what a cool name! This is a genuine, hands-on **angling adventure**.
 
 ### **Why is this experience so restorative?**
 
-> Cause Simplicity Creates Emotions: *“This is so nice”.* 
+> Cause Simplicity Creates Emotions: *“This is so nice”.*
 
-There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder. 
+There is something between these high mountains that nourishes the heart and spirit. Clean water, fresh air, historic homesteads—here you find peace, inspiration, and space for wonder.
 
 ### I am Exited! Do you have any video inspiration from the tour?
 

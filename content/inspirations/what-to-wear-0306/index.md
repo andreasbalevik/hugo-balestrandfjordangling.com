@@ -14,9 +14,9 @@ GO BY THE 3-LAYERS RULE: with an outer, water resistant shell jacket (and pants)
 
 #### **Y﻿OUR PACKING LIST :**
 
-1. Woolen and/or thermal underwear for the upper and lower body  
+1. Woolen and/or thermal underwear for the upper and lower body
 2. Woolen socks, a warm beanie covering your ears, warm gloves, thick scarf
-3. Rainwear and rainboots/boots Warm, waterproof winter boots (this is a must for some of the tours) 
+3. Rainwear and rainboots/boots Warm, waterproof winter boots (this is a must for some of the tours)
 4. A wind- and waterproof warm outer layer
 5. We wear our blue fishing suits on top your cloths if needed. Keeping you warm and dry, these practical suits also have built-in flotation elements
 

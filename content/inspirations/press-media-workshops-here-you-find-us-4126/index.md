@@ -8,7 +8,7 @@ cms: true
 ---
 ## From Grey Stone to Gold: Our Innovative Collaborations
 
-Captain Tor and our unique vessel are always at the forefront of innovation. Over the years, we’ve transformed ideas into award-winning experiences. 
+Captain Tor and our unique vessel are always at the forefront of innovation. Over the years, we’ve transformed ideas into award-winning experiences.
 
 We attract progressive, quality-seeking guests from all over the world. Ready to see the results? Explore our media mentions, awards, and recognition below!
 

@@ -59,7 +59,7 @@ Here is your stress-free guide on how to pull off the perfect day trip from Vik 
 
 ### ⏱️ The No-Stress Transit: How to Get Here and Back
 
-The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled. 
+The crossing from Vik to Balestrand takes only 20 to 30 minutes, traveling directly from quay to quay. The most reliable and efficient way to cross is by using the helårlige express boat operated by Norled.
 
 ### To make your planning completely bulletproof, you can check live timetables and secure your seats here:
 
@@ -95,7 +95,7 @@ Check out our available trips and book your slot on our Activities Page.
 
 ### 🏰 The Disney Connection: St. Olaf’s Church (The "Frozen" Inspiration)
 
-Just a short, easy stroll from the harbor lies St. Olaf’s Church (The English Church), a historic wooden chapel built in 1897 in the style of a traditional Norwegian stave church. This architectural gem is a true bucket-list item, especially for families and Disney fans. It served as the direct visual inspiration for the chapel where Elsa is crowned Queen in the movie Frozen 1! 
+Just a short, easy stroll from the harbor lies St. Olaf’s Church (The English Church), a historic wooden chapel built in 1897 in the style of a traditional Norwegian stave church. This architectural gem is a true bucket-list item, especially for families and Disney fans. It served as the direct visual inspiration for the chapel where Elsa is crowned Queen in the movie Frozen 1!
 
 Even the beloved character Olaf the Snowman took his name from this very church. Walking up to this fairy-tale building feels like stepping straight into the kingdom of Arendelle. You pass this church on your way to the Cider House!
 

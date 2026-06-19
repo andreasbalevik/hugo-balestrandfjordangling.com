@@ -21,7 +21,7 @@ cms: true
 ---
 **Introduction:** Discover timeless truths bridging faith & modern life. Our philosophy engages Millennials, Gen Z, & thinkers with sustainability, ethics & purpose.
 
-We position our experiences in Balestrand as a necessary, modern journey – **a blend of historic "Grand Tour," spiritual "walkabout," "pilgrimage," and rejuvenating "springfulness.** 
+We position our experiences in Balestrand as a necessary, modern journey – **a blend of historic "Grand Tour," spiritual "walkabout," "pilgrimage," and rejuvenating "springfulness.**
 
 > "Drawing from digital trends and the legacy of St. Olav’s Church, this page appeals to the holistic motives of international guests. We target travelers from the USA, Canada, and Australia seeking roots and enduring values within the Sognefjord experience."
 
@@ -76,7 +76,7 @@ A: Our philosophy is anchored in integrity and Varde-quality. We offer a chance 
 * **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots."
 * **Contextual Involvement:** Authentic Norwegian fjord culture.
 * **Real-time Data:** Analyze weather, currents, and fish bites in a live environment (*presence*).
-* **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots". 
+* **Solitude and Personal Achievement:**  Experience something outside the office and "No Chat-bots".
 * **Contextual Involvement:**  True Norwegian fjord culture.
 * **Real-time Data:** Analyze weather, currents and fish bites in a live environment ( *presence* ).
 
