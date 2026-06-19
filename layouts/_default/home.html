@@ -88,7 +88,7 @@
             {{ with .Params.featured }}
                 {{ range first 1 .featured }}
                     {{ $page := replace . "/index" "" }}
-                    {{ with $.Site.GetPage $page }}
+                    {{ with site.GetPage $page }}
                         {{ .Render "highlight" }}
                     {{ end }}
                 {{ end }}
@@ -158,7 +158,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 justify-items-center">
                 {{ range .inspirations }}
                     {{ $page := replace . "/index" "" }}
-                    {{ with $.Site.GetPage $page }}
+                    {{ with site.GetPage $page }}
                         {{ .Render "li" }}
                     {{ end }}
                 {{ end }}

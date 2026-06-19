@@ -91,7 +91,7 @@
         <div class="grid grid-cols-1 gap-8 mx-auto">
             {{ range . }}
             {{ $page := replace . "/index" "" }}
-            {{ with $.Site.GetPage $page }}
+            {{ with site.GetPage $page }}
                 {{ .Render "highlight" }}
             {{ end }}
             {{ end }}

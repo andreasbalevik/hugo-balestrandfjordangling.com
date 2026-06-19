@@ -36,7 +36,7 @@
             <!-- Dropdown menu -->
             <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44 ">
                 <ul class="" aria-labelledby="dropdownDefaultButton">
-                    {{ with .Site.GetPage "activities" }}
+                    {{ with site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
                         <li class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                             All activities
@@ -44,8 +44,8 @@
                     </a>
                     {{ end }}
 
-                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                    {{ range $name, $taxonomy := site.Taxonomies.tags }}
+                    {{ with site.GetPage (printf "/tags/%s" $name) }}
                     <a href="{{ .RelPermalink }}">
                         <li class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
                             {{ .Title }}

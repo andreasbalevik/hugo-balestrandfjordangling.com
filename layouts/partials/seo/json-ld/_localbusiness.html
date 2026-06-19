@@ -4,9 +4,9 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "{{ .Site.BaseURL }}#localbusiness",
-  "name": "{{ .Site.Title }}",
-  "description": "{{ .Page.Params.description | default .Site.Params.description }}"
+  "@id": "{{ site.BaseURL }}#localbusiness",
+  "name": "{{ site.Title }}",
+  "description": "{{ .Page.Params.description | default site.Params.description }}"
   {{ with .Page.Params.images }}
     {{ range first 1 . }}
       {{ $image := resources.GetMatch .src }}
@@ -15,9 +15,9 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  ,"url": "{{ .Site.BaseURL }}"
-  ,"telephone": "{{ .Site.Params.phone }}"
-  ,"email": "{{ .Site.Params.email }}"
+  ,"url": "{{ site.BaseURL }}"
+  ,"telephone": "{{ site.Params.phone }}"
+  ,"email": "{{ site.Params.email }}"
   ,"address": {
     "@type": "PostalAddress",
     "streetAddress": "Holmen 3",

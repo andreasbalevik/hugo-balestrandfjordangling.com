@@ -1,6 +1,14 @@
+# Build artifacts
 resources/
-package-lock.json
 public/
-node_modules/
 hugo_stats.json
+.hugo_build.lock
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# OS files
 .DS_Store
+.localized
+Thumbs.db

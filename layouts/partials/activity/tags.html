@@ -1,6 +1,6 @@
 <div class="text-sm flex flex-wrap list-none gap-3 mb-6">
     {{range .Params.tags}}
-    {{ with $.Site.GetPage (printf "/tags/%s" .) }}
+    {{ with site.GetPage (printf "/tags/%s" .) }}
 
     <label>
         <a href="{{.RelPermalink}}" style="background-color: {{.Params.color | default "#1d3640"}};" aria-current="page"

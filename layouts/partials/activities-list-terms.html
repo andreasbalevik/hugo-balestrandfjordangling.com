@@ -28,7 +28,7 @@
             <!-- Dropdown menu -->
             <div id="dropdown" class="z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44 ">
                 <ul class="" aria-labelledby="dropdownDefaultButton">
-                    {{ with .Site.GetPage "activities" }}
+                    {{ with site.GetPage "activities" }}
                     <a href="{{.RelPermalink}}" aria-current="page">
                         <li class="block px-4 py-4 hover:bg-gray-100">
                             All activities
@@ -37,8 +37,8 @@
                     {{ end }}
 
 
-                    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                    {{ range $name, $taxonomy := site.Taxonomies.tags }}
+                    {{ with site.GetPage (printf "/tags/%s" $name) }}
                     <a href="{{ .RelPermalink }}">
                         <li class="block px-4 py-4 hover:bg-gray-100">
                             {{ .Title }}
@@ -54,8 +54,8 @@
 
     {{ if or (eq .Section "activities") (eq .Section "tags") }}
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
-            {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
-            {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            {{range $name, $taxonomy := site.Taxonomies.tags}} {{ $cnt := .Count }}
+            {{ with site.GetPage (printf "/tags/%s" $name) }}
             <a href="{{ .RelPermalink }}">
                 <div class="bg-category"
                      style="background-color: {{.Params.color | default "#1d3640"}};"

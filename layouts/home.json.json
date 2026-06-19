@@ -1,7 +1,7 @@
 {{- $data := dict
   "title" site.Title
   "baseURL" site.BaseURL
-  "languageCode" site.Language.LanguageCode
+  "languageCode" site.Language.Locale
   "home" site.Home.RelPermalink
   "sectionCount" (len site.Sections)
   "pageCount" (len site.RegularPages)

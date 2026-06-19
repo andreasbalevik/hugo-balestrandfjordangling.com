@@ -60,7 +60,7 @@
         <div class="grid grid-cols-1 gap-8 mx-auto lg:max-w-2xl xl:max-w-full">
             {{ range . }}
                 {{ $page := replace . "/index" "" }}
-                {{ with $.Site.GetPage $page }}
+                {{ with site.GetPage $page }}
                     {{ .Render "highlight" }}
                 {{ end }}
             {{ end }}

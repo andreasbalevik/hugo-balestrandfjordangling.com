@@ -3,8 +3,8 @@
   Usage: {{ partial "components/tag-buttons" . }}
 */}}
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    {{ range $name, $taxonomy := site.Taxonomies.tags }}
+    {{ with site.GetPage (printf "/tags/%s" $name) }}
     <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
         <div class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.02] shadow border border-black/5"
             style="background-color: {{ .Params.color | default "#1d3640" }};">
