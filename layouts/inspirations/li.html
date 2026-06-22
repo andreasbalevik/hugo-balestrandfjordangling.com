@@ -1,8 +1,8 @@
-<article class="w-full h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group">
-    <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-label="Read {{ .Title }}">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group focus-within:ring-2 focus-within:ring-primary/40">
+    <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="Read {{ .Title }}">
         <div>
             {{ range first 1 .Params.images }}
-                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "thumbnail") }}
+                {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
             {{ end }}
         </div>
 

@@ -19,7 +19,7 @@
                     {{ .Params.description }}
                 </p>
 
-                {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" "Discover More" "variant" "primary" "ariaLabel" (printf "Discover more about %s" .Title)) }}
+                {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" "View activity" "variant" "primary" "ariaLabel" (printf "View activity: %s" .Title)) }}
             </div>
         </div>
 

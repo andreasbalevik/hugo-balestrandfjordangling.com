@@ -1,0 +1,51 @@
+{{ with .Params.reviews }}
+  {{ $tripadvisorURL := site.Params.social.tripadvisor }}
+  {{ $trustPanel := $.Params.trust_panel }}
+  <section class="bg-white">
+      <div class="container">
+
+
+          <div class="rounded-lg border border-fjord-pale bg-fjord-light p-6 md:p-8 lg:p-10 shadow-sm">
+              <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,0.9fr)] gap-6 md:gap-8 items-start">
+                  <div>
+                              <header class="text-left mb-8">
+              <h2 class="mt-0 mb-0 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance text-gray-900">{{ with $trustPanel.heading }}{{ . }}{{ else }}Book direct with Captain Tor{{ end }}</h2>
+          </header>
+                      <p class="text-sm font-semibold uppercase tracking-widest text-primary mb-3">{{ .title }}</p>
+                      <div class="flex gap-1 mb-4" style="color: var(--color-warning);" role="img" aria-label="5 out of 5 stars">
+                          {{ range seq 5 }}
+                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                          {{ end }}
+                      </div>
+                      <blockquote class="mt-0 mb-4 text-lg md:text-xl leading-relaxed text-gray-900 text-pretty">
+                          "{{ .quote }}"
+                      </blockquote>
+                      <cite class="block text-sm md:text-base font-semibold not-italic text-gray-900">— {{ .author }}</cite>
+                  </div>
+
+                  <div class="rounded-lg bg-white border border-fjord-pale p-5 md:p-6">
+                      <p class="mt-0 mb-4 text-sm font-semibold uppercase tracking-widest text-primary">{{ with $trustPanel.sidebar_title }}{{ . }}{{ else }}Why book direct{{ end }}</p>
+                      <ul class="m-0 mb-6 space-y-3 list-none p-0 text-sm md:text-base text-gray-700">
+                          {{ with $trustPanel.items }}
+                            {{ range . }}
+                            <li class="flex items-start gap-3">
+                                <span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-primary"></span>
+                                <span>{{ . }}</span>
+                            </li>
+                            {{ end }}
+                          {{ end }}
+                      </ul>
+
+                      {{ with $tripadvisorURL }}
+                      {{ $buttonText := "Read reviews on TripAdvisor" }}
+                      {{ with $trustPanel.button_text }}
+                        {{ $buttonText = . }}
+                      {{ end }}
+                      {{ partial "components/buttons/button" (dict "href" . "text" $buttonText "variant" "secondary" "ariaLabel" "Read guest reviews on TripAdvisor") }}
+                      {{ end }}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+{{ end }}

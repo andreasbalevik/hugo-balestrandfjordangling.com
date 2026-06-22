@@ -43,6 +43,14 @@ reviews:
     knowledge of the fjords made this trip a highlight of our time in Norway.
   author: TripAdvisor Reviewer
   image: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+trust_panel:
+  heading: Book direct with Captain Tor
+  sidebar_title: Why book direct
+  items:
+    - Private tours with the local guide who runs the experience himself.
+    - Direct contact, direct payment, and no middle layer between guest and host.
+    - Real fjord storytelling and practical local knowledge before you choose your trip.
+  button_text: Read reviews on TripAdvisor
 gallery:
   title: Moments from the Fjord
   instagram_url: https://www.instagram.com/balestrandfjordangling/

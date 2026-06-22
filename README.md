@@ -41,6 +41,7 @@ Use this when you want to keep accepted screenshots in git-tracked local referen
 ### Config notes
 
 - Scenarios and viewports are in `backstop.json` (mobile/tablet/desktop + key pages/templates).
+- The dev breakpoint helper is now opt-in (`[Params] showBreakpointIndicator = true`), so it stays off during Backstop runs by default.
 - `backstop_data/engine_scripts/puppet/onReady.js` stabilizes captures by:
   - removing elements marked with `data-backstop-hide`
   - freezing elements marked with `data-backstop-freeze`

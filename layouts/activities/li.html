@@ -1,24 +1,16 @@
-<article class="max-w-md h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group">
-  <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" aria-label="View {{ .Title }}">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group focus-within:ring-2 focus-within:ring-primary/40">
+  <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="View {{ .Title }}">
 
-    <!-- Image with tags overlaid — no price label in recommended context -->
     <div class="relative">
       {{ range first 1 .Params.images }}
         {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "thumbnail") }}
       {{ end }}
+    </div>
 
-      {{ with .Params.tags }}
-      <div class="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-10 bg-gradient-to-t from-black/60 to-transparent flex flex-wrap gap-2">
-        {{ range . }}
-          {{ with site.GetPage (printf "/tags/%s" .) }}
-            <span class="text-xs font-semibold px-3 py-1.5 rounded-md text-white bg-category"
-              style="background-color: {{ .Params.color | default "#1d3640"}};">
-              {{ .Title }}
-            </span>
-          {{ end }}
-        {{ end }}
-      </div>
-      {{ end }}
+    <div class="flex flex-col flex-1 p-5 md:p-6">
+      <h3 class="mt-0 mb-3 text-xl md:text-2xl font-medium text-balance text-gray-900">
+        {{ .Title }}
+      </h3>
 
       {{ with .Params.product_info.prices }}
       {{ $minPrice := index . 0 }}
@@ -27,34 +19,14 @@
           {{ $minPrice = . }}
         {{ end }}
       {{ end }}
-      <span class="absolute top-4 right-4 text-sm font-semibold px-4 py-2 rounded-md text-white bg-success shadow-lg">
+      <p class="mt-0 mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
         From {{ $minPrice.price }} NOK
-      </span>
-      {{ end }}
-    </div>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-1 p-5 md:p-6">
-
-      {{ if or .Params.quality .Params.information.options.varde_experience_quality }}
-      <div class="flex items-center justify-between mb-3">
-        {{ with .Params.quality }}
-        <span class="text-sm font-semibold text-primary uppercase tracking-widest">{{ . }}</span>
-        {{ end }}
-        {{ with .Params.information.options.varde_experience_quality }}
-        <img class="w-20 h-auto" alt="Varde Experience Quality" src="/images/varde-experience-quality.png" />
-        {{ end }}
-      </div>
+      </p>
       {{ end }}
 
-      <h3 class="mt-0 mb-6 text-xl md:text-2xl font-medium text-balance text-gray-900 flex-1">
-        {{ .Title }}
-      </h3>
-
-      <!-- Metadata row + CTA -->
       <div class="flex flex-col gap-4 text-sm text-gray-700 mt-auto pt-4 border-t border-fjord-pale">
 
-        <div class="flex items-center justify-center gap-6">
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
           {{ if or .Params.product_info.duration.hours .Params.product_info.duration.minutes }}
           <span class="inline-flex items-center gap-1.5">
             <svg class="w-4 h-4 text-primary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +47,7 @@
 
         <div class="flex justify-center">
           <span class="inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
-            View
+            View experience
             <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
             </svg>

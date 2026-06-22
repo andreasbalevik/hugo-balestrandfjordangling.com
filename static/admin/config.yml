@@ -310,6 +310,22 @@ collections:
                 widget: 'image'
                 required: false
 
+          - label: "Trust panel"
+            name: "trust_panel"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: 'Heading', name: 'heading', widget: 'string', default: 'Book direct with Captain Tor' }
+              - { label: 'Sidebar title', name: 'sidebar_title', widget: 'string', default: 'Why book direct' }
+              - label: "Points"
+                name: "items"
+                widget: "list"
+                min: 1
+                max: 5
+                summary: '{{fields.item}}'
+                field: { label: 'Point', name: 'item', widget: 'string' }
+              - { label: 'Button text', name: 'button_text', widget: 'string', default: 'Read reviews on TripAdvisor' }
+
           - label: "Visual Gallery"
             name: "gallery"
             widget: "object"
@@ -505,5 +521,4 @@ collections:
           - label: "Global Activity Label"
             name: "global_activity_label"
             widget: "string"
-
 

@@ -6,7 +6,7 @@
   --color-primary:      #1e6b80;
   --color-primary-dark: #175a6c;
   --color-success:      #0f7f20;
-  --text-warning:       #e8b43a;
+  --color-warning:      #e8b43a;
   --color-fjord:        #1d3640;
   --color-mist:         #769ba4;
   --color-fjord-light:  #f0f7fb;
@@ -40,4 +40,3 @@
   background-size: auto;
   background-position: center;
 }
-
