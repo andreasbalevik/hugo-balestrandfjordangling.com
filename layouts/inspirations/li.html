@@ -7,17 +7,17 @@
         </div>
 
         <div class="flex flex-col flex-1 p-5 md:p-6">
-            <h2 class="mt-0 mb-4 text-xl md:text-2xl font-medium text-balance text-gray-900 flex-1">
+            <h2 class="mt-0 mb-4 text-xl md:text-2xl font-medium text-balance text-gray-900">
                 {{ .Title }}
             </h2>
 
             {{ with .Params.description }}
-            <p class="mt-0 mb-4 text-base text-gray-700 text-pretty leading-relaxed">
+            <p class="mt-0 mb-5 text-base text-gray-700 text-pretty leading-relaxed">
                 {{ . }}
             </p>
             {{ end }}
 
-            <span class="inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
+            <span class="inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300 mt-auto pt-1">
                 Read story
                 <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5"
                      aria-hidden="true"

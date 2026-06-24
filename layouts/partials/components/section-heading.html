@@ -18,11 +18,11 @@
 
 <header class="{{ $headerAlignmentClass }} {{ $headerClass }}">
   {{ with .eyebrow }}
-    <p class="text-sm font-semibold uppercase tracking-widest mb-3 {{ $eyebrowClass }}">{{ . }}</p>
+    <p class="text-sm font-semibold uppercase tracking-widest mb-4 {{ $eyebrowClass }}">{{ . }}</p>
   {{ end }}
 
   {{ with .title }}
-    <h2 class="mt-0 mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance {{ $titleClass }}">{{ . }}</h2>
+    <h2 class="mt-0 mb-5 md:mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance {{ $titleClass }}">{{ . }}</h2>
   {{ end }}
 
   {{ if $showDivider }}
@@ -30,6 +30,6 @@
   {{ end }}
 
   {{ with .description }}
-    <p class="mt-6 {{ if $isCentered }}max-w-2xl mx-auto{{ else }}max-w-2xl{{ end }} {{ $descriptionClass }}">{{ . }}</p>
+    <p class="mt-5 md:mt-6 {{ if $isCentered }}max-w-2xl mx-auto{{ else }}max-w-2xl{{ end }} {{ $descriptionClass }}">{{ . }}</p>
   {{ end }}
 </header>

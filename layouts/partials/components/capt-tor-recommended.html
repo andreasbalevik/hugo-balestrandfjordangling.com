@@ -3,7 +3,7 @@
 
     {{ with .Params.recommended }}
 
-        {{ partial "components/section-heading" (dict "eyebrow" "Hand-picked for you" "title" .title "alignment" "left" "headerAlignmentClass" "text-center md:text-left" "dividerClass" "mx-auto md:mx-0" "class" "mb-12") }}
+        {{ partial "components/section-heading" (dict "eyebrow" "Hand-picked for you" "title" .title "alignment" "left" "headerAlignmentClass" "text-center md:text-left" "dividerClass" "mx-auto md:mx-0" "class" "mb-10 md:mb-12") }}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
             {{ range .activities }}
             {{ $page := replace . "/index" "" }}
@@ -15,7 +15,7 @@
         </div>
     {{ end }}
 
-    <div class="mt-12 mb-6">
+    <div class="mt-10 md:mt-12">
         {{ partial "activity/see-all-activities" . }}
     </div>
 {{ end }}

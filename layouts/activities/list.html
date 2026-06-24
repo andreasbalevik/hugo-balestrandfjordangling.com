@@ -4,8 +4,8 @@
 {{ if .Content }}
 <section class="bg-white">
     <div class="container">
-        <h1 class="mt-0 mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance text-gray-900">{{ .Title }}</h1>
-        <div class="text-lg md:text-xl leading-relaxed mb-12 max-w-none">
+        <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance text-gray-900">{{ .Title }}</h1>
+        <div class="text-lg md:text-xl leading-relaxed mb-10 md:mb-12 max-w-none">
             {{ .Content }}
         </div>
 
@@ -17,7 +17,7 @@
 
 <section class="bg-fjord-light">
 <div class="container">
-    <div class="flex items-center gap-3 pb-3">
+    <div class="flex items-center gap-3 mb-8">
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-fjord-pale bg-white text-sm font-semibold hover:bg-fjord-light transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
@@ -55,7 +55,7 @@
     </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center mt-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
         {{ range sort .Pages }}
             {{ .Render "li" }}
         {{ end }}
