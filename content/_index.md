@@ -49,7 +49,7 @@ trust_panel:
   items:
     - Private tours with the local guide who runs the experience himself.
     - Direct contact, direct payment, and no middle layer between guest and host.
-    - Real fjord storytelling and practical local knowledge before you choose your trip.
+    - Real fjord storytelling and local knowledge.
   button_text: Read reviews on TripAdvisor
 gallery:
   title: Moments from the Fjord
