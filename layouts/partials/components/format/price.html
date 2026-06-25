@@ -1,0 +1,6 @@
+{{- $price := int . -}}
+{{- if ge $price 10000 -}}
+{{- printf "%d %03d" (div $price 1000) (mod $price 1000) -}}
+{{- else -}}
+{{- $price -}}
+{{- end -}}

@@ -20,7 +20,7 @@
         {{ end }}
       {{ end }}
       <p class="mt-0 mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
-        From {{ $minPrice.price }} NOK
+        Price From: {{ partial "components/format/price" $minPrice.price }},- NOK
       </p>
       {{ end }}
 

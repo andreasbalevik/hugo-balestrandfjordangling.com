@@ -15,48 +15,65 @@
     {{ end }}
 </section>
 
-<!-- Activity Details - Info Cards -->
+<!-- Activity Decision Panel -->
 <section class="bg-white">
     <div class="container">
-        <div class="flex flex-row md:grid md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto items-center justify-between">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg border border-gray-300 shadow grid grid-cols-1 md:grid-cols-5 overflow-hidden">
+            <div class="md:col-span-3 p-6 md:p-8 space-y-4">
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest">Activity Description</p>
 
-            <!-- Duration -->
-            {{ with .Params.product_info.duration }}
-            <div class="text-center md:py-4">
-                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">Duration</p>
-                <p class="text-xl md:text-2xl font-semibold text-gray-900">{{ .hours }}</p>
-                <p class="text-xs md:text-sm text-gray-700">hours{{ with .minutes }} {{ . }}min{{ end }}</p>
+                <div class="space-y-3">
+                    {{ with .Params.product_info.duration }}
+                    <p class="text-base text-gray-900">
+                        <span class="font-semibold">Duration:</span>
+                        {{ with .hours }}{{ . }}h{{ end }}{{ with .minutes }} {{ . }}m{{ end }}
+                    </p>
+                    {{ end }}
+
+                    {{ with .Params.product_info.prices }}
+                    <p class="text-base text-gray-900">
+                        <span class="font-semibold">Group size:</span>
+                        {{ range first 1 . }}{{ .person_number }}{{ end }}-{{ range last 1 . }}{{ .person_number }}{{ end }} guests
+                    </p>
+                    {{ end }}
+
+                    {{ with .Params.tags }}
+                    {{ $tag := index . 0 }}
+                    <p class="text-base text-gray-900">
+                        <span class="font-semibold">Type:</span>
+                        {{ with site.GetPage (printf "/tags/%s" $tag) }}{{ .Title }}{{ else }}{{ $tag | replace "-" " " | title }}{{ end }}
+                    </p>
+                    {{ end }}
+
+                    {{ with .Params.quality }}
+                    <p class="text-sm text-gray-700">
+                        <span class="font-semibold">Note:</span>
+                        {{ . }}</p>
+                    {{ end }}
+                </div>
+
+                <p class="flex items-center gap-2 text-sm font-medium text-gray-900 pt-1">
+                    <svg class="w-4 h-4 text-primary shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Private charter only — no shared boats, no strangers
+                </p>
             </div>
-            {{ end }}
 
-            <!-- Group Size -->
-            {{ with .Params.product_info.prices }}
-            <div class="text-center md:py-4 md:border-l md:border-r border-fjord-pale">
-                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">Group Size</p>
-                <p class="text-xl md:text-2xl font-semibold text-gray-900">{{range first 1 .}}{{.person_number}}{{end}}-{{ range last 1 . }}{{ .person_number }}{{ end }}</p>
-                <p class="text-xs md:text-sm text-gray-700">your group only</p>
-            </div>
-            {{ end }}
-
-            <!-- Price -->
-            {{ with .Params.product_info.prices }}
-            <div class="text-center md:py-4">
-                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-1 md:mb-2">Price From</p>
+            <div class="md:col-span-2 p-6 md:p-8 bg-fjord-light md:border-l border-fjord-pale flex flex-col justify-center gap-4">
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest">Price from</p>
+                {{ with .Params.product_info.prices }}
                 {{ range first 1 . }}
-                <p class="text-xl md:text-2xl font-semibold text-gray-900">{{ .price }}</p>
+                <p class="text-3xl md:text-4xl font-semibold text-gray-900">NOK {{ partial "components/format/price" .price }},-</p>
+                <p class="text-sm text-gray-700">Final price depends on group size.</p>
                 {{ end }}
-                <p class="text-xs md:text-sm text-gray-700">NOK per group</p>
-            </div>
-            {{ end }}
+                {{ end }}
 
+                <div id="primary-booking-cta">
+                    {{ partial "activity/booking" $ }}
+                </div>
+            </div>
         </div>
-        <!-- Private charter trust signal -->
-        <p class="flex items-center justify-center gap-2 text-sm text-gray-700 mt-6 max-w-3xl mx-auto">
-            <svg class="w-4 h-4 text-mist shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
-            Every experience is your group only — no shared boats, no strangers
-        </p>
     </div>
 </section>
 
@@ -76,8 +93,8 @@
                     <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
                     {{ end }}
                 </div>
-                <div class="w-full md:w-auto">
-                    {{ partial "activity/booking" $ }}
+                <div id="sticky-booking-cta" class="hidden w-full md:w-auto">
+                    {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
                 </div>
             </div>
         </div>
@@ -149,8 +166,32 @@
             });
         }
 
+        function updateStickyBookingButton() {
+            const stickyNav = document.querySelector('nav.sticky');
+            const stickyBooking = document.getElementById('sticky-booking-cta');
+            const primaryBooking = document.getElementById('primary-booking-cta');
+
+            if (!stickyNav || !stickyBooking || !primaryBooking) return;
+
+            const stickyTop = window.innerWidth >= 768 ? 71 : 71;
+            const navRect = stickyNav.getBoundingClientRect();
+            const primaryRect = primaryBooking.getBoundingClientRect();
+
+            const navIsSticky = navRect.top <= stickyTop + 1;
+            const primaryIsVisible = primaryRect.bottom > 0 && primaryRect.top < window.innerHeight;
+
+            if (navIsSticky && !primaryIsVisible) {
+                stickyBooking.classList.remove('hidden');
+            } else {
+                stickyBooking.classList.add('hidden');
+            }
+        }
+
         window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('scroll', updateStickyBookingButton);
+        window.addEventListener('resize', updateStickyBookingButton);
         updateActiveLink();
+        updateStickyBookingButton();
     });
 </script>
 

@@ -18,7 +18,7 @@
 
 <!-- Booking Modal -->
 <div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
-    class="hidden fixed inset-0 z-50 bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
+    class="hidden fixed inset-0 z-[70] bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
     <div class="relative p-4 w-full max-w-3xl mt-4 mb-8">
         <!-- Modal Content -->
         <article class="relative bg-white rounded-lg shadow border border-gray-300">
@@ -36,6 +36,12 @@
 
             <!-- Booking Form -->
             <form class="p-6 md:p-8" name="booking" method="POST" data-netlify="true" action="/request_confirmation">
+                <div class="mb-6 p-4 border border-primary/20 rounded-lg bg-fjord-light">
+                    <p class="m-0 text-sm text-gray-700 leading-relaxed">
+                        You book directly with us — no agency, no booking fees.
+                    </p>
+                </div>
+
                 <div class="grid gap-6 mb-6 grid-cols-2">
 
                     <!-- Hidden fields for activity data -->
@@ -129,7 +135,7 @@
                         <label for="price-visible" class="block mb-4 text-base font-semibold text-gray-900">Total Price</label>
                         <input type="text" id="price-visible" name="total_price"
                             class="bg-gray-100 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4"
-                            value="{{ range first 1 .Params.product_info.prices }}{{ .price }}{{ end }},- NOK" readonly>
+                            value="{{ range first 1 .Params.product_info.prices }}{{ partial "components/format/price" .price }}{{ end }},- NOK" readonly>
                     </div>
 
                     <!-- Message -->
@@ -169,7 +175,8 @@
                 const selectedOption = peopleSelect.options[peopleSelect.selectedIndex];
                 const price = selectedOption.getAttribute("data-price");
                 if (price) {
-                    priceVisible.value = `${price},- NOK`;
+                    const formattedPrice = Number(price).toLocaleString("nb-NO").replace(/\u00A0/g, " ");
+                    priceVisible.value = `${formattedPrice},- NOK`;
                 }
             });
         }
