@@ -9,6 +9,8 @@ aliases:
     - /aktiviteter
     - /en/activeties
     - /en/activities
+sitemap:
+  priority: 0.9
 ---
 
 Experience the authentic Sognefjord with Captain Tor. From fishing expeditions and scenic boat tours to e-bike adventures and mountain hikes, our activities showcase the natural beauty and culture of Balestrand.

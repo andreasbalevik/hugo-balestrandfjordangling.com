@@ -1,5 +1,6 @@
 ---
 title: Booking Confirmation
+robots: noindex, nofollow
 sitemap:
   exclude: true
 ---

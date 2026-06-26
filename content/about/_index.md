@@ -20,6 +20,8 @@ images:
 aliases:
   - /en/about
   - /om-oss
+sitemap:
+  priority: 0.8
 testimonial:
   quote: "Words can not express how great this experience is. We came to fish. Went home from one of the best tours we ever experienced. Capt. Tor is authentic and one heck of a storyteller. He knows his childhood area like his back-pocket. We came to fish. We came home with an extraordinary nature experience."
   author: "Mortenr163 — TripAdvisor"

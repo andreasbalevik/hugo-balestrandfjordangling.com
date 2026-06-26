@@ -72,4 +72,6 @@ inspirations:
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
 aliases:
   - /en
+sitemap:
+  priority: 1.0
 ---

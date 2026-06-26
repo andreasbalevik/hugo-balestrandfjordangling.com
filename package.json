@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install": "cd themes/balevikit-tailwindcss-hugo-theme && npm install",
+    "seo:check": "hugo --minify --printPathWarnings --printUnusedTemplates --templateMetricsHints",
     "backstop:reference": "backstop reference --configPath=backstop.json",
     "backstop:test": "backstop test --configPath=backstop.json",
     "backstop:approve": "backstop approve --configPath=backstop.json",

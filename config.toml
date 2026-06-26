@@ -17,6 +17,7 @@ baseURL = 'https://balestrandfjordangling.com'
   ogimage = "images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg"
   brand_image = "/favicon/android-chrome-512x512.png"
   theme_color = "#1a4a56"
+  description = "Private Sognefjord activities in Balestrand with Captain Tor: fjord angling, scenic boat tours, and authentic local storytelling. Book direct."
 
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"
@@ -43,6 +44,9 @@ baseURL = 'https://balestrandfjordangling.com'
   author_url = "https://balestrandfjordangling.com/about/"
   currency = "NOK"
   privacyUrl = "/privacy"
+
+  [Params.schema]
+    localBusiness = true
 
 [Params.social]
   youtube     = "https://www.youtube.com/@balestrandfjordangling"

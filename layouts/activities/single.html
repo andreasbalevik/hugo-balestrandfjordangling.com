@@ -142,6 +142,63 @@
     </section>
 
 
+    {{ $relatedInspirations := slice }}
+    {{ $seenInspirations := dict }}
+    {{ with .Params.related_inspirations }}
+        {{ range . }}
+            {{ $inspirationPath := . | string | strings.TrimSpace | replaceRE "/index/?$" "" | replaceRE "/+$" "" }}
+            {{ if and (ne $inspirationPath "") (not (hasPrefix $inspirationPath "/")) }}
+                {{ $inspirationPath = printf "/%s" $inspirationPath }}
+            {{ end }}
+            {{ with site.GetPage $inspirationPath }}
+                {{ $inspirationKey := .RelPermalink }}
+                {{ if not (isset $seenInspirations $inspirationKey) }}
+                    {{ $relatedInspirations = $relatedInspirations | append . }}
+                    {{ $seenInspirations = merge $seenInspirations (dict $inspirationKey true) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ $activityTags := $.Params.tags | default (slice) }}
+        {{ if gt (len $activityTags) 0 }}
+            {{ range where site.RegularPages "Section" "inspirations" }}
+                {{ $inspirationTags := .Params.tags | default (slice) }}
+                {{ if gt (len (intersect $activityTags $inspirationTags)) 0 }}
+                    {{ $relatedInspirations = $relatedInspirations | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ if eq (len $relatedInspirations) 0 }}
+            {{ $fallbackInspirations := where site.RegularPages "Section" "inspirations" }}
+            {{ $fallbackInspirations = sort $fallbackInspirations "RelPermalink" "asc" }}
+            {{ $fallbackInspirations = sort $fallbackInspirations "Date" "desc" }}
+            {{ range first 3 $fallbackInspirations }}
+                {{ $relatedInspirations = $relatedInspirations | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ if gt (len $relatedInspirations) 0 }}
+    <section class="bg-fjord-pale">
+        <div class="container">
+            {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Inspirations" "titleClass" "text-fjord" "class" "mb-8 md:mb-10" "showDivider" false) }}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {{ range first 3 $relatedInspirations }}
+                <article class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                    <h3 class="text-xl font-medium mt-0 mb-3">
+                        <a href="{{ .RelPermalink }}" class="hover:text-primary transition-colors">{{ .Title }}</a>
+                    </h3>
+                    {{ with .Params.description }}
+                    <p class="text-base text-gray-700 mb-4">{{ . }}</p>
+                    {{ end }}
+                    <a href="{{ .RelPermalink }}" class="text-primary font-medium hover:underline">Read inspiration</a>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ end }}
+
 <script>
     // Smooth scroll and active nav link tracking
     document.addEventListener('DOMContentLoaded', function() {
