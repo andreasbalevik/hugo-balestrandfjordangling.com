@@ -15,4 +15,4 @@ Check your email within 24 hours — I'll send you all the details and payment i
 * **Payment** is due when you arrive (card payment only)
 * **Cancellations** by email up to 2 working days before
 
-Questions? Reach out at [contact@balestrandfjordangling.com](mailto:contact@balestrandfjordangling.com) or +47 900 81 939 (SMS only)
+Questions? Reach out at [contact@balestrandfjordangling.com](mailto:contact@balestrandfjordangling.com) or +47 900 81 939 **(SMS only)**
