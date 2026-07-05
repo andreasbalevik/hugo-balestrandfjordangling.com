@@ -1,4 +1,5 @@
 enableGitInfo = true
+enableRobotsTXT = true
 
 title = 'Balestrand Fjord Angling'
 theme = 'balevikit-tailwindcss-hugo-theme'
