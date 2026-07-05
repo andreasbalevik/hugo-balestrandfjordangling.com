@@ -1,21 +1,6 @@
 {{ if not (hugo.IsDevelopment)}}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNS6R4TEK0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HNS6R4TEK0');
-</script>
-
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBP9B3X"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 {{ end }}
-
-{{ if .IsHome }}
-    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{{ end }}
-

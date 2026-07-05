@@ -43,6 +43,10 @@ reviews:
     knowledge of the fjords made this trip a highlight of our time in Norway.
   author: TripAdvisor Reviewer
   image: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
+statement:
+  quote: Simplicity creates emotions. No middlemen, no scripts — just the raw
+    luxury of the Sognefjord, shared by the local captain who lives it.
+  source: Captain Tor
 trust_panel:
   heading: Book direct with Captain Tor
   sidebar_title: Why book direct

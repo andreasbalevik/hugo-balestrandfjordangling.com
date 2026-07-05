@@ -47,7 +47,7 @@
 
 <!-- Related Activities -->
 {{ with .Params.related_activities }}
-<section class="bg-fjord-pale">
+<section class="bg-fjord-pale border-t border-mist/20">
     <div class="container">
         {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-10 md:mb-12" "showDivider" false) }}
 
@@ -62,7 +62,7 @@
     </div>
 </section>
 {{ else }}
-<section class="bg-fjord-pale py-10 md:py-16">
+<section class="bg-fjord-pale border-t border-mist/20 py-10 md:py-16">
     {{ partial "activity/see-all-activities.html" . }}
 </section>
 {{ end }}

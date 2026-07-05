@@ -326,6 +326,14 @@ collections:
                 field: { label: 'Point', name: 'item', widget: 'string' }
               - { label: 'Button text', name: 'button_text', widget: 'string', default: 'Read reviews on TripAdvisor' }
 
+          - label: "Brand statement"
+            name: "statement"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: 'Quote', name: 'quote', widget: 'text', default: 'Simplicity creates emotions. No middlemen, no scripts — just the raw luxury of the Sognefjord, shared by the local captain who lives it.' }
+              - { label: 'Source', name: 'source', widget: 'string', default: 'Captain Tor' }
+
           - label: "Visual Gallery"
             name: "gallery"
             widget: "object"
@@ -521,4 +529,3 @@ collections:
           - label: "Global Activity Label"
             name: "global_activity_label"
             widget: "string"
-

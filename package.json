@@ -24,6 +24,7 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "backstopjs": "^6.3.25",
+    "lighthouse": "^13.4.0",
     "tailwindcss": "^4.2.2"
   },
   "dependencies": {
