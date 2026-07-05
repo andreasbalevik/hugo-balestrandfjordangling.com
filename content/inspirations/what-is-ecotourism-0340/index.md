@@ -1,5 +1,5 @@
 ---
-title: What is Ecotourism ?
+title: What is Ecotourism?
 keywords:
   - Transformative travel Norway
   - Regenerative tourism Sognefjord
