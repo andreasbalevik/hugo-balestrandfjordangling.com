@@ -26,24 +26,6 @@ Project-specific decisions and workflow rules. Follow these when suggesting or m
   not in this repo.
 - Only clean up unused templates/partials under the project's own `layouts/` directory.
 
-### Important caveat: `hugo --printUnusedTemplates` gives false positives
-
-For `layouts/_default/home.html` and `layouts/_default/page.html`, Hugo's unused-template detector
-incorrectly flags them as unused even though they are the active overrides of the theme's (broken/
-placeholder) `_default/home.html` and `_default/page.html`. Verified by temporarily removing them:
-the build either errors (home.html) or silently renders different content (page.html) using the
-theme's fallback template instead.
-
-Before deleting any template flagged as "unused", verify it first:
-1. Move the file out of the repo temporarily.
-2. Run `hugo --minify --gc` and check for build errors.
-3. Diff the full `public/` output (ignore the CSS filename's content hash, which changes with any
-   Tailwind class purge) against a baseline build to confirm no page content changed.
-4. Only delete if the build succeeds and page content is provably identical.
-
-Plain (non-overriding) unused partials — i.e. partials nothing else references — are safe to remove
-without this extra caution, but still confirm with a before/after build diff.
-
 ## SEO
 
 - `robots.txt` is generated from `layouts/robots.txt` (requires `enableRobotsTXT = true` in
