@@ -1,6 +1,7 @@
 {{ with .Params.reviews }}
   {{ $tripadvisorURL := site.Params.social.tripadvisor }}
   {{ $trustPanel := $.Params.trust_panel }}
+  {{ $activitiesPage := $.GetPage "activities" }}
   <section class="bg-white">
       <div class="container">
 
@@ -36,12 +37,27 @@
                           {{ end }}
                       </ul>
 
-                      {{ with $tripadvisorURL }}
-                      {{ $buttonText := "Read reviews on TripAdvisor" }}
+                      {{ $buttonHref := "" }}
+                      {{ if $activitiesPage }}
+                        {{ $buttonHref = $activitiesPage.RelPermalink }}
+                      {{ else if $tripadvisorURL }}
+                        {{ $buttonHref = $tripadvisorURL }}
+                      {{ end }}
+
+                      {{ $buttonText := "Explore all activities" }}
                       {{ with $trustPanel.button_text }}
                         {{ $buttonText = . }}
                       {{ end }}
-                      {{ partial "components/buttons/button" (dict "href" . "text" $buttonText "variant" "secondary" "ariaLabel" "Read guest reviews on TripAdvisor") }}
+
+                      {{ if $buttonHref }}
+                        {{ partial "components/buttons/button" (dict "href" $buttonHref "text" $buttonText "variant" "primary" "ariaLabel" "Explore all activities and book direct with Captain Tor") }}
+                      {{ end }}
+
+                      {{ with $tripadvisorURL }}
+                        <p class="mt-4 text-sm text-gray-700">
+                          Want social proof first?
+                          <a href="{{ . }}" class="font-semibold text-primary hover:underline">Read reviews on TripAdvisor</a>
+                        </p>
                       {{ end }}
                   </div>
               </div>

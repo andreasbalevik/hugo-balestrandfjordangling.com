@@ -324,7 +324,7 @@ collections:
                 max: 5
                 summary: '{{fields.item}}'
                 field: { label: 'Point', name: 'item', widget: 'string' }
-              - { label: 'Button text', name: 'button_text', widget: 'string', default: 'Read reviews on TripAdvisor' }
+              - { label: 'Button text', name: 'button_text', widget: 'string', default: 'Explore all activities' }
 
           - label: "Brand statement"
             name: "statement"

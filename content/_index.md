@@ -54,7 +54,7 @@ trust_panel:
     - Private tours with the local guide who runs the experience himself.
     - Direct contact, direct payment, and no middle layer between guest and host.
     - Real fjord storytelling and local knowledge.
-  button_text: Read reviews on TripAdvisor
+  button_text: Explore all activities
 gallery:
   title: Moments from the Fjord
   instagram_url: https://www.instagram.com/balestrandfjordangling/
