@@ -146,6 +146,8 @@ Pulling up the fishing nets, which are set out by us the night before, stimulate
 
 Possible. Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
 
+> Teaser Facebook Reel : Watch the shark video => [HERE](https://www.facebook.com/reel/855871150392851)
+>
 > #### The Fjord Awakens The Norse Soul: A Moment Of Quiet Pride
 
 ### What should we wear for the trip and how about the weather?
