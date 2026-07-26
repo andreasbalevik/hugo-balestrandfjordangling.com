@@ -13,7 +13,7 @@ categories:
 recommended:
   title: Captain Tor's Recommendation
   activities:
-    - balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/index
+    - premium-balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-3159/index
     - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
     - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
 featured:
@@ -43,10 +43,6 @@ reviews:
     knowledge of the fjords made this trip a highlight of our time in Norway.
   author: TripAdvisor Reviewer
   image: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
-statement:
-  quote: Simplicity creates emotions. No middlemen, no scripts — just the raw
-    luxury of the Sognefjord, shared by the local captain who lives it.
-  source: Captain Tor
 trust_panel:
   heading: Book direct with Captain Tor
   sidebar_title: Why book direct
@@ -55,6 +51,10 @@ trust_panel:
     - Direct contact, direct payment, and no middle layer between guest and host.
     - Real fjord storytelling and local knowledge.
   button_text: Explore all activities
+statement:
+  quote: Simplicity creates emotions. No middlemen, no scripts — just the raw
+    luxury of the Sognefjord, shared by the local captain who lives it.
+  source: Captain Tor
 gallery:
   title: Moments from the Fjord
   instagram_url: https://www.instagram.com/balestrandfjordangling/
@@ -74,8 +74,8 @@ inspirations:
   inspirations:
     - discover-the-sognefjord-with-captain-tor-kayak-5758/index
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
+sitemap:
+  priority: 1
 aliases:
   - /en
-sitemap:
-  priority: 1.0
 ---
