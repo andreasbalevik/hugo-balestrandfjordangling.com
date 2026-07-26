@@ -52,7 +52,7 @@ product_info:
   duration:
     hours: 3
     minutes: 0
-  persons: "8"
+  persons: "7"
   prices:
     - person_number: 1
       price: 5000
@@ -61,14 +61,12 @@ product_info:
     - person_number: 3
       price: 5000
     - person_number: 4
-      price: 5000
-    - person_number: 5
       price: 6000
-    - person_number: 6
+    - person_number: 5
       price: 7000
-    - person_number: 7
+    - person_number: 6
       price: 8000
-    - person_number: 8
+    - person_number: 7
       price: 9000
 cms: true
 ---
