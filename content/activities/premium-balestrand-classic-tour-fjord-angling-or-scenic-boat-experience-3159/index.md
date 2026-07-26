@@ -1,6 +1,6 @@
 ---
-title: "Balestrand Classic Tour: Fjord Angling & Scenic Boat Experience"
-quality: PREMIUM
+title: "BASIC: Fjord Angling & Scenic Boat Experience"
+quality: Go Viking & Springfulness
 keywords:
   - Sustainable Tourism
   - Ecotourism Norway
