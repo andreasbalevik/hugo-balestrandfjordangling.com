@@ -13,7 +13,7 @@ categories:
 recommended:
   title: Captain Tor's Recommendation
   activities:
-    - premium-balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-3159/index
+    - balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/index
     - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
     - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
 featured:
