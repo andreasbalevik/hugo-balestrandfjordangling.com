@@ -114,17 +114,17 @@ product_info:
     - person_number: 2
       price: 3000
     - person_number: 3
-      price: 3500
+      price: 3000
     - person_number: 4
       price: 4000
     - person_number: 5
-      price: 4500
-    - person_number: 6
       price: 5000
-    - person_number: 7
-      price: 5500
-    - person_number: 8
+    - person_number: 6
       price: 6000
+    - person_number: 7
+      price: 7000
+    - person_number: 8
+      price: 8000
 cms: true
 ---
 ## Discover the Authentic Esefjord Experience
