@@ -105,19 +105,19 @@ product_info:
   persons: "7"
   prices:
     - person_number: 1
-      price: 5000
-    - person_number: 2
-      price: 5000
-    - person_number: 3
-      price: 5000
-    - person_number: 4
       price: 6000
-    - person_number: 5
+    - person_number: 2
+      price: 6000
+    - person_number: 3
+      price: 6000
+    - person_number: 4
       price: 7000
-    - person_number: 6
+    - person_number: 5
       price: 8000
-    - person_number: 7
+    - person_number: 6
       price: 9000
+    - person_number: 7
+      price: 10000
 cms: true
 ---
 ## Introduction: The Ultimate Sognefjord Private Boat Experience
