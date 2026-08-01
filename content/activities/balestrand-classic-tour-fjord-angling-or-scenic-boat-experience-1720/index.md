@@ -107,7 +107,7 @@ product_info:
   duration:
     hours: 1
     minutes: 30
-  persons: "8"
+  persons: "7"
   prices:
     - person_number: 1
       price: 3000
@@ -116,15 +116,13 @@ product_info:
     - person_number: 3
       price: 3000
     - person_number: 4
-      price: 4000
+      price: 3500
     - person_number: 5
-      price: 5000
+      price: 4000
     - person_number: 6
-      price: 6000
+      price: 4500
     - person_number: 7
-      price: 7000
-    - person_number: 8
-      price: 8000
+      price: 5000
 cms: true
 ---
 ## Discover the Authentic Esefjord Experience
