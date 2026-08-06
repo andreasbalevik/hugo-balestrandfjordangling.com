@@ -62,8 +62,8 @@ product_info:
       price: 5000
     - person_number: 4
       price: 5000
-    - person_number: 6
-      price: 7000
+    - person_number: 5
+      price: 6000
     - person_number: 6
       price: 7000
     - person_number: 7
