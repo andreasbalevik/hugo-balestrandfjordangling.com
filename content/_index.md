@@ -72,7 +72,7 @@ inspirations:
   description: Discover stories, experiences, and ideas that will fuel your next
     adventure in the Sognefjord.
   inspirations:
-    - discover-the-sognefjord-with-captain-tor-kayak-5758/index
+    - discover-the-sognefjords-hypernature-trolls-glaciers-authentic-nordic-wilderness-1205/index
     - norways-ultimate-fishing-vibe-check-the-authentic-sognefjord-adventure-0905/index
 sitemap:
   priority: 1
