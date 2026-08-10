@@ -64,7 +64,7 @@
                 <p class="text-sm font-semibold text-primary uppercase tracking-widest">Price from</p>
                 {{ with .Params.product_info.prices }}
                 {{ range first 1 . }}
-                <p class="text-3xl md:text-4xl font-semibold text-gray-900">NOK {{ partial "components/format/price" .price }},-</p>
+                <p class="text-3xl md:text-4xl font-semibold text-gray-900">{{ partial "components/format/price" .price }},- NOK</p>
                 <p class="text-sm text-gray-700">Final price depends on group size.</p>
                 {{ end }}
                 {{ end }}
