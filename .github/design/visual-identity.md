@@ -20,6 +20,28 @@ Tre ord som oppsummerer retningen: **fjordro, presisjon, tillit.**
 - **Tillit:** ekte naturfoto, lokal stemme (Captain Tor), direkte og ærlig språk — ingen
   "salgs-glans" som undergraver autentisiteten.
 
+### Hvem vi er — og hvem vi bevisst ikke er
+
+Vi er en **liten familiebedrift**, ikke et masseturisme-selskap. Det er ikke en bortforklaring —
+det er selve produktet, og designet skal tørre å vise det tydelig:
+
+- **Autentisk fremfor polert.** Ekte stemme, ekte historier, ekte bilder av Captain Tor og
+  fjorden. Ikke stockfoto-glans eller generisk "reisebyrå"-språk.
+- **Personlig fremfor anonymt.** Du booker med en person, ikke et kontaktskjema i et
+  konsern. Direkte kommunikasjon (SMS, e-post fra Tor selv) er en styrke, ikke en mangel på
+  skala — vis det frem, ikke skjul det bak et supportsystem.
+- **Eksklusivt og privat fremfor delt/pulje.** Alle turer er private, guidede opplevelser —
+  **ingen deling med fremmede, ingen samlebåter, ingen puljer**. Dette er en kjernedifferensiator
+  mot masseturisme-aktører, og skal være synlig i både tekst og visuelt hierarki (f.eks.
+  "Private charter only — no shared boats, no strangers" er et løfte, ikke en fotnote).
+- **Trygg fremfor kommersiell.** Guttet av 35 års lokal erfaring og ekte anmeldelser — tillit
+  bygges gjennom historie og direkte relasjon, ikke gjennom badges, rabattmerker eller
+  urgency-triks ("kun 2 plasser igjen!").
+- **Tør å være annerledes.** Vi trenger ikke se ut som et stort cruiserederi eller en
+  turoperatør-plattform for å virke seriøse. Det lille, personlige og ekte er selve
+  salgsargumentet — design og tekst skal forsterke det, ikke normalisere det bort til å ligne
+  konkurrentene.
+
 ## Opphav / inspirasjon
 
 Retningen er inspirert av [havilavoyages.com](https://www.havilavoyages.com/) — et premium
@@ -34,9 +56,11 @@ norsk reise-/cruisemerke. Det vi låner derfra:
 - **Små uppercase-labels** ("eyebrows") over overskrifter for redaksjonell struktur.
 
 Det vi **ikke** kopierer: Havila er et stort corporate cruisemerke med tett informasjonstetthet
-(mange kort, priser, filtre om hverandre). Vårt nettsted er mindre og mer personlig — vi skal
-ha *færre* elementer per skjerm og *mer* luft rundt hver historie enn Havila har. Det redaksjonelle
-tempoet er saktere; Captain Tor er en person, ikke en flåte.
+(mange kort, priser, filtre om hverandre) og selger *skala* (store skip, hundrevis av passasjerer,
+delte opplevelser). Vi selger det motsatte: **det lille, private og personlige.** Derfor skal
+vårt nettsted ha *færre* elementer per skjerm og *mer* luft rundt hver historie enn Havila har,
+og aldri bruke visuelle signaler som antyder masseturisme (køer, store grupper, "book nå og spar",
+prisrabatt-badges). Det redaksjonelle tempoet er saktere; Captain Tor er en person, ikke en flåte.
 
 ## Design-DNA
 
@@ -47,6 +71,9 @@ tempoet er saktere; Captain Tor er en person, ikke en flåte.
    ikke en SaaS-landingsside.
 4. **Bookingklar enkelhet** — én tydelig, rolig handling per seksjon. Aldri flere konkurrerende
    CTA-er i samme visuelle vekt.
+5. **Lite, privat og personlig** — hver seksjon skal kunne forsvares med "ville Captain Tor
+   sagt dette selv, ansikt til ansikt?". Skala, volum og "flere kunder samtidig" skal aldri
+   være det visuelle eller språklige budskapet.
 
 Prioritert rekkefølge når noe må vike: **lesbarhet → tillit → forståelse → handling → dekor.**
 Dekor taper alltid mot de fire andre.
@@ -116,6 +143,21 @@ i layouts.
 - **Fokus-tilstander** skal alltid være synlige (`focus-visible:outline-2
   focus-visible:outline-offset-2`) — aldri fjern fokusring for det visuelle utseendets skyld.
 
+## Budskap og tone (henger sammen med design)
+
+Innhold og design skal forsterke hverandre — ikke motsi hverandre. Når tekst/UI kommuniserer
+noe, skal det underbygge disse løftene, aldri undergrave dem:
+
+- **Direkte kontakt er en styrke, ikke en unnskyldning.** "Jeg sjekker booking kl. 7 og 22" er
+  et ekte, personlig løfte — vis det som sådan (varmt, konkret), ikke gjem det bak et
+  anonymt kontaktskjema-språk.
+- **Eksklusivitet betyr privat, ikke dyrt-for-dyrt-skyld.** Fremhev "kun deg og Captain Tor" /
+  "ingen delte båter, ingen fremmede" som selve verdien — ikke som en liten fotnote nederst.
+- **Anmeldelser og historie > rabattmerker.** Tillit bygges med ekte sitater, 35 års erfaring,
+  4. generasjons lokal tilknytning — ikke med "Populært valg!"-badges eller nedtellings-timere.
+- **Ingen falsk skala.** Ikke bruk språk eller bilder som antyder store grupper, flåter eller
+  "hundrevis av fornøyde kunder" — vi er én kaptein, én båt, én familie.
+
 ## Fotografi
 
 - Ekte foto av Sognefjorden, båtturer og Captain Tor — aldri stockbilder som ikke matcher
@@ -142,6 +184,9 @@ Ikke gjør:
   "én rolig handling per seksjon".
 - Ikke gjør nettstedet tettere/mer "katalog" for å presse inn mer innhold — kurater hardere i
   stedet (færre, større, roligere elementer) fremfor å komprimere avstand.
+- Ikke bruk visuelle eller språklige signaler som antyder masseturisme: urgency-tellere,
+  "X plasser igjen", rabatt-badges, bilder av store grupper/køer/flåter, eller
+  "book nå og spar"-mønstre. Det bryter med at vi er en liten, privat, familiedrevet aktør.
 
 ## Hvordan bruke dette dokumentet
 
