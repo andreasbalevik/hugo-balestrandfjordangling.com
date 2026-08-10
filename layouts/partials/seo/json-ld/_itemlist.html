@@ -1,0 +1,101 @@
+{{/*
+  Project override of the theme partial (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_itemlist.html).
+  Changes:
+  1. The "image" field uses a downscaled (max 1200px wide) derivative instead of
+     the raw original resource, so full-resolution camera originals (often 10-17MB)
+     are not published to /public purely for invisible JSON-LD metadata.
+  2. Switched Page.Resources.GetMatch to global resources.GetMatch: this site's
+     images live in the global assets/images/ mount, not page bundles, so the
+     page-scoped lookup always returned nil and silently fell back to an
+     unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+*/}}
+{{ $productSection := site.Params.product_section | default "products" }}
+{{ $blogSection := site.Params.blog_section | default "blog" }}
+{{ if and (or (eq .Kind "section") (eq .Kind "taxonomy")) (not .IsHome) (gt (len .Pages) 0) }}
+<!-- ITEM LIST SCHEMA for List Pages -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{{ .Title }}",
+  "description": "{{ .Page.Params.description | default site.Params.description }}",
+  "url": "{{ .Permalink }}",
+  "numberOfItems": {{ len .Pages }},
+  "itemListElement": [
+    {{ range $index, $page := .Pages }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $index 1 }},
+      {{ if eq $.Section $productSection }}
+      "item": {
+        "@type": "Product",
+        "name": "{{ $page.Title }}",
+        "url": "{{ $page.Permalink }}"{{ with ($page.Params.description | default ($page.Summary | plainify)) }},
+        "description": "{{ . }}"{{ end }}{{ with $page.Params.images }}
+          {{ range first 1 . }}
+            {{ with resources.GetMatch .src }}
+              {{ $schemaImage := . }}
+              {{ if gt .Width 1200 }}
+                {{ $schemaImage = .Resize "1200x q82" }}
+              {{ end }},
+        "image": "{{ $schemaImage.Permalink }}"
+            {{ else }},
+        "image": "{{ .src | absURL }}"
+            {{ end }}
+          {{ end }}
+        {{ end }}{{ with $page.Params.product_info }}{{ with .prices }}
+          {{ $firstPrice := index . 0 }}
+          {{ $lastPrice := index . (sub (len .) 1) }},
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "{{ site.Params.currency | default "NOK" }}",
+          "lowPrice": "{{ $firstPrice.price }}",
+          "highPrice": "{{ $lastPrice.price }}"
+        }{{ end }}{{ end }}
+      }
+      {{ else if eq $.Section $blogSection }}
+      "item": {
+        "@type": "BlogPosting",
+        "name": "{{ $page.Title }}",
+        "url": "{{ $page.Permalink }}"{{ with ($page.Params.description | default ($page.Summary | plainify)) }},
+        "description": "{{ . }}"{{ end }}{{ with $page.Params.images }}
+          {{ range first 1 . }}
+            {{ with resources.GetMatch .src }}
+              {{ $schemaImage := . }}
+              {{ if gt .Width 1200 }}
+                {{ $schemaImage = .Resize "1200x q82" }}
+              {{ end }},
+        "image": "{{ $schemaImage.Permalink }}"
+            {{ else }},
+        "image": "{{ .src | absURL }}"
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      }
+      {{ else }}
+      "item": {
+        "@type": "WebPage",
+        "name": "{{ $page.Title }}",
+        "url": "{{ $page.Permalink }}"{{ with ($page.Params.description | default ($page.Summary | plainify)) }},
+        "description": "{{ . }}"{{ end }}{{ with $page.Params.images }}
+          {{ range first 1 . }}
+            {{ with resources.GetMatch .src }}
+              {{ $schemaImage := . }}
+              {{ if gt .Width 1200 }}
+                {{ $schemaImage = .Resize "1200x q82" }}
+              {{ end }},
+        "image": "{{ $schemaImage.Permalink }}"
+            {{ else }},
+        "image": "{{ .src | absURL }}"
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      }
+      {{ end }}
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

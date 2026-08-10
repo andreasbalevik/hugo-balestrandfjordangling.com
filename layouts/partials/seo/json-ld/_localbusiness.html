@@ -11,7 +11,11 @@
     {{ range first 1 . }}
       {{ $image := resources.GetMatch .src }}
       {{ if $image }}
-  ,"image": "{{ $image.Permalink }}"
+        {{ $schemaImage := $image }}
+        {{ if gt $image.Width 1200 }}
+          {{ $schemaImage = $image.Resize "1200x q82" }}
+        {{ end }}
+  ,"image": "{{ $schemaImage.Permalink }}"
       {{ end }}
     {{ end }}
   {{ end }}

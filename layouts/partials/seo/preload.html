@@ -1,0 +1,55 @@
+{{/*
+  Project override of the theme partial
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/preload.html).
+
+  Bug fixed: the theme version preloads the raw, unprocessed original image
+  resource ($imgRes.Permalink) with fetchpriority="high" as the LCP hint.
+  These originals are full camera exports (often 5000px+, 10-17MB) while the
+  actual hero <img> rendered in the page body (via components/hero/image.html
+  -> components/images/image.html, preset "hero") is a much smaller optimized
+  webp/jpeg derivative (max 1280x720). The mismatch meant every page preloaded
+  a multi-megabyte file that was never displayed, wasting bandwidth and
+  actively hurting LCP instead of helping it, and forced Hugo to publish the
+  raw originals to /public.
+
+  Fix: preload the same "hero" preset derivatives (desktop/tablet/mobile,
+  webp, quality 85) that image.html actually renders, using imagesrcset/sizes
+  so the browser picks the one matching the current viewport - mirroring the
+  <picture> breakpoints in components/images/image.html.
+*/}}
+{{/* Attempt to find the LCP/Hero image */}}
+{{ $lcpImage := "" }}
+
+{{/* 1. Check for specific hero image in frontmatter */}}
+{{ if .Params.hero_image }}
+  {{ $lcpImage = .Params.hero_image }}
+{{/* 2. Check for first image in images array */}}
+{{ else if .Params.images }}
+  {{ range first 1 .Params.images }}
+    {{ $lcpImage = .src }}
+  {{ end }}
+{{/* 3. Fallback to site brand image if home page */}}
+{{ else if .IsHome }}
+  {{ $lcpImage = site.Params.brand_image }}
+{{ end }}
+
+{{/* Output preload tag if image found */}}
+{{ if $lcpImage }}
+  {{ $imgRes := resources.GetMatch $lcpImage }}
+  {{ if $imgRes }}
+    {{ $contrast := site.Params.contrast | default 5 }}
+    {{ $filter := images.Contrast $contrast }}
+    {{ $imgRes = $imgRes | images.Filter $filter }}
+    {{ $desktop := $imgRes.Fill "1280x720 q85 webp" }}
+    {{ $tablet := $imgRes.Fill "768x512 q80 webp" }}
+    {{ $mobile := $imgRes.Fill "500x400 q70 webp" }}
+    <!-- Preload LCP Image (matches "hero" preset breakpoints in components/images/image.html) -->
+    <link rel="preload" as="image" fetchpriority="high"
+          href="{{ $mobile.Permalink }}"
+          imagesrcset="{{ $mobile.Permalink }} 500w, {{ $tablet.Permalink }} 768w, {{ $desktop.Permalink }} 1280w"
+          imagesizes="100vw">
+  {{ else }}
+    <!-- Preload LCP Image (External/Static) -->
+    <link rel="preload" as="image" href="{{ $lcpImage | absURL }}" fetchpriority="high">
+  {{ end }}
+{{ end }}
