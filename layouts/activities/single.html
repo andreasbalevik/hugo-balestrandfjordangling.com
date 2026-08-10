@@ -18,7 +18,7 @@
 <!-- Activity Decision Panel -->
 <section class="bg-white">
     <div class="container">
-        <div class="max-w-4xl mx-auto bg-white rounded-lg border border-gray-300 shadow grid grid-cols-1 md:grid-cols-5 overflow-hidden">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg border border-fjord-pale shadow grid grid-cols-1 md:grid-cols-5 overflow-hidden">
             <div class="md:col-span-3 p-6 md:p-8 space-y-4">
                 <p class="text-sm font-semibold text-primary uppercase tracking-widest">Activity Description</p>
 
@@ -64,7 +64,7 @@
                 <p class="text-sm font-semibold text-primary uppercase tracking-widest">Price from</p>
                 {{ with .Params.product_info.prices }}
                 {{ range first 1 . }}
-                <p class="text-3xl md:text-4xl font-semibold text-gray-900">NOK {{ partial "components/format/price" .price }},-</p>
+                <p class="text-3xl md:text-4xl font-semibold text-gray-900">{{ partial "components/format/price" .price }},- NOK</p>
                 <p class="text-sm text-gray-700">Final price depends on group size.</p>
                 {{ end }}
                 {{ end }}
@@ -79,23 +79,18 @@
 
 <!-- Content Sections with Integrated Navigation -->
 
-    <!-- Sticky Navigation Tabs -->
+    <!-- Navigation Tabs -->
     {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
-    <nav class="sticky top-[71px] z-50 bg-white border-b border-gray-200">
+    <nav class="bg-white border-b border-gray-200">
         <div class="container max-w-4xl py-0">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-4 py-3 md:py-4">
-                <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
-                    <a href="#about" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
-                    {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-                    <a href="#practical" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
-                    {{ end }}
-                    {{ if gt (len .Params.images) 1 }}
-                    <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
-                    {{ end }}
-                </div>
-                <div id="sticky-booking-cta" class="hidden w-full md:w-auto">
-                    {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
-                </div>
+            <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide py-3 md:py-4">
+                <a href="#about" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
+                {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
+                <a href="#practical" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
+                {{ end }}
+                {{ if gt (len .Params.images) 1 }}
+                <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
+                {{ end }}
             </div>
         </div>
     </nav>
@@ -117,7 +112,7 @@
             <div class="container pt-0">
                 <div class="max-w-4xl mx-auto">
                     {{ partial "components/section-heading" (dict "title" "Practical Information" "class" "mb-6 md:mb-8" "showDivider" false) }}
-                    <div class="bg-white rounded-lg border border-gray-300 shadow p-8 md:p-12 lg:p-16">
+                    <div class="bg-white rounded-lg border border-fjord-pale shadow p-8 md:p-12 lg:p-16">
                         <article class="prose prose-lg prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
                             {{ partial "activity/practical" . }}
                         </article>
@@ -215,32 +210,8 @@
             });
         }
 
-        function updateStickyBookingButton() {
-            const stickyNav = document.querySelector('nav.sticky');
-            const stickyBooking = document.getElementById('sticky-booking-cta');
-            const primaryBooking = document.getElementById('primary-booking-cta');
-
-            if (!stickyNav || !stickyBooking || !primaryBooking) return;
-
-            const stickyTop = window.innerWidth >= 768 ? 71 : 71;
-            const navRect = stickyNav.getBoundingClientRect();
-            const primaryRect = primaryBooking.getBoundingClientRect();
-
-            const navIsSticky = navRect.top <= stickyTop + 1;
-            const primaryIsVisible = primaryRect.bottom > 0 && primaryRect.top < window.innerHeight;
-
-            if (navIsSticky && !primaryIsVisible) {
-                stickyBooking.classList.remove('hidden');
-            } else {
-                stickyBooking.classList.add('hidden');
-            }
-        }
-
         window.addEventListener('scroll', updateActiveLink);
-        window.addEventListener('scroll', updateStickyBookingButton);
-        window.addEventListener('resize', updateStickyBookingButton);
         updateActiveLink();
-        updateStickyBookingButton();
     });
 </script>
 

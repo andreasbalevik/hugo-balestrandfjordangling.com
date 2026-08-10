@@ -1,0 +1,84 @@
+{{/*
+  Project override of the theme partial (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_article.html).
+  Changes:
+  1. The "image" field uses a downscaled (max 1200px wide) derivative instead of
+     the raw original resource, so full-resolution camera originals (often 10-17MB)
+     are not published to /public purely for invisible JSON-LD metadata.
+  2. Switched Page.Resources.GetMatch to global resources.GetMatch: this site's
+     images live in the global assets/images/ mount, not page bundles, so the
+     page-scoped lookup always returned nil and silently fell back to an
+     unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+*/}}
+{{- $ISO8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- $blogSection := site.Params.blog_section | default "blog" -}}
+{{- $productSection := site.Params.product_section | default "products" -}}
+{{- $articleSchemaEnabled := false -}}
+{{- if .Params.article -}}
+  {{- $articleSchemaEnabled = true -}}
+{{- end -}}
+{{- with .Params.schema -}}
+  {{- if .article -}}
+    {{- $articleSchemaEnabled = true -}}
+  {{- end -}}
+{{- end -}}
+{{- $description := .Page.Params.description | default (.Summary | plainify) -}}
+{{- if and .IsPage (not .IsHome) (ne .Section $blogSection) (ne .Section $productSection) $articleSchemaEnabled $description -}}
+{{- $pubDate := .PublishDate -}}
+{{- if $pubDate.IsZero -}}
+  {{- $pubDate = .Date -}}
+{{- end -}}
+{{- if $pubDate.IsZero -}}
+  {{- with .GitInfo -}}
+    {{- $pubDate = .AuthorDate -}}
+  {{- end -}}
+{{- end -}}
+{{- $lastmod := .Lastmod -}}
+{{- if $lastmod.IsZero -}}
+  {{- with .GitInfo -}}
+    {{- $lastmod = .AuthorDate -}}
+  {{- end -}}
+{{- end -}}
+{{- if $lastmod.IsZero -}}
+  {{- $lastmod = $pubDate -}}
+{{- end -}}
+<!-- ARTICLE -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ $description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.Params.author | default site.Title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"{{ with site.Params.logo }}{{ with resources.Get . }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Permalink }}"
+    }{{ end }}{{ end }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }{{ if not $pubDate.IsZero }},
+  "datePublished": "{{ $pubDate.Format $ISO8601 | safeHTML }}"{{ end }}{{ if not $lastmod.IsZero }},
+  "dateModified": "{{ $lastmod.Format $ISO8601 | safeHTML }}"{{ end }}{{ with .Page.Params.images }}
+    {{ range first 1 . }}
+      {{ with resources.GetMatch .src }}
+        {{ $schemaImage := . }}
+        {{ if gt .Width 1200 }}
+          {{ $schemaImage = .Resize "1200x q82" }}
+        {{ end }},
+  "image": "{{ $schemaImage.Permalink }}"
+      {{ else }},
+  "image": "{{ .src | absURL }}"
+      {{ end }}
+    {{ end }}
+  {{ end }}
+}
+</script>
+{{- end -}}

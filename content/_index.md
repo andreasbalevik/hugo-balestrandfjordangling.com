@@ -37,20 +37,6 @@ usp:
         fishing, and the magic of the moments.
       icon: M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0
         00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z
-reviews:
-  title: What our guests say
-  quote: A truly unforgettable experience! Captain Tor’s storytelling and
-    knowledge of the fjords made this trip a highlight of our time in Norway.
-  author: TripAdvisor Reviewer
-  image: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
-trust_panel:
-  heading: Book direct with Captain Tor
-  sidebar_title: Why book direct
-  items:
-    - Private tours with the local guide who runs the experience himself.
-    - Direct contact, direct payment, and no middle layer between guest and host.
-    - Real fjord storytelling and local knowledge.
-  button_text: Explore all activities
 statement:
   quote: Simplicity creates emotions. No middlemen, no scripts — just the raw
     luxury of the Sognefjord, shared by the local captain who lives it.

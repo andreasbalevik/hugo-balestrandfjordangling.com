@@ -1,0 +1,133 @@
+{{/*
+  Project override of the theme partial (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_product.html).
+  Changes:
+  1. The "image" field(s) uses a downscaled (max 1200px wide) derivative instead of
+     the raw original resource, so full-resolution camera originals (often 10-17MB)
+     are not published to /public purely for invisible JSON-LD metadata.
+  2. Switched Page.Resources.GetMatch to global resources.GetMatch: this site's
+     images live in the global assets/images/ mount, not page bundles, so the
+     page-scoped lookup always returned nil and silently fell back to an
+     unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+*/}}
+{{ $productSection := site.Params.product_section | default "products" }}
+{{ $description := .Page.Params.description | default (.Summary | plainify) }}
+{{ $productSchemaEnabled := false }}
+{{ if .Params.product }}
+  {{ $productSchemaEnabled = true }}
+{{ end }}
+{{ with .Params.schema }}
+  {{ if .product }}
+    {{ $productSchemaEnabled = true }}
+  {{ end }}
+{{ end }}
+{{ if and .IsPage (eq .Section $productSection) $description (or .Params.product_info $productSchemaEnabled) }}
+<!-- PRODUCT / SERVICE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ .Title }}",
+  "description": "{{ $description }}",
+  "url": "{{ .Permalink }}"{{ with .Page.Params.product_info.sku }},
+  "sku": "{{ . }}"{{ end }}{{ with .Page.Params.images }}
+    {{ range first 1 . }}
+      {{ with resources.GetMatch .src }}
+        {{ $schemaImage := . }}
+        {{ if gt .Width 1200 }}
+          {{ $schemaImage = .Resize "1200x q82" }}
+        {{ end }},
+  "image": [
+    "{{ $schemaImage.Permalink }}"
+      {{ else }},
+  "image": [
+    "{{ .src | absURL }}"
+      {{ end }}
+    {{ end }}
+    {{ range after 1 . }}
+      {{ with resources.GetMatch .src }}
+        {{ $schemaImage := . }}
+        {{ if gt .Width 1200 }}
+          {{ $schemaImage = .Resize "1200x q82" }}
+        {{ end }}
+    ,"{{ $schemaImage.Permalink }}"
+      {{ else }}
+    ,"{{ .src | absURL }}"
+      {{ end }}
+    {{ end }}
+  ]{{ end }},
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ site.Title }}"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ site.Title }}",
+    "url": "{{ site.BaseURL }}"{{ with site.Params.address }},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ . }}"{{ with site.Params.addressLocality }},
+      "addressLocality": "{{ . }}"{{ end }}{{ with site.Params.addressRegion }},
+      "addressRegion": "{{ . }}"{{ end }}{{ with site.Params.postalCode }},
+      "postalCode": "{{ . }}"{{ end }},
+      "addressCountry": "{{ site.Params.addressCountry | default "NO" }}"
+    }{{ end }}{{ if and site.Params.latitude site.Params.longitude }},
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "{{ site.Params.latitude }}",
+      "longitude": "{{ site.Params.longitude }}"
+    }{{ end }}{{ with site.Params.phone }},
+    "telephone": "{{ . }}"{{ end }}{{ with site.Params.email }},
+    "email": "{{ . }}"{{ end }}
+  }{{ with .Page.Params.product_info }},
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "{{ site.Params.currency | default "NOK" }}"{{ with .prices }}
+      {{ $firstPrice := index . 0 }}
+      {{ $lastPrice := index . (sub (len .) 1) }},
+    "lowPrice": "{{ $firstPrice.price }}",
+    "highPrice": "{{ $lastPrice.price }}",
+    "offerCount": "{{ len . }}"{{ end }},
+    "availability": "https://schema.org/InStock",
+    "url": "{{ $.Permalink }}"{{ with .priceValidUntil }},
+    "priceValidUntil": "{{ . }}"{{ end }}
+  }{{ end }}{{ with .Page.Params.aggregateRating }},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ .ratingValue }}",
+    "reviewCount": "{{ .reviewCount }}",
+    "bestRating": "5",
+    "worstRating": "1"
+  }{{ end }}{{ with .Page.Params.tags }},
+  "category": [{{ range $index, $tag := . }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}]{{ end }}{{ with .Page.Params.keywords }},
+  "keywords": "{{ delimit (first 10 .) ", " }}"{{ end }}
+}
+</script>
+
+<!-- BREADCRUMB SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ with site.GetPage $productSection }}{{ .Title }}{{ else }}{{ $productSection | title }}{{ end }}",
+      "item": "{{ site.BaseURL }}{{ $productSection }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{ end }}
