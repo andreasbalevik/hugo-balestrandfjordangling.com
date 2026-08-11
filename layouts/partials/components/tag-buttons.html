@@ -2,7 +2,7 @@
   Tag buttons grid — renders all taxonomy tags as colored CTA cards.
   Usage: {{ partial "components/tag-buttons" . }}
 */}}
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
     {{ range $name, $taxonomy := site.Taxonomies.tags }}
     {{ with site.GetPage (printf "/tags/%s" $name) }}
     <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
