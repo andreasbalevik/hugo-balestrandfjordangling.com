@@ -37,6 +37,39 @@ Project-specific decisions and workflow rules. Follow these when suggesting or m
   stacked on top of the `.container` utility's own responsive padding), that's a bug — resolve it by
   removing the redundant class, not by adding more overrides.
 
+## Local dev workflow
+
+- The theme lives in a git submodule; if `themes/balevikit-tailwindcss-hugo-theme/` is empty, run
+  `git submodule update --init` first.
+- `hugo server -D` needs the TailwindCSS CLI binary, installed via the theme's `package.json`
+  postinstall. Run `npm install` at the repo root before starting the server, or the build fails
+  with `TAILWINDCSS: ... binary with name tailwindcss not found`.
+- To verify a change, start `hugo server -D --port <port>` and check pages with `curl -o /dev/null
+  -w "%{http_code}"` (expect 200) plus the `browser` canvas for a visual pass. Don't assume the dev
+  server is still running across a long session — re-check with `lsof -ti:<port>` /
+  a curl before relying on it; it's easy to have killed it earlier.
+- The `browser` canvas has no `reload` action. Use `navigate_page` (with `page_id`, not the
+  canvas `instanceId`) to reload or go to a new URL, `read_page` for text/element snapshots, and
+  `screenshot_page` for visual checks.
+
+## Code structure
+
+- **Extract, don't duplicate.** If the same markup block (or near-identical block with only a
+  couple of dynamic values) appears in 2+ layout files, pull it into a partial under
+  `layouts/partials/` instead of copy-pasting. Group partials by role: `partials/components/` for
+  generic UI (byline, dropdowns, buttons, headings), `partials/activity/` for activity-domain
+  pieces (meta badges, quality badge, related-activity cards).
+- Give each partial a short Hugo-comment header describing its purpose and its expected params
+  (see `partials/components/section-heading.html` and `partials/components/byline.html` for the
+  pattern). Prefer a `dict` of named params when a partial needs more than the page context itself.
+- Before merging near-identical blocks, check whether the differences are **meaningful per-page
+  choices** (e.g. a different background needing a different border color, a genuinely different
+  content role) rather than accidental drift — keep those as caller-supplied params, don't force
+  a false unification.
+- Don't merge blocks that look similar but serve a different role just because the markup is
+  close (e.g. a plain-text duration/persons list in a decision panel vs. icon badges on a card) —
+  same data, different presentation intent, so keep them separate.
+
 ## Theme submodule (`themes/balevikit-tailwindcss-hugo-theme`)
 
 - **Never edit files inside `themes/`.** It's a separate git submodule/repo — changes must go there,

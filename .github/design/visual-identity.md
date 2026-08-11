@@ -184,6 +184,9 @@ Ikke gjør:
   noe som allerede finnes som utility-klasse. Se "Styling"-seksjonen i
   [`.github/copilot-instructions.md`](../copilot-instructions.md) for detaljer og unntak (kun ekte
   dynamiske CMS-verdier).
+- Ikke legg `py-*`/`px-*` på en wrapper rundt/inni `.container` — `.container` har sin egen
+  responsive `padding-block` (3rem → 4rem ved `lg` → 5rem ved `2xl`). En ekstra padding-klasse på
+  wrapperen dobler eller flater ut denne skalaen; fjern overrides og la `.container` styre luften.
 - Ikke stable flere sterke CTA-er eller badges i samme seksjon — det bryter
   "én rolig handling per seksjon".
 - Ikke gjør nettstedet tettere/mer "katalog" for å presse inn mer innhold — kurater hardere i
