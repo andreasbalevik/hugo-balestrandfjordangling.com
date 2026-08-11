@@ -20,6 +20,23 @@ Project-specific decisions and workflow rules. Follow these when suggesting or m
   (`hugo version`), so production builds match local dev.
 - Keep `tailwindcss` / `@tailwindcss/cli` up to date with `npm outdated` / `npm update`.
 
+## Styling
+
+- **Always use Tailwind utility classes in layouts.** Never add `<style>` blocks, new rules in
+  `assets/css/custom.css`, or a `style="..."` attribute for anything expressible as a Tailwind class
+  (spacing, color, typography, layout, borders, shadows, etc.).
+- `assets/css/custom.css` exists **only** for brand tokens (`@theme`) and the handful of utilities
+  Tailwind can't express (e.g. `.bg-hero`, `.flip-horizontal`). Don't grow it with one-off component
+  styles — add Tailwind classes in the layout instead.
+- Inline `style="..."` is only acceptable for genuinely dynamic, per-page values that can't be
+  Tailwind classes at build time — e.g. a CMS-driven `background-color` from content params, or a
+  generated `background-image: url(...)` for a blurred hero. Don't use it as a shortcut for static
+  spacing/sizing that a utility class already covers.
+- When polishing or fixing spacing/padding, prefer adjusting or removing Tailwind classes over
+  introducing new CSS. If two elements both set padding on the same box (e.g. a wrapper `py-*` class
+  stacked on top of the `.container` utility's own responsive padding), that's a bug — resolve it by
+  removing the redundant class, not by adding more overrides.
+
 ## Theme submodule (`themes/balevikit-tailwindcss-hugo-theme`)
 
 - **Never edit files inside `themes/`.** It's a separate git submodule/repo — changes must go there,

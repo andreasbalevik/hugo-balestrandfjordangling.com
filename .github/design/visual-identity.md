@@ -180,6 +180,10 @@ Ikke gjør:
   redesign, ikke polish.
 - Ikke legg til bevegelseseffekter (hover-løft, skalering) — de bryter fjordro-prinsippet.
 - Ikke hardkod hex-farger i layouts — bruk `@theme`-tokens.
+- Bruk alltid Tailwind-klasser for styling — ikke `style="..."` eller nye regler i `custom.css` for
+  noe som allerede finnes som utility-klasse. Se "Styling"-seksjonen i
+  [`.github/copilot-instructions.md`](../copilot-instructions.md) for detaljer og unntak (kun ekte
+  dynamiske CMS-verdier).
 - Ikke stable flere sterke CTA-er eller badges i samme seksjon — det bryter
   "én rolig handling per seksjon".
 - Ikke gjør nettstedet tettere/mer "katalog" for å presse inn mer innhold — kurater hardere i
