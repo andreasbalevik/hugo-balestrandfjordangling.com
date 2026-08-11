@@ -62,8 +62,10 @@
     </div>
 </section>
 {{ else }}
-<section class="bg-fjord-pale border-t border-mist/20 py-10 md:py-16">
-    {{ partial "activity/see-all-activities.html" . }}
+<section class="bg-fjord-pale border-t border-mist/20">
+    <div class="container">
+        {{ partial "activity/see-all-activities.html" . }}
+    </div>
 </section>
 {{ end }}
 
