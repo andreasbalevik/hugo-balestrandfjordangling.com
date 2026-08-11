@@ -25,23 +25,7 @@
             <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
 
             <!-- Byline -->
-            <div class="flex items-center gap-3 pb-6 border-b border-mist/20 mb-8">
-                <div class="w-9 h-9 rounded-full bg-fjord ring-2 ring-mist/40 flex items-center justify-center shrink-0">
-                    <svg class="w-4 h-4 text-mist" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
-                    </svg>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                    <span class="text-sm font-semibold">{{ with .Params.author }}{{ . }}{{ else }}Captain Tor{{ end }}</span>
-                    <div class="flex items-center gap-2 text-xs text-gray-700">
-                        {{ if not .Lastmod.IsZero }}
-                        <span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2, 2006" }}</time></span>
-                        {{ else if .GitInfo }}
-                        <span>Updated <time datetime="{{ .GitInfo.AuthorDate.Format "2006-01-02" }}">{{ .GitInfo.AuthorDate.Format "Jan 2, 2006" }}</time></span>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
+            {{ partial "components/byline" (dict "page" . "borderClass" "border-mist/20") }}
 
             <div class="prose md:prose-lg lg:prose-xl max-w-none
                 prose-headings:font-medium prose-headings:text-gray-900

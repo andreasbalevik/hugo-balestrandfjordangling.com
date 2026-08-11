@@ -1,0 +1,17 @@
+{{/*
+  Activity quality badge — small eyebrow-style quality note plus the optional
+  Varde Experience Quality mark, shown above the title on highlight cards.
+
+  Params: an activity page (the page itself, passed directly — not a dict).
+*/}}
+
+{{ if or .Params.quality .Params.information.options.varde_experience_quality }}
+<div class="flex items-center justify-between mb-3">
+    {{ with .Params.quality }}
+    <span class="text-sm font-semibold text-primary uppercase tracking-widest">{{ . }}</span>
+    {{ end }}
+    {{ with .Params.information.options.varde_experience_quality }}
+    <img class="w-20 h-auto" alt="Varde Experience Quality" src="/images/varde-experience-quality.png" />
+    {{ end }}
+</div>
+{{ end }}
