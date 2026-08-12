@@ -17,26 +17,27 @@
 <section class="bg-fjord-light">
     <div class="container">
         <div class="max-w-3xl mx-auto px-0">
-            <!-- Divider only when there's content -->
-            {{ if .Content }}
             <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
 
-            <!-- Byline -->
+            <!-- Byline (always shown) -->
             {{ partial "components/byline" (dict "page" . "borderClass" "border-mist/20") }}
-            {{ end }}
 
+            <!-- Prose content (only if exists) -->
             <div>
                 {{ partial "components/prose-content.html" .}}
             </div>
 
-            <!-- FAQ Section -->
+            <!-- FAQ Section (part of content, only if exists) -->
             {{ with .Params.faqItems }}
-            <div class="mt-12 md:mt-16 pt-8 md:pt-12 border-t border-mist/20">
-                <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
+            <div class="{{if $.Content }}mt-12 md:mt-16 pt-8 md:pt-12 border-t border-mist/20{{ else }}mt-6 md:mt-8{{ end }}">
+                {{ if $.Content }}<div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>{{ end }}
                 <h2 class="text-2xl md:text-3xl font-medium tracking-tight text-gray-900 mb-8 md:mb-10">Frequently Asked Questions</h2>
                 {{ partial "components/faq.html" (dict "items" .) }}
             </div>
             {{ end }}
+        </div>
+    </div>
+</section>
         </div>
     </div>
 </section>
