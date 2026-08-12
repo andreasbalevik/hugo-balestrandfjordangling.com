@@ -17,10 +17,13 @@
 <section class="bg-fjord-light">
     <div class="container">
         <div class="max-w-3xl mx-auto px-0">
+            <!-- Divider only when there's content -->
+            {{ if .Content }}
             <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
 
             <!-- Byline -->
             {{ partial "components/byline" (dict "page" . "borderClass" "border-mist/20") }}
+            {{ end }}
 
             <div>
                 {{ partial "components/prose-content.html" .}}
