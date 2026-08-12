@@ -117,23 +117,7 @@
   {{ $statementQuote = "Simplicity creates emotions. No middlemen, no scripts — just the raw luxury of the Sognefjord, shared by the local captain who lives it." }}
   {{ $statementSource = $statementSource | default "Captain Tor" }}
 {{ end }}
-<section class="bg-fjord">
-    <div class="container py-16 md:py-20">
-        <div class="max-w-3xl mx-auto relative">
-            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl font-serif text-primary/20 leading-none select-none" aria-hidden="true">"</div>
-            <blockquote class="relative">
-                <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light italic">
-                    {{ $statementQuote }}
-                </p>
-                {{ with $statementSource }}
-                <footer class="mt-8">
-                    <cite class="not-italic text-sm font-semibold text-white uppercase tracking-widest">— {{ . }}</cite>
-                </footer>
-                {{ end }}
-            </blockquote>
-        </div>
-    </div>
-</section>
+{{ partial "components/statement-band.html" (dict "quote" $statementQuote "source" $statementSource) }}
 
 <!-- SECTION: inspirations with CTA -->
 <section class="overflow-hidden" style="{{ printf "background-color: %s;" $inspirationsBackground | safeCSS }}">

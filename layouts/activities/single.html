@@ -1,7 +1,11 @@
 {{ define "main" }}
 
+{{ $hasPractical := or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
+{{ $hasFAQ := and .Params.faqItems (gt (len .Params.faqItems) 0) }}
+{{ $hasGallery := gt (len .Params.images) 1 }}
+
 <!-- Hero — stacked on mobile, cinematic overlay on desktop -->
-<section class="mt-[56px]">
+<section class="mt-[70px]">
     {{ range first 1 .Params.images }}
     {{ partial "components/hero/image.html" (dict
         "page"             $
@@ -17,7 +21,7 @@
 
 <!-- Activity Decision Panel -->
 <section class="bg-white">
-    <div class="container">
+    <div class="container px-5 pt-0 md:px-4 md:pt-12 lg:pt-16">
         <div class="max-w-4xl mx-auto bg-white rounded-lg border border-fjord-pale shadow grid grid-cols-1 md:grid-cols-5 overflow-hidden">
             <div class="md:col-span-3 p-6 md:p-8 space-y-4">
                 <p class="text-sm font-semibold text-primary uppercase tracking-widest">Activity Description</p>
@@ -80,16 +84,19 @@
 <!-- Content Sections with Integrated Navigation -->
 
     <!-- Navigation Tabs -->
-    {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
-    <nav class="bg-white border-b border-gray-200">
-        <div class="container max-w-4xl py-0">
-            <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide py-3 md:py-4">
-                <a href="#about" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
-                {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-                <a href="#practical" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
+    {{ if or $hasPractical $hasGallery $hasFAQ }}
+    <nav class="sticky top-[70px] z-40 bg-white border-y border-mist/20">
+        <div class="container max-w-3xl py-0">
+            <div class="flex items-center gap-2 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 py-1.5 md:py-4">
+                <a href="#about" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
+                {{ if $hasFAQ }}
+                <a href="#faq" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
                 {{ end }}
-                {{ if gt (len .Params.images) 1 }}
-                <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
+                {{ if $hasPractical }}
+                <a href="#practical" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
+                {{ end }}
+                {{ if $hasGallery }}
+                <a href="#gallery" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
                 {{ end }}
             </div>
         </div>
@@ -98,43 +105,58 @@
 
     <section class="bg-fjord-light">
         <div class="container">
+            <div class="max-w-3xl mx-auto px-0">
+                <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
 
-            <!-- About Section -->
-            <div id="about" class="scroll-mt-[210px] md:scroll-mt-[150px]">
-                <div class="mx-auto">
+                {{ partial "components/byline" (dict "page" . "borderClass" "border-mist/20") }}
+
+                <div id="about" class="scroll-mt-32">
                     {{ partial "activity/about" . }}
                 </div>
             </div>
         </div>
+    </section>
 
-        {{ if or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical }}
-        <div id="practical" class="scroll-mt-[210px] md:scroll-mt-[150px]">
-            <div class="container pt-0">
-                <div class="max-w-4xl mx-auto">
-                    {{ partial "components/section-heading" (dict "title" "Practical Information" "class" "mb-6 md:mb-8" "showDivider" false) }}
-                    <div class="bg-white rounded-lg border border-fjord-pale shadow p-8 md:p-12 lg:p-16">
-                        <article class="prose prose-lg prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4">
-                            {{ partial "activity/practical" . }}
-                        </article>
-                    </div>
-                </div>
+    {{ if $hasFAQ }}
+    <section id="faq" class="scroll-mt-32 bg-fjord-pale border-t border-mist/20">
+        <div class="container">
+            <div class="max-w-3xl mx-auto">
+                {{ partial "components/section-heading" (dict "eyebrow" "Good to know" "title" "Frequently Asked Questions" "alignment" "left" "class" "mb-8 md:mb-10" "showDivider" false) }}
+                {{ partial "components/faq.html" (dict "items" .Params.faqItems) }}
             </div>
         </div>
-        {{ end }}
+    </section>
+    {{ end }}
 
-        <!-- Photo Gallery -->
-        {{ if gt (len .Params.images) 1 }}
-        <div id="gallery" class="scroll-mt-[210px] md:scroll-mt-[150px]">
-            <div class="container pt-0">
-                {{ partial "components/section-heading" (dict "title" "Photo Gallery" "description" "See more photos from this adventure" "class" "mb-6 md:mb-8" "showDivider" false) }}
+    {{ if $hasPractical }}
+    <section id="practical" class="scroll-mt-32 bg-white border-t border-fjord-pale">
+        <div class="container">
+            <div class="max-w-3xl mx-auto">
+                {{ partial "components/section-heading" (dict "eyebrow" "Plan your visit" "title" "Practical Information" "alignment" "left" "class" "mb-8 md:mb-10" "showDivider" false) }}
+                <article class="prose prose-lg prose-headings:text-gray-900 prose-headings:font-medium prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:first:mt-0 prose-ul:my-4 max-w-none">
+                    {{ partial "activity/practical" . }}
+                </article>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+
+    {{ if $hasGallery }}
+    {{ $galleryBackground := "bg-white" }}
+    {{ if and $hasPractical (not $hasFAQ) }}
+        {{ $galleryBackground = "bg-fjord-light" }}
+    {{ end }}
+    <section id="gallery" class="scroll-mt-32 {{ $galleryBackground }} border-t border-fjord-pale">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                {{ partial "components/section-heading" (dict "eyebrow" "More photos" "title" "Photo Gallery" "titleClass" "text-fjord" "class" "mb-8 md:mb-10" "showDivider" false) }}
                 {{ with .Params.images }}
                     {{ partial "components/images/carousel" (dict "images" .) }}
                 {{ end }}
             </div>
         </div>
-        {{ end }}
-
     </section>
+    {{ end }}
 
 
     {{ $relatedInspirations := slice }}
@@ -174,7 +196,11 @@
     {{ end }}
 
     {{ if gt (len $relatedInspirations) 0 }}
-    <section class="bg-fjord-pale border-t border-mist/20">
+    {{ $relatedBackground := "bg-fjord-pale" }}
+    {{ if and $hasFAQ (not $hasGallery) }}
+        {{ $relatedBackground = "bg-white" }}
+    {{ end }}
+    <section class="{{ $relatedBackground }} border-t border-mist/20">
         <div class="container">
             {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Inspirations" "titleClass" "text-fjord" "class" "mb-8 md:mb-10" "showDivider" false) }}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
@@ -186,27 +212,36 @@
     </section>
     {{ end }}
 
+    {{ partial "seo/json-ld/_faqpage.html" . }}
+
 <script>
     // Smooth scroll and active nav link tracking
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('[id]');
+        const sectionNav = document.querySelector('nav.sticky');
+
+        if (!sectionNav || !navLinks.length) {
+            return;
+        }
+
+        const sections = Array.from(navLinks)
+            .map(link => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
 
         function updateActiveLink() {
             let current = '';
+            const offset = sectionNav.getBoundingClientRect().bottom + 16;
+
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const offset = window.innerWidth >= 768 ? 160 : 220;
-                if (pageYOffset >= (sectionTop - offset)) {
+                if (section.getBoundingClientRect().top <= offset) {
                     current = section.getAttribute('id');
                 }
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('text-primary');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('text-primary');
-                }
+                const isActive = link.getAttribute('href') === '#' + current;
+                link.classList.toggle('text-primary', isActive);
+                link.classList.toggle('text-gray-700', !isActive);
             });
         }
 

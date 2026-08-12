@@ -1,0 +1,38 @@
+{{/*
+  Minimalist FAQ accordion component.
+  Displays frequently asked questions in a collapsible accordion format.
+  
+  Expects: .items (array of objects with 'question' and 'answer' fields)
+  
+  Usage:
+    {{ partial "components/faq.html" (dict "items" .Params.faqItems) }}
+*/}}
+
+{{ $items := .items }}
+{{ if $items }}
+<div class="space-y-4 md:space-y-6">
+  {{ range $index, $item := $items }}
+    <details class="group cursor-pointer" data-faq-item="{{ $index }}">
+      <!-- Question (summary) -->
+      <summary class="flex items-start justify-between gap-4 py-4 md:py-5 text-lg md:text-xl font-medium text-gray-900 hover:text-gray-700 transition-colors list-none">
+        <span class="text-lg md:text-xl leading-relaxed text-pretty">{{ $item.question }}</span>
+        <span class="flex-shrink-0 w-6 h-6 md:w-7 md:h-7 flex items-center justify-center">
+          <svg class="w-full h-full transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
+      </summary>
+      
+      <!-- Answer (expanded content) -->
+      <div class="pb-4 md:pb-5 text-base md:text-lg leading-relaxed text-gray-700 prose prose-sm prose-headings:text-gray-900 prose-headings:font-medium prose-a:text-primary prose-a:underline max-w-none">
+        {{ $item.answer | markdownify | safeHTML }}
+      </div>
+      
+      <!-- Divider between items -->
+      {{ if ne $index (sub (len $items) 1) }}
+        <div class="border-b border-gray-300"></div>
+      {{ end }}
+    </details>
+  {{ end }}
+</div>
+{{ end }}

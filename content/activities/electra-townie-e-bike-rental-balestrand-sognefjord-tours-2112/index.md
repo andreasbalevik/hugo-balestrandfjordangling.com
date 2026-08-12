@@ -96,21 +96,16 @@ product_info:
       price: 3500
     - person_number: 8
       price: 4000
+faqItems:
+  - question: "When is drop-in e-bike rental available?"
+    answer: "Note: Drop-in rental is only possible from May to September, from 09:00/10:00 AM to 3:00 PM."
+  - question: "What kind of experience can I expect in Balestrand?"
+    answer: "Experiencing Balestrand, away from mass tourism, gives you a sense of freedom and inspiration. Find real joy and unique motifs along the Heritage Trail, seeing the Dragon Style Houses—architectural little \"lungs\" where you can gain energy."
+  - question: "Can we combine different types of bikes for groups?"
+    answer: "Yes! If one person wants a light workout to Dragsvik, for example, you can rent two bicycles: one regular and one electric bicycle, making the experience enjoyable for both."
 cms: true
 ---
 ## Introduction: E-Bike Freedom & Authentic Exploration
-
-### Q: When is drop-in e-bike rental available?
-
-A: Note: Only Drop-In rental is possible in the period May - September at (09:00)10:00 AM - 3:00 PM.
-
-### Q: What kind of experience can I expect in Balestrand?
-
-A: Experiencing Balestrand, away from mass tourism, gives you a sense of freedom and inspiration. Find real joy and unique motifs along the Heritage Trail, seeing the Dragon Style Houses—architectural little "lungs" where you can gain energy.
-
-### Q: Can we combine different types of bikes for groups?
-
-A: Yes! If one person wants a light workout to Dragsvik, for example, you can rent two bicycles: one regular and one electric bicycle, making the experience enjoyable for both.
 
 ## **Quick Facts & Pricing:**
 
@@ -123,19 +118,9 @@ A: Yes! If one person wants a light workout to Dragsvik, for example, you can re
 | To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK     | N/A          |
 | Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK     | N/A          |
 
-*\*NOTE: ONLY Drop-In rental is possible in the period May - September from 10:00-15:00.*
-
-\*\*Distance To Dragsvik - Ferry (free) to Vangsnes (Big Viking Statue) - Vik stave church - Arnafjord 100 km 8h price nok 950 -[ **The Viking Fjord Ride**](https://no.wikipedia.org/wiki/Sagaen_om_Fridtjov_den_fr%C3%B8kne)
-
-- - -
-
 ### Reasons to Go: Freedom, Vitality & Unique Motifs
 
 Experiencing Balestrand gives you a sense of freedom and inspiration. Real joy when you find a stylish motif you can share with friends. Travel history. Enjoy unique motifs along the Heritage Trail. Dragon Style Houses. Architectural little “lungs” where you can gain energy.
-
-#### Flexibility for All:
-
-If one person wants a light workout to Dragsvik, for example, you can rent 2 bicycles: 1 regular and 1 electric bicycle. This way it will be an enjoyable experience for both.
 
 ### Do We have any video inspiration from the tour?
 

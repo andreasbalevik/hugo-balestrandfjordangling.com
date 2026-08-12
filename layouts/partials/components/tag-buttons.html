@@ -5,7 +5,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
     {{ range $name, $taxonomy := site.Taxonomies.tags }}
     {{ with site.GetPage (printf "/tags/%s" $name) }}
-    <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group">
+    <a href="{{ .RelPermalink }}" aria-label="View {{ .Title }} activities" class="group rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
         <div class="relative overflow-hidden text-xl text-white p-6 text-center rounded-lg transition-colors duration-300 shadow-sm border border-black/5"
             style="background-color: {{ .Params.color | default "#1d3640" }};">
             <div class="inline-flex items-center gap-2">
