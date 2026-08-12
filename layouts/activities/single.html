@@ -80,7 +80,7 @@
 <!-- Content Sections with Integrated Navigation -->
 
     <!-- Navigation Tabs -->
-    {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) }}
+    {{ if or (or .Params.information.practical .Params.information.options.global_practical .Params.information.options.global_bike_practical) (gt (len .Params.images) 1) (and .Params.faqItems (gt (len .Params.faqItems) 0)) }}
     <nav class="bg-white border-b border-gray-200">
         <div class="container max-w-4xl py-0">
             <div class="flex items-center gap-4 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide py-3 md:py-4">
@@ -90,6 +90,9 @@
                 {{ end }}
                 {{ if gt (len .Params.images) 1 }}
                 <a href="#gallery" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
+                {{ end }}
+                {{ if and .Params.faqItems (gt (len .Params.faqItems) 0) }}
+                <a href="#faq" class="text-sm md:text-base font-semibold hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
                 {{ end }}
             </div>
         </div>
@@ -122,7 +125,7 @@
         </div>
         {{ end }}
 
-        <!-- Photo Gallery -->
+     <!-- Photo Gallery -->
         {{ if gt (len .Params.images) 1 }}
         <div id="gallery" class="scroll-mt-[210px] md:scroll-mt-[150px]">
             <div class="container pt-0">
@@ -130,6 +133,18 @@
                 {{ with .Params.images }}
                     {{ partial "components/images/carousel" (dict "images" .) }}
                 {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- FAQ Section -->
+        {{ if and .Params.faqItems (gt (len .Params.faqItems) 0) }}
+        <div id="faq" class="scroll-mt-[210px] md:scroll-mt-[150px]">
+            <div class="container pt-0">
+                {{ partial "components/section-heading" (dict "title" "Frequently Asked Questions" "class" "mb-6 md:mb-8" "showDivider" false) }}
+                <div class="max-w-4xl mx-auto">
+                    {{ partial "components/faq.html" (dict "items" .Params.faqItems) }}
+                </div>
             </div>
         </div>
         {{ end }}
@@ -174,9 +189,6 @@
     {{ end }}
 
     <!-- FAQ Section -->
-    {{ partial "components/faq-container.html" (dict "faqItems" .Params.faqItems) }}
-
-    <!-- FAQ Schema -->
     {{ partial "seo/json-ld/_faqpage.html" . }}
 
     {{ if gt (len $relatedInspirations) 0 }}

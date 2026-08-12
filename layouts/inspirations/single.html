@@ -25,6 +25,15 @@
             <div>
                 {{ partial "components/prose-content.html" .}}
             </div>
+
+            <!-- FAQ Section -->
+            {{ with .Params.faqItems }}
+            <div class="mt-12 md:mt-16 pt-8 md:pt-12 border-t border-mist/20">
+                <div class="w-12 h-1 bg-primary rounded-full mb-6 md:mb-8"></div>
+                <h2 class="text-2xl md:text-3xl font-medium tracking-tight text-gray-900 mb-8 md:mb-10">Frequently Asked Questions</h2>
+                {{ partial "components/faq.html" (dict "items" .) }}
+            </div>
+            {{ end }}
         </div>
     </div>
 </section>
@@ -52,9 +61,6 @@
     </div>
 </section>
 {{ end }}
-
-<!-- FAQ Section -->
-{{ partial "components/faq-container.html" (dict "faqItems" .Params.faqItems) }}
 
 <!-- FAQ Schema -->
 {{ partial "seo/json-ld/_faqpage.html" . }}
