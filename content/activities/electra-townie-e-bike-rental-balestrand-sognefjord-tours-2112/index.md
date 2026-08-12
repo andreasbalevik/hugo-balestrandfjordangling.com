@@ -98,11 +98,11 @@ product_info:
       price: 4000
 faqItems:
   - question: "When is drop-in e-bike rental available?"
-    answer: "Drop-in rental is only possible from May to September, from 09:00/10:00 AM to 3:00 PM."
+    answer: "Note: Drop-in rental is only possible from May to September, from 09:00/10:00 AM to 3:00 PM."
   - question: "What kind of experience can I expect in Balestrand?"
-    answer: "Experiencing Balestrand away from mass tourism gives you a sense of freedom and inspiration. Find real joy and unique motifs along the Heritage Trail, seeing the Dragon Style Houses—architectural little 'lungs' where you can gain energy."
+    answer: "Experiencing Balestrand, away from mass tourism, gives you a sense of freedom and inspiration. Find real joy and unique motifs along the Heritage Trail, seeing the Dragon Style Houses—architectural little \"lungs\" where you can gain energy."
   - question: "Can we combine different types of bikes for groups?"
-    answer: "Yes! If one person wants a light workout and another wants a more intense experience, you can rent different types of bikes (regular and electric) for the same group, making the experience enjoyable for everyone."
+    answer: "Yes! If one person wants a light workout to Dragsvik, for example, you can rent two bicycles: one regular and one electric bicycle, making the experience enjoyable for both."
 cms: true
 ---
 ## Introduction: E-Bike Freedom & Authentic Exploration

@@ -49,9 +49,9 @@ related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
 faqItems:
   - question: "Will I make it back before my cruise ship departs?"
-    answer: "Yes. The express boat docks exactly where you need to be. By checking the Norled schedule and aligning it with your cruise ship's port hours, you can safely enjoy 3 to 6 hours in Balestrand."
+    answer: "Yes. The express boat docks exactly where you need to be. By checking the [Norled schedule](https://booking.norled.no/) and aligning it with your cruise ship's port hours, you can safely enjoy 3 to 6 hours in Balestrand. **Tip: Always buy your tickets in advance online, and make sure your return boat arrives back in Vik at least one hour before your cruise ship's \"all aboard\" time.**"
   - question: "Do I need to book the fishing trip in advance?"
-    answer: "Highly recommended. Because our boats have limited capacity to ensure a high-quality, personal experience, slots fill up fast on days when cruise ships are in the area."
+    answer: "Highly recommended. Because our boats have limited capacity to ensure a high-quality, personal experience, slots fill up fast on days when cruise ships are in the area. [Check out our available trips and book your slot on our Activities Page](https://balestrandfjordangling.com/)."
 cms: true
 ---
 ## Are you arriving at the Vik cruise port and wondering how to spend your day?

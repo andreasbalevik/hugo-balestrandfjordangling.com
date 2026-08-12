@@ -24,8 +24,8 @@
       </summary>
       
       <!-- Answer (expanded content) -->
-      <div class="pb-4 md:pb-5 text-base md:text-lg leading-relaxed text-gray-700">
-        <p>{{ $item.answer }}</p>
+      <div class="pb-4 md:pb-5 text-base md:text-lg leading-relaxed text-gray-700 prose prose-sm prose-headings:text-gray-900 prose-headings:font-medium prose-a:text-primary prose-a:underline max-w-none">
+        {{ $item.answer | markdownify | safeHTML }}
       </div>
       
       <!-- Divider between items -->

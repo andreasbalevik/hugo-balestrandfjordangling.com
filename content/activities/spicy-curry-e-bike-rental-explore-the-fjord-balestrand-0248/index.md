@@ -83,21 +83,43 @@ product_info:
       price: 500
 faqItems:
    - question: "When is drop-in rental possible for the Spicy Curry E-Bike?"
-     answer: "Note: Drop-In rental is only possible in the period June - September (10:00 AM - 3:00 PM)."
+     answer: "Note: Drop-in rental is only possible in the period June - September (10:00 AM - 3:00 PM)."
    - question: "What makes this e-bike perfect for a family adventure?"
      answer: "The popular \"Spicy Curry\" E-Bike is a functional and robust electric cargo bike, which is the key to a stress-free family adventure. It makes exploring the fjord easy and safe, perfect for creating memorable moments and engaging in authentic discovery."
    - question: "Is it simple to use?"
      answer: "Yes! It has never been simpler to discover Balestrand on two wheels and enjoy a carefree, active lifestyle getaway like a local."
    - question: "What are the rental prices and available time slots?"
-     answer: "We offer flexible rental options to suit your travel plans and pace: 3 hours: NOK 500,- (Our most popular for a quick local exploration), 6 hours: NOK 1000,- (Choose 2 people for this price on the order form), Extra Battery: NOK 400,- (Increases the range for extended adventures to Menes or Vik/Arnafjord. Choose 3 people on the order form for this add-on)."
+     answer: |
+       We offer flexible rental options to suit your *travel plans* and pace:
+       
+       * **3 hours:** NOK 500,- (Our most popular for a quick local exploration)
+       * **6 hours:** NOK 1000,- (Choose 2 people for this price on the order form)
+       * **Extra Battery:** NOK 400,- (Increases the range for extended *adventures* to Menes or Vik/Arnafjord. Choose 3 people on the order form for this add-on).
    - question: "What is special about the \"Spicy Curry\" E-Bike?"
-     answer: "You will be brilliantly satisfied with this \"long-tail\" bike. It features plenty of room for two children in the back (or three with an extra seat), making family bonding easy. Good drive up hills (e-assist makes it easy!). Feels steady and secure due to the low center of gravity for the load. Turns like a normal bicycle, so it's simple to navigate. It can be used easily without children, feeling just like a standard electric bike."
+     answer: |
+       You will be brilliantly satisfied with this "long-tail" bike. It features plenty of room for two children in the back (or three with an extra seat), making *family bonding* easy.
+       
+       * Good drive up hills (e-assist makes it easy!).
+       * Feels steady and secure due to the low center of gravity for the load.
+       * Turns like a normal bicycle, so it's simple to navigate.
+       * It can be used easily without children, feeling just like a standard electric bike.
    - question: "Will my kids enjoy riding on it?"
-     answer: "Absolutely! The kids love to sit on it. After your authentic discovery tour, treat them to ice cream next door at Holmen Cafe!"
+     answer: "Absolutely! The kids love to sit on it. After your *authentic discovery* tour, treat them to ice cream next door at Holmen Cafe!"
    - question: "Which tours do you recommend with the Spicy Curry E-Bike?"
-     answer: "There are endless possibilities for experiencing local culture and nature. Here are our recommended adventure routes: Esefjord Loop: Cycle around the picturesque Esefjord to Lunde Arboretum and the local bathing spot, or to Dragsvik Hotell for coffee and cakes. Balestrand to Dragsvik: An easy 18 km return trip (recommended 3 hours rental time). The Three Fjord Ride (Menes): A longer 62 km return trip (experiential travel requiring an extra battery, 6 hours rental time). The Viking Fjord Ride (Vik/Arnafjord): An epic 100 km route including a free ferry to Vangsnes (Big Viking Statue), Vik Stave Church, and Arnafjord (requires extra battery, 6 hours rental time)."
+     answer: |
+       There are endless possibilities for experiencing local culture and nature. Here are our recommended *adventure* routes:
+       
+       * **Esefjord Loop:** Cycle around the picturesque Esefjord to Lunde Arboretum and the local bathing spot, or to Dragsvik Hotell for coffee and cakes.
+       * **Balestrand to Dragsvik:** An easy 18 km return trip (recommended 3 hours rental time).
+       * **The Three Fjord Ride (Menes):** A longer 62 km return trip (*experiential travel* requiring an extra battery, 6 hours rental time).
+       * **The Viking Fjord Ride (Vik/Arnafjord):** An epic 100 km route including a free ferry to Vangsnes (Big Viking Statue), Vik Stave Church, and Arnafjord (requires extra battery, 6 hours rental time).
    - question: "Where can I find inspiration, weather forecasts, and trip descriptions?"
-     answer: "Check out our links to plan your carefree adventure: Inspiration Video, Link to Tripadvisor The Three Fjord Ride, Link to weather forecast."
+     answer: |
+       Check out our links to plan your *carefree adventure*:
+       
+       * Inspiration Video [HERE](https://www.youtube.com/watch?v=jvDEy7oCk3M)
+       * Link to Tripadvisor The Three Fjord Ride [HERE](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)
+       * Link to weather forecast [HERE](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)
 cms: true
 ---
 "Ready for your next *family adventure*? Rent your Spicy Curry E-Bike today for memorable moments!"

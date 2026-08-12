@@ -148,7 +148,7 @@ collections:
         hint: 'Add FAQ items that will appear as an accordion on this activity page'
         fields:
           - { label: 'Question', name: 'question', widget: 'string' }
-          - { label: 'Answer', name: 'answer', widget: 'text' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
 
   - name: 'inspirations'
@@ -200,7 +200,7 @@ collections:
         hint: 'Add FAQ items that will appear as an accordion on this inspiration page'
         fields:
           - { label: 'Question', name: 'question', widget: 'string' }
-          - { label: 'Answer', name: 'answer', widget: 'text' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
 
   - name: 'featured'

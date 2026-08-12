@@ -63,11 +63,11 @@ related_activities:
   - scenic-boat-route-balestrand-fjærland-4239/index
 faqItems:
   - question: "What is the \"Hypernature\" experience in Fjærland?"
-    answer: "Hypernature is our unique, intense nature experience. It goes beyond sightseeing and focuses on authentic wilderness, local wisdom from the Gardingane (the original fjord-dwellers), and the mythical landscape that inspired Norwegian folklore and films."
-  - question: "Is it safe to be in the fjord if there is a rock slide risk?"
-    answer: "Absolutely. Safety is our top priority. Areas like Berrføttlingane are professionally monitored by NVE, and we always follow local guidelines and our own expertise when navigating the fjord."
+    answer: '"Hypernature" is our unique, intense nature experience. It goes beyond sightseeing and focuses on authentic wilderness, local wisdom from the "Gardingane," and the mythical landscape that inspired Norwegian folklore and films.'
+  - question: "Is it safe to be in the fjord if there is a rockslide risk?"
+    answer: "Absolutely. Safety is our top priority. Areas like 'Berrføttlingane' are professionally monitored by NVE, and we always follow local guidelines and our own expertise when navigating the fjord. We keep an eye out for trolls, too!"
   - question: "Where do the tours start from?"
-    answer: "We offer flexible excursions starting from both Balestrand and Fjærland. Select your departure time and book via our website."
+    answer: "We offer flexible excursions starting from both Balestrand and Fjærland. Select your departure time and book here."
 cms: true
 ---
 **The Hook:**

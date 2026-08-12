@@ -117,11 +117,11 @@ faqItems:
     - question: "Why is this more than just a bike ride?"
       answer: "It's the storytelling and the time spent with Tor—a true local expert—that makes this an authentic travel experience. Tor grew up here; he knows the best routes and hidden paths. It's a chance to connect on a personal level in the heart of the Sognefjord."
     - question: "Is this tour physically demanding?"
-      answer: "Not at all. We use high-quality e-bikes (electric assistive), meaning everyone can bike! It's a delightful way to shake off the stress of urban life and experience daily rhythms in a quiet fjord village."
+      answer: "Not at all. We use high-quality e-bikes (electric assistive), meaning \"he bikes, she bikes, everybody e-bikes!\" It's a delightful way to shake off the stress of urban life and experience daily rhythms in a quiet fjord village. It's about feeling the pulse of the Sognefjord right now."
     - question: "How does this tour contribute to my wellness or \"5D\" experience?"
-      answer: "This is a mindful movement experience focused on low-impact exercise and mental decompression. It's about meeting new people, feeling like a local resident, and participating in activities together."
+      answer: "This is a mindful movement experience. A little \"flower power,\" cheerful feelings, and a twinkle in the eye spice up the journey. It's about meeting new people, feeling like a local resident, and participating in activities together. We focus on low-impact exercise and mental decompression."
     - question: "Why is this considered an exclusive, premium activity?"
-      answer: "Traveling is not just about practical use, but rather an expression of individuality and the pursuit of curated experiences. A fjord adventure with us is boutique travel at its best."
+      answer: "Traveling is not just about practical use, but rather an expression of individuality and the pursuit of curated experiences. A fjord adventure with us is a piece of iconic iconography—it's boutique travel at its best."
 cms: true
 ---
 > "Ready for your authentic bucket-list adventure? This exclusive escape is curated for the discerning traveler. Contact your Luxury Action travel agent or book your private immersion today."
