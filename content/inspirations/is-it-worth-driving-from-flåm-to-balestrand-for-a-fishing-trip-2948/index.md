@@ -9,6 +9,19 @@ related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
+faqItems:
+  - question: "Is it worth driving from Flåm or Aurland to Balestrand just for a fishing trip?"
+    answer: "Absolutely! You have travelled all the way to Norway for an authentic fjord experience. Balestrand offers a historical, vibrant, and relaxed atmosphere that complements the more commercial Flåm. The difference in village character is part of the charm the Sognefjord offers. The trip is an experience of a lifetime."
+  - question: "How to plan in Wintertime (1 Nov - 30 Mar) when Norled fast Ferry not running?"
+    answer: "Book a rental car from Flåm or Aurland and drive through Lærdal (safest route in snow). Estimated travel time is 3 hours one way, plus 2 car ferries. Plan ahead and book your rental car in good time. Consider staying at Balestrand Fjord Apartments for 4 or 8 people."
+  - question: "What is the easiest way to travel between Flåm/Aurland and Balestrand?"
+    answer: "You have two main options: By car (about 3 hours one way, plus ferry times between Hella-Dragsvik), or by express ferry (Norled boat runs Bergen → Balestrand → Flåm). The express ferry is easiest - arrive at 11:50 AM, have lunch, fish at 3:00 PM or 12:00 PM, and return to Flåm the next day."
+  - question: "What does an ideal day plan look like if I come from Flåm?"
+    answer: "Early morning departure from Flåm → Late morning arrival in Balestrand → Lunch at Historic Kviknes Hotel → Afternoon fishing trip with Captain Tor (12:00 PM or 3:00 PM departure) → Return for dinner at 7:00 PM → Next day: Take express ferry at 11:50 AM back to Flåm."
+  - question: "Which cultural sights can I see on the trip?"
+    answer: "Balestrand has Kviknes Hotel and St. Olaf's Church within a 5-minute walk. On the drive from Flåm: Visit Hopperstad Stave Church in Laerdal, see the statue of Fridtjov the Bold at Vangsnes ferry terminal. Alternative routes include Borgund or Urnes Stave Churches if heading north."
+  - question: "Why is an overnight stay recommended?"
+    answer: "Flåm is great, but Balestrand is historical and relaxed. An overnight stay allows you to experience both places as 'pearls on a string' and gives you time to enjoy breakfast at Kviknes Hotel and an evening stroll."
 cms: true
 ---
 ### Q: Is it worth driving from Flåm or Aurland to Balestrand just for a fishing trip?

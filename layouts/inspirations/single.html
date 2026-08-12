@@ -53,4 +53,10 @@
 </section>
 {{ end }}
 
+<!-- FAQ Section -->
+{{ partial "components/faq-container.html" (dict "faqItems" .Params.faqItems) }}
+
+<!-- FAQ Schema -->
+{{ partial "seo/json-ld/_faqpage.html" . }}
+
 {{ end }}

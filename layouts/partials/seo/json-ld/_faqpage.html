@@ -1,0 +1,34 @@
+{{/*
+  FAQ Page JSON-LD schema.
+  Generates schema.org/FAQPage markup with Question/Answer items.
+  
+  Only renders if faqItems exist.
+  
+  Used in: activities/single.html, inspirations/single.html
+  
+  Expects: .Page (current page context)
+*/}}
+
+{{ $faqItems := .Params.faqItems }}
+{{ if and $faqItems (gt (len $faqItems) 0) }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $index, $item := $faqItems }}
+    {
+      "@type": "Question",
+      "name": "{{ $item.question | safeJS }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $item.answer | safeJS }}"
+      }
+    }{{ if ne $index (sub (len $faqItems) 1) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+
+{{ end }}
