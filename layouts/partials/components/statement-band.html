@@ -1,0 +1,24 @@
+{{/*
+  Statement band — a single dark editorial pause for a quote and source.
+
+  Params:
+    quote  (required) statement text
+    source (optional) attribution
+*/}}
+<section class="bg-fjord">
+    <div class="container">
+        <div class="max-w-3xl mx-auto relative">
+            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl text-primary/20 leading-none select-none" aria-hidden="true">"</div>
+            <blockquote class="relative">
+                <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light italic">
+                    {{ .quote }}
+                </p>
+                {{ with .source }}
+                <footer class="mt-8">
+                    <cite class="not-italic text-sm font-semibold text-white uppercase tracking-widest">— {{ . }}</cite>
+                </footer>
+                {{ end }}
+            </blockquote>
+        </div>
+    </div>
+</section>

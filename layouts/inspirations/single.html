@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- Hero — stacked on mobile, cinematic overlay on desktop -->
-<section class="mt-[56px]">
+<section class="mt-[70px]">
     {{ with index .Params.images 0 }}
     {{ partial "components/hero/image.html" (dict
         "page"        $
@@ -38,9 +38,6 @@
         </div>
     </div>
 </section>
-        </div>
-    </div>
-</section>
 
 <!-- Related Activities -->
 {{ with .Params.related_activities }}
@@ -65,8 +62,5 @@
     </div>
 </section>
 {{ end }}
-
-<!-- FAQ Schema -->
-{{ partial "seo/json-ld/_faqpage.html" . }}
 
 {{ end }}

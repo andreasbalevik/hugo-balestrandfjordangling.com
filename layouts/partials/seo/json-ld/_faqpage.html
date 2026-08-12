@@ -16,14 +16,23 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "{{ .Permalink }}#faq",
+  "url": "{{ .Permalink }}#faq",
+  "inLanguage": "{{ .Lang }}",
+  "isPartOf": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
   "mainEntity": [
     {{ range $index, $item := $faqItems }}
+    {{ $question := $item.question | markdownify | plainify | htmlUnescape | strings.TrimSpace }}
+    {{ $answer := $item.answer | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace }}
     {
       "@type": "Question",
-      "name": "{{ $item.question | safeJS }}",
+      "name": "{{ $question | safeJS }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "{{ $item.answer | safeJS }}"
+        "text": "{{ $answer | safeJS }}"
       }
     }{{ if ne $index (sub (len $faqItems) 1) }},{{ end }}
     {{ end }}

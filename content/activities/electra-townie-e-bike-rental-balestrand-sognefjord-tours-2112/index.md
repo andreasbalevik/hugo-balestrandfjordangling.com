@@ -118,19 +118,9 @@ cms: true
 | To Menes (62 km / 3 Fjord Ride) | ~6 hours | 700 NOK     | N/A          |
 | Viking Fjord Ride (100 km)\*\*  | ~8 hours | 950 NOK     | N/A          |
 
-*\*NOTE: ONLY Drop-In rental is possible in the period May - September from 10:00-15:00.*
-
-\*\*Distance To Dragsvik - Ferry (free) to Vangsnes (Big Viking Statue) - Vik stave church - Arnafjord 100 km 8h price nok 950 -[ **The Viking Fjord Ride**](https://no.wikipedia.org/wiki/Sagaen_om_Fridtjov_den_fr%C3%B8kne)
-
-- - -
-
 ### Reasons to Go: Freedom, Vitality & Unique Motifs
 
 Experiencing Balestrand gives you a sense of freedom and inspiration. Real joy when you find a stylish motif you can share with friends. Travel history. Enjoy unique motifs along the Heritage Trail. Dragon Style Houses. Architectural little “lungs” where you can gain energy.
-
-#### Flexibility for All:
-
-If one person wants a light workout to Dragsvik, for example, you can rent 2 bicycles: 1 regular and 1 electric bicycle. This way it will be an enjoyable experience for both.
 
 ### Do We have any video inspiration from the tour?
 

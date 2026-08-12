@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- Cinematic hero — Captain Tor is not a product, he's a person -->
-<section class="mt-[56px]">
+<section class="mt-[70px]">
     {{ with index .Params.images 0 }}
     {{ partial "components/hero/image.html" (dict
         "page"          $
@@ -41,24 +41,7 @@
 
 <!-- Testimonial — the moment a real voice stops the reader -->
 {{ with .Params.testimonial }}
-<section class="bg-fjord">
-    <div class="container py-16 md:py-20">
-        <div class="max-w-3xl mx-auto relative">
-            <!-- Oversized ambient quote mark -->
-            <div class="absolute -top-6 -left-4 md:-left-8 text-8xl md:text-9xl font-serif text-primary/20 leading-none select-none" aria-hidden="true">"</div>
-            <blockquote class="relative">
-                <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light italic">
-                    {{ .quote }}
-                </p>
-                <footer class="mt-8">
-                    <cite class="not-italic text-sm font-semibold text-white uppercase tracking-widest">
-                        — {{ .author }}
-                    </cite>
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-</section>
+{{ partial "components/statement-band.html" (dict "quote" .quote "source" .author) }}
 {{ end }}
 
 <!-- Recommended activities -->
