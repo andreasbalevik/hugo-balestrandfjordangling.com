@@ -40,13 +40,17 @@
     {{ $contrast := site.Params.contrast | default 5 }}
     {{ $filter := images.Contrast $contrast }}
     {{ $imgRes = $imgRes | images.Filter $filter }}
-    {{ $desktop := $imgRes.Fill "1280x720 q85 webp" }}
+    {{/* Must stay byte-for-byte in sync with the "hero" preset in
+         components/images/image.html (sizes + quality), otherwise the
+         preloaded file and the one <picture> actually requests differ and
+         the browser downloads the image twice. */}}
+    {{ $desktop := $imgRes.Fill "1920x1080 q85 webp" }}
     {{ $tablet := $imgRes.Fill "768x512 q80 webp" }}
-    {{ $mobile := $imgRes.Fill "500x400 q70 webp" }}
+    {{ $mobile := $imgRes.Fill "640x400 q75 webp" }}
     <!-- Preload LCP Image (matches "hero" preset breakpoints in components/images/image.html) -->
     <link rel="preload" as="image" fetchpriority="high"
           href="{{ $mobile.Permalink }}"
-          imagesrcset="{{ $mobile.Permalink }} 500w, {{ $tablet.Permalink }} 768w, {{ $desktop.Permalink }} 1280w"
+          imagesrcset="{{ $mobile.Permalink }} 640w, {{ $tablet.Permalink }} 768w, {{ $desktop.Permalink }} 1920w"
           imagesizes="100vw">
   {{ else }}
     <!-- Preload LCP Image (External/Static) -->
