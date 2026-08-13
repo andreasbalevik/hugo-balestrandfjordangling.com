@@ -1,6 +1,6 @@
 ---
-title: Fishing & Fjord Activities in Balestrand
-description: Explore authentic fishing tours, scenic boat trips, e-bike adventures, and fjord experiences in Balestrand. Book your Sognefjord activity with Captain Tor.
+title: Fishing and fjord trips in Balestrand
+description: Private fishing trips, boat tours, bike rentals and hikes run by Captain Tor and his family in Balestrand.
 weight: 1
 menus:
   main:
@@ -13,4 +13,4 @@ sitemap:
   priority: 0.9
 ---
 
-Experience the authentic Sognefjord with Captain Tor. From fishing expeditions and scenic boat tours to e-bike adventures and mountain hikes, our activities showcase the natural beauty and culture of Balestrand.
+These are the trips and rentals we offer from Balestrand. If you are unsure what fits your group or the weather, ask us. We know the area and can help you choose.

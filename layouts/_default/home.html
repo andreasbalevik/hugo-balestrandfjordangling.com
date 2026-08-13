@@ -8,52 +8,29 @@
   {{ $inspirationsBackground = .Params.color | default $inspirationsBackground }}
 {{ end }}
 
-{{ $heroStyle := "background-color: #0f1d26;" }}
-{{ $backgroundImageURL := "" }}
-{{ if $hasHeroImage }}
-  {{ $heroImage := index .Params.images 0 }}
-  {{ $image := resources.GetMatch $heroImage.src }}
-  {{ if $image }}
-    {{ $blur_filter := images.GaussianBlur 50 }}
-    {{ $backgroundImage := $image.Resize "x600 q10 webp" | images.Filter $blur_filter | images.Filter (images.Contrast 50) }}
-    {{ $backgroundImageURL = $backgroundImage.Permalink }}
-    {{ $heroStyle = printf "%s background-image: url('%s');" $heroStyle $backgroundImageURL }}
-  {{ end }}
-{{ end }}
-
-{{/* Decorative blurred backdrop only (tiny x600 q10 file behind the white
-     hero card) - not the LCP candidate. It's already discovered immediately
-     via the inline style attribute, so no preload is needed and it must not
-     compete at "high" priority with the real hero image preloaded in
-     seo/preload.html. */}}
-
 <!-- SECTION: hero-banner -->
-<section>
-    <div class="bg-hero" style="{{ $heroStyle | safeCSS }}">
-        <div class="container">
-            <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow-xl rounded-lg overflow-hidden border border-primary/20">
-                <div class="p-8 md:p-12 lg:p-16 h-full flex order-2 lg:order-1">
-                    <div class="my-auto w-full">
-                        <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance">{{ .Title }}</h1>
-                        <p class="mb-12 max-w-2xl text-lg md:text-xl leading-relaxed text-pretty">{{ .Params.description }}</p>
+<section class="bg-white">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 items-center">
+            <div class="order-2 lg:order-1">
+                <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance">{{ .Title }}</h1>
+                <p class="mb-8 max-w-2xl text-lg md:text-xl leading-relaxed text-pretty">{{ .Params.description }}</p>
 
-                        {{ with .Params.action_button }}
-                          {{ $actionButton := . }}
-                          {{ with $activitiesPage }}
-                            {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" $actionButton "variant" "primary" "ariaLabel" $actionButton) }}
-                          {{ end }}
-                        {{ end }}
-                    </div>
+                {{ with .Params.action_button }}
+                  {{ $actionButton := . }}
+                  {{ with $activitiesPage }}
+                    {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" $actionButton "variant" "primary" "ariaLabel" $actionButton) }}
+                  {{ end }}
+                {{ end }}
+            </div>
+            <div class="order-1 lg:order-2">
+                {{ if $hasHeroImage }}
+                {{ with index .Params.images 0 }}
+                <div class="w-full rounded-lg overflow-hidden">
+                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
                 </div>
-                <div class="order-1 lg:order-2 lg:p-4 h-full flex items-center">
-                    {{ if $hasHeroImage }}
-                    {{ with index .Params.images 0 }}
-                    <div class="w-full rounded-lg overflow-hidden">
-                        {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                </div>
+                {{ end }}
+                {{ end }}
             </div>
         </div>
     </div>
@@ -63,18 +40,13 @@
 {{ with .Params.usp }}
 <section class="bg-fjord-light">
     <div class="container">
-        {{ partial "components/section-heading" (dict "eyebrow" "Why choose us" "title" .title "class" "mb-12") }}
+        {{ partial "components/section-heading" (dict "title" .title "alignment" "left" "class" "mb-10 md:mb-12") }}
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {{ range .items }}
-            <div class="flex flex-col items-center text-center p-6 md:p-8 bg-white border border-fjord-pale rounded-lg shadow-sm">
-                <div class="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary shadow-sm">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ .icon }}"></path>
-                    </svg>
-                </div>
-                <h3 class="mt-0 mb-6 text-xl md:text-2xl font-medium text-balance text-gray-900">{{ .title }}</h3>
-                <p class="text-base md:text-lg leading-relaxed text-pretty">{{ .description }}</p>
+            <div class="border-t border-fjord-pale pt-5">
+                <h3 class="mt-0 mb-3 text-xl md:text-2xl font-medium text-balance text-gray-900">{{ .title }}</h3>
+                <p class="text-base md:text-lg leading-relaxed text-pretty text-gray-700">{{ .description }}</p>
             </div>
             {{ end }}
         </div>
@@ -105,19 +77,6 @@
     {{ partial "components/capt-tor-recommended" . }}
   </div>
 </section>
-
-<!-- SECTION: brand statement — dark anchor band -->
-{{ $statementQuote := "" }}
-{{ $statementSource := "" }}
-{{ with .Params.statement }}
-  {{ $statementQuote = .quote | default "" }}
-  {{ $statementSource = .source | default "" }}
-{{ end }}
-{{ if not $statementQuote }}
-  {{ $statementQuote = "Simplicity creates emotions. No middlemen, no scripts — just the raw luxury of the Sognefjord, shared by the local captain who lives it." }}
-  {{ $statementSource = $statementSource | default "Captain Tor" }}
-{{ end }}
-{{ partial "components/statement-band.html" (dict "quote" $statementQuote "source" $statementSource) }}
 
 <!-- SECTION: inspirations with CTA -->
 <section class="overflow-hidden" style="{{ printf "background-color: %s;" $inspirationsBackground | safeCSS }}">

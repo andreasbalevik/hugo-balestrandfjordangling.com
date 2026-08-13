@@ -88,3 +88,10 @@ motion rules, and guardrails — is documented in **[`.github/design/visual-iden
 That file is the source of truth for any design/UI change, polish pass, or new section. Read it
 before making visual changes; do not duplicate its rules here or let this section drift out of
 sync with it.
+
+- The site should feel **made by a small family business**, not designed for a large travel company.
+  Prefer plain, useful layouts and natural photos over polished marketing patterns.
+- Do not add decorative eyebrows, divider bars, icon circles, badges, shadows, arrows, or motion by
+  default. An element must explain something or help someone complete a task to earn its place.
+- A little unevenness and personality is welcome. Do not "correct" the site toward corporate
+  symmetry, premium-editorial polish, or generic landing-page conventions.

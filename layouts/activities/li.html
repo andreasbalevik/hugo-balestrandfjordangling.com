@@ -1,4 +1,4 @@
-<article class="w-full h-full bg-white border border-fjord-pale rounded-lg shadow hover:shadow-md overflow-hidden transition-all duration-300 group focus-within:ring-2 focus-within:ring-primary/40">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden group focus-within:ring-2 focus-within:ring-primary/40">
   <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="View {{ .Title }}">
 
     <div class="relative">
@@ -19,8 +19,8 @@
           {{ $minPrice = . }}
         {{ end }}
       {{ end }}
-      <p class="mt-0 mb-5 text-sm font-semibold uppercase tracking-widest text-primary">
-        Price From: {{ partial "components/format/price" $minPrice.price }},- NOK
+      <p class="mt-0 mb-5 text-sm font-semibold text-primary">
+        From {{ partial "components/format/price" $minPrice.price }},- NOK
       </p>
       {{ end }}
 
@@ -31,11 +31,8 @@
         </div>
 
         <div class="flex justify-center">
-          <span class="inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
+          <span class="font-semibold text-gray-700 group-hover:text-primary transition-colors duration-200">
             View experience
-            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
-            </svg>
           </span>
         </div>
 
