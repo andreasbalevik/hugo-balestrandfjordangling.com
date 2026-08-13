@@ -1,6 +1,11 @@
 {{ define "main" }}
 
-<!-- Inspirations Landing Page Hero -->
+{{ $stories := .Pages.ByLastmod.Reverse }}
+{{ $featuredStories := first 1 $stories }}
+{{ $exploreStories := first 4 (after 1 $stories) }}
+{{ $archiveStories := after 5 $stories }}
+
+<!-- Inspirations landing page intro -->
 {{ if .Content }}
 <section class="overflow-hidden" style="background-color: {{ .Params.color }};">
     <div class="container">
@@ -16,15 +21,144 @@
 </section>
 {{ end }}
 
-<!-- Inspirations Grid -->
+<!-- Featured story -->
+{{ with $featuredStories }}
 <section class="bg-white overflow-hidden">
     <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-            {{ range .Pages.ByLastmod.Reverse }}
-                {{ .Render "li" }}
+        {{ range . }}
+        {{ $story := . }}
+        <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-14 items-center">
+            <a href="{{ .RelPermalink }}"
+               class="block lg:col-span-7 overflow-hidden rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+               aria-label="Read {{ .Title }}">
+                {{ range first 1 .Params.images }}
+                    {{ partial "components/images/image.html" (dict
+                        "src" .src
+                        "alt" (.alt | default $story.Title)
+                        "preset" "card"
+                        "imgClass" "w-full h-full aspect-[4/3] md:aspect-[16/10] object-cover"
+                    ) }}
+                {{ end }}
+            </a>
+
+            <div class="lg:col-span-5">
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Featured inspiration</p>
+                <h2 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl font-medium leading-[1.2] tracking-tight text-balance text-fjord">
+                    {{ .Title }}
+                </h2>
+
+                {{ with .Params.description }}
+                <p class="mt-0 mb-8 text-lg leading-relaxed text-pretty text-gray-700">
+                    {{ . }}
+                </p>
+                {{ end }}
+
+                {{ partial "components/buttons/button" (dict
+                    "href" .RelPermalink
+                    "text" "Explore this inspiration"
+                    "variant" "primary"
+                    "ariaLabel" (printf "Read %s" .Title)
+                ) }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+<!-- Editorial story stream -->
+{{ with $exploreStories }}
+<section class="bg-fjord-light overflow-hidden">
+    <div class="container">
+        {{ partial "components/section-heading" (dict
+            "eyebrow" "Keep exploring"
+            "title" "Inspiration from the fjord"
+            "description" "Fishing, local life and the places that shape the Sognefjord."
+            "alignment" "left"
+            "class" "mb-10 md:mb-12"
+        ) }}
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 xl:gap-x-16">
+            {{ range $index, $story := . }}
+            <article class="border-t border-fjord-pale">
+                <a href="{{ $story.RelPermalink }}"
+                   class="group flex items-start gap-4 md:gap-6 py-6 md:py-8 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                   aria-label="Read {{ $story.Title }}">
+                    <div class="w-28 sm:w-36 md:w-40 shrink-0 overflow-hidden rounded-lg">
+                        {{ range first 1 $story.Params.images }}
+                            {{ partial "components/images/image.html" (dict
+                                "src" .src
+                                "alt" (.alt | default $story.Title)
+                                "preset" "thumbnail"
+                                "imgClass" "w-full h-full aspect-[3/2] object-cover"
+                            ) }}
+                        {{ end }}
+                    </div>
+
+                    <div class="min-w-0 flex-1">
+                        <p class="mt-0 mb-2 text-xs font-semibold uppercase tracking-widest text-primary">
+                            Inspiration {{ printf "%02d" (add $index 2) }}
+                        </p>
+                        <h3 class="mt-0 mb-2 text-lg md:text-xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary transition-colors duration-300">
+                            {{ $story.Title }}
+                        </h3>
+                        {{ with $story.Params.description }}
+                        <p class="hidden sm:line-clamp-2 mt-0 text-sm md:text-base leading-relaxed text-gray-700">
+                            {{ . }}
+                        </p>
+                        {{ end }}
+                    </div>
+
+                    <svg class="w-5 h-5 mt-1 shrink-0 text-gray-700 group-hover:text-primary transition-colors duration-300"
+                         aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </a>
+            </article>
             {{ end }}
         </div>
     </div>
 </section>
+{{ end }}
+
+<!-- Compact story index -->
+{{ with $archiveStories }}
+<section class="bg-white overflow-hidden">
+    <div class="container">
+        {{ partial "components/section-heading" (dict
+            "eyebrow" "The journal"
+            "title" "More to discover"
+            "description" "Browse more inspiration and practical fjord guides from Captain Tor."
+            "alignment" "left"
+            "class" "mb-10 md:mb-12"
+        ) }}
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 xl:gap-x-16">
+            {{ range $index, $story := . }}
+            <a href="{{ $story.RelPermalink }}"
+               class="group grid grid-cols-[2.5rem_1fr_auto] items-start gap-3 md:gap-4 py-5 md:py-6 border-t border-fjord-pale focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+               aria-label="Read {{ $story.Title }}">
+                <span class="text-sm font-semibold tabular-nums text-primary">
+                    {{ printf "%02d" (add $index 6) }}
+                </span>
+                <h3 class="mt-0 text-base md:text-lg font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary transition-colors duration-300">
+                    {{ $story.Title }}
+                </h3>
+                <svg class="w-5 h-5 shrink-0 text-gray-700 group-hover:text-primary transition-colors duration-300"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                </svg>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
 
 {{ end }}
