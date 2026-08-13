@@ -25,7 +25,7 @@ Unngå uttrykket til en stor, profesjonell reiselivsbedrift:
 - ingen "premium editorial"-iscenesettelse eller luksusspråk
 - ingen dashboard-følelse med mange like kort, badges og filtre
 - ingen obligatoriske små uppercase-labels over hver overskrift
-- ingen dekorative divider-streker, ikon-sirkler eller piler på alle lenker
+- ingen dekorative divider-streker eller ikon-sirkler
 - ingen skygger og hover-effekter bare for å få komponenter til å virke mer avanserte
 - ingen mørke brand-bånd eller store sitater som gjentar budskapet uten å tilføre informasjon
 - ingen urgency, rabatter, kunstig sosialt bevis eller språk som antyder stor skala
@@ -75,12 +75,14 @@ ikke som et automatisk "brand moment".
 
 ## Komponenter
 
-- **Knapper:** enkle flater med tekst. Ingen standardpil, skygge eller bevegelse. Én tydelig
-  hovedhandling per seksjon er nok.
+- **Lenker og knapper:** bruk den etablerte høyrepilen for å gjøre navigasjon tydelig. En liten
+  bevegelse i selve pilen på hover er tillatt; resten av elementet skal stå stille.
 - **Kort:** naturfoto, tittel og nødvendig informasjon. Border kan brukes; skygge er normalt ikke
   nødvendig.
 - **Seksjonsoverskrifter:** tittel og eventuelt én kort beskrivelse. Ingen obligatorisk eyebrow eller
   dekorativ strek.
+- **Aktivitetskategorier:** behold de store fargede knappene på aktivitetslisten. De gjør de tre
+  hovedtypene lette å finne og er et bevisst, etablert unntak fra den ellers enkle stilen.
 - **Badges og ikoner:** bruk bare når formen formidler informasjon raskere enn tekst, for eksempel
   varighet eller gruppestørrelse. Ikke bruk dem som pynt eller kvalitetsstempel.
 - **Sitat:** bruk når det er et faktisk sitat med ny informasjon. Ikke lag et mørkt brand-bånd av en

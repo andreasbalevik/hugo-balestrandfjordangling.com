@@ -91,7 +91,8 @@ sync with it.
 
 - The site should feel **made by a small family business**, not designed for a large travel company.
   Prefer plain, useful layouts and natural photos over polished marketing patterns.
-- Do not add decorative eyebrows, divider bars, icon circles, badges, shadows, arrows, or motion by
-  default. An element must explain something or help someone complete a task to earn its place.
+- Do not add decorative eyebrows, divider bars, icon circles, badges, shadows, or motion by default.
+  Keep the established right arrow on links and buttons, and retain the large colored category
+  buttons on the activities list.
 - A little unevenness and personality is welcome. Do not "correct" the site toward corporate
   symmetry, premium-editorial polish, or generic landing-page conventions.
