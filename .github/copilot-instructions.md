@@ -96,3 +96,4 @@ sync with it.
   buttons on the activities list.
 - A little unevenness and personality is welcome. Do not "correct" the site toward corporate
   symmetry, premium-editorial polish, or generic landing-page conventions.
+- Keep the homepage hero's established blurred photo background and framed white content card.

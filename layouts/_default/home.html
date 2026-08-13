@@ -8,29 +8,46 @@
   {{ $inspirationsBackground = .Params.color | default $inspirationsBackground }}
 {{ end }}
 
-<!-- SECTION: hero-banner -->
-<section class="bg-white">
-    <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 items-center">
-            <div class="order-2 lg:order-1">
-                <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance">{{ .Title }}</h1>
-                <p class="mb-8 max-w-2xl text-lg md:text-xl leading-relaxed text-pretty">{{ .Params.description }}</p>
+{{ $heroStyle := "background-color: #0f1d26;" }}
+{{ $backgroundImageURL := "" }}
+{{ if $hasHeroImage }}
+  {{ $heroImage := index .Params.images 0 }}
+  {{ $image := resources.GetMatch $heroImage.src }}
+  {{ if $image }}
+    {{ $blurFilter := images.GaussianBlur 50 }}
+    {{ $backgroundImage := $image.Resize "x600 q10 webp" | images.Filter $blurFilter | images.Filter (images.Contrast 50) }}
+    {{ $backgroundImageURL = $backgroundImage.Permalink }}
+    {{ $heroStyle = printf "%s background-image: url('%s');" $heroStyle $backgroundImageURL }}
+  {{ end }}
+{{ end }}
 
-                {{ with .Params.action_button }}
-                  {{ $actionButton := . }}
-                  {{ with $activitiesPage }}
-                    {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" $actionButton "variant" "primary" "ariaLabel" $actionButton) }}
-                  {{ end }}
-                {{ end }}
-            </div>
-            <div class="order-1 lg:order-2">
-                {{ if $hasHeroImage }}
-                {{ with index .Params.images 0 }}
-                <div class="w-full rounded-lg overflow-hidden">
-                    {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
+<!-- SECTION: hero-banner -->
+<section>
+    <div class="bg-hero" style="{{ $heroStyle | safeCSS }}">
+        <div class="container">
+            <div class="bg-white grid grid-cols-1 lg:grid-cols-2 shadow-xl rounded-lg overflow-hidden border border-primary/20">
+                <div class="p-8 md:p-12 lg:p-16 h-full flex order-2 lg:order-1">
+                    <div class="my-auto w-full">
+                        <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance">{{ .Title }}</h1>
+                        <p class="mb-12 max-w-2xl text-lg md:text-xl leading-relaxed text-pretty">{{ .Params.description }}</p>
+
+                        {{ with .Params.action_button }}
+                          {{ $actionButton := . }}
+                          {{ with $activitiesPage }}
+                            {{ partial "components/buttons/button" (dict "href" .RelPermalink "text" $actionButton "variant" "primary" "ariaLabel" $actionButton) }}
+                          {{ end }}
+                        {{ end }}
+                    </div>
                 </div>
-                {{ end }}
-                {{ end }}
+                <div class="order-1 lg:order-2 lg:p-4 h-full flex items-center">
+                    {{ if $hasHeroImage }}
+                    {{ with index .Params.images 0 }}
+                    <div class="w-full rounded-lg overflow-hidden">
+                        {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>

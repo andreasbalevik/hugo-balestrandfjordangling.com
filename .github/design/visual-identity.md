@@ -36,6 +36,8 @@ svaret er nei, skal det normalt bort.
 ## Layout
 
 - Bruk enkle tekst- og bildeflater. Foto kan stå direkte i layouten uten å ligge i et "premiumkort".
+- Forsidens hero er et bevisst unntak: behold den blurrede fotobakgrunnen og det hvite,
+  innrammede innholdskortet.
 - Behold god luft, men unngå overdrevent store seksjoner som gjør lite innhold monumentalt.
 - Kort kan brukes når de gjør en liste lettere å skanne. Bruk da enkel border eller bare bilde og
   tekst; ikke stable border, radius, skygge, badge og hover-animasjon.
