@@ -2,7 +2,7 @@
 title: Fishing trips and boat tours on the Sognefjord
 description: Come along with Captain Tor for a private trip from Balestrand. We
   are a small family business, and we plan and run the trips ourselves.
-action_button: See our trips
+action_button: Start your adventure
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
     alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
