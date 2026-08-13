@@ -99,3 +99,5 @@ sync with it.
 - Keep the homepage hero's established blurred photo background and framed white content card.
 - Keep the homepage's dark Captain Tor statement section between recommended activities and
   inspirations.
+- Keep the homepage USP section's three centered white cards, icon circles, "Why choose us"
+  eyebrow, and divider.

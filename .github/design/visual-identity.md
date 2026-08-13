@@ -40,6 +40,8 @@ svaret er nei, skal det normalt bort.
   innrammede innholdskortet.
 - Behold det mørke Captain Tor-sitatet på forsiden som et personlig pusterom mellom aktiviteter og
   inspirasjon.
+- Behold «The Unfiltered Fjord Experience» som tre hvite, sentrerte kort med ikon-sirkler,
+  «Why choose us»-label og divider.
 - Behold god luft, men unngå overdrevent store seksjoner som gjør lite innhold monumentalt.
 - Kort kan brukes når de gjør en liste lettere å skanne. Bruk da enkel border eller bare bilde og
   tekst; ikke stable border, radius, skygge, badge og hover-animasjon.
