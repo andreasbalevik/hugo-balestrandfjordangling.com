@@ -43,13 +43,13 @@
 {{ with .Params.related_activities }}
 <section class="bg-fjord-pale border-t border-mist/20">
     <div class="container">
-        {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-10 md:mb-12" "showDivider" false) }}
+        {{ partial "components/section-heading" (dict "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-10 md:mb-12" "showDivider" true) }}
 
-        <div class="grid grid-cols-1 gap-8 mx-auto w-full max-w-2xl xl:max-w-full">
-            {{ range $index, $related := . }}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mx-auto w-full max-w-5xl">
+            {{ range $related := . }}
                 {{ $page := replace $related "/index" "" }}
                 {{ with site.GetPage $page }}
-                    {{ partial "activity/highlight-related.html" (dict "page" . "reverse" (eq (mod $index 2) 1)) }}
+                    {{ partial "activity/highlight-related.html" (dict "page" .) }}
                 {{ end }}
             {{ end }}
         </div>
