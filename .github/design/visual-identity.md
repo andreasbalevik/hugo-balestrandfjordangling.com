@@ -43,6 +43,7 @@ svaret er nei, skal det normalt bort.
 - Behold «The Unfiltered Fjord Experience» som tre hvite, sentrerte kort med ikon-sirkler,
   «Why choose us»-label og divider.
 - Forsidens øvrige seksjonstitler skal ha divider under tittelen, men ingen eyebrow/prefix.
+- Hovedtitlene på aktivitetslisten og inspirasjonslisten skal også ha divider, uten eyebrow/prefix.
 - Behold god luft, men unngå overdrevent store seksjoner som gjør lite innhold monumentalt.
 - Kort kan brukes når de gjør en liste lettere å skanne. Bruk da enkel border eller bare bilde og
   tekst; ikke stable border, radius, skygge, badge og hover-animasjon.
