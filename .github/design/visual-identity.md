@@ -91,6 +91,8 @@ ikke som et automatisk "brand moment".
   hovedtypene lette å finne og er et bevisst, etablert unntak fra den ellers enkle stilen.
 - **Badges og ikoner:** bruk bare når formen formidler informasjon raskere enn tekst, for eksempel
   varighet eller gruppestørrelse. Ikke bruk dem som pynt eller kvalitetsstempel.
+- **Aktivitetssider:** behold kategori-labelen og Varde-merket i heroen når innholdet har disse
+  verdiene.
 - **Sitat:** bruk når det er et faktisk sitat med ny informasjon. Ikke lag et mørkt brand-bånd av en
   generell salgslinje.
 

@@ -101,3 +101,4 @@ sync with it.
   inspirations.
 - Keep the homepage USP section's three centered white cards, icon circles, "Why choose us"
   eyebrow, and divider.
+- Keep category labels and the Varde quality mark in activity page heroes when available.
