@@ -24,6 +24,12 @@
 {{ with $featuredStories }}
 <section class="bg-white overflow-hidden">
     <div class="container">
+        {{ partial "components/section-heading" (dict
+            "title" "Highlighted inspiration"
+            "alignment" "left"
+            "class" "mb-10 md:mb-12"
+            "showDivider" true
+        ) }}
         {{ range . }}
         {{ $story := . }}
         <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-14 items-center">
@@ -70,9 +76,9 @@
     <div class="container">
         {{ partial "components/section-heading" (dict
             "title" "Inspiration from the fjord"
-            "description" "Fishing, local life and the places that shape the Sognefjord."
             "alignment" "left"
             "class" "mb-10 md:mb-12"
+            "showDivider" true
         ) }}
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -126,9 +132,9 @@
     <div class="container">
         {{ partial "components/section-heading" (dict
             "title" "More to discover"
-            "description" "Browse more inspiration and practical fjord guides from Captain Tor."
             "alignment" "left"
             "class" "mb-10 md:mb-12"
+            "showDivider" true
         ) }}
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

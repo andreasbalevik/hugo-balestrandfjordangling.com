@@ -63,7 +63,7 @@
 {{ with .Params.related_activities }}
 <section class="bg-white">
     <div class="container">
-        {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-10 md:mb-12" "showDivider" false) }}
+        {{ partial "components/section-heading" (dict "title" "Related Activities" "titleClass" "text-fjord" "class" "mb-10 md:mb-12" "showDivider" true) }}
         <div class="grid grid-cols-1 gap-8 mx-auto">
             {{ range . }}
             {{ $page := replace . "/index" "" }}

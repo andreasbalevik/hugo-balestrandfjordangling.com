@@ -84,17 +84,19 @@
     {{ if or $hasPractical $hasGallery $hasFAQ }}
     <nav class="md:sticky md:top-[70px] z-40 bg-white border-y border-mist/20">
         <div class="container py-0">
-            <div class="flex items-center gap-2 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 py-1.5 md:py-4">
-                <a href="#about" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
-                {{ if $hasFAQ }}
-                <a href="#faq" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
-                {{ end }}
-                {{ if $hasPractical }}
-                <a href="#practical" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
-                {{ end }}
-                {{ if $hasGallery }}
-                <a href="#gallery" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
-                {{ end }}
+            <div class="max-w-3xl mx-auto">
+                <div class="flex items-center gap-2 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 py-1.5 md:py-4">
+                    <a href="#about" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
+                    {{ if $hasFAQ }}
+                    <a href="#faq" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
+                    {{ end }}
+                    {{ if $hasPractical }}
+                    <a href="#practical" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
+                    {{ end }}
+                    {{ if $hasGallery }}
+                    <a href="#gallery" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
+                    {{ end }}
+                </div>
             </div>
         </div>
     </nav>
@@ -197,7 +199,7 @@
     {{ end }}
     <section class="{{ $relatedBackground }} border-t border-mist/20">
         <div class="container">
-            {{ partial "components/section-heading" (dict "eyebrow" "Continue exploring" "title" "Related Inspirations" "titleClass" "text-fjord" "class" "mb-8 md:mb-10" "showDivider" false) }}
+            {{ partial "components/section-heading" (dict "title" "Related Inspirations" "titleClass" "text-fjord" "class" "mb-8 md:mb-10" "showDivider" true) }}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
                 {{ range first 3 $relatedInspirations }}
                 {{ .Render "li" }}
