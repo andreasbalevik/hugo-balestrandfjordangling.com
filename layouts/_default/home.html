@@ -95,6 +95,11 @@
   </div>
 </section>
 
+<!-- SECTION: Captain Tor statement -->
+{{ with .Params.statement }}
+  {{ partial "components/statement-band.html" (dict "quote" .quote "source" .source) }}
+{{ end }}
+
 <!-- SECTION: inspirations with CTA -->
 <section class="overflow-hidden" style="{{ printf "background-color: %s;" $inspirationsBackground | safeCSS }}">
     <div class="container">

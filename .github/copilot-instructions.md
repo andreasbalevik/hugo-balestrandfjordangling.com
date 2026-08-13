@@ -97,3 +97,5 @@ sync with it.
 - A little unevenness and personality is welcome. Do not "correct" the site toward corporate
   symmetry, premium-editorial polish, or generic landing-page conventions.
 - Keep the homepage hero's established blurred photo background and framed white content card.
+- Keep the homepage's dark Captain Tor statement section between recommended activities and
+  inspirations.
