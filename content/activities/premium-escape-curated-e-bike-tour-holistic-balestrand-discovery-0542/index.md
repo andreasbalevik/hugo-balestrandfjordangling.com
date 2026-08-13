@@ -103,25 +103,54 @@ product_info:
       price: 11500
     - person_number: 8
       price: 12500
-faqItems:
-    - question: "Who is this premium escape designed for?"
-      answer: "This limited, premium escape is perfect for active travelers seeking unique travel experiences and a personal recharge with Captain Tor."
-    - question: "What sights will we see on the e-bike tour?"
-      answer: "Enjoy a sporty, entertaining e-bike tour with a historical twist, exploring the iconic red dragon villas, St. Olaf's Church, and the pristine Esefjord area."
-    - question: "What is the overall value of this experience?"
-      answer: "It's an authentic immersion in local culture and a chance for holistic wellness in Norway's most inspiring fjord village."
-    - question: "What sights will we explore on this guided electric bike tour?"
-      answer: "We explore Balestrand's hidden gems, looking at the authentic red dragon villas—a true architectural statement. We make a dedicated stop at the iconic St. Olaf's Church, offering a moment of tranquility and historical reflection. Along the way, Captain Tor shares local sagas, ensuring stylish photo opportunities and a fun cycling journey through time and culture."
-    - question: "What makes the area around the Esefjord special?"
-      answer: "We take the old scenic road around the picturesque Esefjord, visiting the beautiful Lunde Arboretum and a local enamel workshop. This is experiential travel at its finest: a deep dive into local culture, nature, and community life."
-    - question: "Why is this more than just a bike ride?"
-      answer: "It's the storytelling and the time spent with Tor—a true local expert—that makes this an authentic travel experience. Tor grew up here; he knows the best routes and hidden paths. It's a chance to connect on a personal level in the heart of the Sognefjord."
-    - question: "Is this tour physically demanding?"
-      answer: "Not at all. We use high-quality e-bikes (electric assistive), meaning \"he bikes, she bikes, everybody e-bikes!\" It's a delightful way to shake off the stress of urban life and experience daily rhythms in a quiet fjord village. It's about feeling the pulse of the Sognefjord right now."
-    - question: "How does this tour contribute to my wellness or \"5D\" experience?"
-      answer: "This is a mindful movement experience. A little \"flower power,\" cheerful feelings, and a twinkle in the eye spice up the journey. It's about meeting new people, feeling like a local resident, and participating in activities together. We focus on low-impact exercise and mental decompression."
-    - question: "Why is this considered an exclusive, premium activity?"
-      answer: "Traveling is not just about practical use, but rather an expression of individuality and the pursuit of curated experiences. A fjord adventure with us is a piece of iconic iconography—it's boutique travel at its best."
 cms: true
 ---
-> "Ready for your authentic bucket-list adventure? This exclusive escape is curated for the discerning traveler. Contact your Luxury Action travel agent or book your private immersion today."
+## Introduction: A Sporty Tour & Personal Recharging
+
+### Q: Who is this premium escape designed for?
+
+A: This limited, premium escape is perfect for active travelers seeking unique travel experiences and a personal recharge with Captain Tor.
+
+### Q: What sights will we see on the e-bike tour?
+
+A: Enjoy a sporty, entertaining e-bike tour with a historical twist, exploring the iconic red dragon villas, St. Olaf's Church, and the pristine Esefjord area.
+
+### Q: What is the overall value of this experience?
+
+A: It’s an authentic immersion in local culture and a chance for holistic wellness in Norway’s most inspiring fjord village.
+
+## Balestrand Discovery: Culture, Nature & History
+
+> ### Curated Experiences & Iconic Architecture
+
+### Q: What sights will we explore on this guided electric bike tour?
+
+A: We explore Balestrand’s hidden gems, looking at the authentic red dragon villas—a true architectural statement. We make a dedicated stop at the iconic St. Olaf’s Church, offering a moment of tranquility and historical reflection. Along the way, Captain Tor shares local sagas, ensuring stylish photo opportunities and a fun cycling journey through time and culture.
+
+### Q: What makes the area around the Esefjord special?
+
+A: We take the old scenic road around the picturesque Esefjord, visiting the beautiful Lunde Arboretum and a local enamel workshop. This is experiential travel at its finest: a deep dive into local culture, nature, and community life.
+
+The World’s Longest Meeting Place
+
+### Q: Why is this more than just a bike ride?
+
+A: It’s the storytelling and the time spent with Tor—a true local expert—that makes this an authentic travel experience. Tor grew up here; he knows the best routes and hidden paths. It’s a chance to connect on a personal level in the heart of the Sognefjord.
+
+### Q: Is this tour physically demanding?
+
+A: Not at all. We use high-quality e-bikes (electric assistive), meaning “he bikes, she bikes, everybody e-bikes!” It’s a delightful way to shake off the stress of urban life and experience daily rhythms in a quiet fjord village. It’s about feeling the pulse of the Sognefjord right now.
+
+## Holistic Wellness: Movement & Individuality
+
+> ### Pedal Muscles & A Mindful Lifestyle
+
+### Q: How does this tour contribute to my wellness or “5D” experience?
+
+A: This is a mindful movement experience. A little “flower power,” cheerful feelings, and a twinkle in the eye spice up the journey. It’s about meeting new people, feeling like a local resident, and participating in activities together. We focus on low-impact exercise and mental decompression.
+
+### Q: Why is this considered an exclusive, premium activity?
+
+A: Traveling is not just about practical use, but rather an expression of individuality and the pursuit of curated experiences. A fjord adventure with us is a piece of iconic iconography—it’s boutique travel at its best.
+
+> “Ready for your authentic bucket-list adventure? This exclusive escape is curated for the discerning traveler. Contact your Luxury Action travel agent or book your private immersion today.”

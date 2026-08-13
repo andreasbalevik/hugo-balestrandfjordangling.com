@@ -47,11 +47,6 @@ related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - electra-townie-e-bike-rental-balestrand-sognefjord-tours-2112/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
-faqItems:
-  - question: "Will I make it back before my cruise ship departs?"
-    answer: "Yes. The express boat docks exactly where you need to be. By checking the [Norled schedule](https://booking.norled.no/) and aligning it with your cruise ship's port hours, you can safely enjoy 3 to 6 hours in Balestrand. **Tip: Always buy your tickets in advance online, and make sure your return boat arrives back in Vik at least one hour before your cruise ship's \"all aboard\" time.**"
-  - question: "Do I need to book the fishing trip in advance?"
-    answer: "Highly recommended. Because our boats have limited capacity to ensure a high-quality, personal experience, slots fill up fast on days when cruise ships are in the area. [Check out our available trips and book your slot on our Activities Page](https://balestrandfjordangling.com/)."
 cms: true
 ---
 ## Are you arriving at the Vik cruise port and wondering how to spend your day?
@@ -113,3 +108,17 @@ Walk or bike up the hill to Ciderhuset (The Cider House). Located inside a lush 
 **Kviknes Hotel:** This monumental, Swiss-style wooden hotel dates back to 1913. Pop in for a coffee, stroll through their historic lounges filled with artwork, or enjoy a Sognefjord seafood sandwich on their grand fjord-view terrace. Perfect for a historical lunch with a sognefjord view on the balcony. [Link to menu here](https://en.kviknes.no/restaurant)
 
 **Norsk Reiselivsmuseum (Norwegian Travel Museum):** Built directly into the bedrock near the harbor, this modern, interactive museum tells the fascinating story of how the wild Norwegian fjords became a global tourist destination. [Link to the museum here](https://norskreiselivsmuseum.no)
+
+## 💬 Frequently Asked Questions for Cruise Guests
+
+### Q: Will I make it back before my cruise ship departs?
+
+A: Yes. The express boat docks exactly where you need to be. By checking the Norled schedule and aligning it with your cruise ship’s port hours, you can safely enjoy 3 to 6 hours in Balestrand.
+
+### Q: Do I need to book the fishing trip in advance?
+
+A: Highly recommended. Because our boats have limited capacity to ensure a high-quality, personal experience, slots fill up fast on days when cruise ships are in the area.
+
+### 🚀 Ready to upgrade your shore excursion?
+
+Don't settle for the standard crowded tour bus. Head over to our Activities Page to find a fjord adventure with Captain Tor that matches your schedule, and secure your Norled tickets today!
