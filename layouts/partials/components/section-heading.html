@@ -1,6 +1,8 @@
 {{/*
-  Section heading — keeps repeated homepage section intros consistent so hierarchy,
-  spacing, and decorative accents do not drift between sections.
+  Section heading — keeps section titles and optional descriptions consistent.
+
+  The component intentionally avoids decorative labels and divider bars. The site
+  should read like a small family business, not a marketing template.
 */}}
 
 {{ $alignment := .alignment | default "center" }}
@@ -11,18 +13,18 @@
 {{ $titleClass := .titleClass | default "text-gray-900" }}
 {{ $descriptionClass := .descriptionClass | default "text-lg md:text-xl leading-relaxed text-pretty text-gray-900/80" }}
 {{ $dividerClass := .dividerClass | default (cond $isCentered "mx-auto" "") }}
-{{ $showDivider := true }}
-{{ if isset . "showDivider" }}
-  {{ $showDivider = .showDivider }}
-{{ end }}
+{{ $showEyebrow := .showEyebrow | default false }}
+{{ $showDivider := .showDivider | default false }}
 
 <header class="{{ $headerAlignmentClass }} {{ $headerClass }}">
-  {{ with .eyebrow }}
-    <p class="text-sm font-semibold uppercase tracking-widest mb-4 {{ $eyebrowClass }}">{{ . }}</p>
+  {{ if $showEyebrow }}
+    {{ with .eyebrow }}
+      <p class="text-sm font-semibold uppercase tracking-widest mb-4 {{ $eyebrowClass }}">{{ . }}</p>
+    {{ end }}
   {{ end }}
 
   {{ with .title }}
-    <h2 class="mt-0 mb-5 md:mb-6 text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance {{ $titleClass }}">{{ . }}</h2>
+    <h2 class="mt-0 {{ if $showDivider }}mb-5 md:mb-6{{ else }}mb-0{{ end }} text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance {{ $titleClass }}">{{ . }}</h2>
   {{ end }}
 
   {{ if $showDivider }}
@@ -30,6 +32,6 @@
   {{ end }}
 
   {{ with .description }}
-    <p class="mt-5 md:mt-6 {{ if $isCentered }}max-w-2xl mx-auto{{ else }}max-w-2xl{{ end }} {{ $descriptionClass }}">{{ . }}</p>
+    <p class="mt-4 md:mt-5 {{ if $isCentered }}max-w-2xl mx-auto{{ else }}max-w-2xl{{ end }} {{ $descriptionClass }}">{{ . }}</p>
   {{ end }}
 </header>

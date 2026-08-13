@@ -88,3 +88,19 @@ motion rules, and guardrails — is documented in **[`.github/design/visual-iden
 That file is the source of truth for any design/UI change, polish pass, or new section. Read it
 before making visual changes; do not duplicate its rules here or let this section drift out of
 sync with it.
+
+- The site should feel **made by a small family business**, not designed for a large travel company.
+  Prefer plain, useful layouts and natural photos over polished marketing patterns.
+- Do not add decorative eyebrows, divider bars, icon circles, badges, shadows, or motion by default.
+  Keep the established right arrow on links and buttons, and retain the large colored category
+  buttons on the activities list.
+- A little unevenness and personality is welcome. Do not "correct" the site toward corporate
+  symmetry, premium-editorial polish, or generic landing-page conventions.
+- Keep the homepage hero's established blurred photo background and framed white content card.
+- Keep the homepage's dark Captain Tor statement section between recommended activities and
+  inspirations.
+- Keep the homepage USP section's three centered white cards, icon circles, "Why choose us"
+  eyebrow, and divider.
+- Other homepage section headings keep the divider but do not use an eyebrow/prefix.
+- Activity and inspiration list page titles also keep the divider without an eyebrow/prefix.
+- Keep category labels and the Varde quality mark in activity page heroes when available.
