@@ -24,7 +24,7 @@
     <div class="container px-5 pt-0 md:px-4 md:pt-12 lg:pt-16">
         <div class="max-w-4xl mx-auto bg-white rounded-lg border border-fjord-pale grid grid-cols-1 md:grid-cols-5 overflow-hidden">
             <div class="md:col-span-3 p-6 md:p-8 space-y-4">
-                <p class="font-medium text-gray-900">Trip details</p>
+                <p class="text-base font-semibold text-gray-900">Activity details</p>
 
                 <div class="space-y-3">
                     {{ with .Params.product_info.duration }}
@@ -50,19 +50,19 @@
                     {{ end }}
 
                     {{ with .Params.quality }}
-                    <p class="text-sm text-gray-700">
+                    <p class="text-base text-gray-700">
                         <span class="font-semibold">Note:</span>
                         {{ . }}</p>
                     {{ end }}
                 </div>
 
-                <p class="text-sm font-medium text-gray-900 pt-1">
+                <p class="text-base font-medium text-gray-900 pt-1">
                     Private charter only — no shared boats, no strangers
                 </p>
             </div>
 
             <div class="md:col-span-2 p-6 md:p-8 bg-fjord-light md:border-l border-fjord-pale flex flex-col justify-center gap-4">
-                <p class="font-medium text-gray-900">Price from</p>
+                <p class="text-base font-semibold text-gray-900">Price from</p>
                 {{ with .Params.product_info.prices }}
                 {{ range first 1 . }}
                 <p class="text-3xl md:text-4xl font-semibold text-gray-900">{{ partial "components/format/price" .price }},- NOK</p>
