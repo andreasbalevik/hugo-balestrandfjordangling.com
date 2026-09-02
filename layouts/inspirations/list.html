@@ -46,7 +46,6 @@
                 {{ end }}
             </a>
             <div class="lg:col-span-5">
-            <div class="lg:col-span-5">
                 <h2 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl font-medium leading-[1.2] tracking-tight text-balance text-fjord">
                     {{ .Title }}
                 </h2>
@@ -83,7 +82,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {{ range $story := . }}
-            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow transition-shadow duration-300 hover:shadow-md">
+            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow">
                 <a href="{{ $story.RelPermalink }}"
                    class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                    aria-label="Read {{ $story.Title }}">
@@ -139,7 +138,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {{ range $story := . }}
-            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow transition-shadow duration-300 hover:shadow-md">
+            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow">
                 <a href="{{ $story.RelPermalink }}"
                    class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                    aria-label="Read {{ $story.Title }}">

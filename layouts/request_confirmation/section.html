@@ -41,14 +41,12 @@
                             <p class="font-medium">Ready for your next adventure?</p>
                             <p class="text-sm text-gray-700">Explore more experiences with us</p>
                         </div>
-                        <a href="{{ site.Home.RelPermalink }}"
-                            class="inline-flex items-center px-6 py-4 rounded-lg bg-primary hover:bg-primary/90 text-white font-semibold transition-all duration-300 whitespace-nowrap gap-2 shadow hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                            aria-label="Return to homepage">
-                            {{ i18n "tilbake" }}
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                            </svg>
-                        </a>
+                        {{ partial "components/buttons/button" (dict
+                            "href" site.Home.RelPermalink
+                            "text" (i18n "tilbake")
+                            "variant" "primary"
+                            "ariaLabel" "Return to homepage"
+                        ) }}
                     </div>
                 </div>
             </article>
