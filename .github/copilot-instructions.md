@@ -48,7 +48,6 @@ Follow existing project conventions and these repository-specific rules.
 
 ## Design and UI
 
-- [`.github/design/visual-identity.md`](design/visual-identity.md) is the source of truth for UI
-  changes.
-- Preserve the established small-family-business character and existing design patterns. Do not add
-  corporate polish or decorative UI by default.
+- [`DESIGN.md`](../DESIGN.md) is the source of truth for UI changes (tokens, rules, components).
+  [`PRODUCT.md`](../PRODUCT.md) holds durable product context. Follow them; do not restate design
+  rules here.
