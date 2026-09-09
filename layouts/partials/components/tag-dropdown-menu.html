@@ -10,10 +10,10 @@
 {{ $activePermalink := .activePermalink }}
 
 <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44">
-    <ul role="listbox" aria-labelledby="dropdownDefaultButton">
+    <ul aria-labelledby="dropdownDefaultButton">
         {{ with site.GetPage "activities" }}
         <li>
-            <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $activePermalink }} aria-current="page"{{ end }} class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
+            <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $activePermalink }} aria-current="page"{{ end }} class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary">
                 All activities
             </a>
         </li>
@@ -22,7 +22,7 @@
         {{ range $name, $taxonomy := site.Taxonomies.tags }}
         {{ with site.GetPage (printf "/tags/%s" $name) }}
         <li>
-            <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $activePermalink }} aria-current="page"{{ end }} class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">
+            <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $activePermalink }} aria-current="page"{{ end }} class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary">
                 {{ .Title }}
             </a>
         </li>
