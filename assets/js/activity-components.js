@@ -49,6 +49,7 @@ class CarouselComponent {
     this.indicators = element.querySelectorAll("[data-carousel-slide-to]");
     this.currentIndex = 0;
     this.peer = null;
+    this.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (this.items.length === 0) return;
     this.init();
@@ -71,11 +72,7 @@ class CarouselComponent {
       item.style.opacity = "0";
     });
 
-    const current = this.items[this.currentIndex];
-    current.classList.remove("hidden");
-    current.offsetHeight;
-    current.style.opacity = "1";
-    current.style.transition = "opacity 0.7s ease-in-out";
+    this.showCurrentItem();
 
     this.indicators.forEach((ind, i) => {
       ind.classList.toggle("bg-primary", i === this.currentIndex);
@@ -94,16 +91,25 @@ class CarouselComponent {
       item.style.opacity = "0";
     });
 
-    const current = this.items[this.currentIndex];
-    current.classList.remove("hidden");
-    current.offsetHeight;
-    current.style.opacity = "1";
-    current.style.transition = "opacity 0.7s ease-in-out";
+    this.showCurrentItem();
 
     this.indicators.forEach((ind, i) => {
       ind.classList.toggle("bg-primary", i === this.currentIndex);
       ind.classList.toggle("bg-gray-300", i !== this.currentIndex);
     });
+  }
+
+  showCurrentItem() {
+    const current = this.items[this.currentIndex];
+    current.style.transition = this.reduceMotion ? "none" : "opacity 0.7s ease-in-out";
+    current.style.opacity = this.reduceMotion ? "1" : "0";
+    current.classList.remove("hidden");
+
+    if (!this.reduceMotion) {
+      requestAnimationFrame(() => {
+        current.style.opacity = "1";
+      });
+    }
   }
 
   prevSlide() { this.showItem(this.currentIndex - 1); }

@@ -18,7 +18,7 @@
 
 <!-- Booking Modal -->
 <div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
-    class="hidden fixed inset-0 z-[70] bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
+    class="hidden fixed inset-0 z-[70] bg-black/75 overflow-y-auto overflow-x-hidden overscroll-contain pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
     <div class="relative p-4 w-full max-w-3xl mt-4 mb-8">
         <!-- Modal Content -->
         <article class="relative bg-white rounded-lg shadow border border-fjord-pale">
@@ -28,9 +28,10 @@
                     Make a request
                 </h3>
                 <button type="button"
-                    class="inline-flex justify-center items-center transition-colors duration-300 w-8 h-8 rounded-lg hover:bg-gray-200 hover:text-gray-900"
-                    data-modal-toggle="crud-modal">
-                    <i data-lucide="x" class="w-4 h-4 text-gray-700"></i>
+                    class="inline-flex justify-center items-center transition-colors duration-300 w-8 h-8 rounded-lg hover:bg-gray-200 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    data-modal-toggle="crud-modal"
+                    aria-label="Close booking request form">
+                    <i data-lucide="x" class="w-4 h-4 text-gray-700" aria-hidden="true"></i>
                 </button>
             </header>
 
@@ -61,7 +62,7 @@
                                 <div class="space-y-2">
                                     {{ with .Params.product_info.duration }}
                                     <div class="flex items-center text-base">
-                                        <i data-lucide="clock" class="w-5 h-5 mr-2 text-primary"></i>
+                                        <i data-lucide="clock" class="w-5 h-5 mr-2 text-primary" aria-hidden="true"></i>
                                         <span><strong>Duration:</strong> {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}</span>
                                     </div>
                                     {{ end }}
@@ -78,7 +79,7 @@
                         <label for="name" class="block mb-4 text-base font-semibold text-gray-900">Full Name *</label>
                         <input type="text" name="name" id="name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
-                            placeholder="Enter full name" required>
+                            placeholder="Enter full name" autocomplete="name" required>
                     </div>
 
                     <!-- Email -->
@@ -86,7 +87,7 @@
                         <label for="email" class="block mb-4 text-base font-semibold text-gray-900">Your email *</label>
                         <input type="email" id="email" name="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
-                            placeholder="name@example.com" required>
+                            placeholder="name@example.com" autocomplete="email" spellcheck="false" required>
                     </div>
 
                     <!-- Date -->
@@ -94,11 +95,11 @@
                         <label for="date" class="block mb-4 text-base font-semibold text-gray-900">Date *</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <i data-lucide="calendar" class="w-4 h-4 text-gray-700"></i>
+                                <i data-lucide="calendar" class="w-4 h-4 text-gray-700" aria-hidden="true"></i>
                             </div>
                             <input id="date" name="date" type="date"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full ps-10 p-4 transition-colors duration-300"
-                                required>
+                                autocomplete="off" required>
                         </div>
                     </div>
 
@@ -143,7 +144,7 @@
                         <label for="message" class="block mb-4 text-base font-semibold text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
                             class="block p-4 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary focus:border-primary transition-colors duration-300"
-                            placeholder="Tell us about yourself..." required></textarea>
+                            placeholder="Tell us about yourself…" required></textarea>
                     </div>
 
                 </div>
