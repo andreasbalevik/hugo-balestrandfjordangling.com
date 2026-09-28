@@ -23,7 +23,7 @@ A: Absolutely! You have traveled all the way to Norway for an authentic fjord ex
 
 Book accommodation at [Balestrand Fjord Apartments in an apartments](https://www.fjordapartments.no/en/) for 4 or 8 people at the link here
 
-Book a Balestrand fjord angling trip departure 12:00
+Book a Balestrand fjord angling trip departure 12:00 (early birds) or 15:00 if you travel from Flaam the same day
 
 ### Q: What is the easiest way to travel between Flåm/Aurland and Balestrand?
 
