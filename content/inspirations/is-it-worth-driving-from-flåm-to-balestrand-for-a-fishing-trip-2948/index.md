@@ -55,7 +55,7 @@ Alternative route: Consider the route via Borgund Stave Church in Lærdal or Urn
 
 **A: Flåm is great, but Balestrand is historical and relaxed.** An overnight stay allows you to experience both places as "pearls on a string" and gives you the peace to enjoy both =>[breakfast at Kviknes Hotel ](https://www.kviknes.no/restaurant-kviknes)and an evening stroll.
 
-**Balestrand Fjord Apartments. Next door to us.**  Apartments for 4 and 8 people at attractive prices. Very easy and convenient if you are arriving from Flåm by express boat, or if you have a rental car and want to park right below. [\=> Balestrand Fjord Apartments link here](https://www.fjordapartments.no/en/)
+**Balestrand Fjord Apartments.**  Apartments for 4 and 8 people at attractive prices. Very easy and convenient if you are arriving from Flåm by express boat, or if you have a rental car and want to park right below. [\=> Balestrand Fjord Apartments link here](https://www.fjordapartments.no/en/)
 
 **Sognefjord Cabins 5 minutes walk from us.** Convenient, with parking right outside the door. Lovely views and well-kept grounds, featuring a white sand beach and a sauna. Many of our guests seek this kind of fjord experience alongside our unique fishing trip adventures! [\=> Sognefjord Cabins link here](https://www.sognefjordcabins.com/)
 
