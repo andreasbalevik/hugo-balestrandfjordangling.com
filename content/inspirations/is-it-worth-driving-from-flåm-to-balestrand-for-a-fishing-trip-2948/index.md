@@ -66,4 +66,4 @@ Alternative route: Consider the route via Borgund Stave Church in Lærdal or Urn
 **Authenticity:** ["You can go viking in the fjords with Captain Tor"](https://balestrandfjordangling.com/inspirations/go-viking-in-the-sognefjord-experience-the-raw-spring-awakening-march-april-5320/) – this is authentic cultural heritage.
 **Explore more than just Flåm** – [Discover the whole Sognefjord region!](https://en.sognefjord.no/)
 
-> *Experience and stay in authentic, convenient Balestrand. Explore the area and go hiking on marked trails. Create your own stories in a historic setting. Close to the fjord, nature, and yourself!*
+> *Experience and stay in authentic, convenient Balestrand.=> [Explore the area and go hiking on marked trails](https://www.sognefjord.no/fjordbygd/balestrand/vandring-i-balestrand/). Create your own stories in a historic setting. Close to the fjord, nature, and yourself!*
