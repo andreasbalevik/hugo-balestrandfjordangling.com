@@ -27,6 +27,8 @@ description: "As seen on TV: Captain Tor & 'People of the North' Episode 6.
   talking about"
 images:
   - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
+    alt: "Arne Hjeltnes, Sigrid Henjum and Stig Baraksten smile for a selfie in
+      front of a glacier, their faces marked with soot from filming."
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index

@@ -13,6 +13,7 @@ description: Discover timeless truths bridging faith & modern life. Our
   & purpose.
 images:
   - src: images/img_20181117_131939_7_2.jpg
+    alt: "A close-up of a red-painted metal sculpture on a steel post in the grass."
 related_activities:
   - demo-grünersgate-–-et-sted-å-komme-hjem-til-sjelesorg-og-tverrkulturell-diakoni-0803/index
   - premium-escape-curated-e-bike-tour-holistic-balestrand-discovery-0542/index

@@ -91,9 +91,17 @@ images:
     alt: Two smiling women in life vests are fishing from a boat on a sunny day in a
       Norwegian fjord with steep green mountains in the background.
   - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
+    alt: "A woman stands at the bow of the boat with her arms out and the Norwegian
+      flag in her hand, facing the steep green fjord walls ahead."
   - src: images/image1.jpeg
+    alt: "Two guests in life vests hold up a large halibut between them on the boat
+      deck, snow-capped mountains and a green fjord shore behind."
   - src: images/udzjhox4-1-.jpeg
+    alt: "A boy in an orange life vest and sunglasses reels in a fishing rod on the
+      boat, the line running out over the fjord water."
   - src: images/catch.jpg
+    alt: "A beaming boy in an orange life vest holds up the pollack he has just
+      caught, with the skipper smiling behind him on the boat."
 tags:
   - family-and-friends
 information:

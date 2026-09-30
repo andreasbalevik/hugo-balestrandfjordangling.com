@@ -63,7 +63,12 @@ description: Master the Sognefjord! Join a 2026 "Skillcation" with Captain Tor.
   adventure!
 images:
   - src: images/esxae4wi.jpeg
+    alt: "On the boat in front of the white hotel on the Balestrand shore the
+      skipper lifts a green fish box while a boy in an orange life vest holds up
+      a small flatfish and a girl reaches into a box of kelp."
   - src: images/image-2710149555991743.jfif
+    alt: "Guests hold up the orange starfish they have pulled from the fjord, on the
+      boat deck."
 related_activities:
   - premium-skill-master-the-long-line-–-authentic-fjord-fishing-immersion-0003/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index

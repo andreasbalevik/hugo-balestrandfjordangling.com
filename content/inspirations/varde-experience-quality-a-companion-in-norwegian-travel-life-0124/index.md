@@ -40,6 +40,10 @@ description: "Discover authentic, Varde-Certified Sognefjord experiences with
   the fjord. "
 images:
   - src: images/b67i4835.jpg
+    alt: "Three people in the winter sun on the boat, one filming with a phone, a
+      guide in a yellow Varde vest pointing and a guest holding the Norwegian
+      flag, with a filleted fish and a crab on the table and snowy mountains
+      mirrored in the fjord."
 related_activities:
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index

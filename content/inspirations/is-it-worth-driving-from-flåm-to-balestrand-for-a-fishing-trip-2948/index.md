@@ -5,6 +5,8 @@ description: "\"Beyond the postcard. Explore the Sognefjord's hidden gems with
   Captain Tor.\""
 images:
   - src: images/img_0593.jpeg
+    alt: "A smiling woman in a red jacket holds a fishing rod on the boat, the fjord
+      and steep green mountains behind."
 related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index

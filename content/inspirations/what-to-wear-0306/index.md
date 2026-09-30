@@ -4,6 +4,9 @@ description: "In Norway, we live by the saying: “There is no such thing as bad
   weather, only bad clothes” - Here is a check list of essentials: "
 images:
   - src: images/b67i4478.jpg
+    alt: "The skipper lifts a large anglerfish out of the net on deck while two
+      guests in winter clothes look on, fishing rods along the gunwale and the
+      snowy village across the fjord."
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index

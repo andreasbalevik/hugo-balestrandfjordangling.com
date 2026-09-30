@@ -66,6 +66,8 @@ images:
     alt: Cheerful prank in Fjærlandsfjord lady sitting on the bow and happy on a
       fishing trip and high mountains with clear water
   - src: images/image1.jpeg
+    alt: "Two guests in life vests hold up a large halibut between them on the boat
+      deck, snow-capped mountains and a green fjord shore behind."
 tags:
   - family-and-friends
 information:

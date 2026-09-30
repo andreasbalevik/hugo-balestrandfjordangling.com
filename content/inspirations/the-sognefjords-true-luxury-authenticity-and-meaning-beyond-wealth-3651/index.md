@@ -12,6 +12,8 @@ keywords:
 description: Exclusive authentic Sognefjord experience beyond luxury?
 images:
   - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
+    alt: "A woman stands at the bow of the boat with her arms out and the Norwegian
+      flag in her hand, facing the steep green fjord walls ahead."
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index

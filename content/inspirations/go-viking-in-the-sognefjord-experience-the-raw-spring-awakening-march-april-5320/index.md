@@ -29,7 +29,13 @@ description: Go Viking in the Sognefjord! Experience the raw spring awakening in
   March/April. Fewer crowds, more fish—your authentic Norse adventure awaits.
 images:
   - src: images/b67i5237.jpg
+    alt: "On the winter boat a green tub marked Go Viking in the Fjords stands
+      beside guest hands and a guide in foul-weather trousers sorting rope in
+      the low sun."
   - src: images/b67i5419.jpg
+    alt: "Three guests on a winter boat trip, one at the helm, one coiling rope and
+      one sorting gear in a neon-yellow jacket, with snow-covered mountains all
+      around."
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index

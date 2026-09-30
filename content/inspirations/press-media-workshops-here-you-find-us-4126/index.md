@@ -4,6 +4,9 @@ description: See why global media, Rick Steve’s Europe and People of the North
   feature Captain Tor. Discover award-winning Sognefjord experiences.
 images:
   - src: images/img_20210619_180418_8.jpg
+    alt: "A woman in the boat photographs her companion with a phone while the other
+      woman sits laughing on the bow seat with the fishing rods raised, green
+      fjord shore and snowy peaks behind."
 cms: true
 ---
 ## From Grey Stone to Gold: Our Innovative Collaborations

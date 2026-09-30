@@ -61,6 +61,8 @@ description: Rent a bike in Balestrand! Authentic Sognefjord cycling on sporty
   rental.
 images:
   - src: images/img_20220325_104727_1.jpg
+    alt: "A blue e-bike leans against the pink wooden wall of a Balestrand house, a
+      green painted door behind it."
 tags:
   - bike-and-hike
 information:

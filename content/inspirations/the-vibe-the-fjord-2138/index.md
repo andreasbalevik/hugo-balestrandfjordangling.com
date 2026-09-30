@@ -36,6 +36,9 @@ description: "Title: Trade Your Feed For The Fjord: The Ultimate Scandinavian
   frequency. "
 images:
   - src: images/mestringsvibber-💯-fra-fjord-til-fat.-authenticadventure.jpg
+    alt: "A young woman leans on the brick wall of the jetty at dusk, a lit lantern
+      and a hanging basket of red flowers beside her, the fjord and dark
+      mountains behind."
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
