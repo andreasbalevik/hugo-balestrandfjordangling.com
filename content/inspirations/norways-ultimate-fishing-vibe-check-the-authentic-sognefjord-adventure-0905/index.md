@@ -57,6 +57,8 @@ description: I live in Norway, in the never–summer land of Balestrand in the
   resorts of Europe..
 images:
   - src: images/kaptain-tor-and-miss-fjords-on-mission-among-high-mountains-in-sognefjord.jpg
+    alt: Captain Tor at the helm of his boat in the Sognefjord, on a private
+      fishing trip with focus on local expertise and sustainable travel
 related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index

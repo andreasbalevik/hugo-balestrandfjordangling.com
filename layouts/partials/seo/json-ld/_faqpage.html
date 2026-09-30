@@ -1,43 +1,43 @@
 {{/*
   FAQ Page JSON-LD schema.
-  Generates schema.org/FAQPage markup with Question/Answer items.
-  
-  Only renders if faqItems exist.
-  
+
+  Builds the FAQPage data structure and serialises it with jsonify, so quotes
+  and special characters in questions/answers can no longer break the JSON
+  (the previous hand-written JSON relied on safeJS interpolation).
+
+  Only renders when faqItems with both question and answer exist.
+
   Used in: activities/single.html, inspirations/single.html
-  
   Expects: .Page (current page context)
 */}}
 
 {{ $faqItems := .Params.faqItems }}
-{{ if and $faqItems (gt (len $faqItems) 0) }}
-
+{{ $questions := slice }}
+{{ range $faqItems }}
+  {{ $question := .question }}
+  {{ $answer := .answer }}
+  {{ if and $question $answer }}
+    {{ $questions = $questions | append (dict
+      "@type" "Question"
+      "name" ($question | markdownify | plainify | htmlUnescape | strings.TrimSpace)
+      "acceptedAnswer" (dict
+        "@type" "Answer"
+        "text" ($answer | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace)
+      )
+    ) }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $questions) 0 }}
+{{ $schema := dict
+  "@context" "https://schema.org"
+  "@type" "FAQPage"
+  "@id" (printf "%s#faq" .Permalink)
+  "url" (printf "%s#faq" .Permalink)
+  "inLanguage" .Lang
+  "isPartOf" (dict "@type" "WebPage" "@id" .Permalink)
+  "mainEntity" $questions
+}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "{{ .Permalink }}#faq",
-  "url": "{{ .Permalink }}#faq",
-  "inLanguage": "{{ .Lang }}",
-  "isPartOf": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  },
-  "mainEntity": [
-    {{ range $index, $item := $faqItems }}
-    {{ $question := $item.question | markdownify | plainify | htmlUnescape | strings.TrimSpace }}
-    {{ $answer := $item.answer | markdownify | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace }}
-    {
-      "@type": "Question",
-      "name": "{{ $question | safeJS }}",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ $answer | safeJS }}"
-      }
-    }{{ if ne $index (sub (len $faqItems) 1) }},{{ end }}
-    {{ end }}
-  ]
-}
+{{ $schema | jsonify | safeJS }}
 </script>
-
 {{ end }}

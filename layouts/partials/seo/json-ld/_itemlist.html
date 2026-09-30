@@ -8,6 +8,8 @@
      images live in the global assets/images/ mount, not page bundles, so the
      page-scoped lookup always returned nil and silently fell back to an
      unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+  3. AggregateOffer lowPrice/highPrice use the real minimum and maximum across
+     all prices (not first/last); pages without prices get no offers object.
 */}}
 {{ $productSection := site.Params.product_section | default "products" }}
 {{ $blogSection := site.Params.blog_section | default "blog" }}
@@ -45,13 +47,17 @@
             {{ end }}
           {{ end }}
         {{ end }}{{ with $page.Params.product_info }}{{ with .prices }}
-          {{ $firstPrice := index . 0 }}
-          {{ $lastPrice := index . (sub (len .) 1) }},
+          {{ $minPrice := index . 0 }}
+          {{ $maxPrice := index . 0 }}
+          {{ range . }}
+            {{ if lt .price $minPrice.price }}{{ $minPrice = . }}{{ end }}
+            {{ if gt .price $maxPrice.price }}{{ $maxPrice = . }}{{ end }}
+          {{ end }},
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "{{ site.Params.currency | default "NOK" }}",
-          "lowPrice": "{{ $firstPrice.price }}",
-          "highPrice": "{{ $lastPrice.price }}"
+          "lowPrice": "{{ $minPrice.price }}",
+          "highPrice": "{{ $maxPrice.price }}"
         }{{ end }}{{ end }}
       }
       {{ else if eq $.Section $blogSection }}

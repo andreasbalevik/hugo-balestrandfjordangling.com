@@ -5,7 +5,7 @@ type: page
 outputs:
   - TXT
 sitemap:
-  disabled: true
+  disable: true
 ---
 
 # Balestrand Fjord Angling – The Human Edge & AI Readiness (2026)

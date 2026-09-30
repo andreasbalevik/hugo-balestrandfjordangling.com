@@ -1,0 +1,52 @@
+{{/*
+  Project override of the theme partial
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/components/images/utils/carousel-controls.html).
+
+  Changes:
+  1. Dropped the repeated id="carousel-controls" (one per carousel instance on a
+     page produced duplicate ids). The data-* bindings are unchanged.
+  2. Each indicator is a 44x44 px button holding a 12px visual dot; the active
+     colour lives on the inner dot so the JS can update it in both the
+     showItem and updateDisplay paths. aria-current marks only the active slide.
+  3. The indicator group wraps (flex-wrap) so many images cannot overflow a
+     320px viewport.
+*/}}
+{{ $images_length := len . }}
+
+{{ if gt $images_length 1}}
+
+<!-- Slider indicators -->
+<div class="absolute bottom-3 left-1/2 z-30 flex max-w-[calc(100%-1rem)] -translate-x-1/2 flex-wrap items-center justify-center gap-1 rtl:space-x-reverse">
+
+    {{ $counter := 0 }}
+    {{ range . }}
+    <button type="button"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+        {{ if eq $counter 0 }}aria-current="true"{{ end }}
+        aria-label="Slide {{$counter}}"
+        data-carousel-slide-to="{{$counter}}">
+        <span data-carousel-dot class="block h-3 w-3 rounded-full shadow transition-colors duration-300 {{ if eq $counter 0 }}bg-primary{{ else }}bg-gray-300{{ end }}"></span>
+    </button>
+    {{ $counter = add $counter 1 }}
+    {{ end }}
+
+</div>
+
+<!-- Slider controls -->
+<button type="button"
+    class="carousel-control-btn absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+    data-carousel-prev>
+    <span class="shadow inline-flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-100 group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2">
+        <i data-lucide="chevron-left" class="w-4 h-4 text-gray-800 rtl:rotate-180"></i>
+        <span class="sr-only">{{ i18n "previous" }}</span>
+    </span>
+</button>
+<button type="button"
+    class="carousel-control-btn absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+    data-carousel-next>
+    <span class="shadow inline-flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-100 group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2">
+        <i data-lucide="chevron-right" class="w-4 h-4 text-gray-800 rtl:rotate-180"></i>
+        <span class="sr-only">{{ i18n "next" }}</span>
+    </span>
+</button>
+{{ end }}

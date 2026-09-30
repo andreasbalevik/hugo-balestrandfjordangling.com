@@ -1,0 +1,60 @@
+{{/*
+  Analytics consent surface.
+
+  The consent UI is rendered in every context (development, deploy preview,
+  production) so the surface can be seen and tested where no tracking is
+  allowed. Whether this build may actually load GA4/GTM after an "accept" is
+  decided separately by utils/analytics-enabled.html and passed to the script
+  as data-analytics-enabled; the script never injects a loader when it is
+  "false".
+
+  Outputs:
+  - a non-blocking consent banner (hidden until JS decides), reused by the
+    footer "Analytics settings" control via [data-analytics-settings]
+  - the analytics configuration (GTM + GA4 ids, storage key, gate) as data
+    attributes
+  - assets/js/analytics-consent.js, which owns all the loading logic
+
+  Without JS the banner stays hidden and no analytics is loaded; normal page
+  reading is unaffected. Booking does not depend on this partial.
+*/}}
+{{ $analyticsEnabled := partial "utils/analytics-enabled.html" . }}
+{{ $privacy := site.Params.privacyUrl | default "/privacy" }}
+
+<div id="bfa-consent" role="region" aria-label="Analytics consent" tabindex="-1"
+     data-consent-key="bfa-analytics-consent"
+     data-gtm="GTM-TBP9B3X"
+     data-ga4="G-HNS6R4TEK0"
+     data-analytics-enabled="{{ $analyticsEnabled }}"
+     class="hidden fixed inset-x-0 bottom-0 z-[130] border-t border-fjord-pale bg-white shadow-lg outline-none">
+    <div class="container py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p class="m-0 max-w-3xl text-sm leading-relaxed text-gray-900">
+            We would like to use Google Analytics to understand how this website is used. Nothing is loaded until you accept.
+            Read our
+            <a href="{{ $privacy }}" class="font-medium text-primary-dark underline hover:no-underline">privacy statement</a>.
+        </p>
+        <div class="flex flex-wrap gap-3 shrink-0">
+            <button type="button" data-consent-accept
+                class="min-h-11 inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 text-sm font-semibold text-gray-900 hover:bg-fjord-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                Accept analytics
+            </button>
+            <button type="button" data-consent-reject
+                class="min-h-11 inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 text-sm font-semibold text-gray-900 hover:bg-fjord-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                Reject analytics
+            </button>
+        </div>
+    </div>
+</div>
+
+{{- with resources.Get "js/analytics-consent.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script defer src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script defer src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}

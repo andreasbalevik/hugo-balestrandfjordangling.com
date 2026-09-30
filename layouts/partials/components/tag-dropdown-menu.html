@@ -2,6 +2,10 @@
   Tag filter dropdown menu — the "All activities" + per-tag list shown under
   the filter button on both the activities index and individual tag pages.
 
+  This is a disclosure: a toggle button plus ordinary navigation links. It is
+  not a listbox or menu widget, so no listbox/haspopup roles are applied and
+  the links keep the normal Tab order.
+
   Params:
     activePermalink (required) RelPermalink of the current page, used to mark
                     the correct entry with aria-current="page"
@@ -10,7 +14,7 @@
 {{ $activePermalink := .activePermalink }}
 
 <div id="dropdown" class="absolute left-0 mt-2 z-50 hidden bg-white divide-y divide-fjord-pale rounded-lg shadow w-44">
-    <ul role="listbox" aria-labelledby="dropdownDefaultButton">
+    <ul>
         {{ with site.GetPage "activities" }}
         <li>
             <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $activePermalink }} aria-current="page"{{ end }} class="block px-4 py-4 hover:bg-fjord-light text-sm font-medium">

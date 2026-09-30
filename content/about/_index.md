@@ -26,8 +26,6 @@ testimonial:
   quote: "Words can not express how great this experience is. We came to fish. Went home from one of the best tours we ever experienced. Capt. Tor is authentic and one heck of a storyteller. He knows his childhood area like his back-pocket. We came to fish. We came home with an extraordinary nature experience."
   author: "Mortenr163 — TripAdvisor"
 ---
-# About Balestrand Fjord Angling
-
 The fabulous boat "Miss Fjords" and the mysterious captain Tor live in Balestrand. Together they are known internationally for their entertaining and authentic fjord fishing experiences among high, snow-capped peaks, and green fjord arms. This is a relationship built on trust and quality. This duo is among the best fjord instructors that the Sognefjord has fostered, and as we all know: Real experiences come from within the heart, and they transform you as a person. But here is the twist: The Sognefjord doesn't shout out its secrets, It whispers. It invites you to discover them, and yourself - And when it first does: It's generous.
 
 ## My Perspectives

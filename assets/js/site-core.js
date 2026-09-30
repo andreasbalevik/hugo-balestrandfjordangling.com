@@ -7,13 +7,13 @@ function setupMobileMenu() {
     if (open) {
       menu.classList.remove("hidden");
       button.setAttribute("aria-expanded", "true");
-      button.setAttribute("aria-label", "Lukk navigasjonsmeny");
+      button.setAttribute("aria-label", "Close navigation menu");
       button.querySelector(".closed-icon")?.classList.add("hidden");
       button.querySelector(".open-icon")?.classList.remove("hidden");
     } else {
       menu.classList.add("hidden");
       button.setAttribute("aria-expanded", "false");
-      button.setAttribute("aria-label", "Åpne navigasjonsmeny");
+      button.setAttribute("aria-label", "Open navigation menu");
       button.querySelector(".closed-icon")?.classList.remove("hidden");
       button.querySelector(".open-icon")?.classList.add("hidden");
     }
@@ -34,6 +34,15 @@ function setupMobileMenu() {
         setTimeout(function () { locked = false; }, 400);
       }
     });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (menu.classList.contains("hidden")) return;
+    e.preventDefault();
+    locked = false;
+    setMenu(false);
+    button.focus();
   });
 }
 
@@ -58,6 +67,18 @@ function setupDropdowns() {
         dropdown.classList.add("hidden");
         button.setAttribute("aria-expanded", "false");
       }
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    document.querySelectorAll("[data-dropdown-toggle]").forEach(function (button) {
+      const dropdown = document.getElementById(button.getAttribute("data-dropdown-toggle"));
+      if (!dropdown || dropdown.classList.contains("hidden")) return;
+      e.preventDefault();
+      dropdown.classList.add("hidden");
+      button.setAttribute("aria-expanded", "false");
+      button.focus();
     });
   });
 }

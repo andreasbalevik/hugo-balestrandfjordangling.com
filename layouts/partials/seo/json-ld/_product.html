@@ -1,13 +1,15 @@
 {{/*
-  Project override of the theme partial (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_product.html).
+  Project override of the theme partial
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_product.html).
+
   Changes:
-  1. The "image" field(s) uses a downscaled (max 1200px wide) derivative instead of
-     the raw original resource, so full-resolution camera originals (often 10-17MB)
-     are not published to /public purely for invisible JSON-LD metadata.
-  2. Switched Page.Resources.GetMatch to global resources.GetMatch: this site's
-     images live in the global assets/images/ mount, not page bundles, so the
-     page-scoped lookup always returned nil and silently fell back to an
-     unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+  1. The "image" field(s) use a downscaled (max 1200px wide) derivative instead of
+     the raw original resource, and use global resources.GetMatch (this site's
+     images live in the global assets mount, not page bundles).
+  2. AggregateOffer lowPrice/highPrice are the real minimum and maximum across all
+     prices (not first/last), the offer is omitted entirely when there are no
+     prices, and the unsupported "availability: InStock" claim is removed (the
+     site has no real-time capacity feed).
 */}}
 {{ $productSection := site.Params.product_section | default "products" }}
 {{ $description := .Page.Params.description | default (.Summary | plainify) }}
@@ -18,6 +20,18 @@
 {{ with .Params.schema }}
   {{ if .product }}
     {{ $productSchemaEnabled = true }}
+  {{ end }}
+{{ end }}
+{{ $prices := .Page.Params.product_info.prices }}
+{{ $hasPrices := gt (len ($prices | default slice)) 0 }}
+{{ $minPrice := dict }}
+{{ $maxPrice := dict }}
+{{ if $hasPrices }}
+  {{ $minPrice = index $prices 0 }}
+  {{ $maxPrice = index $prices 0 }}
+  {{ range $prices }}
+    {{ if lt .price $minPrice.price }}{{ $minPrice = . }}{{ end }}
+    {{ if gt .price $maxPrice.price }}{{ $maxPrice = . }}{{ end }}
   {{ end }}
 {{ end }}
 {{ if and .IsPage (eq .Section $productSection) $description (or .Params.product_info $productSchemaEnabled) }}
@@ -78,17 +92,14 @@
     }{{ end }}{{ with site.Params.phone }},
     "telephone": "{{ . }}"{{ end }}{{ with site.Params.email }},
     "email": "{{ . }}"{{ end }}
-  }{{ with .Page.Params.product_info }},
+  }{{ if $hasPrices }},
   "offers": {
     "@type": "AggregateOffer",
-    "priceCurrency": "{{ site.Params.currency | default "NOK" }}"{{ with .prices }}
-      {{ $firstPrice := index . 0 }}
-      {{ $lastPrice := index . (sub (len .) 1) }},
-    "lowPrice": "{{ $firstPrice.price }}",
-    "highPrice": "{{ $lastPrice.price }}",
-    "offerCount": "{{ len . }}"{{ end }},
-    "availability": "https://schema.org/InStock",
-    "url": "{{ $.Permalink }}"{{ with .priceValidUntil }},
+    "priceCurrency": "{{ site.Params.currency | default "NOK" }}",
+    "lowPrice": "{{ $minPrice.price }}",
+    "highPrice": "{{ $maxPrice.price }}",
+    "offerCount": "{{ len $prices }}",
+    "url": "{{ $.Permalink }}"{{ with .Page.Params.product_info.priceValidUntil }},
     "priceValidUntil": "{{ . }}"{{ end }}
   }{{ end }}{{ with .Page.Params.aggregateRating }},
   "aggregateRating": {

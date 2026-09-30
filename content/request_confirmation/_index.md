@@ -2,7 +2,7 @@
 title: Booking Confirmation
 robots: noindex, nofollow
 sitemap:
-  exclude: true
+  disable: true
 ---
 Check your email within 24 hours — I'll send you all the details and payment information.
 

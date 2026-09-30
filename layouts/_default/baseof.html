@@ -1,0 +1,50 @@
+{{/*
+  Project override of the theme base template
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/_default/baseof.html).
+
+  Changes:
+  1. The body scripts (custom-script.html) and the analytics consent component
+     are placed before the closing </body> instead of after it, keeping the
+     document valid and ensuring the consent surface/loader sits in the body.
+  2. The skip link text is English ("Skip to main content") to match the site's
+     lang="en"; the theme shipped a Norwegian label.
+  3. Header, footer and the single main#main-content are unchanged. No extra
+     skip link is added.
+*/}}
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+<head>
+  {{ partial "seo/meta.html" . }}
+
+  {{ partial "utils/css.html" . }}
+  {{ partial "utils/js.html" . }}
+  {{ partial "utils/lucide-icons.html" . }}
+
+  {{ partial "custom-script-head.html" . }}
+</head>
+
+<body>
+
+  <a href="#main-content"
+     class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-1/2 focus:-translate-x-1/2 focus:z-[120] focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded-lg focus:shadow focus:outline-2 focus:outline-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline focus-visible:outline-solid">
+    Skip to main content
+  </a>
+
+  {{ partial "utils/breakpoint-indicator.html" . }}
+
+  {{ partial "layout/header.html" . }}
+
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "layout/footer.html" . }}
+
+  {{ partial "components/analytics-consent.html" . }}
+
+  {{ partial "custom-script.html" . }}
+
+</body>
+
+</html>

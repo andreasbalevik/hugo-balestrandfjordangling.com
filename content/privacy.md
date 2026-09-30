@@ -10,62 +10,42 @@ draft: false
 
 ## Introduction
 
-Balestrand Fjord Angling ("we", "our", or "us") respects your privacy and is committed to protecting your personal data. This privacy statement explains how we collect, use, and protect your information when you visit our website.
+Balestrand Fjord Angling ("we", "our", or "us") respects your privacy. This statement explains what we collect when you use this website, why we collect it, and the choices you have.
 
-## Information We Collect
+## Website analytics — your choice
 
-### Google Analytics
+This website can use Google Analytics and Google Tag Manager to understand how the site is used. These tools set cookies and send usage data (such as pages viewed, device and browser type, approximate location, and referring site) to Google.
 
-We use Google Analytics to understand how visitors interact with our website. Google Analytics collects information such as:
+We load analytics **only after you actively accept it** in the consent banner. If you reject, or make no choice, no analytics code is loaded and no analytics cookies are set. Accepting enables analytics storage; advertising storage, ad user data, and ad personalization remain denied, and we run no advertising tags.
 
-- Pages you visit
-- Time spent on pages
-- Browser type and version
-- Device type
-- Geographic location (country/city level)
-- Referring website
+## Changing or withdrawing your choice
 
-This data is collected through cookies and is used solely for website analytics and improvement purposes.
+You can reopen the consent banner at any time with the "Analytics settings" link in the footer. Choosing "Reject analytics" stores your refusal, clears the first-party Google Analytics cookies we can reach on this site, and reloads the page to stop any analytics code that was already running. Browser code cannot remove every possible third-party cookie, so this only clears the cookies visible from this site.
 
-## How We Use Your Information
+Your choice is stored in your browser's local storage under the key `bfa-analytics-consent`. If your browser blocks storage, the choice applies only to the current page visit and nothing is remembered.
 
-We use the collected information to:
+## Booking requests
 
-- Analyze website traffic and usage patterns
-- Improve our website content and user experience
-- Understand our audience demographics
+When you submit the booking request form, the details you enter — name, email address, requested date and time, number of guests, and your message — are sent through Netlify Forms and delivered to us by email so we can answer your request. We use these details only to handle your booking request and the trip it concerns. We keep booking correspondence for as long as needed to organise and document the trip, and delete it when it is no longer needed.
+
+We do not sell your details, and we do not use this form to send marketing email.
 
 ## Cookies
 
-Our website uses cookies from Google Analytics to collect usage statistics. You can control cookie settings through your browser preferences. Note that disabling cookies may affect website functionality.
+The only cookies this site sets are Google Analytics cookies, and only after you accept analytics. You can also block or delete cookies in your browser at any time.
 
-## Third-Party Services
+## Third-party services
 
-We use Google Analytics, a web analytics service provided by Google LLC. Google Analytics uses cookies to help analyze how users interact with our website. For more information on how Google uses data, please visit: [https://policies.google.com/privacy](https://policies.google.com/privacy)
+- **Google Analytics / Google Tag Manager** (Google LLC) — website analytics, loaded only after your consent. See https://policies.google.com/privacy
+- **Netlify** — hosting and form handling for the booking request. See https://www.netlify.com/privacy/
 
-## Data Retention
+## Your rights
 
-Google Analytics data is retained according to Google's standard retention policies. We do not store personal information directly on our servers.
+You can ask us what personal data we hold about you, ask us to correct or delete it, and object to how we use it. You can withdraw your analytics choice at any time as described above.
 
-## Your Rights
+## Contact us
 
-You have the right to:
-
-- Opt-out of Google Analytics tracking by installing the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
-- Control cookies through your browser settings
-- Request information about data we have collected
-
-## Contact Us
-
-If you have any questions about this privacy statement, please contact us at:
+For any privacy request, contact:
 
 **Email:** {{< param email >}}
 **Address:** {{< param address >}}
-
-## Changes to This Privacy Statement
-
-We may update this privacy statement from time to time. Any changes will be posted on this page with an updated revision date.
-
-
-**Best regards**
-**Cap. Tor**

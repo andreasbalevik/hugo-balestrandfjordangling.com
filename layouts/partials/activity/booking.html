@@ -1,46 +1,49 @@
 {{/*
-  Activity Booking Modal Form — renders a modal dialog for making booking requests
+  Activity Booking Modal Form — renders a native <dialog> for booking requests
 
   Hensikt:
-    Handles customer booking inquiries for activities. Opens a modal with form fields for
-    date, participant count, and special requests. Integrates with Decap CMS for form submission.
+    Handles customer booking inquiries for activities. Opens a native modal
+    dialog with form fields for date, participant count, and special requests.
+    Submits through Netlify Forms (no AJAX; the POST target is unchanged).
 
   Usage:
     Include in activity single pages or overview sections
     {{ partial "activity/booking" . }}
 
   Dependencies:
-    - Modal framework (data-modal-target attribute triggers modal with ID "crud-modal")
-    - Form submission handler in custom-script.html
+    - Shared dialog helpers in assets/js/activity-components.js
+      ([data-modal-target] opens, [data-modal-toggle] closes)
+    - Draft price script at the bottom of this partial
 */}}
 <!-- Booking Button -->
 {{ partial "components/buttons/booking" (dict "text" "Make a request") }}
 
 <!-- Booking Modal -->
-<div id="crud-modal" tabindex="-1" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
-    class="hidden fixed inset-0 z-[70] bg-black/75 overflow-y-auto overflow-x-hidden pt-[80px] sm:pt-[90px] md:pt-[100px] flex justify-center items-start">
+<dialog id="crud-modal"
+    aria-labelledby="modal-title"
+    aria-describedby="modal-intro"
+    class="m-0 h-full max-h-none w-full max-w-none border-0 bg-transparent p-0 backdrop:bg-black/75 open:flex open:items-start open:justify-center overflow-y-auto overflow-x-hidden overscroll-contain pt-[80px] sm:pt-[90px] md:pt-[100px]">
     <div class="relative p-4 w-full max-w-3xl mt-4 mb-8">
         <!-- Modal Content -->
-        <article class="relative bg-white rounded-lg shadow border border-gray-300">
+        <article class="relative bg-white rounded-lg shadow border border-fjord-pale">
             <!-- Modal Header -->
-            <header class="flex items-center justify-between p-4 md:p-6 border-b border-gray-300">
-                <h3 id="modal-title" class="mt-0 mb-0 text-xl md:text-2xl lg:text-3xl font-medium text-balance text-gray-900">
+            <header class="flex items-center justify-between p-4 md:p-6 border-b border-fjord-pale">
+                <h3 id="modal-title" tabindex="-1" class="mt-0 mb-0 text-xl md:text-2xl lg:text-3xl font-medium text-balance text-gray-900">
                     Make a request
                 </h3>
                 <button type="button"
-                    class="inline-flex justify-center items-center transition-colors duration-300 w-8 h-8 rounded-lg hover:bg-gray-200 hover:text-gray-900"
-                    data-modal-toggle="crud-modal">
+                    class="inline-flex justify-center items-center transition-colors duration-300 w-11 h-11 rounded-lg hover:bg-gray-200 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+                    data-modal-toggle="crud-modal"
+                    aria-label="Close booking request form">
                     <i data-lucide="x" class="w-4 h-4 text-gray-700"></i>
                 </button>
             </header>
 
             <!-- Booking Form -->
             <form class="p-6 md:p-8" name="booking" method="POST" data-netlify="true" action="/request_confirmation">
-                <div class="mb-6 p-4 border border-primary/20 rounded-lg bg-fjord-light">
-                    <p class="m-0 text-sm text-gray-700 leading-relaxed">
-                        You book directly with us — no agency, no booking fees.
-                    </p>
-                </div>
+                <p id="modal-intro" class="mb-6 p-4 border border-primary/20 rounded-lg bg-fjord-light text-sm text-gray-700 leading-relaxed">
+                    You book directly with us — no agency, no booking fees.
+                </p>
 
                 <div class="grid gap-6 mb-6 grid-cols-2">
 
@@ -65,9 +68,6 @@
                                         <span><strong>Duration:</strong> {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}</span>
                                     </div>
                                     {{ end }}
-                                    {{ with .Params.summary }}
-                                    <p class="text-base md:text-lg leading-relaxed mt-4">{{ . }}</p>
-                                    {{ end }}
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                     <!-- Full Name -->
                     <div class="col-span-2 sm:col-span-1">
                         <label for="name" class="block mb-4 text-base font-semibold text-gray-900">Full Name *</label>
-                        <input type="text" name="name" id="name"
+                        <input type="text" name="name" id="name" autocomplete="name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
                             placeholder="Enter full name" required>
                     </div>
@@ -84,7 +84,7 @@
                     <!-- Email -->
                     <div class="col-span-2 sm:col-span-1">
                         <label for="email" class="block mb-4 text-base font-semibold text-gray-900">Your email *</label>
-                        <input type="email" id="email" name="email"
+                        <input type="email" id="email" name="email" autocomplete="email" spellcheck="false"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
                             placeholder="name@example.com" required>
                     </div>
@@ -96,7 +96,7 @@
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <i data-lucide="calendar" class="w-4 h-4 text-gray-700"></i>
                             </div>
-                            <input id="date" name="date" type="date"
+                            <input id="date" name="date" type="date" autocomplete="off"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full ps-10 p-4 transition-colors duration-300"
                                 required>
                         </div>
@@ -155,6 +155,11 @@
                     </p>
                 </div>
 
+                <p class="mb-6 text-sm leading-relaxed text-gray-700">
+                    We use the contact details you enter only to answer this request. See our
+                    <a href="{{ site.Params.privacyUrl | default "/privacy" }}" class="text-primary-dark font-medium underline hover:no-underline">privacy statement</a>.
+                </p>
+
                 <!-- Submit Button -->
                 <div class="flex justify-center">
                     {{ partial "components/buttons/button" (dict "text" "Submit Request" "variant" "submit") }}
@@ -163,7 +168,7 @@
             </form>
         </article>
     </div>
-</div>
+</dialog>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {

@@ -11,7 +11,7 @@
         "page"             $
         "src"              .src
         "alt"              .alt
-        "description"      $.Params.summary
+        "description"      $.Params.description
         "mobileBackground" "white"
         "showTags"         true
         "showVardeBadge"   true
@@ -64,10 +64,11 @@
             <div class="md:col-span-2 p-6 md:p-8 bg-fjord-light md:border-l border-fjord-pale flex flex-col justify-center gap-4">
                 <p class="text-base font-semibold text-gray-900">Price from</p>
                 {{ with .Params.product_info.prices }}
-                {{ range first 1 . }}
-                <p class="text-3xl md:text-4xl font-semibold text-gray-900">{{ partial "components/format/price" .price }},- NOK</p>
+                {{/* "From" must be the cheapest option, not the first entry in the list. */}}
+                {{ $minPrice := index . 0 }}
+                {{ range . }}{{ if lt .price $minPrice.price }}{{ $minPrice = . }}{{ end }}{{ end }}
+                <p class="text-3xl md:text-4xl font-semibold text-gray-900">{{ partial "components/format/price" $minPrice.price }},- NOK</p>
                 <p class="text-sm text-gray-700">Final price depends on group size.</p>
-                {{ end }}
                 {{ end }}
 
                 <div id="primary-booking-cta">

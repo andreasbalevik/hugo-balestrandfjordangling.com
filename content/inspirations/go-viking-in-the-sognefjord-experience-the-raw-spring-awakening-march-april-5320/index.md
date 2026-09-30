@@ -36,7 +36,7 @@ related_activities:
   - premium-skill-master-the-long-line-–-authentic-fjord-fishing-immersion-0003/index
 cms: true
 ---
-# Trade Winter for the Fjord's Wild Heart
+## Trade Winter for the Fjord's Wild Heart
 
 To go viking in the fjords is best experienced during the raw energy of March and May. This is when the Sognefjord truly wakes up, offering a powerful blend of tranquility and vitality. We base our immersive tours from both Balestrand and the charming [Fjærland Fjordstove Hotel HERE](https://fjaerlandhotel.com/) letting you choose your perfect adventure hub.
 
