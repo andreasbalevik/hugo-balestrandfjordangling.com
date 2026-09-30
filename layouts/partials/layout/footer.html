@@ -6,12 +6,10 @@
   1. The email link can shrink and wrap: min-w-0 on the flex link plus
      wrap-anywhere on the text span, so a long address cannot force horizontal
      document scroll on narrow (320px) viewports.
-  2. Adds an "Analytics settings" control that reopens the consent surface
-     (see components/analytics-consent.html). The surface exists in every
-     context; whether a build may actually load analytics is decided by
-     utils/analytics-enabled.html and passed to the consent script.
-  3. Everything else (columns, social links, bottom bar, to-top button) is
-     unchanged.
+  2. Everything else (columns, social links, bottom bar, to-top button) is
+     unchanged. The analytics settings control lives in the privacy statement
+     (shortcodes/analytics-settings.html), which the Information column already
+     links to; the footer does not duplicate it.
 */}}
 <footer class="bg-gray-900 text-white">
   <!-- Main Footer Content -->
@@ -128,7 +126,6 @@
             {{ with site.Params.privacyUrl }}
             <li><a href="{{ . }}" class="hover:text-white transition-colors duration-300">{{ i18n "privacyPolicy" | default "Privacy Policy" }}</a></li>
             {{ end }}
-            <li><button type="button" data-analytics-settings class="text-left hover:text-white transition-colors duration-300">{{ i18n "analyticsSettings" | default "Analytics settings" }}</button></li>
           </ul>
         </div>
         {{ end }}

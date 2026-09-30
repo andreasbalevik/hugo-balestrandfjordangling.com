@@ -4,9 +4,14 @@
   A centred modal card (native <dialog>, opened with showModal) so the visitor
   makes the choice deliberately:
   - "Accept analytics" is the filled primary action, full width, 48px tall.
-  - "Reject analytics" is a plain text control inside the copy below it — one
-    click, 44px hit area, AAA contrast and a visible focus ring, so it stays a
+  - "Reject analytics" is a plain text control directly under it — one click,
+    44px hit area, AAA contrast and a visible focus ring, so refusal stays a
     real and reachable choice rather than a hidden one.
+
+  The card holds the heading, a short explanation with the privacy statement
+  link, and the two choices — nothing below them. Changing the choice later
+  happens on /privacy/ (see shortcodes/analytics-settings.html), which also
+  documents what the choice stores.
 
   Whether this build may actually load GA4/GTM after an accept is decided by
   utils/analytics-enabled.html and passed as data-analytics-enabled; the script
@@ -32,23 +37,20 @@
             Analytics
         </h2>
         <p class="mb-6 text-base leading-relaxed text-gray-800">
-            We would like to use Google Analytics to understand which pages help visitors plan a trip on the
-            Sognefjord, where people get stuck, and which activities they look at. Nothing is loaded before you
-            decide, and we never use it for advertising.
-        </p>
-        <button type="button" data-consent-accept
-            class="mb-5 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-primary-dark px-6 text-base font-semibold text-white transition-colors duration-200 hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-            Accept analytics
-        </button>
-        <p class="m-0 text-base leading-relaxed text-gray-800">
-            Your choice is stored in this browser and can be changed later under
-            &ldquo;Analytics settings&rdquo; in the footer. Read our
+            Google Analytics helps us see which pages visitors use. Nothing is loaded before you choose, and you can
+            change your choice later in our
             <a href="{{ $privacy }}" class="font-medium text-primary-dark underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">privacy statement</a>.
-            If you would rather not be measured, you can
-            <button type="button" data-consent-reject
-                class="-my-3 inline-flex min-h-11 items-center py-3 font-medium text-primary-dark underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">reject
-                analytics</button> and nothing will be loaded.
         </p>
+        <div class="flex flex-col">
+            <button type="button" data-consent-accept
+                class="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-primary-dark px-6 text-base font-semibold text-white transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                Accept analytics
+            </button>
+            <button type="button" data-consent-reject
+                class="mx-auto mt-2 inline-flex min-h-11 items-center px-4 text-base font-medium text-primary-dark underline transition-colors duration-200 hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                Reject analytics
+            </button>
+        </div>
     </div>
 </dialog>
 

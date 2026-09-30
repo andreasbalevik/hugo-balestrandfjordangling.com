@@ -59,26 +59,30 @@ that choice, and a rejection keeps analytics permanently off.
   GTM/GA4 ids as data attributes, and loads
   `assets/js/analytics-consent.js`.
 - The surface is a centred modal card so the visit starts with a deliberate
-  choice: "Accept analytics" is the filled primary action (full width, 48px),
-  while "Reject analytics" is a one-click text control inside the copy below it
-  (44px hit area, same 7.7:1 AAA contrast). Focus starts on the dialog heading,
-  Escape closes without storing a choice, and the surface returns on the next
-  page load.
+  choice: a short explanation with the privacy statement link, then "Accept
+  analytics" as the filled primary action (full width, 48px) and "Reject
+  analytics" as a one-click text control directly under it (44px hit area, same
+  7.7:1 AAA contrast). Nothing sits below the two choices. Focus starts on the
+  dialog heading, Escape closes without storing a choice, and the surface
+  returns on the next page load.
 - `layouts/partials/utils/analytics-enabled.html` decides whether a build may
   load analytics at all (it reads Netlify's `CONTEXT`; `config.toml` allowlists
   `os.Getenv` under `[security.funcs]`). Development and deploy previews/branch
   deploys render the surface but pass `data-analytics-enabled="false"`, so the
   script stores a choice without ever injecting a loader.
-- The choice is stored in `localStorage` under `bfa-analytics-consent`. The
-  footer "Analytics settings" control reopens the dialog. Rejecting also clears
-  the first-party GA cookies and reloads.
+- The choice is stored in `localStorage` under `bfa-analytics-consent`. It is
+  changed on the privacy statement: `content/privacy.md` uses the
+  `analytics-settings` shortcode (`layouts/shortcodes/analytics-settings.html`)
+  to render the control that reopens the dialog, and the footer links to that
+  page instead of duplicating it. Rejecting also clears the first-party GA
+  cookies and reloads.
 - With JavaScript disabled the dialog stays closed (no `open` attribute), no
   analytics is loaded, and normal reading/booking is unaffected.
 
 Manual checks: load a page with no stored choice (centred dialog appears, never
 in a background tab, no GA/GTM request), choose accept (requests appear on
 production, none on dev/preview), choose reject (cookies cleared, page reloads,
-no analytics), then reopen via the footer control and withdraw.
+no analytics), then withdraw from the control on `/privacy/`.
 
 ## Project overrides
 
@@ -92,8 +96,8 @@ what differs.
   causing horizontal scroll at 320px.
 - `layouts/_default/home.html` — home hero card image is `eager`/`fetchpriority
   high`.
-- `layouts/partials/layout/footer.html` — footer email wraps; "Analytics
-  settings" control.
+- `layouts/partials/layout/footer.html` — footer email wraps; links to the
+  privacy statement for the analytics choice.
 - `layouts/partials/layout/mobile-menu-button.html` — English accessible name,
   44×44px target.
 - `layouts/partials/dns-prefetch.html` — preconnect list trimmed to the origins
@@ -122,6 +126,14 @@ what differs.
 
 When the theme is upgraded, an override can be dropped once the theme covers the
 same behaviour.
+
+Files that are new in the project rather than overrides:
+
+- `layouts/partials/components/analytics-consent.html` — the consent surface.
+- `layouts/shortcodes/analytics-settings.html` — the "Change my analytics
+  choice" control used by `content/privacy.md`; it binds to the consent script
+  through `data-analytics-settings`.
+- `assets/js/analytics-consent.js` — the consent gate and loader injection.
 
 ## Manual verification recipes
 
