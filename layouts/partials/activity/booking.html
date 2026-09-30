@@ -35,7 +35,7 @@
                     class="inline-flex justify-center items-center transition-colors duration-300 w-11 h-11 rounded-lg hover:bg-gray-200 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
                     data-modal-toggle="crud-modal"
                     aria-label="Close booking request form">
-                    <i data-lucide="x" class="w-4 h-4 text-gray-700"></i>
+                    <i data-lucide="x" class="w-4 h-4 text-gray-700" aria-hidden="true"></i>
                 </button>
             </header>
 
@@ -52,7 +52,7 @@
                     <input type="hidden" name="quality" value="{{ .Params.quality }}">
 
                     <!-- Activity Summary with Image -->
-                    <div class="col-span-2 p-4 md:p-4 bg-gray-100 rounded-lg border border-gray-300">
+                    <div class="col-span-2 p-4 md:p-4 bg-fjord-light rounded-lg border border-fjord-pale">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {{ with index .Params.images 0 }}
                             <div class="md:col-span-1">
@@ -64,7 +64,7 @@
                                 <div class="space-y-2">
                                     {{ with .Params.product_info.duration }}
                                     <div class="flex items-center text-base">
-                                        <i data-lucide="clock" class="w-5 h-5 mr-2 text-primary"></i>
+                                        <i data-lucide="clock" class="w-5 h-5 mr-2 text-primary" aria-hidden="true"></i>
                                         <span><strong>Duration:</strong> {{ .hours }}h{{ with .minutes }} {{ . }}m{{ end }}</span>
                                     </div>
                                     {{ end }}
@@ -78,7 +78,7 @@
                         <label for="name" class="block mb-4 text-base font-semibold text-gray-900">Full Name *</label>
                         <input type="text" name="name" id="name" autocomplete="name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
-                            placeholder="Enter full name" required>
+                            placeholder="Enter full name" autocomplete="name" required>
                     </div>
 
                     <!-- Email -->
@@ -86,7 +86,7 @@
                         <label for="email" class="block mb-4 text-base font-semibold text-gray-900">Your email *</label>
                         <input type="email" id="email" name="email" autocomplete="email" spellcheck="false"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300"
-                            placeholder="name@example.com" required>
+                            placeholder="name@example.com" autocomplete="email" spellcheck="false" required>
                     </div>
 
                     <!-- Date -->
@@ -94,11 +94,11 @@
                         <label for="date" class="block mb-4 text-base font-semibold text-gray-900">Date *</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <i data-lucide="calendar" class="w-4 h-4 text-gray-700"></i>
+                                <i data-lucide="calendar" class="w-4 h-4 text-gray-700" aria-hidden="true"></i>
                             </div>
                             <input id="date" name="date" type="date" autocomplete="off"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full ps-10 p-4 transition-colors duration-300"
-                                required>
+                                autocomplete="off" required>
                         </div>
                     </div>
 
@@ -143,13 +143,13 @@
                         <label for="message" class="block mb-4 text-base font-semibold text-gray-900">Message *</label>
                         <textarea id="message" name="message" rows="4"
                             class="block p-4 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary focus:border-primary transition-colors duration-300"
-                            placeholder="Tell us about yourself..." required></textarea>
+                            placeholder="Tell us about yourself…" required></textarea>
                     </div>
 
                 </div>
 
                 <!-- Important Notice -->
-                <div class="p-4 mb-6 border border-gray-300 rounded-lg bg-white">
+                <div class="p-4 mb-6 border border-fjord-pale rounded-lg bg-white">
                     <p class="text-sm leading-relaxed m-0">
                         <strong class="text-gray-900">Important:</strong> Your request is confirmed only after you receive a confirmation email. Payment is due on the day of the tour. Cancellations by email up to 2 working days before.
                     </p>

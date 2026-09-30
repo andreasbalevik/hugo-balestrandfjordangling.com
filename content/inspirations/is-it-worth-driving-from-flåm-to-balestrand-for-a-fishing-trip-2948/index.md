@@ -23,7 +23,7 @@ A: Absolutely! You have traveled all the way to Norway for an authentic fjord ex
 
 Book accommodation at [Balestrand Fjord Apartments in an apartments](https://www.fjordapartments.no/en/) for 4 or 8 people at the link here
 
-Book a Balestrand fjord angling trip departure 12:00
+Book a Balestrand fjord angling trip departure 12:00 (early birds) or 15:00 if you travel from Flaam the same day
 
 ### Q: What is the easiest way to travel between Flåm/Aurland and Balestrand?
 
@@ -53,7 +53,11 @@ Alternative route: Consider the route via Borgund Stave Church in Lærdal or Urn
 
 ### Q: Why is an overnight stay recommended?
 
-**A: Flåm is great, but Balestrand is historical and relaxed.** An overnight stay allows you to experience both places as "pearls on a string" and gives you the peace to enjoy both [breakfast at Kviknes Hotel ](https://www.kviknes.no/restaurant-kviknes)and an evening stroll.
+**A: Flåm is great, but Balestrand is historical and relaxed.** An overnight stay allows you to experience both places as "pearls on a string" and gives you the peace to enjoy both =>[breakfast at Kviknes Hotel ](https://www.kviknes.no/restaurant-kviknes)and an evening stroll.
+
+**Balestrand Fjord Apartments.**  Apartments for 4 and 8 people at attractive prices. Very easy and convenient if you are arriving from Flåm by express boat, or if you have a rental car and want to park right below. [\=> Balestrand Fjord Apartments link here](https://www.fjordapartments.no/en/)
+
+**Sognefjord Cabins 5 minutes walk from us.** Convenient, with parking right outside the door. Lovely views and well-kept grounds, featuring a white sand beach and a sauna. Many of our guests seek this kind of fjord experience alongside our unique fishing trip adventures! [\=> Sognefjord Cabins link here](https://www.sognefjordcabins.com/)
 
 ### Captain Tor Summarized:
 
@@ -61,3 +65,5 @@ Alternative route: Consider the route via Borgund Stave Church in Lærdal or Urn
 **Philosophy:** Life is a journey, and the road is the destination.
 **Authenticity:** ["You can go viking in the fjords with Captain Tor"](https://balestrandfjordangling.com/inspirations/go-viking-in-the-sognefjord-experience-the-raw-spring-awakening-march-april-5320/) – this is authentic cultural heritage.
 **Explore more than just Flåm** – [Discover the whole Sognefjord region!](https://en.sognefjord.no/)
+
+> *Experience and stay in authentic, convenient Balestrand.=> [Explore the area and go hiking on marked trails](https://www.sognefjord.no/fjordbygd/balestrand/vandring-i-balestrand/). Create your own stories in a historic setting. Close to the fjord, nature, and yourself!*

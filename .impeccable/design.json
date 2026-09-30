@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-02T06:54:01.204Z",
+  "title": "Design System: Balestrand Fjord Angling",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Fjord Teal",
+        "canonical": "#1e6b80",
+        "tonalRamp": [
+          "#0c2b33",
+          "#12404d",
+          "#185666",
+          "#1e6b80",
+          "#5690a0",
+          "#8fb5c0",
+          "#bcd3d9",
+          "#dde9ec"
+        ]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Fjord Teal Deep",
+        "canonical": "#175a6c",
+        "tonalRamp": [
+          "#09242b",
+          "#0e3641",
+          "#124856",
+          "#175a6c",
+          "#518391",
+          "#8badb6",
+          "#b9ced3",
+          "#dce6e9"
+        ]
+      },
+      "success": {
+        "role": "semantic",
+        "displayName": "Confirmation Green",
+        "canonical": "#0f7f20",
+        "tonalRamp": [
+          "#06330d",
+          "#094c13",
+          "#0c661a",
+          "#0f7f20",
+          "#4b9f58",
+          "#87bf90",
+          "#b7d9bc",
+          "#dbecde"
+        ]
+      },
+      "warning": {
+        "role": "semantic",
+        "displayName": "Signal Amber",
+        "canonical": "#e8b43a",
+        "tonalRamp": [
+          "#5d4817",
+          "#8b6c23",
+          "#ba902e",
+          "#e8b43a",
+          "#eec76b",
+          "#f4da9d",
+          "#f8e9c4",
+          "#fcf4e1"
+        ]
+      },
+      "fjord": {
+        "role": "neutral",
+        "displayName": "Deep Fjord",
+        "canonical": "#1d3640",
+        "tonalRamp": [
+          "#0c161a",
+          "#112026",
+          "#172b33",
+          "#1d3640",
+          "#566870",
+          "#8e9ba0",
+          "#bbc3c6",
+          "#dde1e2"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Fjord Mist",
+        "canonical": "#769ba4",
+        "tonalRamp": [
+          "#2f3e42",
+          "#475d62",
+          "#5e7c83",
+          "#769ba4",
+          "#98b4bb",
+          "#bbcdd2",
+          "#d6e1e4",
+          "#eaf0f1"
+        ]
+      },
+      "fjord-light": {
+        "role": "neutral",
+        "displayName": "Fjord Light",
+        "canonical": "#f0f7fb",
+        "tonalRamp": [
+          "#606364",
+          "#909497",
+          "#c0c6c9",
+          "#f0f7fb",
+          "#f4f9fc",
+          "#f8fbfd",
+          "#fbfdfe",
+          "#fdfefe"
+        ]
+      },
+      "fjord-pale": {
+        "role": "neutral",
+        "displayName": "Fjord Pale",
+        "canonical": "#deeef7",
+        "tonalRamp": [
+          "#595f63",
+          "#858f94",
+          "#b2bec6",
+          "#deeef7",
+          "#e6f2f9",
+          "#eff7fb",
+          "#f5fafd",
+          "#fafcfe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles and hero heading. One per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, optionally with the small teal divider."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles; turns teal on group hover."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Relaxed prose, comfortable line length."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Short functional uppercase labels only, never default decoration."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 1px 3px rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "purpose": "The only shadow in the system; static under cards, never grows on hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "color-shift",
+        "value": "transition: background-color 200ms, color 200ms",
+        "purpose": "The standard and sufficient hover response on buttons and links."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "transform 300ms; translateX(2px-4px) on the arrow only",
+        "purpose": "The one permitted movement; the element itself stands still."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default CTA for links to pages; fjord teal with the established right arrow.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><span>View activity</span><svg class=\"ds-arrow\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 12H5m14 0-4 4m4-4-4-4\"/></svg></a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#1e6b80;color:#fff;font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:18px;padding:16px 32px;border-radius:8px;text-decoration:none;transition:background-color 200ms}.ds-btn-primary:hover{background:rgb(30 107 128 / 0.9)}.ds-btn-primary:focus-visible{outline:2px solid #1e6b80;outline-offset:2px}.ds-btn-primary .ds-arrow{transition:transform 300ms}.ds-btn-primary:hover .ds-arrow{transform:translateX(4px)}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Alternative CTA on colored or dark backgrounds only; white on white is invisible.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\"><span>Read more</span><svg class=\"ds-arrow\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 12H5m14 0-4 4m4-4-4-4\"/></svg></a>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;border:1px solid #deeef7;color:#111827;font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:18px;padding:16px 32px;border-radius:8px;text-decoration:none;transition:background-color 200ms}.ds-btn-secondary:hover{background:#f0f7fb}.ds-btn-secondary:focus-visible{outline:2px solid #111827;outline-offset:2px}.ds-btn-secondary .ds-arrow{transition:transform 300ms}.ds-btn-secondary:hover .ds-arrow{transform:translateX(4px)}"
+    },
+    {
+      "name": "Submit Button",
+      "kind": "button",
+      "refersTo": "button-submit",
+      "description": "Confirmation green, reserved for form submission in the booking flow.",
+      "html": "<button class=\"ds-btn-submit\" type=\"submit\"><span>Send request</span></button>",
+      "css": ".ds-btn-submit{display:inline-flex;align-items:center;background:#0f7f20;color:#fff;border:none;font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:18px;padding:16px 32px;border-radius:8px;cursor:pointer;transition:background-color 200ms}.ds-btn-submit:hover{background:rgb(15 127 32 / 0.9)}.ds-btn-submit:focus-visible{outline:2px solid #1e6b80;outline-offset:2px}"
+    },
+    {
+      "name": "Story Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Nature photo, title, necessary info; soft static shadow, teal title on hover, arrow link pinned to the bottom.",
+      "html": "<article class=\"ds-card\"><a class=\"ds-card-link\" href=\"#\" aria-label=\"Read story\"><div class=\"ds-card-img\"></div><div class=\"ds-card-body\"><h3 class=\"ds-card-title\">A morning on the Sognefjord</h3><p class=\"ds-card-text\">What the trip is like, who it suits, and what to bring.</p><span class=\"ds-card-cta\">Read story<svg class=\"ds-arrow\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 12H5m14 0-4 4m4-4-4-4\"/></svg></span></div></a></article>",
+      "css": ".ds-card{width:340px;overflow:hidden;border-radius:8px;border:1px solid #deeef7;background:#fff;box-shadow:0 1px 3px rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1)}.ds-card-link{display:flex;flex-direction:column;height:100%;text-decoration:none}.ds-card-link:focus-visible{outline:2px solid #1e6b80;outline-offset:2px}.ds-card-img{aspect-ratio:3/2;background:linear-gradient(160deg,#769ba4,#1d3640)}.ds-card-body{display:flex;flex:1;flex-direction:column;padding:20px}.ds-card-title{margin:0 0 12px;font-family:Inter,system-ui,sans-serif;font-weight:500;font-size:20px;line-height:1.375;letter-spacing:-0.01em;color:#1d3640;transition:color 300ms}.ds-card-link:hover .ds-card-title{color:#1e6b80}.ds-card-text{margin:0;font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.625;color:#374151}.ds-card-cta{align-self:flex-end;margin-top:auto;padding-top:20px;display:inline-flex;align-items:center;gap:4px;font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:15px;color:#374151;transition:color 300ms}.ds-card-link:hover .ds-card-cta{color:#1e6b80}.ds-card-cta .ds-arrow{transition:transform 300ms}.ds-card-link:hover .ds-card-cta .ds-arrow{transform:translateX(2px)}"
+    },
+    {
+      "name": "Activity Meta Badges",
+      "kind": "chip",
+      "refersTo": "card",
+      "description": "Duration and group size with teal icons; used only where the shape informs faster than words.",
+      "html": "<div class=\"ds-meta\"><span class=\"ds-badge\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z\" clip-rule=\"evenodd\"/></svg><span class=\"ds-badge-text\">Duration 3h 30m</span></span><span class=\"ds-badge\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path fill-rule=\"evenodd\" d=\"M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Z\" clip-rule=\"evenodd\"/></svg><span class=\"ds-badge-text\">Your group · up to 7</span></span></div>",
+      "css": ".ds-meta{display:flex;align-items:center;gap:20px;font-family:Inter,system-ui,sans-serif;font-size:14px;color:#111827}.ds-badge{display:inline-flex;align-items:center;gap:6px;color:#1e6b80}.ds-badge-text{font-weight:500;color:#111827}"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Title, optional short description, optional small teal divider; no eyebrow by default.",
+      "html": "<header class=\"ds-heading\"><h2 class=\"ds-heading-title\">Inspiration from the fjord</h2><div class=\"ds-heading-divider\"></div><p class=\"ds-heading-desc\">Stories and practical tips from our life on the Sognefjord.</p></header>",
+      "css": ".ds-heading{text-align:left;font-family:Inter,system-ui,sans-serif}.ds-heading-title{margin:0 0 20px;font-weight:500;font-size:30px;letter-spacing:-0.025em;color:#111827}.ds-heading-divider{width:48px;height:4px;background:#1e6b80;border-radius:9999px}.ds-heading-desc{margin:16px 0 0;max-width:42rem;font-size:18px;line-height:1.625;color:rgb(17 24 39 / 0.8)}"
+    },
+    {
+      "name": "Quote Band",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "The one large dark surface besides the footer: a personal Captain Tor quote between content sections.",
+      "html": "<section class=\"ds-quote\"><blockquote class=\"ds-quote-text\">Simplicity creates emotions. No middlemen, no scripts, just the raw nature, the good stories, and time by the fjord.</blockquote><cite class=\"ds-quote-cite\">Captain Tor</cite></section>",
+      "css": ".ds-quote{background:#1d3640;padding:48px 32px;text-align:center;border-radius:8px}.ds-quote-text{margin:0 auto;max-width:44rem;font-family:Inter,system-ui,sans-serif;font-weight:500;font-size:22px;line-height:1.5;color:#fff}.ds-quote-cite{display:block;margin-top:16px;font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#deeef7;font-style:normal}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hjemme ved fjorden (Home by the fjord)",
+    "overview": "The site should look like the website of a small family business that knows the fjord better than it knows marketing. Tidy and easy to use, but never so polished it could be mistaken for a travel chain, a booking platform, or a generated company template. Three words: personal, simple, real. The design does not need to be perfect or symmetrical; no decoration is added just to make things look finished. The test for every element: would a small family business need this to explain the trip?",
+    "keyCharacteristics": [
+      "Real photos from the Sognefjord, the boat, the guests, and the family",
+      "White and pale-fjord surfaces; dark band reserved for the personal quote",
+      "Still elements: color change on hover only; only the arrow may move",
+      "One clear heading per section; eyebrows and dividers are exceptions",
+      "Ordinary sentences and letter casing; written as Tor would explain it face to face"
+    ],
+    "rules": [
+      {
+        "name": "The Still Water Rule",
+        "body": "White and fjord-light are the standard surfaces. The dark fjord band is used only when the content needs dark contrast, never as an automatic brand moment.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Accent Rule",
+        "body": "Teal marks what is clickable or worth noticing. If everything is teal, nothing is.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plain Speech Rule",
+        "body": "Ordinary sentences and normal letter casing; no glossy marketing words when a plain word says the same.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Heading Rule",
+        "body": "One clear heading per section. Do not add eyebrow and divider as fixed recipe decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Standing Still Rule",
+        "body": "No lift, scaling, shadow growth, or unnecessary movement on cards and buttons. A simple color change on hover is enough; only the arrow may nudge. Focus is always visible.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Remove an unnecessary element rather than restyle it; reuse existing Tailwind classes and tokens",
+      "Let real photos be the proof",
+      "Keep hover to a color change plus the arrow nudge",
+      "Keep focus always visible; never sacrifice contrast, readability, touch sizes, or the booking flow",
+      "Verify on mobile and desktop; uneven rows from real content are welcome",
+      "Write in first person where it fits"
+    ],
+    "donts": [
+      "No lift, scale, shadow growth, or movement on cards and buttons on hover",
+      "No stacking border + radius + shadow + badge + hover animation on one card",
+      "No eyebrow labels, decorative dividers, or icon circles as default recipe",
+      "No luxury or scale language, urgency, discounts, or artificial social proof",
+      "No ALL-CAPS content titles; uppercase is for short functional labels only",
+      "No new fonts, dark brand bands without informational content, or decorative illustrations on top of photos",
+      "Do not polish away personality or natural differences"
+    ]
+  }
+}
