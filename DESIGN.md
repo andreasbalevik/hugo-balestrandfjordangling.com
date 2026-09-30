@@ -151,8 +151,8 @@ are measured against white (WCAG 2.1: 4.5:1 AA, 7:1 AAA for normal text).
 
 | Token | Value | On white | Use |
 | --- | --- | --- | --- |
-| `primary` | `#1e6b80` | **6.05:1** | Accent text, links, icons, focus ring. AA only — never the base of a filled button. |
-| `primary-dark` | `#175a6c` | **7.73:1** | Filled primary button background, consent accept, active emphasis. |
+| `primary` | `#1e6b80` | **6.05:1** | Decoration and graphics: divider bars, icon washes, borders, focus ring. Never text on a light surface. |
+| `primary-dark` | `#175a6c` | **7.73:1** | Every accent text and icon tone (links, eyebrows, quality badges, card hover, active nav) and the filled primary button base. |
 | `primary-darker` | `#0f4250` | **10.96:1** | Hover/pressed for filled buttons and hover for accent text. |
 | `success` | `#0b6519` | **7.27:1** | Submit and booking actions. |
 | `success-darker` | `#07460f` | **11.10:1** | Hover for submit and booking actions. |
@@ -162,10 +162,11 @@ are measured against white (WCAG 2.1: 4.5:1 AA, 7:1 AAA for normal text).
 | `fjord-light` | `#f0f7fb` | 1.08:1 | Calm alternating section surface; hover fill for secondary buttons. |
 | `fjord-pale` | `#deeef7` | 1.19:1 | 1px card and input borders. |
 
-Category chip backgrounds come from content (`color` in `content/tags/*/_index.md`): `#456b50` 6.05:1, `#3a6a9a`
-5.66:1, `#666688` 5.50:1, default `#1d3640` 12.70:1. White chip text is `text-xl`, which is still normal text under
-WCAG (large text starts at 24px), so these are AA, not AAA. Any new category colour must reach at least 4.5:1 with
-white.
+Category chip and tag-band backgrounds come from content (`color` in `content/tags/*/_index.md`): `#3b5b44` 7.59:1,
+`#2f567c` 7.66:1, `#52526e` 7.52:1, default `#1d3640` 12.70:1. White chip text is `text-xl`, which is still normal
+text under WCAG (large text starts at 24px), so **every value must reach 7:1 with white text** — the section band on
+`tags/list.html` uses the same colour behind the page title and description. The value lives in the file (the CMS tag
+collections do not expose it) and each file repeats the rule above the value.
 
 ### Named Rules
 **The Still Water Rule.** White and `fjord-light` are the standard surfaces. The dark `fjord` band is used only when the
@@ -173,9 +174,13 @@ content needs dark contrast (the personal quote), never as an automatic "brand m
 
 **The One Accent Rule.** Teal marks what is clickable or worth noticing. If everything is teal, nothing is.
 
-**The Seven-One Rule.** Text on a token surface must reach 7:1 where the palette allows it. `primary` (6.05:1) is for
-accent text and 24px+ display; filled buttons start at `primary-dark` (7.73:1) so white label text is AAA; `mist` and
-`warning` are never text on a light surface.
+**The Seven-One Rule.** Text on a token surface must reach 7:1 where the palette allows it. `primary` (6.05:1) is the
+decoration tone and never text; accent text and icons use `primary-dark` (7.73:1); filled buttons start at
+`primary-dark` (7.73:1) so white label text is AAA; `mist` and `warning` are never text on a light surface.
+
+**The Scrim Rule.** Text that sits on a photo is read against the scrim, not the photo: the hero panel carries its own
+95% fjord scrim, so the text clears 7:1 even where a white cloud or sky sits behind it. Do not move overlay text off
+that scrim, and do not lighten it.
 
 ## Typography
 
@@ -188,12 +193,13 @@ weight `500` with letter-spacing `-0.015em`.
 | --- | --- | --- |
 | Display | `text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance` | Page `h1`: activities list, and the hero in its `alwaysOverlay` form. The hero's default form is `text-2xl md:text-4xl lg:text-5xl text-white` with the panel in flow under the image on mobile; `mobileBg: "white"` starts at `text-gray-900` and turns white from `md` up. |
 | Headline | `text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance` | Section `h2` from `section-heading.html` |
-| Title | `text-xl md:text-2xl font-medium text-balance text-gray-900 group-hover:text-primary transition-colors duration-200` | Card titles, compact panels |
+| Title | `text-xl md:text-2xl font-medium text-balance text-gray-900 group-hover:text-primary-dark transition-colors duration-200` | Card titles (`h2` in the list templates), compact panels |
 | Body (prose) | `prose md:prose-lg lg:prose-xl max-w-4xl mx-auto` with `leading-relaxed` | Article and activity description |
 | Body (UI) | `text-base md:text-lg leading-relaxed` | Descriptions, form labels |
+| Body on a tinted surface | `text-gray-800` (never `text-gray-900/80`) | Section descriptions; `fjord-light` bands |
 | Small | `text-sm leading-relaxed text-gray-700` | Card summary (`line-clamp-3`), meta rows |
 | Label | `text-sm font-semibold uppercase tracking-widest` | Eyebrow, quality badge |
-| Micro | `text-xs font-medium text-gray-500` | "From" above a price |
+| Micro | `text-xs font-medium text-gray-700` | "From" above a price |
 
 Prices are formatted by `components/format/price.html`: values ≥ 10 000 are printed with a space as the thousands
 separator (`12000` → `12 000`), everything else as-is. Always call the partial instead of formatting inline.
@@ -279,8 +285,8 @@ overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary/40`; 
 
 ### Chips, badges and labels
 - **Meta badges** (`activity/meta-badges.html`) — icon + `font-medium` text, no pill chrome: `Duration 1h 30m`,
-  `Your group · up to 7`. Teal icon (`w-4 h-4 text-primary`), `aria-hidden`.
-- **Quality badge** (`activity/quality-badge.html`) — `text-sm font-semibold text-primary uppercase tracking-widest`,
+  `Your group · up to 7`. Teal icon (`w-4 h-4 text-primary-dark`), `aria-hidden`.
+- **Quality badge** (`activity/quality-badge.html`) — `text-sm font-semibold text-primary-dark uppercase tracking-widest`,
   one line above the title on the activity page. The value is free text from `quality:` in front matter.
 - **Category buttons** (`components/tag-buttons.html`) — `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`, each a link
   wrapping a `text-xl text-white p-6 text-center rounded-lg shadow-sm border border-black/5` block whose
@@ -290,16 +296,25 @@ overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary/40`; 
   border-fjord-pale bg-white text-sm font-medium`, `aria-label`, `aria-controls`, `aria-expanded`.
 
 ### Section heading — `components/section-heading.html`
-Title (Headline), optional description (`max-w-2xl`, `text-lg md:text-xl leading-relaxed text-pretty text-gray-900/80`),
-optional teal divider, optional eyebrow (`Label`, off by default). Alignment defaults to center. The front-page "Why
+Title (Headline), optional description (`max-w-2xl`, `text-lg md:text-xl leading-relaxed text-pretty text-gray-800`,
+solid rather than a translucent `gray-900/80`, so it also clears 7:1 on the `fjord-light` band), optional teal divider,
+optional eyebrow (`Label`, `text-primary-dark`, off by default). Alignment defaults to center. The front-page "Why
 choose us" USP block is the sanctioned eyebrow exception.
 
 ### Hero — `components/hero/image.html` (signature)
 One panel that sits under the image on mobile and becomes an overlay from `md` up, so the page renders exactly one
-`h1`. Title `text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg`, description
-`text-base md:text-xl text-white/80 md:drop-shadow`, optional back-link chip. The home page pairs it with a blurred
-photo background and a white framed card — the conscious, pinned exception to the flat simplicity everywhere else.
-Preserve it.
+`h1`. Title `text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg`, label and description `text-white/90`.
+The overlay variants add their own scrim on the panel — `bg-gradient-to-t from-fjord/95 via-fjord/95 via-88%
+to-transparent`, held at 95% up to 88% of the panel height, which is above the text block at every breakpoint — and the
+photo gradient (`from-fjord/90 via-fjord/90 via-45% to-transparent` by default, overridable through the `gradient`
+parameter) only shapes the photo. Measured on the rendered pages (glyph pixels against the pixel behind them) the
+worst case leaves the title at 12.9:1 and the label/description at 10.6:1, including where a white cloud sits behind
+them; see The Scrim Rule.
+`alwaysOverlay` keeps the panel over the photo at every breakpoint, `mobileBackground: "fjord"` (default) uses an
+opaque fjord panel under the image on mobile, and `mobileBackground: "white"` uses the white glass panel with
+`text-gray-700`/`text-gray-900` on mobile. Optional badge area for tags, the Varde quality mark and a back-link chip.
+The home page pairs it with a blurred photo background and a white framed card — the conscious, pinned exception to
+the flat simplicity everywhere else. Preserve it.
 
 ### Quote band — `components/statement-band.html` (signature)
 Dark `fjord` band with a decorative `"` glyph (`text-8xl md:text-9xl text-primary/20`, `aria-hidden="true"`), the quote
@@ -318,12 +333,14 @@ Renders only when the activity sets `faqItems` (see Known drift, item 9).
 
 ### Practical information — `activity/practical.html`
 `h3` sections (`text-lg md:text-xl font-medium`, underlined by `border-b border-gray-300 pt-4`), icon bullets
-(`w-5 h-5 text-primary`, `aria-hidden`), notes in `text-gray-700 italic`. Rendered only when the activity's
+(`w-5 h-5 text-primary-dark`, `aria-hidden`), notes in `text-gray-700 italic`. Rendered only when the activity's
 `information.options.*` flags are set.
 
 ### Prose — `components/prose-content.html`
 The shared article wrapper: `prose md:prose-lg lg:prose-xl max-w-4xl mx-auto`, headings at weight 500 with
-`text-gray-900`, links teal and underlined at rest, `leading-relaxed` paragraphs, images `rounded-lg shadow`.
+`text-gray-900`, links `primary-dark` and underlined at rest (the tone comes from `--tw-prose-links` in
+`assets/css/custom.css`, so every prose surface follows it, and hover darkens through
+`hover:prose-a:text-primary-darker`), `leading-relaxed` paragraphs, images `rounded-lg shadow`.
 `layouts/about/section.html` and `layouts/featured/single.html` inline the same recipe plus `prose-h3:*` sizes.
 
 ### Booking dialog — `activity/booking.html`
@@ -347,11 +364,22 @@ view. Slides cross-fade (`opacity 0.7s ease-in-out`) and the animation is skippe
 `data-carousel-sync`; opening the dialog copies the current index.
 
 ### Header, navigation, footer
-Fixed white header (`z-100`, `h-[70px] border-b border-slate-200`), logo + wordmark, plain links (`text-gray-900`,
-active `text-primary`), booking button, hamburger below `lg`. Mobile menu is the full-height white panel
-(`top-[70px]`) toggled by `data-collapse-toggle="navbar-sticky"`, closing on Escape, on link press, and returning
-focus to the button. Footer is a large dark surface (`bg-gray-900 text-white`) with contact details, an address block,
-social icon buttons (`p-4 bg-gray-800 rounded-lg hover:bg-gray-600`) and a privacy link. Both live in the theme repo.
+Fixed white header (`z-100`, `h-[70px] border-b border-slate-200`), logo + wordmark, plain links (`text-gray-900`),
+booking button, hamburger below `lg`. The header markup lives in the theme and hardcodes `text-primary` for the active
+tone (6.05:1), so `assets/css/custom.css` paints `header a[aria-current="page"]` in `primary-dark`
+(`header` + attribute selector outranks the utility's class); the theme already sets `aria-current="page"` on exactly
+that link, so no markup is duplicated. Mobile menu is the full-height white panel (`top-[70px]`) toggled by
+`data-collapse-toggle="navbar-sticky"`, closing on Escape, on link press, and returning focus to the button; the
+project override `layouts/partials/layout/mobile-menu-button.html` keeps the toggle at 44×44px (`min-w-11 min-h-11 w-11
+h-11`).
+
+Footer is a large dark surface (`bg-gray-900 text-white`) with contact details, an address block, social icon buttons
+(`p-4 bg-gray-800 rounded-lg hover:bg-gray-600`) and a privacy link. The theme's base sets headings to `gray-900`, so
+the footer headings (`Follow Us`, `Information`) carry an explicit `text-white` in the project override — without it
+they are invisible on the dark surface. Footer links and social buttons carry a white focus ring
+(`focus-visible:outline-white`) so the focus indicator is visible against `gray-900`; the e-mail address carries
+`wrap-anywhere`, because a long unbroken address has no break opportunity and pushed the document wider than a 320px
+viewport. The footer override is `layouts/partials/layout/footer.html`.
 
 ### Utility furniture
 - **Skip link** — `sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-1/2 focus:-translate-x-1/2
@@ -362,7 +390,7 @@ social icon buttons (`p-4 bg-gray-800 rounded-lg hover:bg-gray-600`) and a priva
   `Accept analytics` button (`min-h-12`, `bg-primary-dark`) and a plain underlined `Reject analytics` text button
   (`min-h-11`). One click either way; refusal is deliberately as reachable as acceptance. Without JavaScript the dialog
   stays closed and nothing loads.
-- **404** — heading, short explanation, and a `text-primary hover:text-primary-darker` link home.
+- **404** — heading, short explanation, and a `text-primary-dark hover:text-primary-darker` link home.
 
 ## Interaction contract
 
@@ -393,8 +421,11 @@ backdrop (`event.target === dialog`) closes it; Escape works natively. There is 
 WCAG 2.1 AA is the floor (Norwegian regulation), AAA is the target wherever the palette and content allow it.
 
 - **Text contrast** — the token table above is measured, not assumed. Filled buttons run at 7.73:1 (primary) and
-  7.27:1 (success) with their white labels; `primary` at 6.05:1 is the deliberate minimum for accent text, and chip
-  colours stay at ≥ 5.5:1.
+  7.27:1 (success) with their white labels and darken on hover; accent text and icons use `primary-dark` (7.73:1) and
+  never `primary` (6.05:1); chip and tag-band colours are at 7.52:1 or better with white text; `--tw-prose-links`
+  keeps article links at 7.73:1 and underlined. The audit is by computed style over the rendered pages, not by reading
+  class names: every text node is measured against its resolved background, and text over a photo is measured against
+  the scrim pixels of the real image.
 - **In-text links** — underlined at rest and darker on hover. The theme's prose default (underline only on hover) is
   overridden in `assets/css/custom.css`, because a link that differs from body text by colour alone (2.43:1 against
   `gray-800`) does not meet WCAG 1.4.1.
@@ -456,10 +487,15 @@ hugo --environment production --minify --destination /tmp/bfa-production \
 npm run backstop:test               # manual only, never in a hook or CI
 ```
 
-- **Browser pass** at 390px, 768px and 1280px on `/`, `/activities/`, one activity page, one inspiration, `/privacy/`
-  and `/404.html`: heading hierarchy, hover and focus states, dialog open/close (Escape, backdrop, focus return), tag
-  filter, carousel plus fullscreen gallery, and mobile menu.
-- **Contrast** — re-measure whenever a token changes; the ratio table in this document is the reference.
+- **Browser pass** at 320px, 390px, 768px and 1280px on `/`, `/activities/`, one activity page, one inspiration,
+  `/privacy/`, one tag page and `/404.html`: heading hierarchy (one `h1`, no skipped level), hover and focus states,
+  dialog open/close (Escape, backdrop, focus return), tag filter, carousel plus fullscreen gallery, mobile menu, and
+  `document.scrollWidth === clientWidth` (no sideways scroll).
+- **Contrast** — re-measure whenever a token changes; the ratio table in this document is the reference. The pass used
+  here reads computed styles in the browser and resolves each text node's real background (walking up to the first
+  non-transparent ancestor, descending into gradients, and sampling the actual photo pixels where text sits on one),
+  rather than trusting class names. Store the analytics choice before the pass, or no page is measured through the
+  consent dialog.
 - **Production** — after deploy, check that the built page still carries `lang`, canonical, description, Open Graph
   image, and the correct `HUGO_VERSION` in `netlify.toml`.
 
@@ -470,10 +506,13 @@ or work that belongs in another repository.
 
 1. **Footer colour** — the footer uses the neutral `bg-gray-900`, not the teal-tinted `fjord` token, although it reads
    as a brand surface alongside the quote band. Changing it means a change in the theme repository.
-2. **Active navigation colour** — the active nav link and hover states use `primary` (6.05:1) and
-   `hover:bg-primary/20`; `primary-dark` (7.73:1) would clear AAA. Theme-owned (`header.html`).
-3. **Category chip contrast** — chip colours are content data, so editors can pick a colour that fails: keep every
-   `color` at ≥ 4.5:1 with white. The current three reach 5.5–6.05:1 (AA, not AAA).
+2. **Active navigation colour** — the theme hardcodes `primary` (6.05:1) for the active menu link. The project restores
+   AAA with `header a[aria-current="page"]` in `assets/css/custom.css`; the rest of the theme's nav tones (hover
+   `bg-primary/20` under `gray-900` text in a mobile menu) already clear 7:1. Any deeper change still belongs in the
+   theme repository (`header.html`), since `layouts/` in this repo holds only the overrides listed in README.
+3. **Category chip contrast** — chip and tag-band colours are content data (`color` in `content/tags/*/_index.md`), so
+   an edit can introduce a failing colour. The three current values were darkened to 7.52–7.66:1 with white text (AAA),
+   and the rule is repeated as a comment above each value: keep every `color` at ≥ 7:1 with white.
 4. **`quality` is free text** — the CMS uses a string field for `quality`, and the live content holds eleven different
    values ("PREMIUM", "Local Fisherman", "Go Viking & Springfulness", "WORK"...), all rendered uppercase. A controlled
    vocabulary would remove the inconsistency.
@@ -489,3 +528,13 @@ or work that belongs in another repository.
    are content, so they are fixed in the CMS, not in a layout.
 9. **FAQ section is dormant** — `faqItems` is not set on any of the twenty activities, so the `#faq` section never
    renders today. The component is finished and styled; if FAQs belong on activity pages, the content is missing.
+10. **One content heading level skip** — the classic tour writes `#### DIGITAL DETOX` inside a blockquote, which jumps
+    `h2 → h4`. Every layout heading now steps one level at a time; this last skip is in the Markdown and is fixed in
+    the CMS.
+11. **Tag front matter outside the CMS** — the three tag files carry `title`, `color` and `aliases`, none of which the
+    CMS tag collections expose (they define keywords, description, images and body). Treat those fields as file-managed
+    and check the rendered chip, band and heading after editing a tag page in the CMS.
+12. **Generic link text in content** — three links in the classic tour's Markdown are labelled "HERE" (Instagram and
+    YouTube links), which Lighthouse flags under its link-text audit and which tells a screen-reader user nothing about
+    the destination. They are content, so the fix is a link label that names what it opens. Every front-matter image
+    now carries alt text; the wording of those descriptions is still the owner's to adjust in the CMS.

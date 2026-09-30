@@ -87,15 +87,15 @@
         <div class="container py-0">
             <div class="max-w-3xl mx-auto">
                 <div class="flex items-center gap-2 md:gap-8 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 py-1.5 md:py-4">
-                    <a href="#about" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
+                    <a href="#about" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary-dark underline-offset-4 decoration-2 transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">About</a>
                     {{ if $hasFAQ }}
-                    <a href="#faq" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
+                    <a href="#faq" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary-dark underline-offset-4 decoration-2 transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">FAQ</a>
                     {{ end }}
                     {{ if $hasPractical }}
-                    <a href="#practical" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
+                    <a href="#practical" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary-dark underline-offset-4 decoration-2 transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Practical Info</a>
                     {{ end }}
                     {{ if $hasGallery }}
-                    <a href="#gallery" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
+                    <a href="#gallery" class="inline-flex min-h-11 md:min-h-0 items-center px-2 md:px-0 text-sm md:text-base font-semibold text-gray-700 hover:text-primary-dark underline-offset-4 decoration-2 transition-colors duration-300 nav-link whitespace-nowrap touch-manipulation focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Gallery</a>
                     {{ end }}
                 </div>
             </div>
@@ -238,8 +238,16 @@
 
             navLinks.forEach(link => {
                 const isActive = link.getAttribute('href') === '#' + current;
-                link.classList.toggle('text-primary', isActive);
+                link.classList.toggle('text-primary-dark', isActive);
                 link.classList.toggle('text-gray-700', !isActive);
+                // The active section is marked with colour, an underline and
+                // aria-current, so the state is not signalled by colour alone.
+                link.classList.toggle('underline', isActive);
+                if (isActive) {
+                    link.setAttribute('aria-current', 'true');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
             });
         }
 

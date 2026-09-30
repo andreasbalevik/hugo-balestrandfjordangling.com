@@ -21,11 +21,16 @@
 }
 
 /* ─── Prose links ─────────────────────────────────────────────────────────── */
-/* The theme's .prose block removes the underline and adds it on hover. Link   */
-/* colour (--color-primary, 6.05:1 on white) sits at 2.43:1 against body text  */
-/* (gray-800), so colour alone does not separate a link from its paragraph     */
-/* (WCAG 1.4.1). The underline stays at rest; hover darkens the text through   */
-/* hover:prose-a:text-primary-darker in the templates.                          */
+/* The theme's .prose block removes the underline and adds it on hover, and     */
+/* points links at --color-primary (6.05:1 on white). Link colour is           */
+/* --color-primary-dark (7.73:1) here, so links clear AAA, and the underline    */
+/* stays at rest: link colour sits below 3:1 against body text (gray-800), so   */
+/* colour alone does not separate a link from its paragraph (WCAG 1.4.1).      */
+/* Hover darkens further through hover:prose-a:text-primary-darker.            */
+.prose {
+  --tw-prose-links: var(--color-primary-dark);
+}
+
 .prose :where(a):not(:where([class~="not-prose"] *)) {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
@@ -34,6 +39,15 @@
 
 .prose :where(a):not(:where([class~="not-prose"] *)):hover {
   text-decoration-thickness: 1px;
+}
+
+/* ─── Theme markup that cannot be edited from this repo ───────────────────── */
+/* The theme's header marks the active menu item with text-primary (6.05:1 on   */
+/* white). Text uses the AAA tone (--color-primary-dark, 7.73:1), and the       */
+/* partial sets aria-current="page" on exactly that link, so the tone is        */
+/* applied here without duplicating the theme's header markup.                  */
+header a[aria-current="page"] {
+  color: var(--color-primary-dark);
 }
 
 /* ─── Background image utilities ──────────────────────────────────────────── */

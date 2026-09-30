@@ -1,6 +1,8 @@
 ---
 title: Family and friends
-color: "#3a6a9a"
+# Chip and section background. White text on it must reach 7:1 (WCAG AAA);
+# measured in DESIGN.md before changing it.
+color: "#2f567c"
 keywords:
   - Family activities
   - Group experiences
@@ -11,6 +13,9 @@ keywords:
 description: "Create lasting memories with your loved ones. "
 images:
   - src: images/7npj0q7c.jpeg
+    alt: "Two children in orange life vests stand at the gunwale of the boat, the
+      girl in sunglasses pulling a tangle of seaweed from the sea, the skipper
+      beside them."
 aliases:
   - /en/activeties/balestrand-fjord-angling-trolling-fishing-nets-the-best-family-experience-in-sognefjord.html
 ---

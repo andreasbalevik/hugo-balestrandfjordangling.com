@@ -116,6 +116,15 @@ what differs.
   of a duplicate desktop overlay plus mobile section.
 - `layouts/partials/components/tag-dropdown-menu.html` — the filter is a
   disclosure with ordinary links, not a listbox.
+- `layouts/partials/components/section-heading.html` — the eyebrow uses
+  `primary-dark` and the description a solid `gray-800`, so both clear 7:1 on
+  the tinted bands as well as on white.
+- `layouts/partials/components/prose-content.html` — the inline link tone is left
+  to the `--tw-prose-links` token in `assets/css/custom.css` instead of a
+  `prose-a:text-primary` utility.
+- `assets/css/custom.css` — brand tokens, the `--tw-prose-links` tone with the
+  always-on underline, and `header a[aria-current="page"]` so the theme's active
+  menu item uses the AAA tone.
 - `layouts/partials/components/buttons/button.html` — filled primary/success
   buttons use `primary-dark`/darkened `success` with no contrast-reducing hover
   opacity.
@@ -148,7 +157,13 @@ Files that are new in the project rather than overrides:
   with Google's server-side run.
 - Contrast is checked on the real surfaces: filled primary buttons use
   `--color-primary-dark` (#175a6c) and filled success buttons use the darkened
-  `--color-success` (#0b6519) so white text reaches 7.7:1 / 7.3:1.
+  `--color-success` (#0b6519) so white text reaches 7.7:1 / 7.3:1. Accent text
+  and icons use the same `primary-dark` tone (#175a6c, 7.7:1) rather than
+  `primary` (#1e6b80, 6.1:1), the three category colours reach 7.5–7.7:1 with
+  white text, and hero text over a photo is measured against the panel scrim
+  (worst rendered pixel: 12.9:1 title, 10.6:1 label/description). [DESIGN.md](DESIGN.md)
+  holds the ratio table and the rules; re-measure there whenever a token, a chip
+  colour or the hero scrim changes.
 
 ## Decap
 

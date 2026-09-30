@@ -1,6 +1,8 @@
 ---
 title: Business and pleasure
-color: "#666688"
+# Chip and section background. White text on it must reach 7:1 (WCAG AAA);
+# measured in DESIGN.md before changing it.
+color: "#52526e"
 keywords:
   - Premium experiences
   - Professional services
@@ -13,6 +15,9 @@ description: "Premium fjord experiences combining professional service with
   authentic Norwegian adventures. "
 images:
   - src: images/7npj0q7c.jpeg
+    alt: "Two children in orange life vests stand at the gunwale of the boat, the
+      girl in sunglasses pulling a tangle of seaweed from the sea, the skipper
+      beside them."
 ---
 
 Premium experiences with professional service. From exclusive guided fishing expeditions and curated e-bike tours to fjord transfers and private boat charters, perfect for executive travel, corporate retreats, or special occasions.
