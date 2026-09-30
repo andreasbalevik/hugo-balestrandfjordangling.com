@@ -54,24 +54,31 @@ Google Analytics 4 and Google Tag Manager are loaded only after an explicit
 choice. Nothing (no script, no cookie, no network request) is loaded before
 that choice, and a rejection keeps analytics permanently off.
 
-- `layouts/partials/components/analytics-consent.html` renders the banner
-  (`#bfa-consent`, hidden until JS decides) plus the GTM/GA4 ids as data
-  attributes, and loads `assets/js/analytics-consent.js`.
+- `layouts/partials/components/analytics-consent.html` renders the surface
+  (`#bfa-consent`, a native `<dialog>` opened with `showModal()`) plus the
+  GTM/GA4 ids as data attributes, and loads
+  `assets/js/analytics-consent.js`.
+- The surface is a centred modal card so the visit starts with a deliberate
+  choice: "Accept analytics" is the filled primary action (full width, 48px),
+  while "Reject analytics" is a one-click text control inside the copy below it
+  (44px hit area, same 7.7:1 AAA contrast). Focus starts on the dialog heading,
+  Escape closes without storing a choice, and the surface returns on the next
+  page load.
 - `layouts/partials/utils/analytics-enabled.html` decides whether a build may
   load analytics at all (it reads Netlify's `CONTEXT`; `config.toml` allowlists
   `os.Getenv` under `[security.funcs]`). Development and deploy previews/branch
   deploys render the surface but pass `data-analytics-enabled="false"`, so the
   script stores a choice without ever injecting a loader.
 - The choice is stored in `localStorage` under `bfa-analytics-consent`. The
-  footer "Analytics settings" control reopens the banner. Rejecting also clears
+  footer "Analytics settings" control reopens the dialog. Rejecting also clears
   the first-party GA cookies and reloads.
-- With JavaScript disabled no analytics is loaded and normal reading/booking is
-  unaffected.
+- With JavaScript disabled the dialog stays closed (no `open` attribute), no
+  analytics is loaded, and normal reading/booking is unaffected.
 
-Manual checks: load a page with no stored choice (banner appears, no GA/GTM
-request), choose accept (requests appear on production, none on dev/preview),
-choose reject (cookies cleared, page reloads, no analytics), then reopen via the
-footer control and withdraw.
+Manual checks: load a page with no stored choice (centred dialog appears, never
+in a background tab, no GA/GTM request), choose accept (requests appear on
+production, none on dev/preview), choose reject (cookies cleared, page reloads,
+no analytics), then reopen via the footer control and withdraw.
 
 ## Project overrides
 

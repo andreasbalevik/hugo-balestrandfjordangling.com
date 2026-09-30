@@ -1,50 +1,56 @@
 {{/*
   Analytics consent surface.
 
-  The consent UI is rendered in every context (development, deploy preview,
-  production) so the surface can be seen and tested where no tracking is
-  allowed. Whether this build may actually load GA4/GTM after an "accept" is
-  decided separately by utils/analytics-enabled.html and passed to the script
-  as data-analytics-enabled; the script never injects a loader when it is
-  "false".
+  A centred modal card (native <dialog>, opened with showModal) so the visitor
+  makes the choice deliberately:
+  - "Accept analytics" is the filled primary action, full width, 48px tall.
+  - "Reject analytics" is a plain text control inside the copy below it — one
+    click, 44px hit area, AAA contrast and a visible focus ring, so it stays a
+    real and reachable choice rather than a hidden one.
 
-  Outputs:
-  - a non-blocking consent banner (hidden until JS decides), reused by the
-    footer "Analytics settings" control via [data-analytics-settings]
-  - the analytics configuration (GTM + GA4 ids, storage key, gate) as data
-    attributes
-  - assets/js/analytics-consent.js, which owns all the loading logic
+  Whether this build may actually load GA4/GTM after an accept is decided by
+  utils/analytics-enabled.html and passed as data-analytics-enabled; the script
+  never injects a loader when it is "false" (development, deploy previews).
 
-  Without JS the banner stays hidden and no analytics is loaded; normal page
-  reading is unaffected. Booking does not depend on this partial.
+  Without JS the dialog stays closed and no analytics is loaded; normal page
+  reading and booking are unaffected.
 */}}
 {{ $analyticsEnabled := partial "utils/analytics-enabled.html" . }}
 {{ $privacy := site.Params.privacyUrl | default "/privacy" }}
 
-<div id="bfa-consent" role="region" aria-label="Analytics consent" tabindex="-1"
+<dialog id="bfa-consent"
+     aria-labelledby="bfa-consent-title"
+     aria-modal="true"
      data-consent-key="bfa-analytics-consent"
      data-gtm="GTM-TBP9B3X"
      data-ga4="G-HNS6R4TEK0"
      data-analytics-enabled="{{ $analyticsEnabled }}"
-     class="hidden fixed inset-x-0 bottom-0 z-[130] border-t border-fjord-pale bg-white shadow-lg outline-none">
-    <div class="container py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p class="m-0 max-w-3xl text-sm leading-relaxed text-gray-900">
-            We would like to use Google Analytics to understand how this website is used. Nothing is loaded until you accept.
-            Read our
-            <a href="{{ $privacy }}" class="font-medium text-primary-dark underline hover:no-underline">privacy statement</a>.
+     class="m-0 h-full max-h-none w-full max-w-none border-0 bg-transparent p-0 backdrop:bg-gray-900/60 open:flex open:items-center open:justify-center">
+    <div class="mx-4 w-full max-w-lg rounded-xl border border-fjord-pale bg-white p-6 shadow-2xl md:p-8">
+        <h2 id="bfa-consent-title" data-consent-title tabindex="-1"
+            class="mt-0 mb-3 text-xl font-medium text-balance text-gray-900 md:text-2xl focus:outline-none">
+            Analytics
+        </h2>
+        <p class="mb-6 text-base leading-relaxed text-gray-800">
+            We would like to use Google Analytics to understand which pages help visitors plan a trip on the
+            Sognefjord, where people get stuck, and which activities they look at. Nothing is loaded before you
+            decide, and we never use it for advertising.
         </p>
-        <div class="flex flex-wrap gap-3 shrink-0">
-            <button type="button" data-consent-accept
-                class="min-h-11 inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 text-sm font-semibold text-gray-900 hover:bg-fjord-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                Accept analytics
-            </button>
+        <button type="button" data-consent-accept
+            class="mb-5 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-primary-dark px-6 text-base font-semibold text-white transition-colors duration-200 hover:bg-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            Accept analytics
+        </button>
+        <p class="m-0 text-base leading-relaxed text-gray-800">
+            Your choice is stored in this browser and can be changed later under
+            &ldquo;Analytics settings&rdquo; in the footer. Read our
+            <a href="{{ $privacy }}" class="font-medium text-primary-dark underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">privacy statement</a>.
+            If you would rather not be measured, you can
             <button type="button" data-consent-reject
-                class="min-h-11 inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-5 text-sm font-semibold text-gray-900 hover:bg-fjord-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                Reject analytics
-            </button>
-        </div>
+                class="-my-3 inline-flex min-h-11 items-center py-3 font-medium text-primary-dark underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">reject
+                analytics</button> and nothing will be loaded.
+        </p>
     </div>
-</div>
+</dialog>
 
 {{- with resources.Get "js/analytics-consent.js" }}
   {{- if eq hugo.Environment "development" }}

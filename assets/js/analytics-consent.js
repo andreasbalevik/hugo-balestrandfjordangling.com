@@ -3,7 +3,7 @@
  *
  * Nothing analytics-related (Google Tag Manager, GA4, gtag.js, cookies) is
  * requested until the visitor actively accepts. Consent is stored in
- * localStorage under the key given in the banner's data-consent-key; a missing
+ * localStorage under the key given in the surface's data-consent-key; a missing
  * or invalid value always means "not consented".
  *
  * Loading has two gates: the visitor must accept, and the build must be allowed
@@ -15,6 +15,11 @@
  * ad_storage / ad_user_data / ad_personalization denied) BEFORE the loaders are
  * injected, then each loader is injected exactly once (idempotent).
  *
+ * The surface is a native <dialog> opened with showModal(), so the browser owns
+ * modality and the inert background. Focus starts on the dialog heading (not on
+ * one of the two choices); Escape closes it without storing a choice, and the
+ * surface returns on the next page load.
+ *
  * On rejection/withdrawal: the choice is stored as "rejected", available
  * first-party _ga cookies on the current host are cleared, and — if analytics
  * had already been active — the page reloads so any third-party code already
@@ -24,14 +29,14 @@
 (function () {
   "use strict";
 
-  var banner = document.getElementById("bfa-consent");
-  if (!banner) return;
+  var surface = document.getElementById("bfa-consent");
+  if (!surface) return;
 
   var config = {
-    key: banner.dataset.consentKey || "bfa-analytics-consent",
-    gtm: banner.dataset.gtm || "",
-    ga4: banner.dataset.ga4 || "",
-    enabled: banner.dataset.analyticsEnabled === "true"
+    key: surface.dataset.consentKey || "bfa-analytics-consent",
+    gtm: surface.dataset.gtm || "",
+    ga4: surface.dataset.ga4 || "",
+    enabled: surface.dataset.analyticsEnabled === "true"
   };
 
   var KEY = config.key;
@@ -117,21 +122,48 @@
     }
   }
 
-  function showBanner(focusBanner) {
-    if (!banner) return;
-    banner.classList.remove("hidden");
-    if (focusBanner && typeof banner.focus === "function") banner.focus();
+  var consentTitle = surface.querySelector("[data-consent-title]");
+  var scrollLocked = false;
+  var previousOverflow = "";
+
+  function lockScroll() {
+    if (scrollLocked) return;
+    scrollLocked = true;
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
   }
 
-  function hideBanner() {
-    if (!banner) return;
-    banner.classList.add("hidden");
+  function unlockScroll() {
+    if (!scrollLocked) return;
+    scrollLocked = false;
+    document.body.style.overflow = previousOverflow || "";
   }
+
+  function showSurface() {
+    if (!surface.open) {
+      if (typeof surface.showModal === "function") surface.showModal();
+      else surface.setAttribute("open", "");
+    }
+    lockScroll();
+    // Start on the heading: neither choice gets focus by default.
+    if (consentTitle && typeof consentTitle.focus === "function") consentTitle.focus();
+  }
+
+  function hideSurface() {
+    if (typeof surface.close === "function" && surface.open) {
+      surface.close();
+    } else {
+      surface.removeAttribute("open");
+      unlockScroll();
+    }
+  }
+
+  surface.addEventListener("close", unlockScroll);
 
   function onAccept() {
     storeConsent("accepted");
     activate();
-    hideBanner();
+    hideSurface();
   }
 
   function onReject() {
@@ -141,19 +173,19 @@
     if (wasAccepted) {
       window.location.reload();
     } else {
-      hideBanner();
+      hideSurface();
     }
   }
 
-  var acceptBtn = banner && banner.querySelector("[data-consent-accept]");
-  var rejectBtn = banner && banner.querySelector("[data-consent-reject]");
+  var acceptBtn = surface && surface.querySelector("[data-consent-accept]");
+  var rejectBtn = surface && surface.querySelector("[data-consent-reject]");
   if (acceptBtn) acceptBtn.addEventListener("click", onAccept);
   if (rejectBtn) rejectBtn.addEventListener("click", onReject);
 
   document.querySelectorAll("[data-analytics-settings]").forEach(function (el) {
     el.addEventListener("click", function (e) {
       e.preventDefault();
-      showBanner(true);
+      showSurface();
     });
   });
 
@@ -161,8 +193,8 @@
   if (consent === "accepted") {
     activate();
   } else if (consent === "rejected") {
-    // Explicitly rejected: leave analytics off, keep the banner hidden.
+    // Explicitly rejected: leave analytics off, keep the surface closed.
   } else {
-    showBanner(false);
+    showSurface();
   }
 })();
