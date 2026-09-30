@@ -5,6 +5,13 @@
 @theme {
   --color-primary:      #1e6b80;
   --color-primary-dark: #175a6c;
+  /* Hover shades for filled buttons. Hovering must not lighten a filled
+     button: white on --color-primary is 6.05:1 and on --color-success 7.27:1,
+     so a lighter hover would drop below the AAA text contrast the buttons meet
+     at rest. These are one visible step darker and keep white text at
+     10.96:1 and 11.1:1. */
+  --color-primary-darker: #0f4250;
+  --color-success-darker: #07460f;
   --color-success:      #0b6519;
   --color-warning:      #e8b43a;
   --color-fjord:        #1d3640;
