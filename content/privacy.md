@@ -17,7 +17,7 @@ This statement covers this website: the pages you read, the booking request form
 
 ## Analytics — your choice
 
-This site uses Google Analytics 4 and Google Tag Manager to understand how the website is used: which pages are read, which activities visitors look at, roughly where visitors come from, and the device and browser used.
+This site uses Google Analytics 4 and Google Tag Manager to understand how the website is used: which pages are read, which activities visitors look at, roughly where visitors come from, and the device and browser used. We use this to keep improving the pages and activities that matter most to visitors.
 
 Nothing is loaded before you choose. No analytics script, no cookie and no request to Google is sent until you press "Accept analytics" in the consent box. If you reject it, or make no choice, analytics stays off.
 
