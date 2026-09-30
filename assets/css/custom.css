@@ -20,6 +20,22 @@
   --color-fjord-pale:   #deeef7;
 }
 
+/* ─── Prose links ─────────────────────────────────────────────────────────── */
+/* The theme's .prose block removes the underline and adds it on hover. Link   */
+/* colour (--color-primary, 6.05:1 on white) sits at 2.43:1 against body text  */
+/* (gray-800), so colour alone does not separate a link from its paragraph     */
+/* (WCAG 1.4.1). The underline stays at rest; hover darkens the text through   */
+/* hover:prose-a:text-primary-darker in the templates.                          */
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.prose :where(a):not(:where([class~="not-prose"] *)):hover {
+  text-decoration-thickness: 1px;
+}
+
 /* ─── Background image utilities ──────────────────────────────────────────── */
 /* Used for hero sections and page backgrounds with blurred background images */
 @layer utilities {
