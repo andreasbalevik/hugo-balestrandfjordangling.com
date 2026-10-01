@@ -1,0 +1,142 @@
+{{/*
+    Hero Image with Overlay — project override of
+    themes/balevikit-tailwindcss-hugo-theme/layouts/partials/components/hero/image.html
+
+    Changed from the theme: the title/description are rendered once in a single
+    responsive block instead of two separate blocks (one desktop overlay and one
+    mobile section) that both contained an <h1>. The block sits under the image
+    on mobile and becomes an overlay from md up; with alwaysOverlay it is an
+    overlay at every breakpoint. The page's only h1 is therefore always rendered
+    and never display:none hidden on mobile.
+
+    Everything else — badges, tags, varde badge and all parameters — is preserved.
+
+    The gradient follows the height of the text panel, not the height of the
+    photo, and fades out above the panel, leaving the upper photograph
+    unobscured. The panel participates in the hero's layout at every breakpoint,
+    so enlarged text grows the hero instead of disappearing above a fixed image
+    crop.
+
+    The alwaysOverlay form keeps the text over the photo on mobile as well.
+    Below lg its photo has a floor height and uses object-cover.
+
+    Parameters:
+    - page             : Hugo page context (required)
+    - src              : image src path (required)
+    - alt              : image alt text
+    - label            : optional eyebrow text above title
+    - description      : optional description paragraph below title
+    - mobileBackground : "fjord" (default) | "white" — mobile panel background
+    - gradient          : gradient stop classes (default: from-fjord/90
+                          via-fjord/65 to-transparent)
+    - alwaysOverlay    : overlay on all breakpoints (default: false). Kept from
+                             the theme for API parity; no page sets it — the
+                             About hero used to, and now sits under the photo
+                             on mobile like every other hero.
+    - showTags         : render page.Params.tags in the panel (default: false)
+    - showVardeBadge   : render varde badge if present (default: false)
+    - badge            : pre-rendered partial output for a custom badge
+*/}}
+
+{{ $page := .page }}
+{{ $src := .src }}
+{{ $alt := .alt | default "" }}
+{{ $label := .label }}
+{{ $description := .description }}
+{{ $mobileBg := .mobileBackground | default "fjord" }}
+{{ $gradient := .gradient | default "from-fjord/90 via-fjord/65 to-transparent" }}
+{{ $alwaysOverlay := .alwaysOverlay | default false }}
+{{ $showTags := .showTags | default false }}
+{{ $showVardeBadge := .showVardeBadge | default false }}
+{{ $badge := .badge }}
+
+{{ if not $src }}{{ return }}{{ end }}
+
+{{ $hasBadgeArea := or $showTags $showVardeBadge $badge }}
+
+{{/* The scrim belongs to the text panel. Its fade starts above the first line,
+     and its height grows with the panel when text is enlarged. */}}
+{{ $gradientClass := cond $alwaysOverlay "absolute inset-x-0 -top-32 bottom-0" "hidden md:block absolute inset-x-0 -top-32 bottom-0" }}
+
+{{/* At md and above the image fills the hero, whose minimum height matches the
+     original photo crop. The panel can increase that height without clipping. */}}
+{{ $imageBoxClass := "max-h-[500px] md:absolute md:inset-0 md:max-h-none" }}
+{{ $imgClass := "w-full h-auto md:h-full object-cover" }}
+{{ $panelClass := "relative bg-fjord md:bg-transparent" }}
+{{ $panelPad := "px-5 py-8" }}
+{{ $labelClass := "text-white" }}
+{{ $titleClass := "text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg" }}
+{{ $descClass := "text-base md:text-xl text-white md:drop-shadow" }}
+{{ $vardeBoxClass := "bg-white/15 md:bg-white/90 md:backdrop-blur-sm md:shadow" }}
+{{ $vardeImgClass := "w-12 md:w-14" }}
+
+{{ if $alwaysOverlay }}
+  {{ $panelClass = "relative bg-transparent" }}
+  {{ $gradientClass = "absolute inset-x-0 -top-32 bottom-0" }}
+  {{ $titleClass = "text-3xl md:text-4xl lg:text-5xl text-white drop-shadow-lg" }}
+  {{ $descClass = "text-lg md:text-xl text-white drop-shadow" }}
+  {{ $vardeBoxClass = "bg-white/90 backdrop-blur-sm shadow" }}
+  {{ $vardeImgClass = "w-14" }}
+  {{ $imageBoxClass = "absolute inset-0 max-h-none" }}
+  {{ $imgClass = "w-full h-full object-cover" }}
+{{ else if eq $mobileBg "white" }}
+  {{ $panelClass = "relative bg-white/70 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none" }}
+  {{ $panelPad = "px-5 py-5" }}
+  {{ $labelClass = "text-gray-700 md:text-white" }}
+  {{ $titleClass = "text-2xl md:text-4xl lg:text-5xl text-gray-900 md:text-white md:drop-shadow-lg" }}
+  {{ $descClass = "text-base md:text-xl text-gray-700 md:text-white md:drop-shadow" }}
+  {{ $vardeBoxClass = "bg-white md:bg-white/90 md:backdrop-blur-sm md:shadow" }}
+{{ end }}
+
+<div class="relative overflow-hidden md:flex md:flex-col md:justify-end md:min-h-[min(66.667vw,620px)] lg:min-h-[min(56.25vw,700px)] {{ if $alwaysOverlay }}flex flex-col justify-end min-h-[360px] sm:min-h-[440px]{{ end }}">
+    <div class="{{ $imageBoxClass }}">
+        {{ partial "components/images/image.html" (dict "src" $src "alt" $alt "preset" "hero" "imgClass" $imgClass) }}
+    </div>
+
+    <div class="{{ $panelClass }}">
+        <div class="{{ $gradientClass }} bg-gradient-to-t {{ $gradient }}"></div>
+        <div class="relative {{ $panelPad }} md:container md:py-14">
+            <div class="max-w-3xl">
+
+                {{ if $hasBadgeArea }}
+                <div class="flex items-center gap-3 flex-wrap mb-4">
+                    {{ if $showVardeBadge }}
+                    {{ with $page.Params.information.options.varde_experience_quality }}
+                    <span class="inline-block {{ $vardeBoxClass }} rounded-lg px-3 py-1.5">
+                        <img class="{{ $vardeImgClass }} h-auto" alt="Varde Experience Quality Badge" src="/images/varde-experience-quality.png" loading="lazy" />
+                    </span>
+                    {{ end }}
+                    {{ end }}
+                    {{ if $showTags }}
+                    {{ range $page.Params.tags }}
+                    {{ with site.GetPage (printf "/tags/%s" .) }}
+                    <a href="{{ .RelPermalink }}"
+                       class="inline-block px-3 py-1.5 rounded-md text-white text-xs font-semibold tracking-wide hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                       style="background-color: {{ .Params.color | default "#1d3640" }};">
+                        {{ .Title }}
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ with $badge }}{{ . }}{{ end }}
+                </div>
+                {{ end }}
+
+                {{ with $label }}
+                <p class="text-sm font-semibold {{ $labelClass }} uppercase tracking-widest mb-4">{{ . }}</p>
+                {{ end }}
+
+                <h1 class="mt-0 mb-4 md:mb-6 {{ $titleClass }} font-medium leading-[1.2] tracking-tight text-balance">
+                    {{ $page.Title }}
+                </h1>
+
+                {{ with $description }}
+                <p class="mt-3 md:mt-4 {{ $descClass }} leading-relaxed max-w-2xl">
+                    {{ . }}
+                </p>
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+</div>

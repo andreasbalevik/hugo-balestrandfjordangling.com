@@ -1,0 +1,14 @@
+{{/*
+  Project override of the theme partial
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/dns-prefetch.html).
+
+  Intentionally empty. The theme emitted dns-prefetch/preconnect hints for
+  third parties (Google Tag Manager, Google Analytics, Google Ads, jsDelivr,
+  Instagram, Facebook, Netlify Identity) unconditionally, including for
+  analytics that must not be contacted before consent. Sending those hints
+  would leak the visit to third parties regardless of the visitor's choice, so
+  they are removed.
+
+  The one resource hint we do keep — the explicit Inter font preconnect on
+  altinncdn.no — lives in layouts/partials/custom-script-head.html.
+*/}}

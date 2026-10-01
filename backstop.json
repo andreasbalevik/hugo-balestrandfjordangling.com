@@ -2,6 +2,11 @@
   "id": "balestrandfjordangling_visual_regression",
   "viewports": [
     {
+      "label": "mobile-small",
+      "width": 320,
+      "height": 900
+    },
+    {
       "label": "mobile",
       "width": 390,
       "height": 844

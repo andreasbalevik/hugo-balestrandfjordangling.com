@@ -24,12 +24,12 @@
                         </div>
                     </div>
                     <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white">{{ i18n "takk" | default "Thank You!" }}</h1>
-                    <p class="text-white/90 text-lg md:text-xl">Your request has been received</p>
+                    <p class="text-white text-lg md:text-xl">Your request has been received</p>
                 </div>
 
                 <!-- Main Content -->
                 <div class="p-8 md:p-12 max-w-2xl mx-auto">
-                    <div class="prose prose-lg max-w-none">
+                    <div class="prose prose-lg max-w-none wrap-anywhere">
                         {{ .Content }}
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                             "href" site.Home.RelPermalink
                             "text" (i18n "tilbake")
                             "variant" "primary"
-                            "ariaLabel" "Return to homepage"
+                            "ariaLabel" (printf "%s to the homepage" (i18n "tilbake"))
                         ) }}
                     </div>
                 </div>

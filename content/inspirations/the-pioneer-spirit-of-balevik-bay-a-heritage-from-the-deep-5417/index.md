@@ -36,8 +36,7 @@ description: "Connect with the authentic Viking spirit in Balestrand. Experience
   Tor. "
 images:
   - src: images/img_20210310_211641_8.jpg
-    alt: Anders H Balevik (gutt) og Hans Balevik fanger laks på Veganeset i laksnota
-      i Sognefjorden (Laks I Sikte)
+    alt: Anders H Balevik (boy) and Hans Balevik catching salmon at Veganeset in the salmon net in the Sognefjord (Laks I Sikte)
 related_activities:
   - premium-skill-master-the-long-line-–-authentic-fjord-fishing-immersion-0003/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index

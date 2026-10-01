@@ -38,13 +38,16 @@ baseURL = 'https://balestrandfjordangling.com'
   areaServedRadius = "50000"
 
   # Business details
-  priceRange = "NOK 3000-10000"
   hasMap = "https://www.google.com/maps/place/Holmen+3,+6899+Balestrand,+Norway"
   founder = "Captain Tor Balevik"
   author = "Captain Tor"
   author_url = "https://balestrandfjordangling.com/about/"
   currency = "NOK"
   privacyUrl = "/privacy"
+
+  # Content sections (used by json-ld schemas and dispatch rules)
+  blog_section = "inspirations"
+  product_section = "activities"
 
   [Params.schema]
     localBusiness = true
@@ -54,10 +57,6 @@ baseURL = 'https://balestrandfjordangling.com'
   instagram   = "https://www.instagram.com/balestrandfjordangling/"
   facebook    = "https://www.facebook.com/Balestrand-Fjord-Angling-112650423742403"
   tripadvisor = "https://no.tripadvisor.com/Attraction_Review-g616211-d12520219-Reviews-Balestrand_Fjord_Angling-Balestrand_Sogn_og_Fjordane_Western_Norway.html"
-
-  # Content sections (used by json-ld schemas)
-  blog_section = "inspirations"
-  product_section = "activities"
 
 [[menus.footer]]
   name   = "Home"
@@ -86,3 +85,10 @@ baseURL = 'https://balestrandfjordangling.com'
 
 [outputs]
   home = ["HTML", "JSON", "TXT"]
+
+[security.funcs]
+  # os.Getenv is used by layouts/partials/utils/analytics-enabled.html to read
+  # Netlify's CONTEXT so analytics never loads on deploy previews / branch
+  # deploys. Hugo restricts which env vars templates may read; CONTEXT is the
+  # only addition to the defaults.
+  getenv = ['^HUGO_', '^CI$', '^CONTEXT$']

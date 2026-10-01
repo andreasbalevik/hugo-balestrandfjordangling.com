@@ -77,7 +77,7 @@ aliases:
   - /en/activeties/amazing-snowshoe-hike-in-balestrand
 images:
   - src: images/DSCF0551.jpg
-    alt: Snowshoe hiking in sognefjord, vinter in Balestrand , Explore Norway
+    alt: Snowshoe hiking in the Sognefjord, winter in Balestrand, Explore Norway
   - src: images/dscf0513.jpg
     alt: "\"A person wearing a red jacket and backpack hiking in deep snow, pointing
       out at a stunning view of a blue fjord and snow-capped mountains in
@@ -145,8 +145,8 @@ Imagine this: Deafening silence, surrounded by pure white snow. Below you see a 
 
  Off course! Get a visual taste of the adventure here:
 
-* **Instagram Teaser 1:** Watch **[HERE](https://www.instagram.com/p/CwDWVRCqpkQ/)**
-* **Instagram Teaser 2:** Watch **[HERE](https://www.instagram.com/p/C2PDTE1KQvP/)**
+* **Instagram Teaser 1:** [Watch the teaser on Instagram](https://www.instagram.com/p/CwDWVRCqpkQ/)
+* **Instagram Teaser 2:** [Watch the teaser on Instagram](https://www.instagram.com/p/C2PDTE1KQvP/)
 
 > #### SILENT TRAVEL: The New Luxury Escape
 

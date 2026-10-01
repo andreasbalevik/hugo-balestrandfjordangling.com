@@ -77,7 +77,7 @@ description: "Escape to Fjærland, Sognefjord: A premium e-bike & boat glacier
   adventure. Explore Supphelledalen's pristine nature. "
 images:
   - src: images/img_20220814_172455_6.jpg
-    alt: Gravemaskin i fjærland, supphelledalen og isbre ,sykkeltur
+    alt: Excavator in Fjærland, Supphelledalen and a glacier, bike ride
 tags:
   - bike-and-hike
   - business-and-pleasure
@@ -125,11 +125,11 @@ Make a reservation directly. If the weather is favourable, **this trip is good t
 
 Yes, absolutely! To really get a feel for the atmosphere, we've put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Fjærland fjord:
 
-> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Cvc4xR6KHwB/)
+> **Teaser Instagram Reel 1:** [Watch the video on Instagram](https://www.instagram.com/p/Cvc4xR6KHwB/)
 >
-> **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
+> **Teaser Instagram Reel 2:** [Watch the video on Instagram](https://www.instagram.com/p/Csfwf8yq5cI/)
 >
-> **Teaser YouTube video 3:** Watch the video [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> **Teaser YouTube video 3:** [Watch the video on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### **What is the experience like on the boat and the atmosphere we can expect:**
 

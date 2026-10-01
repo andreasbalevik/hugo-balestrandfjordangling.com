@@ -4,6 +4,9 @@ description: "In Norway, we live by the saying: “There is no such thing as bad
   weather, only bad clothes” - Here is a check list of essentials: "
 images:
   - src: images/b67i4478.jpg
+    alt: "The skipper lifts a large anglerfish out of the net on deck while two
+      guests in winter clothes look on, fishing rods along the gunwale and the
+      snowy village across the fjord."
 related_activities:
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
@@ -12,7 +15,7 @@ cms: true
 ---
 GO BY THE 3-LAYERS RULE: with an outer, water resistant shell jacket (and pants), an inner fleece jacket and a woolen base layer all seasons. It is always colder at sea than on land, even though it is the height of summer it feels cool.
 
-#### **Y﻿OUR PACKING LIST :**
+## **YOUR PACKING LIST :**
 
 1. Woolen and/or thermal underwear for the upper and lower body
 2. Woolen socks, a warm beanie covering your ears, warm gloves, thick scarf
@@ -20,7 +23,7 @@ GO BY THE 3-LAYERS RULE: with an outer, water resistant shell jacket (and pants)
 4. A wind- and waterproof warm outer layer
 5. We wear our blue fishing suits on top your cloths if needed. Keeping you warm and dry, these practical suits also have built-in flotation elements
 
-#### **PREPARE FOR THE UNEXPECTED IN SOGNEFJORD AREA**
+## **PREPARE FOR THE UNEXPECTED IN SOGNEFJORD AREA**
 
 Experiencing the Contrasts of Sognefjord’s Weather. In Balestrand March to June can be both chilly and welcoming. From snow to rain, wind to sunshine, and icy to clear roads, the weather can also change in a flash (March and April)
 

@@ -40,13 +40,132 @@ Use this when you want to keep accepted screenshots in git-tracked local referen
 
 ### Config notes
 
-- Scenarios and viewports are in `backstop.json` (mobile/tablet/desktop + key pages/templates).
+- Scenarios and viewports are in `backstop.json` (320/390/768/1440 + key pages/templates).
 - The dev breakpoint helper is now opt-in (`[Params] showBreakpointIndicator = true`), so it stays off during Backstop runs by default.
 - `backstop_data/engine_scripts/puppet/onReady.js` stabilizes captures by:
   - removing elements marked with `data-backstop-hide`
   - freezing elements marked with `data-backstop-freeze`
   - forcing lazy-loaded images to load before screenshots
 - Generated test/report output is written to `backstop_data/` (test bitmaps and reports are gitignored).
+
+## Analytics consent
+
+Google Analytics 4 and Google Tag Manager are loaded only after an explicit
+choice. Nothing (no script, no cookie, no network request) is loaded before
+that choice, and a rejection keeps analytics permanently off.
+
+- `layouts/partials/components/analytics-consent.html` renders the surface
+  (`#bfa-consent`, a native `<dialog>` opened with `showModal()`) plus the
+  GTM/GA4 ids as data attributes, and loads
+  `assets/js/analytics-consent.js`.
+- The surface is a centred modal card so the visit starts with a deliberate
+  choice: a short explanation with the privacy statement link, then "Accept
+  analytics" as the filled primary action (full width, 48px) and "Reject
+  analytics" as a one-click text control directly under it (44px hit area, same
+  7.7:1 AAA contrast). Nothing sits below the two choices. Focus starts on the
+  dialog heading, Escape closes without storing a choice, and the surface
+  returns on the next page load.
+- `layouts/partials/utils/analytics-enabled.html` decides whether a build may
+  load analytics at all (it reads Netlify's `CONTEXT`; `config.toml` allowlists
+  `os.Getenv` under `[security.funcs]`). Development and deploy previews/branch
+  deploys render the surface but pass `data-analytics-enabled="false"`, so the
+  script stores a choice without ever injecting a loader.
+- The choice is stored in `localStorage` under `bfa-analytics-consent`. It is
+  changed on the privacy statement: `content/privacy.md` uses the
+  `analytics-settings` shortcode (`layouts/shortcodes/analytics-settings.html`)
+  to render the control that reopens the dialog, and the footer links to that
+  page instead of duplicating it. Rejecting also clears the first-party GA
+  cookies and reloads.
+- With JavaScript disabled the dialog stays closed (no `open` attribute), no
+  analytics is loaded, and normal reading/booking is unaffected.
+
+Manual checks: load a page with no stored choice (centred dialog appears, never
+in a background tab, no GA/GTM request), choose accept (requests appear on
+production, none on dev/preview), choose reject (cookies cleared, page reloads,
+no analytics), then withdraw from the control on `/privacy/`.
+
+## Project overrides
+
+The theme is pinned; theme behaviour is changed through project overrides at
+the same path under `layouts/`. Each override carries a Hugo comment explaining
+what differs.
+
+- `layouts/_default/baseof.html` — body scripts and the consent component placed
+  before `</body>`; English skip-link text.
+- `layouts/_default/page.html` — long URLs wrap (`break-words`) instead of
+  causing horizontal scroll at 320px.
+- `layouts/_default/home.html` — home hero card image is `eager`/`fetchpriority
+  high`.
+- `layouts/partials/layout/footer.html` — footer email wraps; links to the
+  privacy statement for the analytics choice.
+- `layouts/partials/layout/mobile-menu-button.html` — English accessible name,
+  44×44px target.
+- `layouts/partials/dns-prefetch.html` — preconnect list trimmed to the origins
+  actually used.
+- `layouts/partials/seo/preload.html` — intentionally empty: the theme preloaded
+  a raw LCP candidate that the page never displayed (a 654 KB 1920w image next to
+  the 37 KB image actually rendered).
+- `layouts/partials/components/images/image.html` — optional `loading` /
+  `fetchpriority` parameters and an always-emitted `alt`.
+- `layouts/partials/components/images/carousel.html` — native `<dialog>`
+  fullscreen viewer, intrinsic `width`/`height`, 44px controls.
+- `layouts/partials/components/images/utils/carousel-controls.html` — unique
+  ids, 44px indicator buttons with a 12px dot, wrapping indicator row.
+- `layouts/partials/components/hero/image.html` — one responsive
+  title/description block (under the image on mobile, overlay on desktop) instead
+  of a duplicate desktop overlay plus mobile section.
+- `layouts/partials/components/tag-dropdown-menu.html` — the filter is a
+  disclosure with ordinary links, not a listbox.
+- `layouts/partials/components/section-heading.html` — the eyebrow uses
+  `primary-dark` and the description a solid `gray-800`, so both clear 7:1 on
+  the tinted bands as well as on white.
+- `layouts/partials/components/prose-content.html` — the inline link tone is left
+  to the `--tw-prose-links` token in `assets/css/custom.css` instead of a
+  `prose-a:text-primary` utility.
+- `assets/css/custom.css` — brand tokens, the `--tw-prose-links` tone with the
+  always-on underline, and `header a[aria-current="page"]` so the theme's active
+  menu item uses the AAA tone.
+- `layouts/partials/components/buttons/button.html` — filled primary/success
+  buttons use `primary-dark`/darkened `success` with no contrast-reducing hover
+  opacity.
+- `layouts/partials/seo/json-ld/_product.html`, `_itemlist.html`,
+  `_localbusiness.html`, `_faqpage.html` — real min/max prices, no unsupported
+  availability/opening-hours claims, config-driven business data, and JSON built
+  with `jsonify`.
+
+When the theme is upgraded, an override can be dropped once the theme covers the
+same behaviour.
+
+Files that are new in the project rather than overrides:
+
+- `layouts/partials/components/analytics-consent.html` — the consent surface.
+- `layouts/shortcodes/analytics-settings.html` — the "Change my analytics
+  choice" control used by `content/privacy.md`; it binds to the consent script
+  through `data-analytics-settings`.
+- `assets/js/analytics-consent.js` — the consent gate and loader injection.
+
+## Manual verification recipes
+
+- Build diagnostics: `npm run seo:check` (build must succeed; the "unused
+  template" warnings are pre-existing).
+- Production build + local server:
+  `hugo --environment production --minify --destination /tmp/bfa-audit-production --baseURL http://127.0.0.1:1314/`
+  then `python3 -m http.server 1314 --directory /tmp/bfa-audit-production`.
+- Lighthouse (needs a Chrome binary; `CHROME_PATH` points at one):
+  `CHROME_PATH="/path/to/Google Chrome for Testing" npm exec --no -- lighthouse http://127.0.0.1:1314/ --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=/tmp/bfa-lh-home.json --chrome-flags="--headless=new --no-sandbox"`.
+  Run it more than once and compare the spread; local numbers are not comparable
+  with Google's server-side run.
+- Contrast is checked on the real surfaces: filled primary buttons use
+  `--color-primary-dark` (#175a6c) and filled success buttons use the darkened
+  `--color-success` (#0b6519) so white text reaches 7.7:1 / 7.3:1. Accent text
+  and icons use the same `primary-dark` tone (#175a6c, 7.7:1) rather than
+  `primary` (#1e6b80, 6.1:1), the three category colours reach 7.5–7.7:1 with
+  white text, and hero text over a photo sits on the scrim
+  (`from-fjord/90 via-fjord/65 to-transparent`; worst case over a white photo pixel
+  is 9.3:1 at the opaque foot and 4.3:1 at the middle, so the readable words sit
+  low and the tag row is the weakest point). [DESIGN.md](DESIGN.md)
+  holds the ratio table and the rules; re-measure there whenever a token, a chip
+  colour or the hero scrim changes.
 
 ## Decap
 

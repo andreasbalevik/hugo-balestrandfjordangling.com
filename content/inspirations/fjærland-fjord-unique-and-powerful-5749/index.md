@@ -45,6 +45,9 @@ description: Discover Norway's historic Fjærland Fjord. Experience dramatic
 aliases: []
 images:
   - src: images/an-authenticandjoyfulwoman-embraces-thepristinemountain-air-capturing-theessenceof-theimmersivenorwegian-fjord-experience-with-aradiantsmile-that-perfectly-matches.jpg
+    alt: "A woman in a red jacket sits on the boat with her arms outstretched and
+      her face turned to the sun, the calm fjord mirroring the snow-covered
+      mountains."
 related_activities:
   - scenic-boat-route-balestrand-fjærland-4239/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index

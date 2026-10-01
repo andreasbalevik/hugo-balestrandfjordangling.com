@@ -20,8 +20,8 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Quality', name: 'quality', widget: 'string' }
-      - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+      - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
       - label: "Aliases"
         name: "aliases"
         widget: "list"
@@ -40,7 +40,7 @@ collections:
         public_folder: 'images'
         fields:
           - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
 
       - label: 'Categories'
         name: 'tags'
@@ -162,8 +162,8 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+      - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
       - label: "Aliases"
         name: "aliases"
         widget: "list"
@@ -181,7 +181,7 @@ collections:
         public_folder: 'images'
         fields:
           - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: "Related activities"
@@ -214,8 +214,8 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-      - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+      - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
       - label: 'Images'
         name: 'images'
         widget: 'list'
@@ -225,7 +225,7 @@ collections:
         public_folder: 'images'
         fields:
           - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: "Related activities"
         name: "related_activities"
@@ -257,7 +257,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           
           - label: "Categories"
             name: "categories"
@@ -364,7 +364,7 @@ collections:
                 max: 10
                 fields:
                   - { label: 'Image', name: 'src', widget: 'image' }
-                  - { label: 'Alt Text', name: 'alt', widget: 'string' }
+                  - { label: 'Alt Text', name: 'alt', widget: 'string', hint: "Describe what is in the image for people who cannot see it." }
 
 
           - label: "Recommended inspirations"
@@ -388,8 +388,8 @@ collections:
         delete: false
         fields:
           - {label: Title, name: title, widget: string}
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'
@@ -398,7 +398,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - file: "content/tags/bike-and-hike/_index.md"
@@ -406,8 +406,8 @@ collections:
         name: "bike-and-hike"
         delete: false
         fields:
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
@@ -416,7 +416,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
@@ -425,8 +425,8 @@ collections:
         name: "business-and-pleasure"
         delete: false
         fields:
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
@@ -435,7 +435,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
@@ -444,8 +444,8 @@ collections:
         name: "family-and-friends"
         delete: false
         fields:
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
@@ -454,7 +454,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
 
@@ -464,8 +464,8 @@ collections:
         delete: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
@@ -474,7 +474,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - file: "content/inspirations/_index.md"
@@ -483,8 +483,8 @@ collections:
         delete: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: "SEO (search optimalization keywords)", name: "keywords", widget: "list" }
-          - { label: 'SEO (search optimalization shorttext)', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'] }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
@@ -493,7 +493,7 @@ collections:
             allow_multiple: false
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false }
+              - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Short description text that appears above the inspirations grid' }
           
       - file: "content/LLMs.md"

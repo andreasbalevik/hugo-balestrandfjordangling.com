@@ -34,8 +34,7 @@
         {{ $story := . }}
         <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-14 items-center">
             <a href="{{ .RelPermalink }}"
-               class="block lg:col-span-7 overflow-hidden rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-               aria-label="Read {{ .Title }}">
+               class="block lg:col-span-7 overflow-hidden rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                 {{ range first 1 .Params.images }}
                     {{ partial "components/images/image.html" (dict
                         "src" .src
@@ -60,7 +59,7 @@
                     "href" .RelPermalink
                     "text" "Read story"
                     "variant" "primary"
-                    "ariaLabel" (printf "Read %s" .Title)
+                    "ariaLabel" (printf "Read story: %s" .Title)
                 ) }}
             </div>
         </article>
@@ -82,10 +81,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {{ range $story := . }}
-            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow">
+            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white">
                 <a href="{{ $story.RelPermalink }}"
-                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                   aria-label="Read {{ $story.Title }}">
+                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                     <div class="overflow-hidden">
                         {{ range first 1 $story.Params.images }}
                             {{ partial "components/images/image.html" (dict
@@ -98,7 +96,7 @@
                     </div>
 
                     <div class="flex flex-1 flex-col p-5 md:p-6">
-                        <h3 class="mt-0 mb-3 text-xl md:text-2xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary transition-colors duration-300">
+                        <h3 class="mt-0 mb-3 text-xl md:text-2xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary-dark transition-colors duration-300">
                             {{ $story.Title }}
                         </h3>
                         {{ with $story.Params.description }}
@@ -106,7 +104,7 @@
                             {{ . }}
                         </p>
                         {{ end }}
-                        <span class="self-end mt-auto inline-flex items-center gap-1 pt-5 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
+                        <span class="self-end mt-auto inline-flex items-center gap-1 pt-5 font-semibold text-gray-700 group-hover:text-primary-dark transition-colors duration-300">
                             Read story
                             <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
                                  aria-hidden="true"
@@ -138,10 +136,9 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {{ range $story := . }}
-            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white shadow">
+            <article class="h-full overflow-hidden rounded-lg border border-fjord-pale bg-white">
                 <a href="{{ $story.RelPermalink }}"
-                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                   aria-label="Read {{ $story.Title }}">
+                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                     <div class="overflow-hidden">
                         {{ range first 1 $story.Params.images }}
                             {{ partial "components/images/image.html" (dict
@@ -153,11 +150,11 @@
                         {{ end }}
                     </div>
 
-                    <div class="flex flex-1 flex-col p-5">
-                        <h3 class="mt-0 mb-5 text-lg md:text-xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary transition-colors duration-300">
+                    <div class="flex flex-1 flex-col p-5 md:p-6">
+                        <h3 class="mt-0 mb-5 text-xl md:text-2xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary-dark transition-colors duration-300">
                             {{ $story.Title }}
                         </h3>
-                        <span class="self-end mt-auto inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary transition-colors duration-300">
+                        <span class="self-end mt-auto inline-flex items-center gap-1 font-semibold text-gray-700 group-hover:text-primary-dark transition-colors duration-300">
                             Read story
                             <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
                                  aria-hidden="true"

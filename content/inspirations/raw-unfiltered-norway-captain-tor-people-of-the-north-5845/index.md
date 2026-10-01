@@ -27,6 +27,8 @@ description: "As seen on TV: Captain Tor & 'People of the North' Episode 6.
   talking about"
 images:
   - src: images/arne-hjeltnes-sigrid-henjum-stig-baraksten.png
+    alt: "Arne Hjeltnes, Sigrid Henjum and Stig Baraksten smile for a selfie in
+      front of a glacier, their faces marked with soot from filming."
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
@@ -37,7 +39,7 @@ cms: true
 
 Get ready for a **deep dive** into Sogn's wild west. Captain Tor and his unique fjord experiences are no longer a secret—we've gone **global**. Episode 6 of "People of the North" takes viewers to Balestrand, where hosts Arne, Sigrid, and Stig explore the **unfiltered**, local life. This isn't a tourist trap; this is the **real deal**. We're talking **authentic** Sognefjord, raw nature power, and historic charm—exactly what you need to feel alive.
 
-# Ready to experience what viewers in 16 countries are falling for? Episode 6 is **live**.
+## Ready to experience what viewers in 16 countries are falling for? Episode 6 is **live**.
 
 ### **What is the "People of the North" episode about?**
 

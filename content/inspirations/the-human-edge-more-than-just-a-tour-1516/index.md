@@ -35,7 +35,7 @@ cms: true
 ---
 In a world full of digital filters and mass-produced experiences, we have chosen a different course. We call it "The Human Edge". This is not just a business strategy; it is a philosophy that guarantees a genuine, unfiltered experience of the Sognefjord, and which is committed to sustainable travel and ecotourism.
 
-### What does The Human Edge mean for you as a guest?
+## What does The Human Edge mean for you as a guest?
 
 **Direct Resonance:** When you book, you communicate directly with me, the Captain. There are no intermediaries, no tour operators – just an unbroken line of human contact from the first inquiry until we return to the dock.
 

@@ -144,13 +144,13 @@ The energy in the **\#fjærlandsfjorden** is special—more original, more pow
 
 **Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CSywgKHqZTU/)
 
-Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 
-Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
-Teaser YouTube TV-Episode 6: People of The North [HERE](https://www.youtube.com/watch?v=pjoMLKwGsEg)[](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+Teaser YouTube TV-Episode 6, People of The North: [Watch the TV episode on YouTube](https://www.youtube.com/watch?v=pjoMLKwGsEg)
 
 ### ***Experience the Fjord Phenomenon: A Moment Exclusively for Your Soul***
 

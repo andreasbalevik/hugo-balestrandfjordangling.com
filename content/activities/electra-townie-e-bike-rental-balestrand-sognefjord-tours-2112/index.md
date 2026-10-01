@@ -114,7 +114,7 @@ A: Yes! If one person wants a light workout to Dragsvik, for example, you can re
 
 ## **Quick Facts & Pricing:**
 
-#### Recommended Tours & Distances (Incl. Return)- There’s a lot of beautiful nature, but a busy road. Go to pictures to see route on map.
+### Recommended Tours & Distances (Incl. Return)- There’s a lot of beautiful nature, but a busy road. Go to pictures to see route on map.
 
 | To Dragsvik (18 km)             | ~2 hours | 450 NOK     | 09:00-15:00* |
 | ------------------------------- | -------- | ----------- | ------------ |
@@ -141,11 +141,11 @@ If one person wants a light workout to Dragsvik, for example, you can rent 2 bic
 
 **Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of Balestrand!
 
-Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/stories/highlights/18501455134029845/)
+Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/stories/highlights/18501455134029845/)
 
-Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CfkDKe1lUdp/)
+Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/CfkDKe1lUdp/)
 
-Teaser YouTube Episode 2: Watch the video [HERE](https://www.youtube.com/watch?v=FydHB0yOMnE&t=25s)
+Teaser YouTube Episode 2: [Watch the video on YouTube](https://www.youtube.com/watch?v=FydHB0yOMnE&t=25s)
 
 ### GO FARTHER. GO FASTER. GO SLOW. REASONS TO GO?
 
@@ -161,9 +161,9 @@ Teaser YouTube Episode 2: Watch the video [HERE](https://www.youtube.com/watch?v
 
 ## **Safety & Logistics**
 
-#### Remember to lock your bike when you leave it, wear a helmet. For safety’s sake.
+### Remember to lock your bike when you leave it, wear a helmet. For safety’s sake.
 
-#### **Important Links:**
+### **Important Links:**
 
-* Link to The Three Fjord Ride TripAdvisor Link [HERE](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)
-* Link to Weather forecast: Check the link [HERE](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)
+* **[See The Three Fjord Ride on Tripadvisor](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)**
+* **[Check the weather forecast for Balestrand at yr.no](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)**

@@ -1,16 +1,30 @@
 {{ define "main" }}
 
-<!-- Tag Landing Page Hero -->
-{{ if .Content }}
-<section class="overflow-hidden" style="background-color: {{ .Params.color | default "#1d3640" }};">
+<!-- Tag Landing Page Hero: the coloured band shows when the term has body copy,
+     but the term name is always the page h1. -->
+{{ $hasContent := .Content }}
+<section class="{{ if $hasContent }}overflow-hidden{{ else }}bg-white{{ end }}"
+    {{ if $hasContent }}style="background-color: {{ .Params.color | default "#1d3640" }};"{{ end }}>
     <div class="container">
-        <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance text-white">{{ .Title }}</h1>
+        {{ with site.GetPage "activities" }}
+        <a href="{{ .RelPermalink }}"
+            class="inline-flex items-center mb-4 min-h-11 font-medium hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 {{ if $hasContent }}text-white focus-visible:outline-white{{ else }}text-primary-dark focus-visible:outline-primary{{ end }}">
+            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to activities
+        </a>
+        {{ end }}
+        <h1 class="mt-0 mb-5 md:mb-6 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance {{ if $hasContent }}text-white{{ else }}text-gray-900{{ end }}">{{ .Title }}</h1>
+        {{ with .Content }}
         <div class="text-lg md:text-xl leading-relaxed text-pretty text-white max-w-3xl">
-            {{ .Content }}
+            {{ . }}
         </div>
+        {{ end }}
     </div>
 </section>
-{{ end }}
 
 <!-- Activities List (with filter above) -->
 <section class="bg-fjord-light">
@@ -20,10 +34,10 @@
         <p class="text-base font-semibold text-gray-900">Filter:</p>
         <div class="relative">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                class="inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-fjord-pale bg-white hover:bg-fjord-light transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                class="inline-flex items-center gap-2 rounded-lg min-h-11 px-4 py-2 border border-fjord-pale bg-white hover:bg-fjord-light transition-colors duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 type="button"
-                aria-label="Filter activities by category"
-                aria-haspopup="true"
+                aria-label="Filter activities by category: {{ .Title }}"
+                aria-controls="dropdown"
                 aria-expanded="false">
                 <span class="text-xs font-semibold px-3 py-1.5 rounded-md text-white bg-category"
                     style="background-color: {{.Params.color | default "#1d3640"}};">

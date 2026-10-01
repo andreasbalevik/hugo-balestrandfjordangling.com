@@ -9,9 +9,9 @@
 {{ $isCentered := eq $alignment "center" }}
 {{ $headerClass := .class | default "" }}
 {{ $headerAlignmentClass := .headerAlignmentClass | default (cond $isCentered "text-center" "text-left") }}
-{{ $eyebrowClass := .eyebrowClass | default "text-primary" }}
+{{ $eyebrowClass := .eyebrowClass | default "text-primary-dark" }}
 {{ $titleClass := .titleClass | default "text-gray-900" }}
-{{ $descriptionClass := .descriptionClass | default "text-lg md:text-xl leading-relaxed text-pretty text-gray-900/80" }}
+{{ $descriptionClass := .descriptionClass | default "text-lg md:text-xl leading-relaxed text-pretty text-gray-800" }}
 {{ $dividerClass := .dividerClass | default (cond $isCentered "mx-auto" "") }}
 {{ $showEyebrow := .showEyebrow | default false }}
 {{ $showDivider := .showDivider | default false }}

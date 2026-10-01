@@ -36,9 +36,20 @@ description: "Go Viking with Captain Tor in April/May! Experience authentic net
   fishing, local culture, and a digital detox in the pristine Fjærlandsfjord. "
 images:
   - src: images/kopi-352992ad-0ab6-468d-8eb6-72b527b0514c_1_201_a.jpg
+    alt: "A woman in a yellow winter jacket and white beanie holds a live
+      langoustine in her gloved hand, snowy mountains and blue fjord water
+      behind."
   - src: images/b67i5419.jpg
+    alt: "Three guests on a winter boat trip, one at the helm, one coiling rope and
+      one sorting gear in a neon-yellow jacket, with snow-covered mountains all
+      around."
   - src: images/301942850_822012238800516_4847735421244601584_n.jpg
+    alt: "Two smiling women in neon-yellow fishing jackets hold up a large pollack
+      on the boat, blue fjord water and snowy mountains behind."
   - src: images/b67i4478.jpg
+    alt: "The skipper lifts a large anglerfish out of the net on deck while two
+      guests in winter clothes look on, fishing rods along the gunwale and the
+      snowy village across the fjord."
 tags:
   - business-and-pleasure
 information:
@@ -123,13 +134,13 @@ We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of 
 
 To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CyT_RntKYNr/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CyT_RntKYNr/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CbJ89SCFPbq/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/CbJ89SCFPbq/)
 >
-> Teaser Instagram Reel 3: Watch the video[ HERE](https://www.instagram.com/p/C1cKiAtqQ16/)
+> Teaser Instagram Reel 3: [Watch the video on Instagram](https://www.instagram.com/p/C1cKiAtqQ16/)
 >
-> People of The North Episode Captain Tor [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
+> People of The North Episode with Captain Tor: [Watch the episode on YouTube](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 ### ENHANCE YOUR STAY: Discover More in Fjærland
 

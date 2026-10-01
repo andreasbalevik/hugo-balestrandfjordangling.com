@@ -85,15 +85,24 @@ keywords:
   - bespoke adventure.
 description: "Book a 5-star Sognefjord tour in Balestrand! Authentic adventure
   with Captain Tor: fishing, sightseeing, & stories. Private year-round tours."
-aliases: []
+aliases:
+  - /en/best-norway-sognefjord-fishing-trip-experience
 images:
   - src: images/vakre-kvinner-i-sognefjorden-fiskestang-flotte-fjell-og-rød-jakke.jpeg
     alt: Two smiling women in life vests are fishing from a boat on a sunny day in a
       Norwegian fjord with steep green mountains in the background.
   - src: images/woman-enjoying-a-private-boat-tour-on-the-sognefjord-surrounded-by-steep-mountains-and-flying-a-small-norwegian-flag..jpg
+    alt: "A woman stands at the bow of the boat with her arms out and the Norwegian
+      flag in her hand, facing the steep green fjord walls ahead."
   - src: images/image1.jpeg
+    alt: "Two guests in life vests hold up a large halibut between them on the boat
+      deck, snow-capped mountains and a green fjord shore behind."
   - src: images/udzjhox4-1-.jpeg
+    alt: "A boy in an orange life vest and sunglasses reels in a fishing rod on the
+      boat, the line running out over the fjord water."
   - src: images/catch.jpg
+    alt: "A beaming boy in an orange life vest holds up the pollack he has just
+      caught, with the skipper smiling behind him on the boat."
 tags:
   - family-and-friends
 information:
@@ -149,11 +158,11 @@ Fun Fjord Angling in beautiful, legendary #Esefjorden
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/DRudnZaCLVF/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/DRudnZaCLVF/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 **This is a family trip where you also can experience the unexpected!**
 
@@ -181,7 +190,7 @@ Scenic Fjord excursion to small homestead farms in the beautiful #Fjærlandsfjor
 
 We speed up our boat and drive inwards towards the outer part of Fjærlandsfjorden which in bright season is green colored by melt water from the glacier village #fjærland.
 
-> #### DIGITAL DETOX: RECHARGE YOUR SOUL
+> ### DIGITAL DETOX: RECHARGE YOUR SOUL
 
 ### What is special about the energy in Fjærlandsfjorden?
 
@@ -191,7 +200,7 @@ By the way: It's nice and tidy too..
 
 > #### FJORD WELLNESS: ELEVATE YOUR JOURNEY
 
-**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **[Popular 3-Hour Lifestyle Program](/activities/balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
+**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **[Popular 3-Hour Lifestyle Program](/activities/balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-5655/)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
 
 ### On the Go? Fly & Drive Sognefjord Logistics
 

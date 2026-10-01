@@ -1,0 +1,114 @@
+{{/*
+  Analytics consent surface.
+
+  A centred modal card (native <dialog>, opened with showModal) so the visitor
+  makes the choice deliberately:
+  - "Accept analytics" is the filled primary action, full width, 48px tall.
+  - "Reject analytics" is a plain text control directly under it — one click,
+    44px hit area, AAA contrast and a visible focus ring, so refusal stays a
+    real and reachable choice rather than a hidden one.
+
+  The card is the warmest surface in the system, and the warmth is all token
+  colour: a soft fjord-light wash behind the greeting, the brand mark opening
+  the card like a signature on a letter, and a two-line fjord at the foot of
+  the card. The decoration is aria-hidden or alt="" and sits under nothing —
+  the greeting, the sentence and both controls are read against white or the
+  wash, never against the wave — so the extra colour costs no contrast. The
+  scrim behind the card is brand fjord rather than neutral grey, which keeps
+  the modal in the site's own palette.
+
+  The heading is a greeting that still names the subject ("Hello, may we use
+  analytics?"), so the dialog's accessible name keeps telling a screen reader
+  what the modal is for.
+
+  The card holds the greeting, a short explanation with the privacy statement
+  link, and the two choices — nothing below them. The explanation gives the
+  four things a visitor needs to decide, in plain words: why (Google Analytics,
+  the pages and activities we would like to see), that nothing is tracked
+  before the choice, that rejecting keeps analytics off, and where the choice
+  can be changed. It keeps the terms used by content/privacy.md ("accept",
+  "reject", "choice", "privacy statement"), so the two texts stay in step, and
+  the privacy statement carries the stronger claim behind the first of them
+  (nothing is loaded at all until the choice is made). Changing the
+  choice later happens on /privacy/ (see shortcodes/analytics-settings.html),
+  which also documents what the choice stores.
+
+  Whether this build may actually load GA4/GTM after an accept is decided by
+  utils/analytics-enabled.html and passed as data-analytics-enabled; the script
+  never injects a loader when it is "false" (development, deploy previews).
+
+  Without JS the dialog stays closed and no analytics is loaded; normal page
+  reading and booking are unaffected.
+*/}}
+{{ $analyticsEnabled := partial "utils/analytics-enabled.html" . }}
+{{ $privacy := site.Params.privacyUrl | default "/privacy" }}
+
+<dialog id="bfa-consent"
+     aria-labelledby="bfa-consent-title"
+     aria-modal="true"
+     data-consent-key="bfa-analytics-consent"
+     data-gtm="GTM-TBP9B3X"
+     data-ga4="G-HNS6R4TEK0"
+     data-analytics-enabled="{{ $analyticsEnabled }}"
+     class="m-0 h-full max-h-none w-full max-w-none border-0 bg-transparent p-0 py-6 backdrop:bg-fjord/70 open:flex open:justify-center overflow-y-auto overscroll-contain">
+    <div class="mx-4 my-auto w-full max-w-lg overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-fjord-pale">
+        <div class="bg-gradient-to-b from-fjord-light to-white px-6 pt-7 pb-5 md:px-8 md:pt-8">
+            {{/* The brand mark opens the card like a signature on a letter;
+                 decorative (alt=""), because the heading carries the meaning. */}}
+            {{- with site.Params.logo }}
+            {{- with resources.Get . }}
+            {{- $mark1x := .Resize "x112 webp" }}
+            {{- $mark2x := .Resize "x224 webp" }}
+            <img src="{{ $mark1x.RelPermalink }}"
+                 srcset="{{ $mark1x.RelPermalink }} 1x, {{ $mark2x.RelPermalink }} 2x"
+                 alt=""
+                 class="mb-4 block h-14 w-auto md:h-16">
+            {{- end }}
+            {{- end }}
+            <h2 id="bfa-consent-title" data-consent-title tabindex="-1"
+                class="mt-0 mb-3 text-xl font-medium text-balance text-gray-900 md:text-2xl focus:outline-none">
+                Welcome! A quick question about analytics
+            </h2>
+            <p class="mb-0 text-base leading-relaxed text-gray-800">
+                We would like to use Google Analytics to see which pages and activities visitors look at. Nothing is
+                tracked until you accept, and if you reject, analytics stays off. You can change your choice at any
+                time in our
+                <a href="{{ $privacy }}" class="font-medium text-primary-dark underline hover:text-primary-darker focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">privacy statement</a>.
+            </p>
+        </div>
+        <div class="px-6 pt-5 pb-6 md:px-8">
+            <div class="flex flex-col">
+                <button type="button" data-consent-accept
+                    class="inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-primary-dark px-6 text-base font-semibold text-white transition-colors duration-200 hover:bg-primary-darker cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                    Accept analytics
+                </button>
+                <button type="button" data-consent-reject
+                    class="mx-auto mt-2 inline-flex min-h-11 items-center px-4 text-base font-medium text-primary-dark underline transition-colors duration-200 hover:text-primary-darker cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                    Reject analytics
+                </button>
+            </div>
+        </div>
+        {{/* The fjord line at the card's foot: pure decoration, so it sits below
+             every control and no text is ever read against it. */}}
+        <svg aria-hidden="true" focusable="false"
+             class="block h-8 w-full text-fjord-pale"
+             viewBox="0 0 400 32" preserveAspectRatio="none"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M0 13c25-7 50-7 75 0s50 7 75 0 50-7 75 0 50 7 75 0 50-7 100 0"/>
+            <path d="M0 23c25-7 50-7 75 0s50 7 75 0 50-7 75 0 50 7 75 0 50-7 100 0" opacity=".55"/>
+        </svg>
+    </div>
+</dialog>
+
+{{- with resources.Get "js/analytics-consent.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script defer src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script defer src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}

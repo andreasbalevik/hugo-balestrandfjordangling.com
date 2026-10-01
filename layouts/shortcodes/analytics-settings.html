@@ -1,0 +1,20 @@
+{{/*
+  Shortcode: analytics-settings
+
+  Renders the control that reopens the analytics consent surface
+  (layouts/partials/components/analytics-consent.html). It sits in the privacy
+  statement, which is the one place we send visitors to for changing or
+  withdrawing their analytics choice; the footer links to that page rather than
+  duplicating the control.
+
+  assets/js/analytics-consent.js binds every element carrying
+  data-analytics-settings, so the shortcode needs no extra script.
+
+  Usage:  {{< analytics-settings >}}
+*/}}
+<p>
+    <button type="button" data-analytics-settings
+        class="inline-flex min-h-12 items-center justify-center rounded-lg border border-primary-dark px-6 text-base font-semibold text-primary-dark transition-colors duration-200 hover:bg-primary-dark hover:text-white cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+        Change my analytics choice
+    </button>
+</p>

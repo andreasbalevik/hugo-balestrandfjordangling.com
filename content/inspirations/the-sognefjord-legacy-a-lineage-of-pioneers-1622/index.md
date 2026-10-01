@@ -31,6 +31,9 @@ description: Experience Sognefjord’s legacy. Join Captain Tor, a lifelong
   your story
 images:
   - src: images/kaptein-tor-som-7-åring-i-balaviki-alt-her-tar-han-besøkende-venner-med-på-fisketur-opplevelse.jpg
+    alt: "Captain Tor as a seven-year-old, fishing from the wooden pier in
+      Balestrand with two visiting friends, the village and green mountains
+      behind in an old colour photo."
   - src: images/kaptein-tor-på-brygga-med-45-kg-breiflabb-og-de-2-barna-hans.-stolt-familie-arv.jpg
     alt: "\"A historic photo from the 1990s of Captain Tor Balevik as a young
       outdoor educator (Leirskole-instruktør) on a wooden pier in Balestrand. He

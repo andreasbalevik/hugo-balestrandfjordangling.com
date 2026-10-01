@@ -1,4 +1,21 @@
+{{/*
+  LocalBusiness / TouristDestination JSON-LD for the home page.
+
+  Changed from the theme behaviour:
+  - Removed the undocumented openingHoursSpecification (the business does not
+    publish those hours here) and the static priceRange (prices vary by tour and
+    group size; the per-tour Product offers carry the real numbers).
+  - Address, geo, phone, email, map and social profiles now come from the site
+    configuration instead of being hardcoded here, so there is a single source
+    of truth and no diverging values.
+*/}}
 {{ if .IsHome }}
+{{ $sameAs := slice }}
+{{ with site.Params.social }}
+  {{ range $key, $url := . }}
+    {{ if $url }}{{ $sameAs = $sameAs | append $url }}{{ end }}
+  {{ end }}
+{{ end }}
 <!-- LOCAL BUSINESS SCHEMA -->
 <script type="application/ld+json">
 {
@@ -24,38 +41,28 @@
   ,"email": "{{ site.Params.email }}"
   ,"address": {
     "@type": "PostalAddress",
-    "streetAddress": "Holmen 3",
-    "addressLocality": "Balestrand",
-    "addressRegion": "Vestland",
-    "postalCode": "6899",
-    "addressCountry": "NO"
+    "streetAddress": "{{ site.Params.address }}",
+    "addressLocality": "{{ site.Params.addressLocality }}",
+    "addressRegion": "{{ site.Params.addressRegion }}",
+    "postalCode": "{{ site.Params.postalCode }}",
+    "addressCountry": "{{ site.Params.addressCountry | default "NO" }}"
   }
   ,"geo": {
     "@type": "GeoCoordinates",
-    "latitude": "61.2069",
-    "longitude": "6.5278"
+    "latitude": "{{ site.Params.latitude }}",
+    "longitude": "{{ site.Params.longitude }}"
   }
-  ,"openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }
-  ,"priceRange": "NOK 3000-10000"
   ,"areaServed": {
     "@type": "GeoCircle",
     "geoMidpoint": {
       "@type": "GeoCoordinates",
-      "latitude": "61.2069",
-      "longitude": "6.5278"
+      "latitude": "{{ site.Params.latitude }}",
+      "longitude": "{{ site.Params.longitude }}"
     },
-    "geoRadius": "50000"
+    "geoRadius": "{{ site.Params.areaServedRadius }}"
   }
-  ,"hasMap": "https://www.google.com/maps/place/Holmen+3,+6899+Balestrand,+Norway"
-  ,"sameAs": [
-    "https://www.instagram.com/balestrandfjordangling/",
-    "https://www.facebook.com/balestrandfjordangling/"
-  ]
+  ,"hasMap": "{{ site.Params.hasMap }}"
+  {{ if $sameAs }},"sameAs": [{{ range $i, $url := $sameAs }}{{ if $i }}, {{ end }}"{{ $url }}"{{ end }}]{{ end }}
   ,"makesOffer": [
     {
       "@type": "Offer",
@@ -94,8 +101,8 @@
   "description": "Experience authentic Norwegian fjord adventures with Captain Tor in Balestrand, Sognefjord",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "61.2069",
-    "longitude": "6.5278"
+    "latitude": "{{ site.Params.latitude }}",
+    "longitude": "{{ site.Params.longitude }}"
   },
   "touristType": ["Families", "Couples", "Adventure Seekers", "Nature Lovers", "Anglers"],
   "includesAttraction": [

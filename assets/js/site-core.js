@@ -3,17 +3,22 @@ function setupMobileMenu() {
   const menu = document.getElementById("navbar-sticky");
   if (!button || !menu) return;
 
+  const focusableSelector =
+    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  const isMobileViewport = () => window.innerWidth < 1024;
+  const isOpen = () => !menu.classList.contains("hidden");
+
   function setMenu(open) {
     if (open) {
       menu.classList.remove("hidden");
       button.setAttribute("aria-expanded", "true");
-      button.setAttribute("aria-label", "Lukk navigasjonsmeny");
+      button.setAttribute("aria-label", "Close navigation menu");
       button.querySelector(".closed-icon")?.classList.add("hidden");
       button.querySelector(".open-icon")?.classList.remove("hidden");
     } else {
       menu.classList.add("hidden");
       button.setAttribute("aria-expanded", "false");
-      button.setAttribute("aria-label", "Åpne navigasjonsmeny");
+      button.setAttribute("aria-label", "Open navigation menu");
       button.querySelector(".closed-icon")?.classList.remove("hidden");
       button.querySelector(".open-icon")?.classList.add("hidden");
     }
@@ -23,17 +28,62 @@ function setupMobileMenu() {
 
   button.addEventListener("click", function () {
     if (locked) return;
-    setMenu(menu.classList.contains("hidden"));
+    setMenu(!isOpen());
   });
 
   menu.querySelectorAll('a[href]').forEach(function (link) {
     link.addEventListener("click", function () {
-      if (window.innerWidth < 1024) {
+      if (isMobileViewport()) {
         setMenu(false);
         locked = true;
         setTimeout(function () { locked = false; }, 400);
       }
     });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (!isOpen() || !isMobileViewport()) return;
+
+    if (e.key === "Escape") {
+      e.preventDefault();
+      locked = false;
+      setMenu(false);
+      button.focus();
+      return;
+    }
+
+    if (e.key !== "Tab") return;
+
+    // The toggle sits before the menu in the DOM, so forward Tab from it
+    // enters the menu first. While the overlay is open, keep focus cycling
+    // through the toggle and the menu instead of reaching the page behind it.
+    const focusables = [button].concat(
+      Array.from(menu.querySelectorAll(focusableSelector))
+    );
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    const active = document.activeElement;
+
+    if (active !== button && !menu.contains(active)) {
+      e.preventDefault();
+      (e.shiftKey ? last : first).focus();
+      return;
+    }
+
+    if (e.shiftKey && active === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (!isMobileViewport() && isOpen()) {
+      locked = false;
+      setMenu(false);
+    }
   });
 }
 
@@ -58,6 +108,18 @@ function setupDropdowns() {
         dropdown.classList.add("hidden");
         button.setAttribute("aria-expanded", "false");
       }
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    document.querySelectorAll("[data-dropdown-toggle]").forEach(function (button) {
+      const dropdown = document.getElementById(button.getAttribute("data-dropdown-toggle"));
+      if (!dropdown || dropdown.classList.contains("hidden")) return;
+      e.preventDefault();
+      dropdown.classList.add("hidden");
+      button.setAttribute("aria-expanded", "false");
+      button.focus();
     });
   });
 }

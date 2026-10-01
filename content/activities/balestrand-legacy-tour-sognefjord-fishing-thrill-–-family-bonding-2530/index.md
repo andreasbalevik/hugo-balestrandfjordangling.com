@@ -38,8 +38,16 @@ images:
     alt: Mother and daughter and funny fish, on viking fishing adventure in
       sognefjord with captain Tor
   - src: images/esxae4wi.jpeg
+    alt: "On the boat in front of the white hotel on the Balestrand shore the
+      skipper lifts a green fish box while a boy in an orange life vest holds up
+      a small flatfish and a girl reaches into a box of kelp."
   - src: images/ref1q_h0.jpeg
+    alt: "A boy in an orange life vest looks at the camera while the skipper gives a
+      thumbs up at the wheel, the Norwegian flag flying and the village of
+      Balestrand on the shore behind."
   - src: images/solveig-lyr-redigert.jpg
+    alt: "A smiling woman in sunglasses holds up the pollack she has caught, the
+      green fjord shore behind her."
 tags:
   - family-and-friends
 information:
@@ -140,11 +148,11 @@ Feel free to share this unique opportunity here in Balestrand with friends, and 
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> [](HERE)Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ## **A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR**
 

@@ -1,0 +1,21 @@
+{{/*
+  Analytics activation gate.
+
+  Analytics (GA4/GTM) may only load in a production context, and only after the
+  visitor has actively accepted. This partial answers "is this build allowed to
+  load analytics at all?" — the actual loading is gated on consent in
+  assets/js/analytics-consent.js.
+
+  Rules:
+  - Hugo development (hugo server, environment=development): never.
+  - Netlify deploy preview / branch deploy / any other CONTEXT value: never.
+  - CONTEXT unset (local production build) or CONTEXT == "production": allowed.
+*/}}
+{{- $enabled := false -}}
+{{- if not hugo.IsDevelopment -}}
+  {{- $ctx := os.Getenv "CONTEXT" -}}
+  {{- if or (eq $ctx "") (eq $ctx "production") -}}
+    {{- $enabled = true -}}
+  {{- end -}}
+{{- end -}}
+{{- return $enabled -}}

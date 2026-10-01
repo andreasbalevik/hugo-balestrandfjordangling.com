@@ -57,12 +57,14 @@ description: I live in Norway, in the never–summer land of Balestrand in the
   resorts of Europe..
 images:
   - src: images/kaptain-tor-and-miss-fjords-on-mission-among-high-mountains-in-sognefjord.jpg
+    alt: Captain Tor at the helm of his boat in the Sognefjord, on a private
+      fishing trip with focus on local expertise and sustainable travel
 related_activities:
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
 cms: true
 ---
-### *In my fjords, when spring finally comes to save me from a perpetual winter,*
+## *In my fjords, when spring finally comes to save me from a perpetual winter,*
 
 *my world comes alive again, and I remember why I am here. I am a son of a long line of fjord fishermen and pioneers in Balevik bay who make a living from what the Sognefjord has to offer. And when I get the first bookings from tourist guest in the spring, I love to see them rediscover this Sognefjord world and be filled with wonder and presence.*
 
@@ -78,4 +80,4 @@ cms: true
 
 *this fire in the soul and keep it buried deep inside themselves. But there will always be a few people who have the courage to love what is untamed inside us... Finding the way back to who I am!*
 
-> ##### ***“All I feel is free..”***
+> #### ***“All I feel is free..”***

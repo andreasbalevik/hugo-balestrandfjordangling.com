@@ -71,8 +71,7 @@ description: Master authentic long line fishing with a premium, hands-on skill
   immersion & unique fishing adventure. Book your memorable escape today!
 images:
   - src: images/img_3000.jpg
-    alt: nyskerrig dame, skejjer munnen på fisk ig jakke i fine farger matauk i
-      sognefjorden, brosme i fjærlandsfjorden
+    alt: Curious woman, opening the mouth of the fish in a finely coloured jacket, subsistence catch in the Sognefjord, cusk in Fjærlandsfjorden.
 tags:
   - business-and-pleasure
 information:
@@ -147,9 +146,9 @@ Yes, absolutely! To really get a feel for the atmosphere, we’ve put together s
 
 > **Watch YouTube Episode 2: [The Long line Fishing part ](https://www.youtube.com/watch?v=FydHB0yOMnE&t=175s)**
 >
-> **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
+> **Teaser Instagram Reel 1:** [Watch the video on Instagram](https://www.instagram.com/p/CcqW7ddF-cd/)
 >
-> **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
+> **Teaser Instagram Reel 2:** [Watch the video on YouTube](https://www.youtube.com/watch?v=G6MpBbUgXhw)
 
 ### **What is the process and the feeling of the catch?**
 
@@ -189,9 +188,9 @@ Seagulls follow us back to the marina. The sound from the Honda BF100 is pure qu
 
 Ready to see what awaits you in the deep Sognefjord? Get inspired by our authentic experiences and plan your trip with the latest weather information:
 
-* **See the latest catch (Instagram Reels):** WATCH [HERE](https://www.instagram.com/p/CcqW7ddF-cd/)
-* **Watch the authentic long line fishing process (YouTube):** WATCH [HERE](https://www.youtube.com/watch?v=G6MpBbUgXhw)
-* **Check the local weather forecast for Balestrand:** CHECK WEATHER [HERE](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)
+* **See the latest catch (Instagram Reels):** **[Watch on Instagram](https://www.instagram.com/p/CcqW7ddF-cd/)**
+* **Watch the authentic long line fishing process (YouTube):** **[Watch on YouTube](https://www.youtube.com/watch?v=G6MpBbUgXhw)**
+* **Check the local weather forecast for Balestrand:** **[Check the weather forecast at yr.no](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)**
 
 ## ***A VIKING JOURNEY IN THE FJORDS WITH CAPTAIN TOR***
 

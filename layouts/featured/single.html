@@ -11,7 +11,6 @@
         "src"         .src
         "alt"         .alt
         "description" $.Params.description
-        "gradient"    "from-fjord via-fjord/40 to-transparent"
         "badge"       (partial "featured/tv-badge.html" .)
     ) }}
     {{ end }}
@@ -32,7 +31,7 @@
                 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-xl prose-h3:md:text-2xl
                 prose-p:leading-relaxed
-                prose-a:text-primary prose-a:underline hover:prose-a:no-underline prose-a:transition-colors
+                hover:prose-a:text-primary-darker prose-a:transition-colors
                 prose-img:rounded-lg prose-img:shadow
                 prose-strong:text-gray-900 prose-strong:font-semibold
                 prose-blockquote:border-l-mist prose-blockquote:text-fjord prose-blockquote:font-medium prose-blockquote:italic">

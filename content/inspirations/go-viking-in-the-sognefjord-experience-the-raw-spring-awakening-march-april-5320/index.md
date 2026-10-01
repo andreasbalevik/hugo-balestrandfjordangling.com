@@ -29,14 +29,20 @@ description: Go Viking in the Sognefjord! Experience the raw spring awakening in
   March/April. Fewer crowds, more fish—your authentic Norse adventure awaits.
 images:
   - src: images/b67i5237.jpg
+    alt: "On the winter boat a green tub marked Go Viking in the Fjords stands
+      beside guest hands and a guide in foul-weather trousers sorting rope in
+      the low sun."
   - src: images/b67i5419.jpg
+    alt: "Three guests on a winter boat trip, one at the helm, one coiling rope and
+      one sorting gear in a neon-yellow jacket, with snow-covered mountains all
+      around."
 related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
   - the-fjord-awakens-exclusive-viking-fishing-expedition-in-the-sognefjord-4622/index
   - premium-skill-master-the-long-line-–-authentic-fjord-fishing-immersion-0003/index
 cms: true
 ---
-# Trade Winter for the Fjord's Wild Heart
+## Trade Winter for the Fjord's Wild Heart
 
 To go viking in the fjords is best experienced during the raw energy of March and May. This is when the Sognefjord truly wakes up, offering a powerful blend of tranquility and vitality. We base our immersive tours from both Balestrand and the charming [Fjærland Fjordstove Hotel HERE](https://fjaerlandhotel.com/) letting you choose your perfect adventure hub.
 
@@ -62,4 +68,4 @@ It's about genuine connection and heritage. While we focus on the raw fishing ex
 
 ### Where can I see a preview of the adventure?
 
-Watch our demo video [HERE](https://vimeo.com/broadstone/download/692438929/8de867798c) to get a taste of the thrill and raw beauty of the Sognefjord awakening from winter.
+[Watch our demo video on Vimeo](https://vimeo.com/broadstone/download/692438929/8de867798c) to get a taste of the thrill and raw beauty of the Sognefjord awakening from winter.
