@@ -85,7 +85,8 @@ keywords:
   - bespoke adventure.
 description: "Book a 5-star Sognefjord tour in Balestrand! Authentic adventure
   with Captain Tor: fishing, sightseeing, & stories. Private year-round tours."
-aliases: []
+aliases:
+  - /en/best-norway-sognefjord-fishing-trip-experience
 images:
   - src: images/vakre-kvinner-i-sognefjorden-fiskestang-flotte-fjell-og-rød-jakke.jpeg
     alt: Two smiling women in life vests are fishing from a boat on a sunny day in a
@@ -157,11 +158,11 @@ Fun Fjord Angling in beautiful, legendary #Esefjorden
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/DRudnZaCLVF/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/DRudnZaCLVF/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 **This is a family trip where you also can experience the unexpected!**
 
@@ -189,7 +190,7 @@ Scenic Fjord excursion to small homestead farms in the beautiful #Fjærlandsfjor
 
 We speed up our boat and drive inwards towards the outer part of Fjærlandsfjorden which in bright season is green colored by melt water from the glacier village #fjærland.
 
-> #### DIGITAL DETOX: RECHARGE YOUR SOUL
+> ### DIGITAL DETOX: RECHARGE YOUR SOUL
 
 ### What is special about the energy in Fjærlandsfjorden?
 
@@ -199,7 +200,7 @@ By the way: It's nice and tidy too..
 
 > #### FJORD WELLNESS: ELEVATE YOUR JOURNEY
 
-**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **[Popular 3-Hour Lifestyle Program](/activities/balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
+**Be generous with yourself; you've earned this break.** Experience the Sognefjord's magical vibes and elevate your journey with our **[Popular 3-Hour Lifestyle Program](/activities/balestrand-lifestyle-tour-angling-fjord-magic--a-shared-experience-5655/)**. This is not just a tour; it's an experience. **Level up your Norwegian adventure.**
 
 ### On the Go? Fly & Drive Sognefjord Logistics
 

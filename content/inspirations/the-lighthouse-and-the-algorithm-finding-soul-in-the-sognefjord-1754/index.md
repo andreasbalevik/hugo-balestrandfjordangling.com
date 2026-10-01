@@ -96,7 +96,7 @@ Description: A premium 3,5-hour private tour dedicated to silence, reflection, a
 
 Description: A transformative 3-hour heritage fishing expedition. We combine angling with storytelling about local roots, Varde traditions, and Sognefjord culture. This is about authentic human connection and linking with a legacy older than the internet.
 
-#### Hyperlink Text: [Discover Your Roots & Resilience Journey](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/)
+### Hyperlink Text: [Discover Your Roots & Resilience Journey](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/)
 
 **Keywords:** Heritage Travel Norway, Authentic Roots Tour, Varde Certified Guide, Sognefjord Culture, Meaningful Adventure, Ethical Travel.
 
@@ -106,6 +106,6 @@ Description: A transformative 3-hour heritage fishing expedition. We combine ang
 
 Description: A full-day, 5 hour exclusive experience with Captain Tor. This is for those seeking profound transformation. We use fishing as a metaphor for life—casting out hope, waiting, and harvesting the reward. A chance to process life’s big questions and turn longing into powerful drive.
 
-#### Hyperlink Text: [Book The Captain’s Deep Dive Experience](https://balestrandfjordangling.com/activities/fj%C3%A6rland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/)
+### Hyperlink Text: [Book The Captain’s Deep Dive Experience](https://balestrandfjordangling.com/activities/fj%C3%A6rland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/)
 
 **Keywords:** Personal Transformation Travel, 5D Leadership, Mentorship Experience, Deep Meaning Journey, Exclusive Norway Fishing, Authentic Growth.

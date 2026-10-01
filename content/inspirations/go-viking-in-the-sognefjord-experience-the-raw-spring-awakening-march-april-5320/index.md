@@ -68,4 +68,4 @@ It's about genuine connection and heritage. While we focus on the raw fishing ex
 
 ### Where can I see a preview of the adventure?
 
-Watch our demo video [HERE](https://vimeo.com/broadstone/download/692438929/8de867798c) to get a taste of the thrill and raw beauty of the Sognefjord awakening from winter.
+[Watch our demo video on Vimeo](https://vimeo.com/broadstone/download/692438929/8de867798c) to get a taste of the thrill and raw beauty of the Sognefjord awakening from winter.

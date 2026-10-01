@@ -28,7 +28,7 @@ We position our experiences in Balestrand as a necessary, modern journey – **a
 
 ## **Quick Insights: Our Core Values Q&A**
 
-#### – Buzzwords: Sustainability, Ethics, Mental Wellness:
+### – Buzzwords: Sustainability, Ethics, Mental Wellness:
 
 ### **How do you balance technology and mental wellness?**
 

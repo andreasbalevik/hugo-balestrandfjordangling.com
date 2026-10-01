@@ -102,7 +102,7 @@ Think that this small *"Microcosm"* that the boat *"Miss Fjords"* actually is, c
 
 > There is no complication that needs to happen; It just needs to be taken as simple as it is given..
 
-### What’s the day's itinerary?
+## What’s the day's itinerary?
 
 The adventure starts at 09:00 AM from Balestrand harbor.
 

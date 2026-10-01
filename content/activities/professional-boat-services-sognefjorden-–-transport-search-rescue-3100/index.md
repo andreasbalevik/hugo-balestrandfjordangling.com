@@ -45,8 +45,7 @@ description: "Båtassistanse i Sognefjorden (Proff). Transport, Film/Foto, EHF.
   Tjenester: Balestrand, Fjærland, Flåm. Kontakt Kaptein Tor."
 images:
   - src: images/b67i5480.jpg
-    alt: Kaptein Tor og Miss fjords med gjester og foto oppdrag i Fjærlandsfjorden,
-      vinter
+    alt: Captain Tor and Miss Fjords with guests on a photo assignment in Fjærlandsfjorden, winter
 tags:
   - business-and-pleasure
 information:

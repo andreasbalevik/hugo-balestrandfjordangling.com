@@ -32,7 +32,7 @@
                     Make a request
                 </h3>
                 <button type="button"
-                    class="inline-flex justify-center items-center transition-colors duration-300 w-11 h-11 rounded-lg hover:bg-gray-200 hover:text-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+                    class="inline-flex justify-center items-center transition-colors duration-300 w-11 h-11 rounded-lg hover:bg-gray-200 hover:text-gray-900 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
                     data-modal-toggle="crud-modal"
                     aria-label="Close booking request form">
                     <i data-lucide="x" class="w-4 h-4 text-gray-700" aria-hidden="true"></i>
@@ -106,7 +106,7 @@
                     <div class="col-span-2 sm:col-span-1">
                         <label for="time" class="block mb-4 text-base font-semibold text-gray-900">Time *</label>
                         <select id="time" name="time"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300 cursor-pointer">
                             <option value="09:00">09:00</option>
                             <option value="12:00">12:00</option>
                             <option value="15:00">15:00</option>
@@ -118,7 +118,7 @@
                     <div class="col-span-2 sm:col-span-1">
                         <label for="people" class="block mb-4 text-base font-semibold text-gray-900">Total Guests *</label>
                         <select id="people" name="people"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300">
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary focus:border-primary block w-full p-4 transition-colors duration-300 cursor-pointer">
                             {{ range .Params.product_info.prices }}
                             <option value="{{ .person_number }}" data-price="{{ .price }}">{{ .person_number }}</option>
                             {{ end }}
@@ -136,6 +136,7 @@
                         <input type="text" id="price-visible" name="total_price"
                             class="bg-gray-100 border border-gray-300 text-gray-900 text-base rounded-lg block w-full p-4"
                             value="{{ range first 1 .Params.product_info.prices }}{{ partial "components/format/price" .price }}{{ end }},- NOK" readonly>
+                        <p id="price-status" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></p>
                     </div>
 
                     <!-- Message -->
@@ -174,6 +175,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const peopleSelect = document.querySelector('select[name="people"]');
         const priceVisible = document.querySelector('#price-visible');
+        const priceStatus = document.querySelector('#price-status');
 
         if (peopleSelect && priceVisible) {
             peopleSelect.addEventListener("change", function () {
@@ -182,6 +184,11 @@
                 if (price) {
                     const formattedPrice = Number(price).toLocaleString("nb-NO").replace(/\u00A0/g, " ");
                     priceVisible.value = `${formattedPrice},- NOK`;
+                    // The read-only field shows the value; this status is the
+                    // programmatic announcement so the change is not silent.
+                    if (priceStatus) {
+                        priceStatus.textContent = `Total price updated to ${formattedPrice},- NOK`;
+                    }
                 }
             });
         }

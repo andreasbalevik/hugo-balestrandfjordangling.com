@@ -29,7 +29,7 @@ description: The quality that our guests find irresistible about my fishing
   trips, is our inspiring unpredictability.
 images:
   - src: images/solveig-lyr-redigert.jpg
-    alt: fiske tur i sognefjorden, gøy på landet stor Lyr og dorging, vakker fjord
+    alt: Fishing trip in the Sognefjord, fun out in the countryside, big pollock and trolling, beautiful fjord
 related_activities:
   - balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/index
   - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index

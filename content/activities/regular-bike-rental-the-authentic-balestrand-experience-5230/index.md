@@ -122,9 +122,9 @@ If one person wants a light workout to Dragsvik, for example, you can rent 2 bic
 
 ## **Safety & Logistics**
 
-#### Remember to lock your bike when you leave it, wear a helmet. For safety’s sake.
+### Remember to lock your bike when you leave it, wear a helmet. For safety’s sake.
 
-#### **Important Links:**
+### **Important Links:**
 
-* Link to The Three Fjord Ride TripAdvisor Link [HERE](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)
-* Link to Weather forecast: Check the link [HERE](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)
+* **[See The Three Fjord Ride on Tripadvisor](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)**
+* **[Check the weather forecast for Balestrand at yr.no](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)**

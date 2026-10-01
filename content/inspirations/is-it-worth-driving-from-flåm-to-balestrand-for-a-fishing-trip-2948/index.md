@@ -3,6 +3,8 @@ title: Is It Worth Driving From Flåm or Aurland to Balestrand For A Fishing
   Trip? Yes! (Authentic)
 description: "\"Beyond the postcard. Explore the Sognefjord's hidden gems with
   Captain Tor.\""
+aliases:
+  - /reise-til-balestrand
 images:
   - src: images/img_0593.jpeg
     alt: "A smiling woman in a red jacket holds a fishing rod on the boat, the fjord
@@ -13,7 +15,7 @@ related_activities:
   - premium-balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-3328/index
 cms: true
 ---
-### Q: Is it worth driving from Flåm or Aurland to Balestrand just for a fishing trip?
+## Q: Is it worth driving from Flåm or Aurland to Balestrand just for a fishing trip?
 
 A: Absolutely! You have traveled all the way to Norway for an authentic fjord experience. Balestrand offers a historical, vibrant, and relaxed atmosphere that complements the more commercial Flåm. The difference in village character is part of the charm the Sognefjord offers. The trip is an experience of a lifetime.
 
@@ -36,9 +38,9 @@ Book a Balestrand fjord angling trip departure 12:00 (early birds) or 15:00 if y
 
 ### Q: What does an ideal day plan look like if I come from Flåm?
 
-###### Morning: Early departure from Flåm.
+#### Morning: Early departure from Flåm.
 
-###### **Late Morning:** Arrival Balestrand.
+#### **Late Morning:** Arrival Balestrand.
 
 **Lunch:** Enjoy lunch at the [Historic Kviknes Hotel](https://en.kviknes.no/food-philosophy)
 **Afternoon:** 12:00 PM (or 3:00 PM): Departure for [fishing trip with Captain Tor](https://balestrandfjordangling.com/)

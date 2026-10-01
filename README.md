@@ -160,8 +160,10 @@ Files that are new in the project rather than overrides:
   `--color-success` (#0b6519) so white text reaches 7.7:1 / 7.3:1. Accent text
   and icons use the same `primary-dark` tone (#175a6c, 7.7:1) rather than
   `primary` (#1e6b80, 6.1:1), the three category colours reach 7.5–7.7:1 with
-  white text, and hero text over a photo is measured against the panel scrim
-  (worst rendered pixel: 12.9:1 title, 10.6:1 label/description). [DESIGN.md](DESIGN.md)
+  white text, and hero text over a photo sits on the scrim
+  (`from-fjord/90 via-fjord/65 to-transparent`; worst case over a white photo pixel
+  is 9.3:1 at the opaque foot and 4.3:1 at the middle, so the readable words sit
+  low and the tag row is the weakest point). [DESIGN.md](DESIGN.md)
   holds the ratio table and the rules; re-measure there whenever a token, a chip
   colour or the hero scrim changes.
 

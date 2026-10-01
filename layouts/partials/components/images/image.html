@@ -10,9 +10,14 @@
     2. The alt attribute is always emitted. An empty value is for genuinely
        decorative or redundant images; it is not a substitute for a real
        description, so callers must pass one for informative images.
+    3. Every preset is generated at 2x, not only "hero", so a content photo is
+       never upscaled on a high-density screen.
+    4. The middle tier is emitted for every preset, from 640px up (it used to be
+       hero-only and from 768px), so a card photo is never upscaled between 640
+       and 1023px, where the single-column grid is wider than the smallest tier.
 
-    Presets, crops, dimensions, WebP/JPEG variants and hero retina variants are
-    unchanged from the theme partial.
+    Presets, crops and dimensions are unchanged from the theme partial; the
+    quality tiers are the same values the theme already used.
 
     Usage with preset:
     {{ partial "components/images/image.html" (dict
@@ -78,7 +83,10 @@
 {{ $desktopQuality := 85 }}
 {{ $tabletQuality := 80 }}
 {{ $mobileQuality := 75 }}
-{{ $generateRetina := eq .preset "hero" }}
+{{/* 2x variants for every preset: a content photo must never be upscaled on a
+     high-density screen. The hero preset already did this; cards, thumbnails and
+     squares were served at 1x and went soft on retina laptops and phones. */}}
+{{ $generateRetina := true }}
 {{ if eq .preset "thumbnail" }}
   {{ $desktopQuality = 88 }}
   {{ $tabletQuality = 85 }}
@@ -130,19 +138,20 @@
             width="{{ $desktopJpeg.Width }}"
             height="{{ $desktopJpeg.Height }}">
 
-    {{ if eq .preset "hero" }}
-      <!-- Tablet: md breakpoint (768px+) -->
-      <source media="(min-width: 768px)"
-              srcset="{{ $tabletWebpSrcset }}"
-              type="image/webp"
-              width="{{ $tabletWebp.Width }}"
-              height="{{ $tabletWebp.Height }}">
-      <source media="(min-width: 768px)"
-              srcset="{{ $tabletJpegSrcset }}"
-              type="image/jpeg"
-              width="{{ $tabletJpeg.Width }}"
-              height="{{ $tabletJpeg.Height }}">
-    {{ end }}
+    {{/* Middle tier for every preset, from 640px up: between 640 and 1023px the
+         single-column card grid makes a photo wider than the smallest tier, and
+         the hero used to fall back to its 640x400 file at those widths. */}}
+    <!-- Tablet: md breakpoint (640px+) -->
+    <source media="(min-width: 640px)"
+            srcset="{{ $tabletWebpSrcset }}"
+            type="image/webp"
+            width="{{ $tabletWebp.Width }}"
+            height="{{ $tabletWebp.Height }}">
+    <source media="(min-width: 640px)"
+            srcset="{{ $tabletJpegSrcset }}"
+            type="image/jpeg"
+            width="{{ $tabletJpeg.Width }}"
+            height="{{ $tabletJpeg.Height }}">
   {{ end }}
 
   <!-- Mobile WebP -->

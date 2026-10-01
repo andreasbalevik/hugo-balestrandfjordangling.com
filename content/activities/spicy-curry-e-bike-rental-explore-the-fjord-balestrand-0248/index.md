@@ -62,7 +62,7 @@ images:
   - src: images/img_20220907_182344_6.jpg
     alt: BIKE RENTAL
   - src: images/family-e-bikie-spicy-cury.jpg
-    alt: sykle rundt med barn i Balestrand
+    alt: Cycling around with children in Balestrand
   - src: images/jostein-og-anniken-spicy-curry-i-balestrand.jpg
     alt: ""
 tags:
@@ -95,7 +95,7 @@ A: Yes! It has never been simpler to discover Balestrand on two wheels and enjoy
 
 ## Rental Information & Pricing
 
-#### Pricing and extended range
+### Pricing and extended range
 
 ### **Q: What are the rental prices and available time slots?**
 
@@ -122,7 +122,7 @@ A: Absolutely! The kids love to sit on it. After your *authentic discovery* t
 
 ## Recommended Tours & Inspiration
 
-#### Explore Sognefjord's Highlights
+### Explore Sognefjord’s Highlights
 
 ### Q: Which tours do you recommend with the Spicy Curry E-Bike?
 
@@ -139,8 +139,8 @@ A: There are endless possibilities for experiencing local culture and nature. H
 
 A: Check out our links to plan your *carefree adventure*:
 
-* Inspiration Video **[HERE](https://www.youtube.com/watch?v=jvDEy7oCk3M)**
-* Link to Tripadvisor The Three Fjord Ride **[HERE](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)**
-* Link to weather forecast **[HERE](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)**
+* **[Watch the inspiration video on YouTube](https://www.youtube.com/watch?v=jvDEy7oCk3M)**
+* **[See The Three Fjord Ride on Tripadvisor](https://no.tripadvisor.com/Attraction_Review-g616211-d4419273-Reviews-The_Three_Fjord_Ride-Balestrand_Sogn_og_Fjordane_Western_Norway.html)**
+* **[Check the weather forecast for Balestrand at yr.no](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-137262/Norge/Vestland/Sogndal/Balestrand)**
 
 "Ready for your next *family adventure*? Rent your Spicy Curry E-Bike today for memorable moments!"

@@ -8,8 +8,8 @@
   {{ end }}
 {{ end }}
 
-<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary/40">
-  <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="View {{ .Title }}">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary">
+  <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none">
 
     <div class="relative">
       {{ range first 1 .Params.images }}

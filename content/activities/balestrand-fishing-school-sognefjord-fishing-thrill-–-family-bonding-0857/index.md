@@ -146,7 +146,7 @@ Pulling up the fishing nets, which are set out by us the night before, stimulate
 
 Possible. Imagine if we got a shark in the net, what would you do then? Dog Fish (a local, harmless shark species) come up from the depths and sometimes we catch them. The skin feels like sandpaper when you pat them.
 
-> Teaser Facebook Reel : Watch the shark video => [HERE](https://www.facebook.com/reel/855871150392851)
+> Teaser Facebook Reel: [Watch the shark video on Facebook](https://www.facebook.com/reel/855871150392851)
 >
 > #### The Fjord Awakens The Norse Soul: A Moment Of Quiet Pride
 
@@ -164,9 +164,9 @@ Feel free to share this unique opportunity here in Balestrand with friends, and 
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ## Looking for a place to stay in Balestrand?
 

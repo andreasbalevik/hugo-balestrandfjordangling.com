@@ -134,13 +134,13 @@ We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of 
 
 To really get a feel for the atmosphere, we’ve put together some short inspiration clips and the full documentary episode:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CyT_RntKYNr/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CyT_RntKYNr/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CbJ89SCFPbq/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/CbJ89SCFPbq/)
 >
-> Teaser Instagram Reel 3: Watch the video[ HERE](https://www.instagram.com/p/C1cKiAtqQ16/)
+> Teaser Instagram Reel 3: [Watch the video on Instagram](https://www.instagram.com/p/C1cKiAtqQ16/)
 >
-> People of The North Episode Captain Tor [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
+> People of The North Episode with Captain Tor: [Watch the episode on YouTube](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 ### ENHANCE YOUR STAY: Discover More in Fjærland
 

@@ -11,14 +11,14 @@
 
     Everything else — badges, tags, varde badge and all parameters — is preserved.
 
-    Contrast: overlay text is white (title 100%, label and description 90%) over
-    a scrim that holds 95% fjord down to 88% of the overlay height, because the
-    text block spans roughly 8–45% of the overlay height from the bottom at
-    1280px. Measured on the rendered pages, worst case — a white pixel of the
-    photo behind the text — the description still reads 10.6:1 and the title
-    12.9:1, so the overlay text clears AAA at every breakpoint. Weakening the
-    scrim or the text tones breaks that guarantee; the mobile panel keeps the
-    text in flow below the image instead.
+    The gradient follows the height of the text panel, not the height of the
+    photo, and fades out above the panel, leaving the upper photograph
+    unobscured. The panel participates in the hero's layout at every breakpoint,
+    so enlarged text grows the hero instead of disappearing above a fixed image
+    crop.
+
+    The alwaysOverlay form keeps the text over the photo on mobile as well.
+    Below lg its photo has a floor height and uses object-cover.
 
     Parameters:
     - page             : Hugo page context (required)
@@ -27,9 +27,12 @@
     - label            : optional eyebrow text above title
     - description      : optional description paragraph below title
     - mobileBackground : "fjord" (default) | "white" — mobile panel background
-    - gradient          : gradient stop classes (default holds 90% fjord over the
-                              text zone, see the contrast note below)
-    - alwaysOverlay    : overlay on all breakpoints (default: false)
+    - gradient          : gradient stop classes (default: from-fjord/90
+                          via-fjord/65 to-transparent)
+    - alwaysOverlay    : overlay on all breakpoints (default: false). Kept from
+                             the theme for API parity; no page sets it — the
+                             About hero used to, and now sits under the photo
+                             on mobile like every other hero.
     - showTags         : render page.Params.tags in the panel (default: false)
     - showVardeBadge   : render varde badge if present (default: false)
     - badge            : pre-rendered partial output for a custom badge
@@ -41,7 +44,7 @@
 {{ $label := .label }}
 {{ $description := .description }}
 {{ $mobileBg := .mobileBackground | default "fjord" }}
-{{ $gradient := .gradient | default "from-fjord/90 via-fjord/90 via-45% to-transparent" }}
+{{ $gradient := .gradient | default "from-fjord/90 via-fjord/65 to-transparent" }}
 {{ $alwaysOverlay := .alwaysOverlay | default false }}
 {{ $showTags := .showTags | default false }}
 {{ $showVardeBadge := .showVardeBadge | default false }}
@@ -51,55 +54,48 @@
 
 {{ $hasBadgeArea := or $showTags $showVardeBadge $badge }}
 
-{{/* Overlay gradient: always on with alwaysOverlay, otherwise desktop only. */}}
-{{ $gradientClass := cond $alwaysOverlay "absolute" "hidden md:block absolute" }}
+{{/* The scrim belongs to the text panel. Its fade starts above the first line,
+     and its height grows with the panel when text is enlarged. */}}
+{{ $gradientClass := cond $alwaysOverlay "absolute inset-x-0 -top-32 bottom-0" "hidden md:block absolute inset-x-0 -top-32 bottom-0" }}
 
-{{/* Single panel: in-flow under the image on mobile, overlay from md up.
-
-    Overlay text sits on its own scrim (95% fjord held to 88% of the panel
-    height, then a short fade into the top padding) so the worst pixel behind
-    the text — a white area of the photo — still leaves label and description at
-    10.6:1 and the title at 12.9:1. The hero gradient shapes the photo; this scrim
-    is what makes the text contrast viewport-independent, so keep the two
-    separate. */}}
-{{ $panelScrim := "bg-gradient-to-t from-fjord/95 via-fjord/95 via-88% to-transparent" }}
-{{ $panelScrimMd := "md:bg-gradient-to-t md:from-fjord/95 md:via-fjord/95 md:via-88% md:to-transparent" }}
-{{ $panelClass := printf "relative md:absolute md:bottom-0 md:inset-x-0 bg-fjord md:bg-transparent %s" $panelScrimMd }}
+{{/* At md and above the image fills the hero, whose minimum height matches the
+     original photo crop. The panel can increase that height without clipping. */}}
+{{ $imageBoxClass := "max-h-[500px] md:absolute md:inset-0 md:max-h-none" }}
+{{ $imgClass := "w-full h-auto md:h-full object-cover" }}
+{{ $panelClass := "relative bg-fjord md:bg-transparent" }}
 {{ $panelPad := "px-5 py-8" }}
-{{ $labelClass := "text-white/90" }}
+{{ $labelClass := "text-white" }}
 {{ $titleClass := "text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg" }}
-{{ $descClass := "text-base md:text-xl text-white/90 md:drop-shadow" }}
+{{ $descClass := "text-base md:text-xl text-white md:drop-shadow" }}
 {{ $vardeBoxClass := "bg-white/15 md:bg-white/90 md:backdrop-blur-sm md:shadow" }}
 {{ $vardeImgClass := "w-12 md:w-14" }}
 
 {{ if $alwaysOverlay }}
-  {{ $panelClass = printf "absolute bottom-0 inset-x-0 %s" $panelScrim }}
+  {{ $panelClass = "relative bg-transparent" }}
+  {{ $gradientClass = "absolute inset-x-0 -top-32 bottom-0" }}
   {{ $titleClass = "text-3xl md:text-4xl lg:text-5xl text-white drop-shadow-lg" }}
-  {{ $descClass = "text-lg md:text-xl text-white/90 drop-shadow" }}
+  {{ $descClass = "text-lg md:text-xl text-white drop-shadow" }}
   {{ $vardeBoxClass = "bg-white/90 backdrop-blur-sm shadow" }}
   {{ $vardeImgClass = "w-14" }}
+  {{ $imageBoxClass = "absolute inset-0 max-h-none" }}
+  {{ $imgClass = "w-full h-full object-cover" }}
 {{ else if eq $mobileBg "white" }}
-  {{ $panelClass = printf "relative md:absolute md:bottom-0 md:inset-x-0 bg-white/70 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none %s" $panelScrimMd }}
+  {{ $panelClass = "relative bg-white/70 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none" }}
   {{ $panelPad = "px-5 py-5" }}
-  {{ $labelClass = "text-gray-700 md:text-white/90" }}
+  {{ $labelClass = "text-gray-700 md:text-white" }}
   {{ $titleClass = "text-2xl md:text-4xl lg:text-5xl text-gray-900 md:text-white md:drop-shadow-lg" }}
-  {{ $descClass = "text-base md:text-xl text-gray-700 md:text-white/90 md:drop-shadow" }}
+  {{ $descClass = "text-base md:text-xl text-gray-700 md:text-white md:drop-shadow" }}
   {{ $vardeBoxClass = "bg-white md:bg-white/90 md:backdrop-blur-sm md:shadow" }}
-{{ else }}
-  {{/* Mobile keeps the opaque fjord panel; from md up the panel overlays the
-      photo, so it carries the scrim instead of a solid colour. */}}
-  {{ $panelClass = printf "relative md:absolute md:bottom-0 md:inset-x-0 bg-fjord md:bg-transparent %s" $panelScrimMd }}
 {{ end }}
 
-<div class="relative overflow-hidden">
-    <div class="max-h-[500px] md:max-h-[620px] lg:max-h-[700px]">
-        {{ partial "components/images/image.html" (dict "src" $src "alt" $alt "preset" "hero") }}
+<div class="relative overflow-hidden md:flex md:flex-col md:justify-end md:min-h-[min(66.667vw,620px)] lg:min-h-[min(56.25vw,700px)] {{ if $alwaysOverlay }}flex flex-col justify-end min-h-[360px] sm:min-h-[440px]{{ end }}">
+    <div class="{{ $imageBoxClass }}">
+        {{ partial "components/images/image.html" (dict "src" $src "alt" $alt "preset" "hero" "imgClass" $imgClass) }}
     </div>
 
-    <div class="{{ $gradientClass }} inset-0 bg-gradient-to-t {{ $gradient }}"></div>
-
     <div class="{{ $panelClass }}">
-        <div class="{{ $panelPad }} md:container md:px-0 md:py-14">
+        <div class="{{ $gradientClass }} bg-gradient-to-t {{ $gradient }}"></div>
+        <div class="relative {{ $panelPad }} md:container md:py-14">
             <div class="max-w-3xl">
 
                 {{ if $hasBadgeArea }}

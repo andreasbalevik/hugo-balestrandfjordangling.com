@@ -73,14 +73,11 @@ description: 'Reward yourself with an exclusive adventure. A unique "slow
   travel" escape into authentic nature, designed for soul wellness & presence. '
 images:
   - src: images/img_3234.jpeg
-    alt: "Fantastiske Sognefjorden og venninner på sproty fjelltur og fiske i
-      Esefjorden, Balestrand  "
+    alt: "Fantastic Sognefjord and girlfriends on a sporty mountain hike and fishing in Esefjorden, Balestrand"
   - src: images/img_0593.jpeg
-    alt: The fjord chicken challenge in Esefjord og Sognefjord. Blond dame i rød
-      jakke, smiler blant høye fjell og solskinn og vind i håret
+    alt: The fjord chicken challenge in Esefjord and Sognefjord. Blonde woman in a red jacket, smiling among high mountains and sunshine and wind in her hair
   - src: images/image1.jpeg
-    alt: kveite 23 kilo i Esefjorden, familie på fisketur i Sognefjorden og høye
-      fjell. fantastisk
+    alt: A 23-kilo halibut in Esefjorden, family on a fishing trip in the Sognefjord and high mountains. Fantastic.
 tags:
   - business-and-pleasure
 information:
@@ -137,11 +134,11 @@ There is something between these high mountains that nourishes the heart and spi
 
 ### I am Exited! Do you have any video inspiration from the tour?
 
-Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:[](https://www.instagram.com/p/CSywgKHqZTU/)
+Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> [](https://balestrandfjordangling.com/activities/balestrand-legacy-tour-sognefjord-fishing-thrill--family-bonding-2530/HERE)Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ## **Plan a day in Balestrand: The Fjord & Mountain Challenge**
 

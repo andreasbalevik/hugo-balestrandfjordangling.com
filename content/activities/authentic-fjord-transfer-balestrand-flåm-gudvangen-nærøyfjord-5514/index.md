@@ -135,14 +135,14 @@ Our route is a **world-class journey** through Norway's most iconic waterways.
 
 **Let Go - Breathe - Time for Wonder - A Beautiful Life**
 
-This is your ultimate **\#wellnessescape**. You are free from all thoughts and worries, living purely in the moment as we drive the boat. It doesn't matter if it rains or shines; the point is simply to exist! Experience pure happiness, presence, and a mindful escape. This constant attraction of being on the road to something new and unknown, mixed with a familiar nostalgia, is profoundly restorative. Watch weather forecast [here](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-123944/Norge/Vestland/Aurland/Aurlandsfjorden)
+This is your ultimate **\#wellnessescape**. You are free from all thoughts and worries, living purely in the moment as we drive the boat. It doesn't matter if it rains or shines; the point is simply to exist! Experience pure happiness, presence, and a mindful escape. This constant attraction of being on the road to something new and unknown, mixed with a familiar nostalgia, is profoundly restorative. [Check the weather forecast for Aurlandsfjorden at yr.no](https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-123944/Norge/Vestland/Aurland/Aurlandsfjorden)
 
 ### Do you have any video inspiration from the tour?
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-* **Teaser Instagram Reel 1:** Watch the video [HERE](https://www.instagram.com/p/Csfwf8yq5cI/)
-* **Teaser Instagram Reel 2:** Watch the video [HERE](https://www.instagram.com/p/CfAChQVFKj9/)
+* **Teaser Instagram Reel 1:** [Watch the video on Instagram](https://www.instagram.com/p/Csfwf8yq5cI/)
+* **Teaser Instagram Reel 2:** [Watch the video on Instagram](https://www.instagram.com/p/CfAChQVFKj9/)
 
 ### Is this just a practical transfer?
 

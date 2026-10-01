@@ -20,11 +20,14 @@
  * one of the two choices); Escape closes it without storing a choice, and the
  * surface returns on the next page load.
  *
- * On rejection/withdrawal: the choice is stored as "rejected", available
- * first-party _ga cookies on the current host are cleared, and — if analytics
- * had already been active — the page reloads so any third-party code already
- * running is stopped. Browser JS cannot delete every possible third-party
- * cookie; this only clears first-party _ga/_gid cookies it can see.
+ * On rejection/withdrawal: the choice is stored as "rejected", consent is set
+ * to denied, the GA4/GTM <script> loaders are removed, and available
+ * first-party _ga cookies on the current host are cleared — then, if analytics
+ * had already been active, the page reloads. Removing the loaders before the
+ * clear matters: a still-executing GA script would otherwise rewrite its
+ * _ga_<id> cookie in the same tick and it would survive the reload. Browser JS
+ * cannot delete every possible third-party cookie; this only clears
+ * first-party _ga/_gid cookies it can see.
  */
 (function () {
   "use strict";
@@ -76,6 +79,25 @@
       });
       document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
     });
+  }
+
+  // Deny consent and remove the running GA4/GTM loaders BEFORE clearing cookies.
+  // Otherwise the already-executing GA script rewrites the _ga_<id> cookie in
+  // the same tick, so it survives the reload. Removing the <script> elements
+  // stops the timers/beacons they own; the reload below is then a belt-and-
+  // braces way to drop anything that cannot be unloaded.
+  function deactivate() {
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied"
+      });
+    }
+    document
+      .querySelectorAll('script[src*="googletagmanager.com"], script[src*="google-analytics.com"]')
+      .forEach(function (s) { s.remove(); });
   }
 
   function activate() {
@@ -169,6 +191,7 @@
   function onReject() {
     var wasAccepted = readConsent() === "accepted";
     storeConsent("rejected");
+    deactivate();
     clearGaCookies();
     if (wasAccepted) {
       window.location.reload();

@@ -26,7 +26,7 @@ That is a very sharp question, Captain Tor. It is the core of the 5D perspective
 
 Wealthy people, who have everything material they need in the 3D world, face a completely different set of challenges that money cannot solve.
 
-#### Here are their most important challenges in this context: The Challenges for Wealthy People
+### Here are their most important challenges in this context: The Challenges for Wealthy People
 
 ### 1. The Lack of Authenticity and Meaning (The 5D Void):
 

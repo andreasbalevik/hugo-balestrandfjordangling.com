@@ -120,7 +120,7 @@ The test for every element: **would a small family business need this to explain
 | `/activities/` | `layouts/activities/list.html` | Intro copy, `h1`, teal divider, large category buttons, tag-filter disclosure, card grid (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3`) |
 | `/activities/<slug>/` | `layouts/activities/single.html` | Hero → price and badges with booking CTA → byline → about (`#about`) → FAQ (`#faq`, only when the activity sets `faqItems`) → practical information (`#practical`) → photo gallery (`#gallery`) → related activities. Every anchored section carries `scroll-mt-[70px] md:scroll-mt-[128px]` so the fixed header does not cover the heading. |
 | `/inspirations/`, `/inspirations/<slug>/` | `layouts/inspirations/*` | Stories; single uses the shared prose wrapper |
-| `/tags/<tag>/` | `layouts/tags/list.html` | Category listing |
+| `/tags/<tag>/` | `layouts/tags/list.html` | Category listing: a white back link to `/activities/` above the title, then the tag title and description on the tag colour band, then the filtered card grid |
 | `/about/` | `layouts/about/section.html` | Family and boat background |
 | `/privacy/` | `layouts/_default/page.html` | Privacy statement, including the analytics settings control (`shortcodes/analytics-settings.html`) |
 | `/request_confirmation/` | `layouts/request_confirmation/section.html` | Netlify form success page |
@@ -165,8 +165,8 @@ are measured against white (WCAG 2.1: 4.5:1 AA, 7:1 AAA for normal text).
 Category chip and tag-band backgrounds come from content (`color` in `content/tags/*/_index.md`): `#3b5b44` 7.59:1,
 `#2f567c` 7.66:1, `#52526e` 7.52:1, default `#1d3640` 12.70:1. White chip text is `text-xl`, which is still normal
 text under WCAG (large text starts at 24px), so **every value must reach 7:1 with white text** — the section band on
-`tags/list.html` uses the same colour behind the page title and description. The value lives in the file (the CMS tag
-collections do not expose it) and each file repeats the rule above the value.
+`tags/list.html` uses the same colour behind the back link, the page title and the description. The value lives in the
+file (the CMS tag collections do not expose it) and each file repeats the rule above the value.
 
 ### Named Rules
 **The Still Water Rule.** White and `fjord-light` are the standard surfaces. The dark `fjord` band is used only when the
@@ -178,9 +178,33 @@ content needs dark contrast (the personal quote), never as an automatic "brand m
 decoration tone and never text; accent text and icons use `primary-dark` (7.73:1); filled buttons start at
 `primary-dark` (7.73:1) so white label text is AAA; `mist` and `warning` are never text on a light surface.
 
-**The Scrim Rule.** Text that sits on a photo is read against the scrim, not the photo: the hero panel carries its own
-95% fjord scrim, so the text clears 7:1 even where a white cloud or sky sits behind it. Do not move overlay text off
-that scrim, and do not lighten it.
+**The Scrim Rule.** Text that sits on a photo is read against a scrim, not the photo. The scrim is sized to the text: the
+gradient box spans the text panel plus `-top-32` (128px) above it, and the veil is `from-fjord/90 via-fjord/65
+to-transparent` by default, so the veil is 90% brand fjord at the bottom of the box, 65% at the middle and transparent
+at the top. This is the softer production tone, deliberately weakened from the earlier flat-95% floor: the photograph
+keeps more of the frame, but the lower half of the panel is where the lighter lines sit, so contrast depends on where a
+line lands. Composite the worst case — a white pixel of the photo behind the veil — white text reaches 9.33:1 at the
+90% bottom stop and 4.33:1 at the 65% middle stop, between them the value falls off linearly. The description, title
+and label sit low in the panel (near the bottom stop, ~9:1 or better); the tag row sits highest and is the weakest
+point, so treat the top of the panel as decoration-tolerant and keep the readable words near the bottom. The panel
+participates in the layout, so a longer title or larger text grows the gradient with it — the scrim is never detached
+from the words it protects. Because the hero's minimum height at `md` and up matches the old photo crop
+(`md:min-h-[min(66.667vw,620px)]`, `lg:min-h-[min(56.25vw,700px)]`) and the panel can exceed it, the section grows
+instead of clipping. If the AAA guarantee behind the overlay words is to be restored, use `from-fjord/95 via-fjord/95
+via-65%` (the previous default), which holds 86–95% behind the whole panel and measured 8.3:1 or better at every hero
+instance. Below `md` the scrim is `hidden`, so the mobile panels are unchanged: the fjord panel measures 12.7:1 and the
+390px white glass panel 8.05:1 with `gray-900` text. At 200% text the hero grows (classic 902px, story 755px, People of
+the North 841px at 1440) and no text leaves the frame. Do not stack a second scrim layer on the gradient: one continuous
+curve is what keeps the photo from showing an edge.
+
+**The Photo Stays Central Rule.** An overlay never turns a photograph into a flat block of colour, and it never draws a
+line across one. The hero has a single gradient layer, so the transition is one continuous curve; a second layer with a
+shorter fade of its own would step the composite wherever that fade met the photo. The veil is dark only behind the text
+band and gone 128px above it, so the photograph keeps the whole upper part of the frame untouched and the transition
+stays a curve — the photo is spent on the text band, not on the frame. The panel is sized to its text, not to the
+section, and an overlay hero on a narrow screen keeps a floor height for the photo, so a 16:9 frame is not swallowed by
+the panel on a phone. Where a new text-over-image surface is added, size the scrim to the text and let one gradient
+carry the blend.
 
 ## Typography
 
@@ -191,7 +215,7 @@ weight `500` with letter-spacing `-0.015em`.
 ### Hierarchy
 | Role | Classes | Where |
 | --- | --- | --- |
-| Display | `text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance` | Page `h1`: activities list, and the hero in its `alwaysOverlay` form. The hero's default form is `text-2xl md:text-4xl lg:text-5xl text-white` with the panel in flow under the image on mobile; `mobileBg: "white"` starts at `text-gray-900` and turns white from `md` up. |
+| Display | `text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-balance` | Page `h1`: activities list. The hero's `text-3xl` form belongs to its `alwaysOverlay` variant, which no page uses; every hero is the default `text-2xl md:text-4xl lg:text-5xl text-white` with the panel in flow under the image on mobile (`mobileBg: "white"` starts at `text-gray-900` and turns white from `md` up). |
 | Headline | `text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-balance` | Section `h2` from `section-heading.html` |
 | Title | `text-xl md:text-2xl font-medium text-balance text-gray-900 group-hover:text-primary-dark transition-colors duration-200` | Card titles (`h2` in the list templates), compact panels |
 | Body (prose) | `prose md:prose-lg lg:prose-xl max-w-4xl mx-auto` with `leading-relaxed` | Article and activity description |
@@ -222,6 +246,38 @@ Cards may be used when they make a list easier to scan (image grids use `md:grid
 last row or differing text lengths is fine — never pad with decor for symmetry. The header is fixed at 70px
 (`h-[70px]`, page offset `mb-[70px]` / `mt-[70px]`) with clear navigation, booking, and practical information. The home
 page hero is a deliberate exception: blurred photo background with the white framed content card stays as is.
+
+### Images
+
+Photographs are the main attraction on every page. They are real pictures of the fjord, the boat, the guests and the
+family, shown large and sharp, and nothing in the layout competes with them: no tint, overlay or blur is placed on a
+photo that carries content.
+
+Delivery lives in `components/images/image.html`, a project override of the theme partial. Four presets, cropped with
+`Fill` to calm ratios (3:2 or 16:10) and shipped as WebP with a JPEG fallback:
+
+| Preset | ≥1024px | 640–1023px | <640px | Used by |
+| --- | --- | --- | --- | --- |
+| `hero` | 1920×1080 | 768×512 | 640×400 | Activity hero, activity gallery |
+| `card` | 720×520 | 720×520 | 480×320 | Inspiration card, featured single, home hero card |
+| `thumbnail` | 720×480 | 720×480 | 560×373 | Activity cards, booking dialog |
+| `square` | 600×600 | 600×600 | 400×400 | available, currently unused |
+
+Every tier exists at 1x and 2x — `quality` 85/80/75 for 1x (`thumbnail` 88/85/82) and 75/70/65 for 2x — so the browser
+can always pick a file at least as wide as the box it fills. That includes high-density screens, where a card is
+otherwise upscaled, and the 640–1023px range, where the single-column grid makes a card photo wider than the smallest
+tier. Each `<img>` carries `width`/`height` from the processed resource, so space is reserved before the bytes arrive.
+`hero` is `loading="eager" fetchpriority="high"`; every other preset is `loading="lazy"`.
+
+Alt text is required for anything informative and empty only for genuinely decorative or redundant images. The
+description names what is in the frame, not what it means or how it feels.
+
+**The Photograph Leads Rule.** A photo that carries content is never soft, blurred, flattened by compression, or hidden
+behind decoration. The one deliberate exception is the home hero backdrop — a `Resize "x600 q10 webp"` with
+`GaussianBlur 50` — which is a pinned backdrop for the white framed card; the photo inside that card is the sharp one.
+Text over a photo is the other sanctioned overlay: one gradient in the brand fjord holds 86–95% behind the text panel and
+fades to nothing across the top third of its box, so the photo keeps everything above the text band — see The Scrim Rule
+and The Photo Stays Central Rule.
 
 ## Elevation & Depth
 
@@ -269,19 +325,27 @@ All variants: `rounded-lg`, `font-semibold text-base md:text-lg`, padding `px-6 
 `transition-colors duration-200`, `focus-visible:outline-2 focus-visible:outline-offset-2`, `no-underline` (links),
 arrow `w-4 md:w-5 h-4 md:h-5` with `transition-transform duration-300 group-hover:translate-x-1`.
 
+Every `<button>` and every `<select>` carries `cursor-pointer`; links get the pointer from the browser. Tailwind v4's
+preflight no longer sets a pointer cursor on `<button>`, so without the utility the browser draws the default arrow on
+a control that is clickable. Theme controls we do not override need a project override for the same reason — see
+`components/to-top-button.html`.
+
 The label is `text-white` in every filled variant, and white text meets AAA exactly because the backgrounds start at
 8.2:1 (`primary-darker`) or better. Do not "brighten on hover": `primary` (6.05:1) and lighter shades drop below the
 AAA text contrast the buttons meet at rest.
 
 ### Cards
 **Activity card** (`layouts/activities/li.html`) — `article` with `bg-white border border-fjord-pale rounded-lg
-overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary/40`; image flush to the top, content
+overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary`; image flush to the top, content
 `p-5 md:p-6`, meta row `text-sm text-gray-700`, title as the Title role, description `line-clamp-3`, price row on a
 `border-t border-fjord-pale pt-4` with "From" + min price + "View experience" (`mt-auto`, arrow nudges
 `translate-x-0.5`). The whole card is one link. Minimum price = lowest `product_info.prices[].price`.
 
-**Inspiration card** (`layouts/inspirations/li.html`) — same shape without the shadow and without the price row; the
-"Read story" link pins to the bottom (`mt-auto pt-1`).
+**Inspiration card** (`layouts/inspirations/li.html` and the explore/archive grids in `layouts/inspirations/list.html`)
+— same shape without the shadow and without the price row. Both listing grids use the Title scale
+(`text-xl md:text-2xl`) and `p-5 md:p-6`; the archive's shorter descriptions do not change those roles.
+The "Read story" link pins to the bottom (`mt-auto pt-1`). The `/featured/` card keeps its shadow and uses the same
+20px mobile / 24px desktop content padding.
 
 ### Chips, badges and labels
 - **Meta badges** (`activity/meta-badges.html`) — icon + `font-medium` text, no pill chrome: `Duration 1h 30m`,
@@ -292,8 +356,14 @@ overflow-hidden shadow group focus-within:ring-2 focus-within:ring-primary/40`; 
   wrapping a `text-xl text-white p-6 text-center rounded-lg shadow-sm border border-black/5` block whose
   `background-color` comes from the tag's `color`. A deliberate, established exception to the otherwise quiet style:
   keep them.
-- **Filter button** (`activities/list.html`) — `inline-flex items-center gap-2 rounded-lg min-h-11 px-4 py-2 border
-  border-fjord-pale bg-white text-sm font-medium`, `aria-label`, `aria-controls`, `aria-expanded`.
+- **Activity highlight tag band** (`activities/highlight.html`, `activity/highlight-related.html`) — chips along the
+  bottom edge of the card photo, inside a `pt-8 pb-4` strip with `bg-gradient-to-t from-black/50 to-transparent`. The
+  band is sized to the chip row and the chips carry their own tag `color`, so the scrim only separates them from the
+  photo; it never veils the image on their behalf.
+- **Filter button** (`activities/list.html`, `tags/list.html`) — `inline-flex items-center gap-2 rounded-lg min-h-11 px-4
+  py-2 border border-fjord-pale bg-white text-sm font-medium`, `aria-controls`, `aria-expanded`. Its accessible name
+  repeats the visible selection — `Filter activities by category: All activities` on the index and
+  `Filter activities by category: <tag>` on a tag page — so speech input can activate it by the visible label (2.5.3).
 
 ### Section heading — `components/section-heading.html`
 Title (Headline), optional description (`max-w-2xl`, `text-lg md:text-xl leading-relaxed text-pretty text-gray-800`,
@@ -303,16 +373,29 @@ choose us" USP block is the sanctioned eyebrow exception.
 
 ### Hero — `components/hero/image.html` (signature)
 One panel that sits under the image on mobile and becomes an overlay from `md` up, so the page renders exactly one
-`h1`. Title `text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg`, label and description `text-white/90`.
-The overlay variants add their own scrim on the panel — `bg-gradient-to-t from-fjord/95 via-fjord/95 via-88%
-to-transparent`, held at 95% up to 88% of the panel height, which is above the text block at every breakpoint — and the
-photo gradient (`from-fjord/90 via-fjord/90 via-45% to-transparent` by default, overridable through the `gradient`
-parameter) only shapes the photo. Measured on the rendered pages (glyph pixels against the pixel behind them) the
-worst case leaves the title at 12.9:1 and the label/description at 10.6:1, including where a white cloud sits behind
-them; see The Scrim Rule.
-`alwaysOverlay` keeps the panel over the photo at every breakpoint, `mobileBackground: "fjord"` (default) uses an
-opaque fjord panel under the image on mobile, and `mobileBackground: "white"` uses the white glass panel with
-`text-gray-700`/`text-gray-900` on mobile. Optional badge area for tags, the Varde quality mark and a back-link chip.
+`h1`. Title `text-2xl md:text-4xl lg:text-5xl text-white md:drop-shadow-lg`; label and description are `text-white` too,
+with no white/90 — the text is white at full strength over the veil.
+The overlay scrim is the only dark layer over the photo: `from-fjord/90 via-fjord/65 to-transparent` by default
+(overridable through the `gradient` parameter), drawn on a box that spans the panel plus `-top-32` above it. The veil
+is strongest at the foot of the panel and gone above it; there is no step
+for an edge to show, because it is still a single gradient. The panel is in the flow at every
+breakpoint, so the hero's height follows its content: from `md` up the image is `md:absolute md:inset-0` behind the panel
+and the section keeps a minimum height equal to the old photo crop (`md:min-h-[min(66.667vw,620px)]`,
+`lg:min-h-[min(56.25vw,700px)]`), so the crop is unchanged for normal text and a longer title or enlarged text grows the
+section instead of being clipped. The contrast trade-off of the softened scrim is in The Scrim Rule: the mobile fjord
+panel stays at 12.7:1, and no text leaves the frame at 200% text.
+`alwaysOverlay` is the theme's variant for keeping the panel over the photo at every breakpoint; the override keeps it
+working (the panel is then positioned over an absolutely-filled photo box, which carries a floor height below `lg` —
+`h-[360px] sm:h-[440px] md:h-[520px]` — and the image fills it with `object-cover`, because a 16:9 frame with an overlaid
+panel otherwise loses most of the photograph on a phone), but no page uses it: the About hero, its only caller, sits
+under the photo on mobile like every other hero.
+`mobileBackground: "fjord"` (default) uses an opaque fjord panel under the image on mobile, and
+`mobileBackground: "white"` uses the white glass panel with `text-gray-700`/`text-gray-900` on mobile. Optional badge
+area for tags, the Varde quality mark and a back-link chip. Cards, tags and the booking button take their accessible
+name from their own visible text — do not add an `aria-label` that replaces it, because a name that omits the visible
+label breaks 2.5.3.
+The panel keeps its 20px mobile gutter. From `md` up, `md:container` supplies the same horizontal padding as the
+header: 16px below `2xl`, then 0px at `2xl`. Do not override it with `md:px-0`; that removes the gutter at tablet widths.
 The home page pairs it with a blurred photo background and a white framed card — the conscious, pinned exception to
 the flat simplicity everywhere else. Preserve it.
 
@@ -332,9 +415,11 @@ Native `<details class="group cursor-pointer" data-faq-item>` with `<summary cla
 Renders only when the activity sets `faqItems` (see Known drift, item 9).
 
 ### Practical information — `activity/practical.html`
-`h3` sections (`text-lg md:text-xl font-medium`, underlined by `border-b border-gray-300 pt-4`), icon bullets
-(`w-5 h-5 text-primary-dark`, `aria-hidden`), notes in `text-gray-700 italic`. Rendered only when the activity's
-`information.options.*` flags are set.
+`h3` sections (`text-lg md:text-xl font-medium`, underlined by `border-b border-gray-300 pb-4`), icon bullets
+(`w-5 h-5 text-primary-dark`, `aria-hidden`), notes in `text-gray-700 italic`. The surrounding article uses
+`prose md:prose-lg` for 16px mobile and 18px desktop body text, without `prose-h3:*` size overrides; the partial owns
+its subsection sizes. `prose-h3:mb-6` preserves the 24px gap below each heading when `md:prose-lg` is active.
+Rendered only when the activity's `information.options.*` flags are set.
 
 ### Prose — `components/prose-content.html`
 The shared article wrapper: `prose md:prose-lg lg:prose-xl max-w-4xl mx-auto`, headings at weight 500 with
@@ -368,15 +453,22 @@ Fixed white header (`z-100`, `h-[70px] border-b border-slate-200`), logo + wordm
 booking button, hamburger below `lg`. The header markup lives in the theme and hardcodes `text-primary` for the active
 tone (6.05:1), so `assets/css/custom.css` paints `header a[aria-current="page"]` in `primary-dark`
 (`header` + attribute selector outranks the utility's class); the theme already sets `aria-current="page"` on exactly
-that link, so no markup is duplicated. Mobile menu is the full-height white panel (`top-[70px]`) toggled by
-`data-collapse-toggle="navbar-sticky"`, closing on Escape, on link press, and returning focus to the button; the
-project override `layouts/partials/layout/mobile-menu-button.html` keeps the toggle at 44×44px (`min-w-11 min-h-11 w-11
-h-11`).
+that link, so no markup is duplicated. `layouts/partials/layout/header.html` is a project override of that partial, and
+it changes exactly three things: the mobile toggle is emitted **before** the `#navbar-sticky` menu, so forward `Tab`
+reaches the open menu instead of jumping into the page behind it; the brand link carries one accessible name
+(`aria-label`, with the logo `img` at `alt=""`) instead of announcing the title twice; and the brand and desktop nav
+links carry `min-h-11` so every standalone header target is 44px tall. Mobile menu is the full-height white panel
+(`top-[70px]`) toggled by `data-collapse-toggle="navbar-sticky"`, closing on Escape, on link press, and returning focus
+to the button; while it is open `setupMobileMenu` cycles `Tab`/`Shift+Tab` inside the panel (toggle plus the three menu
+links) so focus cannot move to the covered page, and closes it when the viewport reaches `lg`. The project override
+`layouts/partials/layout/mobile-menu-button.html` keeps the toggle at 44×44px (`min-w-11 min-h-11 w-11 h-11`).
 
 Footer is a large dark surface (`bg-gray-900 text-white`) with contact details, an address block, social icon buttons
 (`p-4 bg-gray-800 rounded-lg hover:bg-gray-600`) and a privacy link. The theme's base sets headings to `gray-900`, so
-the footer headings (`Follow Us`, `Information`) carry an explicit `text-white` in the project override — without it
-they are invisible on the dark surface. Footer links and social buttons carry a white focus ring
+the footer headings carry an explicit `text-white` in the project override — without it they are invisible on the dark
+surface. Footer headings sit at `h2` (the brand) and `h3` (`Follow Us`, `Information`) so a page whose only heading is
+its `h1` — `/tags/` — still has a valid outline. The TripAdvisor button shows its name as text rather than the initials
+"TA"; every footer link and social button is at least 44px tall and carries a white focus ring
 (`focus-visible:outline-white`) so the focus indicator is visible against `gray-900`; the e-mail address carries
 `wrap-anywhere`, because a long unbroken address has no break opportunity and pushed the document wider than a 320px
 viewport. The footer override is `layouts/partials/layout/footer.html`.
@@ -384,13 +476,26 @@ viewport. The footer override is `layouts/partials/layout/footer.html`.
 ### Utility furniture
 - **Skip link** — `sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-1/2 focus:-translate-x-1/2
   focus:z-[120] focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded-lg focus:shadow
-  focus:outline-2 focus:outline-primary`, targets `#main-content`. Measured on focus: 187×42px at the top of the
-  viewport, white pill with `gray-900` text (17.74:1).
-- **Analytics consent** — native `<dialog>` with a heading, one sentence and the privacy link, a full-width
-  `Accept analytics` button (`min-h-12`, `bg-primary-dark`) and a plain underlined `Reject analytics` text button
-  (`min-h-11`). One click either way; refusal is deliberately as reachable as acceptance. Without JavaScript the dialog
-  stays closed and nothing loads.
-- **404** — heading, short explanation, and a `text-primary-dark hover:text-primary-darker` link home.
+  focus:inline-flex focus:items-center focus:min-h-11 focus:outline-2 focus:outline-primary`, targets `#main-content`.
+  Measured on focus: 187×44px at the top of the viewport, white pill with `gray-900` text (17.74:1).
+- **Analytics consent** — native `<dialog>` with a greeting heading that still names the subject — "Hello, may we use
+  analytics?", so the dialog's accessible name tells a screen reader what the modal is for — the brand mark as a
+  decorative letterhead (`site.Params.logo` at `x112`/`x224` webp, `alt=""`, `h-14 md:h-16`), one short explanation with
+  the privacy link, a full-width `Accept analytics` button (`min-h-12`, `bg-primary-dark`) and a plain underlined
+  `Reject analytics` text button (`min-h-11`). One click either way; refusal is deliberately as reachable as
+  acceptance. Without JavaScript the dialog stays closed and nothing loads. It is the warmest surface in the system,
+  and the warmth is token colour plus the brand mark: a `from-fjord-light to-white` wash behind the greeting and a
+  two-line fjord stroke in `fjord-pale` at the card's foot. Every line of text is read against white or the wash —
+  measured on the rendered pixels with the glyphs hidden, the heading is 16.8:1, the sentence 14.1:1 and the privacy
+  link 7.6:1 — and the wave sits below every control, so the colour costs no contrast. The scrim is brand `fjord/70`
+  rather than neutral grey, so the modal stays in the site's palette. The dialog is `overflow-y-auto` with the card on
+  `my-auto`, so at 200% text the card grows and scrolls from its top instead of being clipped (measured: 1780px card in
+  an 844px viewport, both controls reachable by scroll and by `Tab`).
+- **404** — heading, short explanation, and a `text-primary-dark hover:text-primary-darker` link home with
+  `focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary`.
+- **Utility page** (`layouts/_default/page.html`, used by `/privacy/`) — full-width white sheet on mobile; from `md`,
+  the rounded `max-w-4xl` card has a 16px outer gutter (`md:px-4`) so its corners do not meet the viewport edge.
+  Its compact `prose` scale is unchanged.
 
 ## Interaction contract
 
@@ -425,21 +530,33 @@ WCAG 2.1 AA is the floor (Norwegian regulation), AAA is the target wherever the 
   never `primary` (6.05:1); chip and tag-band colours are at 7.52:1 or better with white text; `--tw-prose-links`
   keeps article links at 7.73:1 and underlined. The audit is by computed style over the rendered pages, not by reading
   class names: every text node is measured against its resolved background, and text over a photo is measured against
-  the scrim pixels of the real image.
+  the rendered pixels of the real image with the glyphs hidden. The hero's text-over-photo band is the surface this
+  audit watches most closely — the overlay measures 8.6:1 or better at 768 and 1440 on every hero page, the mobile fjord
+  panel 12.7:1 and the mobile white glass panel 8.05:1 (see The Scrim Rule).
+  The token table above is measured at 6.05:1 or better.
 - **In-text links** — underlined at rest and darker on hover. The theme's prose default (underline only on hover) is
   overridden in `assets/css/custom.css`, because a link that differs from body text by colour alone (2.43:1 against
-  `gray-800`) does not meet WCAG 1.4.1.
-- **Target size** — interactive elements are at least 44px: buttons (`px-6 py-3` ≈ 52px), the booking and dialog close
-  buttons (`w-11 h-11`, `min-h-11`), carousel indicators (`h-11 w-11`), consent buttons (`min-h-12` / `min-h-11`),
-  filter button (`min-h-11`), menu toggle (`44×44`), form inputs (`p-4`). Carousel arrows are visually 40px circles
-  inside a full-height strip (`px-4`), which measures 72×650px — far larger than 44px.
+  `gray-800`) does not meet WCAG 1.4.1. Link text names its destination: "HERE" and "Link here" are not link text.
+- **Target size** — every standalone interactive element is at least 44px: buttons (`px-6 py-3` ≈ 52px), the booking and
+  dialog close buttons (`w-11 h-11`, `min-h-11`), carousel indicators (`h-11 w-11`), consent buttons (`min-h-12` /
+  `min-h-11`), filter button and its menu rows, menu toggle (`44×44`), form inputs (`p-4`), skip link (`min-h-11`),
+  header brand and nav links, activity section nav (`min-h-11 min-w-11`), footer links and social buttons, and the
+  back links on `/tags/`, `/404` and the tag bands. Carousel arrows are visually 40px circles inside a full-height
+  strip (`px-4`), which measures 72×650px — far larger than 44px. Only links inside a running sentence are exempt.
 - **Focus** — always visible and never removed: `focus-visible:outline-2 focus-visible:outline-offset-2` in `primary`
-  (white on dark surfaces). Card links expose the ring through `focus-within:ring-2 focus-within:ring-primary/40`.
+  (white on dark surfaces). Card links keep `focus-visible:outline-none` only because the whole card carries its own
+  solid ring through `focus-within:ring-2 focus-within:ring-primary` (`#1e6b80`, 6.05:1 on white, 5.59:1 on
+  `fjord-light`) — a 40%-alpha ring is not enough.
 - **Motion** — hover changes color and may nudge the arrow; the carousel cross-fade is disabled under
   `prefers-reduced-motion: reduce`.
-- **Landmarks and semantics** — one `h1` per page, `main#main-content`, `aria-label` on icon-only controls,
-  `aria-hidden` on decorative SVGs, `aria-current="page"` on the active nav link and on the active carousel indicator,
-  native `<dialog>`, `<details>`, `<blockquote>/<cite>`.
+- **Landmarks and semantics** — one `h1` per page including `/tags/`, `main#main-content`, `aria-label` on icon-only
+  controls, `aria-hidden` on decorative SVGs, `aria-current="page"` on the active nav link and on the active carousel
+  indicator, a named `nav` for the activity page's in-page sections (`data-section-nav`, `aria-label="Sections on this
+  page"`) so it is distinguishable from the header nav, footer headings at `h2`/`h3`, native `<dialog>`, `<details>`,
+  `<blockquote>/<cite>`. Controls that carry visible text take their accessible name from it — an `aria-label` that
+  pushes the visible label out of the name breaks 2.5.3. The activity section nav marks its current section with
+  `aria-current="true"`, not colour alone. The booking dialog's total price updates are announced through a polite
+  `role="status"` region (`#price-status`) in addition to the read-only input that holds the value.
 
 ## Motion
 

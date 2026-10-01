@@ -88,8 +88,7 @@ description: Sognefjord private boat trip to Fjærland. See glaciers, mountains 
   Norway's heart.
 images:
   - src: images/img_4315.jpeg
-    alt: Kaptein Tor og Miss fjords med norske damer på foto oppdrag i
-      Fjærlandsfjorden, juli er fantastisk og grønn fjord
+    alt: Captain Tor and Miss Fjords with Norwegian women on a photo assignment in Fjærlandsfjorden, July is magnificent and the fjord green
 tags:
   - business-and-pleasure
 information:
@@ -162,13 +161,13 @@ Watch the trees bloom in May and June. From June to August, the fjord is colored
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CTAFlSnKh7W/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CTAFlSnKh7W/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/CXE7r1sFLIJ/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/CXE7r1sFLIJ/)
 >
-> Teaser TV-Episode S2E6: Watch the Video [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
+> Teaser TV-Episode S2E6: [Watch the TV episode on YouTube](https://www.youtube.com/watch?v=6tarTVGdFTY)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### The Fjærland fjord in winter:
 

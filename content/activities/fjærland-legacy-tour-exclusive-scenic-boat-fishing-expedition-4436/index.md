@@ -79,7 +79,7 @@ description: "Sognefjord's hidden gem: The ultimate heritage tour. Authentic
   experience for your family"
 images:
   - src: images/embracing-pure-joy-and-digital-detox-in-the-majestic-sognefjord-a-guest-sits-at-the-bow-of-the-boat-arms-open-wide-to-the-mountain-peaks-and-the-open-water.jpg
-    alt: Fantastiske Fjærlandsfjord og fisketur med tenåringer og morsom fisk på tur
+    alt: Fantastic Fjærlandsfjord and a fishing trip with teenagers and a fun fish on the trip
 tags:
   - family-and-friends
   - business-and-pleasure
@@ -200,13 +200,13 @@ We operate in the inner fjord area (Mundal - Lidal). It’s chilly this time of 
 
 **Yes, absolutely!** To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 >
-> Teaser YouTube TV-Episode 6: People of The North [HERE](https://www.youtube.com/watch?v=6tarTVGdFTY)
+> Teaser YouTube TV-Episode 6, People of The North: [Watch the TV episode on YouTube](https://www.youtube.com/watch?v=6tarTVGdFTY)
 
 **This is a family expedition where you can experience the unexpected!**
 

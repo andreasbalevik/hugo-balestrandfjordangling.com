@@ -1,5 +1,5 @@
-<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden group focus-within:ring-2 focus-within:ring-primary/40">
-    <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="Read {{ .Title }}">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden group focus-within:ring-2 focus-within:ring-primary">
+    <a href="{{ .RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none">
         <div>
             {{ range first 1 .Params.images }}
                 {{ partial "components/images/image.html" (dict "src" .src "alt" .alt "preset" "card") }}

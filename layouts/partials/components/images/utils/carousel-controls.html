@@ -21,7 +21,7 @@
     {{ $counter := 0 }}
     {{ range . }}
     <button type="button"
-        class="inline-flex h-11 w-11 items-center justify-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:outline"
         {{ if eq $counter 0 }}aria-current="true"{{ end }}
         aria-label="Slide {{$counter}}"
         data-carousel-slide-to="{{$counter}}">

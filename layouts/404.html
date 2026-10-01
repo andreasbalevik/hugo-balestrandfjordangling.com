@@ -4,6 +4,7 @@
 {{ $image_path := "images/katrine-web.jpg"}}
 {{ $image := resources.GetMatch $image_path | images.Filter $blur_filter | images.Filter (images.Contrast 30)}}
 {{ $backgroundImage := $image.Resize "x600 q50" }}
+{{ $backLabel := printf "%s to the homepage" (i18n "tilbake") }}
 
 <!-- 404 Error Page -->
 <section class="bg-hero" style="background-image: url('{{ $backgroundImage.Permalink }}');">
@@ -15,8 +16,8 @@
                 The page may have been moved or deleted. Perhaps you'd like to return to the homepage?
             </p>
             <a href="{{ site.Home.RelPermalink }}"
-                class="inline-flex items-center text-primary-dark hover:text-primary-darker font-medium transition-colors duration-300"
-                aria-label="Return to homepage">
+                class="inline-flex items-center min-h-11 text-primary-dark hover:text-primary-darker font-medium transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                aria-label="{{ $backLabel }}">
                 <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

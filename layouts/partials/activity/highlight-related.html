@@ -1,7 +1,7 @@
 {{ $activity := .page }}
 
-<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden group focus-within:ring-2 focus-within:ring-primary/40">
-    <a href="{{ $activity.RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none" aria-label="View {{ $activity.Title }}">
+<article class="w-full h-full bg-white border border-fjord-pale rounded-lg overflow-hidden group focus-within:ring-2 focus-within:ring-primary">
+    <a href="{{ $activity.RelPermalink }}" class="flex flex-col h-full focus-visible:outline-none">
 
         <!-- Image highlight -->
         <div class="relative overflow-hidden aspect-[3/2]">
@@ -10,7 +10,7 @@
             {{ end }}
 
             {{ with $activity.Params.tags }}
-            <div class="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-8 bg-gradient-to-t from-black/60 to-transparent flex flex-wrap gap-2">
+            <div class="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-8 bg-gradient-to-t from-black/50 to-transparent flex flex-wrap gap-2">
                 {{ range . }}
                     {{ with site.GetPage (printf "/tags/%s" .) }}
                         <span class="text-xs font-semibold px-3 py-1.5 rounded-md text-white bg-category"

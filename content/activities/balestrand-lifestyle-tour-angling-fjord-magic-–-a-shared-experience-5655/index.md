@@ -54,7 +54,8 @@ keywords:
 description: "We'll show you authentic homesteads, stunning mountains, hidden
   waterfalls, and the best fishing spots. Experience genuine Norwegian
   hospitality. "
-aliases: []
+aliases:
+  - /activities/balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655
 images:
   - src: images/frihet-følelser-og-sognefjorden-med-kaptein-tor.jpg
     alt: Captain Tor in Sognefjord - freedom and feelings while fishing in the
@@ -147,11 +148,11 @@ Raw materials can be purchased easily at the grocery store next to the Balestran
 
 Yes, absolutely! To really get a feel for the atmosphere, we’ve put together some short Instagram Reels. Take a look and let yourself be inspired by the magic of the Sognefjord:
 
-> Teaser Instagram Reel 1: Watch the video   [HERE](https://www.instagram.com/p/CSywgKHqZTU/)
+> Teaser Instagram Reel 1: [Watch the video on Instagram](https://www.instagram.com/p/CSywgKHqZTU/)
 >
-> Teaser Instagram Reel 2: Watch the video   [HERE](https://www.instagram.com/p/C7HG6bDN3a9/)
+> Teaser Instagram Reel 2: [Watch the video on Instagram](https://www.instagram.com/p/C7HG6bDN3a9/)
 >
-> Teaser YouTube Episode : Watch Episode    [HERE](https://www.youtube.com/watch?v=AgKuXXlxM4o)
+> Teaser YouTube Episode: [Watch the episode on YouTube](https://www.youtube.com/watch?v=AgKuXXlxM4o)
 
 ### PRISTINE FJORDS: LOST IN THE MOMENT:
 
@@ -169,7 +170,7 @@ In bright season, the **Fjærland fjord** has a green color *from* the melt-wate
 
 **The energy in Fjærlandfjord is described as special, original, and powerful**. Surrounded by high mountains, it is said to nourish both the heart and the spirit. The area offers clean water, fresh air, and homesteads, providing peace, inspiration, and space for wonder. In the past, this beautiful fjord was known as ***“Fjordland”.***
 
-#### *AND THE BONUS?*
+### *AND THE BONUS?*
 
 **It adds a new dimension and a colorful twist to your life.** You are likely someone who enjoys laughter, good times, is generous, and adventurous.
 

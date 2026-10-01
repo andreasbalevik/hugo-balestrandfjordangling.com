@@ -64,7 +64,7 @@ related_activities:
   - fjærland-legacy-tour-exclusive-scenic-boat-fishing-expedition-4436/index
 cms: true
 ---
-### *In my fjords, when spring finally comes to save me from a perpetual winter,*
+## *In my fjords, when spring finally comes to save me from a perpetual winter,*
 
 *my world comes alive again, and I remember why I am here. I am a son of a long line of fjord fishermen and pioneers in Balevik bay who make a living from what the Sognefjord has to offer. And when I get the first bookings from tourist guest in the spring, I love to see them rediscover this Sognefjord world and be filled with wonder and presence.*
 
@@ -80,4 +80,4 @@ cms: true
 
 *this fire in the soul and keep it buried deep inside themselves. But there will always be a few people who have the courage to love what is untamed inside us... Finding the way back to who I am!*
 
-> ##### ***“All I feel is free..”***
+> #### ***“All I feel is free..”***

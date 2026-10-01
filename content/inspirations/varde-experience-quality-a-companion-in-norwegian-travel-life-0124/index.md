@@ -54,7 +54,7 @@ cms: true
 
 Discover authentic, Varde-Certified Sognefjord experiences with Captain Tor. We offer epic quality tours and pro boat services in the heart of the fjord. Get the real Norwegian vibe.
 
-### **The Varde Experience: Why Quality is Standard with Captain Tor**
+## **The Varde Experience: Why Quality is Standard with Captain Tor**
 
 Introduction: There is nothing special about producing quality. That is simply what Captain Tor does. The original fjord experience with the boat “Miss Fjords” offers a fine balance of fishing instincts, childhood memories, storytelling, and authentic adventure. That is precisely what we deliver. This is exactly what our guests are looking for. This is exactly what our guests want!
 
@@ -100,4 +100,4 @@ A consultant in Varde Experience Quality acts as a “Mystery guest” who goes 
 
    Overall safety protocols and peace of mind.
 
-[](https://www.vardekvalitet.no/)
+[Varde Experience Quality](https://www.vardekvalitet.no/)

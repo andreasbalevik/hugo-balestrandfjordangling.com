@@ -19,8 +19,7 @@
             {{ range $item := .Pages }}
             <article class="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] lg:w-[340px] overflow-hidden rounded-lg border border-fjord-pale bg-white shadow">
                 <a href="{{ $item.RelPermalink }}"
-                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                   aria-label="Read {{ $item.Title }}">
+                   class="group flex h-full flex-col focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                     {{ range first 1 $item.Params.images }}
                     <div class="overflow-hidden">
                         {{ partial "components/images/image.html" (dict
@@ -32,7 +31,7 @@
                     </div>
                     {{ end }}
 
-                    <div class="flex flex-1 flex-col p-5">
+                    <div class="flex flex-1 flex-col p-5 md:p-6">
                         <h2 class="mt-0 mb-3 text-xl md:text-2xl font-medium leading-snug tracking-tight text-balance text-fjord group-hover:text-primary-dark transition-colors duration-300">
                             {{ $item.Title }}
                         </h2>
