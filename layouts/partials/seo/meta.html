@@ -1,0 +1,247 @@
+{{/*
+  Project override of the theme SEO partial
+  (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/meta.html).
+
+  Changes:
+  1. <title> uses the optional `seoTitle` frontmatter value when present and
+     otherwise the page title. A short title that does not already contain the
+     brand gets " | Balestrand Fjord Angling" appended; long titles are left
+     alone so Google is not pushed to rewrite them.
+  2. The meta/og/twitter description keeps the full explicit page description
+     (whitespace-normalised) and is never blindly truncated. Only the Summary
+     fallback for pages without a description is capped, to keep an auto-derived
+     snippet reasonable.
+  3. The obsolete meta keywords tag is removed; `keywords` frontmatter is still
+     read by the theme elsewhere and is not touched.
+  4. robots: 404 is forced to noindex; Netlify deploy previews and branch
+     deploys (CONTEXT set to anything other than "production") are forced to
+     noindex. Indexable pages get `max-image-preview:large`. Explicit
+     restrictions in frontmatter (e.g. `robots: noindex, nofollow`) are
+     preserved.
+  5. Canonical, hreflang, favicons, social image, author/publisher and
+     published/modified timestamps are copied unchanged from the theme.
+*/}}
+{{- $title := .Title | default site.Title -}}
+{{- with .Params.seoTitle -}}
+  {{- $title = . -}}
+{{- end -}}
+{{- if and (not (strings.Contains $title site.Title)) (le (add (len $title) (len site.Title) 3) 60) -}}
+  {{- $title = printf "%s | %s" $title site.Title -}}
+{{- end -}}
+{{- $ISO8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- $languageCode := site.Language.Locale | default .Lang | default "en" -}}
+{{- $ogLocale := replace $languageCode "-" "_" -}}
+{{- $description := "" -}}
+{{- with .Description -}}
+  {{- $description = . | plainify | replaceRE `\s+` " " | strings.TrimSpace -}}
+{{- else -}}
+  {{- if .IsPage -}}
+    {{- $description = .Summary | plainify | replaceRE `\s+` " " | strings.TrimSpace | truncate 160 -}}
+  {{- else -}}
+    {{- with site.Params.description -}}
+      {{- $description = . | plainify | replaceRE `\s+` " " | strings.TrimSpace -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $author := site.Params.author | default site.Title -}}
+{{- $publisher := site.Title -}}
+{{- $robots := .Params.robots | default "index, follow" -}}
+{{- $ctx := os.Getenv "CONTEXT" -}}
+{{- $nonProduction := and (ne $ctx "") (ne $ctx "production") -}}
+{{- if or (eq .Kind "404") $nonProduction -}}
+  {{- $robots = "noindex, nofollow" -}}
+{{- else if not (in $robots "noindex") -}}
+  {{- if not (in $robots "max-image-preview") -}}
+    {{- $robots = printf "%s, max-image-preview:large" $robots -}}
+  {{- end -}}
+{{- end -}}
+{{- $canonicalURL := .Permalink -}}
+{{- $xDefaultURL := $canonicalURL -}}
+{{- $defaultLang := "" -}}
+{{- with index hugo.Sites 0 -}}
+  {{- $defaultLang = .Language.Lang -}}
+{{- end -}}
+{{- if and .IsTranslated $defaultLang -}}
+  {{- range .AllTranslations -}}
+    {{- if eq .Language.Lang $defaultLang -}}
+      {{- $xDefaultURL = .Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $pubDate := .PublishDate -}}
+{{- if $pubDate.IsZero -}}
+  {{- $pubDate = .Date -}}
+{{- end -}}
+{{- if $pubDate.IsZero -}}
+  {{- with .GitInfo -}}
+    {{- $pubDate = .AuthorDate -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $lastmod := .Lastmod -}}
+{{- if $lastmod.IsZero -}}
+  {{- with .GitInfo -}}
+    {{- $lastmod = .AuthorDate -}}
+  {{- end -}}
+{{- end -}}
+{{- if $lastmod.IsZero -}}
+  {{- $lastmod = $pubDate -}}
+{{- end -}}
+
+{{- $socialImage := "" -}}
+{{- $socialImageType := "" -}}
+{{- $socialImageWidth := 0 -}}
+{{- $socialImageHeight := 0 -}}
+{{- $socialImageAlt := printf "%s logo" site.Title -}}
+
+{{- with .Page.Params.images -}}
+  {{- range first 1 . -}}
+    {{- $img := resources.GetMatch .src -}}
+    {{- if $img -}}
+      {{- $resized := $img.Fill "1200x630 q85 webp" -}}
+      {{- $socialImage = $resized.Permalink -}}
+      {{- $socialImageType = printf "%s" $resized.MediaType -}}
+      {{- $socialImageWidth = $resized.Width -}}
+      {{- $socialImageHeight = $resized.Height -}}
+      {{- $socialImageAlt = $.Title -}}
+    {{- end -}}
+    {{- with .alt -}}
+      {{- $socialImageAlt = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $socialImage -}}
+  {{- with site.Params.ogimage -}}
+    {{- $img := resources.GetMatch . -}}
+    {{- if $img -}}
+      {{- $resized := $img.Fill "1200x630 q85 webp" -}}
+      {{- $socialImage = $resized.Permalink -}}
+      {{- $socialImageType = printf "%s" $resized.MediaType -}}
+      {{- $socialImageWidth = $resized.Width -}}
+      {{- $socialImageHeight = $resized.Height -}}
+    {{- else -}}
+      {{- $socialImage = . | absURL -}}
+    {{- end -}}
+  {{- else -}}
+    {{- with site.Params.brand_image -}}
+      {{- $socialImage = . | absURL -}}
+    {{- else -}}
+      {{- with site.Params.logo -}}
+        {{- with resources.Get . -}}
+          {{- $socialImage = .Permalink -}}
+          {{- $socialImageType = printf "%s" .MediaType -}}
+          {{- $socialImageWidth = .Width -}}
+          {{- $socialImageHeight = .Height -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<!-- PAGE METADATA -->
+<meta charset="utf-8">
+<title>{{ $title }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+{{ partial "seo/preload.html" . }}
+
+<meta name="robots" content="{{ $robots }}">
+<meta http-equiv="content-language" content="{{ $languageCode }}">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}">
+
+<!-- SEO METADATA -->
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ $author }}">
+<meta name="publisher" content="{{ $publisher }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+{{ if .IsPage }}
+<meta property="og:type" content="article">
+{{ if not $pubDate.IsZero }}<meta property="article:published_time" content="{{ $pubDate.Format $ISO8601 | safeHTML }}">{{ end }}
+{{ if not $lastmod.IsZero }}<meta property="article:modified_time" content="{{ $lastmod.Format $ISO8601 | safeHTML }}">{{ end }}
+{{ with .Params.tags }}
+<meta property="article:section" content="{{ index . 0 }}">
+{{ range . }}
+<meta property="article:tag" content="{{ . }}">
+{{ end }}
+{{ end }}
+{{ else }}
+<meta property="og:type" content="website">
+{{ end }}
+<meta property="og:url" content="{{ $canonicalURL }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{ if not $lastmod.IsZero }}<meta property="og:updated_time" content="{{ $lastmod.Format $ISO8601 | safeHTML }}">{{ end }}
+<meta property="og:locale" content="{{ $ogLocale }}">
+{{ if .IsTranslated }}
+<link rel="alternate" hreflang="x-default" href="{{ $xDefaultURL }}">
+  {{ range .AllTranslations }}
+    {{ $translationLocale := .Language.LanguageCode | default .Lang | default "en" }}
+<meta property="og:locale:alternate" content="{{ replace $translationLocale "-" "_" }}">
+  {{ end }}
+{{ end }}
+
+<!-- IMAGE -->
+{{ if $socialImage }}
+<meta property="og:image" content="{{ $socialImage }}">
+{{ if $socialImageType }}<meta property="og:image:type" content="{{ $socialImageType }}">{{ end }}
+{{ if gt $socialImageWidth 0 }}<meta property="og:image:width" content="{{ $socialImageWidth }}">{{ end }}
+{{ if gt $socialImageHeight 0 }}<meta property="og:image:height" content="{{ $socialImageHeight }}">{{ end }}
+{{ if $socialImageAlt }}<meta property="og:image:alt" content="{{ $socialImageAlt }}">{{ end }}
+{{ end }}
+
+<!-- TWITTER CARD METADATA -->
+<meta name="twitter:card" content="{{ site.Params.twitter_card | default "summary_large_image" }}">
+{{ with site.Params.twitter_handle }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ if $socialImage }}
+<meta name="twitter:image" content="{{ $socialImage }}">
+{{ if $socialImageAlt }}<meta name="twitter:image:alt" content="{{ $socialImageAlt }}">{{ end }}
+{{ end }}
+
+<!-- PAGE LINKS -->
+<link rel="canonical" href="{{ $canonicalURL }}" itemprop="url">
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    {{ $hrefLang := .Language.LanguageCode | default .Lang | default "en" }}
+<link rel="alternate" hreflang="{{ $hrefLang }}" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+
+<!-- MOBILE WEB APP -->
+<meta name="apple-mobile-web-app-title" content="{{ $title }}">
+<meta name="application-name" content="{{ $title }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="{{ site.Params.theme_color | default "#0369a1" }}">
+
+<!-- FAVICONS -->
+{{- with site.Params.logo -}}
+  {{- with resources.Get . -}}
+    {{- $fav16 := resources.Copy "favicon/favicon-16x16.png" (.Fit "16x16") -}}
+    {{- $fav32 := resources.Copy "favicon/favicon-32x32.png" (.Fit "32x32") -}}
+    {{- $fav48 := resources.Copy "favicon/favicon-48x48.png" (.Fit "48x48") -}}
+    {{- $fav96 := resources.Copy "favicon/favicon-96x96.png" (.Fit "96x96") -}}
+    {{- $fav144 := resources.Copy "favicon/favicon-144x144.png" (.Fit "144x144") -}}
+    {{- $apple := resources.Copy "favicon/apple-touch-icon.png" (.Fit "180x180") -}}
+    {{- $chrome192 := resources.Copy "favicon/android-chrome-192x192.png" (.Fit "192x192") -}}
+    {{- $chrome512 := resources.Copy "favicon/android-chrome-512x512.png" (.Fit "512x512") -}}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ $fav16.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ $fav32.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ $fav48.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ $fav96.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="144x144" href="{{ $fav144.RelPermalink }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $apple.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ $chrome192.RelPermalink }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ $chrome512.RelPermalink }}">
+  {{- end -}}
+{{- end -}}
+{{ if (fileExists "static/site.webmanifest") }}<link rel="manifest" href="/site.webmanifest">{{ end }}
+
+{{ partial "seo/json-ld/json-ld.html" . }}
+
+{{ partial "dns-prefetch.html" . }}

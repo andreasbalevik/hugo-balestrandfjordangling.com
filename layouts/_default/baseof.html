@@ -3,9 +3,9 @@
   (themes/balevikit-tailwindcss-hugo-theme/layouts/_default/baseof.html).
 
   Changes:
-  1. The body scripts (custom-script.html) and the analytics consent component
-     are placed before the closing </body> instead of after it, keeping the
-     document valid and ensuring the consent surface/loader sits in the body.
+  1. The body scripts (custom-script.html) are placed before the closing </body>
+     instead of after it, keeping the document valid and ensuring scripts sit in
+     the body.
   2. The skip link text is English ("Skip to main content") to match the site's
      lang="en"; the theme shipped a Norwegian label.
   3. Header, footer and the single main#main-content are unchanged. No extra
@@ -40,8 +40,6 @@
   </main>
 
   {{ partial "layout/footer.html" . }}
-
-  {{ partial "components/analytics-consent.html" . }}
 
   {{ partial "custom-script.html" . }}
 

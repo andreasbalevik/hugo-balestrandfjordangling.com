@@ -1,4 +1,17 @@
+{{/*
+  Project robots.txt.
+
+  Crawlers must be allowed to fetch the pages that carry a `noindex` meta tag
+  (deploy previews, branch deploys, the 404 page and the booking confirmation),
+  otherwise they can never see the noindex and may still index the URL.
+  Advertising the sitemap only makes sense for a real production build; on
+  Netlify deploy previews / branch deploys CONTEXT is set to something other
+  than "production".
+*/}}
+{{- $ctx := os.Getenv "CONTEXT" -}}
 User-agent: *
 Allow: /
 
+{{- if or (eq $ctx "") (eq $ctx "production") }}
 Sitemap: {{ "sitemap.xml" | absURL }}
+{{- end -}}

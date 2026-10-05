@@ -1,53 +1,28 @@
 # Copilot instructions for this repo
 
-Follow existing project conventions and these repository-specific rules.
+Follow project conventions and these repo-specific rules. [`DESIGN.md`](../DESIGN.md) is the source of truth for UI changes; [`PRODUCT.md`](../PRODUCT.md) holds product context; do not restate design rules here.
 
 ## Workflow and pull requests
 
-- Do not add pre-commit hooks or automate BackstopJS unless explicitly requested. BackstopJS is
-  manual-only.
-- Keep PR descriptions short, concrete, and current:
-  - Summarize the completed work in high-level bullet points.
-  - Include `Estimated active time: ~X hours`.
-- Update the description and time estimate before merging. Estimate active time from the relevant
-  conversation/session history and actual work activity. Exclude idle gaps, periods without
-  conversation or tool activity, waiting time, and unrelated work; do not use the elapsed time
-  between the first and last event.
+- No pre-commit hooks or BackstopJS automation unless requested — BackstopJS is manual-only, no hook, no CI.
+- Keep PR descriptions short and current before merging: high-level bullets plus `Estimated active time: ~X hours`, from session history and real activity. Exclude idle, waiting and unrelated time; never use elapsed time between first and last event.
 
 ## Dependencies
 
-- Keep `package-lock.json` tracked.
-- Keep `netlify.toml`'s `HUGO_VERSION` aligned with the locally tested Hugo version.
-- Keep `tailwindcss` and `@tailwindcss/cli` up to date.
+- Keep `package-lock.json` tracked, `netlify.toml`'s `HUGO_VERSION` aligned with the tested Hugo version, and Tailwind packages current.
 
 ## Styling
 
-- Use Tailwind utility classes in layouts. Do not add `<style>` blocks, static inline styles, or
-  one-off rules in `assets/css/custom.css` when Tailwind can express the styling.
-- Reserve `assets/css/custom.css` for brand tokens and utilities Tailwind cannot express. Inline
-  styles are only for genuinely dynamic values.
-- Fix spacing by adjusting existing utilities rather than adding overrides or duplicate container
-  padding.
+- Use Tailwind utilities; no `<style>` blocks, inline styles, or one-off `custom.css` rules where Tailwind can express it. Reserve `custom.css` for brand tokens and unexpressible utilities; inline styles only for dynamic values.
+- Adjust existing utilities to fix spacing, not overrides or duplicate padding.
 
 ## Local development
 
-- Initialize the theme submodule if it is empty and run `npm install` before starting Hugo.
-- Verify UI changes with `hugo server -D`, an HTTP 200 check, and a visual browser pass.
-- Never edit files in `themes/`; make theme changes in the theme repository.
+- Initialize the theme submodule if empty and run `npm install` before Hugo.
+- Verify UI changes with `hugo server -D`, an HTTP 200 check, and a browser pass.
+- Never edit files in `themes/`; change the theme in its own repository.
 
-## Code structure
+## Overrides, partials and SEO
 
-- Extract repeated layout markup into a partial under `layouts/partials/`.
-- Give partials a short Hugo-comment header. Use named parameters when more than page context is
-  needed.
-- Preserve meaningful presentation differences; do not merge components that serve different roles.
-
-## SEO
-
-- Keep `layouts/robots.txt`, `enableRobotsTXT`, and sitemap/crawl configuration aligned.
-
-## Design and UI
-
-- [`DESIGN.md`](../DESIGN.md) is the source of truth for UI changes (tokens, rules, components).
-  [`PRODUCT.md`](../PRODUCT.md) holds durable product context. Follow them; do not restate design
-  rules here.
+- Project overrides live at the same path under `layouts/` with a Hugo comment explaining what differs. Extract repeated markup into a partial with a short Hugo comment and named parameters; do not merge components with different roles.
+- Keep `layouts/robots.txt`, `enableRobotsTXT`, and sitemap/crawl config aligned.

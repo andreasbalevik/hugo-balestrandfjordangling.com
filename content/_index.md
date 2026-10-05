@@ -1,5 +1,6 @@
 ---
 title: Sognefjord Fishing Trips & Scenic Tours
+seoTitle: Sognefjord Fishing & Fjord Tours in Balestrand
 description: Go local with Captain Tor. Private Excursions. See Glaciers,
   Waterfalls from boat. Real Storytelling & Authentic Norwegian Fjord
   Experience. Book Direct.
@@ -16,11 +17,6 @@ recommended:
     - balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/index
     - balestrand-lifestyle-tour-angling-fjord-magic-–-a-shared-experience-5655/index
     - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
-featured:
-  enabled: false
-  title: Featured
-  featured:
-    - people-of-the-north-2922/index
 usp:
   title: The Unfiltered Fjord Experience
   items:

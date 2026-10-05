@@ -1,5 +1,6 @@
 ---
 title: "Balestrand Lifestyle Tour: Angling & Fjord Magic – A Shared Experience"
+seoTitle: "Balestrand Lifestyle Tour: Fjord Fishing, Waterfalls & Homesteads"
 quality: LIFESTYLE
 keywords:
   - Sustainable Tourism

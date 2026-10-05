@@ -3,12 +3,14 @@ resources/
 public/
 hugo_stats.json
 .hugo_build.lock
+.impeccable/hook.cache.json
 
 # Dependencies
 node_modules/
 
 # Backstop output
-backstop_data/
+backstop_data/*
+!backstop_data/engine_scripts/
 
 # OS files
 .DS_Store

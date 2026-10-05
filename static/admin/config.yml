@@ -1,6 +1,8 @@
-#local_backend: true
+local_backend: false
 editor:
   preview: false
+site_url: https://balestrandfjordangling.com
+display_url: https://balestrandfjordangling.com
 backend:
   name: git-gateway
   branch: master
@@ -9,9 +11,25 @@ public_folder: 'images'
 collections:
   - name: 'activities'
     label: 'Activities'
+    label_singular: 'Activity'
+    description: 'Guided tours and rentals shown on the activities overview.'
     folder: 'content/activities'
     path: "{{slug}}/index"
+    preview_path: "activities/{{dirname}}"
     summary: "{{quality}} - {{title}}"
+    sortable_fields: ['title', 'quality']
+    view_filters:
+      - { label: 'Basic', field: quality, pattern: 'BASIC' }
+      - { label: 'Legacy', field: quality, pattern: 'LEGACY' }
+      - { label: 'Lifestyle', field: quality, pattern: 'LIFESTYLE' }
+      - { label: 'Premium', field: quality, pattern: 'PREMIUM' }
+      - { label: 'Escape', field: quality, pattern: 'ESCAPE' }
+      - { label: 'Sporty', field: quality, pattern: 'SPORTY' }
+      - { label: 'Bike rental', field: quality, pattern: 'BIKE RENTAL' }
+      - { label: 'Guided bike tour', field: quality, pattern: 'GUIDED BIKE TOUR' }
+      - { label: 'Local fisherman', field: quality, pattern: 'Local Fisherman' }
+      - { label: 'Go Viking & Springfulness', field: quality, pattern: 'Go Viking & Springfulness' }
+      - { label: 'Work', field: quality, pattern: 'WORK' }
     create: true
     slug: '{{slug}}-{{minute}}{{second}}'
     filter:
@@ -20,7 +38,6 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Quality', name: 'quality', widget: 'string' }
-      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
       - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
       - label: "Aliases"
         name: "aliases"
@@ -33,9 +50,11 @@ collections:
           widget: "string"
       - label: 'Images'
         name: 'images'
+        widget: 'list'
+        collapsed: true
         min: 1
         max: 10
-        widget: 'list'
+        summary: '{{fields.src}}'
         media_folder: /assets/images
         public_folder: 'images'
         fields:
@@ -115,6 +134,7 @@ collections:
             widget: 'select'
             required: true
             multiple: false
+            hint: "Shown as the group-size badge on activity cards. Booking choices and displayed capacity come from the price rows below; keep those rows in ascending order."
             options:
               - { label: '1', value: '1' }
               - { label: '2', value: '2' }
@@ -125,36 +145,48 @@ collections:
               - { label: '7', value: '7' }
               - { label: '8', value: '8' }
           
-          - label: "Prices for Each Person"
+          - label: "Total price by group size"
             name: "prices"
             widget: "list"
+            collapsed: true
             min: 1
             max: 8
+            summary: '{{fields.person_number}} guests / {{fields.price}} NOK'
             fields:
               - label: "Person Number"
                 name: "person_number"
                 widget: "number"
-                hint: "Enter the person number (e.g., 1, 2, 3...)"
-              - label: "Price"
+                value_type: "int"
+                hint: "Keep the rows in ascending order by person number. This row number decides which total applies to a booking of that group size."
+              - label: "Total price (NOK)"
                 name: "price"
                 widget: "number"
-                hint: "Enter the price for this number of persons"
+                value_type: "int"
+                hint: "Total price for this group size in NOK, not a per-person rate."
 
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Frequently Asked Questions (optional)'
         name: 'faqItems'
         widget: 'list'
         required: false
+        collapsed: true
+        summary: '{{fields.question}}'
         hint: 'Add FAQ items that will appear as an accordion on this activity page'
         fields:
           - { label: 'Question', name: 'question', widget: 'string' }
           - { label: 'Answer', name: 'answer', widget: 'markdown' }
+      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
 
   - name: 'inspirations'
     label: 'Inspirations'
+    label_singular: 'Inspiration'
+    description: 'Editorial stories that link readers to related activities.'
     folder: 'content/inspirations'
     path: "{{slug}}/index"
+    preview_path: "inspirations/{{dirname}}"
+    summary: "{{title}}"
+    sortable_fields: ['title']
     create: true
     slug: '{{slug}}-{{minute}}{{second}}'
     filter:
@@ -162,11 +194,11 @@ collections:
           value: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
       - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
       - label: "Aliases"
         name: "aliases"
         widget: "list"
+        required: false
         hint: "Peke gamle inspirasjon til denne inspirasjonen"
         field:
           label: "Alias"
@@ -175,8 +207,10 @@ collections:
       - label: 'Images'
         name: 'images'
         widget: 'list'
+        collapsed: true
         min: 1
         max: 10
+        summary: '{{fields.src}}'
         media_folder: /assets/images
         public_folder: 'images'
         fields:
@@ -197,47 +231,15 @@ collections:
         name: 'faqItems'
         widget: 'list'
         required: false
+        collapsed: true
+        summary: '{{fields.question}}'
         hint: 'Add FAQ items that will appear as an accordion on this inspiration page'
         fields:
           - { label: 'Question', name: 'question', widget: 'string' }
           - { label: 'Answer', name: 'answer', widget: 'markdown' }
+      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
       - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
 
-  - name: 'featured'
-    label: 'Featured'
-    folder: 'content/featured'
-    path: "{{slug}}/index"
-    create: true
-    slug: '{{slug}}-{{minute}}{{second}}'
-    filter:
-          field: cms
-          value: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
-      - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
-      - label: 'Images'
-        name: 'images'
-        widget: 'list'
-        min: 1
-        max: 10
-        media_folder: /assets/images
-        public_folder: 'images'
-        fields:
-          - { label: 'Image Source', name: 'src', widget: 'image', required: true }
-          - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: "Related activities"
-        name: "related_activities"
-        widget: "list"
-        summary: '{{fields.title}}'
-        allow_add: true
-        required: false
-        min: 1
-        max: 3
-        field: {label: Activity,name: related_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["quality","title"]}
-      - { label: 'Cms', name: 'cms', widget: 'hidden', default: true }
-  
   - name: 'pages'
     label: "Pages"
     files:
@@ -252,9 +254,11 @@ collections:
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
@@ -281,22 +285,6 @@ collections:
                 max: 3
                 field: {label: Activity,name: recommended_activities,widget: relation,collection: activities,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["quality","title"]}
           
-          - label: "Featured"
-            name: "featured"
-            widget: "object"
-            collapsed: true
-            fields: 
-              - { label: 'Campaign title', name: 'title', widget: 'string' }
-              - { label: Enable, name: enabled, widget: boolean, default: false, required: false}
-              - label: "Featured"
-                name: "featured"
-                widget: "list"
-                summary: '{{fields.title}}'
-                allow_add: true
-                min: 0
-                max: 1
-                field: {label: Featured,name: featured,widget: relation,collection: featured,search_fields: ["title"],value_field: '{{slug}}',display_fields: ["title"]}
-
           - label: "Why Choose Us (USP)"
             name: "usp"
             widget: "object"
@@ -312,35 +300,6 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Description', name: 'description', widget: 'text' }
                   - { label: 'Icon (SVG path d)', name: 'icon', widget: 'hidden', hint: 'Paste the SVG path d attribute here' }
-
-          - label: "Reviews"
-            name: "reviews"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string', default: 'What our guests say' }
-              - { label: 'Review Text', name: 'quote', widget: 'text' }
-              - { label: 'Author', name: 'author', widget: 'string' }
-              - label: 'Guest Image'
-                name: 'image'
-                widget: 'image'
-                required: false
-
-          - label: "Trust panel"
-            name: "trust_panel"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: 'Heading', name: 'heading', widget: 'string', default: 'Book direct with Captain Tor' }
-              - { label: 'Sidebar title', name: 'sidebar_title', widget: 'string', default: 'Why book direct' }
-              - label: "Points"
-                name: "items"
-                widget: "list"
-                min: 1
-                max: 5
-                summary: '{{fields.item}}'
-                field: { label: 'Point', name: 'item', widget: 'string' }
-              - { label: 'Button text', name: 'button_text', widget: 'string', default: 'Explore all activities' }
 
           - label: "Brand statement"
             name: "statement"
@@ -360,8 +319,10 @@ collections:
               - label: "Images"
                 name: "images"
                 widget: "list"
+                collapsed: true
                 min: 3
                 max: 10
+                summary: '{{fields.src}}'
                 fields:
                   - { label: 'Image', name: 'src', widget: 'image' }
                   - { label: 'Alt Text', name: 'alt', widget: 'string', hint: "Describe what is in the image for people who cannot see it." }
@@ -373,6 +334,7 @@ collections:
             collapsed: true
             fields: 
               - { label: 'Inspiration title', name: 'title', widget: 'string' }
+              - { label: 'Short description', name: 'description', widget: 'text', required: false, hint: "Optional text shown below the inspirations heading on the frontpage." }
               - label: "Recommended inspirations"
                 name: "inspirations"
                 widget: "list"
@@ -388,36 +350,40 @@ collections:
         delete: false
         fields:
           - {label: Title, name: title, widget: string}
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
-          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
+          - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,200}$', 'Max 200 characters'], hint: "Short summary shown under the page title in search results and social previews. Max 200 characters." }
           - label: 'Banner Image'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
 
       - file: "content/tags/bike-and-hike/_index.md"
         label: "Bike and hike" 
         name: "bike-and-hike"
         delete: false
         fields:
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
 
 
       - file: "content/tags/business-and-pleasure/_index.md"
@@ -425,18 +391,20 @@ collections:
         name: "business-and-pleasure"
         delete: false
         fields:
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
 
 
       - file: "content/tags/family-and-friends/_index.md"
@@ -444,18 +412,20 @@ collections:
         name: "family-and-friends"
         delete: false
         fields:
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
 
 
       - file: "content/activities/_index.md"
@@ -464,18 +434,20 @@ collections:
         delete: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
 
       - file: "content/inspirations/_index.md"
         label: "Inspirations" 
@@ -483,18 +455,20 @@ collections:
         delete: false
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           - { label: 'Short description', name: 'description', widget: 'text', pattern: ['^.{0,160}$', 'Max 160 characters'], hint: "One or two sentences shown under the page title in search results and social previews. Max 160 characters." }
           - label: 'SEO (image)'
             name: 'images'
             widget: 'list'
+            collapsed: true
             min: 1
             max: 1
             allow_multiple: false
+            summary: '{{fields.src}}'
             fields:
               - { label: 'Image Source', name: 'src', widget: 'image', required: true }
               - { label: 'Image Alt', name: 'alt', widget: 'string', required: false, hint: "Describe what is in the image for people who cannot see it. Leave empty only for purely decorative images." }
           - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Short description text that appears above the inspirations grid' }
+          - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           
       - file: "content/LLMs.md"
         label: "LLMs" 
@@ -535,13 +509,3 @@ collections:
             widget: "list"
             summary: '{{fields.info}}'
             field: {label: Info,name: info,widget: string}
-
-      - file: "data/configuration.yml"
-        label: "Site Configuration"
-        name: "configuration"
-        widget: "object"
-        collapsed: true
-        fields: 
-          - label: "Global Activity Label"
-            name: "global_activity_label"
-            widget: "string"

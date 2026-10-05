@@ -1,13 +1,23 @@
 {{/*
-  LocalBusiness / TouristDestination JSON-LD for the home page.
+  LocalBusiness JSON-LD for the home page.
 
   Changed from the theme behaviour:
   - Removed the undocumented openingHoursSpecification (the business does not
     publish those hours here) and the static priceRange (prices vary by tour and
     group size; the per-tour Product offers carry the real numbers).
-  - Address, geo, phone, email, map and social profiles now come from the site
-    configuration instead of being hardcoded here, so there is a single source
-    of truth and no diverging values.
+  - Address, geo, phone, email, map and social profiles come from the site
+    configuration instead of being hardcoded, so there is a single source of
+    truth and no diverging values.
+  - Removed the separate TouristDestination block. It described a destination
+    ("Balestrand Sognefjord") the site does not claim to be, and listed
+    "attractions" that are not presented as attractions in the visible page.
+    The home page is a business page, which LocalBusiness already covers.
+  - makesOffer now carries three services that are actually offered on the site
+    (fjord angling, scenic boat tours, e-bike rental) and links each to the
+    activities page where they are listed, instead of floating text.
+  - The schema is built as data and serialised with jsonify, so values with
+    quotes, backslashes or ampersands cannot break the JSON. It is linked to
+    the site's Organization and WebPage entities via @id.
 */}}
 {{ if .IsHome }}
 {{ $sameAs := slice }}
@@ -16,107 +26,69 @@
     {{ if $url }}{{ $sameAs = $sameAs | append $url }}{{ end }}
   {{ end }}
 {{ end }}
-<!-- LOCAL BUSINESS SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "{{ site.BaseURL }}#localbusiness",
-  "name": "{{ site.Title }}",
-  "description": "{{ .Page.Params.description | default site.Params.description }}"
-  {{ with .Page.Params.images }}
-    {{ range first 1 . }}
-      {{ $image := resources.GetMatch .src }}
-      {{ if $image }}
-        {{ $schemaImage := $image }}
-        {{ if gt $image.Width 1200 }}
-          {{ $schemaImage = $image.Resize "1200x q82" }}
-        {{ end }}
-  ,"image": "{{ $schemaImage.Permalink }}"
+{{ $activitiesURL := "" }}
+{{ with site.GetPage "activities" }}
+  {{ $activitiesURL = .Permalink }}
+{{ end }}
+{{ $imageURL := "" }}
+{{ with .Page.Params.images }}
+  {{ range first 1 . }}
+    {{ $imageURL = .src | absURL }}
+    {{ with resources.GetMatch .src }}
+      {{ $image := . }}
+      {{ if gt .Width 1200 }}
+        {{ $image = .Resize "1200x q82" }}
       {{ end }}
+      {{ $imageURL = $image.Permalink }}
     {{ end }}
   {{ end }}
-  ,"url": "{{ site.BaseURL }}"
-  ,"telephone": "{{ site.Params.phone }}"
-  ,"email": "{{ site.Params.email }}"
-  ,"address": {
-    "@type": "PostalAddress",
-    "streetAddress": "{{ site.Params.address }}",
-    "addressLocality": "{{ site.Params.addressLocality }}",
-    "addressRegion": "{{ site.Params.addressRegion }}",
-    "postalCode": "{{ site.Params.postalCode }}",
-    "addressCountry": "{{ site.Params.addressCountry | default "NO" }}"
-  }
-  ,"geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "{{ site.Params.latitude }}",
-    "longitude": "{{ site.Params.longitude }}"
-  }
-  ,"areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": "{{ site.Params.latitude }}",
-      "longitude": "{{ site.Params.longitude }}"
-    },
-    "geoRadius": "{{ site.Params.areaServedRadius }}"
-  }
-  ,"hasMap": "{{ site.Params.hasMap }}"
-  {{ if $sameAs }},"sameAs": [{{ range $i, $url := $sameAs }}{{ if $i }}, {{ end }}"{{ $url }}"{{ end }}]{{ end }}
-  ,"makesOffer": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Fjord Fishing Tours",
-        "description": "Guided fishing tours in the Sognefjord"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Scenic Boat Tours",
-        "description": "Private scenic boat excursions in Balestrand and Sognefjord"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "E-bike Rentals",
-        "description": "Electric bike rentals for exploring Balestrand"
-      }
-    }
-  ]
-}
-</script>
-
-<!-- TOURIST DESTINATION SCHEMA -->
+{{ end }}
+{{ $offers := slice }}
+{{ with $activitiesURL }}
+  {{ $offers = slice
+    (dict "@type" "Offer" "url" . "itemOffered" (dict "@type" "Service" "name" "Fjord Angling Tours" "url" .))
+    (dict "@type" "Offer" "url" . "itemOffered" (dict "@type" "Service" "name" "Scenic Boat Tours" "url" .))
+    (dict "@type" "Offer" "url" . "itemOffered" (dict "@type" "Service" "name" "E-bike Rental" "url" .))
+  }}
+{{ end }}
+{{ $business := dict
+  "@context" "https://schema.org"
+  "@type" "LocalBusiness"
+  "@id" (printf "%s#localbusiness" site.BaseURL)
+  "name" site.Title
+  "url" site.BaseURL
+  "description" (.Page.Params.description | default site.Params.description)
+}}
+{{ with $imageURL }}{{ $business = merge $business (dict "image" .) }}{{ end }}
+{{ with site.Params.phone }}{{ $business = merge $business (dict "telephone" .) }}{{ end }}
+{{ with site.Params.email }}{{ $business = merge $business (dict "email" .) }}{{ end }}
+{{ with site.Params.address }}
+  {{ $address := dict
+    "@type" "PostalAddress"
+    "streetAddress" .
+    "addressLocality" (site.Params.addressLocality | default "")
+    "addressRegion" (site.Params.addressRegion | default "")
+    "postalCode" (site.Params.postalCode | default "")
+    "addressCountry" (site.Params.addressCountry | default "NO")
+  }}
+  {{ $business = merge $business (dict "address" $address) }}
+{{ end }}
+{{ if and site.Params.latitude site.Params.longitude }}
+  {{ $geo := dict "@type" "GeoCoordinates" "latitude" site.Params.latitude "longitude" site.Params.longitude }}
+  {{ $business = merge $business (dict "geo" $geo) }}
+  {{ with site.Params.areaServedRadius }}
+    {{ $business = merge $business (dict "areaServed" (dict
+      "@type" "GeoCircle"
+      "geoMidpoint" $geo
+      "geoRadius" .
+    )) }}
+  {{ end }}
+{{ end }}
+{{ with site.Params.hasMap }}{{ $business = merge $business (dict "hasMap" .) }}{{ end }}
+{{ with $sameAs }}{{ $business = merge $business (dict "sameAs" .) }}{{ end }}
+{{ with $offers }}{{ $business = merge $business (dict "makesOffer" .) }}{{ end }}
+<!-- LOCAL BUSINESS SCHEMA -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TouristDestination",
-  "name": "Balestrand Sognefjord",
-  "description": "Experience authentic Norwegian fjord adventures with Captain Tor in Balestrand, Sognefjord",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "{{ site.Params.latitude }}",
-    "longitude": "{{ site.Params.longitude }}"
-  },
-  "touristType": ["Families", "Couples", "Adventure Seekers", "Nature Lovers", "Anglers"],
-  "includesAttraction": [
-    {
-      "@type": "TouristAttraction",
-      "name": "Sognefjord Fishing",
-      "description": "World-class fjord angling experiences"
-    },
-    {
-      "@type": "TouristAttraction",
-      "name": "Scenic Fjord Cruises",
-      "description": "Private boat tours through Norway's longest and deepest fjord"
-    }
-  ]
-}
+{{ $business | jsonify | safeJS }}
 </script>
 {{ end }}

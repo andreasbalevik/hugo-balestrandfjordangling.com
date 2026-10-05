@@ -1,0 +1,4 @@
+# Retired /featured/ section redirects to the surviving People of the North story.
+# Exact 301s only; no catchall. Netlify normalises trailing slashes when matching.
+/featured/people-of-the-north-2922/ /inspirations/raw-unfiltered-norway-captain-tor-people-of-the-north-5845/ 301
+/featured/ /inspirations/raw-unfiltered-norway-captain-tor-people-of-the-north-5845/ 301

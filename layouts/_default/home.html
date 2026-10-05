@@ -76,23 +76,6 @@
 </section>
 {{ end }}
 
-<!-- SECTION: featured -->
-{{ if .Params.featured.enabled }}
-<section class="bg-fjord overflow-hidden">
-    <div class="container">
-
-            {{ with .Params.featured }}
-                {{ range first 1 .featured }}
-                    {{ $page := replace . "/index" "" }}
-                    {{ with site.GetPage $page }}
-                        {{ .Render "highlight" }}
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-    </div>
-</section>
-{{ end }}
-
 <!-- SECTION: captain-tor-recommended -->
 <section class="bg-white">
   <div class="container">

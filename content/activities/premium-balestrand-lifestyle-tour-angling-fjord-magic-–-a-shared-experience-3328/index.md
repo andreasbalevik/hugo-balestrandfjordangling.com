@@ -1,5 +1,6 @@
 ---
 title: "Balestrand Lifestyle Tour: Angling & Fjord Magic – A Shared Experience"
+seoTitle: "Premium Sognefjord Lifestyle Tour: Angling & Slow Travel"
 quality: PREMIUM
 keywords:
   - premium balestrand tour

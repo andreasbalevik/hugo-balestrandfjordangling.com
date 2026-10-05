@@ -1,5 +1,6 @@
 {{/*
   Project override of the theme partial (themes/balevikit-tailwindcss-hugo-theme/layouts/partials/seo/json-ld/_webpage.html).
+
   Changes:
   1. The "image" field uses a downscaled (max 1200px wide) derivative instead of
      the raw original resource, so full-resolution camera originals (often 10-17MB)
@@ -8,6 +9,14 @@
      images live in the global assets/images/ mount, not page bundles, so the
      page-scoped lookup always returned nil and silently fell back to an
      unprocessed, non-existent /images/... URL (broken JSON-LD image reference).
+  3. Both schemas are built as data and serialised with jsonify, so titles,
+     descriptions and image URLs containing quotes, backslashes or ampersands
+     can no longer break the JSON.
+  4. The breadcrumb walk is built from the page's real ancestor chain with each
+     ancestor's own Permalink, instead of assuming three fixed levels. A
+     top-level page (e.g. /privacy/) gets Home -> page only, so position 2 no
+     longer repeats the front-page title or emits the "//" URL that came from
+     concatenating site.BaseURL with an empty section.
 */}}
 {{ $blogSection := site.Params.blog_section | default "blog" }}
 {{ $productSection := site.Params.product_section | default "products" }}
@@ -22,54 +31,46 @@
 {{ end }}
 {{ $description := .Page.Params.description | default (.Summary | plainify) }}
 {{ if and .IsPage (not .IsHome) (ne .Section $blogSection) (ne .Section $productSection) (not $articleSchemaEnabled) $description }}
+{{ $webPage := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "name" .Title
+  "url" .Permalink
+  "description" $description
+}}
+{{ with .Page.Params.images }}
+  {{ range first 1 . }}
+    {{ $imageURL := .src | absURL }}
+    {{ with resources.GetMatch .src }}
+      {{ $image := . }}
+      {{ if gt .Width 1200 }}
+        {{ $image = .Resize "1200x q82" }}
+      {{ end }}
+      {{ $imageURL = $image.Permalink }}
+    {{ end }}
+    {{ $webPage = merge $webPage (dict "image" $imageURL) }}
+  {{ end }}
+{{ end }}
 <!-- WEBPAGE -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "{{ .Title }}",
-  "url": "{{ .Permalink }}",
-  "description": "{{ $description }}"{{ with .Page.Params.images }}
-    {{ range first 1 . }}
-      {{ with resources.GetMatch .src }}
-        {{ $schemaImage := . }}
-        {{ if gt .Width 1200 }}
-          {{ $schemaImage = .Resize "1200x q82" }}
-        {{ end }},
-  "image": "{{ $schemaImage.Permalink }}"
-      {{ else }},
-  "image": "{{ .src | absURL }}"
-      {{ end }}
-    {{ end }}
-  {{ end }}
-}
+{{ $webPage | jsonify | safeJS }}
 </script>
 
 <!-- BREADCRUMB SCHEMA -->
+{{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.Home.Permalink) }}
+{{ $ancestors := .Ancestors.Reverse }}
+{{ range $ancestors }}
+  {{ if not .IsHome }}
+    {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" .Title "item" .Permalink) }}
+  {{ end }}
+{{ end }}
+{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" .Title "item" .Permalink) }}
+{{ $breadcrumb := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $crumbs
+}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ site.BaseURL }}"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ with site.GetPage .Section }}{{ .Title }}{{ else }}{{ .Section | title }}{{ end }}",
-      "item": "{{ site.BaseURL }}{{ .Section }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ .Title }}",
-      "item": "{{ .Permalink }}"
-    }
-  ]
-}
+{{ $breadcrumb | jsonify | safeJS }}
 </script>
 {{ end }}

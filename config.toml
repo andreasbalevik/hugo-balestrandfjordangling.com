@@ -87,8 +87,9 @@ baseURL = 'https://balestrandfjordangling.com'
   home = ["HTML", "JSON", "TXT"]
 
 [security.funcs]
-  # os.Getenv is used by layouts/partials/utils/analytics-enabled.html to read
-  # Netlify's CONTEXT so analytics never loads on deploy previews / branch
-  # deploys. Hugo restricts which env vars templates may read; CONTEXT is the
+  # os.Getenv is still used by layouts/robots.txt and
+  # layouts/partials/seo/meta.html to read Netlify's CONTEXT, so non-production
+  # (deploy preview / branch) builds advertise no sitemap and are forced to
+  # noindex. Hugo restricts which env vars templates may read; CONTEXT is the
   # only addition to the defaults.
   getenv = ['^HUGO_', '^CI$', '^CONTEXT$']

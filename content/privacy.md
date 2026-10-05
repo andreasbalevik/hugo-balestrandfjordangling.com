@@ -1,41 +1,27 @@
 ---
 title: "Privacy Statement"
 date: 2025-12-10
-lastmod: 2026-09-30
+lastmod: 2026-10-05
 draft: false
 ---
 
 # Privacy Statement
 
-**Last updated: 30 September 2026**
+**Last updated: 5 October 2026**
 
 ## Who we are
 
 Balestrand Fjord Angling, Holmen 3, 6899 Balestrand, Norway, is responsible for the personal data described in this statement. You can reach us at {{< param email >}}.
 
-This statement covers this website: the pages you read, the booking request form, and the analytics we use to understand how the site is used. It describes what we collect, why, and the choices you have.
+This statement covers this website: the pages you read and the booking request form. It describes what we handle, why, and the rights you have. It does not cover any other website you may visit from here.
 
-## Analytics — your choice
+## We do not track you
 
-This site uses Google Analytics 4 and Google Tag Manager to understand how the website is used: which pages are read, which activities visitors look at, roughly where visitors come from, and the device and browser used. We use this to keep improving the pages and activities that matter most to visitors.
+This website does not track visitors. We do not use analytics, advertising tracking, or any other visitor profiling, and we run no advertising technology. We set no analytics or advertising cookies, and we do not build a profile of your visit or your behaviour.
 
-Nothing is loaded before you choose. No analytics script, no cookie and no request to Google is sent until you press "Accept analytics" in the consent box. If you reject it, or make no choice, analytics stays off.
+That does not mean no personal data is handled at all: serving a page and sending a booking request always involve some handling, described below. But we do not collect data about your browsing to measure, segment, or target you.
 
-When you accept, analytics storage is granted and advertising storage, ad user data and ad personalisation remain denied. We do not use this data for advertising. Google Analytics then sets first-party cookies in your browser — `_ga` and `_ga_HNS6R4TEK0` — and sends usage data to Google LLC, which processes it on our behalf. See https://policies.google.com/privacy
-
-## Change or withdraw your choice
-
-You can change your choice at any time with the control below:
-
-{{< analytics-settings >}}
-
-Choosing "Reject analytics" stores your refusal, clears the first-party Google Analytics cookies we can reach from this site, and reloads the page so that any analytics code already running stops.
-
-Your choice is stored in your browser's local storage under the key `bfa-analytics-consent`, either as `accepted` or `rejected`. If your browser blocks storage, the choice applies only to the current page visit, and nothing is remembered afterwards. Scripts running on a page cannot delete cookies that another domain has set, so withdrawing only clears the cookies that are visible from this site.
-
-## Cookies and local storage
-
-The only cookies this site sets are the Google Analytics cookies described above, and only after you accept analytics. We set no marketing, advertising or social media cookies. No cookies are set if you reject analytics. You can also block or delete cookies in your browser at any time.
+If you visited earlier while analytics were in use, old analytics cookies may still sit in your browser. Those cookies are inactive and are no longer used by this site. You can remove them with your browser's clear-site-data or cookie controls.
 
 ## Booking requests
 
@@ -49,13 +35,14 @@ This site is hosted by Netlify, which processes the technical data required to s
 
 ## Third-party services
 
-- **Google Analytics 4 / Google Tag Manager** (Google LLC) — website analytics, loaded only after your consent. https://policies.google.com/privacy
 - **Netlify** — hosting and form handling for the booking request. https://www.netlify.com/privacy/
 - **altinncdn.no** (Norwegian Digitalisation Agency) — the Inter web font. https://www.digdir.no/
 
+Our social media and external links are ordinary links. Following one takes you to another service that handles your data under its own policy; we do not load content from those services into this site, and the Search Console verification meta tag is a static file detail, not tracking.
+
 ## Your rights
 
-You can ask us what personal data we hold about you, ask us to correct or delete it, and object to how we use it. You can withdraw your analytics choice at any time with the control above. If you believe we handle your data incorrectly, you can complain to the Norwegian Data Protection Authority (Datatilsynet): https://www.datatilsynet.no/
+You can ask us what personal data we hold about you, ask us to correct or delete it, and object to how we use it. If you believe we handle your data incorrectly, you can complain to the Norwegian Data Protection Authority (Datatilsynet): https://www.datatilsynet.no/
 
 ## Contact us
 
