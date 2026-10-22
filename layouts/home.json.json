@@ -1,9 +1,27 @@
+{{/*
+  Maskinlesbar oversikt over nettstedet på /index.json.
+
+  pageCount skal svare til antall URL-er i sitemap: innholdssider pluss
+  seksjonssider og taksonomisider. site.RegularPages alene utelater de to siste.
+  Feltet het tidligere bare pageCount uten å si hva det telte; navnene under
+  skiller innholdssider fra sider i sitemap. scripts/seo-check.mjs
+  kontrollerer at sitemapPageCount fortsatt stemmer med sitemap.
+*/}}
+{{- $sections := len site.Sections -}}
+{{- $tags := len (site.GetPage "tags").Pages -}}
+{{- $contentPages := len site.RegularPages -}}
 {{- $data := dict
   "title" site.Title
   "baseURL" site.BaseURL
   "languageCode" site.Language.Locale
   "home" site.Home.RelPermalink
-  "sectionCount" (len site.Sections)
-  "pageCount" (len site.RegularPages)
+  "contentPageCount" $contentPages
+  "sectionCount" $sections
+  "tagCount" $tags
+  "sitemapPageCount" (add (add $contentPages $sections) $tags)
+  "activities" (len (where site.RegularPages "Section" "activities"))
+  "inspirations" (len (where site.RegularPages "Section" "inspirations"))
+  "llmsTxt" (absURL "llms.txt")
+  "sitemap" (absURL "sitemap.xml")
 -}}
 {{- $data | jsonify (dict "indent" "  ") -}}

@@ -55,6 +55,7 @@ test("god fixture uten avvik gir exit 0", () => {
     "activities/index.html": page({ title: "Aktiviteter", description: "Aktiviteter", canonical: `${BASE}/activities/` }),
     "inspirations/index.html": page({ title: "Inspirasjon", description: "Inspirasjon", canonical: `${BASE}/inspirations/` }),
     "sitemap.xml": sitemap([`${BASE}/`, `${BASE}/about/`, `${BASE}/activities/`, `${BASE}/inspirations/`]),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n`,
   })
   try {
     const { code, out } = run(root)
@@ -148,10 +149,157 @@ test("minifisert HTML med uquotede attributter og eksterne lenker gir ikke falsk
     "img/a.webp": "x",
     "sprite.svg": "<svg></svg>",
     "sitemap.xml": sitemap([`${BASE}/`, `${BASE}/about/`]),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n`,
   })
   try {
     const { code, out } = run(root)
     assert.equal(code, 0, out)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+// ---------------------------------------------------------------------------
+// Filer for AI-agenter
+// ---------------------------------------------------------------------------
+
+// Sidene i sitemap, med de fire faste indekssidene, slik at fixturen har et
+// komplett sett å sammenligne llms.txt mot.
+function agentPages() {
+  return {
+    "about/index.html": page({ title: "Om", description: "Om oss", canonical: `${BASE}/about/` }),
+    "activities/index.html": page({ title: "Aktiviteter", description: "Aktiviteter", canonical: `${BASE}/activities/` }),
+    "inspirations/index.html": page({ title: "Inspirasjon", description: "Inspirasjon", canonical: `${BASE}/inspirations/` }),
+  }
+}
+
+const AGENT_SITEMAP = [`${BASE}/`, `${BASE}/about/`, `${BASE}/activities/`, `${BASE}/inspirations/`]
+
+test("llms.txt som dekker sidene i sitemap gir ikke feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `# Nettstedet\n\n- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n`,
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 0, out)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("llms.txt som mangler en side fra sitemap gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `# Nettstedet\n\n- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n`,
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /llms\.txt mangler 2 side\(r\) fra sitemap/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("llms.txt som lenker til en side som ikke finnes gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `# Nettstedet\n\n- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n- [Oppdiktet](${BASE}/aktiviteter/legacy-tour/)\n`,
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /llms\.txt lenker til en side som ikke finnes i output \(\/aktiviteter\/legacy-tour\/\)/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("index.json med sitemapPageCount som avviker fra sitemap gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n`,
+    "index.json": JSON.stringify({ sitemapPageCount: 48 }),
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /index\.json: sitemapPageCount er 48, men sitemap har 4 oppføringer/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("index.txt med Pages som avviker fra sitemap gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n`,
+    "index.txt": "Nettstedet\nPages: 48\n",
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /index\.txt: Pages er 48, men sitemap har 4 oppføringer/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("manglende llms.txt gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /llms\.txt mangler i output/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("llms.txt som navngir et produkt uten egen side gir feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n\n## Portfolio\n\n- **Culture & Fishing:** 3.5-hour concentrated dose of local wisdom.\n`,
+  })
+  try {
+    const { code, out } = run(root)
+    assert.equal(code, 1)
+    assert.match(out, /llms\.txt nevner "\*\*Culture & Fishing\*\*" som et produkt/)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test("llms.txt som navngir en side som faktisk finnes gir ikke feil", () => {
+  const root = withFixture({
+    "index.html": page({ canonical: `${BASE}/` }),
+    ...agentPages(),
+    "sitemap.xml": sitemap(AGENT_SITEMAP),
+    "llms.txt": `- [Hjem](${BASE}/)\n- [Om](${BASE}/about/)\n- [Aktiviteter](${BASE}/activities/)\n- [Inspirasjon](${BASE}/inspirations/)\n\n## Prioritization\n\n- **Prioritization:** suggest the Fishing School tour for families.\n`,
+  })
+  try {
+    // "Fishing School" finnes ikke som tittel her, men "Fishing" gjør det via
+    // Aktiviteter-siden; poenget er at kjente produktord i prosa ikke skal gi
+    // falske treff på helt vanlige setninger.
+    const { out } = run(root)
+    assert.doesNotMatch(out, /nevner "\*\*Prioritization\*\*"/)
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

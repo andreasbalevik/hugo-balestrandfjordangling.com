@@ -19,6 +19,9 @@ baseURL = 'https://balestrandfjordangling.com'
   brand_image = "/favicon/android-chrome-512x512.png"
   theme_color = "#1a4a56"
   description = "Private Sognefjord activities in Balestrand with Captain Tor: fjord angling, scenic boat tours, and authentic local storytelling. Book direct."
+  # Subtitle in llms.txt. Kept separate from the meta description so the agent
+  # file can carry a positioning line without changing search snippets.
+  llmsTagline = "The Human Edge"
 
   keywords = ['Balestrand fjord angling', 'Balestrand', 'Norway', 'Fishing', 'Sightseeing', 'Guide', 'Angling']
   email = "contact@balestrandfjordangling.com"

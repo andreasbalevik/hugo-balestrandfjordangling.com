@@ -1,7 +1,24 @@
+{{/*
+  Maskinlesbar oversikt over nettstedet på /index.txt.
+
+  Tallet skal svare til antall URL-er i sitemap, altså innholdssider pluss
+  seksjonssider og taksonomisider. site.RegularPages alene utelater de to siste
+  og underrapporterte omfanget. scripts/seo-check.mjs kontrollerer at tallet
+  fortsatt stemmer med sitemap.
+*/}}
+{{- $sections := len site.Sections -}}
+{{- $tags := len (site.GetPage "tags").Pages -}}
+{{- $activities := len (where site.RegularPages "Section" "activities") -}}
+{{- $inspirations := len (where site.RegularPages "Section" "inspirations") -}}
+{{- $total := add (add (len site.RegularPages) $sections) $tags -}}
 {{- $lines := slice
   site.Title
   (printf "Base URL: %s" site.BaseURL)
   (printf "Home: %s" site.Home.RelPermalink)
-  (printf "Pages: %d" (len site.RegularPages))
+  (printf "Pages: %d" $total)
+  (printf "Activities: %d" $activities)
+  (printf "Inspirations: %d" $inspirations)
+  (printf "Language: %s" site.Language.Locale)
+  (printf "Sitemap: %s" (absURL "sitemap.xml"))
 -}}
 {{- delimit $lines "\n" -}}

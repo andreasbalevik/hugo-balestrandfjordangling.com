@@ -470,6 +470,131 @@ function checkReachability(root, pages) {
 }
 
 // ---------------------------------------------------------------------------
+// Filer for AI-agenter: llms.txt, index.json og index.txt
+// ---------------------------------------------------------------------------
+
+// llms.txt skal beskrive de faktiske sidene. Den genereres fra innholdet, men
+// en fri tekst kan fortsatt navngi produkter som ikke finnes, og en mal-endring
+// kan gjøre listen ufullstendig. Kontroller at hver innholdsside i sitemap er
+// nevnt med sin URL, og at ingen lenke peker på en side som ikke finnes.
+function llmsLinkPaths(text) {
+  const paths = new Set()
+  for (const match of text.matchAll(/\]\((\S+?)\)/g)) {
+    try {
+      paths.add(normalizeUrlPath(new URL(match[1]).pathname))
+    } catch {
+      // relativ eller ugyldig lenke håndteres av den generelle lenkekontrollen
+    }
+  }
+  return paths
+}
+
+function checkAgentFiles(root, pages, sitemapLocs) {
+  const llmsPath = join(root, "llms.txt")
+  if (!existsSync(llmsPath)) {
+    error("llms.txt mangler i output")
+  } else {
+    const text = readFileSync(llmsPath, "utf8")
+    if (!text.trim()) {
+      error("llms.txt er tom")
+    }
+    const linked = llmsLinkPaths(text)
+
+    // Hver side i sitemap skal være omtalt, ellers får agenten et ufullstendig
+    // bilde av nettstedet.
+    const missing = []
+    for (const loc of sitemapLocs) {
+      let pathname
+      try {
+        pathname = normalizeUrlPath(new URL(loc).pathname)
+      } catch {
+        continue
+      }
+      if (pathname === "/" || pathname.endsWith(".xml") || pathname.endsWith(".txt")) continue
+      if (!linked.has(pathname)) missing.push(pathname)
+    }
+    if (missing.length > 0) {
+      error(`llms.txt mangler ${missing.length} side(r) fra sitemap: ${missing.slice(0, 5).join(", ")}${missing.length > 5 ? ", …" : ""}`)
+    }
+
+    // Lenker i llms.txt må peke på en side som faktisk finnes i output.
+    for (const pathname of linked) {
+      if (pathname.endsWith(".xml") || pathname.endsWith(".txt")) continue
+      if (!resolveInternalRef(root, pathname)) {
+        error(`llms.txt lenker til en side som ikke finnes i output (${pathname})`)
+      }
+    }
+
+    checkLlmsProductClaims(root, text, pages)
+  }
+
+  // index.json og index.txt oppgir sidetall. De skal stemme med sitemap, ellers
+  // får en agent som bruker tallet som omfang et feil inntrykk.
+  const jsonPath = join(root, "index.json")
+  if (existsSync(jsonPath)) {
+    let data
+    try {
+      data = JSON.parse(readFileSync(jsonPath, "utf8"))
+    } catch (err) {
+      error(`index.json kan ikke parses (${err.message})`)
+    }
+    if (data && typeof data.sitemapPageCount === "number" && sitemapLocs.length > 0 && data.sitemapPageCount !== sitemapLocs.length) {
+      error(`index.json: sitemapPageCount er ${data.sitemapPageCount}, men sitemap har ${sitemapLocs.length} oppføringer`)
+    }
+  }
+
+  const txtPath = join(root, "index.txt")
+  if (existsSync(txtPath)) {
+    const text = readFileSync(txtPath, "utf8")
+    const match = text.match(/^Pages:\s*(\d+)\s*$/m)
+    if (match && sitemapLocs.length > 0 && Number(match[1]) !== sitemapLocs.length) {
+      error(`index.txt: Pages er ${match[1]}, men sitemap har ${sitemapLocs.length} oppføringer`)
+    }
+  }
+}
+
+// Fri tekst i llms.txt er posisjonering og tone, ikke produktkatalog. Den
+// tidligere versjonen listet opp produkter som ikke fantes ("Business &
+// Pleasure", "Culture & Fishing") og instruerte agenter i å anbefale dem.
+// Fanger den feilen ved å kreve at et navngitt produkt i løpende tekst har en
+// tilsvarende side i output.
+//
+// Produktnavn gjenkjennes som en fetet eller kursiv frase som inneholder et
+// produktord. Vanlige ord fra prosa og overskrifter er utelatt med vilje, slik
+// at setninger som "private charters" ikke gir falske treff.
+const PRODUCT_WORD_RE = /\b(tour|tours|rental|charter|transfer|expedition|adventure|school|services|route|classic|legacy|lifestyle|snowshoe|angling|fishing|bike|e-bike|viking|glacier|hiking)\b/i
+
+function checkLlmsProductClaims(root, text, pages) {
+  // Titler som faktisk finnes i output, normalisert for sammenligning.
+  const knownTitles = pages
+    .filter((p) => !p.aliases && !p.isAdmin && p.title)
+    .map((p) => p.title.toLowerCase().replace(/[^a-z0-9æøå]+/g, " ").trim())
+    .filter(Boolean)
+
+  const isKnown = (name) => {
+    const normalized = name.toLowerCase().replace(/[^a-z0-9æøå]+/g, " ").trim()
+    if (!normalized) return true
+    return knownTitles.some((title) => title.includes(normalized) || normalized.includes(title))
+  }
+
+  // Fetede/kursive fraser, som er slik et produktnavn presenteres i prosa.
+  const seen = new Set()
+  for (const match of text.matchAll(/\*\*([^*\n]{3,80})\*\*|\*([^*\n]{3,80})\*/g)) {
+    const raw = (match[1] || match[2] || "").trim()
+    // Fjern en ledende etikett som "Voice:" eller "Identity:".
+    const name = raw.replace(/^[A-Za-zÆØÅæøå ]{0,20}:\s*/, "").replace(/[.,;:]+$/, "").trim()
+    if (!name || !PRODUCT_WORD_RE.test(name)) continue
+    if (/^(the\s+)?(human edge|ai detox|voice|identity|prioritization|accuracy|about)$/i.test(name)) continue
+    const key = name.toLowerCase()
+    if (seen.has(key)) continue
+    seen.add(key)
+    if (!isKnown(name)) {
+      error(`llms.txt nevner "**${name}**" som et produkt, men ingen side i output har den tittelen`)
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Hovedflyt
 // ---------------------------------------------------------------------------
 
@@ -502,6 +627,7 @@ function main() {
   check404(allPages)
   const sitemap = checkSitemap(outputDir, allPages, base)
   checkReachability(outputDir, allPages)
+  checkAgentFiles(outputDir, allPages, sitemap.locs)
 
   const effectiveBase = base || sitemap.base || "(ukjent)"
   console.log(`SEO-kontroll av ${outputDir}`)

@@ -41,6 +41,10 @@ node --test scripts/seo-check.test.mjs
   feil `viewport`, og om forsiden, activities, inspirations og about finnes.
 - Crawler interne sider fra forsiden og varsler om indekserbare sider som ikke
   nås via lenker.
+- Sjekker filene for AI-agenter: at `llms.txt` finnes, lenker til hver side i
+  sitemap, ikke lenker til sider som mangler, og ikke navngir produkter som
+  ikke har egen side. Den sjekker også at sidetallet i `index.json` og
+  `index.txt` stemmer med antall oppføringer i sitemap.
 
 ## Hva kontrollen ikke gjør
 
@@ -84,6 +88,34 @@ Relevant internlenking hjelper både besøkende og Google: lenk fra inspirations
 de aktivitetene de hører sammen med, og fra aktivitetssider tilbake til
 inspirasjon og bestilling.
 
-FAQ-strukturerte data er ikke en garanti for et FAQ-resultat i søk. `llms.txt` og
-`meta keywords` har ingen dokumentert effekt på rangering og bør ikke tillegges
-vekt i SEO-arbeidet.
+FAQ-strukturerte data er ikke en garanti for et FAQ-resultat i søk. `meta
+keywords` har ingen dokumentert effekt på rangering og bør ikke tillegges vekt i
+SEO-arbeidet.
+
+## Filer for AI-agenter
+
+`llms.txt` er ikke en rangeringsfaktor og påvirker ikke hvordan Google indekserer
+nettstedet. Filen finnes for at en agent som allerede besøker nettstedet skal få
+riktige fakta i stedet for å gjette.
+
+Hele innholdet genereres av `layouts/_default/llms.txt`:
+
+- Aktivitetene og inspirasjonsartiklene listes fra de faktiske sidene, med
+  varighet, laveste pris, gruppestørrelse og URL hentet fra front matter.
+  Endrer du en aktivitet i Decap, endrer `llms.txt` seg med den.
+- Posisjonering, tone og regler for hvordan nettstedet omtales ligger i malen
+  sammen med resten. Det finnes ingen fri tekstfil som kan komme ut av sync med
+  produktlisten.
+
+`content/LLMs.md` inneholder bare front matter og ingen body. Den finnes fordi
+Hugo ikke kan gi en output et vilkårlig filnavn: `url: llms.txt` sammen med
+`outputs: [TXT]` er det som får `/llms.txt` produsert i det hele tatt. Filen
+redigeres derfor ikke i Decap og skal ikke ha innhold.
+
+`llms.txt` annonseres i `robots.txt` og med `<link rel="alternate">` i `<head>`,
+og `index.json` og `index.txt` oppgir stien til den.
+
+Kontrollen av disse filene er rådgivende og kjører ikke som del av
+Netlify-bygget. En redaktør som publiserer fra Decap kan derfor aldri stoppes av
+den. Kjør `npm run seo:check` før du slår sammen endringer i maler eller
+innhold.

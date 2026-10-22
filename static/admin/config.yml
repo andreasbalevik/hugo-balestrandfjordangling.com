@@ -470,13 +470,6 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Short description text that appears above the inspirations grid' }
           - { label: "Keywords (optional)", name: "keywords", widget: "list", required: false, hint: "Optional metadata only. Search engines ignore the meta keywords tag, so this does not affect search ranking." }
           
-      - file: "content/LLMs.md"
-        label: "LLMs" 
-        name: "LLMs"
-        delete: false
-        fields:
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-
       - file: "content/request_confirmation/_index.md"
         label: "Request Confirmation" 
         name: "Request"

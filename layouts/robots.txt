@@ -14,4 +14,6 @@ Allow: /
 
 {{- if or (eq $ctx "") (eq $ctx "production") }}
 Sitemap: {{ "sitemap.xml" | absURL }}
+# Machine-readable summary for AI agents.
+LLMs-Txt: {{ "llms.txt" | absURL }}
 {{- end -}}

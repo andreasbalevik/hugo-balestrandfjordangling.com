@@ -52,3 +52,17 @@ npm run seo:check
 The check reads `public/` only and never writes to the source or output. See
 [SEO.md](SEO.md) for what it covers, Google Search Console follow-up, and how to
 point it at another output directory.
+
+The same check verifies the files written for AI agents: `/llms.txt` must cover
+every page in the sitemap, must not link to pages that do not exist, and must
+not name products that have no page of their own. It also verifies that the page
+count in `/index.json` and `/index.txt` matches the sitemap. Activity names,
+durations and prices in `llms.txt` are generated from the activity front matter,
+so the file follows the content instead of drifting from it.
+
+This check is advisory. It is not part of the Netlify build command, so an editor
+publishing from Decap CMS can never be blocked by it. Run it before merging
+changes to templates or content.
+
+`llms.txt` has no hand-written copy to keep in sync. It is generated from the
+activity and inspiration pages, and editors do not edit it in Decap CMS.
