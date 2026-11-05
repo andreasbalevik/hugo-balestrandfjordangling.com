@@ -117,15 +117,21 @@ Master authentic long line fishing with a premium, hands-on skill immersion & un
 
 ### **What is included in the price, and when is the tour available:**
 
-The price includes 2 persons in a private boat, and the tour is available year-round. Note: This highly sought-after premium skill immersion requires booking three days in advance to ensure authenticity.
+The starting price includes 2 persons in a private boat, and the tour is available year-round. 
 
-### **This is the itinerary for this fishing immersion:**
+**Note:** This highly sought-after premium skill immersion requires booking three days in advance to ensure authenticity.
 
-Your journey into the real life of a local fisherman begins the evening before with bait preparation at 6:00 pm. We cast off from Balestrand sharp at 9:00 am the next day for the longline haul.
+### **NOTE: This is the itinerary for this fishing immersion:**
+
+**1) It's a 2 days content:** You need to stay overnight in Balestrand.  [Explore =>Balestrand fjord Apartments](https://www.fjordapartments.no/en/)
+
+**2) Baiting the Hooks 06:00 pm:**  Your journey into the real life of a local fisherman begins the evening before with bait preparation at 6:00 pm. 
+
+**3) Hauling starts at 09:00 am the day after:**  We cast off from Balestrand sharp at 9:00 am the next day for the longline haul.
 
 ### **Is this a passive sightseeing tour?**
 
-No, this is not a passive tour; it’s an authentic challenge. As an acting crew member, you are pushed to make decisions, master yourself, and connect with the raw elements of the pristine Sognefjord.
+No. This this is not a passive tour; it’s an authentic challenge. As an acting crew member, you are pushed to make decisions, master yourself, and connect with the raw elements of the pristine Sognefjord.
 
 ### **The true Norseman feeling I expect from the "thrill of the catch"?**
 
