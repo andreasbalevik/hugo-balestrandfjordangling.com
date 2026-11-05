@@ -1,6 +1,38 @@
 ---
 title: "Premium skill: Master the Long Line – Authentic Fjord Fishing Immersion"
 quality: Local Fisherman
+description: Master authentic long line fishing with a premium, hands-on skill
+  immersion & unique fishing adventure. Book your memorable escape today!
+images:
+  - src: images/img_3000.jpg
+    alt: Curious woman, opening the mouth of the fish in a finely coloured jacket,
+      subsistence catch in the Sognefjord, cusk in Fjærlandsfjorden.
+tags:
+  - business-and-pleasure
+information:
+  options:
+    global_practical: true
+    global_bike_practical: false
+    global_included: true
+    varde_experience_quality: true
+product_info:
+  duration:
+    hours: 7
+    minutes: 30
+  persons: "6"
+  prices:
+    - person_number: 1
+      price: 10000
+    - person_number: 2
+      price: 10000
+    - person_number: 3
+      price: 12000
+    - person_number: 4
+      price: 14000
+    - person_number: 5
+      price: 16000
+    - person_number: 6
+      price: 18000
 keywords:
   - Long line fishing Sognefjord
   - Deep sea fishing Norway
@@ -67,35 +99,6 @@ keywords:
   - Alesund Sognefjord travel fishing
   - Unique selling points fishing
   - Award winning fishing experience.
-description: Master authentic long line fishing with a premium, hands-on skill
-  immersion & unique fishing adventure. Book your memorable escape today!
-images:
-  - src: images/img_3000.jpg
-    alt: Curious woman, opening the mouth of the fish in a finely coloured jacket, subsistence catch in the Sognefjord, cusk in Fjærlandsfjorden.
-tags:
-  - business-and-pleasure
-information:
-  options:
-    global_practical: true
-    global_bike_practical: false
-    global_included: true
-    varde_experience_quality: true
-product_info:
-  duration:
-    hours: 7
-    minutes: 30
-  persons: "5"
-  prices:
-    - person_number: 1
-      price: 10000
-    - person_number: 2
-      price: 10000
-    - person_number: 3
-      price: 12000
-    - person_number: 4
-      price: 14000
-    - person_number: 5
-      price: 16000
 cms: true
 ---
 ## **Introduction: Master the Long Line – Your Authentic Fjord Challenge**
