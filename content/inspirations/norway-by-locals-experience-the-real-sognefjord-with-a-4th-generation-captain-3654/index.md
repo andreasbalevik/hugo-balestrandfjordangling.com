@@ -11,7 +11,7 @@ images:
       Quality badge, with fishing rods, a blue bicycle with flowers, and the
       Norwegian flag aboard.
 related_activities:
-  - balestrand-classic-tour-fjord-angling-or-scenic-boat-experience-1720/index
+  - balestrand-fishing-school-sognefjord-fishing-thrill-–-family-bonding-0857/index
   - balestrand-legacy-tour-sognefjord-fishing-thrill-–-family-bonding-2530/index
   - unique-fjærland-guided-boat-e-bike-glacier-adventure-escape-to-fjærland-sognefjord-a-premium-e-bike-boat-glacier-adventure-explore-supphelledalens-pristine-nature-exclusive-guided-authentic—your-ultimate-norwegian-bucket-list-experience-b-1243/index
 keywords:
