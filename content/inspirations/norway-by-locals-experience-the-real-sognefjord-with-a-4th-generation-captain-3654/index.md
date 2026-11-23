@@ -51,15 +51,9 @@ Looking for an authentic, crowd-free Sognefjord experiencein Balestrand?
 
 Step aboard "Miss Fjords" with Captain Tor Balevikfor a private, small-group fjord fishing and storytelling journey rooted infour generations of local heritage.
 
- 
-
 When travelers ask how to experience the real Norway beyondcrowded tour buses and rigid schedules, the answer lies on the water. InBalestrand—situated right in the heart of the Sognefjord—life has moved to therhythm of the tides for centuries.
 
- 
-
 At Balestrand Fjord Angling, we believe that simplicitycreates emotions. We offer an analog escape where you trade screen time forgenuine connection with nature, local history, and the people in your boat.
-
- 
 
 Why Go Local in Balestrand? (The Human Edge)
 
@@ -71,43 +65,27 @@ Most fjord excursions are built for mass tourism. Ourapproach is the exact oppos
 
 • Your Boat, Your Pace: With a maximum of 1 to 7 guestsaboard our open boat "Miss Fjords", every trip is tailored to yourcuriosity, whether you are a family with children, a couple, or solo explorers.
 
- 
-
 How a Private Fjord Trip Fits Your Sognefjord Itinerary
 
 Whether you are staying in Balestrand for a week or passingthrough between Bergen, Flåm, and Fjærland, a private boat trip is the naturalcenterpiece of your Western Norway journey.
 
- 
-
 Morning or Afternoon on the Calm Esefjord (1.5 to 3 Hours)
-
- 
 
 Surrounded by dramatic, steep mountains and waterfalls, thesheltered waters of the Esefjord offer ideal conditions year-round—even onrainy days. You will learn traditional Norwegian coastal fishing techniques(angling, trolling, and pulling pre-set fishing nets) while hearing stories ofViking sea routes and historic homesteads.
 
- 
-
 Catch Your Own Lunch or Dinner
 
- 
-
-Nothing beats tasting the Sognefjord fresh from the water.Catch local species like Sand Whiting ("Fjord Chickens"), pollock, ormackerel. Back ashore at Holmen 3 in Balestrand, you can easily pick up freshseed loaf and local rhubarb sparkling juice (Sprudlande Margaret from Balholm)right next to the harbor for an unforgettable homemade fjord meal.
+Nothing beats tasting the Sognefjord fresh from the water. Catch local species like Sand Whiting ("Fjord Chickens"), pollock, ormackerel. Back ashore at Holmen 3 in Balestrand, you can easily pick up freshseed loaf and local rhubarb sparkling juice (Sprudlande Margaret from Balholm) right next to the harbor for an unforgettable homemade fjord meal.
 
  
 
-Combine Fjord & Land: Boat + Bike in Balestrand
-
- 
+Combine Fjord & Land: Boat + Bike in Balestrand 
 
 Want to explore further at your own pace? Pair your morningfjord expedition with an electric bike rental from Balestrand Bike Rental toride along the scenic coastal roads, historic dragon-style villas, and localcider farms.
 
- 
-
 Quick Facts for Your Sognefjord Travel Plan
 
- 
-
-• Location: Balestrand, Sognefjord (Departure from Holmen 3/ Balestrand Adventure House)
+ • Location: Balestrand, Sognefjord (Departure from Holmen 3/ Balestrand Adventure House)
 
 • Group Size: Private charter only (1–7 guests — nostrangers on board)
 
