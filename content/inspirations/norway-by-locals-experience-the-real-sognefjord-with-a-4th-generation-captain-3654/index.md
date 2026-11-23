@@ -47,7 +47,7 @@ keywords:
   - Balestrand Bike Rental
 cms: true
 ---
-## Looking for an authentic, crowd-free Sognefjord experiencein Balestrand?
+## Looking for an authentic, crowd-free Sognefjord experience in Balestrand?
 
 Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage.
 
@@ -57,11 +57,11 @@ At Balestrand Fjord Angling, we believe that simplicity creates emotions. We off
 
 ### Why Go Local in Balestrand? (The Human Edge)
 
-Most fjord excursions are built for mass tourism. My approach is the exact opposite: 100% private, direct-to-guest (B2C) experiences with no middlemen and no scripts. They are based on 47,000 hours of practical experience guiding guests directly—an endeavor that began when I was 10 years old—and I still find it just as exciting as when I first started!
+Most fjord excursions are built for mass tourism. My approach is the exact opposite: 100% private, direct-to-guest (B2C) experiences with no middlemen and no scripts. They are based on 47,000 hours of my practical experience guiding guests directly—an endeavor that began when I was 10 years old—and I still find it just as exciting as when I first started!
 
 **• 4th-Generation Local Expertise:** Born and bred in Balestrand, Captain Tor brings over 25 years of experience from the local nature school—having guided more than 30,000 students on the Sognefjord.
 
-**• Varde-Certified Quality:** Recognized for sustainable,high-value local hospitality that respects both fjord culture and marine life.
+**• Varde-Certified Quality:** Recognized for sustainable, high-value local hospitality that respects both fjord culture and marine life.
 
 **• Your Boat, Your Pace:** With a maximum of 1 to 7 guests aboard our open boat "Miss Fjords", every trip is tailored to your curiosity, whether you are a family with children, a couple, or solo explorers.
 
@@ -69,9 +69,9 @@ Most fjord excursions are built for mass tourism. My approach is the exact oppos
 
 Whether you are staying in Balestrand for a week or passing through between Bergen, Flåm, and Fjærland, a private boat trip is the natural centerpiece of your Western Norway journey.
 
-### Morning or Afternoon on the Calm Esefjord (1.5 to 3 Hours)
+### Morning or Afternoon on the Calm Esefjord (from 1.5 to 3 Hours)
 
-Surrounded by dramatic, steep mountains and waterfalls, the sheltered waters of the Esefjord offer ideal conditions year-round—even on rainy days. You will learn traditional Norwegian coastal fishing techniques(angling, trolling, and pulling pre-set fishing nets) while hearing stories of Viking sea routes and historic homesteads.
+Surrounded by dramatic, steep mountains and waterfalls, the sheltered waters of the Esefjord offer ideal conditions year-round—even on rainy days. You will learn traditional Norwegian coastal fishing techniques (angling, trolling, and pulling pre-set fishing nets) while hearing stories of Viking sea routes and historic homesteads.
 
 ### Catch Your Own Lunch or Dinner
 
@@ -79,7 +79,7 @@ Nothing beats tasting the Sognefjord fresh from the water. Catch local species l
 
 ### Combine Fjord & Land: Boat + Bike in Balestrand 
 
-Want to explore further at your own pace? Pair your morningfjord expedition with an electric bike rental from Balestrand Bike Rental to ride along the scenic coastal roads, historic dragon-style villas, and local cider farms.
+Want to explore further at your own pace? Pair your morning fjord expedition with an electric bike rental from Balestrand Bike Rental to ride along the scenic coastal roads, historic dragon-style villas, and local cider farms.
 
 ### Quick Facts for Your Sognefjord Travel Plan
 
