@@ -49,7 +49,7 @@ cms: true
 ---
 ## Looking for an authentic, crowd-free Sognefjord experience in Balestrand?
 
-Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage. 
+Step aboard "Miss Fjords" with Captain Tor for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage. 
 
 When travelers ask how to experience the real Norway beyond crowded, but also pleasant tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries.
 
