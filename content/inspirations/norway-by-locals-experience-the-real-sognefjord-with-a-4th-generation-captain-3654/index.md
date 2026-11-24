@@ -49,7 +49,7 @@ cms: true
 ---
 ## Looking for an authentic, crowd-free Sognefjord experience in Balestrand?
 
-Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage.
+Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage. 
 
 When travelers ask how to experience the real Norway beyond crowded, but also pleasant tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries.
 
@@ -99,4 +99,6 @@ Want to explore further at your own pace? Pair your morning fjord expedition wit
 
 **• Booking:** Direct-to-guest only via our website form (Card payment on arrival before departure)
 
-**Ready to step off the beaten path?** Explore our private fjord programs on our website and send your direct request to Captain Tor.
+**Ready to step off the beaten path?** Explore our private fjord programs on our website and send your direct request to Captain Tor. Plan for at least 3 days in Balestrand is the feedback from our guests.
+
+Our programs together with Balestrand Adventure Hub are tailor-made for those who embrace the concepts that "easy is overrated," "people over pixels," and "off the beaten path"—ideas echoed by organizations like Visit Norway and publications such as Forbes to promote Norway to travelers who seek authentic, challenging, or unique experiences, rather than the most polished and simple package-tour destinations.
