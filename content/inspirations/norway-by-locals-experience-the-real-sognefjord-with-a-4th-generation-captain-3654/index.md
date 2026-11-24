@@ -99,6 +99,6 @@ Want to explore further at your own pace? Pair your morning fjord expedition wit
 
 **• Booking:** Direct-to-guest only via our website form (Card payment on arrival before departure)
 
-**Ready to step off the beaten path?** Explore our private fjord programs on our website and send your direct request to Captain Tor. Plan for at least 3 days in Balestrand is the feedback from our guests.
+**Ready to step off the beaten path?** Explore our private fjord programs on our website and send your direct request to Captain Tor. "Plan for at least 3 days in Balestrand area" is the feedback from our guests.
 
-Our programs together with Balestrand Adventure Hub are tailor-made for those who embrace the concepts that "easy is overrated," "people over pixels," and "off the beaten path"—ideas echoed by organizations like Visit Norway and publications such as Forbes to promote Norway to travelers who seek authentic, challenging, or unique experiences, rather than the most polished and simple package-tour destinations.
+Our programs together with Balestrand Adventure Hub are tailor-made for those who embrace the concepts that "easy is overrated," "people over pixels" —ideas echoed by organizations like Visit Norway and publications such as Forbes to promote Norway to travelers who seek authentic, challenging, or unique experiences, rather than the most polished and simple package-tour destinations.
