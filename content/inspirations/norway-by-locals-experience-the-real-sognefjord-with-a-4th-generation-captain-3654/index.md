@@ -51,7 +51,7 @@ cms: true
 
 Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage.
 
-When travelers ask how to experience the real Norway beyond crowded tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries.
+When travelers ask how to experience the real Norway beyond crowded, but also pleasant tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries.
 
 At Balestrand Fjord Angling, we believe that simplicity creates emotions. We offer an analog escape where you trade screen time for genuine connection with nature, local history, and the people in your boat.
 
@@ -71,7 +71,7 @@ Whether you are staying in Balestrand for a week or passing through between Berg
 
 ### Morning or Afternoon on the Calm Esefjord (from 1.5 to 3 Hours)
 
-Surrounded by dramatic, steep mountains and waterfalls, the sheltered waters of the Esefjord offer ideal conditions year-round—even on rainy days. You will learn traditional Norwegian coastal fishing techniques (angling, trolling, and pulling pre-set fishing nets) while hearing stories of Viking sea routes and historic homesteads.
+Surrounded by dramatic, steep mountains and waterfalls, the sheltered waters of the Esefjord offer ideal conditions year-round—even on rainy days. You will learn traditional Norwegian fjord fishing techniques (angling, trolling, and pulling pre-set fishing nets) while hearing stories of Viking sea routes and historic homesteads.
 
 ### Catch Your Own Lunch or Dinner
 
@@ -83,7 +83,7 @@ Want to explore further at your own pace? Pair your morning fjord expedition wit
 
 ### Quick Facts for Your Sognefjord Travel Plan
 
- **• Location:** Balestrand, Sognefjord (Departure from Holmen 3/ Balestrand Adventure House)
+**• Location:** Balestrand, Sognefjord (Departure from Holmen 3/ Balestrand Adventure House)
 
 **• Group Size:** Private charter only (1–7 guests — no strangers on board)
 
