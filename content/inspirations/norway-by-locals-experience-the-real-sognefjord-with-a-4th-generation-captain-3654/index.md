@@ -67,7 +67,7 @@ The Sognefjord is also for those who understand that while certain volume is nec
 
 **• Your Boat, Your Pace:** With a maximum of 1 to 7 guests aboard our open boat "Miss Fjords", every trip is tailored to your curiosity, whether you are a family with children, a couple, or solo explorers.
 
-**How a Private Fjord Trip Fits Your Sognefjord Itinerary?**
+**How a Private Fjord Trip Fits Your Sognefjord Itinerary:**
 
 Whether you are staying in Balestrand for a week or passing through between Bergen, Flåm, and Fjærland, a private boat trip is the natural centerpiece of your Western Norway journey.
 
