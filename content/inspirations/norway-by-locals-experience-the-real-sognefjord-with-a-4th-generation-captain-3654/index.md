@@ -51,7 +51,7 @@ cms: true
 
 Step aboard "Miss Fjords" with Captain Tor Balevik for a private, small-group fjord fishing and storytelling journey rooted in four generations of local heritage.
 
-When travelers ask how to experience the real Norway beyond crowded, but also pleasant tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries.
+When travelers ask how to experience the real Norway beyond crowded, but also pleasant tour buses and rigid schedules, the answer lies on the water. In Balestrand—situated right in the heart of the Sognefjord—life has moved to the rhythm of the tides for centuries. Furthermore, local bus routes and fast ferry need more passengers; by using public transport in the Sognefjord area, you help sustain vital local infrastructure. Thank you for visiting us! :)
 
 At Balestrand Fjord Angling, we believe that simplicity creates emotions. We offer an analog escape where you trade screen time for genuine connection with nature, local history, and the people in your boat.
 
