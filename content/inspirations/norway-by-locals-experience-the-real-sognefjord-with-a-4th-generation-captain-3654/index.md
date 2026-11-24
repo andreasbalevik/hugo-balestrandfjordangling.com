@@ -59,7 +59,7 @@ At Balestrand Fjord Angling, we believe that simplicity creates emotions. We off
 
 Most international excursions are built for mass tourism. My approach is the exact opposite: 100% private, direct-to-guest (B2C) experiences with no middlemen and no scripts. They are based on 47,000 hours of my practical experience guiding guests directly—an endeavor that began when I was 10 years old—and I still find it just as exciting as when I first started!
 
-The Sognefjord is for those who understand that while volume is necessary to keep the wheels of society turning, we also embrace sustainable tourism; it is home to hidden gems and passionate local figures—and Captain Tor is just one of them.
+The Sognefjord is also for those who understand that while certain volume is necessary to keep the wheels of society turning, we also embrace sustainable tourism; it is home to hidden gems and passionate local figures—and Captain Tor is just one of them.
 
 **• 4th-Generation Local Expertise:** Born and bred in Balestrand, Captain Tor brings over 25 years of experience from the local nature school—having guided more than 30,000 students on the Sognefjord.
 
